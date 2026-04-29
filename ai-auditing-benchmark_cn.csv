@@ -4,7 +4,7 @@
 2025.06.17,@meta_pool ,权限漏洞 + 业务逻辑漏洞,mint() 缺少访问控制，业务上没有存入 ETH,0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9,0x3747484567119592ff6841df399cf679955a111a,10~20
 2025.07.09,@GMX_IO,重入漏洞 + 操纵价格,业务层面上跨合约重入攻击，绕过状态检查,0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef,"0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c  
 0x09f77e8a13de9a35a7231028187e9fd5db8a2acb ",420
-2025.07.15,@ArcadiaFi,权限漏洞 or 参数检查漏洞,rebalance()可以被任意调用，而且参数 swapdata 可以是任意的,0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150,"0xc729213b9b72694f202feb9cf40fe8ba5f5a4509 
+2025.07.15,@ArcadiaFi,权限漏洞 + 参数检查漏洞,rebalance()可以被任意调用，而且参数 swapdata 可以是任意的,0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150,"0xc729213b9b72694f202feb9cf40fe8ba5f5a4509 
 0xbea2b6d45acaf62385877d835970a0788719cae1 ",250 ~ 350
 2025.07.28,@SuperRare,权限漏洞,updateMerkleRoot() 权限检查代码逻辑错误,0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1,0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec,73
 2025.08.26,@BetterBank_io,业务逻辑漏洞,swap没有价值的token也会奖励有价值的token,0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a,0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c,500
@@ -27,3 +27,6 @@
 2026.04.07,Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98),权限漏洞,run()可以将批准的代币转移给攻击者,0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1,0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4,51.7
 2026.04.12,@SubQueryNetwork,权限漏洞,setContractAddress()和setBatchAddress()缺少访问控制,0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d,0xf282737992da4217bf5f8b6ae621181e84d7d3b9,12.8
 2026.04.13,@hyperbridge,逻辑检查漏洞,ISMP 流程中状态证明验证不足，伪造的证明通过了 HandlerV1.handlePostRequests()  验证,0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109,0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64,23.7
+2026.04.26,@ZetaChain,权限漏洞 + 参数检查漏洞,"call() 函数缺少访问控制和对参数message的检查, execute()函数缺少对参数data的检查","0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1 
+0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa ","0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202 
+0x1fff55ccf855212f6b5530c468b44f9a5246572e ",30

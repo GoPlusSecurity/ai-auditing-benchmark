@@ -27,3 +27,6 @@ Attack Date,Project,Vulnerability,Vulnerability Details,Exploited Transacton,Exp
 2026.04.07,Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98),Permission Vulnerability,`run()` can transfer approved tokens to the attacker.,0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1,0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4,517
 2026.04.12,@SubQueryNetwork,Permission Vulnerability,setContractAddress() and setBatchAddress() lack access control.,0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d,0xf282737992da4217bf5f8b6ae621181e84d7d3b9,128
 2026.04.13,@hyperbridge,Logic Check Vulnerability,"The ISMP process suffers from insufficient state proof verification, allowing forged proofs to pass the validation performed by `HandlerV1.handlePostRequests()`.",0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109,0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64,237
+2026.04.26,@ZetaChain,Permission Vulnerability + Parameter Validation Vulnerability,"The `call()` function lacks access control and validation of the `message` parameter, while the `execute()` function lacks validation of the `data` parameter.","0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1 
+0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa ","0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202 
+0x1fff55ccf855212f6b5530c468b44f9a5246572e ",30
