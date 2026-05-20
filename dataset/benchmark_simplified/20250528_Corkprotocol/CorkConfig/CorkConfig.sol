@@ -61,7 +61,7 @@ abstract contract Pausable {
         _;
     }
 
-    function paused() public view returns (bool) {
+    function paused() internal view returns (bool) {
         return _paused;
     }
 
@@ -95,11 +95,11 @@ abstract contract AccessControl {
         _;
     }
 
-    function hasRole(bytes32 role, address account) public view returns (bool) {
+    function hasRole(bytes32 role, address account) internal view returns (bool) {
         return _roles[role][account];
     }
 
-    function getRoleAdmin(bytes32 role) public view returns (bytes32) {
+    function getRoleAdmin(bytes32 role) internal view returns (bytes32) {
         bytes32 admin = _roleAdmins[role];
         return admin == bytes32(0) ? DEFAULT_ADMIN_ROLE : admin;
     }
