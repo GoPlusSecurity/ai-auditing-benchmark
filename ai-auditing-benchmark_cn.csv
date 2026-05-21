@@ -31,7 +31,7 @@
 0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa ","0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202 
 0x1fff55ccf855212f6b5530c468b44f9a5246572e ",30
 2026.05.07,WhiteEagle,操纵价格,White Eagle 提款合约因其提款路径中的现货价格操纵逻辑缺陷而被利用,0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d,0x0079517e4157f95cefda99d295fd74fc9b9896eb,6.56
-2026.05.11,@humafinance,权限漏洞 + 业务逻辑漏洞,`request Credit()` 无需许可；`refresh Account()` 也无需许可，并且它会无条件地提升账户状态。,0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359,"0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c 
+2026.05.11,@humafinance,权限漏洞 + 业务逻辑漏洞,`requestCredit()` 无需许可；`refreshAccount()` 也无需许可，并且它会无条件地提升账户状态。,0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359,"0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c 
 0x2cffaaf7885530e1c5a9684ebbe397d6f1de48d8 ",10.1
 2026.05.12,BoostHook,操纵价格 + 逻辑检查漏洞,攻击者利用 120 个 WETH 的 Morpho 闪电贷操纵了 ETH/PERP Uniswap v4 资金池的价格，然后通过 `BoostHook.openLong()` 以虚高的价格开立了九个杠杆仓位。`BoostHook` 在记录这些仓位时没有执行严格的开仓后偿付能力检查，在攻击者将 PERP 抛回资金池后，由于 `MAX_LIQS_PER_BLOCK = 5` 的限制，`BoostHook.afterSwap()` 仅清算了五个仓位，导致四个有毒仓位仍然未平仓。,0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811,0x3db1ebb71c735980d12422f153987d89f4d7eacc,4.76
 2026.05.12,SQToken,业务逻辑漏洞,硬编码地址篡改owner,0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8,0x404404a845fff0201f3a4d419b4839fc419c99f7,34.6
