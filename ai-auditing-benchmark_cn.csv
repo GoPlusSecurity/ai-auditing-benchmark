@@ -1,38 +1,43 @@
 攻击时间,项目,漏洞,漏洞详情,攻击交易,漏洞合约地址,损失金额/万美元
-2025.05.28,@Corkprotocol ,权限漏洞 + 逻辑检查漏洞,攻击者利用参数检查的缺失，建立了一个虚假市场，并且其 AMM 扩展（CorkHook）的访问权限相对开放，导致衍生代币 weETH8DS-2 在两个市场上被重复计算,0xfd89cdd0be468a564dd525b222b728386d7c6780cf7b2f90d2b54493be09f64d,"0xf0da8927df8d759d5ba6d3d714b1452135d99cfc 
-0x5287e8915445aee78e10190559d8dd21e0e9ea88 ",120
-2025.06.17,@meta_pool ,权限漏洞 + 业务逻辑漏洞,`mint()` 缺少访问控制，业务上没有存入 ETH,0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9,0x3747484567119592ff6841df399cf679955a111a,10~20
-2025.07.09,@GMX_IO,重入漏洞 + 操纵价格,业务层面上跨合约重入攻击，绕过状态检查,0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef,"0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c  
-0x09f77e8a13de9a35a7231028187e9fd5db8a2acb ",420
-2025.07.15,@ArcadiaFi,权限漏洞 + 参数检查漏洞,`rebalance()` 可以被任意调用，而且参数 `swapdata` 可以是任意的,0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150,"0xc729213b9b72694f202feb9cf40fe8ba5f5a4509 
-0xbea2b6d45acaf62385877d835970a0788719cae1 ",250 ~ 350
-2025.07.28,@SuperRare,权限漏洞,`updateMerkleRoot()` 权限检查代码逻辑错误,0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1,0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec,73
-2025.08.26,@BetterBank_io,业务逻辑漏洞,swap没有价值的token也会奖励有价值的token,0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a,0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c,500
-2025.10.04,@MIM_Spell,业务逻辑漏洞,`cook()` 逻辑错误，绕过检查,0x842aae91c89a9e5043e64af34f53dc66daf0f033ad8afbf35ef0c93f99a9e5e6,0x5e70f7acb8ec0231c00220d11c74dc2b23187103,177
-2025.11.03,@Balancer,计算漏洞,循环放大精度损失,0x6ed07db1a9fe5c0794d44cd36081d6a6df103fab868cdd75d581e3bd23bc9742,0xdacf5fa19b1f720111609043ac67a9818262850c,12800
-2026.01.01,@PRXVTai,业务逻辑漏洞,`earned()` 根据钱包当前质押的 $PRXVT 余额计算奖励,0x88610208c00f5d5ca234e45205a01199c87cb859f881e8b35297cba8325a5494,0xdac30a5e2612206e2756836ed6764ec5817e6fff,9.7
-2026.01.03,@valinitydefi,业务逻辑漏洞,操纵价格后 `acquireByLTVDisparity()` 向小额资金池中投入了 $VY ,0x7f1406435172b8d8675dec95a7f6aa89d10b7ca008150de8742f7fa824e3395c,0x75b44b74950851583bdddcd26528e74fdd1211a6,6.6
-2026.01.28,@XPlayer_Media,操纵价格,`DynamicBurnPool()` 接销毁了 XPL/USDT 交易池中几乎全部的$XPL，抬高了$XPL的价格,0x9779341b2b80ba679c83423c93ecfc2ebcec82f9f94c02624f83d8a647ee2e49,"0x15b1879ff6acc145300f7a204809473a9e158917
-0xc2c4ccde8948c693d0b04f8bad461e35a12f20b8 ",72
-2026.02.01,@crosscurvefi ,业务逻辑漏洞,`expressExecute()` 中没有调用 `gateway.validateContractCall()` 进行检查，`expressExecuteWithToken()` 中没有调用 `gateway.validateContractCallAndMint()` 进行检查,0x37d9b911ef710be851a2e08e1cfc61c2544db0f208faeade29ee98cc7506ccc2,0xB2185950F5A0A46687ac331916508aadA202e063,300
-2026.03.06,@SolvProtocol,重入漏洞,`transferFrom()` 最后会调用 `onERC721Received()`，`onERC721Received()` 中再次调用 `transferFrom()`，引发重入攻击,0x44e637c7d85190d376a52d89ca75f2d208089bb02b7c4708ad2aaae3a97a958d,"0x15f7c1ac69f0c102e4f390e45306bd917f21cfcf
-0x88552269817d23e2d62247287aa9f9913ac3b2f8",280
-2026.03.09,@gondixyz,权限漏洞,`executeSell()` 可以将批准给该合约的 NFT 转移走,0x83bac5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06,0xc10472ac1bf9f2e58ff2c83596b4535334c90814,23
-2026.03.11,@AlkemiNetwork,业务逻辑漏洞,`liquidateBorrow()` 存在一个漏洞，允许自行清算，并且不强制执行破产程序,0xa17001eb39f867b8bed850de9107018a2d2503f95f15e4dceb7d68fff5ef6d9d,0x85a948fd70b2b415bda93324581fb5fff1293df7,11
-2026.03.11,@planet_finance ,业务逻辑漏洞,`changeUserBorrowDiscount()` 函数在计算借款人折扣时，错误地将新借款视为应计利息,0xe0835bb761805689bf3ee510c5b0950ead03977f3d99ddc1a59c6d23151c0f1f,"0x2f64203ed5606466783b61e8691784f07c25f0ed
-0x4c9ed6a7c0ff31bf7302c73a2f76701e56bdf467 ",9.3
-2026.03.12,@DBXen_crypto,业务逻辑漏洞,`PlanetDiscountDelegate.changeUserBorrowDiscount()` 在计算借款人折扣时，错误地将新借款视为应计利息。,0x914a5af790e55b8ea140a79da931fc037cb4c4457704d184ad21f54fb808bc37,0xf5c80c305803280b587f8cabbccdc4d9bf522abd,15
-2026.03.23,@Cyrus_finance,业务逻辑漏洞 + 价格操纵,`withdrawUSDTFromAny()` 存在业务逻辑漏洞；移除的流动性数量是根据资金池的当前现货价格计算的,0x2b7efdac5f052ee9a8f6de8f966b948027b76f7cc183e4868c98c7afc2d69524,0xb042ea7b35826e6e537a63bb9fc9fb06b50ae10b,50
-2026.04.07,#TGAI,业务逻辑漏洞 + 权限漏洞,滥用 `sync()` 将约 1.75 万 USDT 推入 LP 交易对，之后调用 `swapTGToUSDT()` 获利,0x6031c73c264874c1eaf6e36f4806907e7cc6c6343b6fe5aa3e0aada805eff621,0x4e52d6e7d7d60aef9d5c7558a0509862228b8a09,1.194
-2026.04.07,Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98),权限漏洞,`run()` 可以将批准的代币转移给攻击者,0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1,0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4,51.7
-2026.04.12,@SubQueryNetwork,权限漏洞,`setContractAddress()` 和 `setBatchAddress()` 缺少访问控制,0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d,0xf282737992da4217bf5f8b6ae621181e84d7d3b9,12.8
-2026.04.13,@hyperbridge,逻辑检查漏洞,ISMP 流程中状态证明验证不足，伪造的证明通过了 `HandlerV1.handlePostRequests()`  验证,0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109,0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64,23.7
-2026.04.26,@ZetaChain,权限漏洞 + 参数检查漏洞,"`call()` 函数缺少访问控制和对参数message的检查, `execute()` 函数缺少对参数data的检查","0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1 
-0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa ","0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202 
-0x1fff55ccf855212f6b5530c468b44f9a5246572e ",30
-2026.05.07,WhiteEagle,操纵价格,White Eagle 提款合约因其提款路径中的现货价格操纵逻辑缺陷而被利用,0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d,0x0079517e4157f95cefda99d295fd74fc9b9896eb,6.56
-2026.05.11,@humafinance,权限漏洞 + 业务逻辑漏洞,`requestCredit()` 无需许可；`refreshAccount()` 也无需许可，并且它会无条件地提升账户状态。,0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359,"0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c 
-0x2cffaaf7885530e1c5a9684ebbe397d6f1de48d8 ",10.1
-2026.05.12,BoostHook,操纵价格 + 逻辑检查漏洞,攻击者利用 120 个 WETH 的 Morpho 闪电贷操纵了 ETH/PERP Uniswap v4 资金池的价格，然后通过 `BoostHook.openLong()` 以虚高的价格开立了九个杠杆仓位。`BoostHook` 在记录这些仓位时没有执行严格的开仓后偿付能力检查，在攻击者将 PERP 抛回资金池后，由于 `MAX_LIQS_PER_BLOCK = 5` 的限制，`BoostHook.afterSwap()` 仅清算了五个仓位，导致四个有毒仓位仍然未平仓。,0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811,0x3db1ebb71c735980d12422f153987d89f4d7eacc,4.76
-2026.05.12,SQToken,业务逻辑漏洞,硬编码地址篡改owner,0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8,0x404404a845fff0201f3a4d419b4839fc419c99f7,34.6
-2026.05.12,@eonx_ai,操纵价格,"存款和奖励以 USDT 为单位进行追踪，但提现时却使用 Pancake 的实时现货价格函数通过 `getAmountsOut([USDT,IEX])` 将该值转换为 IEX",0x11a5740c5fff435e92cc3aef57d5b0526cca9ae3c96f299d7b0442c938ace132,0x575f30b2e7b7711be16d49a50786c8edabd755f1,4.7
+2025.05.28,@Corkprotocol ,权限漏洞 + 逻辑检查漏洞,攻击者利用参数检查的缺失，建立了一个虚假市场，并且其 AMM 扩展（CorkHook）的访问权限相对开放，导致衍生代币 weETH8DS-2 在两个市场上被重复计算,https://etherscan.io/tx/0xfd89cdd0be468a564dd525b222b728386d7c6780cf7b2f90d2b54493be09f64d,"https://etherscan.io/address/0xf0da8927df8d759d5ba6d3d714b1452135d99cfc 
+https://etherscan.io/address/0x5287e8915445aee78e10190559d8dd21e0e9ea88 ",120
+2025.06.17,@meta_pool ,权限漏洞 + 业务逻辑漏洞,`mint()` 缺少访问控制，业务上没有存入 ETH,https://etherscan.io/tx/0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9,https://etherscan.io/address/0x3747484567119592ff6841df399cf679955a111a,10~20
+2025.07.09,@GMX_IO,重入漏洞 + 操纵价格,业务层面上跨合约重入攻击，绕过状态检查,https://arbiscan.io/tx/0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef,"https://arbiscan.io/address/0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c  
+https://arbiscan.io/address/0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",420
+2025.07.15,@ArcadiaFi,权限漏洞 + 参数检查漏洞,`rebalance()` 可以被任意调用，而且参数 `swapdata` 可以是任意的,https://basescan.org/tx/0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150,"https://basescan.org/address/0xc729213b9b72694f202feb9cf40fe8ba5f5a4509 
+https://basescan.org/address/0xbea2b6d45acaf62385877d835970a0788719cae1 ",250 ~ 350
+2025.07.28,@SuperRare,权限漏洞,`updateMerkleRoot()` 权限检查代码逻辑错误,https://etherscan.io/tx/0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1,https://etherscan.io/address/0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec,73
+2025.08.26,@BetterBank_io,业务逻辑漏洞,swap没有价值的token也会奖励有价值的token,https://pulsescan.finvesta.io/#/tx/0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a,https://pulsescan.finvesta.io/#/address/0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c,500
+2025.10.04,@MIM_Spell,业务逻辑漏洞,`cook()` 逻辑错误，绕过检查,https://etherscan.io/tx/0x842aae91c89a9e5043e64af34f53dc66daf0f033ad8afbf35ef0c93f99a9e5e6,https://etherscan.io/address/0x5e70f7acb8ec0231c00220d11c74dc2b23187103,177
+2025.11.03,@Balancer,计算漏洞,循环放大精度损失,https://etherscan.io/tx/0x6ed07db1a9fe5c0794d44cd36081d6a6df103fab868cdd75d581e3bd23bc9742,https://etherscan.io/address/0xdacf5fa19b1f720111609043ac67a9818262850c,12800
+2026.01.01,@PRXVTai,业务逻辑漏洞,`earned()` 根据钱包当前质押的 $PRXVT 余额计算奖励,https://basescan.org/tx/0x88610208c00f5d5ca234e45205a01199c87cb859f881e8b35297cba8325a5494,https://basescan.org/address/0xdac30a5e2612206e2756836ed6764ec5817e6fff,9.7
+2026.01.03,@valinitydefi,业务逻辑漏洞,操纵价格后 `acquireByLTVDisparity()` 向小额资金池中投入了 $VY ,https://etherscan.io/tx/0x7f1406435172b8d8675dec95a7f6aa89d10b7ca008150de8742f7fa824e3395c,https://etherscan.io/address/0x75b44b74950851583bdddcd26528e74fdd1211a6,6.6
+2026.01.28,@XPlayer_Media,操纵价格,`DynamicBurnPool()` 接销毁了 XPL/USDT 交易池中几乎全部的$XPL，抬高了$XPL的价格,https://bscscan.com/tx/0x9779341b2b80ba679c83423c93ecfc2ebcec82f9f94c02624f83d8a647ee2e49,"https://bscscan.com/address/0x15b1879ff6acc145300f7a204809473a9e158917 
+https://bscscan.com/address/0xc2c4ccde8948c693d0b04f8bad461e35a12f20b8  ",72
+2026.02.01,@crosscurvefi ,业务逻辑漏洞,`expressExecute()` 中没有调用 `gateway.validateContractCall()` 进行检查，`expressExecuteWithToken()` 中没有调用 `gateway.validateContractCallAndMint()` 进行检查,https://etherscan.io/tx/0x37d9b911ef710be851a2e08e1cfc61c2544db0f208faeade29ee98cc7506ccc2,https://etherscan.io/address/0xB2185950F5A0A46687ac331916508aadA202e063,300
+2026.03.06,@SolvProtocol,重入漏洞,`transferFrom()` 最后会调用 `onERC721Received()`，`onERC721Received()` 中再次调用 `transferFrom()`，引发重入攻击,https://etherscan.io/tx/0x44e637c7d85190d376a52d89ca75f2d208089bb02b7c4708ad2aaae3a97a958d,"https://etherscan.io/address/0x15f7c1ac69f0c102e4f390e45306bd917f21cfcf 
+https://etherscan.io/address/0x88552269817d23e2d62247287aa9f9913ac3b2f8 ",280
+2026.03.09,@gondixyz,权限漏洞,`executeSell()` 可以将批准给该合约的 NFT 转移走,0x83bahttps://etherscan.io/tx/0x83bac5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06c5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06,https://etherscan.io/address/0xc10472ac1bf9f2e58ff2c83596b4535334c90814,23
+2026.03.11,@AlkemiNetwork,业务逻辑漏洞,`liquidateBorrow()` 存在一个漏洞，允许自行清算，并且不强制执行破产程序,https://etherscan.io/tx/0xa17001eb39f867b8bed850de9107018a2d2503f95f15e4dceb7d68fff5ef6d9d,https://etherscan.io/address/0x85a948fd70b2b415bda93324581fb5fff1293df7,11
+2026.03.11,@planet_finance ,业务逻辑漏洞,`changeUserBorrowDiscount()` 函数在计算借款人折扣时，错误地将新借款视为应计利息,https://bscscan.com/tx/0xe0835bb761805689bf3ee510c5b0950ead03977f3d99ddc1a59c6d23151c0f1f,"https://bscscan.com/address/0x2f64203ed5606466783b61e8691784f07c25f0ed 
+https://bscscan.com/address/0x4c9ed6a7c0ff31bf7302c73a2f76701e56bdf467 ",9.3
+2026.03.12,@DBXen_crypto,业务逻辑漏洞,`PlanetDiscountDelegate.changeUserBorrowDiscount()` 在计算借款人折扣时，错误地将新借款视为应计利息。,https://etherscan.io/tx/0x914a5af790e55b8ea140a79da931fc037cb4c4457704d184ad21f54fb808bc37,https://etherscan.io/address/0xf5c80c305803280b587f8cabbccdc4d9bf522abd#code,15
+2026.03.23,@Cyrus_finance,业务逻辑漏洞 + 价格操纵,`withdrawUSDTFromAny()` 存在业务逻辑漏洞；移除的流动性数量是根据资金池的当前现货价格计算的,https://bscscan.com/tx/0x2b7efdac5f052ee9a8f6de8f966b948027b76f7cc183e4868c98c7afc2d69524,https://bscscan.com/address/0xb042ea7b35826e6e537a63bb9fc9fb06b50ae10b#code,50
+2026.04.07,#TGAI,业务逻辑漏洞 + 权限漏洞,滥用 `sync()` 将约 1.75 万 USDT 推入 LP 交易对，之后调用 `swapTGToUSDT()` 获利,https://bscscan.com/tx/0x6031c73c264874c1eaf6e36f4806907e7cc6c6343b6fe5aa3e0aada805eff621,https://bscscan.com/address/0x4e52d6e7d7d60aef9d5c7558a0509862228b8a09,1.194
+2026.04.07,Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98),权限漏洞,`run()` 可以将批准的代币转移给攻击者,https://bscscan.com/tx/0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1,https://bscscan.com/address/0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4,51.7
+2026.04.12,@SubQueryNetwork,权限漏洞,`setContractAddress()` 和 `setBatchAddress()` 缺少访问控制,https://basescan.org/tx/0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d,https://basescan.org/address/0xf282737992da4217bf5f8b6ae621181e84d7d3b9,12.8
+2026.04.13,@hyperbridge,逻辑检查漏洞,ISMP 流程中状态证明验证不足，伪造的证明通过了 `HandlerV1.handlePostRequests()`  验证,https://etherscan.io/tx/0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109,https://etherscan.io/address/0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64,23.7
+2026.04.26,@ZetaChain,权限漏洞 + 参数检查漏洞,"`call()` 函数缺少访问控制和对参数message的检查, `execute()` 函数缺少对参数data的检查","https://zetascan.com/tx/0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1 
+https://etherscan.io/tx/0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa ","https://zetascan.com/address/0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202 
+https://etherscan.io/address/0x1fff55ccf855212f6b5530c468b44f9a5246572e ",30
+2026.05.07,WhiteEagle,操纵价格,White Eagle 提款合约因其提款路径中的现货价格操纵逻辑缺陷而被利用,https://bscscan.com/tx/0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d,https://bscscan.com/address/0x0079517e4157f95cefda99d295fd74fc9b9896eb,6.56
+2026.05.11,@humafinance,权限漏洞 + 业务逻辑漏洞,`requestCredit()` 无需许可；`refreshAccount()` 也无需许可，并且它会无条件地提升账户状态。,https://polygonscan.com/tx/0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359,https://polygonscan.com/address/0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c ,10.1
+2026.05.12,BoostHook,操纵价格 + 逻辑检查漏洞,攻击者利用 120 个 WETH 的 Morpho 闪电贷操纵了 ETH/PERP Uniswap v4 资金池的价格，然后通过 `BoostHook.openLong()` 以虚高的价格开立了九个杠杆仓位。`BoostHook` 在记录这些仓位时没有执行严格的开仓后偿付能力检查，在攻击者将 PERP 抛回资金池后，由于 `MAX_LIQS_PER_BLOCK = 5` 的限制，`BoostHook.afterSwap()` 仅清算了五个仓位，导致四个有毒仓位仍然未平仓。,https://etherscan.io/tx/0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811,https://etherscan.io/address/0x3db1ebb71c735980d12422f153987d89f4d7eacc,4.76
+2026.05.12,SQToken,业务逻辑漏洞,硬编码地址篡改owner,https://bscscan.com/tx/0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8,https://bscscan.com/address/0x404404a845fff0201f3a4d419b4839fc419c99f7,34.6
+2026.05.12,@eonx_ai,操纵价格,"存款和奖励以 USDT 为单位进行追踪，但提现时却使用 Pancake 的实时现货价格函数通过 `getAmountsOut([USDT,IEX])` 将该值转换为 IEX",https://bscscan.com/tx/0x11a5740c5fff435e92cc3aef57d5b0526cca9ae3c96f299d7b0442c938ace132,https://bscscan.com/address/0x575f30b2e7b7711be16d49a50786c8edabd755f1,4.7
+2026.05.25,WUSD.fi,业务逻辑漏洞,每个新创建的 `msg.sender` 合约，只要包装了至少 100 个 $WUSD，且持有的 $GLOVE 少于 2 个，就可以通过 `Glove.mintCreditless` 函数获得最多 2 个 $GLOVE，且没有任何女巫攻击防御机制,https://etherscan.io/tx/0x2051c1f8d43730c41cc353b5dffd8cc59f96cb1ca56fdce4b28fb127bdb37712,https://etherscan.io/address/0x068E3563b1c19590F822c0e13445c4FA1b9EEFa5,20
+2026.05.28,JoeAgentToken,重入漏洞,`removeLiquidityViaContract()` 函数在 BNB 转账之后更新状态。,https://bscscan.com/tx/0x33602f2943e8ea9ae2a4dfd78a347848ed84c9fc901409bdab13ec057f0e883f,https://bscscan.com/address/0xB12Ce0a21f67a9fc3c8AD1C7DBC4B017B7E67319,23
+2026.06.04,ATMToken,业务逻辑漏洞,`transferFrom()` 函数中存在隐藏的兑换逻辑漏洞，但兑换前后的代币都会转移给`to`地址。,https://bscscan.com/tx/0x37b90a337075cd2feea93b12780abe9f953dad476e1c1418a02447aaa6dcfd86 ,https://bscscan.com/address/0x986058ec93756E57b4e55b406dD0BeE24bcD95e3,24.3
+2026.06.09,Token of Power (TOP),业务逻辑漏洞,DAO 配置错误: 执行脚本的提交、投票和执行之间没有加时间锁；投票是否通过是由 $TOP 的用户余额和总供应量比例决定的。,https://etherscan.io/tx/0x967aa34c69b7775c718545c7f94d92e965eb5fc553c0f27f6f1a9c65c93ac156 ,"https://etherscan.io/address/0xde3a93028f2283cc28756b3674bd657eafb992f4 
+https://etherscan.io/address/0xb935C3D80229d5D92f3761b17Cd81dC2610e3a45 ",150
+2026.06.14,@aztecnetwork,逻辑检查漏洞,`_numTxs` 参数与实际的 `_proofData` 字节数组中包含的交易数量不一致，这导致在内部循环和外部处理中产生了“数量差”，绕过了关键的校验和状态更新。,https://etherscan.io/tx/0x074ec9317d8336db37e8c348fbdd7515573ff4088239c77ab429f522509aeeb1,https://etherscan.io/address/0x7d657ddcf7e2a5fd118dc8a6ddc3dc308adc2728,219
