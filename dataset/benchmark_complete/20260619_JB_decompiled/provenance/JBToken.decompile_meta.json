@@ -1,0 +1,28 @@
+{
+  "method": "agent-native",
+  "bytecode_size": 7832,
+  "opcodes_count": 4635,
+  "strategy": "selective",
+  "selectors_recovered": [
+    "0x08f40fc0",
+    "0x095ea7b3",
+    "0x23b872dd",
+    "0x70a08231",
+    "0xa9059cbb",
+    "0xb1faeac6"
+  ],
+  "selectors_requested": [
+    "0x08f40fc0",
+    "0x095ea7b3",
+    "0x23b872dd",
+    "0x70a08231",
+    "0xa9059cbb",
+    "0xb1faeac6"
+  ],
+  "coverage": 1.0,
+  "confidence": "medium",
+  "tac_server_used": false,
+  "fallback_only": false,
+  "disassembly_truncated": false,
+  "notes": "Runtime bytecode fetched from BNB mainnet via Alchemy. TAC server was not available on 127.0.0.1:8787. Contract has a normal dispatcher with 46 selectors and 4635 disassembly lines, so selective recovery focused on trace-called selectors and their shared helpers. Selectors 0x08f40fc0 and 0xb1faeac6 had no reliable public 4byte names and are represented as func_* with recovered calldata shapes. Selector 0x08f40fc0 returns three fee-like uint16 values selected from packed slot_2. Selector 0xb1faeac6 burns pool balance and then performs the trace-visible external call to AMM pair 0x43932cbb49c363f68655b5ad2950ed4630cb49f8 selector 0xfff6cae9."
+}

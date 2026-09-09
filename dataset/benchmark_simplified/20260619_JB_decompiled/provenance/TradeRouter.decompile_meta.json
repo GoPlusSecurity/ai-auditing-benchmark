@@ -1,0 +1,20 @@
+{
+  "method": "agent-native",
+  "bytecode_size": 16234,
+  "opcodes_count": 9469,
+  "strategy": "trace-guided",
+  "selectors_recovered": [
+    "0x53a9fcbc",
+    "0xd680aabd"
+  ],
+  "selectors_requested": [
+    "0x53a9fcbc",
+    "0xd680aabd"
+  ],
+  "coverage": 1.0,
+  "confidence": "low",
+  "tac_server_used": false,
+  "fallback_only": false,
+  "disassembly_truncated": true,
+  "notes": "Runtime bytecode contains 9469 opcode lines and many unresolved dispatcher selectors. Recovery is trace-guided for selectors 0xd680aabd and 0x53a9fcbc, preserving observed external calls, storage accounting, and route shape. TAC server was not available at 127.0.0.1:8787."
+}

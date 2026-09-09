@@ -1,0 +1,46 @@
+{
+  "sheet_row": 99,
+  "date": "2026.06.19",
+  "project": "$JB [Decompiled]",
+  "source_kind": "decompiled",
+  "representation": "agent_native_recovery",
+  "chain_id": 56,
+  "tx": [
+    "https://bscscan.com/tx/0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25"
+  ],
+  "addresses": [
+    "https://bscscan.com/address/0xcf92e7ef4a63d52dc15f45a24f4f815f00f299a7",
+    "https://bscscan.com/address/0x1b5732eb98911c25acf7bdfaffb9409782cae6d7"
+  ],
+  "usd": 50000,
+  "dataset_view": "simplified",
+  "retrieved_on": "2026-09-09",
+  "verified_original_source": false,
+  "bytecode_equivalence_verified": false,
+  "confidence": {
+    "token": "medium",
+    "router": "low",
+    "controller": "low"
+  },
+  "source_url": "https://github.com/DarkNavySecurity/web3-exploit-analysis/tree/main/artifacts/analysis_0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25",
+  "runtime_source": "https://bsc-dataseed.bnbchain.org (eth_getCode, latest)",
+  "runtime_capture_is_historical": false,
+  "original_recovery_method": "agent-native",
+  "simplified_token_functions": [
+    "onlyTradeRouter",
+    "totalSupply",
+    "ammPair",
+    "balanceOf",
+    "func_0xb1faeac6",
+    "_burn"
+  ],
+  "files_sha256": {
+    "context/TradeRouter.recovered.sol.txt": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+    "JBToken.recovered.sol": "230e555ddd9e2cba2107c2b622edc75e7e384b3f0cab72179599835ee1acc738",
+    "provenance/JBToken.decompile_meta.json": "c1e88bd7af16419a04cbf57fd3695ad084dd4611a3e868dd5e0dcc49d1e397b4",
+    "provenance/JBToken.selector_map.json": "3dbef29298941a8e12442096dd57d2513630cf29b2906824db27dd69ef76ffd0",
+    "provenance/TradeRouter.decompile_meta.json": "bce735e1aca3a5a164b6fc6bb6cb4edf4922ba1500731d607e075706022cc403",
+    "provenance/TradeRouter.selector_map.json": "7612bf851ceef278daac0299b1bfee5aaadb9066d682e5c3ca1176b2ba705c51",
+    "SOURCE.md": "7a87a7f887ecfaae358db9b34c3d4b7d9208c5830fb66ab8a9b96e45f9932c78"
+  }
+}

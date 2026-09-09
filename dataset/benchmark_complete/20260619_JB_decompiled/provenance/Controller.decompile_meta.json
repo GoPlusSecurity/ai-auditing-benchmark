@@ -1,0 +1,22 @@
+{
+  "method": "agent-native",
+  "bytecode_size": 18610,
+  "opcodes_count": 11034,
+  "strategy": "trace-guided",
+  "selectors_recovered": [
+    "0x0e2aa265",
+    "0x727ebe6d",
+    "0xf1f9d8c9"
+  ],
+  "selectors_requested": [
+    "0x0e2aa265",
+    "0x727ebe6d",
+    "0xf1f9d8c9"
+  ],
+  "coverage": 1.0,
+  "confidence": "low",
+  "tac_server_used": false,
+  "fallback_only": false,
+  "disassembly_truncated": true,
+  "notes": "Large contract recovered with trace-guided focus. 0xf1f9d8c9 resolved via cast 4byte as parent(address). 0x727ebe6d and 0x0e2aa265 did not resolve in 4byte; their address,uint256 argument shape was inferred from calldata. Both mutating trace selectors were observed to call token 0xcf92e7ef4a63d52dc15f45a24f4f815f00f299a7 with selector 0x23b872dd transferFrom(address,address,uint256), moving tokens from the calldata account to this contract. Event names and several packed storage subfields remain unresolved."
+}

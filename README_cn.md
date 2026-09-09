@@ -64,6 +64,8 @@ dataset/
 
 示例：`2025.05.28` + `@Corkprotocol` → `dataset/benchmark_simplified/20250528_Corkprotocol/`
 
+本次新增的 Thetanuts、DIP、Aztec 旧版桥、LittleBoyPlus、JB 已补充[攻击链路与原理说明](docs/cases/README.md)，用通俗语言详细说明合约负责什么、漏洞在哪里、攻击者怎样利用，并附对应代码和资料来源。对应事件目录的 `SOURCE.md` 也提供同一文档入口。
+
 ## 与 AI 审计引擎的配合方式（建议）
 
 1. **回归与对比评测**：对同一事件，分别在 `benchmark_complete` 与 `benchmark_simplified` 上跑同一套审计 prompt/流水线，对比检出率、误报与成本。

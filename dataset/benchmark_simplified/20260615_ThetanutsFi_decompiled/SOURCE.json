@@ -1,0 +1,43 @@
+{
+  "sheet_row": 104,
+  "date": "2026.06.15",
+  "project": "@ThetanutsFi [Decompiled]",
+  "source_kind": "decompiled",
+  "representation": "panoramix_pseudocode",
+  "chain_id": 1,
+  "tx": [
+    "https://etherscan.io/tx/0xbba9f138fe39503bfd1aa62932dbd6ab35d37d23d48e4b7bf2988a9d5dc39fec"
+  ],
+  "addresses": [
+    "https://etherscan.io/address/0xc2c3ae0a7b405058558c9b4a63b373486cb86ac7"
+  ],
+  "usd": 105000,
+  "dataset_view": "simplified",
+  "retrieved_on": "2026-09-09",
+  "verified_original_source": false,
+  "bytecode_equivalence_verified": false,
+  "source_url": "https://etherscan.io/bytecode-decompiler?a=0xC2C3AE0a7b405058558C9b4a63b373486CB86Ac7",
+  "decompiler": "Etherscan Palkeoramix/Panoramix",
+  "original_export_utf8_bytes": 72574,
+  "original_export_adler32": 2604076610,
+  "original_export_sha256": "6f6a7949bacdd614e2cd9eebd2c314a498811d573f40e82425cf36bc22a23b5b",
+  "solc_applicable": false,
+  "runtime_source": "https://etherscan.io/address/0xc2c3ae0a7b405058558c9b4a63b373486cb86ac7#code",
+  "simplified_definitions": [
+    "allowance",
+    "approve",
+    "balanceOf",
+    "claim",
+    "mint",
+    "mintFee",
+    "storage",
+    "totalSupply",
+    "transfer",
+    "transferFrom"
+  ],
+  "files_sha256": {
+    "provenance/selector_map.json": "d76c6121601868be10a0350ec32ddab73e26d1cc3c75ecf37d6ff737d3572fe5",
+    "SOURCE.md": "bfaf05d9186e082c842a856c79ede4691aa38fca2ba23eb3f08ef756dfcc886b",
+    "ThetanutsIndex.decompiled.pan": "fcec6d38790864966d51ed6ca72c4d322be0eee91e2ad3b2c1910bb778102670"
+  }
+}

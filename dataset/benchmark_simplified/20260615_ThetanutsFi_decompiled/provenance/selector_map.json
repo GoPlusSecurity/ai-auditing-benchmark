@@ -1,0 +1,9 @@
+{
+  "0x095ea7b3": "approve(address,uint256)",
+  "0x18160ddd": "totalSupply()",
+  "0x23b872dd": "transferFrom(address,address,uint256)",
+  "0x379607f5": "claim(uint256)",
+  "0x70a08231": "balanceOf(address)",
+  "0xa0712d68": "mint(uint256)",
+  "0xa9059cbb": "transfer(address,uint256)"
+}
