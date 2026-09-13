@@ -1,0 +1,19 @@
+{
+  "folder": "20260620_Namada",
+  "date": "2026.06.20",
+  "project_cn": "@namada（历史交易待核实）",
+  "project_en": "@namada (historical transaction unverified)",
+  "vulnerability_cn": "零知识证明验证结果检查错误（事件关联待补）",
+  "vulnerability_en": "Incorrect ZK-Proof Result Check (Incident Correlation Incomplete)",
+  "detail_cn": "官方事发前代码依赖 masp_proofs 3.0.9，其 BatchValidator.validate() 对 Result<bool, SynthesisError> 只检查 is_err()，因此代表证明无效的 Ok(false) 未被拒绝。官方 MASP PR #114 和 Namada masp-drain-fix PR #5026 提供修复与假证明回归测试。原表未提供攻击交易；此源码缺陷与本次约 60 万美元流出的逐笔对应尚未完成，不能把 IBC 转出路径直接当成已确认根因。",
+  "detail_en": "Pre-incident upstream code pins masp_proofs 3.0.9. BatchValidator.validate() checks only is_err() on Result<bool, SynthesisError>, so Ok(false) for an invalid proof is not rejected. MASP PR #114 and Namada masp-drain-fix PR #5026 provide the fix and fake-proof regression test. The sheet supplies no attack transaction; transaction-level correlation with this approximately $600K drain remains incomplete. IBC outflow alone does not establish the root cause.",
+  "tx_urls": [],
+  "vulnerable_contract_urls": [],
+  "loss_usd": 600000,
+  "source_status": "upstream_source_incident_correlation_incomplete",
+  "original_row": 101,
+  "historical_execution_replayed": false,
+  "source_language": "Rust",
+  "native_component": "Namada MASP / shielded_token; no EVM contract address",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260910_sheet_rows_99_103.json"
+}

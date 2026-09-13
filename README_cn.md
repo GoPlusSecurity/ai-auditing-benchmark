@@ -40,7 +40,7 @@ dataset/
 - 中文版：[`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - 英文版：[`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)
 
-两份 CSV 的行含义一致，仅字段语言不同。各列含义如下：
+两份 CSV 记录相同事件，字段语言和损失金额单位不同：中文为万美元，英文为千美元。各列含义如下：
 
 - **攻击时间**：事件发生日期（`YYYY.MM.DD`）。
 - **项目**：被攻击项目或协议（展示名可能与目录中的标识略有差异，如带 `@` 或括号说明）。
@@ -64,7 +64,13 @@ dataset/
 
 示例：`2025.05.28` + `@Corkprotocol` → `dataset/benchmark_simplified/20250528_Corkprotocol/`
 
-本次新增的 Thetanuts、DIP、Aztec 旧版桥、LittleBoyPlus、JB 已补充[攻击链路与原理说明](docs/cases/README.md)，用通俗语言详细说明合约负责什么、漏洞在哪里、攻击者怎样利用，并附对应代码和资料来源。对应事件目录的 `SOURCE.md` 也提供同一文档入口。
+已编写的[攻击链路与原理说明](docs/cases/README.md)用通俗语言说明合约或协议负责什么、漏洞在哪里、攻击者怎样利用，并附代码和资料来源。对应事件目录的 `SOURCE.md` 也提供同一文档入口。
+
+2026-09-10 按源表第 99–103 行补充 JaredFromSubway、BnbLabubu、Namada、Axelar / Secret、mySwap，并保留[原始行快照](docs/cases/sources/20260910_sheet_rows_99_103.json)。这批包含 Rust 协议代码和源码尚未取得的事件材料。新增目录的 `case_metadata.json` 用 `source_status` 标出源码缺失或历史交易对应不完整的情况；这类目录不能直接算作已验证的漏洞源码样本。缺失的交易或地址留空，限制写入 CSV 详情。中英文金额分别按万美元、千美元换算。
+
+mySwap CL 的两套目录现已保存攻击时执行的链上 Sierra 类，并通过类哈希校验。状态 `decompiled_sierra` 表示已恢复保留指令编号的伪 Cairo 代码：完整版保留 425 个函数，精简版保留攻击相关 5 个入口及其依赖，共 276 个函数。[Case 文档](docs/cases/20260619_mySwap.md)将具体检查与原始 RPC 跟踪对应；原始 Cairo 工程仍未恢复，未声称完成本地编译或攻击重放。
+
+JaredFromSubway 的两套目录已保存受害机器人完整的 13,835 字节 EVM runtime，提供 `.hex` 和 `.bin`。按攻击区块 25360696 及前一区块 25360695 的区块哈希查询，返回结果相同。状态 `runtime_bytecode_only` 表示已取得机器码，原始 Solidity 和反编译仍未取得；[字节码来源记录](dataset/benchmark_complete/20260621_JaredFromSubway/bytecode.json)保留地址、区块哈希、原始 RPC 证据和校验值。
 
 ## 与 AI 审计引擎的配合方式（建议）
 

@@ -1,0 +1,43 @@
+{
+  "folder": "20260620_BnbLabubu",
+  "chain_id": 56,
+  "retrieved_on": "2026-09-10",
+  "sources": [
+    {
+      "path": "contracts/OLPCToken.sol",
+      "source_address": "0x58815CDF9955121a6274680ab396a36FC9e00000",
+      "chain_id": 56,
+      "compiler": "0.8.33+commit.64118f21",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_url": "https://sourcify.dev/server/v2/contract/56/0x58815CDF9955121a6274680ab396a36FC9e00000?fields=all",
+      "sha256": "382d1f2c48d22bc0bfd50ed96892395c4246cc57873c9ca05a908395b81100f5",
+      "source_bundle_sha256": "b7cf66fb5ab36086779b0c28b332eb103a0314fabf91bfe9aa7bcc722a4e2dfc"
+    },
+    {
+      "path": "contracts/LABUBUToken.sol",
+      "source_address": "0x3494dfE19b721DAC6c5c8d7470c8F89548177777",
+      "chain_id": 56,
+      "compiler": "0.8.33+commit.64118f21",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_url": "https://sourcify.dev/server/v2/contract/56/0x3494dfE19b721DAC6c5c8d7470c8F89548177777?fields=all",
+      "sha256": "63d9e86d9976915db862b3c7eb014632579dc2017282d3abe948287ada2c6ed3",
+      "source_bundle_sha256": "2008186475010031041e947734eed0c0651ad93a94657acc8e88e7c903838548"
+    },
+    {
+      "path": "contracts/PancakePair.sol",
+      "source_address": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+      "chain_id": 56,
+      "compiler": "0.5.16+commit.9c3226ce",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_url": "https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE?fields=all",
+      "sha256": "ee86df4a4aa3e802ed3722685b124c51a4e81dc7456591ada5eb2b467d290532",
+      "source_bundle_sha256": "8e72e91e5fc7330ebe84dd4b4c6793d5c7aed4766ff0c1f3fdae26f673d70a17"
+    }
+  ],
+  "pair_source_boundary": "Source verified at 0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae; complete on-chain runtime byte-for-byte equals target pair code retrieved at latest. Historical equality is separately recorded if the RPC provides it. No claim that target pair itself is Sourcify-verified.",
+  "source_sheet_row": 100,
+  "original_report": "https://x.com/f12sec/status/2068325913935122673"
+}

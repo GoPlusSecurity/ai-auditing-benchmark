@@ -1,0 +1,290 @@
+{
+  "transaction_hash": "0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764",
+  "block_number": 105326393,
+  "block_hash": "0xef2d5f6ced7bab8a000f81e2348de6e1d6f25324d644ebd230a47ab8ee766b4b",
+  "timestamp_utc": "2026-06-20T11:31:03+00:00",
+  "transaction_status": "success",
+  "log_count": 166,
+  "olpc_pair_to_dead_transfer_count": 20,
+  "olpc_pair_to_dead_nonzero_count": 7,
+  "olpc_pair_to_dead_raw": "51928294776963524858027089",
+  "olpc_pair_to_dead_18_decimals": "51928294.776963524858027089",
+  "pair_sync_event_count_total": 22,
+  "pair_sync_events": [
+    {
+      "log_index": 3,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "51928295152453531310626131",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "51928295.152453531310626131"
+    },
+    {
+      "log_index": 10,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "5192829120518311686160491",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "5192829.120518311686160491"
+    },
+    {
+      "log_index": 17,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "519278853984553430613603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "519278.853984553430613603"
+    },
+    {
+      "log_index": 24,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "51924559999224863678979",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "51924.559999224863678979"
+    },
+    {
+      "log_index": 31,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "5187665264597489745387",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "5187.665264597489745387"
+    },
+    {
+      "log_index": 38,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "513243123087493731963",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "513.243123087493731963"
+    },
+    {
+      "log_index": 45,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "51662253314563091139",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "51.662253314563091139"
+    },
+    {
+      "log_index": 52,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 59,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 66,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 73,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 80,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 87,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 94,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 101,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 108,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 115,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 122,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 129,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 136,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 143,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "720372009849017508169693",
+      "reserve1_raw": "375490006459686603",
+      "reserve0_18_decimals": "720372.009849017508169693",
+      "reserve1_18_decimals": "0.375490006459686603"
+    },
+    {
+      "log_index": 153,
+      "address": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "event": "Sync",
+      "reserve0_raw": "31991107339937420799598",
+      "reserve1_raw": "8475490006459686603",
+      "reserve0_18_decimals": "31991.107339937420799598",
+      "reserve1_18_decimals": "8.475490006459686603"
+    }
+  ],
+  "attacker_usdt_net_raw": "1115903663412131721557252",
+  "selected_asset_transfers": [
+    {
+      "log_index": 152,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0xedb7dcb4cdfec957f8df5cbf5e94229a6cc9f365",
+      "receiver": "0x0e3ca1c81b52ff4281d2cf5f7f2c693874783acb",
+      "raw_amount": "688380902509080087370095",
+      "amount_18_decimals": "688380.902509080087370095"
+    },
+    {
+      "log_index": 155,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0x0e3ca1c81b52ff4281d2cf5f7f2c693874783acb",
+      "receiver": "0x5db85d56da09f61bec51386f1602ccf5bf555cc0",
+      "raw_amount": "688380902509080087370095",
+      "amount_18_decimals": "688380.902509080087370095"
+    },
+    {
+      "log_index": 156,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0x5db85d56da09f61bec51386f1602ccf5bf555cc0",
+      "receiver": "0x000000000000000000000000000000000000dead",
+      "raw_amount": "34419045125454004368504",
+      "amount_18_decimals": "34419.045125454004368504"
+    },
+    {
+      "log_index": 157,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0x5db85d56da09f61bec51386f1602ccf5bf555cc0",
+      "receiver": "0x000000000000000000000000000000000000dead",
+      "raw_amount": "89833707777434951401798",
+      "amount_18_decimals": "89833.707777434951401798"
+    },
+    {
+      "log_index": 158,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0x5db85d56da09f61bec51386f1602ccf5bf555cc0",
+      "receiver": "0x0e3ca1c81b52ff4281d2cf5f7f2c693874783acb",
+      "raw_amount": "564128149606191131599793",
+      "amount_18_decimals": "564128.149606191131599793"
+    },
+    {
+      "log_index": 159,
+      "address": "0x3494dfe19b721dac6c5c8d7470c8f89548177777",
+      "event": "Transfer",
+      "sender": "0x0e3ca1c81b52ff4281d2cf5f7f2c693874783acb",
+      "receiver": "0xdfacdc33e913710ead31ee40f9c5363ea673c421",
+      "raw_amount": "564128149606191131599793",
+      "amount_18_decimals": "564128.149606191131599793"
+    },
+    {
+      "log_index": 160,
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "event": "Transfer",
+      "sender": "0xdfacdc33e913710ead31ee40f9c5363ea673c421",
+      "receiver": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "raw_amount": "2041288163818878836174",
+      "amount_18_decimals": "2041.288163818878836174"
+    },
+    {
+      "log_index": 163,
+      "address": "0x55d398326f99059ff775485246999027b3197955",
+      "event": "Transfer",
+      "sender": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "receiver": "0x18d6c39ae9e537f948aa2212d44d8c23944fc188",
+      "raw_amount": "1115903663412131721557252",
+      "amount_18_decimals": "1115903.663412131721557252"
+    }
+  ],
+  "proof_boundary": "Decoded successful transaction receipt; logs prove event order and amounts, not all internal function calls. No local fork reproduction was run.",
+  "attacker_usdt_net_18_decimals": "1115903.663412131721557252"
+}

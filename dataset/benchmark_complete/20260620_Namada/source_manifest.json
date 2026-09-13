@@ -1,0 +1,817 @@
+{
+  "masp_commit": "7fcae1072d692221a0620469da7815e6d388ba54",
+  "namada_context_commit": "6714f3a363d7a2eb23fec00209ac1604acb5f205",
+  "masp_proofs_crate_version": "3.0.9",
+  "masp_proofs_crate_sha256": "328364c1a31969cf20f6297b1fbee34f1b0852bae499aaf17112cb2b7dd2e9c2",
+  "nam_bellperson_crate_version": "0.26.6-nam.1",
+  "nam_bellperson_crate_sha256": "b2db0fa5a3cc38b4b835b7d20f032d1f1266d4db7932d63d20b667dc9fb20416",
+  "nam_bellperson_crate_url": "https://static.crates.io/crates/nam-bellperson/nam-bellperson-0.26.6-nam.1.crate",
+  "source_groups": {
+    "masp": [
+      {
+        "path": "Cargo.lock",
+        "sha256": "6e713dd14363c5a8ad075806d721afe5cef2d0f0dd9fded89521f5e3bf6740e9",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/Cargo.lock"
+      },
+      {
+        "path": "Cargo.toml",
+        "sha256": "7b86606f0bf2cb363a93d71b3b74c548339087aec06c972c763e365b1876768c",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/Cargo.toml"
+      },
+      {
+        "path": "LICENSE-APACHE",
+        "sha256": "3708458dee7f359ac6c9c5558023ed481be87e5372c43ebd7f2ca7ad23c12026",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/LICENSE-APACHE"
+      },
+      {
+        "path": "LICENSE-MIT",
+        "sha256": "5746c0bdf1827f3ae16352345242bd67da23fda8e2d7e504264bc1aaea21c678",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/LICENSE-MIT"
+      },
+      {
+        "path": "masp_note_encryption/Cargo.toml",
+        "sha256": "7dd387b6221f361d780a0ac23a4d0e19628d6bac37622e032c0f57ff5f8fd4c7",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/Cargo.toml"
+      },
+      {
+        "path": "masp_note_encryption/CHANGELOG.md",
+        "sha256": "83447806e87c615ff8aec8a5bfd5b6c5e6102f02972e76a6f727e31bc71af16f",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/CHANGELOG.md"
+      },
+      {
+        "path": "masp_note_encryption/LICENSE-APACHE",
+        "sha256": "3708458dee7f359ac6c9c5558023ed481be87e5372c43ebd7f2ca7ad23c12026",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/LICENSE-APACHE"
+      },
+      {
+        "path": "masp_note_encryption/LICENSE-MIT",
+        "sha256": "e205942aefc85685b201f7ef18a65e40926ad2f8df962b772cf1097a165a4cbe",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/LICENSE-MIT"
+      },
+      {
+        "path": "masp_note_encryption/README.md",
+        "sha256": "523b4e6193bb855a8304242b6701a23d8a2a40ab29822cf5f46148df36141f46",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/README.md"
+      },
+      {
+        "path": "masp_note_encryption/src/batch.rs",
+        "sha256": "8be21a4d1bd264ca333816851559f328d2ad3f56367d3faee8bdeaed565d9027",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/src/batch.rs"
+      },
+      {
+        "path": "masp_note_encryption/src/lib.rs",
+        "sha256": "dc8df98c54254207a9c842385883b63b806c5577b3af6a7e85058425ae8892c1",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_note_encryption/src/lib.rs"
+      },
+      {
+        "path": "masp_primitives/Cargo.toml",
+        "sha256": "4b78e976c415fbf87ba7c918ab4eb521c9e7a8a8c29fbaae6b2dc3c1077e8e03",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/Cargo.toml"
+      },
+      {
+        "path": "masp_primitives/LICENSE-APACHE",
+        "sha256": "3708458dee7f359ac6c9c5558023ed481be87e5372c43ebd7f2ca7ad23c12026",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/LICENSE-APACHE"
+      },
+      {
+        "path": "masp_primitives/LICENSE-MIT",
+        "sha256": "38339cc9951c2f337351f8acb674d3de9a804fb82ad79a323ead441247bd4602",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/LICENSE-MIT"
+      },
+      {
+        "path": "masp_primitives/README.md",
+        "sha256": "6a8ae18cc132613017b069358f1b763a654a3e8e3c50eb5797c955d4afd60084",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/README.md"
+      },
+      {
+        "path": "masp_primitives/src/asset_type.rs",
+        "sha256": "ff93f67d89201e645a04f43d21105cf7bf528c451b38cd1fd767d429528bb7fe",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/asset_type.rs"
+      },
+      {
+        "path": "masp_primitives/src/consensus.rs",
+        "sha256": "d98738aaf14e47440ca3f57b83e3ffaa9328f0f719616cc6b8d63233c2f10745",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/consensus.rs"
+      },
+      {
+        "path": "masp_primitives/src/constants.rs",
+        "sha256": "dcb8e5479d3ed089933f9f19d9e3370325fc0767001f3ddb56603a77d1c0d242",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/constants.rs"
+      },
+      {
+        "path": "masp_primitives/src/convert.rs",
+        "sha256": "ff812e0737c378ddc762836d02d38df0fff8b4f7b284e8c90467fe8edf1b6638",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/convert.rs"
+      },
+      {
+        "path": "masp_primitives/src/keys.rs",
+        "sha256": "87ce97dd4bcc4b4e378b0aec0a2e895cc78997d66d46640db422634777295d5a",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/keys.rs"
+      },
+      {
+        "path": "masp_primitives/src/lib.rs",
+        "sha256": "1117e3e5af4cd0c58d706b7105c8a431022bd8c3cd5cd510390b57b382a963aa",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/lib.rs"
+      },
+      {
+        "path": "masp_primitives/src/memo.rs",
+        "sha256": "2745f6f4365bd018047d92ca5c605e960e05d2d6fe5221721181700849df9e5e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/memo.rs"
+      },
+      {
+        "path": "masp_primitives/src/merkle_tree.rs",
+        "sha256": "3d82b1851a064aaef3ffa25e7a47972296e9df17bff58ba0ecc977aa09983192",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/merkle_tree.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/group_hash.rs",
+        "sha256": "158fe642c5ec911a78fcbf7fc9bcb618b5cb84dbca5bf1f5dc096d3f6e80a49b",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/group_hash.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/keys.rs",
+        "sha256": "36486dea7087b23ba6c6f7515c4e7ce1010cedb036534f5b01bd511115db8a09",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/keys.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/note_encryption.rs",
+        "sha256": "338d4470903a02db7314ce4ec31ea590bc30f9e4d2bb77218a56d5d990f99e67",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/note_encryption.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/pedersen_hash.rs",
+        "sha256": "d4f806c359415ce2d9fb27de9dba55c424dcef9b82aa2944768c996c8ec85d89",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/pedersen_hash.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/prover.rs",
+        "sha256": "ec2b506d9e39d931a333171f0f84ad66533c57241779d4c730f773d5a3682174",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/prover.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/redjubjub.rs",
+        "sha256": "27a465247c606f6b57fc089480c808bde3c0af113b57675d8336922fe85938b7",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/redjubjub.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling/util.rs",
+        "sha256": "82d84326b3f99462025b28bb1bd1a02c82cdc1a9588c20c1848aa9664de4fd6f",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling/util.rs"
+      },
+      {
+        "path": "masp_primitives/src/sapling.rs",
+        "sha256": "73888ca69daeb23f9f59f2fd97a3d0269171f2bcf6fe3d90972e4fecbac9f6a9",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/sapling.rs"
+      },
+      {
+        "path": "masp_primitives/src/test_vectors/note_encryption.rs",
+        "sha256": "93b5d49b962074ff59403eccb77efe3db97e3a34a30327f6ab35d2c2d7b0adfb",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/test_vectors/note_encryption.rs"
+      },
+      {
+        "path": "masp_primitives/src/test_vectors/pedersen_hash_vectors.rs",
+        "sha256": "7c23aa62703150eea95ed15033634bf04c60cb891bd3f126db5893130bb9b8ec",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/test_vectors/pedersen_hash_vectors.rs"
+      },
+      {
+        "path": "masp_primitives/src/test_vectors.rs",
+        "sha256": "a10557a92f42a0cba714181803fb23c23410db28933aca4b5d7425aee511bb47",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/test_vectors.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/builder.rs",
+        "sha256": "b1a5d4fe2ba75d7fa763578bcbacaa92cd67ca87cff1de109afa5e92cab18252",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/builder.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/amount.rs",
+        "sha256": "b939efae97c133098833685b2fe565b9cd9573d40850d1d728bf31a00c5034f3",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/amount.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/sapling/builder.rs",
+        "sha256": "b4e2c74c91f23f91febc09347e525f5f9b07d043fc635521a17189a017dc6bb1",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/sapling/builder.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/sapling/fees.rs",
+        "sha256": "f7232260b5d8fa677ef6ff86f6d804e4bc24593ff913636095ec893758162b18",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/sapling/fees.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/sapling.rs",
+        "sha256": "7025a4a12ab9a424fb856f782b58f060cb61695277536bdf31a7ea985a6230a1",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/sapling.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/transparent/builder.rs",
+        "sha256": "681ef28b9e94081369e74395ad5aefebeef264c34c12b4734ba769009ffd91df",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/transparent/builder.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/transparent/fees.rs",
+        "sha256": "5cb34533e24beaf5265020f9561cfcdf8f2c29d6ef1c5b4dad6e308d151500ef",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/transparent/fees.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components/transparent.rs",
+        "sha256": "0a323c26600791c3dfba2026549b9abe18f9287d8cc17fd5148472679a7a2f28",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components/transparent.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/components.rs",
+        "sha256": "926f17e3362800b0f3807b3c890ebd36b3feba9078ebfab881f9cca16ed5ed86",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/components.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/fees/fixed.rs",
+        "sha256": "900fca2f8e81b4b92fca4a3668487e9660a968e9adb5cad94d58d37837c40655",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/fees/fixed.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/fees.rs",
+        "sha256": "31e4c0a2f7ab0db853d0485e20f0aa4ac7b4bb40ea848fb6255174f98270780e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/fees.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/sighash.rs",
+        "sha256": "86ee10df50bf7d37dbac19ca0e7997f8df3957d90d534e16b1adef2ba71ee93b",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/sighash.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/sighash_v5.rs",
+        "sha256": "9047030440bc4de3a543b07f758085ebfdc46fdd0a5369cfff3f4a80ab9352f9",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/sighash_v5.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction/txid.rs",
+        "sha256": "d07aacb9849b9730690d6860b1446289015824af70cb1fe7f34f66a5667a053e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction/txid.rs"
+      },
+      {
+        "path": "masp_primitives/src/transaction.rs",
+        "sha256": "8e2d5f3e66b8c3af87b78d5a95702577940b1d3601fd7461857c1aeae52e1f73",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/transaction.rs"
+      },
+      {
+        "path": "masp_primitives/src/zip32/sapling.rs",
+        "sha256": "f00189538ca78a1822435ad77a2715e86699c17c185bd8eca4682c7857e2b08e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/zip32/sapling.rs"
+      },
+      {
+        "path": "masp_primitives/src/zip32.rs",
+        "sha256": "828ba351e2321c4d52f59ca3e6e9fbd92aeb41a5b483668491eabc5d53d325fd",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/zip32.rs"
+      },
+      {
+        "path": "masp_primitives/src/zip339.rs",
+        "sha256": "7f86c2fcefeff0e178c915e426cf03e169232da7dc4a442a46ab3f1a26a5a150",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_primitives/src/zip339.rs"
+      },
+      {
+        "path": "masp_proofs/benches/convert.rs",
+        "sha256": "3d71ffcaa17919f5db899e7fb64282f71623e78bf2cc85b04426c14ed32ade1d",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/benches/convert.rs"
+      },
+      {
+        "path": "masp_proofs/benches/sapling.rs",
+        "sha256": "85114ec78f74a707b883fd87abc5a8a62c889c9347e7685dcc182ca1ad501968",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/benches/sapling.rs"
+      },
+      {
+        "path": "masp_proofs/Cargo.toml",
+        "sha256": "66f6f8ce1e246618dba79bdc25884adc2f41d04367883907e9f35d68c1c1193d",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/Cargo.toml"
+      },
+      {
+        "path": "masp_proofs/examples/download-params.rs",
+        "sha256": "68536ca7686fb8c7277b220640d7557ae8e0860f663134168b7eb95ecdc58416",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/examples/download-params.rs"
+      },
+      {
+        "path": "masp_proofs/examples/get-params-path.rs",
+        "sha256": "7e7007836fcf9a124468d54e897de5a0f97685cc6ff83d1474baa8d0d79efe17",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/examples/get-params-path.rs"
+      },
+      {
+        "path": "masp_proofs/examples/serialize-params.rs",
+        "sha256": "f2abd8c7202cec0c7e5a773e7076fb0279679ac38adbe7c73bc0e5e88403e3c4",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/examples/serialize-params.rs"
+      },
+      {
+        "path": "masp_proofs/LICENSE-APACHE",
+        "sha256": "3708458dee7f359ac6c9c5558023ed481be87e5372c43ebd7f2ca7ad23c12026",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/LICENSE-APACHE"
+      },
+      {
+        "path": "masp_proofs/LICENSE-MIT",
+        "sha256": "38339cc9951c2f337351f8acb674d3de9a804fb82ad79a323ead441247bd4602",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/LICENSE-MIT"
+      },
+      {
+        "path": "masp_proofs/params/.gitattributes",
+        "sha256": "e6f74b08d2dd41dce7ff2e6a71675bf88e7056137b38172de0bb5207e510436c",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/params/.gitattributes"
+      },
+      {
+        "path": "masp_proofs/README.md",
+        "sha256": "75abea8040e149f48fc204bbd3aa92b0e695a2253b688e9ec7ea3c9d9597e541",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/README.md"
+      },
+      {
+        "path": "masp_proofs/src/circuit/convert.rs",
+        "sha256": "76a2c2d14862989490fa0871ee4e01124836099dce9ff28c9511b72ebbcdd8a3",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit/convert.rs"
+      },
+      {
+        "path": "masp_proofs/src/circuit/ecc.rs",
+        "sha256": "e7e4138c9d3edfb5cf493f7f3e12a65b7e980e4ecf8051bb33af455f76381a75",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit/ecc.rs"
+      },
+      {
+        "path": "masp_proofs/src/circuit/gadgets.rs",
+        "sha256": "cbe8871ca059ab441df6b4d4cd0824b82a78d5e089184d0f2ef7afccde593704",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit/gadgets.rs"
+      },
+      {
+        "path": "masp_proofs/src/circuit/pedersen_hash.rs",
+        "sha256": "f8ace67430af540f963c38aca60f424d0deb24566b84368e073a8fad2a9e1928",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit/pedersen_hash.rs"
+      },
+      {
+        "path": "masp_proofs/src/circuit/sapling.rs",
+        "sha256": "c1efb5a7d68182908b6a51c38a66e7cf77fb2075e32d54de4ffd068042786788",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit/sapling.rs"
+      },
+      {
+        "path": "masp_proofs/src/circuit.rs",
+        "sha256": "0f52cddb574189570ad583e7364a8d844a07cd27e1850f84489754aeb707efa6",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/circuit.rs"
+      },
+      {
+        "path": "masp_proofs/src/constants.rs",
+        "sha256": "288815dd0365944829d033c85dce79a454b908b7c2e66ffc1a2bcfe49bff5a29",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/constants.rs"
+      },
+      {
+        "path": "masp_proofs/src/downloadreader.rs",
+        "sha256": "2f87245ab28ec2dcacd2cbc07f16ebe75916569f37d81e6ae2107bacf0b777b4",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/downloadreader.rs"
+      },
+      {
+        "path": "masp_proofs/src/hashreader.rs",
+        "sha256": "1dd28bba0b3e58302d2d729033eed948cfa9e9feacf9b60911d681301f43ab68",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/hashreader.rs"
+      },
+      {
+        "path": "masp_proofs/src/lib.rs",
+        "sha256": "3c820b38562d41ec2889d8df70819b6d68c145a0f5981a7c760ec69809d10bb3",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/lib.rs"
+      },
+      {
+        "path": "masp_proofs/src/params.rs",
+        "sha256": "6781b61aebf9298d5aeeb573ec68b2df8347121d4c4a0f579d3bec78a99f6327",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/params.rs"
+      },
+      {
+        "path": "masp_proofs/src/prover.rs",
+        "sha256": "98e118d6b83a49d9c5f2565ec8ec9998107fd4a8d310f8b0c56d99b4c786c58d",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/prover.rs"
+      },
+      {
+        "path": "masp_proofs/src/sapling/mod.rs",
+        "sha256": "6226e9099e984d5d6b5f93e2d33232cbed29656349958bd05714360f694f43bf",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/sapling/mod.rs"
+      },
+      {
+        "path": "masp_proofs/src/sapling/prover.rs",
+        "sha256": "0642315150a90b742e2d88b35ebdf9c4b398d1d92b3784c7ec26e19b6e100acf",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/sapling/prover.rs"
+      },
+      {
+        "path": "masp_proofs/src/sapling/verifier/batch.rs",
+        "sha256": "7c3a370c353397c013ae843fe80f61203247417cb41002f7b33373d58c62996e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/sapling/verifier/batch.rs"
+      },
+      {
+        "path": "masp_proofs/src/sapling/verifier/single.rs",
+        "sha256": "f9c7288f4657ae3a11498a65f2ebe0ec3e7fe36386d3819ec9995513d1d259f0",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/sapling/verifier/single.rs"
+      },
+      {
+        "path": "masp_proofs/src/sapling/verifier.rs",
+        "sha256": "d4db9e0de845cba212a093566c3bcbdccf6d59de6ece9559490edaff9163b78e",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/masp_proofs/src/sapling/verifier.rs"
+      },
+      {
+        "path": "README.md",
+        "sha256": "f76cd8be65dd2a72bed1b6f618dac4577a31bd73f24ee71b3ef6b6efd4be9a68",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/README.md"
+      },
+      {
+        "path": "rust-toolchain.toml",
+        "sha256": "0e85702dd92c5c86fbcb0b22e4331af26dd90d4cb8749227d143b067f3706276",
+        "upstream_url": "https://github.com/namada-net/masp/blob/7fcae1072d692221a0620469da7815e6d388ba54/rust-toolchain.toml"
+      }
+    ],
+    "namada_context": [
+      {
+        "path": "Cargo.lock",
+        "sha256": "4fe4112465411daf17b3c2115ea8846df4ca74b7f15a191f4c2b975016d3a260",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/Cargo.lock"
+      },
+      {
+        "path": "Cargo.toml",
+        "sha256": "59e6def0e40bc6310c442c7fbd2c42cd16bcd4cab967f2759ecc20fad14ee45f",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/Cargo.toml"
+      },
+      {
+        "path": "crates/ibc/src/actions.rs",
+        "sha256": "71198395ad7f32d8e4c827609cdad8f48abe7081209be470deedbdd0a3e827dd",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/ibc/src/actions.rs"
+      },
+      {
+        "path": "crates/ibc/src/lib.rs",
+        "sha256": "31aa6fcb28e03d17be202218df02e69903639b3c3e7410823b4a28d1bb2fe587",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/ibc/src/lib.rs"
+      },
+      {
+        "path": "crates/shielded_token/Cargo.toml",
+        "sha256": "5c1f8acae01bd04b1e2e651fdbb62e90bdf15557bb70dc8c048c398573c14f07",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/Cargo.toml"
+      },
+      {
+        "path": "crates/shielded_token/src/conversion.rs",
+        "sha256": "63091271613d8a7c2cba85a933bb1726b01b86c45a5fe6da7786a0135b77dbd9",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/conversion.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/lib.rs",
+        "sha256": "e948b6da1bd5ee0a48599ec0de43bf11f1e0cdcf2e33853f484420a7e6efca48",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/lib.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/bridge_tree.rs",
+        "sha256": "603f127aef48922e83658829df5dcf06f6129370b81b2d1c8ea1d41fd363baaf",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/bridge_tree.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/shielded_sync/dispatcher.rs",
+        "sha256": "8eba3caff9c0a7cadeb89a7ccbf576e212d100c24de95e17933a8c3601d3eb1a",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/shielded_sync/dispatcher.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/shielded_sync/mod.rs",
+        "sha256": "481db659bb9a29ef7ba5e273a45813b8d8226ebc156fc760c0f43c601eb7abd7",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/shielded_sync/mod.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/shielded_sync/utils.rs",
+        "sha256": "3431e20aeddfa3e4b7cbd76e8971322876a3ff3421680840f781d2895b3952ae",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/shielded_sync/utils.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/shielded_wallet.rs",
+        "sha256": "b87bb17c6a8efb2d52c69efb68d85572d1f8f5e3fc3ccfb7a8ae476888a46e01",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/shielded_wallet.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/test_utils.rs",
+        "sha256": "de63812f7bd787608f03b5d2cfb64aeb47c8e021196efd98b60a38c1ce307a0c",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/test_utils.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp/wallet_migrations.rs",
+        "sha256": "5e644a7aeb5b0c5244f5ee12bf0c3db08960d79dead37480b54f49064e4957fb",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp/wallet_migrations.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/masp.rs",
+        "sha256": "24e763a24c777d22ef59fccd9a6683c91b07aa08b32d2051ae74498006ebec68",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/masp.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/storage.rs",
+        "sha256": "a0eedbc6043b3eafff227b7a14b0ff2f31f3deec31b6bc59abfe258f3b915d45",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/storage.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/storage_key.rs",
+        "sha256": "9a4056b165859d6259a06b98892c6331fa659e0d823e8e6a75cd8c3d5453968c",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/storage_key.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/utils.rs",
+        "sha256": "47e436d4728fca898a4e4363db1ae230940353d68f214ff32da716c9497861d3",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/utils.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/validation.rs",
+        "sha256": "f2ea72ba8479e723eaf5cb0efadfea7f69a046a58aa2a0827cf5bb4e5c0aef14",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/validation.rs"
+      },
+      {
+        "path": "crates/shielded_token/src/vp.rs",
+        "sha256": "5190cae0a3c787f639532e24d30e9fc1e6c902d9f85b059d5936542bb3f4ba8d",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/crates/shielded_token/src/vp.rs"
+      },
+      {
+        "path": "LICENSE-GPL",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/LICENSE-GPL"
+      },
+      {
+        "path": "LICENSE-MIT",
+        "sha256": "8f328cf67074fccf60f7d5048d7d9c18e024fa0334aff775fd1c6559dfd296cb",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/LICENSE-MIT"
+      },
+      {
+        "path": "README.md",
+        "sha256": "270decd4352e6f7d655dece6f6a4b399fd6c0ccc18dac8c21a2f30b5f412989a",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/README.md"
+      },
+      {
+        "path": "rust-toolchain.toml",
+        "sha256": "90789d555f783680c01a344fd80794e77972b32f62f0af9b9d82cdab305c43d0",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/rust-toolchain.toml"
+      },
+      {
+        "path": "wasm/tx_ibc/src/lib.rs",
+        "sha256": "06d07d9c27f95e5a339faebc1486bb6753da2d79002ffa7854e2881d4141ec91",
+        "upstream_url": "https://github.com/namada-net/namada/blob/6714f3a363d7a2eb23fec00209ac1604acb5f205/wasm/tx_ibc/src/lib.rs"
+      }
+    ],
+    "nam-bellperson": [
+      {
+        "path": "Cargo.lock",
+        "sha256": "ae840f58617646c9317592ff4e0b0c4ffb9fd42367bcdc46c6372081d02c375c",
+        "upstream_url": null
+      },
+      {
+        "path": "Cargo.toml",
+        "sha256": "f3d51009d9920d1857d0916293cd10a436c1e0fd24bc0b8c710e98cd12786cf9",
+        "upstream_url": null
+      },
+      {
+        "path": "Cargo.toml.orig",
+        "sha256": "a5e37400d8533d43bb1d0f40eadabb4c7d28d710b66852d673aef8cc9e356247",
+        "upstream_url": null
+      },
+      {
+        "path": "COPYRIGHT",
+        "sha256": "2b25d98b677dacfebb9421a001182209153cd077682a0aca5d4e08c5df411027",
+        "upstream_url": null
+      },
+      {
+        "path": "LICENSE-APACHE",
+        "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+        "upstream_url": null
+      },
+      {
+        "path": "LICENSE-MIT",
+        "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+        "upstream_url": null
+      },
+      {
+        "path": "src/domain.rs",
+        "sha256": "73b1dc990d73c3860f4f52e5b3a10da7dee39f8a911473659fb55f7fc5d6e0d1",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/blake2s.rs",
+        "sha256": "a42e23bcc14fd72ef725da455c682c1609e2f2d3222478b901b41b407f238217",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/lookup.rs",
+        "sha256": "791644f87a972596ec06527bed5c13a6ebf24550639b6c6eccf793e1336540f2",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/multieq.rs",
+        "sha256": "65bdfc0d58a2d7dbeda6df419c62e3ac8e2d0d9337c954e8e9e6a768cd28af4e",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/multipack.rs",
+        "sha256": "32b5708a8cc71daa06de963a5ea8a10abe25a24b75258fdda46af712265e4f0d",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/sha256.rs",
+        "sha256": "84f6e7166aaa6a925ce1b9f61f6ed6ab225a32ce8fb56903216211350fa2b6ff",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/test/mod.rs",
+        "sha256": "845072be017493c64b54a119a0cc41153dd0e7bcc7d1de4bbba3145c6df63449",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets/uint32.rs",
+        "sha256": "ca46d38110ac5bf9b0bb69699a024a11ff6138fb73808983419714d40af6fa63",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gadgets.rs",
+        "sha256": "bbad08b56b26aee7fd6e53bd337ebc9af7c5d4a2e95a3b3c70bee9720ea560c6",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gpu/error.rs",
+        "sha256": "3244b966212a4de8b1d72b0f122a98302424a28bfd7ff5927b4c348e49ff5f12",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gpu/locks.rs",
+        "sha256": "8033dbfa6011e402d966fc4dc09a8d92250cc9f8336368b2e8ce1672c22a8fd4",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gpu/mod.rs",
+        "sha256": "fdb0fdcf3aee8d71fdd84434abe10d3534c9867b3a3abeb8b1768b72e230a512",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gpu/multiexp.rs",
+        "sha256": "6a793c5e8cc901b312922d82a1cab1f2a0c8ef82d43e1c3b3079c54dfd9c5854",
+        "upstream_url": null
+      },
+      {
+        "path": "src/gpu/nogpu.rs",
+        "sha256": "dc95b71b1b651be8ded5cf62a9908eed4cdf24125ddedf5ecee79808c3606f7f",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/accumulator.rs",
+        "sha256": "4e3f730fdb258fbcfc99bf44e575d23e8c3c1e2224de98309f323e4d5ef7808b",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/commit.rs",
+        "sha256": "bba8416bf783f295276694bc9a22958f16086a96af41d63b03534326b71f02a4",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/inner_product.rs",
+        "sha256": "b9020e4b9ecc144277dad13cdfe521f904bc1bcc86510f606d10aeb0bcab551d",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/macros.rs",
+        "sha256": "b01a2a1a33873625f87a3d0743d21abebff91f90e9f6b5df9a28d8792e0d7e40",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/mod.rs",
+        "sha256": "302a7b83383fd79ab8a918627e8fb97c61bc8953b2f488da985d8e449272d6d7",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/msm/fixed_base.rs",
+        "sha256": "03e2d2ef6cd25e590574ea48f79f207bd9367b052e2e3abc619c2e397759c022",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/msm/mod.rs",
+        "sha256": "54112b5713366bd5d88ca7055ebe0fff5a7c9d81e247e022bc7021b9cd0b06e6",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/poly.rs",
+        "sha256": "34f0e3503d775a846da17e127ba9c0513fc15112c2dc3e3f9f805bbdcd16d9aa",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/proof.rs",
+        "sha256": "07d07e3c759305f52497d7685d6f7c9584e622adec2e0831471be33670146c20",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/prove.rs",
+        "sha256": "2567e079f5165be398c01f8c9a04773e0c835864c5852a929a22f52d5d3fc1fa",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/srs.rs",
+        "sha256": "5c75d4410b2a6d96f28f5517070f1ac3eb52ab55e31bb5bfd7fa7453d3500091",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/transcript.rs",
+        "sha256": "4ae0d7da2ecc4a2bcf1eafe0cec2209ce0fde7c27bf377e6c6e782bff87b7ac8",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/aggregate/verify.rs",
+        "sha256": "72eb514dedc7e5758a8c7954e6a8d11006ab05e8e5c7020d1a1e2a695f3aaf95",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/ext.rs",
+        "sha256": "50977ffc02306073bcc3966447def6e10e2909c35a834aa6e20ab4cf08817685",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/ext_supraseal.rs",
+        "sha256": "3bb88f4237dda9a27eaf32bcee1fef588db24b36e44183b85c0ce953673986dc",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/generator.rs",
+        "sha256": "c1c9d426784fa4b7c8ac7ffd28408ee39e2a66c0a191c15e2653260d51695b3c",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/mapped_params.rs",
+        "sha256": "0fe2f587da70453ea6a0ba348c6be701b4f2927ad0bcf9bfeee940638c7fe1ec",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/mod.rs",
+        "sha256": "7b04fc7bf917797a38800148acfb06cbd977998b3473113758833cc176d486be",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/multiscalar.rs",
+        "sha256": "4de3ff6b307c6e750c414112bb33e3bf517b84170b11a24c537d51ea2d67d420",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/params.rs",
+        "sha256": "f7926ee3824a53858233dd3a162e7aa2a5fd29306a3d010e3b7fce0bc49ba923",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/proof.rs",
+        "sha256": "f332b8e4776da083bafc4088efe1a297c3f072f264f577db4fbacc858f60dd0f",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/prover/mod.rs",
+        "sha256": "be09f5785f4b38623ccefb672b4c2c4cb688e105028fe8ae057b3e39dd1155da",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/prover/native.rs",
+        "sha256": "85bb1a097d429e4ac6badb5e15348f539398cec541e2fe55b45190bfa314e394",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/prover/supraseal.rs",
+        "sha256": "c6f03d3b46ffee8d23b5cb3ad75d36be425ea92ec05065d56214b2a948bd6ba5",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/supraseal_params.rs",
+        "sha256": "0ebf9c143b7e24be5c5f8e4e49199b12ec351f77e9c2c70c5380d0abd5355c5b",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/verifier.rs",
+        "sha256": "e4217532d5833b693909b3d8c7a74b4ccdd4974f19407d6a3310a19a719962aa",
+        "upstream_url": null
+      },
+      {
+        "path": "src/groth16/verifying_key.rs",
+        "sha256": "715b4fdcb97f957d2cd8cb442fe257a5e9d2412aaf34a0ab8fa035c5b805ede2",
+        "upstream_url": null
+      },
+      {
+        "path": "src/lc.rs",
+        "sha256": "44e342d84a0d12a8002ece5e1cf60188af012f7df7843742f74f09840d025dbb",
+        "upstream_url": null
+      },
+      {
+        "path": "src/lib.rs",
+        "sha256": "2d8d533c811089a7414f201500fb376ccf1df68f25534409302ae2e541f27f66",
+        "upstream_url": null
+      },
+      {
+        "path": "src/multiexp.rs",
+        "sha256": "7573d2a1f9c8176480497da1d82e0cac0dd518e3eaf062d3f6c936b7015f0223",
+        "upstream_url": null
+      },
+      {
+        "path": "src/util_cs/bench_cs.rs",
+        "sha256": "c130d159851fdd1199535f21d5d39023134a780955457f577e1f6554797feeff",
+        "upstream_url": null
+      },
+      {
+        "path": "src/util_cs/metric_cs.rs",
+        "sha256": "b558303ed7e3cdb4dc42b257919880adc48a3854baa117555498d88b75bc2263",
+        "upstream_url": null
+      },
+      {
+        "path": "src/util_cs/mod.rs",
+        "sha256": "993c6905e5e75e25d94afa1faf138585591bcd2f026fc3257d827f01e2d5278f",
+        "upstream_url": null
+      },
+      {
+        "path": "src/util_cs/witness_cs.rs",
+        "sha256": "a284431185796971a841246e7b82cad7a4998de22870edd93172546bfca5211e",
+        "upstream_url": null
+      }
+    ]
+  }
+}

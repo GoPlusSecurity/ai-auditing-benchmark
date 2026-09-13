@@ -1,0 +1,18 @@
+{
+  "fixture_repository": "https://github.com/FuzzingLabs/thoth",
+  "fixture_commit": "7e023904bc2869ff43e25c3fcc8fa03f573a25ff",
+  "fixture_paths": [
+    "contract-class-converter/tests/files/test.json",
+    "contract-class-converter/tests/files/test.sierra"
+  ],
+  "fixture_sha256": {
+    "test.json": "ac5bc2133e94c816fbb2f3f2fccb13ac1dd880ec7f11b6146afcd183cc15fda3",
+    "test.sierra": "1a0095ba9bbf2d7aa8f429c74f90431ef8fcd9862ab98a03901ac164b09b3b0c"
+  },
+  "golden_sierra_text_matches_exactly": true,
+  "golden_statement_count": 2224,
+  "golden_function_count": 36,
+  "keccak_empty_and_abc_vectors_passed": true,
+  "thoth_decompiler_executed": false,
+  "method_note": "Independent text comparison against the pinned converter fixture, including types, libfuncs, all branches, results, returns, function signatures and PC comments."
+}

@@ -1,0 +1,21 @@
+{
+  "folder": "20260620_BnbLabubu",
+  "date": "2026.06.20",
+  "project_cn": "@BnbLabubu（OLPCToken）",
+  "project_en": "@BnbLabubu (OLPCToken)",
+  "vulnerability_cn": "销毁倍数配置缺少上限，导致交易池储备操纵",
+  "vulnerability_en": "Unbounded burn multiplier enabling AMM reserve manipulation",
+  "detail_cn": "OLPCToken._update 在交易池向非免税地址转出代币时，从池子扣除 value × decimalsValue 并转入销毁地址，再将接收方到账金额设为0；onlyOwner 的 setDecimalsValue 没有上限。攻击者通过少量转入、skim 和 sync 反复放大池内 OLPC 扣款，使储备失衡，再输入 OLPC 换出 LABUBU 并经 WBNB 换成 USDT。已核对源码与成功交易回执；不是重入。源表损失保留1115000美元；该交易攻击者USDT净流入为1115903.663412131721557252，未扣启动资金和gas。",
+  "detail_en": "OLPCToken._update debits value × decimalsValue from the AMM pair to the dead address on pair-originated transfers to non-exempt recipients, then sets the delivered amount to zero. The onlyOwner setter has no upper bound. The attacker repeatedly donated dust and used skim/sync to deplete OLPC reserves, then swapped OLPC for LABUBU and sold it via WBNB into USDT. Verified source and the successful receipt support reserve manipulation, not reentrancy. The sheet loss remains USD 1115000; the transaction's attacker USDT net inflow is 1115903.663412131721557252 before startup funds and gas.",
+  "tx_urls": [
+    "https://bscscan.com/tx/0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x58815CDF9955121a6274680ab396a36FC9e00000#code"
+  ],
+  "loss_usd": 1115000,
+  "source_status": "verified_original_source",
+  "original_row": 100,
+  "source_verification": "Sourcify matched original OLPCToken and LABUBUToken sources; PancakePair context taken from a matched reference pair whose complete deployed runtime equals the target pair runtime at retrieval; successful historical transaction receipt decoded; local fork reproduction not run.",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260910_sheet_rows_99_103.json"
+}

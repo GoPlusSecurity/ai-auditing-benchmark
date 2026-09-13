@@ -1,0 +1,86 @@
+{
+  "representation": "curator-authored factual evidence index; not downloaded report text or source code",
+  "retrieved_on": "2026-09-10",
+  "claims": [
+    {
+      "id": "date_and_transaction",
+      "source": "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+      "transaction": "0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+      "block": 25360696,
+      "timestamp_utc": "2026-06-20T18:49:11Z",
+      "timestamp_asia_shanghai": "2026-06-21T02:49:11+08:00",
+      "dataset_date": "2026-06-21",
+      "dataset_date_source": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0#range=A99:N99"
+    },
+    {
+      "id": "root_cause",
+      "sources": [
+        "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ],
+      "finding": "Bot-approved wrappers could leave allowances unspent; residual allowances were not revoked, enabling later transferFrom withdrawals.",
+      "victim_source_line": null,
+      "independently_replayed": false
+    },
+    {
+      "id": "wrapper_switch",
+      "source": "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+      "finding": "Report describes a per-block getStatus switch: the active mode skips transferFrom in wrapTo, leaving approval outstanding.",
+      "code_obtained": false,
+      "claimed_function_names_from": "published report"
+    },
+    {
+      "id": "approval_family",
+      "source": "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+      "approval_events_reported": 423,
+      "transactions_reported": 42,
+      "wrapper_contracts_invoked_at_drain_reported": 66,
+      "independently_counted": false
+    },
+    {
+      "id": "certik_scope",
+      "source": "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis",
+      "bait_contracts_invoked_at_drain_reported": 66,
+      "bait_contracts_with_victim_approval_reported": 60,
+      "independently_counted": false
+    },
+    {
+      "id": "blockaid_amounts",
+      "source": "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+      "reported_usd_approx": 7500000,
+      "reported_token_quantities": {
+        "WETH": "1474.58",
+        "USDC": "2870573",
+        "USDT": "2035760"
+      },
+      "amount_type": "reported sweep proceeds",
+      "independently_recounted": false
+    },
+    {
+      "id": "certik_amounts",
+      "source": "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis",
+      "reported_usd_approx": 7500000,
+      "reported_token_quantities": {
+        "WETH": "1474",
+        "USDC": "2869812.43",
+        "USDT": "2032769.62"
+      },
+      "amount_type": "reported fund flow; quantities differ from Blockaid",
+      "independently_recounted": false
+    },
+    {
+      "id": "other_reported_total",
+      "source": "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+      "reported_usd_approx": 15000000,
+      "scope": "operator incident total as reported by BlockSec; not reconciled to the representative transaction",
+      "include_in_dataset_loss": false,
+      "reconciliation_status": "unresolved"
+    },
+    {
+      "id": "erc20_allowance_semantics",
+      "source": "https://eips.ethereum.org/EIPS/eip-20",
+      "finding": "approve grants spender permission; repeating approve replaces the same allowance. transferFrom can use that permission later. Name and symbol do not authenticate the issuer.",
+      "copyright": "CC0"
+    }
+  ]
+}

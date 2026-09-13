@@ -1,0 +1,80 @@
+{
+  "upstream_commit": "b2061822376a772da0e55bbf9436797b9d0356b7",
+  "standalone_compilation": false,
+  "slices": [
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/ibc.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs",
+      "ranges": [
+        [
+          1,
+          181
+        ],
+        [
+          193,
+          273
+        ],
+        [
+          351,
+          372
+        ]
+      ],
+      "sha256": "114d471f0f2c70b50648a2c8a7bc8992c7063724796c7fba7576b6f2fe5a8ce2"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/contract.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/contract.rs",
+      "ranges": [
+        [
+          1,
+          202
+        ]
+      ],
+      "sha256": "b7e5aae20f18f89a48ce0a24aaacab4a2cf57557a1c797e439d53dba6844280b"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/state.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/state.rs",
+      "ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "sha256": "ababff094a634bd3569a93923e072797a2a80aebcf4c1a1d0694f89d03723518"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/msg.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/msg.rs",
+      "ranges": [
+        [
+          1,
+          105
+        ]
+      ],
+      "sha256": "1ec88604c2421ed38fbc59cb52b5d535e27731f7ed8e33a309b857b8f44825b2"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/error.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/error.rs",
+      "ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "sha256": "26f2945015c4500be25096aaae1f23ed0dba74c666883794c6808d76abf94d7f"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260619_Axelar_Secret/src/amount.rs",
+      "source": "dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/amount.rs",
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "sha256": "5f13608424d1e64adae3dbb2e13c2ce5c030f1ee52fe4f8a226d406a297c843e"
+    }
+  ]
+}

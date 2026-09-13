@@ -1,0 +1,49 @@
+{
+  "chain_id": 1,
+  "evidence_type": "Address attribution from primary security reports; victim runtime now archived and receipt contains transfers from this address. See ../bytecode.json.",
+  "addresses": [
+    {
+      "address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+      "role": "victim_mev_bot_contract",
+      "include_in_vulnerable_contract_urls": true,
+      "sources": [
+        "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ]
+    },
+    {
+      "address": "0x4ee0b6e9f9c4886beeef2ebd7fc27223169531ce",
+      "role": "attacker_fake_wrapper_and_approved_spender",
+      "include_in_vulnerable_contract_urls": false,
+      "sources": [
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ]
+    },
+    {
+      "address": "0x3e37f4a10d771ba9de44b6d301410b1bedea65d0",
+      "role": "attacker_asset_recipient",
+      "include_in_vulnerable_contract_urls": false,
+      "sources": [
+        "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ]
+    },
+    {
+      "address": "0xb84db016324e8f2bfdd8dd9c260338aee0a8df52",
+      "role": "attacker_sweep_and_status_coordinator_contract",
+      "include_in_vulnerable_contract_urls": false,
+      "sources": [
+        "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ]
+    },
+    {
+      "address": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "role": "victim_operator_address",
+      "include_in_vulnerable_contract_urls": false,
+      "sources": [
+        "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+      ]
+    }
+  ]
+}

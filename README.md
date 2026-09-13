@@ -40,7 +40,7 @@ The CSV in the repository root lists **all incidents** currently included in `da
 - Chinese: [`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - English: [`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)
 
-Both CSVs have identical rows; only the field language differs. Column meanings:
+Both CSVs describe the same incidents; field language and loss units differ. Column meanings:
 
 - **Attack date**: Incident date (`YYYY.MM.DD`).
 - **Project**: The exploited project or protocol (the display name may differ slightly from the directory slug, e.g., with `@` or parenthetical notes).
@@ -48,7 +48,7 @@ Both CSVs have identical rows; only the field language differs. Column meanings:
 - **Vulnerability details**: The exploit technique and defect description.
 - **Attack transaction**: Representative on-chain transaction hash.
 - **Vulnerable contract address**: Related contract address(es) (may span multiple lines within a cell).
-- **Loss (10k USD)**: Reported or estimated loss amount.
+- **Loss**: Reported or estimated loss amount, in 10,000 USD units in the Chinese CSV and 1,000 USD units in the English CSV.
 
 **Mapping to directory names**: Incident folder names under both `dataset/benchmark_complete` and `benchmark_simplified` use `{IncidentDateYYYYMMDD}_{ProjectOrProtocolSlug}`. The date is derived from **Attack date** as an 8-digit number (e.g., `2025.05.28` → `20250528`). `{ProjectOrProtocolSlug}` corresponds to the **Project** column and is typically a filesystem-safe slug in lowercase/camel case (e.g., `@Corkprotocol` in the table maps to `20250528_Corkprotocol`). If the **Project** column includes extra notes (e.g., addresses in parentheses), the directory name usually still uses a short protocol identifier; the actual folder names in the repo are authoritative.
 
@@ -63,6 +63,14 @@ Source-tree paths vary by incident. Browse within the corresponding directory by
    - `dataset/benchmark_simplified/{dir}/...`: Minimal necessary slice (fewer tokens, faster regression).
 
 Example: `2025.05.28` + `@Corkprotocol` → `dataset/benchmark_simplified/20250528_Corkprotocol/`
+
+[Chinese case explanations](docs/cases/README.md) describe each system's purpose, defect, attack sequence, asset flow, and evidence limits. The 2026-09-10 import follows the sheet's current rows 99–103: JaredFromSubway, BnbLabubu, Namada, Axelar / Secret, and mySwap. A [source-row snapshot](docs/cases/sources/20260910_sheet_rows_99_103.json) preserves the mapping as sheet rows can move.
+
+This batch includes Rust protocol code and incident evidence for which victim source has not been obtained. Each new directory's `case_metadata.json` exposes `source_status`; missing victim source or incomplete historical-transaction correlation must be filtered before treating the entry as a verified exploit-code sample. Unknown transaction/address fields remain blank and are explained in the CSV. Chinese loss values use 10,000 USD units; English loss values use 1,000 USD units.
+
+mySwap CL now includes the historically executed on-chain Sierra class in both views, with its class hash verified. Its `decompiled_sierra` status distinguishes the recovered SSA / pseudo-Cairo code from verified original Cairo: the complete view retains 425 functions, and the simplified view retains 276 functions covering the five attack entries and their internal dependencies. [Case documentation](docs/cases/20260619_mySwap.md) links the recovered checks to the raw RPC trace; no local Cairo recompilation or exploit replay is claimed.
+
+JaredFromSubway now includes the victim's full 13,835-byte EVM runtime in both views, as `.hex` and `.bin`. Block-hash-pinned reads at attack block 25360696 and preceding block 25360695 match. Status `runtime_bytecode_only` distinguishes these machine-code inputs from original Solidity or decompiled source, which remain unavailable. [Bytecode provenance](dataset/benchmark_complete/20260621_JaredFromSubway/bytecode.json) records the address, block hashes, raw RPC evidence and checksums.
 
 ## Suggested usage with AI auditing engines
 

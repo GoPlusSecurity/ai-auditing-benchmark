@@ -1,0 +1,5 @@
+[
+  {"jsonrpc":"2.0","id":1,"method":"starknet_getClassHashAt","params":{"block_id":{"block_number":10951100},"contract_address":"0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111"}},
+  {"jsonrpc":"2.0","id":2,"method":"starknet_getTransactionReceipt","params":{"transaction_hash":"0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588"}},
+  {"jsonrpc":"2.0","id":3,"method":"starknet_chainId","params":[]}
+]

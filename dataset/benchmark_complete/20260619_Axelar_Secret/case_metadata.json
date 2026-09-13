@@ -1,0 +1,28 @@
+{
+  "folder": "20260619_Axelar_Secret",
+  "date": "2026.06.19",
+  "project_cn": "@axelar（Secret 侧桥）",
+  "project_en": "@axelar (Secret-side bridge)",
+  "vulnerability_cn": "来源通道验证缺失 + 无抵押铸币",
+  "vulnerability_en": "Missing Source-Channel Validation + Unbacked Minting",
+  "detail_cn": "Secret 侧 ics20-for-axelar 的 do_ibc_packet_receive() 只按 denom 查允许列表，未将来源通道绑定到真正的 Axelar。攻击者从自建链发送伪造存款消息，铸出 saTokens，再通过真实通道赎回 Axelar 托管资产。源码为官方披露对应的 Rust 提交 b206182；实际攻击发生于 2026-06-10，索引日期沿用源表。",
+  "detail_en": "The Secret-side ics20-for-axelar do_ibc_packet_receive() checks the denom allow-list without binding the source channel to genuine Axelar. Forged deposits from an attacker-controlled chain mint unbacked saTokens, which are redeemed through the genuine channel for escrowed assets. Rust source is pinned to the officially identified b206182 revision. The attack occurred on 2026-06-10; the index retains the sheet date.",
+  "tx_urls": [
+    "https://www.mintscan.io/secret/tx/01526FA5A35AB071ABF66F8F3F3F390EA62356EA2CF8B54B219F5DE974532DE6",
+    "https://www.mintscan.io/axelar/tx/C03B1FE0EEF40EB3765A6FD93F26FF1CCAF10B569C18B15A0D57B4324D8C2EC3"
+  ],
+  "vulnerable_contract_urls": [
+    "https://www.mintscan.io/secret/address/secret1yxjmepvyl2c25vnt53cr2dpn8amknwausxee83"
+  ],
+  "loss_usd": 4670000,
+  "source_status": "officially_identified_upstream_source",
+  "original_row": 102,
+  "historical_execution_replayed": false,
+  "sheet_transactions": [
+    "https://www.mintscan.io/axelar/tx/C6F4F590B36EFF5FDCDE8996D9270AC3EE2DA243A3AC88E0F152FC074F9EB0FB?height=29841952 ",
+    "https://www.mintscan.io/axelar/tx/0072DE8548F12CC530A73B69FB494B690FDD4D7EFC5988236B07C1C354AC4E54?height=29842118 ",
+    "https://www.mintscan.io/axelar/tx/9DE90F7B5EE221351F4842FBEFC3F6B0A291C1EED846693BD3FC38730EB45AD1?height=29842126"
+  ],
+  "sheet_transactions_verified_as_initial_exploit": false,
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260910_sheet_rows_99_103.json"
+}

@@ -1,0 +1,20 @@
+{
+  "representation": "report-derived evidence outline, not recovered code",
+  "victim": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+  "attacker_wrapper_example": "0x4ee0b6e9f9c4886beeef2ebd7fc27223169531ce",
+  "transaction": "0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+  "sources": [
+    "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+    "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis",
+    "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway"
+  ],
+  "steps": [
+    "Fake wrapper/pool routes induce the victim bot to approve real-token spending.",
+    "The malicious wrapper can skip spending the approval during a seemingly profitable operation.",
+    "The victim's residual allowance remains usable after that operation ends.",
+    "An attacker-controlled sweep activates wrappers to call realToken.transferFrom(victim, attacker, amount)."
+  ],
+  "source_code_line_numbers": null,
+  "solidity_files_present": false,
+  "exploit_replayed": false
+}

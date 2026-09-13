@@ -1,0 +1,164 @@
+{
+  "transaction_hash": "0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+  "block_number": 10951100,
+  "historical_class_hash": "0x8fade1a36f2bfcaa55b53c96dfb615e8e60110b87765cf449d09b6e0397b17",
+  "receipt_status": "SUCCEEDED",
+  "receipt_event_count": 128,
+  "victim_call_count": 60,
+  "victim_calls_all_use_verified_class_hash": true,
+  "victim_calls_all_direct_children_of_attacker_execution": true,
+  "source": "trace-response.json and history-response.json",
+  "rounds": [
+    {
+      "round": 1,
+      "raw_call_range": [
+        2,
+        6
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "124286986121882537473",
+      "deposit_pointer": "/result/execute_invocation/calls/3/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/6/calls/1"
+    },
+    {
+      "round": 2,
+      "raw_call_range": [
+        7,
+        11
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "12428698612188257023",
+      "deposit_pointer": "/result/execute_invocation/calls/8/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/11/calls/1"
+    },
+    {
+      "round": 3,
+      "raw_call_range": [
+        12,
+        16
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "1242869861218826469",
+      "deposit_pointer": "/result/execute_invocation/calls/13/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/16/calls/1"
+    },
+    {
+      "round": 4,
+      "raw_call_range": [
+        17,
+        21
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "207358447095993091017339",
+      "deposit_pointer": "/result/execute_invocation/calls/18/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/21/calls/1"
+    },
+    {
+      "round": 5,
+      "raw_call_range": [
+        22,
+        26
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "20735844709599287291352",
+      "deposit_pointer": "/result/execute_invocation/calls/23/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/26/calls/1"
+    },
+    {
+      "round": 6,
+      "raw_call_range": [
+        27,
+        31
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "2073584470959928624277",
+      "deposit_pointer": "/result/execute_invocation/calls/28/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/31/calls/1"
+    },
+    {
+      "round": 7,
+      "raw_call_range": [
+        32,
+        36
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "40652173987",
+      "deposit_pointer": "/result/execute_invocation/calls/33/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/36/calls/1"
+    },
+    {
+      "round": 8,
+      "raw_call_range": [
+        37,
+        41
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "4065217397",
+      "deposit_pointer": "/result/execute_invocation/calls/38/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/41/calls/1"
+    },
+    {
+      "round": 9,
+      "raw_call_range": [
+        42,
+        46
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "406521739",
+      "deposit_pointer": "/result/execute_invocation/calls/43/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/46/calls/1"
+    },
+    {
+      "round": 10,
+      "raw_call_range": [
+        47,
+        51
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "17968687380",
+      "deposit_pointer": "/result/execute_invocation/calls/48/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/51/calls/1"
+    },
+    {
+      "round": 11,
+      "raw_call_range": [
+        52,
+        56
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "1796868737",
+      "deposit_pointer": "/result/execute_invocation/calls/53/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/56/calls/1"
+    },
+    {
+      "round": 12,
+      "raw_call_range": [
+        57,
+        61
+      ],
+      "normalized_fields_match_raw_trace": true,
+      "real_token_deposit_base_units": "0",
+      "real_token_transfer_base_units": "179686873",
+      "deposit_pointer": "/result/execute_invocation/calls/58/calls/1",
+      "payment_pointer": "/result/execute_invocation/calls/61/calls/1"
+    }
+  ],
+  "actual_token_transfer_totals_base_units": {
+    "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": "137958554595289620965",
+    "0x4718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": "230167876276552306932968",
+    "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8": "45123913123",
+    "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8": "19945242990"
+  },
+  "local_transaction_replay": false
+}

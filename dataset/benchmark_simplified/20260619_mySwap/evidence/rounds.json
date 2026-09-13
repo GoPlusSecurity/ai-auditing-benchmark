@@ -1,0 +1,53 @@
+{
+  "format": "normalized Voyager visible decoded-call observations; not a raw RPC trace",
+  "retrieved_at_date": "2026-09-10",
+  "transaction_url": "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+  "transaction_hash": "0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+  "block_number": 10951100,
+  "timestamp_utc": "2026-06-19T07:15:46Z",
+  "sender": "0x029f9de5cafb30f55e4a6f4f032e8774958520c1649b3a0441f1354c0b330518",
+  "victim_contract": "0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+  "executed_class_hash": "0x008fade1a36f2bfcaa55b53c96dfb615e8e60110b87765cf449d09b6e0397b17",
+  "token0_all_rounds": "0x028c9acd8eb7dc1cd7e3da98da3997cb57beca3c39d425e90780195df3a9a49e",
+  "token0_symbol": "EVIL",
+  "call_order_each_round": [
+    "create_pool",
+    "mint",
+    "initialize_pool_price",
+    "burn",
+    "collect"
+  ],
+  "result_order": [
+    "amount0",
+    "amount1"
+  ],
+  "tick_encoding_note": "Unsigned u32 values exactly as decoded by Voyager; no signed tick offset interpretation is asserted.",
+  "amount_encoding_note": "Hexadecimal token base units. Liquidity is a u128 share/position quantity, not a token amount. collect_result is independently distinguished from token transfer observations.",
+  "rounds": [
+    {
+      "round": 1,
+      "token1": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "fee": "0x2710",
+      "pool_key": "0x6739d99c62840e6261741be69f88c71d5169a2f506af9fa7dc7d2b808fbe4cb",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0xb10300a3eb05da515",
+      "mint_result": [
+        "0x06bcd413608eb68e02",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x06bcd413608eb68e01"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x6bcd413608eb68e01"
+      ],
+      "burn_liquidity": "0xb10300a3eb05da515"
+    }
+  ],
+  "view": "simplified evidence: first ETH round only",
+  "original_round_count": 12
+}

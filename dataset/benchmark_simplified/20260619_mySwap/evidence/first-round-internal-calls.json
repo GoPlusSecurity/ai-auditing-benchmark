@@ -1,0 +1,44 @@
+{
+  "format": "selected fields transcribed from Voyager visible Internal Calls UI; not a raw RPC trace",
+  "retrieved_at_date": "2026-09-10",
+  "transaction_url": "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588#internalCalls",
+  "first_round_call_tree": [
+    {"id":"0.2","target":"mySwap CL AMM","function":"create_pool"},
+    {"id":"0.3","target":"mySwap CL AMM","function":"mint"},
+    {"id":"0.3.0","target":"EVIL","function":"transferFrom"},
+    {"id":"0.3.1","target":"ETH","function":"transferFrom"},
+    {"id":"0.4","target":"mySwap CL AMM","function":"initialize_pool_price"},
+    {"id":"0.5","target":"mySwap CL AMM","function":"burn"},
+    {"id":"0.6","target":"mySwap CL AMM","function":"collect"},
+    {"id":"0.6.0","target":"ETH","function":"balanceOf"},
+    {"id":"0.6.1","target":"ETH","function":"transfer"}
+  ],
+  "expanded_call_details": [
+    {
+      "id":"0.3.1",
+      "function":"transferFrom",
+      "contract":"0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "sender":"0x29f9de5cafb30f55e4a6f4f032e8774958520c1649b3a0441f1354c0b330518",
+      "recipient":"0x1114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+      "amount_hex":"0x00",
+      "return_bool_hex":"0x1"
+    },
+    {
+      "id":"0.6.0",
+      "function":"balanceOf",
+      "contract":"0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "account":"0x1114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+      "return_u256_hex":"0x077c79dca42bdc3bcf"
+    },
+    {
+      "id":"0.6.1",
+      "function":"transfer",
+      "contract":"0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "recipient":"0x29f9de5cafb30f55e4a6f4f032e8774958520c1649b3a0441f1354c0b330518",
+      "amount_hex":"0x06bcd413608eb68e01",
+      "return_bool_hex":"0x1"
+    }
+  ],
+  "tree_observation": "The displayed tree has 112 calls. After deployContract/constructor and approve, twelve rounds each contain five direct mySwap calls; each mint has EVIL.transferFrom and real-token.transferFrom children, and each collect has real-token.balanceOf and real-token.transfer children. No re-entry from EVIL into mySwap appears in this displayed tree.",
+  "limitations": "This selected record does not include every raw calldata item, event or storage diff. Absence of a callback in the displayed call tree is not a Cairo source audit. Explorer AI SUMMARY was not used as technical evidence."
+}

@@ -1,0 +1,26 @@
+{
+  "folder": "20260621_JaredFromSubway",
+  "date": "2026.06.21",
+  "project_cn": "#JaredFromSubway [运行时字节码]",
+  "project_en": "#JaredFromSubway [Runtime bytecode]",
+  "vulnerability_cn": "不可信包装合约授权未消耗或撤销",
+  "vulnerability_en": "Unconsumed and unrevoked approvals to untrusted wrappers",
+  "detail_cn": "公开报告称，攻击者通过假包装代币和交易池诱使 MEV 机器人向不可信 wrapper 授权真实 WETH、USDC、USDT；wrapper 在特定状态下不消耗授权，机器人也未撤销剩余额度，攻击者随后调用 transferFrom 扣走资金。受害机器人为 0x1f2f10d1c40777ae1da742455c65828ff36df387，原表恶意地址不是受害合约。本条保留约750万美元口径；另有约1500万美元报道尚未逐笔对齐。已保存受害机器人在攻击区块及前一区块的运行时字节码，共 13,835 字节，历史查询结果一致；原始 Solidity 和反编译代码尚未取得，未独立重放。",
+  "detail_en": "Primary reports describe fake wrappers and pools inducing the MEV bot to approve real WETH, USDC and USDT. Malicious wrappers could leave approvals unspent, and the bot did not revoke the remaining allowances; the attacker later used transferFrom to drain funds. The victim bot is 0x1f2f10d1c40777ae1da742455c65828ff36df387, not the sheet's malicious addresses. This entry retains the approximately USD 7.5M scope; a separate approximately USD 15M report has not been reconciled transaction by transaction. The victim runtime bytecode is archived at the attack block and its preceding block: 13,835 identical bytes. Original Solidity and decompilation remain unavailable; no independent replay.",
+  "tx_urls": [
+    "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387"
+  ],
+  "loss_usd": 7500000,
+  "source_status": "runtime_bytecode_only",
+  "original_row": 99,
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260910_sheet_rows_99_103.json",
+  "victim_runtime_bytecode_obtained": true,
+  "historical_runtime_match_verified": true,
+  "runtime_bytecode_file": "onchain/JaredFromSubway.runtime.hex",
+  "runtime_bytecode_binary": "onchain/JaredFromSubway.runtime.bin",
+  "runtime_bytecode_bytes": 13835,
+  "runtime_bytecode_metadata": "bytecode.json"
+}

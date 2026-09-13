@@ -1,0 +1,60 @@
+{
+  "standalone_compilation": false,
+  "slices": [
+    {
+      "path": "dataset/benchmark_simplified/20260620_Namada/masp/masp_proofs/src/sapling/verifier/batch.rs",
+      "source": "dataset/benchmark_complete/20260620_Namada/masp/masp_proofs/src/sapling/verifier/batch.rs",
+      "ranges": [
+        [
+          1,
+          240
+        ]
+      ],
+      "sha256": "6a32fc72ae02fa8e110a802e29eed02db9bf5c691e452c9ce8032b113861217c"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260620_Namada/masp/masp_proofs/src/sapling/verifier.rs",
+      "source": "dataset/benchmark_complete/20260620_Namada/masp/masp_proofs/src/sapling/verifier.rs",
+      "ranges": [
+        [
+          1,
+          204
+        ]
+      ],
+      "sha256": "d4db9e0de845cba212a093566c3bcbdccf6d59de6ece9559490edaff9163b78e"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260620_Namada/masp/masp_primitives/src/transaction/components/sapling.rs",
+      "source": "dataset/benchmark_complete/20260620_Namada/masp/masp_primitives/src/transaction/components/sapling.rs",
+      "ranges": [
+        [
+          1,
+          760
+        ]
+      ],
+      "sha256": "7025a4a12ab9a424fb856f782b58f060cb61695277536bdf31a7ea985a6230a1"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260620_Namada/namada_context/crates/shielded_token/src/validation.rs",
+      "source": "dataset/benchmark_complete/20260620_Namada/namada_context/crates/shielded_token/src/validation.rs",
+      "ranges": [
+        [
+          1,
+          309
+        ]
+      ],
+      "sha256": "9ed4bc98bf4d64dccd56c7824832492c9055717af703f7181e1c467c9ecad2fd"
+    },
+    {
+      "path": "dataset/benchmark_simplified/20260620_Namada/nam-bellperson/src/groth16/verifier.rs",
+      "source": "dataset/benchmark_complete/20260620_Namada/nam-bellperson/src/groth16/verifier.rs",
+      "ranges": [
+        [
+          1,
+          276
+        ]
+      ],
+      "sha256": "e4217532d5833b693909b3d8c7a74b4ccdd4974f19407d6a3310a19a719962aa"
+    }
+  ]
+}

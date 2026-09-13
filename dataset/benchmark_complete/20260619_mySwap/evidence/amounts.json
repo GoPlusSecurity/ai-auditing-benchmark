@@ -1,0 +1,139 @@
+{
+  "basis": "Exact sum of the 12 decoded collect return values in rounds.json, checked against the Overview transfer list. This is not a complete raw-event or net-loss ledger.",
+  "decimal_scale_note": "ETH and STRK use 18 decimals; USDC.e and USDT use 6. These scales match the token quantities displayed by Voyager.",
+  "rounds": [
+    {
+      "round": 1,
+      "symbol": "ETH",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "124286986121882537473",
+      "collect_token_units": "124.286986121882537473"
+    },
+    {
+      "round": 2,
+      "symbol": "ETH",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "12428698612188257023",
+      "collect_token_units": "12.428698612188257023"
+    },
+    {
+      "round": 3,
+      "symbol": "ETH",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "1242869861218826469",
+      "collect_token_units": "1.242869861218826469"
+    },
+    {
+      "round": 4,
+      "symbol": "STRK",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "207358447095993091017339",
+      "collect_token_units": "207358.447095993091017339"
+    },
+    {
+      "round": 5,
+      "symbol": "STRK",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "20735844709599287291352",
+      "collect_token_units": "20735.844709599287291352"
+    },
+    {
+      "round": 6,
+      "symbol": "STRK",
+      "decimals": 18,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "2073584470959928624277",
+      "collect_token_units": "2073.584470959928624277"
+    },
+    {
+      "round": 7,
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "40652173987",
+      "collect_token_units": "40652.173987"
+    },
+    {
+      "round": 8,
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "4065217397",
+      "collect_token_units": "4065.217397"
+    },
+    {
+      "round": 9,
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "406521739",
+      "collect_token_units": "406.521739"
+    },
+    {
+      "round": 10,
+      "symbol": "USDT",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "17968687380",
+      "collect_token_units": "17968.68738"
+    },
+    {
+      "round": 11,
+      "symbol": "USDT",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "1796868737",
+      "collect_token_units": "1796.868737"
+    },
+    {
+      "round": 12,
+      "symbol": "USDT",
+      "decimals": 6,
+      "mint_real_token_base_units": "0",
+      "collect_base_units": "179686873",
+      "collect_token_units": "179.686873"
+    }
+  ],
+  "totals": [
+    {
+      "symbol": "ETH",
+      "token_address": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "decimals": 18,
+      "collect_base_units": "137958554595289620965",
+      "collect_token_units": "137.958554595289620965",
+      "sheet_reported_token_units": "137.96"
+    },
+    {
+      "symbol": "STRK",
+      "token_address": "0x4718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+      "decimals": 18,
+      "collect_base_units": "230167876276552306932968",
+      "collect_token_units": "230167.876276552306932968",
+      "sheet_reported_token_units": "230167.88"
+    },
+    {
+      "symbol": "USDC.e",
+      "token_address": "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      "decimals": 6,
+      "collect_base_units": "45123913123",
+      "collect_token_units": "45123.913123",
+      "sheet_reported_token_units": "45123.91"
+    },
+    {
+      "symbol": "USDT",
+      "token_address": "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
+      "decimals": 6,
+      "collect_base_units": "19945242990",
+      "collect_token_units": "19945.24299",
+      "sheet_reported_token_units": "19945.24"
+    }
+  ],
+  "first_eth_balance_before_transfer": "138.096651246520515535",
+  "reported_loss_usd": 305000,
+  "reported_loss_usd_basis": "Source-sheet lost_u; not repriced from current USD quotes and not adjusted for recovery or reimbursement."
+}

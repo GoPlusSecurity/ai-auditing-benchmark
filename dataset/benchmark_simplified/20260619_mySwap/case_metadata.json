@@ -1,0 +1,25 @@
+{
+  "folder": "20260619_mySwap",
+  "date": "2026.06.19",
+  "project_cn": "mySwap CL（Starknet；Sierra 反编译）",
+  "project_en": "mySwap CL (Starknet; Sierra decompiled)",
+  "vulnerability_cn": "价格初始化前可建立流动性头寸，初始化后结算出真实资产",
+  "vulnerability_en": "Liquidity positions accepted before price initialization can settle into real assets afterward",
+  "detail_cn": "已取得攻击时执行的链上 Sierra 类并校验类哈希，保存完整反编译及攻击相关函数切片。mint 的池检查只要求 PoolParams.fee 非零，价格仍为零时也能建立头寸；initialize_pool_price 随后允许写入初始价格，burn、collect 把头寸变为真实资产应收。原始 RPC 跟踪核对了 12 轮真实资产存入均为 0，随后实际转出 ETH、STRK、USDC.e、USDT。反编译保留原始指令编号，不是已验证的原始 Cairo 源码；305000 美元沿用源表估值。",
+  "detail_en": "The historically executed on-chain Sierra class was recovered and its class hash verified. Complete decompilation and a dependency-closed attack slice are included. The mint pool check only requires a nonzero PoolParams.fee, allowing positions while the price is still zero. initialize_pool_price then sets the initial price, after which burn and collect produce real-asset claims. Raw RPC traces verify zero real-asset deposits and actual ETH, STRK, USDC.e and USDT transfers across all 12 rounds. Original instruction IDs are retained; this is decompiled code, not verified original Cairo source. USD 305000 preserves the sheet estimate.",
+  "tx_urls": [
+    "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588"
+  ],
+  "vulnerable_contract_urls": [
+    "https://voyager.online/contract/0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111"
+  ],
+  "loss_usd": 305000,
+  "source_status": "decompiled_sierra",
+  "original_row": 103,
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260910_sheet_rows_99_103.json",
+  "class_hash_verified": true,
+  "original_cairo_source_available": false,
+  "local_replay_verified": false,
+  "decompiled_file": "mySwap.decompiled.cairo",
+  "onchain_class_file": "onchain/mySwap.contract_class.json"
+}
