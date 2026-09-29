@@ -1,0 +1,150 @@
+[
+  {
+    "address": "0x08568df252ecf37d6c3efd24f6ca3688118697f1",
+    "url": "https://etherscan.io/address/0x08568df252ecf37d6c3efd24f6ca3688118697f1#code",
+    "files": [
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/SgxVerifier.sol",
+        "sha256": "263d6de8e19c9b5ff85b438dbca21b6f9e81cf66703592db5803b306ddc15a92",
+        "source_name": "contracts/layer1/verifiers/SgxVerifier.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/IProofVerifier.sol",
+        "sha256": "57e6c47171f9148e34b576418540232db48343d562d1878a120c3e5d7d53620b",
+        "source_name": "contracts/layer1/verifiers/IProofVerifier.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/LibPublicInput.sol",
+        "sha256": "c2fc3fe8c60e846efae2ae6f5083eea62903caf907c49f27764dea02ccc4fe44",
+        "source_name": "contracts/layer1/verifiers/LibPublicInput.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/access/Ownable2Step.sol",
+        "sha256": "3e3bdb084bc14ade54e8259e710287956a7dbf2b2b4ad1e4cd8899d2293c7241",
+        "source_name": "node_modules/@openzeppelin/contracts/access/Ownable2Step.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "sha256": "445963619903cee339e49aa2d7a0b07cfad90959529fff136394429c4a92d554",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/automata-attestation/interfaces/IAttestation.sol",
+        "sha256": "c7074fbcd5008dec4a96baedbd9b1f07f631db384ca0d153880245d27dd3af33",
+        "source_name": "contracts/layer1/automata-attestation/interfaces/IAttestation.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+        "sha256": "666d8c8a870e9a51992e582797486d1316e257fc691a29c2881b8c15a1953c9d",
+        "source_name": "contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/solady/src/utils/EfficientHashLib.sol",
+        "sha256": "3f27f917634a213974fbccdaaccc2a09fd8fb321351668d2ec95821e3254a015",
+        "source_name": "node_modules/solady/src/utils/EfficientHashLib.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+        "source_name": "node_modules/@openzeppelin/contracts/access/Ownable.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+        "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/Strings.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/Context.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+        "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/math/Math.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol",
+        "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol"
+      }
+    ],
+    "sgx_source_byte_identical_to_upstream": true,
+    "constructor_arguments_excerpt": "Constructor Arguments found : Arg [0] : 0000000000000000000000000000000000000000000000000000000000028c58 Arg [1] : 00000000000000000000000075ba76403b13b26ad1bec70d6ee937314eeacd0a Arg [2] : 0000000000000000000000000ffa4a625ed9db32b70f99180fd00759fc3e9261",
+    "validation": "Archived verified explorer source content; no local deployment bytecode recompilation or historical runtime comparison."
+  },
+  {
+    "address": "0xa1018ba2e22139076f91da2a856b2cab22d968f6",
+    "url": "https://etherscan.io/address/0xa1018ba2e22139076f91da2a856b2cab22d968f6#code",
+    "files": [
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/SgxVerifier.sol",
+        "sha256": "263d6de8e19c9b5ff85b438dbca21b6f9e81cf66703592db5803b306ddc15a92",
+        "source_name": "contracts/layer1/verifiers/SgxVerifier.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/IProofVerifier.sol",
+        "sha256": "57e6c47171f9148e34b576418540232db48343d562d1878a120c3e5d7d53620b",
+        "source_name": "contracts/layer1/verifiers/IProofVerifier.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/verifiers/LibPublicInput.sol",
+        "sha256": "c2fc3fe8c60e846efae2ae6f5083eea62903caf907c49f27764dea02ccc4fe44",
+        "source_name": "contracts/layer1/verifiers/LibPublicInput.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/access/Ownable2Step.sol",
+        "sha256": "3e3bdb084bc14ade54e8259e710287956a7dbf2b2b4ad1e4cd8899d2293c7241",
+        "source_name": "node_modules/@openzeppelin/contracts/access/Ownable2Step.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "sha256": "445963619903cee339e49aa2d7a0b07cfad90959529fff136394429c4a92d554",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/automata-attestation/interfaces/IAttestation.sol",
+        "sha256": "c7074fbcd5008dec4a96baedbd9b1f07f631db384ca0d153880245d27dd3af33",
+        "source_name": "contracts/layer1/automata-attestation/interfaces/IAttestation.sol"
+      },
+      {
+        "path": "verified-sgx/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+        "sha256": "666d8c8a870e9a51992e582797486d1316e257fc691a29c2881b8c15a1953c9d",
+        "source_name": "contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/solady/src/utils/EfficientHashLib.sol",
+        "sha256": "3f27f917634a213974fbccdaaccc2a09fd8fb321351668d2ec95821e3254a015",
+        "source_name": "node_modules/solady/src/utils/EfficientHashLib.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+        "source_name": "node_modules/@openzeppelin/contracts/access/Ownable.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+        "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/Strings.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/Context.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+        "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/math/Math.sol"
+      },
+      {
+        "path": "verified-sgx/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol",
+        "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+        "source_name": "node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol"
+      }
+    ],
+    "sgx_source_byte_identical_to_upstream": true,
+    "constructor_arguments_excerpt": "Constructor Arguments found : Arg [0] : 0000000000000000000000000000000000000000000000000000000000028c58 Arg [1] : 00000000000000000000000075ba76403b13b26ad1bec70d6ee937314eeacd0a Arg [2] : 0000000000000000000000008d7c954960a36a7596d7ea4945ddf891967ca8a3",
+    "validation": "Archived verified explorer source content; no local deployment bytecode recompilation or historical runtime comparison."
+  }
+]

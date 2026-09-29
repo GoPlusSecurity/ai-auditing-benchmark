@@ -1,0 +1,14 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.31+commit.fd3a2265",
+  "compilerSettings": {
+    "optimizer": {
+      "runs": 50,
+      "enabled": true
+    },
+    "remappings": []
+  },
+  "name": "DLMCToken",
+  "fullyQualifiedName": "contracts/DLMCToken.sol:DLMCToken"
+}

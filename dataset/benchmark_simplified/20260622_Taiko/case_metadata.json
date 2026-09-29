@@ -1,0 +1,33 @@
+{
+  "folder": "20260622_Taiko",
+  "date": "2026.06.22",
+  "project_cn": "@taikoxyz（SGX 证明路径与跨链提款）",
+  "project_en": "@taikoxyz (SGX proving path and bridge withdrawals)",
+  "vulnerability_cn": "未拒绝调试模式证明者，伪造状态与提案年龄绕过白名单",
+  "vulnerability_en": "Unchecked debug-mode attestation enables forged state and proposal-age whitelist bypass",
+  "detail_cn": "官方复盘确认公开的enclave签名密钥与未拒绝DEBUG模式的认证检查共同使伪造证明被接受；攻击者伪造提案年龄满足超过五天的开放证明条件，写入假L2检查点，再通过Bridge/ERC20Vault提款。已保存官方事发前合约树、两份Etherscan验证的SGX实现及交易事件，SGX主文件与官方快照逐字节一致；其他组件未核实攻击时代理实现或完整部署字节码。源表两笔分别为USDC重试付款与130ETH处理；本轮解码首笔649761.236201 USDC。源表170万美元保留，官方后续约175万美元另列；未分叉重放。",
+  "detail_en": "The official postmortem identifies an exposed enclave signing key plus attestation that did not reject DEBUG mode. Forged proofs also falsified proposal age to satisfy the greater-than-five-day permissionless path, writing fake L2 checkpoints used for Bridge/ERC20Vault withdrawals. The pre-incident official contract tree, verified explorer SGX bundles and transaction events are archived; the SGX main source is byte-identical to the pinned snapshot. Historical proxy implementations and the complete deployed build were not verified for other components. The sheet transactions are a USDC retry payout and a 130 ETH process call; the former emitted a 649761.236201 USDC transfer. Retain sheet USD 1.7M; later official approximately USD 1.75M is separate. No fork replay.",
+  "tx_urls": [
+    "https://etherscan.io/tx/0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee",
+    "https://etherscan.io/tx/0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13",
+    "https://etherscan.io/tx/0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x08568df252ecf37d6c3efd24f6ca3688118697f1#code",
+    "https://etherscan.io/address/0xa1018ba2e22139076f91da2a856b2cab22d968f6#code",
+    "https://etherscan.io/address/0x6f21c543a4af5189ebdb0723827577e1ef57ef1f#code"
+  ],
+  "loss_usd": 1700000,
+  "source_status": "verified_sgx_source_with_upstream_context",
+  "original_row": 102,
+  "source_verification": "Pinned official pre-incident source files verified against Git blob hashes. Both observed SGX verifier explorer source bundles archived and SgxVerifier.sol compared byte-for-byte to the upstream snapshot. Raw Etherscan event fields decoded for setup and the two sheet transactions. Other components are upstream context, without historical proxy-slot/runtime matching. No SGX hardware execution, complete mainnet build, or fork replay.",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260914_sheet_rows_98_102.json",
+  "upstream_commit": "ff002a4516b489c7146675f7036d699b07a7f785",
+  "affected_asset_holders": [
+    "0xd60247c6848b7ca29eddf63aa924e53db6ddd8ec",
+    "0x996282ca11e5deb6b5d122cc3b9a1fcaad4415ab"
+  ],
+  "official_postmortem": "https://paragraph.com/@taiko-labs/taiko-security-incident-a-postmortem-and-next-steps",
+  "local_compilation_run": false,
+  "attack_replay_run": false
+}

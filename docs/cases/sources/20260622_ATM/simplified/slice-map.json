@@ -1,0 +1,225 @@
+{
+  "method": "Remove complete unrelated FunctionDefinition AST byte ranges; all retained bytes exactly preserved. Keep LP transfer, mint/setup context, burn and all its accounting dependencies, swap/dust context.",
+  "complete_sha256": "ee86df4a4aa3e802ed3722685b124c51a4e81dc7456591ada5eb2b467d290532",
+  "simplified_sha256": "9f366d30d8dc7c49e7fc326b5e765488fa75a5d22a286b28c49953ddd83cd37d",
+  "removed_functions": [
+    {
+      "name": "approve",
+      "start": 729,
+      "end_exclusive": 799
+    },
+    {
+      "name": "transferFrom",
+      "start": 877,
+      "end_exclusive": 961
+    },
+    {
+      "name": "permit",
+      "start": 1168,
+      "end_exclusive": 1283
+    },
+    {
+      "name": "skim",
+      "start": 2468,
+      "end_exclusive": 2503
+    },
+    {
+      "name": "sync",
+      "start": 2509,
+      "end_exclusive": 2534
+    },
+    {
+      "name": "approve",
+      "start": 3257,
+      "end_exclusive": 3327
+    },
+    {
+      "name": "transferFrom",
+      "start": 3405,
+      "end_exclusive": 3489
+    },
+    {
+      "name": "permit",
+      "start": 3696,
+      "end_exclusive": 3811
+    },
+    {
+      "name": "_approve",
+      "start": 6236,
+      "end_exclusive": 6405
+    },
+    {
+      "name": "approve",
+      "start": 6641,
+      "end_exclusive": 6788
+    },
+    {
+      "name": "transferFrom",
+      "start": 6943,
+      "end_exclusive": 7244
+    },
+    {
+      "name": "permit",
+      "start": 7252,
+      "end_exclusive": 7922
+    },
+    {
+      "name": "approve",
+      "start": 9890,
+      "end_exclusive": 9960
+    },
+    {
+      "name": "transferFrom",
+      "start": 10038,
+      "end_exclusive": 10122
+    },
+    {
+      "name": "skim",
+      "start": 20284,
+      "end_exclusive": 20618
+    },
+    {
+      "name": "sync",
+      "start": 20667,
+      "end_exclusive": 20825
+    }
+  ],
+  "retained_segments": [
+    {
+      "complete_byte_start": 0,
+      "complete_byte_end_exclusive": 729,
+      "simplified_byte_start": 0,
+      "simplified_byte_end_exclusive": 729,
+      "original_line_start": 1,
+      "original_line_end": 20
+    },
+    {
+      "complete_byte_start": 799,
+      "complete_byte_end_exclusive": 877,
+      "simplified_byte_start": 729,
+      "simplified_byte_end_exclusive": 807,
+      "original_line_start": 20,
+      "original_line_end": 22
+    },
+    {
+      "complete_byte_start": 961,
+      "complete_byte_end_exclusive": 1168,
+      "simplified_byte_start": 807,
+      "simplified_byte_end_exclusive": 1014,
+      "original_line_start": 22,
+      "original_line_end": 28
+    },
+    {
+      "complete_byte_start": 1283,
+      "complete_byte_end_exclusive": 2468,
+      "simplified_byte_start": 1014,
+      "simplified_byte_end_exclusive": 2199,
+      "original_line_start": 28,
+      "original_line_end": 54
+    },
+    {
+      "complete_byte_start": 2503,
+      "complete_byte_end_exclusive": 2509,
+      "simplified_byte_start": 2199,
+      "simplified_byte_end_exclusive": 2205,
+      "original_line_start": 54,
+      "original_line_end": 55
+    },
+    {
+      "complete_byte_start": 2534,
+      "complete_byte_end_exclusive": 3257,
+      "simplified_byte_start": 2205,
+      "simplified_byte_end_exclusive": 2928,
+      "original_line_start": 55,
+      "original_line_end": 75
+    },
+    {
+      "complete_byte_start": 3327,
+      "complete_byte_end_exclusive": 3405,
+      "simplified_byte_start": 2928,
+      "simplified_byte_end_exclusive": 3006,
+      "original_line_start": 75,
+      "original_line_end": 77
+    },
+    {
+      "complete_byte_start": 3489,
+      "complete_byte_end_exclusive": 3696,
+      "simplified_byte_start": 3006,
+      "simplified_byte_end_exclusive": 3213,
+      "original_line_start": 77,
+      "original_line_end": 83
+    },
+    {
+      "complete_byte_start": 3811,
+      "complete_byte_end_exclusive": 6236,
+      "simplified_byte_start": 3213,
+      "simplified_byte_end_exclusive": 5638,
+      "original_line_start": 83,
+      "original_line_end": 157
+    },
+    {
+      "complete_byte_start": 6405,
+      "complete_byte_end_exclusive": 6641,
+      "simplified_byte_start": 5638,
+      "simplified_byte_end_exclusive": 5874,
+      "original_line_start": 160,
+      "original_line_end": 168
+    },
+    {
+      "complete_byte_start": 6788,
+      "complete_byte_end_exclusive": 6943,
+      "simplified_byte_start": 5874,
+      "simplified_byte_end_exclusive": 6029,
+      "original_line_start": 171,
+      "original_line_end": 178
+    },
+    {
+      "complete_byte_start": 7244,
+      "complete_byte_end_exclusive": 7252,
+      "simplified_byte_start": 6029,
+      "simplified_byte_end_exclusive": 6037,
+      "original_line_start": 184,
+      "original_line_end": 186
+    },
+    {
+      "complete_byte_start": 7922,
+      "complete_byte_end_exclusive": 9890,
+      "simplified_byte_start": 6037,
+      "simplified_byte_end_exclusive": 8005,
+      "original_line_start": 198,
+      "original_line_end": 265
+    },
+    {
+      "complete_byte_start": 9960,
+      "complete_byte_end_exclusive": 10038,
+      "simplified_byte_start": 8005,
+      "simplified_byte_end_exclusive": 8083,
+      "original_line_start": 265,
+      "original_line_end": 267
+    },
+    {
+      "complete_byte_start": 10122,
+      "complete_byte_end_exclusive": 20284,
+      "simplified_byte_start": 8083,
+      "simplified_byte_end_exclusive": 18245,
+      "original_line_start": 267,
+      "original_line_end": 487
+    },
+    {
+      "complete_byte_start": 20618,
+      "complete_byte_end_exclusive": 20667,
+      "simplified_byte_start": 18245,
+      "simplified_byte_end_exclusive": 18294,
+      "original_line_start": 492,
+      "original_line_end": 495
+    },
+    {
+      "complete_byte_start": 20825,
+      "complete_byte_end_exclusive": 20828,
+      "simplified_byte_start": 18294,
+      "simplified_byte_end_exclusive": 18297,
+      "original_line_start": 497,
+      "original_line_end": 498
+    }
+  ]
+}

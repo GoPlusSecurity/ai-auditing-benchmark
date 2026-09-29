@@ -1,0 +1,42 @@
+{
+  "@openzeppelin/contracts/access/Ownable.sol": {
+    "original_bytes": 3102,
+    "reduced_bytes": 1081
+  },
+  "@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+    "original_bytes": 6540,
+    "reduced_bytes": 460
+  },
+  "@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+    "original_bytes": 10800,
+    "reduced_bytes": 4302
+  },
+  "@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+    "original_bytes": 2781,
+    "reduced_bytes": 713
+  },
+  "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+    "original_bytes": 684,
+    "reduced_bytes": 192
+  },
+  "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+    "original_bytes": 13314,
+    "reduced_bytes": 2535
+  },
+  "@openzeppelin/contracts/utils/Context.sol": {
+    "original_bytes": 963,
+    "reduced_bytes": 190
+  },
+  "@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+    "original_bytes": 4766,
+    "reduced_bytes": 1487
+  },
+  "@openzeppelin/contracts/utils/StorageSlot.sol": {
+    "original_bytes": 4182,
+    "reduced_bytes": 625
+  },
+  "contracts/DLMCToken.sol": {
+    "original_bytes": 74391,
+    "reduced_bytes": 23740
+  }
+}

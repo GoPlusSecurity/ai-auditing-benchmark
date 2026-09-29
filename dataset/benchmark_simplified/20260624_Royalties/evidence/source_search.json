@@ -1,0 +1,25 @@
+{
+  "retrieved_at": "2026-09-14",
+  "scope": "New explicit authorization: PolygonScan transaction and linked victim source pages only.",
+  "source_available_locally": true,
+  "sources": [
+    {
+      "url": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e",
+      "result": "Downloaded raw HTML and decoded raw events"
+    },
+    {
+      "url": "https://polygonscan.com/address/0xd5b297c08d890376b6cbdba6023a39ffbdf65c78#code",
+      "result": "Downloaded verified source HTML and extracted complete source content"
+    },
+    {
+      "url": "https://polygonscan.com/address/0x1e0598614d9168a657cb57bd038dfd71812c9074#code",
+      "result": "Downloaded verified source HTML and extracted complete source content"
+    }
+  ],
+  "remaining": [
+    "Historical proxy implementation slots at exploit block",
+    "Raw RPC receipt and complete trace",
+    "Independent compilation with exact solc 0.8.4",
+    "Independent fork reproduction"
+  ]
+}

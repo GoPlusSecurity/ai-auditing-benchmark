@@ -1,0 +1,14 @@
+{
+  "compiler": "0.8.31+commit.fd3a2265",
+  "complete_compilation_errors": 0,
+  "simplified_compilation_errors": 0,
+  "complete_source_files": 14,
+  "simplified_source_files": 10,
+  "retained_function_bodies_equal_ignoring_comments_and_whitespace": 59,
+  "source_hashes_checked": 14,
+  "receipt_and_integer_math_checks": true,
+  "historical_runtime_independently_checked": false,
+  "attack_replays_run": false,
+  "event_topics_verified_by_compiler_keccak": 16,
+  "registered_referral_chain_and_buy_buy_sell_events_verified": true
+}

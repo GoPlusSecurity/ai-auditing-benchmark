@@ -1,0 +1,30 @@
+{
+  "folder": "20260623_SecondFi",
+  "date": "2026.06.23",
+  "project_cn": "@secondfiapp（原 Yoroi；非合约事件）",
+  "project_en": "@secondfiapp (formerly Yoroi; non-contract incident)",
+  "vulnerability_cn": "钱包签名秘密值可由公开交易计算，暴露地址签名能力",
+  "vulnerability_en": "Wallet signature secret derived from public data exposes address signing capability",
+  "detail_cn": "官方说明签名中的秘密数值可在特定条件下由公开交易计算，从而推导受影响地址的私钥材料。外部取证将其归因于 Ed25519 签名器漏接秘密 nonce 材料；本轮未独立核对发布二进制、受害源码或逐笔攻击交易。本案例仅保留非合约事件文档证据，不进入 dataset 或 CSV。源表约 1600 万 ADA、200 万美元口径保留在归档中；后续官方约 1610 万 ADA、374 个钱包、260 万美元为另行统计。",
+  "detail_en": "The official FAQ states that a signature value intended to depend on secret information could instead be computed from public transaction data, exposing affected address private-key material. External forensics attribute this to omitted secret nonce material in the Ed25519 signer; shipped binaries, victim source and individual attack transactions were not independently verified here. This non-contract incident remains documentation evidence only and is excluded from the dataset and CSV indexes. The sheet estimate of about 16M ADA and USD 2M is retained in this archive; the later official figures of about 16.1M ADA, 374 wallets and USD 2.6M are a separate estimate.",
+  "tx_urls": [],
+  "vulnerable_contract_urls": [],
+  "loss_usd": 2000000,
+  "source_status": "non_contract_incident_evidence_only",
+  "dataset_included": false,
+  "csv_indexed": false,
+  "original_row": 100,
+  "source_verification": "Official incident FAQ and independent published forensic findings read; RFC 8032 used to explain the general signature relation. No victim signer source imported, no deployed app binary verified, no real private keys derived, no independent transaction replay.",
+  "source_sheet_snapshot": "../20260914_sheet_rows_98_102.json",
+  "audit_input_kind": "incident_evidence_only",
+  "smart_contract_case": false,
+  "source_files": [],
+  "representative_transaction_missing": true,
+  "later_official_estimate": {
+    "ada": 16100000,
+    "wallets": 374,
+    "usd_approx": 2600000,
+    "period": "2026-06-21/2026-06-23",
+    "url": "https://kb.secondfi.io/en/article/incident-faq-omrng2/"
+  }
+}

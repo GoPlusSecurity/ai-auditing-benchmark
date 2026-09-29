@@ -1,0 +1,25 @@
+{
+  "folder": "20260622_ATM",
+  "date": "2026.06.22",
+  "project_cn": "ATM（BSC，LP 误转事件）",
+  "project_en": "ATM (BSC, misplaced LP redemption)",
+  "vulnerability_cn": "LP 单独转入交易池后被第三方调用 burn 赎回",
+  "vulnerability_en": "Third-party redemption of LP tokens transferred separately to the pair",
+  "detail_cn": "LP 持有人把加池所得 LP 单独转给池子，公开 burn(to) 使用池子自身 LP 余额并向调用者指定的接收方赎回。链上主提款交易0x4e9f…转出1603.99 WBNB；源表0x939f…是同区块较晚且无事件的关联调用。现有证据支持 LP 操作风险，不支持把约95万美元归为该较晚交易的储备操纵收益。源表损失保留949900美元；最终接收方WBNB流入约32.08，未等同全程净利。",
+  "detail_en": "The LP holder separately transferred liquidity tokens to the pair. Public burn(to) redeemed the pair-held LP balance to a caller-selected recipient. The independently verified funds-out transaction 0x4e9f… removed 1603.99 WBNB; the sheet transaction 0x939f… is a later call in the same block with no logs. Evidence supports unsafe LP handling, not a USD 950k reserve-manipulation profit in the later transaction. The sheet loss remains USD 949900; the final receiver received about 32.08 WBNB, not established campaign net profit.",
+  "tx_urls": [
+    "https://bscscan.com/tx/0x939fc92996c9205eac83b86817abe2ef5f7f1eeadfb43557e2cfb3123720b3f1",
+    "https://bscscan.com/tx/0x4e9f3dc3ce3c0a6aa19dae0f1384ff46e801b433b7e3bc4c780de486db6c950a"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x9753a64fb7c233fdc43f04dab9cca88e1e229eba#code"
+  ],
+  "loss_usd": 949900,
+  "source_status": "verified_reference_runtime_equivalent",
+  "original_row": 101,
+  "source_verification": "Successful setup, LP-transfer and burn receipts verified. Original reference PancakePair source matches the entire target runtime at latest; target has no direct Sourcify match. Historical runtime and debug trace unavailable; ATM token original source not recovered. Pair is the affected redemption surface, not a confirmed defect in standard PancakeSwap code. No local fork replay.",
+  "source_sheet_snapshot": "../../20260914_sheet_rows_98_102.json",
+  "benchmark_included": false,
+  "documentation_only": true,
+  "removed_from_dataset_on": "2026-09-15"
+}

@@ -1,0 +1,13 @@
+{
+  "smart_contract_case": false,
+  "user_requested_dataset_removal": true,
+  "documentation_evidence_retained": true,
+  "victim_source_available": false,
+  "attack_transactions_available": false,
+  "compiler_tests_run": false,
+  "private_key_recovery_run": false,
+  "attack_replay_run": false,
+  "equation_basis": "RFC 8032 section 5.1.6",
+  "source_sheet_loss_usd": 2000000,
+  "later_official_estimate_usd_approx": 2600000
+}

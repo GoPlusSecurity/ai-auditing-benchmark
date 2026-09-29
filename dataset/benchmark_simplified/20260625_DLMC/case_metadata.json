@@ -1,0 +1,21 @@
+{
+  "folder": "20260625_DLMC",
+  "date": "2026.06.25",
+  "project_cn": "DLMC",
+  "project_en": "DLMC",
+  "vulnerability_cn": "即时储备定价与推荐奖励组合导致价格操纵",
+  "vulnerability_en": "Reserve-derived livePrice manipulation through flash-funded referral rewards",
+  "detail_cn": "DLMC 的 buy 将临时投入的 USDT 立即记为投资额，并把大部分新铸 DLMC 留在合约；推荐人按更新前价格收到可立即出售的奖励。_updatePrice 使用合约 USDT 储备，且在条件成立时扣除合约自持 DLMC，导致两次买入后价格大幅提高。攻击者以42万USDT建立168万USDT卖出额度，再由下级投入100万USDT获得推荐奖励，卖出其中65908.6853 DLMC取得1646119.1189 USDT，偿还闪电资金后收款地址净入222560.2217 USDT。独立成功回执与exact-match源码支持金额及可达路径，未取得完整trace；源表日期6月25日、损失222600美元保持不变，链上交易在6月24日，受害合约本笔USDT净流出226119.1189，与获利分开。",
+  "detail_en": "buy immediately credits temporary USDT as investment while minting most DLMC to the contract; the referrer receives immediately sellable rewards at the pre-update price. _updatePrice trusts current USDT reserves and conditionally excludes contract-held DLMC from supply. A first 420000 USDT buy established a 1680000 USDT sell cap; a downstream 1000000 USDT buy rewarded the attacker and inflated livePrice. Selling 65908.6853 DLMC redeemed 1646119.1189 USDT; after flash repayment the recipient received 222560.2217 USDT. Independently fetched receipt and exact-match source support amounts and reachable mechanism; no complete trace was available. Preserve sheet date June 25 and USD 222600; transaction date is June 24 and victim net token outflow was 226119.1189 USDT, a different scope.",
+  "tx_urls": [
+    "https://bscscan.com/tx/0x151025d3f0a782340a74d30ef33a5fad044b838e74437a803f0652e70c231306"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0xf2ca2a3572b26ae7c479dc7ae36d922113b1bdf2#code"
+  ],
+  "loss_usd": 222600,
+  "source_status": "verified_original_source",
+  "original_row": 98,
+  "source_verification": "Sourcify creation/runtime exact_match; 14 original Solidity sources and 10-source audit slice locally compile with solc 0.8.31. All 59 retained function bodies checked. Transaction and successful receipt independently fetched from BNB Chain RPC; event ordering, amounts and redemption formula verified. Historical eth_call and debug_traceTransaction returned missing trie node. No complete trace, fork replay or independent historical runtime comparison.",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260914_sheet_rows_98_102.json"
+}

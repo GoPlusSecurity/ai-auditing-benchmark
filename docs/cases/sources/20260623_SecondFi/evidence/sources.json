@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "url": "https://kb.secondfi.io/en/article/incident-faq-omrng2/",
+      "kind": "official_disclosure",
+      "retrieved_on": "2026-09-14",
+      "raw_response_sha256": "1810206b9aea178218a04af10035192e0575e179909edd5eb67a012daafe2d41",
+      "use": "Root cause category, scope and later estimate. Raw HTML kept in acquisition cache; this entry is a paraphrased finding record."
+    },
+    {
+      "url": "https://github.com/KarpelesLab/cardano_secondfi_analysis/blob/master/README.md",
+      "kind": "independent_forensic_author",
+      "retrieved_on": "2026-09-14",
+      "use": "External attribution to omitted secret nonce material; independently reproducing its claims is outside this entry."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8032.html#section-5.1.6",
+      "kind": "algorithm_specification",
+      "retrieved_on": "2026-09-14",
+      "use": "General Ed25519 signature equation, not victim source."
+    },
+    {
+      "url": "https://x.com/secondfiapp/status/2069380358291001425",
+      "kind": "original_sheet_reference",
+      "read_status": "URL preserved from source sheet; original post body not independently obtained"
+    }
+  ]
+}

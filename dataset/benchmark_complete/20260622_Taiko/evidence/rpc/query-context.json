@@ -1,0 +1,12 @@
+{
+  "endpoint": "https://ethereum-rpc.publicnode.com",
+  "method": "eth_getTransactionReceipt",
+  "transactions": [
+    "0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260",
+    "0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee",
+    "0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13"
+  ],
+  "results": "All three returned null; not evidence that the transactions do not exist. Explorer HTML was obtained independently.",
+  "head_response": "rpc-head.json",
+  "raw_receipt_response": "receipts.json"
+}

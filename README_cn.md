@@ -66,6 +66,8 @@ dataset/
 
 已编写的[攻击链路与原理说明](docs/cases/README.md)用通俗语言说明合约或协议负责什么、漏洞在哪里、攻击者怎样利用，并附代码和资料来源。对应事件目录的 `SOURCE.md` 也提供同一文档入口。
 
+2026-09-14 按源表第 98–102 行整理 DLMC、Royalties、SecondFi、ATM、Taiko，保留[五行快照](docs/cases/sources/20260914_sheet_rows_98_102.json)及[五篇详细说明](docs/cases/README.md)。ATM 以及非合约的 SecondFi 钱包事件均已从两套 dataset 目录和中英文 CSV 移除，仅保留文档与引用资料；本批数据集现包含 DLMC、Royalties、Taiko 三条。Taiko 区分实际 SGX 验证源码与其他上游上下文。各数据集目录的 case_metadata.json 和 SOURCE.md 标明证据范围。Royalties 与 Taiko 精简版是原文切片，不能单独作为完整工程编译。
+
 2026-09-10 按源表第 99–103 行补充 JaredFromSubway、BnbLabubu、Namada、Axelar / Secret、mySwap，并保留[原始行快照](docs/cases/sources/20260910_sheet_rows_99_103.json)。这批包含 Rust 协议代码和源码尚未取得的事件材料。新增目录的 `case_metadata.json` 用 `source_status` 标出源码缺失或历史交易对应不完整的情况；这类目录不能直接算作已验证的漏洞源码样本。缺失的交易或地址留空，限制写入 CSV 详情。中英文金额分别按万美元、千美元换算。
 
 mySwap CL 的两套目录现已保存攻击时执行的链上 Sierra 类，并通过类哈希校验。状态 `decompiled_sierra` 表示已恢复保留指令编号的伪 Cairo 代码：完整版保留 425 个函数，精简版保留攻击相关 5 个入口及其依赖，共 276 个函数。[Case 文档](docs/cases/20260619_mySwap.md)将具体检查与原始 RPC 跟踪对应；原始 Cairo 工程仍未恢复，未声称完成本地编译或攻击重放。

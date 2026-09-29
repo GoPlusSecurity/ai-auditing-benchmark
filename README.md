@@ -64,7 +64,9 @@ Source-tree paths vary by incident. Browse within the corresponding directory by
 
 Example: `2025.05.28` + `@Corkprotocol` → `dataset/benchmark_simplified/20250528_Corkprotocol/`
 
-[Chinese case explanations](docs/cases/README.md) describe each system's purpose, defect, attack sequence, asset flow, and evidence limits. The 2026-09-10 import follows the sheet's current rows 99–103: JaredFromSubway, BnbLabubu, Namada, Axelar / Secret, and mySwap. A [source-row snapshot](docs/cases/sources/20260910_sheet_rows_99_103.json) preserves the mapping as sheet rows can move.
+The 2026-09-14 sheet rows 98–102 are documented in a [five-row snapshot](docs/cases/sources/20260914_sheet_rows_98_102.json) and [five Chinese case explanations](docs/cases/README.md). ATM and the non-contract SecondFi wallet incident were removed from both dataset views and both CSV indexes; their documents and supporting evidence remain under docs/cases. This batch now contributes three dataset entries: DLMC, Royalties, and Taiko. Taiko distinguishes verified SGX source from upstream context. Check each dataset case's source_status and SOURCE.md before selecting audit inputs. Royalties and Taiko simplified views are exact excerpts rather than standalone compilation units.
+
+[Chinese case explanations](docs/cases/README.md) describe each system's purpose, defect, attack sequence, asset flow, and evidence limits. The 2026-09-10 import follows that date's sheet rows 99–103: JaredFromSubway, BnbLabubu, Namada, Axelar / Secret, and mySwap. A [source-row snapshot](docs/cases/sources/20260910_sheet_rows_99_103.json) preserves the mapping as sheet rows can move.
 
 This batch includes Rust protocol code and incident evidence for which victim source has not been obtained. Each new directory's `case_metadata.json` exposes `source_status`; missing victim source or incomplete historical-transaction correlation must be filtered before treating the entry as a verified exploit-code sample. Unknown transaction/address fields remain blank and are explained in the CSV. Chinese loss values use 10,000 USD units; English loss values use 1,000 USD units.
 

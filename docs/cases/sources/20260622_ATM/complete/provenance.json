@@ -1,0 +1,31 @@
+{
+  "folder": "20260622_ATM",
+  "retrieved_on": "2026-09-14",
+  "source_sheet_row": 101,
+  "source_status": "verified_reference_runtime_equivalent",
+  "source_address": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+  "target_pair": "0x9753a64fb7c233fdc43f04dab9cca88e1e229eba",
+  "source_url": "https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE?fields=all",
+  "source_bundle_sha256": "8e72e91e5fc7330ebe84dd4b4c6793d5c7aed4766ff0c1f3fdae26f673d70a17",
+  "sources": [
+    {
+      "path": "contracts/PancakePair.sol",
+      "sha256": "ee86df4a4aa3e802ed3722685b124c51a4e81dc7456591ada5eb2b467d290532",
+      "original_source_name": "PancakePair.sol",
+      "compiler": "0.5.16+commit.9c3226ce",
+      "creation_match": "match",
+      "runtime_match": "match"
+    }
+  ],
+  "source_boundary": "Reference source with complete runtime equal to target at latest. Target pair and ATM token have no Sourcify match at retrieval. ATM source not recovered. Historical runtime and full trace unavailable.",
+  "research_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/4962249351708c1b28d138d934f44e9f51a58430/src/test/2026-06/ATM_LP_Burn_exp.sol",
+  "research_poc_sha256": "812afad32700dd7b365026d36dc22f0f75bb04d6c2b7aa0ba64c0c322a8da447",
+  "rpc_url": "https://bsc-dataseed.bnbchain.org",
+  "previous_case_relation": {
+    "previous_folder": "20260604_ATMToken",
+    "previous_token": "0x986058ec93756E57b4e55b406dD0BeE24bcD95e3",
+    "this_token": "0xFdC76B8b2F775656E8A867FcC3282c969D2d86b0",
+    "same_contract": false,
+    "same_project_operator": "not verified"
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "commit": "ff002a4516b489c7146675f7036d699b07a7f785",
+  "standalone_compilation_unit": false,
+  "slices": [
+    {
+      "path": "slices/layer1/verifiers/SgxVerifier.registerInstance.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "ranges": [
+        [
+          113,
+          124
+        ]
+      ],
+      "sha256": "434caa7f729af41843af0914e9953adf8a2cf0051ab84bed5214d0f557f81df4",
+      "function": "registerInstance"
+    },
+    {
+      "path": "slices/layer1/verifiers/SgxVerifier.verifyProof.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "ranges": [
+        [
+          127,
+          148
+        ]
+      ],
+      "sha256": "9df6cdbadb79017ae599cb789f54275735f5d3f5abf7a541b69a3d3cb0df83ae",
+      "function": "verifyProof"
+    },
+    {
+      "path": "slices/layer1/verifiers/SgxVerifier._addInstances.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "ranges": [
+        [
+          150,
+          180
+        ]
+      ],
+      "sha256": "43f543e782f4aa5b1d4b23033fa57a538fef98147c9d9c5c989f9f76e406757a",
+      "function": "_addInstances"
+    },
+    {
+      "path": "slices/layer1/verifiers/SgxVerifier._isInstanceValid.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "ranges": [
+        [
+          182,
+          187
+        ]
+      ],
+      "sha256": "75439b1982bbaea1c7b39238b4943251704849a95b2c8208c5950ef7c23e9cf5",
+      "function": "_isInstanceValid"
+    },
+    {
+      "path": "context/layer1/verifiers/SgxVerifier.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "ranges": [
+        [
+          1,
+          75
+        ]
+      ],
+      "sha256": "f3183536e13bf5dddc571a0a9640efd1fd3e3c9b10a5657f6193c563e4399e7b",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/AutomataDcapV3Attestation.verifyParsedQuote.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "ranges": [
+        [
+          379,
+          386
+        ]
+      ],
+      "sha256": "e68bab7dc7efdbb518749b30113ff5d8a74d21812d60ef2b70b38e5e18054792",
+      "function": "verifyParsedQuote"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/AutomataDcapV3Attestation._verifyParsedQuote.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "ranges": [
+        [
+          388,
+          507
+        ]
+      ],
+      "sha256": "5e20d76ff54fb6760355af1779982f4bb0e6eea022c7a04e30df987e196df368",
+      "function": "_verifyParsedQuote"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/AutomataDcapV3Attestation._verifyQEReportWithIdentity.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "ranges": [
+        [
+          197,
+          227
+        ]
+      ],
+      "sha256": "ff3fc365d90ae1ef93a88029bb674a19e27f5a481bcd8013b95fa3796fa4b1fd",
+      "function": "_verifyQEReportWithIdentity"
+    },
+    {
+      "path": "context/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "ranges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "a920960e796cd74482207198c3621dd187686176402bce558e307e19bfc856c3",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.validateParsedInput.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "ranges": [
+        [
+          69,
+          146
+        ]
+      ],
+      "sha256": "433b9cea9d51378723d99dad7c2b1ebad05864c6e8a293884399248ad46f5981",
+      "function": "validateParsedInput"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.parseEnclaveReport.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "ranges": [
+        [
+          148,
+          165
+        ]
+      ],
+      "sha256": "02b89de425909316655125d45d3613f3566c0368a42c67427f2f534f967cab8b",
+      "function": "parseEnclaveReport"
+    },
+    {
+      "path": "slices/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.packQEReport.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "ranges": [
+        [
+          260,
+          281
+        ]
+      ],
+      "sha256": "741f5d2bf66d087c38fec10e5101a54c4a26062411cdb460a035e079fa5e7a7b",
+      "function": "packQEReport"
+    },
+    {
+      "path": "context/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "sha256": "7716990cf11721c448ca406e9e3fe35deb3534ddfec3bb9afb294e4e60c7b882",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/layer1/core/impl/Inbox.prove.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          258,
+          337
+        ]
+      ],
+      "sha256": "ebabf3e986b5afbcfbaf038392f73d68c199e6c29ec8ae2e1c5b34a28e1682ac",
+      "function": "prove"
+    },
+    {
+      "path": "slices/layer1/core/impl/Inbox.getProposalHash.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          496,
+          498
+        ]
+      ],
+      "sha256": "0eab31023f8bfc34e13fa7570bea19c21ce7627cc23d7b0e50e6b385f6ea8715",
+      "function": "getProposalHash"
+    },
+    {
+      "path": "slices/layer1/core/impl/Inbox._checkProver.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          722,
+          739
+        ]
+      ],
+      "sha256": "60ecd9e2febe6ddec63d08e7ad2f551ffff7e7ef2798f66e9d8d61ebd5b0e387",
+      "function": "_checkProver"
+    },
+    {
+      "path": "slices/layer1/core/impl/Inbox._validateCommitment.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          748,
+          772
+        ]
+      ],
+      "sha256": "40c7a8e5a3038a41e118ed2aa4993de8467a06a915909e8b159de39129887a23",
+      "function": "_validateCommitment"
+    },
+    {
+      "path": "slices/layer1/core/impl/Inbox._processLivenessBond.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          678,
+          693
+        ]
+      ],
+      "sha256": "5c9a5c9ab03a4bde67ac121959e89052df1a1ff55984df16eaf2188f2a5a9328",
+      "function": "_processLivenessBond"
+    },
+    {
+      "path": "context/layer1/core/impl/Inbox.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "ranges": [
+        [
+          1,
+          146
+        ]
+      ],
+      "sha256": "2a449829be262a7a32888866cac63cd02e021627e9d2c05a25b8268ae197074d",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/layer1/mainnet/MainnetVerifier.areVerifiersSufficient.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetVerifier.sol",
+      "ranges": [
+        [
+          35,
+          53
+        ]
+      ],
+      "sha256": "d9dc31a421eaa93cdbed863cba579801d204effb1d84e381c0f9d7575f398efa",
+      "function": "areVerifiersSufficient"
+    },
+    {
+      "path": "context/layer1/mainnet/MainnetVerifier.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetVerifier.sol",
+      "ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "sha256": "d6ab1eafc0eaa48f23b4fa8350671806df92cd09d0eb311267c15536c3bcc6a5",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/layer1/verifiers/compose/ComposeVerifier.verifyProof.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/ComposeVerifier.sol",
+      "ranges": [
+        [
+          59,
+          90
+        ]
+      ],
+      "sha256": "e1d999cbcda60823d3093efb92644a9d758ab3808132ed672d250139fbcdb9f1",
+      "function": "verifyProof"
+    },
+    {
+      "path": "context/layer1/verifiers/compose/ComposeVerifier.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/ComposeVerifier.sol",
+      "ranges": [
+        [
+          1,
+          41
+        ]
+      ],
+      "sha256": "0a254321db37e5ff8553826051db5b8b37311a70561970f459a0f87c8d4d588f",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/shared/signal/SignalService.saveCheckpoint.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "ranges": [
+        [
+          153,
+          163
+        ]
+      ],
+      "sha256": "80660ef28f0623b702022d782fdac0e73a9ff1ec7f39cae8340c711051b666a8",
+      "function": "saveCheckpoint"
+    },
+    {
+      "path": "slices/shared/signal/SignalService._getCheckpoint.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "ranges": [
+        [
+          182,
+          194
+        ]
+      ],
+      "sha256": "a03894aea6618e5ef40dd917a572fd7f51a2fb5823673e5c2e43393031b41da0",
+      "function": "_getCheckpoint"
+    },
+    {
+      "path": "slices/shared/signal/SignalService.proveSignalReceived.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "ranges": [
+        [
+          92,
+          106
+        ]
+      ],
+      "sha256": "76c08d25737c0412328b9d2b3fac54a93ec917a9048108ca2962093d1a89d1ba",
+      "function": "proveSignalReceived"
+    },
+    {
+      "path": "slices/shared/signal/SignalService._verifySignalReceived.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "ranges": [
+        [
+          229,
+          273
+        ]
+      ],
+      "sha256": "2a838ffa537d96702dce655a44263a81cdab72a324672c34361015ee61056aa0",
+      "function": "_verifySignalReceived"
+    },
+    {
+      "path": "context/shared/signal/SignalService.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "ranges": [
+        [
+          1,
+          65
+        ]
+      ],
+      "sha256": "d8043153b7619ddf401da7abb22b3d609db36b1e5c125bc993bb07994ae4a0c4",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge.processMessage.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          217,
+          309
+        ]
+      ],
+      "sha256": "678b6b164a0f72bac61fb39b5ec837c41a83959b3479c36ff21791d024018d22",
+      "function": "processMessage"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge.retryMessage.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          312,
+          346
+        ]
+      ],
+      "sha256": "7d3084f514aeec6e3e22b679ef821836b8e99e06e0871943be47880187537d4b",
+      "function": "retryMessage"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge._invokeMessageCall.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          490,
+          521
+        ]
+      ],
+      "sha256": "77b4529009c11b657d4a63dce582627495f0f48e0e5f84126f1d837fac5a8ed4",
+      "function": "_invokeMessageCall"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge._proveSignalReceived.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          548,
+          566
+        ]
+      ],
+      "sha256": "c82e81797838c667d895aa8ca7071cea5493c5a7ee7e98229c366310f50d2356",
+      "function": "_proveSignalReceived"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge._updateMessageStatus.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          528,
+          532
+        ]
+      ],
+      "sha256": "eef8977907f8c2b7db098e24180cb7ab71fcb0ef5e20c2f43a0f6fb056d4cdb8",
+      "function": "_updateMessageStatus"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge._checkStatus.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          600,
+          602
+        ]
+      ],
+      "sha256": "24e9f1cd338b3e7465ed06eb0835375a24ca76dfc94c39f4231e6d7ffb24ffbc",
+      "function": "_checkStatus"
+    },
+    {
+      "path": "slices/shared/bridge/Bridge.hashMessage.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          463,
+          466
+        ]
+      ],
+      "sha256": "bb2bcd77bbf3440feba37163b95fd83977e0aa7275aed5bcca820de3636d0022",
+      "function": "hashMessage"
+    },
+    {
+      "path": "context/shared/bridge/Bridge.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "ranges": [
+        [
+          1,
+          101
+        ]
+      ],
+      "sha256": "4d9b219afe832ce7b3e004e5a08c77c10538d475d9adc1277f6c1798d29636a0",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "slices/shared/vault/ERC20Vault.onMessageInvocation.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/vault/ERC20Vault.sol",
+      "ranges": [
+        [
+          292,
+          316
+        ]
+      ],
+      "sha256": "8485d5f34949ac488877f0ff81bd875127c755641772864594253ca4d9a4b205",
+      "function": "onMessageInvocation"
+    },
+    {
+      "path": "slices/shared/vault/ERC20Vault._transferTokens.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/vault/ERC20Vault.sol",
+      "ranges": [
+        [
+          352,
+          369
+        ]
+      ],
+      "sha256": "990146ed16bf832c0806dcebe256dacb647df06fbc27184715c984e5ce3261d9",
+      "function": "_transferTokens"
+    },
+    {
+      "path": "context/shared/vault/ERC20Vault.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/vault/ERC20Vault.sol",
+      "ranges": [
+        [
+          1,
+          162
+        ]
+      ],
+      "sha256": "7599e903ed2031153387df2176e6bd15fa854b3a41c10f4667c77f05a38ac4ad",
+      "kind": "original declarations; intentionally incomplete contract context"
+    },
+    {
+      "path": "context/shared/bridge/IBridge.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/bridge/IBridge.sol",
+      "ranges": [
+        [
+          1,
+          166
+        ]
+      ],
+      "sha256": "4d21b4c3bc6659c8432546e6ccde3ff6fcc79f35b57fbf90da5340b0ba2b5b60",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/shared/signal/ISignalService.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/shared/signal/ISignalService.sol",
+      "ranges": [
+        [
+          1,
+          109
+        ]
+      ],
+      "sha256": "5e01b7d8426580eaa2e03c5a62a7af671530259d120da9abcc3ea2713c7dcdd3",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/layer1/core/iface/IInbox.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/core/iface/IInbox.sol",
+      "ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "sha256": "03325d20a9f629deea19b3d4bda79cc508656a3bd0ff455183d86a4e63127a38",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "sha256": "666d8c8a870e9a51992e582797486d1316e257fc691a29c2881b8c15a1953c9d",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/layer1/automata-attestation/interfaces/IAttestation.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/automata-attestation/interfaces/IAttestation.sol",
+      "ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "sha256": "c7074fbcd5008dec4a96baedbd9b1f07f631db384ca0d153880245d27dd3af33",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/layer1/verifiers/IProofVerifier.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/IProofVerifier.sol",
+      "ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "sha256": "57e6c47171f9148e34b576418540232db48343d562d1878a120c3e5d7d53620b",
+      "kind": "complete type/interface context"
+    },
+    {
+      "path": "context/layer1/verifiers/LibPublicInput.sol",
+      "source": "dataset/benchmark_complete/20260622_Taiko/taiko-mono/packages/protocol/contracts/layer1/verifiers/LibPublicInput.sol",
+      "ranges": [
+        [
+          1,
+          59
+        ]
+      ],
+      "sha256": "c2fc3fe8c60e846efae2ae6f5083eea62903caf907c49f27764dea02ccc4fe44",
+      "kind": "complete type/interface context"
+    }
+  ]
+}

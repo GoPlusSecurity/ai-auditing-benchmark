@@ -1,0 +1,22 @@
+{
+  "folder": "20260624_Royalties",
+  "date": "2026.06.24",
+  "project_cn": "#Royalties on #Polygon",
+  "project_en": "#Royalties on #Polygon",
+  "vulnerability_cn": "零数量 ERC1155 批量转账虚增版税权益",
+  "vulnerability_en": "Zero-amount ERC1155 batch transfers inflate royalty entitlement",
+  "detail_cn": "源码与事件指向：Royal1155LDA 忽略实际转账数量，按批量 ID 条目增加档位权益；回填未完成且发送方档位余额为0时可跳过扣减。交易含100个零数量条目，随后领取新存款100倍。已保存两份实现共45个Solidity文件、编译设置及代理源码，并解码浏览器原始事件。辅助地址本笔USDC.e净流入261162.926278，源表261200美元保留。历史代理槽、回填标志及供应量未独立读取，未编译或分叉重放。",
+  "detail_en": "Source and events indicate that Royal1155LDA ignores transfer quantities and increments tier entitlement per ID; incomplete backfill with a zero sender tier balance permits skipping the debit. Events contain 100 zero-amount items followed by a claim of 100 times the new deposit. Both implementation bundles (45 Solidity files), compiler settings and proxy sources are archived; raw explorer events were decoded. Helper USDC.e net inflow is 261162.926278; sheet loss remains USD 261200. Historical proxy slots, backfill flag and supply were not independently read; no compilation or fork replay.",
+  "tx_urls": [
+    "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  ],
+  "vulnerable_contract_urls": [
+    "https://polygonscan.com/address/0x7c885c4bfd179fb59f1056fbea319d579a278075#code",
+    "https://polygonscan.com/address/0xfe16ee78828672e86cf8e42d8a5119ab79877ec7#code"
+  ],
+  "loss_usd": 261200,
+  "source_status": "verified_original_source",
+  "original_row": 99,
+  "source_verification": "PolygonScan verified implementation source extracted byte-preservingly from embedded JSON and cross-checked against independent data-csource HTML attributes; all 45 Solidity source texts match. Current explorer proxy links archived, historical implementation slots unverified. Transaction HTML raw event data decoded. Exact function slices compared against complete source. No compilation, raw RPC receipt or fork replay.",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20260914_sheet_rows_98_102.json"
+}

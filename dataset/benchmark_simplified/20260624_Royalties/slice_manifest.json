@@ -1,0 +1,155 @@
+[
+  {
+    "path": "slices/lda/Royal1155LDA.completeOwnedTokensBackfill.sol",
+    "complete_path": "source-bundles/lda/contracts/ldas/Royal1155LDA.sol",
+    "function": "completeOwnedTokensBackfill",
+    "original_start_line": 252,
+    "original_end_line": 257,
+    "sha256": "6bf91224ca2635fbca7383780491f78b159e020b12f1f045cc5b44b2b76a32aa",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/Royal1155LDA.getIsOwnedTokensBackfillComplete.sol",
+    "complete_path": "source-bundles/lda/contracts/ldas/Royal1155LDA.sol",
+    "function": "getIsOwnedTokensBackfillComplete",
+    "original_start_line": 502,
+    "original_end_line": 508,
+    "sha256": "98c74421c796302236a0a53cdd18ad040a23c0c216bad29a354c2f5c251f95a6",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/Royal1155LDA.tierBalanceOf.sol",
+    "complete_path": "source-bundles/lda/contracts/ldas/Royal1155LDA.sol",
+    "function": "tierBalanceOf",
+    "original_start_line": 595,
+    "original_end_line": 605,
+    "sha256": "0148cdcbb5ac6f66a57f4a277bf3c0cf9359b64740a13939882f2af4f911b16e",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/Royal1155LDA._beforeTokenTransfer.sol",
+    "complete_path": "source-bundles/lda/contracts/ldas/Royal1155LDA.sol",
+    "function": "_beforeTokenTransfer",
+    "original_start_line": 744,
+    "original_end_line": 830,
+    "sha256": "a0a3a142ad2ffdcac2b18a8fa84f45391c14c513f168f9aff6bd563acbdc95f3",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/ERC1155UpgradeableGapless.safeBatchTransferFrom.sol",
+    "complete_path": "source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ERC1155UpgradeableGapless.sol",
+    "function": "safeBatchTransferFrom",
+    "original_start_line": 139,
+    "original_end_line": 151,
+    "sha256": "064c2575458f8e62d3609a476b1531472d83860916580e365ba6a8a6c1e6aca2",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/ERC1155UpgradeableGapless._safeBatchTransferFrom.sol",
+    "complete_path": "source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ERC1155UpgradeableGapless.sol",
+    "function": "_safeBatchTransferFrom",
+    "original_start_line": 204,
+    "original_end_line": 235,
+    "sha256": "ef9a96e07f478faa61c3280f990f52752897f7e58ec6313504f695378fe1dadc",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/lda/RoyalUtil.decomposeLDA_ID.sol",
+    "complete_path": "source-bundles/lda/contracts/shared/RoyalUtil.sol",
+    "function": "decomposeLDA_ID",
+    "original_start_line": 66,
+    "original_end_line": 84,
+    "sha256": "458282892508f8b8f913527c9c861a8a769bb07cbc33d1a45830a7739b0541bc",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties.beforeLdaTransfer.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "beforeLdaTransfer",
+    "original_start_line": 345,
+    "original_end_line": 364,
+    "sha256": "02b4c846bd66fcbf134b96816b0596a00afeb5745646b31c3f11545ef21d7dfa",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties.deposit.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "deposit",
+    "original_start_line": 375,
+    "original_end_line": 390,
+    "sha256": "8323430bc7729d79c4ce403a3208a12e32206300339e7b3f3a5ba9e3dc9a227d",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties.claim.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "claim",
+    "original_start_line": 450,
+    "original_end_line": 466,
+    "sha256": "9da180262ae12771c35d14651f66b6d62bda9a8bd44eb2ead29c126edfe8ef18",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._deposit.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_deposit",
+    "original_start_line": 785,
+    "original_end_line": 818,
+    "sha256": "26fc6be2a25c62ccdc4b95c228dab6047fad68e92a0b182a4671a918166d27fd",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._claimBatch.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_claimBatch",
+    "original_start_line": 823,
+    "original_end_line": 847,
+    "sha256": "b28bf61ddee4a6cddaf19679eb201af75c6f0263355d5b49f747c1ad105c2bd5",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._claim.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_claim",
+    "original_start_line": 849,
+    "original_end_line": 881,
+    "sha256": "a253b07a1d005dd25a218d4f9e6f21bc3741ddbfad62ed5f5b997a482f3e2557",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._settleUcr.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_settleUcr",
+    "original_start_line": 969,
+    "original_end_line": 1023,
+    "sha256": "29e2be1bcd2b8e86f12ca700d040ed8e60060d5c91d99766e2e517a345c148da",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._settleUce.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_settleUce",
+    "original_start_line": 1033,
+    "original_end_line": 1197,
+    "sha256": "c75414ddfb80617063c6a3a45e7de662e8ca20c40f19f65faf3f653195d9973e",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._getProRataOwnership.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_getProRataOwnership",
+    "original_start_line": 1278,
+    "original_end_line": 1287,
+    "sha256": "0c0d79c0072749ae1334697812672cd29c1962fc00a81cce137bdfc87b186b29",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  },
+  {
+    "path": "slices/royalties/Royalties._tcrDiffToUcrDiff.sol",
+    "complete_path": "source-bundles/royalties/contracts/royalties/Royalties.sol",
+    "function": "_tcrDiffToUcrDiff",
+    "original_start_line": 1289,
+    "original_end_line": 1298,
+    "sha256": "0a3743feb6f7575d5d3ff0ccfe94a78d5514392fc7cd81966f09c2c77f1db120",
+    "semantics": "Exact function excerpt; not a standalone compilation unit. Full dependencies and state declarations are in the complete view."
+  }
+]

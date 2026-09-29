@@ -1,0 +1,1065 @@
+{
+  "commit": "ff002a4516b489c7146675f7036d699b07a7f785",
+  "source_status": "verified_sgx_source_with_upstream_context",
+  "files": [
+    {
+      "path": "taiko-mono/LICENSE",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/LICENSE",
+      "sha256": "c887bdae7a08112f4facb9c9169b68c21fbdbcb21a84f3ab6c6115533c18e698",
+      "git_blob_sha1": "9c5d7114cfc831816296ffe8b01a75ca608ac9db",
+      "bytes": 3273
+    },
+    {
+      "path": "taiko-mono/packages/protocol/README.md",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/README.md",
+      "sha256": "30cf420b7cd1cb53a8631c4f318eabc146e4169d83a064238726cbd548f6f61e",
+      "git_blob_sha1": "b52f5841c751b69111f8f4ce45af3c490529c252",
+      "bytes": 3811
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation.sol",
+      "sha256": "d7b046e65cd9c91e8ced2c57b87d812624c8ca4ca39fbf417ae4c487ea4a5e2b",
+      "git_blob_sha1": "401a1110f634bfe6defe6959c7085283a6220038",
+      "bytes": 19410
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/AutomataDcapV3Attestation_Layout.sol",
+      "sha256": "f15ea2fab342d0819e84da237c20b4f463ee0837db7203dcb790e10d361a56b1",
+      "git_blob_sha1": "a2bfbd75571bf4ac57aa0c4ad56478cae4e6ecd8",
+      "bytes": 2954
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/README.md",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/README.md",
+      "sha256": "ea13b8e58ce03d2792553736c12fecf3e9a39c48ad7edb2209fd3dd6b8f92d55",
+      "git_blob_sha1": "45c056c06675dca952447e1c0e2e6db738d9fe34",
+      "bytes": 407
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/interfaces/IAttestation.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/interfaces/IAttestation.sol",
+      "sha256": "c7074fbcd5008dec4a96baedbd9b1f07f631db384ca0d153880245d27dd3af33",
+      "git_blob_sha1": "8ca527743f7e05ab214b668943cf926eab725c0b",
+      "bytes": 426
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/interfaces/ISigVerifyLib.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/interfaces/ISigVerifyLib.sol",
+      "sha256": "01f580847454284bb85a4399f72cdc34ab56961630ea3796a192ba0f13a4b3f4",
+      "git_blob_sha1": "c0a323a3cf3843635ce2be9551119edcd36fad83",
+      "bytes": 352
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/EnclaveIdStruct.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/EnclaveIdStruct.sol",
+      "sha256": "8f9392a348043324dcc4d00fcf84213355842ed33c8157148d9d78a4385236d2",
+      "git_blob_sha1": "c1d593bbfbb9df5ba47cf12b88f5ee905a021c43",
+      "bytes": 653
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/PEMCertChainLib.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/PEMCertChainLib.sol",
+      "sha256": "16ef592778ab07e8f135aab335496f01c805facec4272ccbe73d2903b7d2d134",
+      "git_blob_sha1": "41523b9a1e92800ccb4462f14b628e60a737d667",
+      "bytes": 14018
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Parser.sol",
+      "sha256": "238b29b5a3204d3a01c18b460dc164389fcdc8fc8a0ca1fb432afe50a3e5a049",
+      "git_blob_sha1": "1c67ed0001c31989e89c9769a3fa08bafa04dfdf",
+      "bytes": 11902
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/QuoteV3Auth/V3Struct.sol",
+      "sha256": "666d8c8a870e9a51992e582797486d1316e257fc691a29c2881b8c15a1953c9d",
+      "git_blob_sha1": "f9acfd7e4ea840a0d8c25e09800a5e754c85f218",
+      "bytes": 1774
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/TCBInfoStruct.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/TCBInfoStruct.sol",
+      "sha256": "1d6877bdeaafe04e38852c24c964645f21725550b297977d8c6bbc920f2432fa",
+      "git_blob_sha1": "417a1dadd730e732126544afee78574090b19f78",
+      "bytes": 652
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/lib/interfaces/IPEMCertChainLib.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/lib/interfaces/IPEMCertChainLib.sol",
+      "sha256": "992ad79a10b27f1e077fb0c77663f541e902f19813e29c38cea825d34cb58ecc",
+      "git_blob_sha1": "eeca3b9294742a12b7a7609768900b316902f0fb",
+      "bytes": 1080
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/utils/Asn1Decode.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/utils/Asn1Decode.sol",
+      "sha256": "2d1524104a86357c5517bff84046edfca9e38f5023af039ae2c336a1aad795e1",
+      "git_blob_sha1": "ed4abf1364d57c0c5d5aaafd6019df45073cbce4",
+      "bytes": 5067
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/utils/BytesUtils.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/utils/BytesUtils.sol",
+      "sha256": "cbc16ffc8c4a4672143f9d3f88f33288f8223e2f0794e7f70fcc2d282ebc53e6",
+      "git_blob_sha1": "d7085a8fa170b214e19ecf0ba35d56a2dad53eeb",
+      "bytes": 4268
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/utils/SHA1.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/utils/SHA1.sol",
+      "sha256": "c742eb86e6403fd55035d128e5c523a81b42acc6f8b1920698c7d0befb1d7df2",
+      "git_blob_sha1": "7a43a79ee5cf3d71c32e4c91a1820f6d4be24d2c",
+      "bytes": 8051
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/utils/SigVerifyLib.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/utils/SigVerifyLib.sol",
+      "sha256": "f5b14fa5f59dcbb6d07e984834aabbd3eb595d335664d833a585219a7f0054d5",
+      "git_blob_sha1": "aa92a228eba0cc57dfba7243e17d2b051d78023a",
+      "bytes": 1526
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/automata-attestation/utils/X509DateUtils.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/automata-attestation/utils/X509DateUtils.sol",
+      "sha256": "0ae7fb1109e69517355b7a24edfbb9893773578b49bed0abff717f97cb0529ec",
+      "git_blob_sha1": "ac7ef6bc9617dc61d206f98924540f9f434eabcb",
+      "bytes": 2533
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/IBondManager.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/IBondManager.sol",
+      "sha256": "d413b57c2dd2e7bdd0112e5a6a7dff0bb1a86a695883194c2ee42e9fee5ddd8f",
+      "git_blob_sha1": "51492c7963e940176162927ab1e607d087120087",
+      "bytes": 4549
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/ICodec.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/ICodec.sol",
+      "sha256": "5435a9ef0a94156d42f9f537d9fb0f02ef64406c43528a005d7eee8cfc209a07",
+      "git_blob_sha1": "163cb51bf1993144fe441f0c4904c4aefb882194",
+      "bytes": 2999
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/IForcedInclusionStore.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/IForcedInclusionStore.sol",
+      "sha256": "36a0667c6bfd8fc0e2f49afb75b6edf649254d5f843876a0b9c9559e8539a440",
+      "git_blob_sha1": "6729f0c74c21598fdb05710bbff69fc858f111d3",
+      "bytes": 2950
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/IInbox.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/IInbox.sol",
+      "sha256": "03325d20a9f629deea19b3d4bda79cc508656a3bd0ff455183d86a4e63127a38",
+      "git_blob_sha1": "298b1f996199ec27c313aabdb62117edc224db04",
+      "bytes": 10125
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/IProposerChecker.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/IProposerChecker.sol",
+      "sha256": "525c60ea795611c3b6a5689d9a6bb4283c74cf3370e0dcf2aca3c3c9fd9ec80b",
+      "git_blob_sha1": "ee15039f7e2ea8cf876d060ab30cfff5cc5be5dd",
+      "bytes": 857
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/iface/IProverWhitelist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/iface/IProverWhitelist.sol",
+      "sha256": "e837f5fa88b30e246fdcafa463859cb5b3d6a184028568e71386f59fa72c444c",
+      "git_blob_sha1": "a941592715dc584f98211eb698e51dcedf1bf1a4",
+      "bytes": 642
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/impl/Inbox.sol",
+      "sha256": "009bb0b803a4402fec9f38b908afd603ddd9f8cbce629d806f9087277411dacc",
+      "git_blob_sha1": "ac02a0f0002db120f065046f8b41fa8d13752d96",
+      "bytes": 34754
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/impl/ProverWhitelist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/impl/ProverWhitelist.sol",
+      "sha256": "fb0fbbe09c830c23377711203e93649e90dba65eaf75d89489cd6e0ccab613a6",
+      "git_blob_sha1": "5c96a41b8fd3fbac414d44bf80ac9d9e6c725321",
+      "bytes": 4460
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/impl/ProverWhitelist_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/impl/ProverWhitelist_Layout.sol",
+      "sha256": "53bb13862e0533187736d0081b00618410a2404091fe34672af6fc0e7d04a1e6",
+      "git_blob_sha1": "20e59909705667354756ce73f4c9788d96fd00a6",
+      "bytes": 2148
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibBlobs.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibBlobs.sol",
+      "sha256": "f824d7bb2e221920ae308757382f5451266ac48239fd20e3f7b92f5b289bcad9",
+      "git_blob_sha1": "7370442a39cb22ae8f6735437a7597513da4b875",
+      "bytes": 2236
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibBonds.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibBonds.sol",
+      "sha256": "86a1ddef86dd37b7afff84c45d7309bcec490b86b1dbb69060c0eff8a8e38911",
+      "git_blob_sha1": "5c1f9a94909f51d5a5d379e74872f73d8f2090bb",
+      "bytes": 7287
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibCodec.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibCodec.sol",
+      "sha256": "d5054fbd57290c62d27938340caf3f0661a59597efbad21019ceeda1c72d5add",
+      "git_blob_sha1": "8e14fc44c2c184e311e48c178fd1952016a59919",
+      "bytes": 4920
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibForcedInclusion.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibForcedInclusion.sol",
+      "sha256": "e9a89b12352760c369916db88005bfb01916beba84370457134c1d4b66d8d3f1",
+      "git_blob_sha1": "96a466373beb1c75b335caa4bdc25334e5a50a6d",
+      "bytes": 6952
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibHashOptimized.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibHashOptimized.sol",
+      "sha256": "503710887a68046a31a15b6d833348b6372574cdc0e2854b09b53d0edc5a2b9c",
+      "git_blob_sha1": "83cd05eb90672257f29a9556f79098f4a66d6ede",
+      "bytes": 4018
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibInboxSetup.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibInboxSetup.sol",
+      "sha256": "a13edad169ffd9dc1d25f4c467bf29287d7e573fd905287d9b4ffca03eec4ffd",
+      "git_blob_sha1": "09b8f5b97dd55d5df91bfb36d1561f99ae8e71d2",
+      "bytes": 4541
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibPackUnpack.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibPackUnpack.sol",
+      "sha256": "35738fc618b052cf97c562bf556ffd6c452b91a3a5daa603d73fa236ffa0f82e",
+      "git_blob_sha1": "8336a794ab7f5cf1af8a4f1f89899303bc20a317",
+      "bytes": 13755
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/core/libs/LibTransitionCodec.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/core/libs/LibTransitionCodec.sol",
+      "sha256": "0d34e8cc53033178cbdc2562c814e6c7185851e91ce642fc37c719ed508b8b03",
+      "git_blob_sha1": "a94ed6692eed745401f06fa15d659a0ad1388765",
+      "bytes": 1144
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/devnet/DevnetInbox.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/devnet/DevnetInbox.sol",
+      "sha256": "a36ab3e705f279e8ee570b93d8d00a2baa59566484875eb08050db56fab22f1f",
+      "git_blob_sha1": "6c6268e98d22a3ffb335d26cb70968925ee3c56c",
+      "bytes": 2493
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/devnet/DevnetInbox_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/devnet/DevnetInbox_Layout.sol",
+      "sha256": "016f7c68f7ad0b6ef05944200ddaea6ebdb89d93493a4ddda6cf459766bced5f",
+      "git_blob_sha1": "db7e6fef3ceb62f827cd43876fc3fcbfc5632147",
+      "bytes": 2533
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/devnet/DevnetVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/devnet/DevnetVerifier.sol",
+      "sha256": "ee056568a0609d218bad41be4539b3e765b0a6006478018058f313083c2c4c4d",
+      "git_blob_sha1": "159304637cbca4ccf15a33478dbf8e3941e1b1a2",
+      "bytes": 1729
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/devnet/OpVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/devnet/OpVerifier.sol",
+      "sha256": "815087d9cc4f7670df890e193427f430fddd8d775d9b9a539935c9ad3eb0f7a9",
+      "git_blob_sha1": "e1fb95a23ecdd0274e4e951fab0e864a0ab8ced2",
+      "bytes": 962
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/hoodi/LibL1HoodiAddrs.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/hoodi/LibL1HoodiAddrs.sol",
+      "sha256": "20e04f75f99c05312548f524dd5478d304e8616a4891fa09d31cd45bc5e8cbd7",
+      "git_blob_sha1": "f33270429a7aac77a219f3bcfd81bb21b64eb447",
+      "bytes": 713
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/LibFasterReentryLock.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/LibFasterReentryLock.sol",
+      "sha256": "ab31fdc7572d093057cc74091e544765b6fbd37179409928eb93684380b2c199",
+      "git_blob_sha1": "cfa3d7c066e8f2331f4eb8cdb0091d375844bf6e",
+      "bytes": 958
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/LibL1Addrs.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/LibL1Addrs.sol",
+      "sha256": "999543dc12d6b89f5f1b10942ac2e80024a5af3fb6788ff5e9e9973aa172fa49",
+      "git_blob_sha1": "a828de62c16e3de4b356f876247582f4df99be04",
+      "bytes": 2298
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetBridge.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetBridge.sol",
+      "sha256": "37ea7b923e0f9197566088ecc62cb9ca397e9978b72bcfa0ef237624c108ae27",
+      "git_blob_sha1": "825ff3cdbd34ca544de2461ffab3fb0ee7619acb",
+      "bytes": 2504
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetBridge_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetBridge_Layout.sol",
+      "sha256": "b2b6cefdeb393e6afc5665e18ac8667ac1e606d41aa5ce4b489fca8a3cee4a29",
+      "git_blob_sha1": "75279b842b3419530b103c32de19e9ecd0cffa96",
+      "bytes": 2799
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetDAOController.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetDAOController.sol",
+      "sha256": "0e530c4008d61da8ada14105e90381c3d6b8f21acea88c83def2c829deb18289",
+      "git_blob_sha1": "bf8b1ef0ca5c96d81b6cfc0f2a848e88bbf635be",
+      "bytes": 1585
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetDAOController_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetDAOController_Layout.sol",
+      "sha256": "ba1e51c2dca3ad09f4cb460ab0e9bca180d5b1c7c6a8280cfd376ab14ae7ed04",
+      "git_blob_sha1": "73f3ba6cfc8aaa76b32a2918b83eb1ea366c4863",
+      "bytes": 2420
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC1155Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC1155Vault.sol",
+      "sha256": "7984de4c105606028cb18e5a12ca58f4376e3d314d592ebbd450f4f7cd6af3fc",
+      "git_blob_sha1": "2a2d17686f3b93ba05de381bae5c811155be374c",
+      "bytes": 957
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC1155Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC1155Vault_Layout.sol",
+      "sha256": "cccf194eac14cff0dab6fad5403f887e021295c52a17a013061d4f5534ed87e9",
+      "git_blob_sha1": "d5d49bf01e906be02cd3f9e9795211ffb37cc40e",
+      "bytes": 2682
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC20Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC20Vault.sol",
+      "sha256": "b4157aeabf6e1a256c4f30e2e0cab951f18e2a3b1055d85bb6d99ad3e107de40",
+      "git_blob_sha1": "c6a4b6d8dd23cc5c4a058e570e315195ef5e2ddb",
+      "bytes": 943
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC20Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC20Vault_Layout.sol",
+      "sha256": "a7d61c38d9ff1fd4cf809319498034a0925136fd981098184b5cb148d124a3f3",
+      "git_blob_sha1": "d31b962671cf1cf3df739cfc462d74f96547ce8f",
+      "bytes": 2547
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC721Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC721Vault.sol",
+      "sha256": "58f45a7becd29dd67ef6f0b03e7845e360dac5cf7b7ae0f72787083c942582e0",
+      "git_blob_sha1": "249a1cd74b2d8409c5c5fffc4fa108e8c527ef5b",
+      "bytes": 950
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetERC721Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetERC721Vault_Layout.sol",
+      "sha256": "b41da9629008df6a47884dced21dbfccf72c8343b25dd423fd4815e282acbcf2",
+      "git_blob_sha1": "119aeb7088b602d1269680cec88727353ec1ab59",
+      "bytes": 2418
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetInbox.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetInbox.sol",
+      "sha256": "335243ef94a59557653ff0980882d1834474b690138a5a74a2b6cb78726c792a",
+      "git_blob_sha1": "133f3aac4179e119278c8608575846cba3d543d5",
+      "bytes": 3018
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetInbox_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetInbox_Layout.sol",
+      "sha256": "ab2f980a8b7ef8a666060a168a94b44e15589174a0757e823ec17c54f4bab3b6",
+      "git_blob_sha1": "78daa49cca4120ff1e3e0c4f6f61ea538fab9f4f",
+      "bytes": 2535
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetSharedResolver.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetSharedResolver.sol",
+      "sha256": "3ce3f8c5cc0cfe8c2e4f813e24b64bf94bbf04de647ba10723a6b1feea3b8007",
+      "git_blob_sha1": "d7e14ca90a3b917e3aed796bbc1df2e11f3c87c1",
+      "bytes": 2408
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/MainnetVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/MainnetVerifier.sol",
+      "sha256": "1c17f2f6a3d7407e8fd2db02f4883270ff3862aa38347e8eecc5c67168f19f84",
+      "git_blob_sha1": "5b7ddee678e213523937948785ab4def5efacdd1",
+      "bytes": 1807
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/SharedResolver.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/SharedResolver.sol",
+      "sha256": "72c38c1e17beedaa931e2689676f1099dd05c7a4c270bed344fc1dc369e28c83",
+      "git_blob_sha1": "577aeefdb88b5acbe5a4a541f81f7a5cdcdd2a00",
+      "bytes": 2394
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/TaikoToken.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/TaikoToken.sol",
+      "sha256": "c4edfb97a1a508af47cd5b2788a1ebe5b7652097a62bb4612b199a94307bad91",
+      "git_blob_sha1": "054b9766744491569a56a112b0792437cff43735",
+      "bytes": 6108
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/mainnet/TaikoToken_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/mainnet/TaikoToken_Layout.sol",
+      "sha256": "99422137090932abaeeb433f25b484aa12024225950a10095b15842f0e2ed709",
+      "git_blob_sha1": "c69ad46e7078e123d634cf688c65b3133cafd07f",
+      "bytes": 4534
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/iface/IBlacklist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/iface/IBlacklist.sol",
+      "sha256": "3483a7ea7f840e004d55900dd66fc92cf4764d9b9f710df6bd9a834b3015dd73",
+      "git_blob_sha1": "a3535c3a2eaf11d62b2ee2e5db7dd275679bf8be",
+      "bytes": 3023
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/iface/ILookaheadSlasher.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/iface/ILookaheadSlasher.sol",
+      "sha256": "bd437a13227b4f89ab56c2a7412ed959314789bdb9dc1edaec35d5fb8e39e083",
+      "git_blob_sha1": "faf868f8540b29a32cfa03f01f5a5a671354767b",
+      "bytes": 2893
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/iface/ILookaheadStore.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/iface/ILookaheadStore.sol",
+      "sha256": "e2bb0c813db3c1446efb98ebe1eaca1a4dd31c1493f82bdca37ba4b169144f7d",
+      "git_blob_sha1": "9b164cdfc219b66531262267ba240515df01164a",
+      "bytes": 6141
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/iface/IPreconfSlasherL1.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/iface/IPreconfSlasherL1.sol",
+      "sha256": "acc30ef2dd7a358d595592e6786a25e2efa138cc9d3c3f996712ec20f17647cb",
+      "git_blob_sha1": "616cbaeea2779d45c486eba117de538f6091d23a",
+      "bytes": 1082
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/iface/IPreconfWhitelist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/iface/IPreconfWhitelist.sol",
+      "sha256": "28b8c6b14c047581bd63e12fa1b9bba4d74d9052a8234bc264d074c16a2e2cc3",
+      "git_blob_sha1": "13afd81b4df1f7fc833b3c11fd73264d78c08d8b",
+      "bytes": 2507
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/Blacklist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/Blacklist.sol",
+      "sha256": "339a56c36da8080c27dd608adfdbdecb9c9d95bd499430a033096abc0f7d1dcb",
+      "git_blob_sha1": "c841978c193574727df96920a4c9b3d28a5e46d4",
+      "bytes": 4717
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/LookaheadSlasher.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/LookaheadSlasher.sol",
+      "sha256": "518be3d2e78b8f8160f909937cc24f38793d7a1bc3acc53f21b8caa5e59e8ef1",
+      "git_blob_sha1": "7ece0150bcd6f579fff066c66a9f69a9e7fe0958",
+      "bytes": 11567
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/LookaheadStore.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/LookaheadStore.sol",
+      "sha256": "c99bf45b02de757e8b2902686e171318c8b2ea49331aeb5e9bc5a114a1e71858",
+      "git_blob_sha1": "7608b0d9695fb6ee117bfa6de6687d04fa425f3e",
+      "bytes": 25814
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/LookaheadStore_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/LookaheadStore_Layout.sol",
+      "sha256": "ae8d7c6b09972c6c6bec2ac405ad8caa563e4569c3df5304698c41e302b5c947",
+      "git_blob_sha1": "1bd6f7cb05398458f9fd2a49452787508a976a99",
+      "bytes": 2421
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/PreconfSlasherL1.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/PreconfSlasherL1.sol",
+      "sha256": "eef589564639083996f592f1586d730c00d13b6485fed8d695444a885700e7a1",
+      "git_blob_sha1": "7118a16de4e458fc79fec6e6fcff8727374e2fe1",
+      "bytes": 4003
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/PreconfWhitelist.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/PreconfWhitelist.sol",
+      "sha256": "272b2f59cbd8ad937f2c3eb524e0944ee2463c3f426c0789a74afddc79403730",
+      "git_blob_sha1": "0b052d1aab2b86cb1f8b1a7413715f164cf9d145",
+      "bytes": 13641
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/PreconfWhitelist_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/PreconfWhitelist_Layout.sol",
+      "sha256": "535d275124cd3c29307303fb7ba3570513a9302c703495a9d2d4263f98b89f8c",
+      "git_blob_sha1": "21f974ba240f24c464d59bdb2d8219a402af8dc3",
+      "bytes": 2945
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/impl/UnifiedSlasher.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/impl/UnifiedSlasher.sol",
+      "sha256": "1769975b0aa38c10394f06f192612357557fb4fc4fa4eceabbfee180d8103f4f",
+      "git_blob_sha1": "bf4340552a0660d9529c9522d0027e2f61b151a7",
+      "bytes": 3892
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibBLS12381.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibBLS12381.sol",
+      "sha256": "6c49da51574a4ab5dafc950eefc1a99bffd80d1110b954cc9858f9327c6cbf87",
+      "git_blob_sha1": "0b3be10200879eae2f388f9e8ab8bb9a5a004011",
+      "bytes": 16016
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibBLSSignature.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibBLSSignature.sol",
+      "sha256": "d1026086f2bbf4912bedc8e88cafb4413fd42875db0160cefece1b2f7d3a0b05",
+      "git_blob_sha1": "1b2255450ba5cca07dd63fd25cb96cdbbae35b3d",
+      "bytes": 1223
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibBeaconMerkleUtils.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibBeaconMerkleUtils.sol",
+      "sha256": "2e1c14c192a2e6851907f5e4939f9f18a6c1c1a45d5358b9773841b50b1d75e7",
+      "git_blob_sha1": "e19e27a777484dcf4ca02374a75064f892668955",
+      "bytes": 2866
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibBlockHeader.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibBlockHeader.sol",
+      "sha256": "e9498b3e87f4dad7f892c894e79d7daedda17cd00abaf8294b54cfa5597b8984",
+      "git_blob_sha1": "a7829bb94ea5090074a041efc2392030f35a95a6",
+      "bytes": 2246
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibEIP4788.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibEIP4788.sol",
+      "sha256": "ed7680cf9c51d0b693c56910f5cfa8886bfee3d0eada9409aae5495333df4c75",
+      "git_blob_sha1": "7d33f03a3faedca28a8411fe1beee0deaf744438",
+      "bytes": 4478
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibPreconfConstants.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibPreconfConstants.sol",
+      "sha256": "6e8705f8eee714cb326b71c7ed08bf902617edb15c4f8f186a3af954dde9e5c4",
+      "git_blob_sha1": "db7c9bb5f0a6c95d63dfd3a9c1b9fc4c81d6ce9f",
+      "bytes": 1855
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/preconf/libs/LibPreconfUtils.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/preconf/libs/LibPreconfUtils.sol",
+      "sha256": "1c66b5f100dfe0e7fc0a3ffff205728c0f6db8ee5ecab9bb278371797ff437db",
+      "git_blob_sha1": "4871e75996dadba4f20f8c585214eb33ef78bbea",
+      "bytes": 4897
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/IProofVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/IProofVerifier.sol",
+      "sha256": "57e6c47171f9148e34b576418540232db48343d562d1878a120c3e5d7d53620b",
+      "git_blob_sha1": "46c29740c384e3aefa582bc6fae34fb096667d43",
+      "bytes": 1167
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/LibPublicInput.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/LibPublicInput.sol",
+      "sha256": "c2fc3fe8c60e846efae2ae6f5083eea62903caf907c49f27764dea02ccc4fe44",
+      "git_blob_sha1": "e57405dd2a82ab0d604da9c74e55d2a0f8a8576b",
+      "bytes": 2272
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/Risc0Verifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/Risc0Verifier.sol",
+      "sha256": "6f5e4331bd3b1eeae967454c7fbbbe97bb6aa2289a1bcdb0ab59f46982e32801",
+      "git_blob_sha1": "d18800908b72906ad3cfe792be66a831fd88b087",
+      "bytes": 3271
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/SP1Verifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/SP1Verifier.sol",
+      "sha256": "239e93541ad55c9c82ca36e889953d41904ef168f20bbbc568f4c4ffcd3033fe",
+      "git_blob_sha1": "146eadf4f3a50c8eb9db7cadf4eadec58bc725c0",
+      "bytes": 3277
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/SgxVerifier.sol",
+      "sha256": "263d6de8e19c9b5ff85b438dbca21b6f9e81cf66703592db5803b306ddc15a92",
+      "git_blob_sha1": "9e63b48b00ea97117119c6ebd22f2c3fe2ab5905",
+      "bytes": 7461
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/AnyTwoVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/compose/AnyTwoVerifier.sol",
+      "sha256": "d7a4512f827dcd55743d452e0951ac02bda81df03e7ebc36c69af76b33e54be3",
+      "git_blob_sha1": "975dfc87a26504e4e0614b3b87f84d2ae1112848",
+      "bytes": 1227
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/AnyVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/compose/AnyVerifier.sol",
+      "sha256": "7c57015c735aec5cdabfa4cd25bf15c2dc055f049b7ada7eaa44534923d9886b",
+      "git_blob_sha1": "6e93146cc3925485342558a500c736b539b05508",
+      "bytes": 913
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/ComposeVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/compose/ComposeVerifier.sol",
+      "sha256": "237ffff3ff6891427d86e4a4caa3619e14c0ccd33b863fd7ef21c1dba66e745f",
+      "git_blob_sha1": "ecf26ab0f384caaa57a100af22293a9d161dcfaf",
+      "bytes": 4067
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer1/verifiers/compose/SgxAndZkVerifier.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer1/verifiers/compose/SgxAndZkVerifier.sol",
+      "sha256": "598df0eaf73b14467935e843c6b94be6c5834fa46be6d4631c9e08a2e023a087",
+      "git_blob_sha1": "420e2e6edd7e28a3caadaee40a14ee509ef2c83b",
+      "bytes": 926
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/core/Anchor.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/core/Anchor.sol",
+      "sha256": "a50c7862a50a3c8a02d4df46602db68bc40627f144f5c382e1ec56372d6941a1",
+      "git_blob_sha1": "1f1b1cc6e6137923b177cc174420dca8704ca6cd",
+      "bytes": 12306
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/core/AnchorForkRouter_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/core/AnchorForkRouter_Layout.sol",
+      "sha256": "089c390ed4208bd10ffb04d9958a578d933129f23d37b4642bd6dc562ef47389",
+      "git_blob_sha1": "ab56cfbdecbc78658c3024086f2ac0306e128087",
+      "bytes": 1223
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/core/Anchor_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/core/Anchor_Layout.sol",
+      "sha256": "88492c79b32339b9abbbe0c4bdfeadbd04b3066b2d758471edcede70ef3b9426",
+      "git_blob_sha1": "1c48fba7f169b05b8e65a8fb604daa537304a897",
+      "bytes": 2523
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/core/BondManager_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/core/BondManager_Layout.sol",
+      "sha256": "8608af8c28ab7d01fedc7766f3cc75dee4307583c7c25ca6f0ee99c11d356999",
+      "git_blob_sha1": "fd418722e12953411fc6d767fc07ba12c1ec4c69",
+      "bytes": 2120
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/governance/DelegateController.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/governance/DelegateController.sol",
+      "sha256": "56deff5a6c79538bc1ff0cf8b4015c50ef3c84e360040703fc858367a2416bb8",
+      "git_blob_sha1": "3d5713cd1d330744026781545862802904ebdf80",
+      "bytes": 1892
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/governance/DelegateController_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/governance/DelegateController_Layout.sol",
+      "sha256": "6437a704355835ad1f7f524324458a5be13bb94264986b5716ea1000e1399cc9",
+      "git_blob_sha1": "8cb455dca0a5310810f5b812c6c58a4da0ae203c",
+      "bytes": 2416
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/hoodi/LibL2HoodiAddrs.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/hoodi/LibL2HoodiAddrs.sol",
+      "sha256": "ddc860ceb7f78c7539b3d113ff61d602ebb72c2af663304258b88897856839f3",
+      "git_blob_sha1": "bd4f18e12d7dcdc2d1f9566f150498fecd144db0",
+      "bytes": 506
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/mainnet/BridgedTaikoToken.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/mainnet/BridgedTaikoToken.sol",
+      "sha256": "0892d123b70b51b79b09e03a0e6092ee589af9d6f646144eb8ce614ddaf855fb",
+      "git_blob_sha1": "0d5e7b27ffea5a5e20096a65beac7fa48793572d",
+      "bytes": 1858
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/mainnet/BridgedTaikoToken_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/mainnet/BridgedTaikoToken_Layout.sol",
+      "sha256": "2eb69f5e860b9a0b1a3b7068b59a3460eb6b53d6a68895572455da7a642fe161",
+      "git_blob_sha1": "d9f2be5afe85522abe66c4742293b956b3c83d13",
+      "bytes": 4417
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/mainnet/LibL2Addrs.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/mainnet/LibL2Addrs.sol",
+      "sha256": "ca7b2e8c83feec18e522c345642d130acd373819c18d5613b505e024011560a9",
+      "git_blob_sha1": "65413aada320db7094bea40586c067cc663d2de3",
+      "bytes": 1324
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/preconf/IPreconfSlasherL2.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/preconf/IPreconfSlasherL2.sol",
+      "sha256": "63afecc871d610a58b8314f4606570d83d8057765c6a123dfb3633dcd7057696",
+      "git_blob_sha1": "08a67308d9cb53f2cb2b012a4866fda963b54ac8",
+      "bytes": 1929
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/preconf/PreconfSlasherL2.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/preconf/PreconfSlasherL2.sol",
+      "sha256": "95100d2e526544206e93723831985081c9f42ed19e3cd86b98952671144f9e91",
+      "git_blob_sha1": "11a156a7441c1ace6097c4d2b0479b490a885266",
+      "bytes": 8906
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/layer2/preconf/PreconfSlasherL2_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/layer2/preconf/PreconfSlasherL2_Layout.sol",
+      "sha256": "93aed2b17b478cb08dc5f04a0bc0d9ae008a9331627be92aa928dec9b21f5154",
+      "git_blob_sha1": "5b7209d2e2531e359b84b5ebacac2372bbc3c886",
+      "bytes": 1757
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/bridge/Bridge.sol",
+      "sha256": "a2bae14706bff86e1d3e5678afa60f57804ad9ef443ec3f48b274872ece76c23",
+      "git_blob_sha1": "8b7d84c15f3bde131c9da7e4f58f317cfdfdc1d6",
+      "bytes": 27764
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/bridge/Bridge_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/bridge/Bridge_Layout.sol",
+      "sha256": "66fc23a59a4ff0ab584fddb7126b957c08f9d2c3c2df6a54a3857b6a490716b5",
+      "git_blob_sha1": "b17ee8e7913032c672ec30c4f61ad5fc64db9dea",
+      "bytes": 2785
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/bridge/IBridge.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/bridge/IBridge.sol",
+      "sha256": "4d21b4c3bc6659c8432546e6ccde3ff6fcc79f35b57fbf90da5340b0ba2b5b60",
+      "git_blob_sha1": "1b66f718fff08f915df56526a25d4843004516ab",
+      "bytes": 6738
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/bridge/IEthMinter.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/bridge/IEthMinter.sol",
+      "sha256": "89e6880b738f33101f63145914abfa318622dad2b86b053547e650207cd59ef6",
+      "git_blob_sha1": "9ab0c71fa46f6e78da3ccb292e318989a9e749cd",
+      "bytes": 640
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/bridge/README.md",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/bridge/README.md",
+      "sha256": "8163de41daaeb08aed75746134eb7a33b2ece352c81568ce26a01c7da83df73e",
+      "git_blob_sha1": "4b6adfed7105362c96b731508ec76532b5d5a53d",
+      "bytes": 6243
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/DefaultResolver.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/DefaultResolver.sol",
+      "sha256": "8edb468bfd27618b93028737ebfb40783e68b356afde79d9dcd1a7fdf6bf5f8a",
+      "git_blob_sha1": "e55c84b83a20a70501df0b201c2e60c7d1a0ed8a",
+      "bytes": 2258
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/DefaultResolver_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/DefaultResolver_Layout.sol",
+      "sha256": "45bd2717fc002e792828596526f7ed07f9ec05a5f35856243963042fce0007e1",
+      "git_blob_sha1": "f5a8773cd2b3b5bd9fa7891417d34dccbf135433",
+      "bytes": 2017
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/EssentialContract.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/EssentialContract.sol",
+      "sha256": "2122b9db20f94d140a5400cad9ae8c08b5da93a2723d5dabe43740a21241b11e",
+      "git_blob_sha1": "382e28489f5ce3fd8d5509fa9ed3ce0b77f8a181",
+      "bytes": 8316
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/EssentialResolverContract.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/EssentialResolverContract.sol",
+      "sha256": "9aab150267e3314292893757759ec9ebc572341b0ea519209a47e098169e524b",
+      "git_blob_sha1": "fbf76e210e244b4398b73984e1a49e611c85f773",
+      "bytes": 3941
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/IResolver.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/IResolver.sol",
+      "sha256": "fa56bf3205f0f8a1f777452b3110fc6a92b3adb3aef365d56bbeaede731c6104",
+      "git_blob_sha1": "56691e31e059d362cfd413e4bbee57948ff83b5a",
+      "bytes": 816
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/common/ResolverBase.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/common/ResolverBase.sol",
+      "sha256": "671a5a4de22a2cf9de348a1e8ff8e3710cb07ee89756db7b3bb30a31d23e8c82",
+      "git_blob_sha1": "f775cbfd4d54b634c0a8a279b0c607c72c006b77",
+      "bytes": 618
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/fork-router/ForkRouter.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/fork-router/ForkRouter.sol",
+      "sha256": "40c3866239c1db6744ecbc93bdda546a8bab37e894788ea2efa15e16c5ec57ed",
+      "git_blob_sha1": "1be5ef55b232e9767189e4cd6c6609220f32a484",
+      "bytes": 2296
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/fork-router/ForkRouter_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/fork-router/ForkRouter_Layout.sol",
+      "sha256": "2398b83094674746b169d862ed84076acee836fe187f993d86510ff245763a64",
+      "git_blob_sha1": "02d901eec75645f410ec5f573a2d4c5e7eae7558",
+      "bytes": 1221
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/governance/Controller.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/governance/Controller.sol",
+      "sha256": "0cc4144f0ad151aabc9a9a2da2f8746fe6a359a6985cff20f5f963b06de5bd16",
+      "git_blob_sha1": "9c42da106d433db09ddf09e8b95b951434f899da",
+      "bytes": 2658
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/governance/TaikoTokenBase.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/governance/TaikoTokenBase.sol",
+      "sha256": "1963f91e192099106107492d40ae2f8d9ef6735e6dffedbbd986712e4e607bbf",
+      "git_blob_sha1": "2919a6bfa58efb227c7249faf118bfae2c780f52",
+      "bytes": 1339
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibAddress.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibAddress.sol",
+      "sha256": "be9603f82e79228affdac1660353e1ff99f08c9c8b28db0ab55e7c7981a0b39c",
+      "git_blob_sha1": "dd15761696d5ef4fe8a7f90cfc088462c21da5c4",
+      "bytes": 2880
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibBytes.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibBytes.sol",
+      "sha256": "eb1c53ffe21756a5fa86e3be851c98eef6bdd0507cb9902a9d1b1436910c17cf",
+      "git_blob_sha1": "dcfaffac72346114ca08609e8fd2ed5c110b78d9",
+      "bytes": 1729
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibMath.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibMath.sol",
+      "sha256": "984aa96de7b2345c65a51e3134d1fe9aec247ac7052b027a666b699d6026bac9",
+      "git_blob_sha1": "14ae1a5e14d637d878a537e0840e931d786dc468",
+      "bytes": 979
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibNames.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibNames.sol",
+      "sha256": "94d769446bec30b2b5b22dac21ee71e63668e451dab90818d0ac10d4b615f829",
+      "git_blob_sha1": "84cd0161710be0ddef5bea6abb64d75e730ec7e5",
+      "bytes": 863
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibNetwork.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibNetwork.sol",
+      "sha256": "5ada2a19fba1ab56c32283a656bbda4b0a47d0ae560ee1f203f2067874af02a5",
+      "git_blob_sha1": "a7932b51e1bdc539e53851ed9512824f29a0101f",
+      "bytes": 3302
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/libs/LibTrieProof.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/libs/LibTrieProof.sol",
+      "sha256": "45b4e8ee0d0bec7ef33ee6f59a568a3a5f44bc9c780e66ea0e6f767ccf7a250e",
+      "git_blob_sha1": "4c21c35d4da50e409cc4f704deb16dd4b04e2970",
+      "bytes": 2948
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/preconf/IPreconfSlasher.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/preconf/IPreconfSlasher.sol",
+      "sha256": "d135bc73a879c6ee87f61025f89c8ec339040ec6de0670972c5a861d1cc5fc5b",
+      "git_blob_sha1": "9fdf3edd5b03fd120e5904bbc26f0354cdf41a21",
+      "bytes": 1863
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/signal/ICheckpointStore.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/signal/ICheckpointStore.sol",
+      "sha256": "cdc68b035819049e3f6bfd3d9a9f371f74e629e4585c339ed2a12c9625db30e3",
+      "git_blob_sha1": "c7365530594bd4fe1fbc4aced01f2edfc7b85bec",
+      "bytes": 1749
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/signal/ISignalService.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/signal/ISignalService.sol",
+      "sha256": "5e01b7d8426580eaa2e03c5a62a7af671530259d120da9abcc3ea2713c7dcdd3",
+      "git_blob_sha1": "84db42aff6f6f23c5f4f2d7bbc30d984ef172e0a",
+      "bytes": 5093
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/signal/SignalService.sol",
+      "sha256": "cccc92956a0b872b07a86d8bb497efe07b460fb5c5c3d19f998cdba43b5f46c8",
+      "git_blob_sha1": "646bfb3c766defa26f32dac4706a15f9bbf9e703",
+      "bytes": 9747
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/signal/SignalServiceForkRouter_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/signal/SignalServiceForkRouter_Layout.sol",
+      "sha256": "09893c6f9bedac034bc1714597dab60c2329f5be6cd661a326d9e36f414b16b3",
+      "git_blob_sha1": "9620c5d36f828a35fa561ad968c872f349566454",
+      "bytes": 1237
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/signal/SignalService_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/signal/SignalService_Layout.sol",
+      "sha256": "db2d874e4b5bf99f8ca34c2a3966d0cb14060efc7c0d60f17b89d24b945389ac",
+      "git_blob_sha1": "f4896a6ca856f89b342065f9d03d72db4b16c707",
+      "bytes": 2281
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BaseNFTVault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BaseNFTVault.sol",
+      "sha256": "f97eadb1f9241bb377a49a4fa1e4879bc27199207926bdb192fb47043b8cfd7d",
+      "git_blob_sha1": "2c2dcdfaf457e9952808cb7625f4c3f7938cd43b",
+      "bytes": 5912
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BaseVault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BaseVault.sol",
+      "sha256": "1df5028e754acac630486842f1f9e7e49bf2f92a4db14d955ce4ad7baa7634a9",
+      "git_blob_sha1": "7d83e6b38b77c0b757a24a21fee770dd7dcc9f6f",
+      "bytes": 3267
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC1155.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC1155.sol",
+      "sha256": "ba91f62f2f7e7ab41f49ee968c1329029ef6c948568817cd1ea6c1f10aec69e5",
+      "git_blob_sha1": "da94013c64587cc793414854e11c7c2c26439ca5",
+      "bytes": 3591
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC1155_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC1155_Layout.sol",
+      "sha256": "231e93f43d24e349dec459056a9e2994d5c600ad44e34b3dff11a79d0734b2cb",
+      "git_blob_sha1": "803eb293f01974d13b91a113ff48f87aff217915",
+      "bytes": 3063
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC20.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC20.sol",
+      "sha256": "f4e2f0a2c64e4903b03675396efd7eeb120e6463897da7040480c45d74b9fe0a",
+      "git_blob_sha1": "06076679f03fa3e2a1e16bdfe3cd12b322d88ba6",
+      "bytes": 6321
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC20V2.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC20V2.sol",
+      "sha256": "82c66b3dc92ea4f4f3d6c98fe376ef66a932d48e725cd7980464e1b0c74c6e75",
+      "git_blob_sha1": "00afa6abd7b4cd64ff6fc354ea2b82215b625310",
+      "bytes": 4303
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC20V2_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC20V2_Layout.sol",
+      "sha256": "76fc4070056e72d09253219017932d30fb8328965d03331312332501a9b09d06",
+      "git_blob_sha1": "64dd36cb8066de6677076e55d8972a53160f0b70",
+      "bytes": 4246
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC20_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC20_Layout.sol",
+      "sha256": "7814f3895992150d5a24323c847efe3c84650895419d8253a9d588540844d62d",
+      "git_blob_sha1": "9716939a7be59a30bd0929317740d0155d630000",
+      "bytes": 3321
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC721.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC721.sol",
+      "sha256": "61a81bc6385bbcf6d506cd8aa6dc4236b01541539db3b12b8502202755688a79",
+      "git_blob_sha1": "e3d75b98695acaff76ca028e684eee991ce8dd01",
+      "bytes": 3504
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/BridgedERC721_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/BridgedERC721_Layout.sol",
+      "sha256": "1fa13c507df871f1ea051739aa4f35a50b1dd524a5ca63422eacf5632db97f11",
+      "git_blob_sha1": "15b847e36254e0f9eb5d4d06556477e63f927ad1",
+      "bytes": 3192
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC1155Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC1155Vault.sol",
+      "sha256": "f36e9bf47fa05e30eeb79f4a99f8747089fd4fde1b2059870685d6fc94a85a52",
+      "git_blob_sha1": "f67417ad2825077c8a1e679ae8af4e546a866188",
+      "bytes": 11091
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC1155Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC1155Vault_Layout.sol",
+      "sha256": "94cd2a5f9984243f3096144bd6f7463d9d3e39999c40fa6be2ff5245755bfa01",
+      "git_blob_sha1": "82dbded5a9c04633b707af8fe8fd5756c43323cd",
+      "bytes": 2668
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC20Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC20Vault.sol",
+      "sha256": "21b58221b88736f8b528baf5123d4af613691d37186120731b1220697bcada9e",
+      "git_blob_sha1": "c1297e22cefcc9ca8e920ad46f67c6a264d9fb33",
+      "bytes": 17512
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC20Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC20Vault_Layout.sol",
+      "sha256": "6061784512fd894db67f73c4e1af370b4eec0373684ffb1fe153d1e31da19f93",
+      "git_blob_sha1": "ded8d2ee7374b88938f96b19a7716370391536f7",
+      "bytes": 2533
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC721Vault.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC721Vault.sol",
+      "sha256": "0e19d2538984419557b87fe354fa7b84343ac78829658b895f0da4cb114f38a6",
+      "git_blob_sha1": "f4c28738f99d69441349fd9f51dca6ef08703ef8",
+      "bytes": 9263
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/ERC721Vault_Layout.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/ERC721Vault_Layout.sol",
+      "sha256": "cb3c59928341a665b391a9f60bdcf2bb1bb5aa0d7826cc31a45d5269524769b7",
+      "git_blob_sha1": "289020c0c499938e65d268764b8610afd5519ca0",
+      "bytes": 2404
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/IBridgedERC1155.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/IBridgedERC1155.sol",
+      "sha256": "ebfeee25c089d102e564b7c7f943bddd356265cad5be9f958e2de849ed11e289",
+      "git_blob_sha1": "377281617091c8eec8c891683eee152a5b37b323",
+      "bytes": 1638
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/IBridgedERC20.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/IBridgedERC20.sol",
+      "sha256": "c025ba9cc97ab218cd18ac4d8084c062c489a5602004601c565b07e9ca27f99a",
+      "git_blob_sha1": "46e83492f7ce5b64f9d121f4971c8fb0d5782aea",
+      "bytes": 3368
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/IBridgedERC721.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/IBridgedERC721.sol",
+      "sha256": "797dc5d781c7def267e9bd18804df87f227cbff288df9353d5152f09ac4f27fb",
+      "git_blob_sha1": "feca3cb969c2b4e890a72faa3c4cc7cc5c256871",
+      "bytes": 1439
+    },
+    {
+      "path": "taiko-mono/packages/protocol/contracts/shared/vault/LibBridgedToken.sol",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/contracts/shared/vault/LibBridgedToken.sol",
+      "sha256": "d081f05a773d086ab06c64e917de89ec3cb7a3a386b8af1f8f7c3d19a8c26356",
+      "git_blob_sha1": "bf6b8125b8acd238f328ca058b8a2ef8fd0b2c83",
+      "bytes": 1266
+    },
+    {
+      "path": "taiko-mono/packages/protocol/foundry.toml",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/foundry.toml",
+      "sha256": "11ead4f3d7fef4f9c11b56924157e15174708d98ba48367a0fa2d02e2b94b1f8",
+      "git_blob_sha1": "f711c6ef962763a5054ed07b4412ce96e7e787a7",
+      "bytes": 3748
+    },
+    {
+      "path": "taiko-mono/packages/protocol/package.json",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/packages/protocol/package.json",
+      "sha256": "2d920599e5a574154852e118b8a3f6e34183251bc0e51c4a23568ec93cfb7d44",
+      "git_blob_sha1": "8486b24fdae30aa5fb9971cda32baedd87e43710",
+      "bytes": 4163
+    },
+    {
+      "path": "taiko-mono/pnpm-lock.yaml",
+      "url": "https://raw.githubusercontent.com/taikoxyz/taiko-mono/ff002a4516b489c7146675f7036d699b07a7f785/pnpm-lock.yaml",
+      "sha256": "ddc2be11922f4c429333e62329852f3a842862362bdb01a9f7a03cf25f407ad6",
+      "git_blob_sha1": "7e133c468ca22dd9b5b3d9949ad85226e2bf3c74",
+      "bytes": 900586
+    }
+  ],
+  "verified_explorer_bundles": "verified-sgx/provenance.json",
+  "deployment_boundary": "The two observed SGX verifier source files match the pinned upstream file byte-for-byte. Other contracts are upstream audit context; historical proxy implementation slots and complete deployed build were not verified."
+}

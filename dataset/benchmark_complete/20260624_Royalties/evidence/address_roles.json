@@ -1,0 +1,49 @@
+[
+  {
+    "address": "0x7c885c4bfd179fb59f1056fbea319d579a278075",
+    "role": "vulnerable_lda_proxy",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0xd5b297c08d890376b6cbdba6023a39ffbdf65c78",
+    "role": "explorer_linked_lda_implementation",
+    "basis": "https://polygonscan.com/address/0xd5b297c08d890376b6cbdba6023a39ffbdf65c78#code",
+    "historical_proxy_slot_verified": false
+  },
+  {
+    "address": "0xfe16ee78828672e86cf8e42d8a5119ab79877ec7",
+    "role": "affected_royalties_proxy",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0x1e0598614d9168a657cb57bd038dfd71812c9074",
+    "role": "explorer_linked_royalties_implementation",
+    "basis": "https://polygonscan.com/address/0x1e0598614d9168a657cb57bd038dfd71812c9074#code",
+    "historical_proxy_slot_verified": false
+  },
+  {
+    "address": "0x11ca9155aedfeb6772df5ea42ff714db7fba6adb",
+    "role": "attacker_helper_from_sheet_not_victim",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0xbab48f6f6c7d10ca3f73a23e21ef052af460f684",
+    "role": "attacker_claim_receiver",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827",
+    "role": "flash_swap_liquidity_pair",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0xbd829aa63311bb1e3c0ea58a7193364de670bd56",
+    "role": "transaction_sender",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  },
+  {
+    "address": "0x7fd7be7bc8a26bd6a98b10683912c604af8bca52",
+    "role": "transaction_target_attacker_contract",
+    "basis": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+  }
+]

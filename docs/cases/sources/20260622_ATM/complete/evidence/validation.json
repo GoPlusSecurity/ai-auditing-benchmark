@@ -1,0 +1,33 @@
+{
+  "validated_on": "2026-09-14",
+  "compile": [
+    {
+      "view": "complete",
+      "compiler": "0.5.16+commit.9c3226ce",
+      "errors": 0,
+      "warnings": 0,
+      "contract_count": 10
+    },
+    {
+      "view": "simplified",
+      "compiler": "0.5.16+commit.9c3226ce",
+      "errors": 0,
+      "warnings": 0,
+      "contract_count": 10
+    }
+  ],
+  "locally_compiled_executable_runtime_equals_target": true,
+  "locally_compiled_metadata_suffix_equals_target": false,
+  "reference_full_deployed_runtime_equals_target": true,
+  "redeem_formula_exact": true,
+  "calculated_burn_raw": [
+    "1603989214300816939995",
+    "99999999999999999999750311"
+  ],
+  "retained_segments_byte_equal": 17,
+  "local_link_count": 22,
+  "metadata_pair_equal": true,
+  "fork_replay_run": false,
+  "historical_runtime_verified": false,
+  "native_payment_trace_verified": false
+}

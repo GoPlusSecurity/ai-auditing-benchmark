@@ -1,0 +1,28 @@
+{
+  "record_type": "decoded_from_archived_polygonscan_html",
+  "retrieved_at": "2026-09-14",
+  "source": "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e",
+  "chain_id": 137,
+  "block_number": 89018051,
+  "status": "Success",
+  "timestamp_utc": "2026-06-23T16:27:52Z",
+  "token_address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+  "token_symbol": "USDC.e",
+  "decimals": 6,
+  "amounts": {
+    "borrow": "2638.089539",
+    "deposit": "2638.089539",
+    "payout": "263808.953900",
+    "repay": "2646.027622",
+    "victim_net_outflow": "261170.864361",
+    "helper_net_inflow": "261162.926278",
+    "flash_swap_fee": "7.938083"
+  },
+  "payout_multiple_recomputed": "100",
+  "limitations": [
+    "Decoded explorer HTML, not an RPC receipt",
+    "Historical storage and full call trace not independently retrieved",
+    "Gas and subsequent cash-out excluded"
+  ],
+  "raw_artifact": "../../../benchmark_complete/20260624_Royalties/evidence/polygonscan/transaction.html"
+}

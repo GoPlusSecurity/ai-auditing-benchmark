@@ -1,0 +1,10 @@
+{
+  "primary_source": "https://paragraph.com/@taiko-labs/taiko-security-incident-a-postmortem-and-next-steps",
+  "read_on": "2026-09-14",
+  "source_read_through": "web tool; direct HTML download timed out",
+  "reported_mechanism": "Exposed enclave signing key and unchecked application DEBUG flag; forged proposal age bypassed permissionless proving delay; fake checkpoints authorized false bridge withdrawals.",
+  "reported_total_usd_approx": 1750000,
+  "sheet_loss_usd": 1700000,
+  "loss_boundary": "Official total includes an 18 ETH relayer payout to a third-party MEV bot, not all funds went to the attacker. Unpaid claims and remaining reserves are not added to realized withdrawals.",
+  "reported_recapitalization": "Official report says the bridge was recollateralized 1:1 before reopening on July 2; this is not evidence all stolen funds were recovered."
+}

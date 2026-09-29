@@ -1,0 +1,19 @@
+{
+  "sheet_date": "2026.06.22",
+  "sheet_loss_usd": 949900,
+  "block_number": 105692848,
+  "block_time_utc": "2026-06-22T09:23:39+00:00",
+  "sheet_tx_index": 68,
+  "sheet_tx_log_count": 0,
+  "funds_out_tx_index": 1,
+  "pair_lp_burn_raw": "400498341357466415661652",
+  "pair_lp_burn": "400498.341357466415661652",
+  "burn_wbnb_out": "1603.989214300816939995",
+  "burn_atm_out": "99999999.999999999999750311",
+  "dust_wbnb_out_raw": "4",
+  "withdrawn_wbnb": "1571.909430014800601194",
+  "final_wbnb_receiver": "0xfba52f861e79c46333a308ba8f86bf136a44b2d3",
+  "final_receiver_wbnb_inflow": "32.079784286016338801",
+  "native_builder_payment": "Reported by pinned research; native BNB transfer not independently verified because historical trace returned missing trie node.",
+  "profit_boundary": "Final receiver WBNB inflow is not a full campaign net profit; native BNB allocation and gas are not included."
+}
