@@ -1,0 +1,57 @@
+{
+  "sheet_row": 99,
+  "date": "2026.06.21",
+  "project": "#JaredFromSubway",
+  "source_kind": "onchain_runtime_bytecode",
+  "source_status": "runtime_bytecode_only",
+  "representation": "Historical EVM runtime bytecode plus report evidence; original Solidity and decompilation unavailable",
+  "chain_id": 1,
+  "tx": [
+    "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65"
+  ],
+  "addresses": [
+    "https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387"
+  ],
+  "usd": 7500000,
+  "dataset_view": "complete",
+  "retrieved_on": "2026-09-10",
+  "verified_original_source": false,
+  "bytecode_equivalence_verified": false,
+  "compilation_tested": false,
+  "exploit_replayed": false,
+  "upstream_repository": null,
+  "upstream_commit": null,
+  "victim_source_sha256": null,
+  "report_urls": [
+    "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+    "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+    "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+  ],
+  "source_search_evidence": "evidence/source_search.json",
+  "files_sha256": {
+    "bytecode.json": "025e562e6e2afbcc713fbd0d33984e0ca658bb645776b8242c4a3c2897c534f2",
+    "case_metadata.json": "fbec4a9e20e3bede2fa2d77d4674299cbd3e2f6726993d6ea2153ac45f284620",
+    "evidence/address_roles.json": "7ab3adb91ae2aca561b645c34d5e7aee4b452f8115a54299abbd1c096bcade8b",
+    "evidence/claims.json": "e382e91e58d9f5c415ed602540718f2722d45d3d957bafe3e91318a8eb954b77",
+    "evidence/INDEX.md": "c3844400a92d3d87d7f86b7c135e4abaa31a449dbc2390f9fa5ca424fdeb3b04",
+    "evidence/rpc/archive-code-request.json": "3c8575c57a20d2070728903cef900a65de4efb103a0ce51308f2378c459f1173",
+    "evidence/rpc/archive-code-response-drpc.json": "c426c73ab7acccd28eed8730c93f3463226ece67dd786c6ebfbe6d0cc61ae119",
+    "evidence/rpc/hash-pinned-request.json": "2f098ef1b5d9ccbc928787f9927f8726a4df8022486509a4d423fee895c8e5c9",
+    "evidence/rpc/hash-pinned-response-drpc.json": "3832b063b5047327a001b63101472c711b75da39f80cb9e375bdeb1b4420feff",
+    "evidence/rpc/latest-request.json": "6bf3c7d4e96792204bdc3d46977608e085e463b18b3c6b2de5d79a9919b2b2db",
+    "evidence/rpc/latest-response-publicnode.json": "7c42761e85ffacd23a837e1acfb48c1d5def32757ed396c3c81fd937a74268fb",
+    "evidence/rpc/receipt-request.json": "eb28537eeb7f33f699273ca47fe10a2f6d27932257ed9fec949b34b59b5868c2",
+    "evidence/rpc/receipt-response-drpc.json": "9837736741badf474339bbff29bc7acebadf10ee8e948b53fec78c69c51d3b85",
+    "evidence/source_search.json": "7dce1a9c00bba67deebb595e754427e785939aa1412bba3a31d5b43aac3295c8",
+    "onchain/JaredFromSubway.runtime.bin": "204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708",
+    "onchain/JaredFromSubway.runtime.hex": "da4d0464863dfab5c257a87211ed9f2ee3260408a52454a73a8b47994dc236cb",
+    "SOURCE.md": "b231c2c3bad2a82c28d22a903226bd32b72adfb18068838e0ab96959425739dc"
+  },
+  "bytecode_retrieved_on": "2026-09-14",
+  "victim_runtime_bytecode_obtained": true,
+  "historical_runtime_match_verified": true,
+  "bytecode_metadata": "bytecode.json",
+  "bytecode_hash": "0x14a86b6d239e89ae47d307fa4a7fb6843e4356f5d13ac751a053711a88b36658",
+  "bytecode_hash_algorithm": "Keccak-256 of decoded runtime bytes",
+  "original_source_to_bytecode_equivalence_verified": false
+}

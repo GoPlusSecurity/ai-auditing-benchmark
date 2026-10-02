@@ -2,7 +2,7 @@
 
 **Royal1155LDA 的权益账按“转账条目数”加一，却没有按实际转账数量记账。攻击者提交数量全部为零的批量转账，随后利用错误份额领取远超自己存款的分红。** 已保存的交易事件包含 100 个相同 ID 的零数量条目，随后的版税付款恰好为新存款的 100 倍。
 
-本次取得了两份实现的全部 45 个 Solidity 文件、编译设置和两份代理源码，状态为 `verified_original_source`。代理与实现的关联来自当前浏览器页面；**攻击时的代理槽、回填标志和档位供应量尚未独立读取**。因此源码错误、交易结果和历史状态前提分开说明。[源码来源与核对范围](../../dataset/benchmark_complete/20260624_Royalties/SOURCE.md)
+本次取得了两份实现的全部 45 个 Solidity 文件、编译设置和两份代理源码，状态为 `verified_original_source`。代理与实现的关联来自当前浏览器页面；**攻击时的代理槽、回填标志和档位供应量尚未独立读取**。因此源码错误、交易结果和历史状态前提分开说明。[源码来源与核对范围](../../dataset_artifacts/benchmark_complete/20260624_Royalties/SOURCE.md)
 
 ## 1. 合约是干什么的
 
@@ -19,7 +19,7 @@ Royal1155LDA 管理 ERC1155 资产，Royalties 按档位的权益份额分配 US
 | 攻击辅助地址 | `0x11ca9155aedfeb6772df5ea42ff714db7fba6adb` | 源表恶意地址，借入资金、存款、收款并归还资金。 |
 | 权益接收器 | `0xbab48f6f6c7d10ca3f73a23e21ef052af460f684` | 批量转账接收方，也是 Claimed 事件中的领取人。 |
 
-攻击辅助地址没有填入 CSV 的漏洞合约字段。详细角色见[本地地址表](../../dataset/benchmark_complete/20260624_Royalties/evidence/address_roles.json)。
+攻击辅助地址没有填入 CSV 的漏洞合约字段。详细角色见[本地地址表](../../dataset_artifacts/benchmark_complete/20260624_Royalties/evidence/address_roles.json)。
 
 ## 2. 数量为零，为什么也能增加权益
 
@@ -58,7 +58,7 @@ flowchart TD
     G --> H[辅助地址留下差额]
 ```
 
-这张图将源码路径与事件顺序连接起来，不冒充完整内部调用 trace。[攻击交易](https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e)的原始页面已归档；[解码字段](../../dataset/benchmark_complete/20260624_Royalties/evidence/decoded-events.json)保留原始 topics、data 和解析结果。
+这张图将源码路径与事件顺序连接起来，不冒充完整内部调用 trace。[攻击交易](https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e)的原始页面已归档；[解码字段](../../dataset_artifacts/benchmark_complete/20260624_Royalties/evidence/decoded-events.json)保留原始 topics、data 和解析结果。
 
 1. **取得启动资金。** 池子向攻击辅助地址转入 `2,638.089539 USDC.e`。同笔交易稍后归还更多资金，这与 V2 闪电兑换的资金使用方式一致；本次没有获取完整回调 trace。
 2. **进行零数量批量转账。** LDA 的 TransferBatch 原始数据有 100 个相同 ID：`14291859410679415465461733512134265305394`，数量全部为零，接收方为上表的权益接收器。按源码 ID 拆分规则，它属于档位 42。
@@ -97,7 +97,7 @@ Royalties 净流出
 = 261,162.926278 USDC.e
 ```
 
-两种净额相差 `7.938083 USDC.e`。归还金额已经包含本金，不能再扣一次本金。后续转移、兑现和 gas 尚未核查，本笔净流入不等于最终实现收益。[精确金额汇总](../../dataset/benchmark_complete/20260624_Royalties/evidence/transaction-summary.json)
+两种净额相差 `7.938083 USDC.e`。归还金额已经包含本金，不能再扣一次本金。后续转移、兑现和 gas 尚未核查，本笔净流入不等于最终实现收益。[精确金额汇总](../../dataset_artifacts/benchmark_complete/20260624_Royalties/evidence/transaction-summary.json)
 
 ## 6. 日期、金额和验证范围
 
@@ -111,6 +111,6 @@ Royalties 净流出
 | 静态核对 | 对应权益钩子、分红公式和精简切片；精确重算倍数及净额 | 攻击前回填标志、余额及供应量的独立存储查询。 |
 | 编译与执行 | 保存浏览器 Solidity 0.8.4 版本与编译设置 | 未独立编译，未运行主网分叉或攻击重放。 |
 
-[完整版](../../dataset/benchmark_complete/20260624_Royalties/SOURCE.md)保留原始源包、页面及来源校验；[精简版](../../dataset/benchmark_simplified/20260624_Royalties/SOURCE.md)保留 17 份原文函数切片，并映射回完整源码行号。切片用于静态阅读，不能单独当完整合约编译。SHA256SUMS 校验实际保存的文件，不表示已完成链上执行验证。
+[完整版](../../dataset_artifacts/benchmark_complete/20260624_Royalties/SOURCE.md)保留原始源包、页面及来源校验；[精简版](../../dataset_artifacts/benchmark_simplified/20260624_Royalties/SOURCE.md)保留 17 份原文函数切片，并映射回完整源码行号。切片用于静态阅读，不能单独当完整合约编译。SHA256SUMS 校验实际保存的文件，不表示已完成链上执行验证。
 
 公开入口：[源表](https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0)、[LDA 实现源码](https://polygonscan.com/address/0xd5b297c08d890376b6cbdba6023a39ffbdf65c78#code)、[Royalties 实现源码](https://polygonscan.com/address/0x1e0598614d9168a657cb57bd038dfd71812c9074#code)及上文攻击交易。本文机制核对使用这些已归档源码与事件。

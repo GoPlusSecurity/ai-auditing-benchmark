@@ -1,0 +1,557 @@
+{
+  "folder": "20260701_EdelFinance_decompiled",
+  "dataset_view": "complete",
+  "chain_id": 1,
+  "retrieved_on": "2026-10-01",
+  "retrieved_at_utc": "2026-09-30T23:45:00.332264Z",
+  "source_kind": "decompiled",
+  "representation": "etherscan_palkeoramix_pseudocode",
+  "decompiler": "Etherscan Palkeoramix/Panoramix",
+  "decompiler_source_url": "https://etherscan.io/bytecode-decompiler?a=0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+  "decompiled_file": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/EdelPriceAdapter.decompiled.pan",
+  "decompiled_sha256": "e46cb553f8bf6f98f1c7f6670d1854c21a52691bc42a69cb3ff2b6f83c8a3b42",
+  "runtime_file": "bytecode/EdelPriceAdapter.runtime.hex",
+  "runtime_sha256": "b911b0e8f6bea6f1d32e98c9a3d0c2b32180bf305a1d1f2fee515db36e26a182",
+  "runtime_input_matches_attack_block": true,
+  "verified_original_source": false,
+  "decompiled_source_equivalence_verified": false,
+  "verified_source_bundles": [
+    {
+      "label": "aave-oracle",
+      "address": "0xBd497eE429D9D3E46446339286271b3714a83B29",
+      "contract_name": "AaveOracle",
+      "main_source": "@aave/core-v3/contracts/misc/AaveOracle.sol",
+      "compiler_version": "v0.8.10+commit.fc410830",
+      "optimization_enabled": true,
+      "optimization_runs": 100000,
+      "is_verified": true,
+      "is_fully_verified": true,
+      "is_partially_verified": false,
+      "is_changed_bytecode": false,
+      "verified_at": "2026-03-13T08:16:19.867752Z",
+      "api_url": "https://eth.blockscout.com/api/v2/smart-contracts/0xBd497eE429D9D3E46446339286271b3714a83B29",
+      "source_count": 7,
+      "sources": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/dependencies/chainlink/AggregatorInterface.sol",
+          "original_path": "@aave/core-v3/contracts/dependencies/chainlink/AggregatorInterface.sol",
+          "sha256": "7a9d07a2ae13f2fa2c87b2f753c278ed38e76a8d750a935dfd98eb6eaffab1ae",
+          "bytes": 627
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/interfaces/IACLManager.sol",
+          "original_path": "@aave/core-v3/contracts/interfaces/IACLManager.sol",
+          "sha256": "6bef9ac0f05be4aea1fa324914224d61c5b45f6351e6355ac0dcf41d51bc41a0",
+          "bytes": 5463
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/interfaces/IAaveOracle.sol",
+          "original_path": "@aave/core-v3/contracts/interfaces/IAaveOracle.sol",
+          "sha256": "1618db199968930466766358a7a3395cae37d4631686db0de76e9222ade6f839",
+          "bytes": 2394
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol",
+          "original_path": "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol",
+          "sha256": "419371fd89901f852ad2e6ed2a043c88db00f73394266857ece39e769e2242e4",
+          "bytes": 8215
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/interfaces/IPriceOracleGetter.sol",
+          "original_path": "@aave/core-v3/contracts/interfaces/IPriceOracleGetter.sol",
+          "sha256": "64198de7b821745ac1117500fcee905b1f465ec4911a5a07d494eed98a2b6786",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/misc/AaveOracle.sol",
+          "original_path": "@aave/core-v3/contracts/misc/AaveOracle.sol",
+          "sha256": "e41aeccc496f8d751017c8a9832022414cd022d92313eaf63926a37369994564",
+          "bytes": 5067
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol",
+          "original_path": "@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol",
+          "sha256": "dea1dcf0a8838e7560e03e0f32e4f53c69c98b167b8a44afcd1f0110191e6602",
+          "bytes": 9910
+        }
+      ]
+    },
+    {
+      "label": "wrapper-proxy",
+      "address": "0x1630F08370917E79df0B7572395a5e907508bBBc",
+      "contract_name": "WrappedBackedTokenProxy",
+      "main_source": "contracts/WrappedBackedTokenFactory.sol",
+      "compiler_version": "v0.8.9+commit.e5eed63a",
+      "optimization_enabled": true,
+      "optimization_runs": 10,
+      "is_verified": true,
+      "is_fully_verified": true,
+      "is_partially_verified": false,
+      "is_changed_bytecode": false,
+      "verified_at": "2026-07-01T01:40:55.020187Z",
+      "api_url": "https://eth.blockscout.com/api/v2/smart-contracts/0x1630F08370917E79df0B7572395a5e907508bBBc",
+      "source_count": 33,
+      "sources": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/access/OwnableUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/access/OwnableUpgradeable.sol",
+          "sha256": "2d9e57d2a4b0775334be2968019c1939377d45b69e8b724fe6bb80af47e28419",
+          "bytes": 3168
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/interfaces/IERC4626Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/interfaces/IERC4626Upgradeable.sol",
+          "sha256": "e1583094222a3ef91ad54b38dfe8b017d8bc31a2be23a7ec0b065cafa24672b6",
+          "bytes": 12231
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/interfaces/IERC5267Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/interfaces/IERC5267Upgradeable.sol",
+          "sha256": "6a0d92d0222dd70cdc073029b6fe979e03e65d9c9ea4f2b8ffb774e144d2a51e",
+          "bytes": 749
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/proxy/utils/Initializable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/proxy/utils/Initializable.sol",
+          "sha256": "a2c4e5c274a586f145d278293ae33198cd8f412ab7e6d26f2394c8949b32b24b",
+          "bytes": 6641
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/ERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/ERC20Upgradeable.sol",
+          "sha256": "41b11f70764d014fd808bcaa33aa16dbad5554263c4e7e9ef1f3359ada116a11",
+          "bytes": 13494
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/IERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/IERC20Upgradeable.sol",
+          "sha256": "78a6bc84bbb417f0d8a6b12e181e0f783151774f4f0c054c5d3f920e70d69f8c",
+          "bytes": 2748
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC20PermitUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC20PermitUpgradeable.sol",
+          "sha256": "815112c3c739b3e9a5f3735f3b2eadbb9ea173a40b378e7855c8a3465f20692d",
+          "bytes": 4039
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "sha256": "f91fa9617d3745afa27b26788713e25f0fe4d522240b01c94d0d6ad656dd0c40",
+          "bytes": 12257
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "sha256": "68bcca423fc72ec9625e219c9e36306c726a347e43f3711467c579bd3f6500c8",
+          "bytes": 716
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20PermitUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20PermitUpgradeable.sol",
+          "sha256": "d04c39cbfbc33e17a6ec68df23f0ad97f8830330bcfd4b0be74b1d1ce6101600",
+          "bytes": 3813
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "sha256": "53e882762222514d0f4ffe2c0c28fd59709987197ba11f0f3a8f35b72fd33bb6",
+          "bytes": 7101
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/AddressUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/AddressUpgradeable.sol",
+          "sha256": "db92fc1b515decad3a783b1422190877d2d70b907c6e36fb0998d9465aee42db",
+          "bytes": 9375
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/ContextUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/ContextUpgradeable.sol",
+          "sha256": "2d3d7dc6e116cb8ebb8517208141cb3d0950b337a285f15f8476ec3df29d824e",
+          "bytes": 1484
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/CountersUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/CountersUpgradeable.sol",
+          "sha256": "5c1ac829a429b0c2ca9b4c9ed8b78d412320e9175e45f088c4e9056ef95fbf21",
+          "bytes": 1407
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/StringsUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/StringsUpgradeable.sol",
+          "sha256": "357c8d1a0fb673fa10a884d6e27b383171ecc3eaf8dee8211de75f88ff77843d",
+          "bytes": 2846
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/cryptography/ECDSAUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/cryptography/ECDSAUpgradeable.sol",
+          "sha256": "aefb3039d0aae994ad64c397dfa0bcc1ab6e675e2fd97b2fdfc0e7739def0b5b",
+          "bytes": 9164
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/cryptography/EIP712Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/cryptography/EIP712Upgradeable.sol",
+          "sha256": "d2cdd468b666546a8f2b3b4db26c3a35275107abb7511cd77aac9f333c72dfd8",
+          "bytes": 8061
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/math/MathUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/math/MathUpgradeable.sol",
+          "sha256": "fbf7ebc0f3c2cf5aef908ecce85e69af53db4e2c6652f61c8ac1e3f416c2fa99",
+          "bytes": 12796
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts-upgradeable-new/utils/math/SignedMathUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/math/SignedMathUpgradeable.sol",
+          "sha256": "4f06981f993ea4a96e078c2036b5a42e1edade38996e5180171d5fe4be2f18fe",
+          "bytes": 1274
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/access/Ownable.sol",
+          "original_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "75e3c97011e75627ffb36f4a2799a4e887e1a3e27ed427490e82d7b6f51cc5c9",
+          "bytes": 2460
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+          "original_path": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+          "sha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630",
+          "bytes": 879
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+          "original_path": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+          "sha256": "db6c986d393626060fa219d1072a1913eb16872224307e9261fc90c296e3770d",
+          "bytes": 1383
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+          "original_path": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+          "sha256": "a137681e196c44eaf1b819384a9633aef5cee10954ff1301138557cab2169dac",
+          "bytes": 6514
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/Proxy.sol",
+          "original_path": "@openzeppelin/contracts/proxy/Proxy.sol",
+          "sha256": "c26f460761bab92443c5f900b20024b0433900762f5f4bf6f6612f7bee7c2f34",
+          "bytes": 3246
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+          "original_path": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+          "sha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011",
+          "bytes": 450
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+          "original_path": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+          "sha256": "172cd054bf76f83d70aa88eefee8679e2291b12f7b28cf043d4b821db6ebbe84",
+          "bytes": 2840
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "original_path": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "sha256": "95ec54d0e8065f04805f220da2d880c150e9a90181afed85e28d4958915ff7fb",
+          "bytes": 5191
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/utils/Address.sol",
+          "original_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "aafa8f3e41700a8353aabcdf020e06735753e6bc4b615279b43de53cfbb4f2cd",
+          "bytes": 8256
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/utils/Context.sol",
+          "original_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "1458c260d010a08e4c20a4a517882259a23a4baa0b5bd9add9fb6d6a1549814a",
+          "bytes": 844
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/@openzeppelin/contracts/utils/StorageSlot.sol",
+          "original_path": "@openzeppelin/contracts/utils/StorageSlot.sol",
+          "sha256": "b8d43f55a3afc09327fb9d802f714a8bec64e3a259ad42f5b3d877deb29aaaef",
+          "bytes": 2484
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/contracts/SanctionsList.sol",
+          "original_path": "contracts/SanctionsList.sol",
+          "sha256": "f20c80705db61c1866ff7d154046ad999c005c68c721e17409dfc4c1f90d0085",
+          "bytes": 1281
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/contracts/WrappedBackedTokenFactory.sol",
+          "original_path": "contracts/WrappedBackedTokenFactory.sol",
+          "sha256": "c64784c9d235121b440795aa5aca95e8f5573b24d6289feba6a23e4aa44c4cc6",
+          "bytes": 5650
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-proxy/contracts/WrappedBackedTokenImplementation.sol",
+          "original_path": "contracts/WrappedBackedTokenImplementation.sol",
+          "sha256": "469039950740a7817af45fd3a4eadf7a3f5176cddfa344ec842caf2e41c6ed02",
+          "bytes": 10046
+        }
+      ]
+    },
+    {
+      "label": "wrapper-implementation",
+      "address": "0x14f3714b711E5F32A396d87D6Df481941F8B3F63",
+      "contract_name": "WrappedBackedTokenImplementation",
+      "main_source": "contracts/WrappedBackedTokenImplementation.sol",
+      "compiler_version": "v0.8.9+commit.e5eed63a",
+      "optimization_enabled": true,
+      "optimization_runs": 10,
+      "is_verified": true,
+      "is_fully_verified": true,
+      "is_partially_verified": false,
+      "is_changed_bytecode": false,
+      "verified_at": "2026-01-04T16:56:36.496187Z",
+      "api_url": "https://eth.blockscout.com/api/v2/smart-contracts/0x14f3714b711E5F32A396d87D6Df481941F8B3F63",
+      "source_count": 21,
+      "sources": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/access/OwnableUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/access/OwnableUpgradeable.sol",
+          "sha256": "2d9e57d2a4b0775334be2968019c1939377d45b69e8b724fe6bb80af47e28419",
+          "bytes": 3168
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/interfaces/IERC4626Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/interfaces/IERC4626Upgradeable.sol",
+          "sha256": "e1583094222a3ef91ad54b38dfe8b017d8bc31a2be23a7ec0b065cafa24672b6",
+          "bytes": 12231
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/interfaces/IERC5267Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/interfaces/IERC5267Upgradeable.sol",
+          "sha256": "6a0d92d0222dd70cdc073029b6fe979e03e65d9c9ea4f2b8ffb774e144d2a51e",
+          "bytes": 749
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/proxy/utils/Initializable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/proxy/utils/Initializable.sol",
+          "sha256": "a2c4e5c274a586f145d278293ae33198cd8f412ab7e6d26f2394c8949b32b24b",
+          "bytes": 6641
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/ERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/ERC20Upgradeable.sol",
+          "sha256": "41b11f70764d014fd808bcaa33aa16dbad5554263c4e7e9ef1f3359ada116a11",
+          "bytes": 13494
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/IERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/IERC20Upgradeable.sol",
+          "sha256": "78a6bc84bbb417f0d8a6b12e181e0f783151774f4f0c054c5d3f920e70d69f8c",
+          "bytes": 2748
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC20PermitUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC20PermitUpgradeable.sol",
+          "sha256": "815112c3c739b3e9a5f3735f3b2eadbb9ea173a40b378e7855c8a3465f20692d",
+          "bytes": 4039
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "sha256": "f91fa9617d3745afa27b26788713e25f0fe4d522240b01c94d0d6ad656dd0c40",
+          "bytes": 12257
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "sha256": "68bcca423fc72ec9625e219c9e36306c726a347e43f3711467c579bd3f6500c8",
+          "bytes": 716
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20PermitUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/IERC20PermitUpgradeable.sol",
+          "sha256": "d04c39cbfbc33e17a6ec68df23f0ad97f8830330bcfd4b0be74b1d1ce6101600",
+          "bytes": 3813
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "sha256": "53e882762222514d0f4ffe2c0c28fd59709987197ba11f0f3a8f35b72fd33bb6",
+          "bytes": 7101
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/AddressUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/AddressUpgradeable.sol",
+          "sha256": "db92fc1b515decad3a783b1422190877d2d70b907c6e36fb0998d9465aee42db",
+          "bytes": 9375
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/ContextUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/ContextUpgradeable.sol",
+          "sha256": "2d3d7dc6e116cb8ebb8517208141cb3d0950b337a285f15f8476ec3df29d824e",
+          "bytes": 1484
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/CountersUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/CountersUpgradeable.sol",
+          "sha256": "5c1ac829a429b0c2ca9b4c9ed8b78d412320e9175e45f088c4e9056ef95fbf21",
+          "bytes": 1407
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/StringsUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/StringsUpgradeable.sol",
+          "sha256": "357c8d1a0fb673fa10a884d6e27b383171ecc3eaf8dee8211de75f88ff77843d",
+          "bytes": 2846
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/cryptography/ECDSAUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/cryptography/ECDSAUpgradeable.sol",
+          "sha256": "aefb3039d0aae994ad64c397dfa0bcc1ab6e675e2fd97b2fdfc0e7739def0b5b",
+          "bytes": 9164
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/cryptography/EIP712Upgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/cryptography/EIP712Upgradeable.sol",
+          "sha256": "d2cdd468b666546a8f2b3b4db26c3a35275107abb7511cd77aac9f333c72dfd8",
+          "bytes": 8061
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/math/MathUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/math/MathUpgradeable.sol",
+          "sha256": "fbf7ebc0f3c2cf5aef908ecce85e69af53db4e2c6652f61c8ac1e3f416c2fa99",
+          "bytes": 12796
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/utils/math/SignedMathUpgradeable.sol",
+          "original_path": "@openzeppelin/contracts-upgradeable-new/utils/math/SignedMathUpgradeable.sol",
+          "sha256": "4f06981f993ea4a96e078c2036b5a42e1edade38996e5180171d5fe4be2f18fe",
+          "bytes": 1274
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/contracts/SanctionsList.sol",
+          "original_path": "contracts/SanctionsList.sol",
+          "sha256": "f20c80705db61c1866ff7d154046ad999c005c68c721e17409dfc4c1f90d0085",
+          "bytes": 1281
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/contracts/WrappedBackedTokenImplementation.sol",
+          "original_path": "contracts/WrappedBackedTokenImplementation.sol",
+          "sha256": "469039950740a7817af45fd3a4eadf7a3f5176cddfa344ec842caf2e41c6ed02",
+          "bytes": 10046
+        }
+      ]
+    }
+  ],
+  "runtime_comparison": "evidence/adapter-runtime-comparison.json",
+  "supporting_poc": {
+    "commit": "8c520a6ed54c9a19896bfc921d98728b078ffdc2",
+    "role": "reproduction evidence only; not original vulnerable source",
+    "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/8c520a6ed54c9a19896bfc921d98728b078ffdc2/src/test/2026-07/edel-xstock_exp.sol"
+  },
+  "raw_evidence": [
+    {
+      "path": "evidence/raw/adapter-eth_getCode-attack.json",
+      "sha256": "8d31d39e40af1d92b5dc37b5c0079ca731d46533d4e22b2262188a7b7852de73",
+      "bytes": 7206
+    },
+    {
+      "path": "evidence/raw/adapter-eth_getCode-latest.json",
+      "sha256": "41682ea58177fd859e3366dc3e9294b9c7c53669a0b46308cabc336e64176013",
+      "bytes": 7206
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/evidence/raw/edel-adapter-decompiled.pan",
+      "sha256": "e46cb553f8bf6f98f1c7f6670d1854c21a52691bc42a69cb3ff2b6f83c8a3b42",
+      "bytes": 6187
+    },
+    {
+      "path": "evidence/raw/edel-adapter-eth_getCode-attack.json",
+      "sha256": "8d31d39e40af1d92b5dc37b5c0079ca731d46533d4e22b2262188a7b7852de73",
+      "bytes": 7206
+    },
+    {
+      "path": "evidence/raw/edel-adapter-eth_getCode-latest.json",
+      "sha256": "41682ea58177fd859e3366dc3e9294b9c7c53669a0b46308cabc336e64176013",
+      "bytes": 7206
+    },
+    {
+      "path": "evidence/raw/edel-adapter-runtime-rpc.json",
+      "sha256": "9d0d6de4e740bfc94d894392e8b03c53d688cddb842be91b98fe0ef2796d513e",
+      "bytes": 935
+    },
+    {
+      "path": "evidence/raw/edel-entry-proxy.json",
+      "sha256": "9164e5915a45573aaeea92c251efa17a37732981aa30b0c4adfa379642438918",
+      "bytes": 30202
+    },
+    {
+      "path": "evidence/raw/edel-oracle-adapter.json",
+      "sha256": "e329b78e72d29f1545aa412c295c5bf3e95914b154f4a5afbdebdc90a88230d7",
+      "bytes": 16259
+    },
+    {
+      "path": "evidence/raw/edel-poc-commits.json",
+      "sha256": "032288e9589594cc1dd168456eba32c0bc442bb43d2b40c891b977203bf2659e",
+      "bytes": 3921
+    },
+    {
+      "path": "evidence/raw/edel-trace.json",
+      "sha256": "0101d66368b9e38c1e0de76198ef45ee579a071b29f9f38083a4c5481a9ebc4a",
+      "bytes": 1631897
+    },
+    {
+      "path": "evidence/raw/edel-transfers-page2.json",
+      "sha256": "46f1b70fa091070852a47436fb7821ac21095d5f18aba2861ac5ff14784fb8d4",
+      "bytes": 89898
+    },
+    {
+      "path": "evidence/raw/edel-transfers-page3.json",
+      "sha256": "cfe8de650242e3f3bc37a3c1a8e315f36938ee819508626c5a0938245a2db406",
+      "bytes": 89898
+    },
+    {
+      "path": "evidence/raw/edel-transfers-page4.json",
+      "sha256": "ccd8a12b99094372ea1fdd3a88aaeb37f3031aa843ec5fcabb80d8640feae0fb",
+      "bytes": 89898
+    },
+    {
+      "path": "evidence/raw/edel-transfers-page5.json",
+      "sha256": "2a02a29c33d158db827a2a8703999a30480ebb0fdf61f2c21aa98770b209ec44",
+      "bytes": 49906
+    },
+    {
+      "path": "evidence/raw/edel-transfers.json",
+      "sha256": "5ec6c490095a42cbdffe2f13c156a34ec6359d9816d54e492a752e27edb590ab",
+      "bytes": 90783
+    },
+    {
+      "path": "evidence/raw/edel-tx.json",
+      "sha256": "eff02d48045d8ce54f4f436b86531b53804a7ca5626accb3a71f3c8a2bcab543",
+      "bytes": 33556
+    },
+    {
+      "path": "evidence/raw/edel-vulnerable-contract.json",
+      "sha256": "df5bfce0cac322f904052a2574c39396f177da86fceecac02307ee37a9e6afa3",
+      "bytes": 57176
+    },
+    {
+      "path": "evidence/raw/edel-wrapper-implementation.json",
+      "sha256": "5f7653704995f9b2e3495c1d3b99fedd5227ce2d0c1c62d78f165d2e97457060",
+      "bytes": 200103
+    },
+    {
+      "path": "evidence/raw/edel-wrapper.json",
+      "sha256": "1281598ef36969455d2f902415a0d3e4006b99b6ddae555a65ae2adcfb263883",
+      "bytes": 190263
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/evidence/raw/edel-xstock_exp.sol",
+      "sha256": "c99feeb90a21c36f98269c7752c83c3b49d9869931d6b044f99d6fbef4bbe46b",
+      "bytes": 8329
+    },
+    {
+      "path": "evidence/raw/etherscan-decompiler-input.runtime.hex",
+      "sha256": "8a88feb718e2249308df59defe987b4afbadf4ff67b9860b5258e9f85ad8bde5",
+      "bytes": 7157
+    }
+  ],
+  "attack_replays_run": false,
+  "compilation_run": false,
+  "pool_implementation_historically_matched": false,
+  "pool_claimed_as_vulnerable_component": false
+}

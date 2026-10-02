@@ -53,7 +53,7 @@ flowchart TD
 
 **第一步，攻击者先让自己成为交易池的推荐人。** 这样池子以后领奖时，攻击者也可以拿到推荐奖励。
 
-在 [LBP 的转账处理代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol:387) 中，有这样一段逻辑：
+在 [LBP 的转账处理代码](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol#L387) 中，有这样一段逻辑：
 
 ```solidity
 if (msg.sender == from && (value == 0 || value == REFCODE_AMOUNT)) {
@@ -84,7 +84,7 @@ value      = 特殊绑定金额
 notifyMagicBind(pair, A);
 ```
 
-[推荐关系检查函数](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:606) 会检查是否已经绑定、是否涉及销毁地址、是否自己推荐自己等条件，**但没有排除交易池地址**。绑定成功后，实际记录相当于：
+[推荐关系检查函数](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L606) 会检查是否已经绑定、是否涉及销毁地址、是否自己推荐自己等条件，**但没有排除交易池地址**。绑定成功后，实际记录相当于：
 
 ```solidity
 referrer[pair] = A;
@@ -100,7 +100,7 @@ referrer[pair] = A;
 
 LBP 合约需要识别谁在添加流动性。它采用的办法是：观察谁把 LBP 转进池子，先把这个地址记下来，等后续确认 LP 总量增加后，再给它登记积分。
 
-在满足资产余额等条件后，[`_stagePending()`](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol:423) 会保存：
+在满足资产余额等条件后，[`_stagePending()`](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol#L423) 会保存：
 
 ```solidity
 pendingMintFee = uint96(predicted);
@@ -166,7 +166,7 @@ LBP.transfer(A, 0);
 
 这笔操作虽然不改变攻击者的 LBP 余额，仍然会运行 LBP 合约的转账处理代码。
 
-代码发现 LP 总量已经增加，又存在之前保存的 `lastTransfer`，就进入结算流程。在 [`_settlePendingLpAdd()`](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol:511) 中，关键代码是：
+代码发现 LP 总量已经增加，又存在之前保存的 `lastTransfer`，就进入结算流程。在 [`_settlePendingLpAdd()`](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol#L511) 中，关键代码是：
 
 ```solidity
 address lastTransfer_ = lastTransfer;
@@ -204,7 +204,7 @@ hashrate.notifyCredit(
 
 **第四步，大额临时资金让积分计算使用了被攻击者改变过的池子数据。**
 
-[`notifyCredit()`](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:166) 中，计算积分的代码是：
+[`notifyCredit()`](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L166) 中，计算积分的代码是：
 
 ```solidity
 uint256 hashAmount =
@@ -252,7 +252,7 @@ USDT 储备：21,231,876.060
 
 **第五步，还有一个关键记账错误：新增积分之前，没有先处理旧积分的奖励记录。** 这解释了为什么刚拿到积分，就能马上领出大量奖励。
 
-先看 [`_harvest()` 的奖励计算](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:318)：
+先看 [`_harvest()` 的奖励计算](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L318)：
 
 ```solidity
 uint256 hash = balanceOf(user);
@@ -340,7 +340,7 @@ hLBP.transferFrom(pair, DEAD, 0);
 
 为什么池子没有给攻击者授权，这个调用也能继续？
 
-看继承的 [ERC-20 授权检查](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260618_LittleBoyPlus/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol:294)：
+看继承的 [ERC-20 授权检查](../../dataset/benchmark_complete/20260618_LittleBoyPlus/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol#L294)：
 
 ```solidity
 uint256 currentAllowance = allowance(owner, spender);
@@ -360,7 +360,7 @@ if (currentAllowance < value) {
 
 所以不会因为授权不足而报错。**这并不意味着攻击者能转走非零数量的 hLBP。**
 
-真正产生影响的是，hLBP 的 [`_update()`](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:262) 会执行：
+真正产生影响的是，hLBP 的 [`_update()`](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L262) 会执行：
 
 ```solidity
 if (from != address(0)) {
@@ -407,7 +407,7 @@ hLBP 合约先替发送方领奖
 _distributeDynamic(pair, staticReward);
 ```
 
-在[推荐奖励分发代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:355)中，程序从下面这个地址开始向上查找推荐人：
+在[推荐奖励分发代码](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L355)中，程序从下面这个地址开始向上查找推荐人：
 
 ```solidity
 address current = referrer[originUser];
@@ -475,7 +475,7 @@ PancakePair 的兑换逻辑会根据余额与储备的差额判断收到多少�
 
 上一条只讲了“积分怎样记到池子”，没有把这个区别展开。下面结合代码说明。
 
-先看奖励究竟怎么算。在 [LBPHashrate._harvest()](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:318) 中，关键计算是：
+先看奖励究竟怎么算。在 [LBPHashrate._harvest()](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L318) 中，关键计算是：
 
 ```solidity
 uint256 hash = balanceOf(user);
@@ -517,7 +517,7 @@ if (hash > 0) {
 
 攻击者需要在同一笔交易里拿到可出售的 LBP，才能变现并归还临时资金。因此，“获得大量积分”和“马上领出大量 LBP”是两个必须连起来完成的步骤。
 
-普通攻击地址与池子的区别，出现在 [LBP 的转账处理](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol:345)：
+普通攻击地址与池子的区别，出现在 [LBP 的转账处理](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBP.sol#L345)：
 
 ```solidity
 if (tradingOpen) {
@@ -541,7 +541,7 @@ userIndex[user] = accStatic;
 
 也就是：“你还没有积分，暂时不给奖励，但把你的起算进度更新到现在。”
 
-我核对了现有调用记录：攻击合约在前面的买入、向池子转币过程中，已经多次被调用 `notifyHarvest(攻击合约)`。因此，它的进度已经更新过了。同一笔交易里时间不变，[奖励累计程序](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:417) 也不会继续增加这一段进度：
+我核对了现有调用记录：攻击合约在前面的买入、向池子转币过程中，已经多次被调用 `notifyHarvest(攻击合约)`。因此，它的进度已经更新过了。同一笔交易里时间不变，[奖励累计程序](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L417) 也不会继续增加这一段进度：
 
 ```solidity
 if (block.timestamp <= lastEmissionUpdate) {
@@ -553,13 +553,13 @@ if (block.timestamp <= lastEmissionUpdate) {
 
 池子则保留了较早的进度，而新增积分时又漏掉了进度更新。
 
-在 [notifyCredit()](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:166) 中，算出积分后调用：
+在 [notifyCredit()](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L166) 中，算出积分后调用：
 
 ```solidity
 _mint(user, hashAmount);
 ```
 
-铸造 hLBP 时，转账发送方 `from` 是零地址。接着进入 [hLBP 的 `_update()`](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:275)，却跳过了下面整段结算：
+铸造 hLBP 时，转账发送方 `from` 是零地址。接着进入 [hLBP 的 `_update()`](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L275)，却跳过了下面整段结算：
 
 ```solidity
 if (from != address(0)) {
@@ -597,7 +597,7 @@ if (from != address(0)) {
 referrer[池子] = 攻击合约
 ```
 
-在 [_distributeDynamic()](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol:355) 中，系统沿着 `referrer[originUser]` 找推荐人，满足相应条件后，调用 `lbp.mintReward(current, share)` 给推荐人发 LBP。
+在 [_distributeDynamic()](../../dataset/benchmark_simplified/20260618_LittleBoyPlus/src/LBPHashrate.sol#L355) 中，系统沿着 `referrer[originUser]` 找推荐人，满足相应条件后，调用 `lbp.mintReward(current, share)` 给推荐人发 LBP。
 
 第二条是利用直接进入池子的 LBP。`mintReward(pair, amount)` 会增加池子的实际 LBP 余额，但这条铸币路径没有同步更新交易池记录的储备。随后兑换时，Pancake 池子会根据“实际余额比记录多了多少”计算输入资产，攻击者可以把这些新增余额也用于这次兑换，并指定自己接收 USDT。[Pancake 的兑换实现](https://github.com/pancakeswap/pancake-smart-contracts/blob/master/projects/exchange-protocol/contracts/PancakePair.sol)
 
@@ -665,7 +665,7 @@ LP 的账面价值
 = 200
 ```
 
-完整版源码的注释也明确写了“总价值等于 USDT 一边的两倍”。不过，**注释中提到了 TWAP，也就是一段时间的平均价，实际这条计算语句并没有读取平均价；它直接使用当时的 USDT 储备和 LP 总量。** 应以实际执行的代码为准。[完整源码及注释](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBPHashrate.sol:351)
+完整版源码的注释也明确写了“总价值等于 USDT 一边的两倍”。不过，**注释中提到了 TWAP，也就是一段时间的平均价，实际这条计算语句并没有读取平均价；它直接使用当时的 USDT 储备和 LP 总量。** 应以实际执行的代码为准。[完整源码及注释](../../dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBPHashrate.sol#L351)
 
 本次调用参数算出来是：
 
@@ -713,7 +713,7 @@ LP 的账面价值
 
 **池子通过“余额多了多少”确认收款，不会给这部分新增余额逐笔登记“属于张三，还是属于李四”。** 因此，直接发给池子的奖励，与攻击者自己转进来的币，在这一步都会进入同一个余额差额。攻击者再把 USDT 收款地址指定为自己。[Pancake `swap()` 的输入计算、收款地址与校验逻辑](https://raw.githubusercontent.com/pancakeswap/pancake-swap-core/master/contracts/PancakePair.sol)
 
-回到 LittleBoyPlus，这里还有一个必要条件：**发奖励时，只增加了 LBP 代币合约里记载的池子余额，没有同步更新交易池自身的储备记录。** `mintReward()` 调用 `_mint()` 增发代币，而增发路径更新余额后就返回了。[发奖励的代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBP.sol:467)、[增发时的余额更新路径](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBP.sol:555)
+回到 LittleBoyPlus，这里还有一个必要条件：**发奖励时，只增加了 LBP 代币合约里记载的池子余额，没有同步更新交易池自身的储备记录。** `mintReward()` 调用 `_mint()` 增发代币，而增发路径更新余额后就返回了。[发奖励的代码](../../dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBP.sol#L467)、[增发时的余额更新路径](../../dataset/benchmark_complete/20260618_LittleBoyPlus/src/LBP.sol#L555)
 
 我刚核对的实际调用记录，也正好体现了这个过程：
 
@@ -766,6 +766,6 @@ LBP 与 LBPHashrate 都取得了已验证源码。本说明还核对了公开调
 
 主代币真正发奖的函数是 `LBP.mintReward()`。从池子转出零个 hLBP 的操作发生在 `LBPHashrate`；ERC-20 对零金额转账的 allowance 检查能够通过，不代表攻击者拿到了转走非零数量 hLBP 的授权。
 
-- [源码来源与编译配置](../../dataset/benchmark_complete/20260618_LittleBoyPlus/SOURCE.md)。
+- [源码来源与编译配置](../../dataset_artifacts/benchmark_complete/20260618_LittleBoyPlus/SOURCE.md)。
 - [固定版本调用记录](https://github.com/DarkNavySecurity/web3-exploit-analysis/blob/0dedb932869fff89899d75a3e6e2315cd87768bd/artifacts/analysis_0x55856d9fda4c5be5193561c7d775e823c3d6e499da44aab9da963daf61c50b0c/trace_callTracer.json)：路径 `0.1.5.0.1.0.0.24.4` 给池子登记分数；路径 `0.1.5.0.1.0.0.25` 是 hLBP 零金额转账，其下可见真正发奖的调用。
 - [SlowMist 原始告警](https://x.com/SlowMist_Team/status/2067424733747122259?s=20)；[DarkNavy 事件分析](https://www.darknavy.org/web3/exploits/little-boy-plus-lp-share-hashrate-reserve-manipulation/)。

@@ -1,0 +1,10 @@
+80a30b96518107232081aed4ed2c0180d1c6d85e9b104ac053f82a03f5c2408f  ../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.unused-validation-helpers.sol
+62440c07978280937d24676e38978a0960bef36995d2a5c345d4f5573cb10460  ../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.verifySingle.sol
+8085a7d3ea623130512f63443e375c59df7d71005095975a7642ef122b0058ba  ../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.requireHashVerified.sol
+02bf1e6aca246f3cac6f65c6d981e53a2435a76679200b7e744eae157b0c6002  ../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.state.sol
+6483b1d7d0f3fd781f82d5c17ecaadba8bcc7e9ca8c432dc5a1b6a6dafcba39f  SOURCE.md
+dfa01862d7566b70d43745c66a5d875164e3a8e9f11785f9547acf91d7a293c7  case_metadata.json
+137829d77be4634782dde7687b262a35d10cc8e8d98664c715fba17be0f4dbc5  evidence/address-roles.json
+5dca0267664f61c92c7c3fc2a8d81fe8b0703b3befc6cb75be3252a9ca266f1c  evidence/transaction-summary.json
+dee2035fb37182554da8b0f6c0944d71b891cac4430dec532261a4c6da3c646a  evidence/validation.json
+fe5d20d27ad1a3318566a0892c6e3f07cd34b3e59da61aa644bb602d32368704  slice_manifest.json

@@ -1,0 +1,154 @@
+{
+  "kind": "public_original_vulnerable_source_from_related_supra_deployment",
+  "provider": "XDCScan",
+  "url": "https://xdcscan.com/address/0xbb37c65aab92c41ec696c18600cabb4fc6309549#code",
+  "address": "0xbb37c65aab92c41ec696c18600cabb4fc6309549",
+  "contract_name": "SupraSValueFeedVerifier",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "path_base": "complete_case_root",
+  "source_files": [
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts-upgradeable/contracts/access/Ownable2StepUpgradeable.sol",
+      "original_source_path": "lib/openzeppelin-contracts-upgradeable/contracts/access/Ownable2StepUpgradeable.sol",
+      "sha256": "c37c9b57a8671695e43b01efd103c565c16c1510e1cb27d707727d74b425b347",
+      "bytes": 2516
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol",
+      "original_source_path": "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol",
+      "sha256": "1fbf2a131b895514f0027866cc0deff151ea16424b4aed2b8c573d2275cfa9e8",
+      "bytes": 3147
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+      "original_source_path": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+      "sha256": "a2c4e5c274a586f145d278293ae33198cd8f412ab7e6d26f2394c8949b32b24b",
+      "bytes": 6641
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol",
+      "original_source_path": "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol",
+      "sha256": "db92fc1b515decad3a783b1422190877d2d70b907c6e36fb0998d9465aee42db",
+      "bytes": 9375
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol",
+      "original_source_path": "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol",
+      "sha256": "5fb301961e45cb482fe4e05646d2f529aa449fe0e90c6671475d6a32356fa2d4",
+      "bytes": 1345
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol",
+      "sha256": "dddc79fd955a7dbf954b63358f67be734da61a406bc610a90c91821a2ff84bc6",
+      "bytes": 667
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+      "sha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630",
+      "bytes": 879
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "sha256": "05f8710ad6a17e156b51e2c5baa87fd6281c4be50a891ad717d6cfa628301da8",
+      "bytes": 6044
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "sha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011",
+      "bytes": 450
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "sha256": "81fd7eff33a96b439a265d21a3244b4cfc2b674493420ae02e1f44088a8c84fc",
+      "bytes": 4359
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+      "bytes": 9364
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "original_source_path": "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "sha256": "51c993d87ee6096af06f8701d8497272751c8cc9c9c2b31e67a3087d5f2302df",
+      "bytes": 4106
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/BLS.sol",
+      "original_source_path": "src/BLS.sol",
+      "sha256": "5412e26866daf40eb20cd52e20e88da9a364a5a4ea478d66768197b7891e5319",
+      "bytes": 10674
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/BNPairingPrecompileCostEstimator.sol",
+      "original_source_path": "src/BNPairingPrecompileCostEstimator.sol",
+      "sha256": "9ab26a2ea75dfb63be7e9fc43215998d3d416bfcbb2409e859383091cb4b6a35",
+      "bytes": 2922
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/EnumerableSet.sol",
+      "original_source_path": "src/EnumerableSet.sol",
+      "sha256": "f4024168b733f96d5257a70ccf12d66fabd339a2eb4465eb2119160db0b2db83",
+      "bytes": 6884
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/ISupraSValueFeed.sol",
+      "original_source_path": "src/ISupraSValueFeed.sol",
+      "sha256": "5fe44d24ed31b3cb723a09bea49c5f12588be23f9b83a8add8ac8990eb3317a5",
+      "bytes": 1172
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/ModExp.sol",
+      "original_source_path": "src/ModExp.sol",
+      "sha256": "5230f405f432bddef1690683669dfee733876d9712f7856f3490a4ea685f6147",
+      "bytes": 22739
+    },
+    {
+      "path": "../../../dataset/benchmark_complete/20260711_Bonzo_Supra/source-bundles/xdc-reference/src/SupraSValueFeedVerifier.sol",
+      "original_source_path": "src/SupraSValueFeedVerifier.sol",
+      "sha256": "e694ae9b278f10abc821186cddddbe7d74b95b383131cc4ec99b9a56a38b9604",
+      "bytes": 16356
+    }
+  ],
+  "compiler_settings": {
+    "path": "source-bundles/xdc-reference/settings.json",
+    "sha256": "ee56973fe5064e9ea42833d996d0adfeb728fae1f614856f3bda60e7d651254b",
+    "bytes": 568
+  },
+  "vulnerable_functions": [
+    "SupraSValueFeedVerifier.requireHashVerified_V2",
+    "BLS.verifySingle"
+  ],
+  "attack_time_proxy_to_implementation_binding": "verified from Hedera Mirror Node transaction actions",
+  "attack_time_deployment_source_equivalence_verified": false,
+  "runtime_comparison": "evidence/runtime-comparison.json",
+  "closed_source_chain_artifacts": [
+    {
+      "component": "Hedera attack-time Supra verifier implementation",
+      "contract_id": "0.0.10414935",
+      "evm_address": "0x63e0a27bc77ca817c89f5231d568c4e58100fbf0",
+      "runtime_path": "evidence/hedera-attack-implementation-runtime.bin",
+      "runtime_sha256": "85aa286443fa3b38986b1ba454152bf9dbc4b3214fd4fe326758d1d1f3527367",
+      "runtime_bytes": 13293,
+      "decompilation_status": "partial_disassembly_complete_target_pseudocode_not_converged",
+      "decompiler": "eveem-org/panoramix",
+      "decompiler_version": "Panoramix 17 Feb 2020",
+      "decompiled_output": null,
+      "disassembly_output": "evidence/bonzo-panoramix-disassembly.asm",
+      "run_record": "evidence/bonzo-panoramix-run.json",
+      "target_selector": "0x2818300e",
+      "limitation": "Panoramix disassembled the complete attack-time runtime and recovered 20 dispatch selectors, including 0x2818300e. Full-contract and target-only symbolic execution did not converge, so no high-level pseudocode was recovered for the target. The output is not verified Solidity and does not prove source equivalence."
+    }
+  ],
+  "local_compilation": "not run"
+}

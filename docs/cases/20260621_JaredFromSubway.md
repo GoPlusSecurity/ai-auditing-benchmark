@@ -322,24 +322,24 @@ W 可以从 B 转走的额度 = 100
 
 | 文件 | 完整版 | 精简版 |
 | --- | --- | --- |
-| 运行时字节码文本 | [JaredFromSubway.runtime.hex](../../dataset/benchmark_complete/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.hex) | [JaredFromSubway.runtime.hex](../../dataset/benchmark_simplified/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.hex) |
-| 原始二进制 | [JaredFromSubway.runtime.bin](../../dataset/benchmark_complete/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.bin) | [JaredFromSubway.runtime.bin](../../dataset/benchmark_simplified/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.bin) |
-| 区块、哈希、获取方式 | [bytecode.json](../../dataset/benchmark_complete/20260621_JaredFromSubway/bytecode.json) | [bytecode.json](../../dataset/benchmark_simplified/20260621_JaredFromSubway/bytecode.json) |
+| 运行时字节码文本 | [JaredFromSubway.runtime.hex](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.hex) | [JaredFromSubway.runtime.hex](../../dataset_artifacts/benchmark_simplified/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.hex) |
+| 原始二进制 | [JaredFromSubway.runtime.bin](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.bin) | [JaredFromSubway.runtime.bin](../../dataset_artifacts/benchmark_simplified/20260621_JaredFromSubway/onchain/JaredFromSubway.runtime.bin) |
+| 区块、哈希、获取方式 | [bytecode.json](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/bytecode.json) | [bytecode.json](../../dataset_artifacts/benchmark_simplified/20260621_JaredFromSubway/bytecode.json) |
 
 读取时固定了攻击区块 **25360696** 和前一区块 **25360695** 的区块哈希，并用明确区块号再次查询；四次历史结果一致。另一个公开节点返回的当前 runtime 也相同，但它只是交叉检查，历史样本依据固定区块查询。
 
-这些原始字节的 SHA-256 是 `204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708`。攻击交易的[原始 receipt](../../dataset/benchmark_complete/20260621_JaredFromSubway/evidence/rpc/receipt-response-drpc.json)确认成功执行、区块和时间一致，并包含 50 条从受害地址转出的真实代币 Transfer 事件。这里只核对地址与交易关联，没有用事件数代替诱饵合约调用数，也没有重建前序全部授权。
+这些原始字节的 SHA-256 是 `204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708`。攻击交易的[原始 receipt](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/evidence/rpc/receipt-response-drpc.json)确认成功执行、区块和时间一致，并包含 50 条从受害地址转出的真实代币 Transfer 事件。这里只核对地址与交易关联，没有用事件数代替诱饵合约调用数，也没有重建前序全部授权。
 
 ## 对应材料、代码定位与尚缺证据
 
 | 阅读入口               | 完整版                                                                                    | 精简版                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 来源状态               | [SOURCE.md](../../dataset/benchmark_complete/20260621_JaredFromSubway/SOURCE.md)           | [SOURCE.md](../../dataset/benchmark_simplified/20260621_JaredFromSubway/SOURCE.md)                |
-| 机制与角色             | [事实索引](../../dataset/benchmark_complete/20260621_JaredFromSubway/evidence/claims.json) | [最小路径](../../dataset/benchmark_simplified/20260621_JaredFromSubway/evidence/attack_path.json) |
+| 来源状态               | [SOURCE.md](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/SOURCE.md)           | [SOURCE.md](../../dataset_artifacts/benchmark_simplified/20260621_JaredFromSubway/SOURCE.md)                |
+| 机制与角色             | [事实索引](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/evidence/claims.json) | [最小路径](../../dataset_artifacts/benchmark_simplified/20260621_JaredFromSubway/evidence/attack_path.json) |
 | 原始源码、反编译与行号 | **没有取得，不能给源码定位**                                                        | **没有取得，不做猜测性裁剪**                                                               |
 
 要把本条升级为可审计的代码样本，仍需要取得受害 bot 的真实源码或有明确来历的反编译材料，并核对部署版本、依赖、授权入口和交易结束时的处理。代表交易的原始回执已保存；仍需前序授权交易的原始回执、完整调用轨迹和授权状态，才能检查报告中的全部金额和计数。
 
 Etherscan 网页直接读取仍失败；链上字节码、区块和交易回执现已通过只读 RPC 取得。此前未获授权的 GitHub 版本元数据请求没有重试。原始 Solidity 和可信反编译仍未取得，不能把保存机器码说成已经恢复源码。
 
-本条没有编译 Solidity、重放攻击或证明反编译与字节码等价。历史字节码已按固定区块查询核对，文件 SHA-256 用于验证保存内容；这两项校验不能替代源码分析或交易重放。完整尝试和明确缺口保存在[检索记录](../../dataset/benchmark_complete/20260621_JaredFromSubway/evidence/source_search.json)中。
+本条没有编译 Solidity、重放攻击或证明反编译与字节码等价。历史字节码已按固定区块查询核对，文件 SHA-256 用于验证保存内容；这两项校验不能替代源码分析或交易重放。完整尝试和明确缺口保存在[检索记录](../../dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/evidence/source_search.json)中。

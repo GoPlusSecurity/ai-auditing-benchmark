@@ -1,0 +1,24 @@
+{
+  "evmVersion": "istanbul",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "outputSelection": {
+    "*": {
+      "*": [
+        "evm.bytecode",
+        "evm.deployedBytecode",
+        "devdoc",
+        "userdoc",
+        "metadata",
+        "abi"
+      ]
+    }
+  },
+  "libraries": {
+    "contracts/verifier/keys/VerificationKeys.sol": {
+      "VerificationKeys": "0xf3761b450571a49fa8e2af6e37e1eb3516209d56"
+    }
+  }
+}

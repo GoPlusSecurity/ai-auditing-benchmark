@@ -1,0 +1,57 @@
+{
+  "chain": "Ethereum Mainnet",
+  "chain_id": 1,
+  "victim_address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+  "retrieved_on": "2026-09-14",
+  "code_kind": "deployed EVM runtime bytecode",
+  "creation_initcode": false,
+  "byte_length": 13835,
+  "runtime_bytes_sha256": "204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708",
+  "runtime_bytes_keccak256": "0x14a86b6d239e89ae47d307fa4a7fb6843e4356f5d13ac751a053711a88b36658",
+  "hex_file": "onchain/JaredFromSubway.runtime.hex",
+  "binary_file": "onchain/JaredFromSubway.runtime.bin",
+  "hex_format": "Lowercase 0x-prefixed hex, one line with a final LF. Decode hex before hashing runtime bytes.",
+  "reference_transaction": "0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+  "reference_transaction_status": "0x1",
+  "attack_block": {
+    "number": 25360696,
+    "hash": "0x01518baaea1ec7aafe01e63b6c7e5b3bb198cca03cd6ff1d0f6843415a153f8c",
+    "timestamp_utc": "2026-06-20T18:49:11Z"
+  },
+  "preceding_block": {
+    "number": 25360695,
+    "hash": "0xf7ab6aebce06dc50692139c9dc7e4add9d3ba154fb7abf39fb51d00405e84392"
+  },
+  "historical_query_method": "eth_getCode with EIP-1898 blockHash and requireCanonical=true",
+  "historical_rpc_endpoint": "https://eth.drpc.org",
+  "attack_and_preceding_block_bytecode_identical": true,
+  "block_number_queries_match_block_hash_queries": true,
+  "independent_latest_read": {
+    "rpc_endpoint": "https://ethereum-rpc.publicnode.com",
+    "bytecode_identical": true,
+    "block_binding": "latest query; not used as the authoritative historical snapshot"
+  },
+  "receipt_address_crosscheck": {
+    "transfer_events_with_victim_as_from": 50,
+    "token_addresses": [
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "scope": "Address linkage only; no approval-stage trace reconstruction or complete loss reconciliation"
+  },
+  "original_solidity_source_obtained": false,
+  "decompiled_source_obtained": false,
+  "source_to_bytecode_equivalence_verified": false,
+  "exploit_replayed": false,
+  "slice_policy": "Full runtime bytes retained identically in both views; no truncation or instruction deletion",
+  "dataset_view": "simplified",
+  "raw_request": "../../benchmark_complete/20260621_JaredFromSubway/evidence/rpc/hash-pinned-request.json",
+  "raw_response": "../../benchmark_complete/20260621_JaredFromSubway/evidence/rpc/hash-pinned-response-drpc.json",
+  "raw_receipt": "../../benchmark_complete/20260621_JaredFromSubway/evidence/rpc/receipt-response-drpc.json",
+  "files_sha256": {
+    "onchain/JaredFromSubway.runtime.hex": "da4d0464863dfab5c257a87211ed9f2ee3260408a52454a73a8b47994dc236cb",
+    "onchain/JaredFromSubway.runtime.bin": "204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708"
+  },
+  "historical_state_semantics": "End-of-block state; no per-transaction execution trace"
+}

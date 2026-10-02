@@ -1,0 +1,49 @@
+{
+  "sheet_row": 99,
+  "date": "2026.06.21",
+  "project": "#JaredFromSubway",
+  "source_kind": "onchain_runtime_bytecode",
+  "source_status": "runtime_bytecode_only",
+  "representation": "Historical EVM runtime bytecode plus report evidence; original Solidity and decompilation unavailable",
+  "chain_id": 1,
+  "tx": [
+    "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65"
+  ],
+  "addresses": [
+    "https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387"
+  ],
+  "usd": 7500000,
+  "dataset_view": "simplified",
+  "retrieved_on": "2026-09-10",
+  "verified_original_source": false,
+  "bytecode_equivalence_verified": false,
+  "compilation_tested": false,
+  "exploit_replayed": false,
+  "upstream_repository": null,
+  "upstream_commit": null,
+  "victim_source_sha256": null,
+  "report_urls": [
+    "https://blockaid.io/blog/the-predator-becomes-the-prey-how-a-counter-mev-honeypot-drained-75m-from-jaredfromsubway",
+    "https://blocksec.com/blog/web3-security-jaredfromsubway-aztec-more",
+    "https://www.certik.com/blog/jaredfromsubway-mev-bot-incident-analysis"
+  ],
+  "source_search_evidence": "evidence/source_search.json",
+  "files_sha256": {
+    "bytecode.json": "286ccdc0ce8147d11fd6b9b5b49b5fe3dd45e874653db1102ae187d2a44efc1d",
+    "case_metadata.json": "fbec4a9e20e3bede2fa2d77d4674299cbd3e2f6726993d6ea2153ac45f284620",
+    "evidence/address_roles.json": "7ab3adb91ae2aca561b645c34d5e7aee4b452f8115a54299abbd1c096bcade8b",
+    "evidence/attack_path.json": "2460b6aa6eba5d5afd9a580c9d51e212a6c727d3a910ebc96caefb60154bb8cc",
+    "evidence/INDEX.md": "50ed1d9ef9de3c2b9cad748dfe1fb27960a3bf97efd16b6e04ca7b47f6008a79",
+    "evidence/source_search.json": "7dce1a9c00bba67deebb595e754427e785939aa1412bba3a31d5b43aac3295c8",
+    "onchain/JaredFromSubway.runtime.bin": "204a4fde84952e40b97a2841629b35e0abf6d7a3070a6fa7b87d4df6ae044708",
+    "onchain/JaredFromSubway.runtime.hex": "da4d0464863dfab5c257a87211ed9f2ee3260408a52454a73a8b47994dc236cb",
+    "SOURCE.md": "aafc8c8e70650c0dcee618c6f23cb81d466526270e47edab224e611975871c60"
+  },
+  "bytecode_retrieved_on": "2026-09-14",
+  "victim_runtime_bytecode_obtained": true,
+  "historical_runtime_match_verified": true,
+  "bytecode_metadata": "bytecode.json",
+  "bytecode_hash": "0x14a86b6d239e89ae47d307fa4a7fb6843e4356f5d13ac751a053711a88b36658",
+  "bytecode_hash_algorithm": "Keccak-256 of decoded runtime bytes",
+  "original_source_to_bytecode_equivalence_verified": false
+}

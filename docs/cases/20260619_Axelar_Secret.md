@@ -177,7 +177,7 @@ Client A 的状态没有被替换，也没有认可攻击者链的证明。**第
 
 - `ibc_channel_open()` 主要检查协议版本和通道排序方式；
 - `ibc_channel_connect()` 保存新通道信息；
-- 接收消息后，铸币路径只按 `denom` 查允许列表，没有把这次发行限定到可信 Axelar 来源。[通道接入代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs:130)、[接收与铸币代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs:216)
+- 接收消息后，铸币路径只按 `denom` 查允许列表，没有把这次发行限定到可信 Axelar 来源。[通道接入代码](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs#L130)、[接收与铸币代码](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs#L216)
 
 允许建立对端连接，解决的是“能否通信、如何验证这个对端”；是否允许它触发 saUSDT 发行，是桥接合约必须另行判断的业务权限。官方复盘确认，本案攻击者将自建链接入该合约，而合约缺少真正 Axelar 来源检查。[Secret 官方复盘](https://forum.scrt.network/t/security-incident-axelar-secret-ibc-bridge-exploit-june-10-2026/7995)
 
@@ -224,7 +224,7 @@ Ok(())
 - 对端版本是否兼容；
 - 通道排序方式是否符合要求。
 
-**它没有要求这个通道的连接必须对应真正的 Axelar。** 随后的 `ibc_channel_connect()` 又把通过握手的通道编号、对端端口和连接编号保存下来。[实际通道检查代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs:130)
+**它没有要求这个通道的连接必须对应真正的 Axelar。** 随后的 `ibc_channel_connect()` 又把通过握手的通道编号、对端端口和连接编号保存下来。[实际通道检查代码](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs#L130)
 
 这里说“桥接受了”，指的是**代码自动返回 `Ok`**，并不表示有人手动批准了攻击者。
 
@@ -246,7 +246,7 @@ IBC 的路由规范就是按消息的 `destPort` 找到接收模块，在消息�
 
 接下来，桥仍然可以拒绝这条消息。例如，即使允许某个对端建立通信通道，也可以在收到发行请求时检查：“这个通道有权触发 saUSDT 铸币吗？”
 
-但本案的接收函数又只按 `denom` 查允许列表，随后发起铸币，没有补上可信来源检查。[接收与铸币代码](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs:216)
+但本案的接收函数又只按 `denom` 查允许列表，随后发起铸币，没有补上可信来源检查。[接收与铸币代码](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs#L216)
 
 因此，攻击能够继续，是因为**桥在建立通道时接受了这个对端，在处理资产消息时又没有限制它的发行权限**。IBC 把通过通信验证的消息送到了正确的收件合约；错误发生在桥把“可以跟我通信”进一步当成了“可以要求我发行有抵押的资产凭证”。
 
@@ -279,7 +279,7 @@ IBC 的路由规范就是按消息的 `destPort` 找到接收模块，在消息�
 | 凭证是否由真实代币合约发行           | [ibc.rs：`mint_amount`](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/ibc.rs#L351)                                                                                                                                                 |
 | 凭证怎样被销毁并发起跨链赎回         | [contract.rs：`execute_transfer`](../../dataset/benchmark_complete/20260619_Axelar_Secret/ics20-for-axelar/contracts/cw20-ics20/src/contract.rs#L100)                                                                                                                                  |
 
-[完整版来源说明](../../dataset/benchmark_complete/20260619_Axelar_Secret/SOURCE.md)记录下载版本与文件哈希；[精简版](../../dataset/benchmark_simplified/20260619_Axelar_Secret/SOURCE.md)只摘取同一源码的必要调用路径，并记录原始行段。
+[完整版来源说明](../../dataset_artifacts/benchmark_complete/20260619_Axelar_Secret/SOURCE.md)记录下载版本与文件哈希；[精简版](../../dataset_artifacts/benchmark_simplified/20260619_Axelar_Secret/SOURCE.md)只摘取同一源码的必要调用路径，并记录原始行段。
 
 ## 6. 这份说明能证明到哪里
 

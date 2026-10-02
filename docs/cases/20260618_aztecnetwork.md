@@ -99,6 +99,6 @@ flowchart TD
 
 这是 `20260618_aztecnetwork` 旧版 RollupProcessor 事件，与仓库已有的 `20260614_aztecnetwork`、RollupProcessorV3 交易数量检查事件不同。当前样本包含以太坊上的处理器、验证器等源码，但缺少原始 claim 电路；本说明没有独立生成攻击证明或重放交易。
 
-- [源码内容及缺失范围](../../dataset/benchmark_complete/20260618_aztecnetwork/SOURCE.md)。
+- [源码内容及缺失范围](../../dataset_artifacts/benchmark_complete/20260618_aztecnetwork/SOURCE.md)。
 - [固定版本主交易记录](https://github.com/DarkNavySecurity/web3-exploit-analysis/blob/0dedb932869fff89899d75a3e6e2315cd87768bd/artifacts/analysis_0xab306cd2184d23b6ba3e151b10b3b9a0b81f211cc16f4f3b0c79f0b17a59c2b5/trace_callTracer.json)：根节点 `0` 为应急入口，`0.0` 为验证器调用，`0.1` 为向攻击者发送 ETH。
 - [原表告警](https://x.com/evilcos/status/2067488848788262957)；[DarkNavy 事件分析及披露转述](https://www.darknavy.org/web3/exploits/aztec-private-rollup-bridge-escape-hatch-claim-proof-drain/)。

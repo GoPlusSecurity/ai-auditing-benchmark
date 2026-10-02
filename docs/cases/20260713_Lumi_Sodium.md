@@ -60,7 +60,7 @@ Sodium 源码在 [`contracts/Sodium.sol`](../../dataset/benchmark_complete/20260
 
 ## 5. 攻击步骤
 
-本地保存了源表交易、示例授权交易和示例搬币交易的原始[交易与回执](../../dataset/benchmark_complete/20260713_Lumi_Sodium/evidence)。详细字段解码由[Verichains 技术复盘](https://blog.verichains.io/p/lumi-finance-exploit-erc-1271-bypass)提供。
+本地保存了源表交易、示例授权交易和示例搬币交易的原始[交易与回执](../../dataset_artifacts/benchmark_complete/20260713_Lumi_Sodium/evidence)。详细字段解码由[Verichains 技术复盘](https://blog.verichains.io/p/lumi-finance-exploit-erc-1271-bypass)提供。
 
 1. 攻击者调用恶意合约，恶意合约再调用 EntryPoint 的 `handleOps`。账户看到的直接调用者是可信 EntryPoint，所以 `_requireFromEntryPoint()` 正常通过。
 2. UserOperation 的 `signature` 把恶意合约写成 signer，并携带任意 `0x00`。该合约的 ERC-1271 函数主动返回 magic value，`SignatureChecker` 因此报告有效。
@@ -105,8 +105,8 @@ flowchart TD
 ## 9. 证据、影响与限制
 
 - **源码能够确认的机制：** Sourcify 对 Sodium 实现给出 creation/runtime `exact_match`，31 个原始源文件、标准编译输入、设置和 ABI 均已归档。关键代码是 `Sodium.sol` 第 83–122、136–210、340–395 行及 `SessionManager.sol`。
-- **交易中观察到的行为：** 三组公开 RPC 交易和回执均成功；分别对应示例授权、示例 drain 和源表代表交易。摘要见 [`transaction-summary.json`](../../dataset/benchmark_complete/20260713_Lumi_Sodium/evidence/transaction-summary.json)。
+- **交易中观察到的行为：** 三组公开 RPC 交易和回执均成功；分别对应示例授权、示例 drain 和源表代表交易。摘要见 [`transaction-summary.json`](../../dataset_artifacts/benchmark_complete/20260713_Lumi_Sodium/evidence/transaction-summary.json)。
 - **由证据推断的部分：** UserOperation 的逐字段解释、ERC-1271 返回值和 EntryPoint 两阶段顺序主要依赖公开完整跟踪分析；本批归档的是交易和回执，没有独立 debug trace。
 - **尚未核实：** 所有受害账户清单、每个账户攻击前 safe-session 存储、270,000 美元的逐币种最终净额、追回情况。未本地编译或分叉重放。
-- **精简代码：** [精简版](../../dataset/benchmark_simplified/20260713_Lumi_Sodium/SOURCE.md)保留签名、session、验证阶段 approve 和 OpenZeppelin ERC-1271 分支的原文切片。
+- **精简代码：** [精简版](../../dataset_artifacts/benchmark_simplified/20260713_Lumi_Sodium/SOURCE.md)保留签名、session、验证阶段 approve 和 OpenZeppelin ERC-1271 分支的原文切片。
 

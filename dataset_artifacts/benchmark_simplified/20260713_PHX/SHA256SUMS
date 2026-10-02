@@ -1,0 +1,12 @@
+74af45614026d19015d1d5fb7912af587b4717ea2f4eb5663f092d49e3db68ac  ../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.burn.sol
+99512a3de2390b6723df49ab6d9d0d71ee9cc54c4b1025860de432f1924467ac  ../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.update-transfer.sol
+4b292b62e7d25327beb2a0590436e32c044ddb56ee430c58c61410106b713673  ../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.pair-interfaces.sol
+17b89d7ea563f8bbf342d19f6ab6594c0e52b032abe6387921f8aadf3a9a4ae9  ../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.state-and-pair-setup.sol
+1457f956c40a5b59657a41c4247f174ec02ab576d367e5fa95db782e1d696c9d  ../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.take-sell-fee.sol
+1f1d3d04edba269ddf7555b2afb57ce8853b1b906d422b87e458e9abb4c1d94f  ../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.update-dispatch.sol
+7fa3308a273323d93baa01385e3e2769e0b74c46989ab8208fc15118874a2b72  SOURCE.md
+15d9e5579ad82feaed013c9ca3d653d829ffeedf15fb1d71ce70db5fe5c0b75c  case_metadata.json
+714a175ed7d31e02c7d4ae70b09f70aa9429b683e9237e5465918564d57626c0  evidence/address-roles.json
+cf648ec1fb951298c7991f167aa286cbb2f58ed81c251e25e132ed6df4a443ec  evidence/transaction-summary.json
+ba988218948f275a12a273939caa81aa6278bf44d62472dc63747bb3f379cfb4  evidence/validation.json
+91e85d4e4fcfe860dbda2525ea0730dcf6d251019994d1cf76ec22b8f8b3963c  slice_manifest.json

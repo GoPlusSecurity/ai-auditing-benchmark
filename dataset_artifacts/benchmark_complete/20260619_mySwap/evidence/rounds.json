@@ -1,0 +1,304 @@
+{
+  "format": "normalized Voyager visible decoded-call observations; not a raw RPC trace",
+  "retrieved_at_date": "2026-09-10",
+  "transaction_url": "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+  "transaction_hash": "0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+  "block_number": 10951100,
+  "timestamp_utc": "2026-06-19T07:15:46Z",
+  "sender": "0x029f9de5cafb30f55e4a6f4f032e8774958520c1649b3a0441f1354c0b330518",
+  "victim_contract": "0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+  "executed_class_hash": "0x008fade1a36f2bfcaa55b53c96dfb615e8e60110b87765cf449d09b6e0397b17",
+  "token0_all_rounds": "0x028c9acd8eb7dc1cd7e3da98da3997cb57beca3c39d425e90780195df3a9a49e",
+  "token0_symbol": "EVIL",
+  "call_order_each_round": [
+    "create_pool",
+    "mint",
+    "initialize_pool_price",
+    "burn",
+    "collect"
+  ],
+  "result_order": [
+    "amount0",
+    "amount1"
+  ],
+  "tick_encoding_note": "Unsigned u32 values exactly as decoded by Voyager; no signed tick offset interpretation is asserted.",
+  "amount_encoding_note": "Hexadecimal token base units. Liquidity is a u128 share/position quantity, not a token amount. collect_result is independently distinguished from token transfer observations.",
+  "rounds": [
+    {
+      "round": 1,
+      "token1": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "fee": "0x2710",
+      "pool_key": "0x6739d99c62840e6261741be69f88c71d5169a2f506af9fa7dc7d2b808fbe4cb",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0xb10300a3eb05da515",
+      "mint_result": [
+        "0x06bcd413608eb68e02",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x06bcd413608eb68e01"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x6bcd413608eb68e01"
+      ],
+      "burn_liquidity": "0xb10300a3eb05da515"
+    },
+    {
+      "round": 2,
+      "token1": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "fee": "0xbb8",
+      "pool_key": "0x12ee2630264fa29277df1f26e1113714605c7df9c23c8278d56361ec1037230",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x11b38010644d63f20",
+      "mint_result": [
+        "0xac7b9b89a7df1b00",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0xac7b9b89a7df1aff"
+      ],
+      "collect_result": [
+        "0x0",
+        "0xac7b9b89a7df1aff"
+      ],
+      "burn_liquidity": "0x11b38010644d63f20"
+    },
+    {
+      "round": 3,
+      "token1": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "fee": "0x1f4",
+      "pool_key": "0x10ccd009b48b732c8b93c30b65baae11cedb54b6f0f1430af5bcf4389ca8f72",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x1c526680a07bd809",
+      "mint_result": [
+        "0x113f8f8dc3fcb8e6",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x113f8f8dc3fcb8e5"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x113f8f8dc3fcb8e5"
+      ],
+      "burn_liquidity": "0x1c526680a07bd809"
+    },
+    {
+      "round": 4,
+      "token1": "0x4718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+      "fee": "0x2710",
+      "pool_key": "0x5fcaed934cc0ea8d44b4653717682a6550793fb7ef198e1198d14e0246515cb",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x4819b935b685b343151a",
+      "mint_result": [
+        "0x2be8ec8769aaf1e8ca7c",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x2be8ec8769aaf1e8ca7b"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x2be8ec8769aaf1e8ca7b"
+      ],
+      "burn_liquidity": "0x4819b935b685b343151a"
+    },
+    {
+      "round": 5,
+      "token1": "0x4718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+      "fee": "0xbb8",
+      "pool_key": "0x6de518091484fe0207d11b08b8377b924a6f00bea02f6170b36096aef2fe46e",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x735c5b892408fcaa59b",
+      "mint_result": [
+        "0x046417a7242ab07dadd9",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x046417a7242ab07dadd8"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x46417a7242ab07dadd8"
+      ],
+      "burn_liquidity": "0x735c5b892408fcaa59b"
+    },
+    {
+      "round": 6,
+      "token1": "0x4718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+      "fee": "0x1f4",
+      "pool_key": "0x4df41bba63b6206c7fcf15d6d2cb31ebeb2efa71ac35efc0e2a57c42934ac8a",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0xb893c5a839a7f80997",
+      "mint_result": [
+        "0x7068c3ea0444d7c496",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x7068c3ea0444d7c495"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x7068c3ea0444d7c495"
+      ],
+      "burn_liquidity": "0xb893c5a839a7f80997"
+    },
+    {
+      "round": 7,
+      "token1": "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      "fee": "0x2710",
+      "pool_key": "0x3fceefdd81a5a53e86ff9321a54dd0d41caf94500397c38e4eb8660d5df3bbc",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0xf8ab069d5",
+      "mint_result": [
+        "0x09770ef2a4",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x09770ef2a3"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x9770ef2a3"
+      ],
+      "burn_liquidity": "0xf8ab069d5"
+    },
+    {
+      "round": 8,
+      "token1": "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      "fee": "0xbb8",
+      "pool_key": "0x9e7df5c8c20d69d72421b66bbe45b0bc3b88541ff368454f257e226d659212",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x18dde70fa",
+      "mint_result": [
+        "0xf24e4b76",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0xf24e4b75"
+      ],
+      "collect_result": [
+        "0x0",
+        "0xf24e4b75"
+      ],
+      "burn_liquidity": "0x18dde70fa"
+    },
+    {
+      "round": 9,
+      "token1": "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      "fee": "0x1f4",
+      "pool_key": "0x5cfc8ac65fe10dc4c201ebfea3e8656576e55ea3a18384e3105c928a7fbf193",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x27c971b2",
+      "mint_result": [
+        "0x183b078c",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x183b078b"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x183b078b"
+      ],
+      "burn_liquidity": "0x27c971b2"
+    },
+    {
+      "round": 10,
+      "token1": "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
+      "fee": "0x2710",
+      "pool_key": "0x79dbb564fb78e62b9b30f4550bc1e22a549a175014bfc21d17dd8036f751b9f",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x6de9f50f1",
+      "mint_result": [
+        "0x042f046915",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x042f046914"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x42f046914"
+      ],
+      "burn_liquidity": "0x6de9f50f1"
+    },
+    {
+      "round": 11,
+      "token1": "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
+      "fee": "0xbb8",
+      "pool_key": "0x73e5fce7aa7af29c4a564d9df1bf6ae0519bac83658eb5e6b4f3c34765c4daf",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0xafdcbb4b",
+      "mint_result": [
+        "0x6b1a0a82",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x6b1a0a81"
+      ],
+      "collect_result": [
+        "0x0",
+        "0x6b1a0a81"
+      ],
+      "burn_liquidity": "0xafdcbb4b"
+    },
+    {
+      "round": 12,
+      "token1": "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
+      "fee": "0x1f4",
+      "pool_key": "0x3501eb8a0d2e44c3c1eb02afcc441b37d57ab98fc575e816115f7ec1691f32e",
+      "tick_lower": "0xd7278",
+      "tick_upper": "0xda158",
+      "liquidity": "0x119612bb",
+      "mint_result": [
+        "0x0ab5cdda",
+        "0x00"
+      ],
+      "sqrt_price_x96": "0x015d080b1c91b9f00000000000",
+      "burn_result": [
+        "0x00",
+        "0x0ab5cdd9"
+      ],
+      "collect_result": [
+        "0x0",
+        "0xab5cdd9"
+      ],
+      "burn_liquidity": "0x119612bb"
+    }
+  ]
+}

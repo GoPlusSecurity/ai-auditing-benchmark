@@ -23,7 +23,7 @@ JB 代币有一个只允许官方路由器调用的入口，识别号是 **`0xb1
 1. 从**交易池的 JB 余额**里销毁指定数量的币。
 2. 调用池子的 `sync()`，让池子把减少后的余额记下来，供之后报价使用。
 
-而 [官方路由器的卖出流程](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol.txt#L249) 会在已经把 USDT 交给卖家之后调用这个入口。这样，一笔正常交换已经结束，池子又额外损失了 JB，却没有收到对应补偿。
+而 [官方路由器的卖出流程](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol#L249) 会在已经把 USDT 交给卖家之后调用这个入口。这样，一笔正常交换已经结束，池子又额外损失了 JB，却没有收到对应补偿。
 
 这两个设计接到一起，才形成攻击机会：**用户可以反复发起卖出，官方程序就会反复替用户触发池内销毁。**
 
@@ -100,7 +100,7 @@ Venus 的 USDT 市场.borrow(...) 借出 7,000 万 USDT
 
 **第二步，把 USDT 交给官方路由器，让它买入 JB。**
 
-路由器的买入入口在 [TradeRouter.recovered.sol 第 187 行](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol:187)。下面节选主要操作，省略了检查和授权清理：
+路由器的买入入口在 [TradeRouter.recovered.sol 第 187 行](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol#L187)。下面节选主要操作，省略了检查和授权清理：
 
 ```solidity
 // 从调用者手里收取 USDT
@@ -139,11 +139,11 @@ _safeTransfer(JB_TOKEN, msg.sender, jbReturned);
 | 大额买入之前 | 119,993,000 |     50,000 |
 | 大额买入之后 |   85,862.61 | 70,050,000 |
 
-也就是说，**池子收进了 7,000 万 USDT，绝大部分 JB 被买走。** 后面的卖出就在这个状态上开始。[本地保存的调用记录](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/.cache/import_99_104/jb_trace_docs_pinned.json)
+也就是说，**池子收进了 7,000 万 USDT，绝大部分 JB 被买走。** 后面的卖出就在这个状态上开始。[本地保存的调用记录](../../.cache/import_99_104/jb_trace_docs_pinned.json)
 
 **第三步，每次卖出，先按正常交易拿到 USDT。**
 
-卖出入口在 [TradeRouter.recovered.sol 第 249 行](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol:249)。恢复代码的关键顺序如下：
+卖出入口在 [TradeRouter.recovered.sol 第 249 行](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol#L249)。恢复代码的关键顺序如下：
 
 ```solidity
 // 1. 从卖家手里收取 JB
@@ -198,7 +198,7 @@ _maybePoolBurn(_derivePoolBurnAmount(amountInJb, swapAmount));
 
 官方路由器随后调用 JB 的 `0xb1faeac6`。这是函数的链上识别号，原始函数名没有确认。
 
-在 [JBToken.recovered.sol 第 182 行](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol:182)，核心代码是：
+在 [JBToken.recovered.sol 第 182 行](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L182)，核心代码是：
 
 ```solidity
 function func_0xb1faeac6(uint256 amount)
@@ -229,7 +229,7 @@ _burn(slot_4_ammPair, amount);
 
 > 从交易池名下销毁 `amount` 个 JB。
 
-继续看 [_burn，第 274 行](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol:274)：
+继续看 [_burn，第 274 行](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L274)：
 
 ```solidity
 function _burn(address from, uint256 amount) internal {
@@ -302,7 +302,7 @@ function _burn(address from, uint256 amount) internal {
 
 **第五步，“只允许官方路由器调用”为什么没有挡住攻击？**
 
-权限检查在 [JBToken.recovered.sol 第 70 行](D:/code/vibe-coding/ai-auditing-benchmark/ai-auditing-benchmark/dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol:70)：
+权限检查在 [JBToken.recovered.sol 第 70 行](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L70)：
 
 ```solidity
 modifier onlyTradeRouter() {
@@ -376,7 +376,7 @@ flowchart TD
 | 实际直接调用者限制       | [onlyTradeRouter](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L70)                 | [代币关键切片](../../dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol)                        |
 | 销毁 pair 余额并同步储备 | [0xb1faeac6 恢复函数](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L182)            | [对应恢复函数](../../dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol#L70)                    |
 | 恢复文件中的余额扣减     | [_burn](../../dataset/benchmark_complete/20260619_JB_decompiled/JBToken.recovered.sol#L274)                          | [对应依赖](../../dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol)                            |
-| 卖出后如何触发池内销毁   | [路由器卖出代码](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol.txt#L249) | [相同路由器代码](../../dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol.txt#L249) |
+| 卖出后如何触发池内销毁   | [路由器卖出代码](../../dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol#L249) | [相同路由器代码](../../dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol#L249) |
 
 ## 资料说明
 
@@ -386,6 +386,6 @@ JB 主代币的恢复代码置信度为 medium，路由器和控制器为 low。
 
 本说明没有重放攻击，也没有证明恢复代码和部署字节码完全一致。主代币恢复文件能够编译，并不能证明全部行为都还原正确。
 
-- [源码性质与恢复限制](../../dataset/benchmark_complete/20260619_JB_decompiled/SOURCE.md)、[机器可读来源记录](../../dataset/benchmark_complete/20260619_JB_decompiled/SOURCE.json)、[原始恢复材料](https://github.com/DarkNavySecurity/web3-exploit-analysis/tree/main/artifacts/analysis_0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25)。
+- [源码性质与恢复限制](../../dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.md)、[机器可读来源记录](../../dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.json)、[原始恢复材料](https://github.com/DarkNavySecurity/web3-exploit-analysis/tree/main/artifacts/analysis_0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25)。
 - [固定版本调用记录](https://github.com/DarkNavySecurity/web3-exploit-analysis/blob/0dedb932869fff89899d75a3e6e2315cd87768bd/artifacts/analysis_0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25/trace_callTracer.json)：第一轮卖出为 `0.1.0.1.9`，销毁入口为其子路径 `.23`，更新池子记录为 `.23.0`。
 - [原表告警](https://x.com/audit_911/status/2067943961327763788)；[DarkNavy 事件分析](https://www.darknavy.org/web3/exploits/jb-token-pair-burn-reserve-manipulation/)。

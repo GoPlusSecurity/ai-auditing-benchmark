@@ -1,0 +1,296 @@
+[
+  {
+    "function_idx": 41,
+    "selector": "0x28ffe4ff0f226a9107253e17a904099aa4f63a02a5621de0576e5aa71bc5194",
+    "name": "constructor",
+    "kind": "CONSTRUCTOR",
+    "statement": 7047
+  },
+  {
+    "function_idx": 22,
+    "selector": "0x3902b37577a6374d69d0cd9602998ee856f633865a9884666bfe58ac2a1b72",
+    "name": "oracle_observe",
+    "kind": "EXTERNAL",
+    "statement": 3951
+  },
+  {
+    "function_idx": 16,
+    "selector": "0x3e8cfd4725c1e28fa4a6e3e468b4fcf75367166b850ac5f04e33ec843e82c1",
+    "name": "burn",
+    "kind": "EXTERNAL",
+    "statement": 2824
+  },
+  {
+    "function_idx": 3,
+    "selector": "0x51daa1478e9b7e3015f7ea31466f3ce76bc8d9e14b7e938bc6311a067dda9a",
+    "name": "positions_tokens_owed",
+    "kind": "EXTERNAL",
+    "statement": 523
+  },
+  {
+    "function_idx": 18,
+    "selector": "0x62c5504500027b8079dc29a2930d42a0f21a67bbf48f1e39aa1f843334ad7f",
+    "name": "swap1",
+    "kind": "EXTERNAL",
+    "statement": 3315
+  },
+  {
+    "function_idx": 7,
+    "selector": "0x70fce158d4724c88a4935dbc009c3fa9b0ed859efe335e3fbaa9503de43299",
+    "name": "fee_growth_global0",
+    "kind": "EXTERNAL",
+    "statement": 1257
+  },
+  {
+    "function_idx": 30,
+    "selector": "0x85c01a435fe4e51d08ff9040cf29d3d881603895653be68d750b8f53a0b96b",
+    "name": "delete_pool",
+    "kind": "EXTERNAL",
+    "statement": 5432
+  },
+  {
+    "function_idx": 11,
+    "selector": "0xad5d3ec16e143a33da68c00099116ef328a882b65607bec5b2431267934a20",
+    "name": "token0",
+    "kind": "EXTERNAL",
+    "statement": 1837
+  },
+  {
+    "function_idx": 38,
+    "selector": "0xae4cc673c69e3eae3434121d8d651b86ce1a6f81ad94ddf40cb0127c7f6084",
+    "name": "migrator",
+    "kind": "EXTERNAL",
+    "statement": 6685
+  },
+  {
+    "function_idx": 9,
+    "selector": "0xb00db3bceb3ad6dfa1a333a1c3e8ec67942c3c83858528ee9bcf13530aee76",
+    "name": "balance0",
+    "kind": "EXTERNAL",
+    "statement": 1547
+  },
+  {
+    "function_idx": 20,
+    "selector": "0xcc2789e33d64b4e63bc6a3c207d130527722f9cc943008d5b7c4939b372673",
+    "name": "initialize_oracle",
+    "kind": "EXTERNAL",
+    "statement": 3669
+  },
+  {
+    "function_idx": 5,
+    "selector": "0xd386caf523753c0a51ad887a6b90fc833bca385f526e96a6a5de06862c90c5",
+    "name": "ticks_fee_growth",
+    "kind": "EXTERNAL",
+    "statement": 934
+  },
+  {
+    "function_idx": 25,
+    "selector": "0xf2f7c15cbe06c8d94597cd91fd7f3369eae842359235712def5584f8d270cd",
+    "name": "upgrade",
+    "kind": "EXTERNAL",
+    "statement": 4578
+  },
+  {
+    "function_idx": 34,
+    "selector": "0x1199477cb0ce72bf66c6d439da76bc568947cb9aad287402ba7b93353c94092",
+    "name": "is_initialized",
+    "kind": "EXTERNAL",
+    "statement": 6060
+  },
+  {
+    "function_idx": 8,
+    "selector": "0x11a9e7721854effddfa7b19502522eb5c6a59399271a22f901e7f498d7f850f",
+    "name": "fee_growth_global1",
+    "kind": "EXTERNAL",
+    "statement": 1402
+  },
+  {
+    "function_idx": 26,
+    "selector": "0x12776a647d4f1a00968b94506ca4f11d94dce59f1c0176d42b47799b3a7f709",
+    "name": "migrate_storage",
+    "kind": "EXTERNAL",
+    "statement": 4708
+  },
+  {
+    "function_idx": 39,
+    "selector": "0x147b96f728435735d0637121805954c1a2f60c5920acec489fd3a9183c2b02f",
+    "name": "set_storage_version",
+    "kind": "EXTERNAL",
+    "statement": 6801
+  },
+  {
+    "function_idx": 17,
+    "selector": "0x15543c3708653cda9d418b4ccd3be11368e40636c10c44b18cfe756b6d88b29",
+    "name": "swap",
+    "kind": "EXTERNAL",
+    "statement": 3056
+  },
+  {
+    "function_idx": 19,
+    "selector": "0x19a9a8d8dc388e22ecf54f7f76711f59b1b2a1b5fa238eb19e794d6a52ef27b",
+    "name": "limited_swap",
+    "kind": "EXTERNAL",
+    "statement": 3492
+  },
+  {
+    "function_idx": 0,
+    "selector": "0x1b232db017348fc9162e85c5816de7d8777757d87fcd54e5908bfec4abe7131",
+    "name": "current_tick",
+    "kind": "EXTERNAL",
+    "statement": 0
+  },
+  {
+    "function_idx": 32,
+    "selector": "0x1ce1a9a3a092ff2ce12351f8b2bba5f735cdeda1d6466e6ad4ce4180adbd47c",
+    "name": "pool_key",
+    "kind": "EXTERNAL",
+    "statement": 5685
+  },
+  {
+    "function_idx": 29,
+    "selector": "0x1e700c8df2b0c106c81e9b6e1089ccc00aa9da307295260672a7fd601029e93",
+    "name": "create_and_initialize_pool",
+    "kind": "EXTERNAL",
+    "statement": 5190
+  },
+  {
+    "function_idx": 31,
+    "selector": "0x2016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+    "name": "owner",
+    "kind": "EXTERNAL",
+    "statement": 5569
+  },
+  {
+    "function_idx": 36,
+    "selector": "0x22e798d10294e702810be181466b5445ae64cf7624da3ae4f97a2266013b6ef",
+    "name": "fee_amount_to_tick_spacing",
+    "kind": "EXTERNAL",
+    "statement": 6410
+  },
+  {
+    "function_idx": 33,
+    "selector": "0x279193ae67f7ef3a6be330f5bd004266a0ec3fd5a6f7d2fe71a2096b3101578",
+    "name": "get_pool",
+    "kind": "EXTERNAL",
+    "statement": 5855
+  },
+  {
+    "function_idx": 15,
+    "selector": "0x284134db6f39215e1d0a0a3dbd382fd7d28af6b3e3d5b77bba35c3a1d0da316",
+    "name": "collect",
+    "kind": "EXTERNAL",
+    "statement": 2533
+  },
+  {
+    "function_idx": 23,
+    "selector": "0x2a77091eeb3dfb86b264930d28533f0e4c857df7bef322f22f6c3c21990076d",
+    "name": "set_fee_protocol",
+    "kind": "EXTERNAL",
+    "statement": 4168
+  },
+  {
+    "function_idx": 13,
+    "selector": "0x2ca10e094b38e16edddfa9220dd73bdd7bc167fbc910fb4298c919ea1d9eba5",
+    "name": "max_liquidity_per_tick",
+    "kind": "EXTERNAL",
+    "statement": 2127
+  },
+  {
+    "function_idx": 1,
+    "selector": "0x2de97080d8dd1cf0ad5ae88a8868713cb968fb73f07d59ca52b6a3ba4352659",
+    "name": "current_sqrt_price",
+    "kind": "EXTERNAL",
+    "statement": 145
+  },
+  {
+    "function_idx": 10,
+    "selector": "0x2e549afe9b6c1dba46ce462264c88f7c03a7fa881840c8f5759d92126dd0ad7",
+    "name": "balance1",
+    "kind": "EXTERNAL",
+    "statement": 1692
+  },
+  {
+    "function_idx": 14,
+    "selector": "0x2f0b3c5710379609eb5495f1ecd348cb28167711b73609fe565a72734550354",
+    "name": "mint",
+    "kind": "EXTERNAL",
+    "statement": 2272
+  },
+  {
+    "function_idx": 37,
+    "selector": "0x31660094f6d18d49265d8fe914307f45e0da37a7cc4a2cf9592210c32dd1e4e",
+    "name": "set_migrator",
+    "kind": "EXTERNAL",
+    "statement": 6555
+  },
+  {
+    "function_idx": 24,
+    "selector": "0x32758d7264a074ea1f4e662994ef64816e406a4d0683809d319c97f0b66712a",
+    "name": "collect_protocol",
+    "kind": "EXTERNAL",
+    "statement": 4356
+  },
+  {
+    "function_idx": 12,
+    "selector": "0x3610e8e1835afecdd154863369b91f55612defc17933f83f4425533c435a248",
+    "name": "token1",
+    "kind": "EXTERNAL",
+    "statement": 1982
+  },
+  {
+    "function_idx": 6,
+    "selector": "0x37d9f8cddc6f064ba72d0e3c1e53eb67867dd8506fa4f5d61c86189caca8ee5",
+    "name": "liquidity",
+    "kind": "EXTERNAL",
+    "statement": 1112
+  },
+  {
+    "function_idx": 21,
+    "selector": "0x38d2c1312b605113e2812e42a97ce61f266795f8447f5fba1b0e00cc96ea657",
+    "name": "get_oracle_init_date",
+    "kind": "EXTERNAL",
+    "statement": 3806
+  },
+  {
+    "function_idx": 40,
+    "selector": "0x3a120cdd3da66e531e885d507d8c7d7360afd11bf27913a6907c3e595dde8eb",
+    "name": "get_storage_version",
+    "kind": "EXTERNAL",
+    "statement": 6931
+  },
+  {
+    "function_idx": 4,
+    "selector": "0x3b44cbddfba83dcf005069d8da2fd50e11b80b0c33cb9d1e5843447b4e24ac6",
+    "name": "ticks",
+    "kind": "EXTERNAL",
+    "statement": 756
+  },
+  {
+    "function_idx": 28,
+    "selector": "0x3decb041b675b8a5103c50813fc78b4c87b6e267a85d37804258e6560d7ad4e",
+    "name": "initialize_pool_price",
+    "kind": "EXTERNAL",
+    "statement": 5020
+  },
+  {
+    "function_idx": 35,
+    "selector": "0x3efc7911aa82a852fb49e2151fd08b690d12d17440d55cce2fd87c386568303",
+    "name": "pool_params",
+    "kind": "EXTERNAL",
+    "statement": 6265
+  },
+  {
+    "function_idx": 27,
+    "selector": "0x3f393dbd0861909a62ff3f4758e55f051219e2bc4a8747d8f0a0360dedb9949",
+    "name": "create_pool",
+    "kind": "EXTERNAL",
+    "statement": 4816
+  },
+  {
+    "function_idx": 2,
+    "selector": "0x3febd55483de69e1b4ad29a956f1cef83a67bd1ee8e48e8386c4a486c19238c",
+    "name": "positions",
+    "kind": "EXTERNAL",
+    "statement": 290
+  }
+]

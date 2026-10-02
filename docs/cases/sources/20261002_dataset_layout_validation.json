@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "source_files_byte_exact": 1911,
+  "artifact_files_migrated": 466,
+  "artifact_files_byte_exact": 366,
+  "artifact_files_with_reference_or_checksum_changes": 100,
+  "source_case_counts": {
+    "benchmark_complete": 51,
+    "benchmark_simplified": 51
+  },
+  "csv_records": {
+    "cn": 52,
+    "en": 52
+  },
+  "csv_bytes_unchanged": true,
+  "checksum_manifests": 24,
+  "checksum_entries": 773,
+  "local_markdown_links_checked": 592,
+  "json_path_values_updated": 1035,
+  "semantic_review_path_values_updated": 24,
+  "protected_evidence_fields_unchanged": true,
+  "source_names_and_recorded_hashes_unchanged": true,
+  "all_layout_checks": {
+    "source_files": 1911,
+    "abi_files": 37,
+    "dataset_files": 1948,
+    "checksum_manifests": 24,
+    "checksum_entries": 773,
+    "local_markdown_links_checked": 592,
+    "json_file_references_checked": 1009,
+    "source_hash_records_checked": 860,
+    "original_explorer_source_names_checked": 26,
+    "exact_slices_compared": 102,
+    "preserved_historical_source_hash_differences": [
+      {
+        "document": "dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "a5cf43d6e4de390fb53b5518a6d940eb0f5cd9b9cd40c260a2f0b5789c4d535a",
+        "original_record_key": "context/TradeRouter.recovered.sol.txt",
+        "status": "confirmed_preexisting_record_difference; recorded hash and source bytes preserved"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "f9740a9757af1210386a112848d2879e8207f433101ce6224c5ab79381620bef",
+        "original_record_key": "context/TradeRouter.recovered.sol.txt",
+        "status": "confirmed_preexisting_record_difference; recorded hash and source bytes preserved"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol",
+        "recorded_sha256": "230e555ddd9e2cba2107c2b622edc75e7e384b3f0cab72179599835ee1acc738",
+        "current_sha256": "4c75d04c90ca4e642d30dead0ef96cd407650b72702cb48092a9273193af1ac8",
+        "original_record_key": "JBToken.recovered.sol",
+        "status": "confirmed_preexisting_record_difference; recorded hash and source bytes preserved"
+      }
+    ]
+  },
+  "json_path_keys_updated": 7,
+  "errors": [],
+  "baseline": {
+    "inventory_file": ".cache/dataset-layout-20261002/baseline.json",
+    "inventory_file_sha256": "80542dd3991bfdcf6068ffbef46159f2ac03e1e884ff4cb9b675e445194f1c5d",
+    "source_paths_and_hashes_sha256": "18e6104c4b894f476e268fe2cfc1cada78674ee9475656269485b4fb003a58e2",
+    "source_inventory_encoding": "sorted repository-relative path, NUL, SHA256, newline; UTF-8",
+    "pre_migration_head": "b5f7d35d71d907e7bbc30cc183575c5a6b52456e"
+  },
+  "normal_search_source_files": 1911,
+  "empty_source_directories": 0,
+  "completed_at_utc": "2026-10-02T17:03:17.562201+00:00",
+  "unit_tests": {
+    "passed": 27,
+    "command": "python -X utf8 -B -m unittest discover -s docs/cases/sources -p test_20261002_batch.py"
+  },
+  "independent_review": {
+    "findings_fixed": 3,
+    "details": [
+      "restored 26 original Taiko source_name values",
+      "explicit case-relative paths for legacy Axelar/Namada project inventories",
+      "rebased file paths stored as JSON dictionary keys while preserving digests"
+    ],
+    "follow_up_verification": "25 tests, standalone batch, full byte inventory and reference audit passed"
+  },
+  "upstream_document_link_boundary": {
+    "unarchived_references_labeled": 20,
+    "target": "already recorded fixed upstream revisions",
+    "remote_availability_verified": false,
+    "reason": "network access was declined"
+  },
+  "git": {
+    "head_unchanged": true,
+    "staged_files": 0,
+    "committed": false,
+    "pushed": false,
+    "new_artifact_files_visible": 466
+  },
+  "diff_check": {
+    "passed": true,
+    "whitespace_config": "blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+    "core_autocrlf": false
+  },
+  "abi_files_byte_exact": 37,
+  "dataset_files": 1948,
+  "initial_artifact_migration_count": 503,
+  "abi_files_returned_to_dataset": 37,
+  "layout_policy": {
+    "code_extensions": [
+      ".sol",
+      ".rs",
+      ".cairo",
+      ".pan",
+      ".ts"
+    ],
+    "additional_dataset_filenames": [
+      "abi.json"
+    ],
+    "other_supporting_files": "dataset_artifacts"
+  },
+  "abi_adjustment": {
+    "requested_date": "2026-10-03",
+    "files_returned": 37,
+    "file_bytes_unchanged": true,
+    "source_inventory_unchanged": true,
+    "baseline_file": ".cache/dataset-abi-20261003/baseline.json",
+    "references_updated": 2
+  },
+  "normal_search_dataset_files": 1948,
+  "normal_search_abi_files": 37
+}

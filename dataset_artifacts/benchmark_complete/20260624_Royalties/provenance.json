@@ -1,0 +1,332 @@
+[
+  {
+    "name": "lda",
+    "address": "0xd5b297c08d890376b6cbdba6023a39ffbdf65c78",
+    "url": "https://polygonscan.com/address/0xd5b297c08d890376b6cbdba6023a39ffbdf65c78#code",
+    "compiler_version": "v0.8.4+commit.c7e474f2",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "devdoc",
+            "userdoc",
+            "metadata",
+            "abi"
+          ]
+        }
+      },
+      "libraries": {}
+    },
+    "source_files": [
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/AccessControlUpgradeableGapless.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/AccessControlUpgradeableGapless.sol",
+        "sha256": "1c1f03f19a5827b6140f5e24a105d6da26d2f4bc41dc0b69a1f81be609b570a8",
+        "bytes": 8404
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/AddressUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/AddressUpgradeable.sol",
+        "sha256": "35fb271561f3dc72e91b3a42c6e40c2bb2e788cd8ca58014ac43f6198b8d32ca",
+        "bytes": 7367
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ContextUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ContextUpgradeable.sol",
+        "sha256": "80eae6c1e176f3e54242b950459016a2e38609b03c8f560da1ddc0a299f1af86",
+        "bytes": 1332
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/draft-EIP712UpgradeableGapless.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/draft-EIP712UpgradeableGapless.sol",
+        "sha256": "235a3ef068512a1da3f9647e11890f881765ee900d7b0e386b1f29f4a23a6555",
+        "bytes": 4747
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ECDSAUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ECDSAUpgradeable.sol",
+        "sha256": "9992f52bf34b8bb3b0b420cb4f6137cdc5473cceb57ec565917ba007603b2194",
+        "bytes": 9420
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ERC1155UpgradeableGapless.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ERC1155UpgradeableGapless.sol",
+        "sha256": "ecb9c26cee9d1310beaf1fae4e257414bab7cc89c4714cf4e7072d25acba6af3",
+        "bytes": 17650
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/ERC165Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ERC165Upgradeable.sol",
+        "sha256": "52830e508c5e0d69e34a3d857fdf213bdd0c3caa3c307c436c4e3f33e545406e",
+        "bytes": 1504
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/IAccessControlUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IAccessControlUpgradeable.sol",
+        "sha256": "6d3fbd4566bc123db1ee6ba2a1b79544b572df9b9cc9be360ddb3244dd07c86b",
+        "bytes": 2931
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/IERC1155MetadataURIUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IERC1155MetadataURIUpgradeable.sol",
+        "sha256": "011539e75ffd3ffd3eb8ec17a8440f112f416137edddf11252dba3b72ae31c96",
+        "bytes": 707
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/IERC1155ReceiverUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IERC1155ReceiverUpgradeable.sol",
+        "sha256": "df4632715dcf45b88a5bf05377b1c0cf5cc8c446181d756c60f329a524a0e18a",
+        "bytes": 2511
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/IERC1155Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IERC1155Upgradeable.sol",
+        "sha256": "0d000eccc52c130aef6e838c97c5f71b0088598aeee29617ef37409259f69f2b",
+        "bytes": 4083
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/IERC165Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IERC165Upgradeable.sol",
+        "sha256": "a39bc026ad6214e9ecd526bd4a1ddf9862d80bd4a9d0d031d9bafa4c3c147c0b",
+        "bytes": 864
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/Initializable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/Initializable.sol",
+        "sha256": "7de5831b643db50aa082c9c58aa621eed345b979529b6293f2d689e2b912d1fa",
+        "bytes": 5660
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/OwnableUpgradeableGapless.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/OwnableUpgradeableGapless.sol",
+        "sha256": "770a533b4a36aedb4634294ba592bab3db80ab2a817dec11934a3b4ab858fb02",
+        "bytes": 2850
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/PausableUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/PausableUpgradeable.sol",
+        "sha256": "dff7c86c73c896b38415d173c9c8d7a487421e6db1debb16a5bfc8dab2b640bb",
+        "bytes": 3067
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/dependencies/openzeppelin/v4_7_0/StringsUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/StringsUpgradeable.sol",
+        "sha256": "e7b950eee23563e23989a3b51a1456614a1838084eef1fad04eb2be0bc280f48",
+        "bytes": 2408
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/extras/IRoyalExtrasToken.sol",
+        "original_source_path": "contracts/extras/IRoyalExtrasToken.sol",
+        "sha256": "1c39c92f49ba85de437314f3498863cccd107feb6067f9ec2c264a4dc0ee1bd5",
+        "bytes": 1119
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/interfaces/ILdaTransferHook.sol",
+        "original_source_path": "contracts/interfaces/ILdaTransferHook.sol",
+        "sha256": "2bbd25e8f960c561bc66bb0f166a4d35198ed99778848ae50431d2dd9d90b9fe",
+        "bytes": 311
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/ldas/IRoyal1155LDA.sol",
+        "original_source_path": "contracts/ldas/IRoyal1155LDA.sol",
+        "sha256": "b498a15289198c12c4e3aa9c1bcca44ed6c7a1d819747fabdfe5fb7c5e08e4cb",
+        "bytes": 836
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/ldas/Royal1155LDA.sol",
+        "original_source_path": "contracts/ldas/Royal1155LDA.sol",
+        "sha256": "c689d176887ed627f6ad8398e8ec37105724ce667d574f6e529a3cb53a194ff0",
+        "bytes": 25279
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/lib/ERC1155PermitUpgradeableModifiedGaps.sol",
+        "original_source_path": "contracts/lib/ERC1155PermitUpgradeableModifiedGaps.sol",
+        "sha256": "3bd7ca60d3efb4157568614ab475f4f9a21b5e0166f7e60a1089fe64cfd900eb",
+        "bytes": 4266
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/lib/Gaps.sol",
+        "original_source_path": "contracts/lib/Gaps.sol",
+        "sha256": "cf4ba7aec623786645d99ebbc33ba7714d71b8e91efaf8a727728e0a4bef3386",
+        "bytes": 246
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/lib/interfaces/IERC1155PermitUpgradeable.sol",
+        "original_source_path": "contracts/lib/interfaces/IERC1155PermitUpgradeable.sol",
+        "sha256": "fa3d4a6f6e7e78222840fbc58aaec7f30554cf32c8b49a75d0c77f3322a37687",
+        "bytes": 402
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/lda/contracts/shared/RoyalUtil.sol",
+        "original_source_path": "contracts/shared/RoyalUtil.sol",
+        "sha256": "0d9055900a896c5a54f3858cf72472a31387ca23bc8224c3a9493a42e4aaa524",
+        "bytes": 2905
+      }
+    ],
+    "extraction": "Decoded the embedded editor_contractJsonData JavaScript string and parsed its Solidity standard JSON input. Each source content was encoded as UTF-8 without newline normalization. Raw HTML is retained.",
+    "independent_html_attribute_source_comparison": "all source contents byte-identical",
+    "explorer_verification": "PolygonScan Contract Source Code Verified (Exact Match) page; local bytecode recompilation not performed"
+  },
+  {
+    "name": "royalties",
+    "address": "0x1e0598614d9168a657cb57bd038dfd71812c9074",
+    "url": "https://polygonscan.com/address/0x1e0598614d9168a657cb57bd038dfd71812c9074#code",
+    "compiler_version": "v0.8.4+commit.c7e474f2",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "devdoc",
+            "userdoc",
+            "metadata",
+            "abi"
+          ]
+        }
+      },
+      "libraries": {}
+    },
+    "source_files": [
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/royalties/Royalties.sol",
+        "original_source_path": "contracts/royalties/Royalties.sol",
+        "sha256": "1aafe2a61d7cad485dcd4e63e1847cf69734b30630c1d09003293e95951ecd43",
+        "bytes": 40564
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/ECDSAUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ECDSAUpgradeable.sol",
+        "sha256": "9992f52bf34b8bb3b0b420cb4f6137cdc5473cceb57ec565917ba007603b2194",
+        "bytes": 9420
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/draft-EIP712Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/draft-EIP712Upgradeable.sol",
+        "sha256": "87ad82ca5bdc46c4cc494d13787ef4bbdd66b8512493e57fd25c0458ee5930c9",
+        "bytes": 5031
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/IERC20Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/IERC20Upgradeable.sol",
+        "sha256": "4e09a7479aa3e7c313f8fc141c4c8fc04e0abfeb8754615ef7d78ec94c298b07",
+        "bytes": 2778
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/MathUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/MathUpgradeable.sol",
+        "sha256": "43127075ebfd67044ac7cbee0734c30911e435f58a42d8cf20a86d9fe963ae80",
+        "bytes": 8838
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/OwnableUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/OwnableUpgradeable.sol",
+        "sha256": "c155eb82767b8dc76fdffe33c52a20b5d8af97f0ff54007245b59631eac7163f",
+        "bytes": 3134
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/PausableUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/PausableUpgradeable.sol",
+        "sha256": "dff7c86c73c896b38415d173c9c8d7a487421e6db1debb16a5bfc8dab2b640bb",
+        "bytes": 3067
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/ReentrancyGuardUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ReentrancyGuardUpgradeable.sol",
+        "sha256": "953a44f0e2c666d32318a02230f3b0fa6ab7575c50e723a1fae0d4dc8259eb63",
+        "bytes": 3182
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/SafeCastUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/SafeCastUpgradeable.sol",
+        "sha256": "d0d4e8f8f5ef2a4605ce4bb650ddff54850fcb665c505a18cd6e4f0efdd6bebd",
+        "bytes": 35539
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/SafeERC20Upgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/SafeERC20Upgradeable.sol",
+        "sha256": "037ac8c27e57ff46f22d22f3f0b9d7b70f00b07a842a6408c4f5c8c9c3feb545",
+        "bytes": 4562
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/royalties/IRoyalties.sol",
+        "original_source_path": "contracts/royalties/IRoyalties.sol",
+        "sha256": "9cbb684a95e2cc3135d8e76886c50f99ee0ce7bbf627a0a96fd1d814062ae799",
+        "bytes": 3465
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/interfaces/ILdaTransferHook.sol",
+        "original_source_path": "contracts/interfaces/ILdaTransferHook.sol",
+        "sha256": "2bbd25e8f960c561bc66bb0f166a4d35198ed99778848ae50431d2dd9d90b9fe",
+        "bytes": 311
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/shared/RoyalUtil.sol",
+        "original_source_path": "contracts/shared/RoyalUtil.sol",
+        "sha256": "0d9055900a896c5a54f3858cf72472a31387ca23bc8224c3a9493a42e4aaa524",
+        "bytes": 2905
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/utils/StorageGap.sol",
+        "original_source_path": "contracts/utils/StorageGap.sol",
+        "sha256": "22be0a61656e7978bcb73e666d78f0179eb3bb5555185432e3589da24030691a",
+        "bytes": 335
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/ldas/IRoyal1155LDA.sol",
+        "original_source_path": "contracts/ldas/IRoyal1155LDA.sol",
+        "sha256": "08c05c480f262654c68f21eda871f3e7d81848ba0ad1351dfa4dc9ce9b727163",
+        "bytes": 712
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/hardhat/console.sol",
+        "original_source_path": "hardhat/console.sol",
+        "sha256": "27d7e349617dc857b040f2186bf577fe6169ede8bfc98be714ab4289b5793548",
+        "bytes": 62048
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/StringsUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/StringsUpgradeable.sol",
+        "sha256": "e7b950eee23563e23989a3b51a1456614a1838084eef1fad04eb2be0bc280f48",
+        "bytes": 2408
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/Initializable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/Initializable.sol",
+        "sha256": "7de5831b643db50aa082c9c58aa621eed345b979529b6293f2d689e2b912d1fa",
+        "bytes": 5660
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/AddressUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/AddressUpgradeable.sol",
+        "sha256": "35fb271561f3dc72e91b3a42c6e40c2bb2e788cd8ca58014ac43f6198b8d32ca",
+        "bytes": 7367
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/ContextUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/ContextUpgradeable.sol",
+        "sha256": "80eae6c1e176f3e54242b950459016a2e38609b03c8f560da1ddc0a299f1af86",
+        "bytes": 1332
+      },
+      {
+        "path": "../../../dataset/benchmark_complete/20260624_Royalties/source-bundles/royalties/contracts/dependencies/openzeppelin/v4_7_0/draft-IERC20PermitUpgradeable.sol",
+        "original_source_path": "contracts/dependencies/openzeppelin/v4_7_0/draft-IERC20PermitUpgradeable.sol",
+        "sha256": "b97515a88e75c313eacf0a27c9439ef371d86d4c2730d3b13076640942f813df",
+        "bytes": 2263
+      }
+    ],
+    "extraction": "Decoded the embedded editor_contractJsonData JavaScript string and parsed its Solidity standard JSON input. Each source content was encoded as UTF-8 without newline normalization. Raw HTML is retained.",
+    "independent_html_attribute_source_comparison": "all source contents byte-identical",
+    "explorer_verification": "PolygonScan Contract Source Code Verified (Exact Match) page; local bytecode recompilation not performed"
+  }
+]

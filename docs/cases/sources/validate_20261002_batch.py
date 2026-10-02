@@ -7,6 +7,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 from decimal import Decimal
 from pathlib import Path
@@ -17,6 +18,7 @@ ROOT = HERE.parents[2]
 RESULTS_PATH = HERE / "20261002_sheet_rows_106_116_results.json"
 SNAPSHOT_PATH = HERE / "20261002_sheet_rows_106_116.json"
 SEMANTIC_REVIEW_PATH = HERE / "20261002_semantic_review.json"
+SOURCE_EXTENSIONS = {".sol", ".rs", ".cairo", ".pan", ".ts"}
 
 
 class ValidationError(RuntimeError):
@@ -37,17 +39,24 @@ def load_json(path: Path):
 
 
 def check_sums(base: Path) -> int:
+    """Cover both physical trees; reject targets outside this view/case."""
+    base = base.resolve()
+    roots = [base]
+    if base.parent.parent.name == "dataset_artifacts":
+        roots.append(base.parents[2] / "dataset" / base.parent.name / base.name)
     sums = base / "SHA256SUMS"
     entries = []
     for line in sums.read_text("utf-8").splitlines():
         digest, relative = line.split("  ", 1)
-        target = base / relative
+        target = (base / relative).resolve()
+        require(any(target.is_relative_to(root.resolve()) for root in roots),
+                f"SHA256SUMS target outside case: {relative}")
         require(target.is_file(), f"missing SHA256SUMS target: {target}")
         require(sha256(target) == digest, f"hash mismatch: {target}")
         entries.append(relative)
     actual = sorted(
-        p.relative_to(base).as_posix()
-        for p in base.rglob("*")
+        Path(os.path.relpath(p, base)).as_posix()
+        for root in roots for p in root.rglob("*")
         if p.is_file() and p.name != "SHA256SUMS"
     )
     require(sorted(entries) == actual, f"SHA256SUMS inventory mismatch: {base}")
@@ -62,6 +71,13 @@ def validate_local_links(markdown: Path) -> int:
         local = target.split("#", 1)[0]
         resolved = (markdown.parent / local).resolve()
         require(resolved.exists(), f"broken local link in {markdown}: {target}")
+        anchor = target.split("#", 1)[1] if "#" in target else ""
+        lines = re.fullmatch(r"L(\d+)(?:-L(\d+))?", anchor)
+        if lines and resolved.is_file():
+            start = int(lines[1])
+            end = int(lines[2] or lines[1])
+            require(1 <= start <= end <= len(resolved.read_bytes().splitlines()),
+                    f"invalid line anchor in {markdown}: {target}")
         checked += 1
     return checked
 
@@ -69,7 +85,7 @@ def validate_local_links(markdown: Path) -> int:
 def validate_inline_file_references(markdown: Path) -> int:
     checked = 0
     text = markdown.read_text("utf-8")
-    pattern = r"`((?:evidence|source-bundles|slices)/[^`\s]+|(?:provenance|case_metadata|slice_manifest)\.json)`"
+    pattern = r"`((?:(?:evidence|source-bundles|slices)/|(?:\.\./)+dataset/)[^`\s]+|(?:provenance|case_metadata|slice_manifest)\.json)`"
     for target in re.findall(pattern, text):
         resolved = markdown.parent / target
         require(resolved.is_file(), f"missing inline file reference in {markdown}: {target}")
@@ -271,7 +287,108 @@ def validate_standard_input(complete: Path, provenance: dict) -> int:
     return len(sources)
 
 
+def validate_dataset_layout(root: Path) -> dict:
+    """Check the split archive, including legacy manifest schemas and path keys."""
+    root = root.resolve()
+    dataset_files = [p for p in (root / "dataset").rglob("*") if p.is_file()]
+    require(all(p.suffix.lower() in SOURCE_EXTENSIONS or p.name == "abi.json" for p in dataset_files),
+            "dataset contains non-source files other than abi.json")
+    source_files = [p for p in dataset_files if p.suffix.lower() in SOURCE_EXTENSIONS]
+    abi_files = [p for p in dataset_files if p.name == "abi.json"]
+    artifacts = root / "dataset_artifacts"
+    require(not list(artifacts.rglob("abi.json")), "abi.json must be kept in dataset")
+    sums = sorted(artifacts.rglob("SHA256SUMS"))
+    checksum_entries = sum(check_sums(path.parent) for path in sums)
+    local_links = sum(validate_local_links(path) for path in [
+        root / "README.md", root / "README_cn.md",
+        *sorted((root / "docs/cases").glob("*.md")), *sorted(artifacts.rglob("*.md")),
+    ])
+    source_records = 0
+    file_references = 0
+    original_names = 0
+    exact_slices = 0
+    historical_hash_differences = []
+
+    def resolve(document: Path, relative: str) -> Path:
+        case_root = artifacts.joinpath(*document.relative_to(artifacts).parts[:2])
+        bases = [root] if relative.startswith(("dataset/", "dataset_artifacts/", "docs/")) else [document.parent, case_root]
+        targets = {(base / relative).resolve() for base in bases}
+        matches = [target for target in targets if target.is_relative_to(root) and target.is_file()]
+        require(len(matches) == 1, f"missing or ambiguous archive reference: {document}: {relative}")
+        return matches[0]
+
+    def records(payload):
+        if isinstance(payload, dict):
+            if isinstance(payload.get("path"), str) and isinstance(payload.get("sha256"), str):
+                yield payload
+            for value in payload.values():
+                yield from records(value)
+        elif isinstance(payload, list):
+            for value in payload:
+                yield from records(value)
+
+    names = {"source_manifest.json", "provenance.json", "SOURCE.json", "case_metadata.json", "slice_manifest.json"}
+    for document in sorted(artifacts.rglob("*.json")):
+        if document.name not in names:
+            continue
+        payload = load_json(document)
+        for record in records(payload):
+            target = resolve(document, record["path"])
+            file_references += 1
+            if target.suffix.lower() in SOURCE_EXTENSIONS:
+                require(sha256(target) == record["sha256"], f"source record hash mismatch: {document}: {target}")
+                source_records += 1
+            if "source_name" in record:
+                parts = document.relative_to(artifacts).parts
+                original = (root / "dataset" / parts[0] / parts[1] / "verified-sgx" / record["source_name"]).resolve()
+                require(original == target, f"original source name changed: {document}: {record['source_name']}")
+                original_names += 1
+        if isinstance(payload, dict):
+            for relative, digest in payload.get("files_sha256", {}).items():
+                target = resolve(document, relative)
+                file_references += 1
+                if target.suffix.lower() in SOURCE_EXTENSIONS and sha256(target) != digest:
+                    # These records are historical evidence. Do not replace their old digest with a new claim.
+                    historical_hash_differences.append({
+                        "document": document.relative_to(root).as_posix(),
+                        "path": target.relative_to(root).as_posix(),
+                        "recorded_sha256": digest, "current_sha256": sha256(target),
+                    })
+            for key in ("complete_case_root", "simplified_case_root"):
+                if key in payload:
+                    view = "benchmark_complete" if key == "complete_case_root" else "benchmark_simplified"
+                    expected = artifacts / view / document.relative_to(artifacts).parts[1]
+                    require((root / payload[key]).resolve() == expected.resolve(), f"wrong {key}: {document}")
+        if document.name not in {"source_manifest.json", "slice_manifest.json"}:
+            continue
+        slices = payload if isinstance(payload, list) else payload.get("slices", [])
+        for item in slices:
+            short = resolve(document, item.get("path", item.get("slice_path")))
+            full = resolve(document, item.get("source", item.get("complete_path")))
+            lines = full.read_bytes().splitlines(keepends=True)
+            ranges = item.get("ranges") or [[item.get("original_start_line", item.get("line_start")),
+                                             item.get("original_end_line", item.get("line_end"))]]
+            for start, end in ranges:
+                require(type(start) is int and type(end) is int and 1 <= start <= end <= len(lines),
+                        f"invalid archive slice range: {document}: {item}")
+            expected = b"".join(b"".join(lines[start - 1:end]) for start, end in ranges)
+            require(short.read_bytes() == expected, f"archive slice is not byte-exact: {short}")
+            require(sha256(short) == item.get("sha256", item.get("slice_sha256")), f"archive slice hash mismatch: {short}")
+            if "complete_source_sha256" in item:
+                require(sha256(full) == item["complete_source_sha256"], f"complete slice source hash mismatch: {full}")
+            exact_slices += 1
+    return {
+        "source_files": len(source_files), "abi_files": len(abi_files),
+        "dataset_files": len(dataset_files), "checksum_manifests": len(sums),
+        "checksum_entries": checksum_entries, "local_markdown_links_checked": local_links,
+        "json_file_references_checked": file_references, "source_hash_records_checked": source_records,
+        "original_explorer_source_names_checked": original_names, "exact_slices_compared": exact_slices,
+        "preserved_historical_source_hash_differences": historical_hash_differences,
+    }
+
+
 def main() -> dict:
+    layout_checks = validate_dataset_layout(ROOT)
     results = load_json(RESULTS_PATH)
     snapshot = load_json(SNAPSHOT_PATH)
     semantic_review = load_json(SEMANTIC_REVIEW_PATH)
@@ -355,8 +472,8 @@ def main() -> dict:
     machine_references = 0
     csv_positions = {"cn": [], "en": []}
     for case_id in case_ids:
-        complete = ROOT / "dataset" / "benchmark_complete" / case_id
-        simplified = ROOT / "dataset" / "benchmark_simplified" / case_id
+        complete = ROOT / "dataset_artifacts" / "benchmark_complete" / case_id
+        simplified = ROOT / "dataset_artifacts" / "benchmark_simplified" / case_id
         document = ROOT / "docs" / "cases" / f"{case_id}.md"
         require(
             complete.is_dir() and simplified.is_dir() and document.is_file(),
@@ -535,7 +652,7 @@ def main() -> dict:
     expected_csv_order = sorted(
         case_ids,
         key=lambda case_id: (
-            load_json(ROOT / "dataset" / "benchmark_complete" / case_id / "case_metadata.json")[
+            load_json(ROOT / "dataset_artifacts" / "benchmark_complete" / case_id / "case_metadata.json")[
                 "date"
             ],
             case_id,
@@ -557,7 +674,7 @@ def main() -> dict:
             )
 
     bonzo_provenance = load_json(
-        ROOT / "dataset" / "benchmark_complete" / "20260711_Bonzo_Supra" / "provenance.json"
+        ROOT / "dataset_artifacts" / "benchmark_complete" / "20260711_Bonzo_Supra" / "provenance.json"
     )
     bonzo_closed = bonzo_provenance.get("closed_source_chain_artifacts", [])
     require(len(bonzo_closed) == 1, "Bonzo closed-source attack-time runtime is not recorded")
@@ -589,6 +706,7 @@ def main() -> dict:
             "bilingual_csv_rows_checked": len(case_ids) * 2,
             "documents_with_required_sections_and_mermaid": len(case_ids),
         },
+        "dataset_layout_checks": layout_checks,
         "unresolved_evidence_gaps": [
             {
                 "case_id": "20260711_Bonzo_Supra",

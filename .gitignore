@@ -72,3 +72,11 @@ coverage.json
 
 ## Misc
 .cache/
+
+# Archived Taiko source dependencies belong to the audit input, not installed packages.
+!dataset/benchmark_complete/20260622_Taiko/verified-sgx/node_modules/
+!dataset/benchmark_complete/20260622_Taiko/verified-sgx/node_modules/**
+
+# Archived Hyperbridge dependencies remain searchable with their audit sources.
+!dataset/benchmark_complete/20260413_hyperbridge/node_modules/
+!dataset/benchmark_complete/20260413_hyperbridge/node_modules/**

@@ -2,6 +2,8 @@
 
 这里收录已编写详细说明的 case。每篇都围绕三件事展开：**合约或协议平时负责什么、程序具体哪里出错、攻击者如何利用错误把钱拿走。** 正文先用直接的语言解释，再给出源码、交易和资料位置；没有查到的部分会明确说明。
 
+源码、反编译代码和 `abi.json` 位于仓库根目录的 `dataset/`，配套元数据、来源记录、交易证据和校验清单位于对应的 `dataset_artifacts/`。两棵目录沿用相同的完整／精简版本和案例层级；只有字节码及证据的 JaredFromSubway 位于资料目录，仍保留在事件索引中。
+
 ## 2026-10-02 按 X=116、Y=5 向上筛选
 
 本批重新读取 Google Sheet，按解析后的物理记录从第 116 行向上检查。扫描范围为第 106–116 行，到第 106 行时累计取得 5 条“合约代码缺陷 + 公开漏洞原始源码”记录并停止。原始导出见[只读 CSV](sources/20261002_sheet_gid0_raw.csv)，SHA-256 为 `862e92ed5b738acce956be4d560e1e5f747375a92839debc3eb7ec7cc00c5b90`；完整 11 行内容见[固定快照](sources/20261002_sheet_rows_106_116.json)，逐行源码资格与处置见[批次结果](sources/20261002_sheet_rows_106_116_results.json)。
@@ -20,7 +22,7 @@
 | 107 | 新增 | [Lumi / Sodium：ERC-1271 会话绕过与持久授权](20260713_Lumi_Sodium.md) | Sourcify creation/runtime `exact_match`；三组交易与回执已归档。 |
 | 106 | 新增 | [VECAndETH：可操纵现货价结算奖励](20260714_VECAndETH.md) | Sourcify creation/runtime `exact_match`；毛付款、手续费、净收益与源表损失分开记录。 |
 
-本批新增 5 个 case，无重复、无已有 case 补全，跳过 6 行。四个 Sourcify 案例保存完整原始源包与匹配状态；Bonzo/Supra 保存 XDCScan 原始 Supra 源码、Hedera 攻击时代理/实现调用和两份 runtime 对比。对攻击时 Hedera runtime 使用用户指定的 Panoramix 官方仓库（工具自报版本 Panoramix 17 Feb 2020）处理，得到 9,550 行完整反汇编和 20 个 selector（包括 `0x2818300e`），但全量及目标函数符号执行均未收敛，因此没有高层伪代码；失败的 `.pan`/`.json` 未归档。详见[运行记录](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)和[反汇编](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)。所有精简版都是完整版的原文行切片并补齐理解漏洞所需的关键接口、状态、常量、入口、计算和付款/验证路径；人工语义检查见[语义审查记录](sources/20261002_semantic_review.json)，机械校验见[验证输出](sources/20261002_validation.json)。本批未本地编译、未完成攻击重放；只有 Bonzo 取得 Hedera 完整 actions，其他案例以交易、回执日志和公开跟踪分析为证据。
+本批新增 5 个 case，无重复、无已有 case 补全，跳过 6 行。四个 Sourcify 案例保存完整原始源包与匹配状态；Bonzo/Supra 保存 XDCScan 原始 Supra 源码、Hedera 攻击时代理/实现调用和两份 runtime 对比。对攻击时 Hedera runtime 使用用户指定的 Panoramix 官方仓库（工具自报版本 Panoramix 17 Feb 2020）处理，得到 9,550 行完整反汇编和 20 个 selector（包括 `0x2818300e`），但全量及目标函数符号执行均未收敛，因此没有高层伪代码；失败的 `.pan`/`.json` 未归档。详见[运行记录](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)和[反汇编](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)。所有精简版都是完整版的原文行切片并补齐理解漏洞所需的关键接口、状态、常量、入口、计算和付款/验证路径；人工语义检查见[语义审查记录](sources/20261002_semantic_review.json)，机械校验见[验证输出](sources/20261002_validation.json)。本批未本地编译、未完成攻击重放；只有 Bonzo 取得 Hedera 完整 actions，其他案例以交易、回执日志和公开跟踪分析为证据。
 
 ## 2026-10-01 读取的源表第 114–118 行
 

@@ -55,7 +55,7 @@ VECAndETH 是一个质押/收益合约。用户投入 VEC 后，合约按时间�
 
 ## 5. 攻击步骤
 
-焦点交易为 [`0xe1f1…b72`](https://bscscan.com/tx/0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72)。本地保存了[交易](../../dataset/benchmark_complete/20260714_VECAndETH/evidence/vec-transaction.json)和[70 条日志的回执](../../dataset/benchmark_complete/20260714_VECAndETH/evidence/vec-receipt.json)。
+焦点交易为 [`0xe1f1…b72`](https://bscscan.com/tx/0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72)。本地保存了[交易](../../dataset_artifacts/benchmark_complete/20260714_VECAndETH/evidence/vec-transaction.json)和[70 条日志的回执](../../dataset_artifacts/benchmark_complete/20260714_VECAndETH/evidence/vec-receipt.json)。
 
 1. 攻击者从外部场所取得大额 WBNB 和 Binance-Peg ETH 临时资金。公开分析描述其短时向目标池投入约 22,500 ETH。
 2. 攻击者把大量 ETH 换成 USDT，强烈改变 USDT→ETH 路径的当前储备比例。对 `getAmountsOut(少量 USDT, [USDT, ETH])` 来说，此时每单位 USDT 能换算出远高于正常值的 ETH。
@@ -96,11 +96,11 @@ flowchart TD
 ## 9. 证据、影响与限制
 
 - **源码能够确认的机制：** Sourcify 对受害地址给出 creation/runtime `exact_match`，单一原始源文件、标准输入、编译器 `0.8.30+commit.73712a01` 和设置已归档。源代码直接把 `getAmountsOut` 结果接入奖励和付款。
-- **交易中观察到的行为：** 回执精确显示受害合约向攻击者和基金地址的两笔 ETH 转账，以及临时资金进入、反向交换和归还。摘要见 [`transaction-summary.json`](../../dataset/benchmark_complete/20260714_VECAndETH/evidence/transaction-summary.json)。
+- **交易中观察到的行为：** 回执精确显示受害合约向攻击者和基金地址的两笔 ETH 转账，以及临时资金进入、反向交换和归还。摘要见 [`transaction-summary.json`](../../dataset_artifacts/benchmark_complete/20260714_VECAndETH/evidence/transaction-summary.json)。
 - **由证据推断的部分：** 每次交换对应的具体池子储备变化主要由日志和公开分析连接。本批尝试完整历史 trace 时遇到 `missing trie node`，没有把失败请求当成完整跟踪。
 - **尚未核实：** 攻击前成员结构体、确切正常奖励 17.14 USDT 的独立历史存储读取、全部交换费用和最终跨协议净利润重算。未本地编译或分叉重放。
 - **金额边界：** 毛付款、基金手续费、公开净收益和源表美元损失分别记录，不互相替代。
-- **精简代码：** [精简版](../../dataset/benchmark_simplified/20260714_VECAndETH/SOURCE.md)保存状态、更新 modifier、领取函数、收益公式和现货报价的原文切片。
+- **精简代码：** [精简版](../../dataset_artifacts/benchmark_simplified/20260714_VECAndETH/SOURCE.md)保存状态、更新 modifier、领取函数、收益公式和现货报价的原文切片。
 
 公开分析归档入口：[CoinKyt 事件说明](https://coinkyt.com/blog/kontrakt-schital-nagradu-po-siyuminutnoj-cene-zloumyshlennik-eyo-obrushil-i-poluchil-109-tys)。
 

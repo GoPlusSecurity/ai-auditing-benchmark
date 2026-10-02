@@ -11,13 +11,21 @@
 
 ## 目录结构
 
-数据位于 `dataset/` 下，按事件分目录存放。每个事件目录名建议理解为：`{事件日期YYYYMMDD}_{项目或协议标识}`（日期在前，便于按时间排序与检索）。
+审计代码和 `abi.json` 位于 `dataset/`，其他配套资料位于对应的 `dataset_artifacts/`，两者均按事件分目录存放。每个事件目录名建议理解为：`{事件日期YYYYMMDD}_{项目或协议标识}`（日期在前，便于按时间排序与检索）。
 
 ```
 dataset/
 ├── benchmark_complete/    # 被攻击合约的完整代码（含依赖、库等，尽量贴近当时可编译/可审计的上下文）
 └── benchmark_simplified/  # 仅保留与漏洞相关的函数及必要依赖，剔除明显无关逻辑
+
+dataset_artifacts/
+├── benchmark_complete/    # 元数据、来源、交易证据、构建配置、许可证及校验清单
+└── benchmark_simplified/  # 对应的元数据、切片清单、交易证据及校验清单
 ```
+
+`dataset/` 保存 `.sol`、`.rs`、`.cairo`、`.pan` 和 `.ts` 代码，包括反编译代码和项目测试源码；所有文件名为 `abi.json` 的 ABI 文件也保留在对应案例目录。其他原来位于 `dataset/{版本}/{案例}/{路径}` 的配套文件，现位于 `dataset_artifacts/{版本}/{案例}/{路径}`；源码路径和文件字节保持原样。构建配置、锁文件、恢复工具及编译器输入位于资料目录，编译需要原工程布局时，应在临时目录中合并对应的两棵目录。
+
+元数据中的案例相对路径，包括 `complete_case_root` 和 `simplified_case_root`，现在以对应的资料案例目录为基准；源码引用明确使用 `../../../dataset/{版本}/{案例}/...`，原有仓库根目录路径继续沿用。资料目录中的每份 `SHA256SUMS` 同时覆盖该案例的资料文件和源码文件。
 
 ### `benchmark_complete`
 
@@ -35,7 +43,7 @@ dataset/
 
 ## 事件索引（CSV）
 
-仓库根目录下的 CSV 列举了当前 `dataset` 中收录的 **全部事件**，建议作为元数据的权威来源：
+仓库根目录下的 CSV 列举了 **全部已索引事件**，包含只有配套证据、没有源码的案例，建议作为元数据的权威来源。2026-10-02 目录整理后，两份 CSV 各保留 52 条事件记录，两套源码目录各包含 51 个案例。JaredFromSubway 只有 runtime 字节码和证据，全部存放在 `dataset_artifacts/` 中。
 
 - 中文版：[`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - 英文版：[`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)
@@ -61,22 +69,23 @@ dataset/
 3. 选择粒度：
    - `dataset/benchmark_complete/{目录名}/...`：完整上下文（更贴近真实审计输入）。
    - `dataset/benchmark_simplified/{目录名}/...`：最小必要切片（更省 token，便于快速回归）。
+4. 在有对应记录的案例中，阅读 `dataset_artifacts/{版本}/{目录名}/SOURCE.md` 和 `case_metadata.json`，确认来源及源码证据范围。
 
 示例：`2025.05.28` + `@Corkprotocol` → `dataset/benchmark_simplified/20250528_Corkprotocol/`
 
-已编写的[攻击链路与原理说明](docs/cases/README.md)用通俗语言说明合约或协议负责什么、漏洞在哪里、攻击者怎样利用，并附代码和资料来源。对应事件目录的 `SOURCE.md` 也提供同一文档入口。
+已编写的[攻击链路与原理说明](docs/cases/README.md)用通俗语言说明合约或协议负责什么、漏洞在哪里、攻击者怎样利用，并附代码和资料来源。对应资料目录 `dataset_artifacts/{版本}/{案例}/SOURCE.md` 也提供同一文档入口。
 
-2026-09-14 按源表第 98–102 行整理 DLMC、Royalties、SecondFi、ATM、Taiko，保留[五行快照](docs/cases/sources/20260914_sheet_rows_98_102.json)及[五篇详细说明](docs/cases/README.md)。ATM 以及非合约的 SecondFi 钱包事件均已从两套 dataset 目录和中英文 CSV 移除，仅保留文档与引用资料；本批数据集现包含 DLMC、Royalties、Taiko 三条。Taiko 区分实际 SGX 验证源码与其他上游上下文。各数据集目录的 case_metadata.json 和 SOURCE.md 标明证据范围。Royalties 与 Taiko 精简版是原文切片，不能单独作为完整工程编译。
+2026-09-14 按源表第 98–102 行整理 DLMC、Royalties、SecondFi、ATM、Taiko，保留[五行快照](docs/cases/sources/20260914_sheet_rows_98_102.json)及[五篇详细说明](docs/cases/README.md)。ATM 以及非合约的 SecondFi 钱包事件均已从两套 dataset 目录和中英文 CSV 移除，仅保留文档与引用资料；本批数据集现包含 DLMC、Royalties、Taiko 三条。Taiko 区分实际 SGX 验证源码与其他上游上下文。各案例对应资料目录中的 case_metadata.json 和 SOURCE.md 标明证据范围。Royalties 与 Taiko 精简版是原文切片，不能单独作为完整工程编译。
 
 2026-10-02 按 `X=116、Y=5` 执行向上筛选，实际扫描解析后的源表第 116–106 行，收录第 113、110、108、107、106 行，分别是 [`20260709_BFB`](docs/cases/20260709_BFB.md)、[`20260711_Bonzo_Supra`](docs/cases/20260711_Bonzo_Supra.md)、[`20260713_PHX`](docs/cases/20260713_PHX.md)、[`20260713_Lumi_Sodium`](docs/cases/20260713_Lumi_Sodium.md) 和 [`20260714_VECAndETH`](docs/cases/20260714_VECAndETH.md)。[固定 11 行快照](docs/cases/sources/20261002_sheet_rows_106_116.json)绑定原始导出 SHA-256 `862e92ed5b738acce956be4d560e1e5f747375a92839debc3eb7ec7cc00c5b90`，[逐行结果](docs/cases/sources/20261002_sheet_rows_106_116_results.json)说明其余 6 行的跳过原因。五个案例均取得与缺陷相关的公开原始源码：BFB 为 Sourcify match，PHX、Lumi/Sodium、VECAndETH 为 exact match；Bonzo/Supra 保存同一漏洞路径的 Supra 原始源码和 Hedera 攻击 actions，同时明确 XDC/Hedera runtime 不同、攻击时源码等价尚未证实。精简版均为原文行切片。本批已核对交易和回执/actions，未本地编译或分叉重放。
 
-2026-10-01 的源表第 114–118 行新增一个 [`20260701_EdelFinance_decompiled`](dataset/benchmark_complete/20260701_EdelFinance_decompiled/SOURCE.md) 样本。价格适配器由 Etherscan Palkeoramix/Panoramix 生成的 74 个逻辑行全文在两套视图中完整保留；其 3,577 字节输入与攻击区块 25434062 的 `eth_getCode` 完全一致，周边 AaveOracle 和 wGOOGLx 使用验证源码。该样本明确是反编译伪代码，不是已验证原始 Solidity；没有编译、源码等价证明或分叉重放。公开美元损失口径冲突，因此中英文 CSV 损失列均留空。
+2026-10-01 的源表第 114–118 行新增一个 [`20260701_EdelFinance_decompiled`](dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/SOURCE.md) 样本。价格适配器由 Etherscan Palkeoramix/Panoramix 生成的 74 个逻辑行全文在两套视图中完整保留；其 3,577 字节输入与攻击区块 25434062 的 `eth_getCode` 完全一致，周边 AaveOracle 和 wGOOGLx 使用验证源码。该样本明确是反编译伪代码，不是已验证原始 Solidity；没有编译、源码等价证明或分叉重放。公开美元损失口径冲突，因此中英文 CSV 损失列均留空。
 
-2026-09-10 按源表第 99–103 行补充 JaredFromSubway、BnbLabubu、Namada、Axelar / Secret、mySwap，并保留[原始行快照](docs/cases/sources/20260910_sheet_rows_99_103.json)。这批包含 Rust 协议代码和源码尚未取得的事件材料。新增目录的 `case_metadata.json` 用 `source_status` 标出源码缺失或历史交易对应不完整的情况；这类目录不能直接算作已验证的漏洞源码样本。缺失的交易或地址留空，限制写入 CSV 详情。中英文金额分别按万美元、千美元换算。
+2026-09-10 按源表第 99–103 行补充 JaredFromSubway、BnbLabubu、Namada、Axelar / Secret、mySwap，并保留[原始行快照](docs/cases/sources/20260910_sheet_rows_99_103.json)。这批包含 Rust 协议代码和源码尚未取得的事件材料。对应资料目录的 `case_metadata.json` 用 `source_status` 标出源码缺失或历史交易对应不完整的情况；这类目录不能直接算作已验证的漏洞源码样本。缺失的交易或地址留空，限制写入 CSV 详情。中英文金额分别按万美元、千美元换算。
 
 mySwap CL 的两套目录现已保存攻击时执行的链上 Sierra 类，并通过类哈希校验。状态 `decompiled_sierra` 表示已恢复保留指令编号的伪 Cairo 代码：完整版保留 425 个函数，精简版保留攻击相关 5 个入口及其依赖，共 276 个函数。[Case 文档](docs/cases/20260619_mySwap.md)将具体检查与原始 RPC 跟踪对应；原始 Cairo 工程仍未恢复，未声称完成本地编译或攻击重放。
 
-JaredFromSubway 的两套目录已保存受害机器人完整的 13,835 字节 EVM runtime，提供 `.hex` 和 `.bin`。按攻击区块 25360696 及前一区块 25360695 的区块哈希查询，返回结果相同。状态 `runtime_bytecode_only` 表示已取得机器码，原始 Solidity 和反编译仍未取得；[字节码来源记录](dataset/benchmark_complete/20260621_JaredFromSubway/bytecode.json)保留地址、区块哈希、原始 RPC 证据和校验值。
+JaredFromSubway 的两套目录已保存受害机器人完整的 13,835 字节 EVM runtime，提供 `.hex` 和 `.bin`。按攻击区块 25360696 及前一区块 25360695 的区块哈希查询，返回结果相同。状态 `runtime_bytecode_only` 表示已取得机器码，原始 Solidity 和反编译仍未取得；[字节码来源记录](dataset_artifacts/benchmark_complete/20260621_JaredFromSubway/bytecode.json)保留地址、区块哈希、原始 RPC 证据和校验值。
 
 ## 与 AI 审计引擎的配合方式（建议）
 

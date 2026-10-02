@@ -57,7 +57,7 @@ Supra 预言机负责把链下委员会签名的价格更新写入链上。BLS �
 
 ## 5. 攻击步骤
 
-价格更新交易是 [`0xd50c…0a60`](https://hashscan.io/mainnet/transaction/1783731093.686041919)。Hedera Mirror Node 的[交易结果](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-contract-result.json)和[内部 actions](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-actions.json)已归档。
+价格更新交易是 [`0xd50c…0a60`](https://hashscan.io/mainnet/transaction/1783731093.686041919)。Hedera Mirror Node 的[交易结果](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-contract-result.json)和[内部 actions](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-actions.json)已归档。
 
 1. 00:39:53 UTC，Wallet A 向 Bonzo 存入 250 SAUCE。00:40:00 又提交一笔正常价格更新，官方将它视为侦察。
 2. 00:51:39.646，Wallet A 调用 Supra pull oracle。输入中包含 pair ID 425、committee ID 2、被抬高的价格和 `[0,0]` 签名。
@@ -79,7 +79,7 @@ Bonzo 官方以 HBAR 参考价 `0.06998` 美元、USDC 为 1 美元估值，将 
 
 pairing 预编译不是漏洞合约。对单位元输入返回真符合它负责的数学运算；验证器必须在调用前实施 BLS 协议需要的输入约束。Bonzo 的借贷合约也按收到的价格和既定 LTV 正常工作。代码缺陷位于 Supra 验证路径，下游 Bonzo 是资金受损系统。
 
-本案例公开源码的证据边界尤其重要：XDCScan 的验证源码确实是 Supra 原始 Solidity，且包含同名、同参数、同缺陷的 `requireHashVerified_V2`/`BLS.verifySingle`。但是[XDC 与 Hedera runtime 对比](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/runtime-comparison.json)不相同。攻击时实现的 13,293 字节 runtime 已完整保存并记录哈希，并按用户指定使用 [eveem-org/panoramix](https://github.com/eveem-org/panoramix)（工具自报版本 Panoramix 17 Feb 2020）处理。Panoramix 生成了[9,550 行完整反汇编](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)，识别出 20 个 selector，其中包括攻击调用的 `0x2818300e`。但全量和目标 selector 的符号执行都没有收敛，目标运行内存一度约 5.8 GB，因此终止；失败的 `.pan`/`.json` 没有归档。运行边界、输入与反汇编哈希、失败阶段见[运行记录](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)。XDC 源码足以作为漏洞机制的公开原始源码，但仍不能被描述成“已证明就是 Hedera 攻击时实现的逐字源码”。
+本案例公开源码的证据边界尤其重要：XDCScan 的验证源码确实是 Supra 原始 Solidity，且包含同名、同参数、同缺陷的 `requireHashVerified_V2`/`BLS.verifySingle`。但是[XDC 与 Hedera runtime 对比](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/runtime-comparison.json)不相同。攻击时实现的 13,293 字节 runtime 已完整保存并记录哈希，并按用户指定使用 [eveem-org/panoramix](https://github.com/eveem-org/panoramix)（工具自报版本 Panoramix 17 Feb 2020）处理。Panoramix 生成了[9,550 行完整反汇编](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)，识别出 20 个 selector，其中包括攻击调用的 `0x2818300e`。但全量和目标 selector 的符号执行都没有收敛，目标运行内存一度约 5.8 GB，因此终止；失败的 `.pan`/`.json` 没有归档。运行边界、输入与反汇编哈希、失败阶段见[运行记录](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)。XDC 源码足以作为漏洞机制的公开原始源码，但仍不能被描述成“已证明就是 Hedera 攻击时实现的逐字源码”。
 
 ## 8. 攻击流程图
 
@@ -99,10 +99,10 @@ flowchart TD
 ## 9. 证据、影响与限制
 
 - **源码能够确认的机制：** XDCScan 原始验证源包显示 `requireHashVerified_V2` 未验证取出的委员会公钥，`BLS.verifySingle` 直接信任预编译结果。18 个 Solidity 文件、独立编译设置、标准输入和编译器 `v0.8.24+commit.e11b9ed9` 已归档。
-- **交易中观察到的行为：** Mirror Node actions 明确记录 verifier 代理、攻击时实现、预编译 `0.0.8` 和返回 `1`；顶层交易成功。地址和 selector 摘要见 [`transaction-summary.json`](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/transaction-summary.json)。
+- **交易中观察到的行为：** Mirror Node actions 明确记录 verifier 代理、攻击时实现、预编译 `0.0.8` 和返回 `1`；顶层交易成功。地址和 selector 摘要见 [`transaction-summary.json`](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/transaction-summary.json)。
 - **由证据推断的部分：** XDC 源码与 Hedera 实现的函数级机制对应，由同名 Supra 组件、官方复盘和交易 actions 共同支持；不是字节级源码等价证明。
 - **尚未核实：** Hedera 攻击时实现的完整可验证 Solidity及高层反编译语义、pull oracle 与价格存储的攻击时完整代码、全部存储槽、每笔借款回执的独立重算、最终追回额。Panoramix 已留下完整反汇编和失败状态记录，但 `0x2818300e` 的高层伪代码没有收敛；这些文件不是验证源码，也不能补足 XDC 源码与 Hedera runtime 的等价性。本批同样没有本地编译或分叉重放。
 - **损失边界：** CSV 使用官方 headline principal 905 万美元；白帽约 100 万美元单列，不合并。
-- **精简代码：** [精简版](../../dataset/benchmark_simplified/20260711_Bonzo_Supra/SOURCE.md)保留 verifier 状态、两个验证入口、`verifySingle` 和未被调用的校验辅助函数，全部是完整版原文切片。
+- **精简代码：** [精简版](../../dataset_artifacts/benchmark_simplified/20260711_Bonzo_Supra/SOURCE.md)保留 verifier 状态、两个验证入口、`verifySingle` 和未被调用的校验辅助函数，全部是完整版原文切片。
 
 官方事件说明：[Bonzo Lend Incident Report](https://bonzo.finance/blog/bonzo-lend-incident-report-oracle-provider-exploit)。

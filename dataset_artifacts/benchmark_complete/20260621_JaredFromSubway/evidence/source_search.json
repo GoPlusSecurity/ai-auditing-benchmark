@@ -1,0 +1,67 @@
+{
+  "source_status": "runtime_bytecode_only",
+  "retrieved_on": "2026-09-10",
+  "victim_address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+  "verified_victim_original_source_obtained": false,
+  "victim_decompiled_source_obtained": false,
+  "victim_runtime_bytecode_obtained": true,
+  "victim_source_upstream_commit": null,
+  "victim_source_sha256": null,
+  "scope": "This records evidence acquired during this import; it does not assert that source is publicly unavailable everywhere.",
+  "attempts": [
+    {
+      "resource": "https://api.github.com/repos/DarkNavySecurity/web3-exploit-analysis/commits/main",
+      "result": "sandbox network socket denied, followed by escalation rejected by user",
+      "retried_after_rejection": false,
+      "alternate_route_used_after_rejection": false
+    },
+    {
+      "resource": "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+      "method": "web open",
+      "result": "internal error; no receipt or call trace obtained"
+    },
+    {
+      "resource": "existing local .cache/import_99_103_20260910/labubu/forensics-tree.json",
+      "method": "local read only",
+      "repository": "https://github.com/DarkNavySecurity/web3-exploit-analysis",
+      "commit": "0dedb932869fff89899d75a3e6e2315cd87768bd",
+      "tree_truncated": false,
+      "file_sha256": "1b0347350f0d49e17dbbcf0d23d8809cd9e8695cb6674a72170a99460551b807",
+      "path_search_terms": [
+        "2be8704",
+        "jared",
+        "1f2f10d1",
+        "4ee0b6"
+      ],
+      "matching_paths": []
+    },
+    {
+      "resource": "existing local .cache/import_99_104/docs_evidence_commit.json",
+      "method": "local read only",
+      "commit": "0dedb932869fff89899d75a3e6e2315cd87768bd",
+      "limit": "GitHub commit response includes 300 changed-file entries; not a complete repository source search",
+      "matching_changed_file_paths": []
+    },
+    {
+      "date": "2026-09-14",
+      "resource": "https://eth.drpc.org",
+      "method": "eth_getCode at explicit block numbers and EIP-1898 block hashes; eth_getTransactionReceipt; eth_getBlockByNumber",
+      "result": "13835-byte runtime obtained at attack and preceding blocks; all historical responses match, receipt confirms the attack block",
+      "raw_evidence": "See bytecode.json for raw request/response paths"
+    },
+    {
+      "date": "2026-09-14",
+      "resource": "https://ethereum-rpc.publicnode.com",
+      "method": "eth_chainId and eth_getCode latest",
+      "result": "Independent latest code matches the archived historical code; free historical getCode rejected for lack of a personal token; receipt lookup returned null and was not treated as proof of absence"
+    }
+  ],
+  "remaining_gaps": [
+    "Victim original Solidity or authenticated decompilation, source-level dependencies and source-to-bytecode correspondence.",
+    "Raw traces and historical allowance states for the preceding approval transactions.",
+    "Complete approval/sweep reconstruction, report count and loss-scope reconciliation; no exploit replay has been run."
+  ],
+  "bytecode_retrieved_on": "2026-09-14",
+  "historical_runtime_match_verified": true,
+  "bytecode_metadata": "../bytecode.json"
+}

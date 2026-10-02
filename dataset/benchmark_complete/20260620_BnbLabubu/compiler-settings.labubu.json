@@ -1,7 +1,0 @@
-{
-  "libraries": {},
-  "optimizer": {
-    "runs": 200,
-    "enabled": false
-  }
-}

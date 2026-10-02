@@ -12,11 +12,11 @@
       "case_id": "20260709_BFB",
       "status": "reviewed_causal_chain_complete",
       "reviewed_slice_paths": [
-        "slices/BFBToken.pair-interface.sol",
-        "slices/BFBToken.state-and-pair-setup.sol",
-        "slices/BFBToken.transfer-path.sol",
-        "slices/BFBToken.price-deflation.sol",
-        "slices/BFBToken.public-transfers.sol"
+        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.pair-interface.sol",
+        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.state-and-pair-setup.sol",
+        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.transfer-path.sol",
+        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.price-deflation.sol",
+        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.public-transfers.sol"
       ],
       "required_path_elements": [
         {
@@ -58,10 +58,10 @@
       "case_id": "20260711_Bonzo_Supra",
       "status": "reviewed_causal_chain_complete_with_deployment_gap",
       "reviewed_slice_paths": [
-        "slices/SupraSValueFeedVerifier.state.sol",
-        "slices/SupraSValueFeedVerifier.requireHashVerified.sol",
-        "slices/BLS.verifySingle.sol",
-        "slices/BLS.unused-validation-helpers.sol"
+        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.state.sol",
+        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.requireHashVerified.sol",
+        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.verifySingle.sol",
+        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.unused-validation-helpers.sol"
       ],
       "required_path_elements": [
         {
@@ -99,11 +99,11 @@
       "case_id": "20260713_Lumi_Sodium",
       "status": "reviewed_causal_chain_complete",
       "reviewed_slice_paths": [
-        "slices/Sodium.validation-approval.sol",
-        "slices/Sodium.signature-validation.sol",
-        "slices/Sodium.erc1271-signer.sol",
-        "slices/SessionManager.sessions.sol",
-        "slices/SignatureChecker.sol"
+        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.validation-approval.sol",
+        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.signature-validation.sol",
+        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.erc1271-signer.sol",
+        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/SessionManager.sessions.sol",
+        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/SignatureChecker.sol"
       ],
       "required_path_elements": [
         {
@@ -141,12 +141,12 @@
       "case_id": "20260713_PHX",
       "status": "reviewed_causal_chain_complete",
       "reviewed_slice_paths": [
-        "slices/PHX.pair-interfaces.sol",
-        "slices/PHX.state-and-pair-setup.sol",
-        "slices/PHX.update-dispatch.sol",
-        "slices/PHX.take-sell-fee.sol",
-        "slices/ERC20.update-transfer.sol",
-        "slices/ERC20.burn.sol"
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.pair-interfaces.sol",
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.state-and-pair-setup.sol",
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.update-dispatch.sol",
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.take-sell-fee.sol",
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.update-transfer.sol",
+        "../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.burn.sol"
       ],
       "required_path_elements": [
         {
@@ -200,10 +200,10 @@
       "case_id": "20260714_VECAndETH",
       "status": "reviewed_causal_chain_complete",
       "reviewed_slice_paths": [
-        "slices/VECAndETH.router-interface.sol",
-        "slices/VECAndETH.state-update-and-router-setup.sol",
-        "slices/VECAndETH.getReward.sol",
-        "slices/VECAndETH.earned-and-quote.sol"
+        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.router-interface.sol",
+        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.state-update-and-router-setup.sol",
+        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.getReward.sol",
+        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.earned-and-quote.sol"
       ],
       "required_path_elements": [
         {

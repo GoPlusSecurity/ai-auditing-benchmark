@@ -84,9 +84,9 @@ flowchart LR
 
 ## 证据与边界
 
-- [runtime 对比记录](../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/evidence/adapter-runtime-comparison.json)保存了 Etherscan 输入、攻击区块 `25434062` 的 `eth_getCode` 和最新 `eth_getCode` 的长度及 SHA-256。三份都是同一份 3,577 字节 runtime。
-- [Etherscan 反编译元数据](../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/evidence/etherscan-bytecode-decompiler.json)保存反编译 URL、获取时间、文本长度和哈希。
-- [交易汇总](../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/evidence/transaction-summary.json)保存 trace 中的价格序列、换算率、捐赠数量和攻击者净流入；完整原始 trace/转账/API 响应在 complete 视图的 `evidence/raw/`。
+- [runtime 对比记录](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/adapter-runtime-comparison.json)保存了 Etherscan 输入、攻击区块 `25434062` 的 `eth_getCode` 和最新 `eth_getCode` 的长度及 SHA-256。三份都是同一份 3,577 字节 runtime。
+- [Etherscan 反编译元数据](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/etherscan-bytecode-decompiler.json)保存反编译 URL、获取时间、文本长度和哈希。
+- [交易汇总](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/transaction-summary.json)保存 trace 中的价格序列、换算率、捐赠数量和攻击者净流入；完整原始 trace/转账/API 响应在 complete 视图的 `evidence/raw/`。
 - 攻击区块 runtime 与 Etherscan 输入一致，只证明“反编译的机器码就是攻击时执行的适配器机器码”。它**不能**证明反编译伪代码等价于原始 Solidity，也不能恢复原作者变量名、注释和完整类型信息。
 - 本次没有编译 `.pan`（它也不是 Solidity）、没有做反编译源码等价证明、没有分叉重放、没有重建历史存储，也没有核验攻击时池代理实现。
 
