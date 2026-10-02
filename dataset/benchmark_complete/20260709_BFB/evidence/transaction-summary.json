@@ -1,0 +1,19 @@
+{
+  "case_id": "20260709_BFB",
+  "representative_transaction": "0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520",
+  "transaction_url": "https://bscscan.com/tx/0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520",
+  "rpc_path_base": "transaction_summary_parent",
+  "rpc_files": [
+    "bfb-transaction.json",
+    "bfb-receipt.json"
+  ],
+  "verification": "Transaction and receipt/result files were fetched from public read-only endpoints. No local replay was run.",
+  "status": "success",
+  "chain_block": 108833188,
+  "observed": {
+    "zero_value_bfb_transfers": "Repeated Transfer logs with value 0 from the attacker EOA to itself.",
+    "pair_bfb_burns": "Repeated BFB Transfer logs from pair 0xffB43C...d040 to address(0).",
+    "pair_wbnb_outflow": "350.616633079707222431 WBNB total to attacker/helper at the end, matching the public technical analysis."
+  },
+  "trace_status": "The archived receipt contains logs only; a complete call trace was not obtained in this batch."
+}

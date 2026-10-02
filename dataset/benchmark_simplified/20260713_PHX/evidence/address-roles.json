@@ -1,0 +1,9 @@
+{
+  "case_id": "20260713_PHX",
+  "vulnerable_contract": {
+    "address": "0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481",
+    "url": "https://bscscan.com/address/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481#code"
+  },
+  "representative_transaction": "0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe",
+  "note": "Victim/vulnerable component is kept separate from attacker, helper, proxy, implementation, pair, router and lending venues in the case document."
+}

@@ -1,0 +1,99 @@
+{
+  "folder": "20260713_PHX",
+  "date": "2026.07.13",
+  "project_cn": "#PHX on #BSC",
+  "project_en": "#PHX on #BSC",
+  "chain": "BNB Smart Chain",
+  "vulnerability_cn": "卖出费用路径销毁池子代币并重写储备",
+  "vulnerability_en": "Sell-fee path burns pair tokens and rewrites AMM reserves",
+  "detail_cn": "PHX 在 _takeSellFee 中不仅从卖家收费，还根据卖出额直接 _burn(pair, pairBurnAmount) 并立即 sync。攻击者先买走池中绝大部分 PHX，再用一笔卖出触发销毁；在卖家净 PHX 到达前，sync 把 PHX 储备压到几乎为零。净转入随后被 AMM 当作相对巨大的输入，可换出几乎全部 WBNB。回执显示最终执行合约向攻击者转出 156.205683366923083775 WBNB；源表保留 89,600 美元，技术报告估值约 89,532 美元。源表日期为 7 月 13 日，链上 UTC 时间为 7 月 12 日。",
+  "detail_en": "PHX _takeSellFee not only charges the seller; it calls _burn(pair, pairBurnAmount) and immediately syncs. The attacker first bought almost all PHX from the pair, then triggered the sell path. Before the seller's net PHX arrived, sync reduced the PHX reserve to nearly zero, so that net transfer became an outsized AMM input and withdrew almost all WBNB. The receipt shows 156.205683366923083775 WBNB reaching the attacker; the sheet keeps USD 89,600 while the technical report estimates about USD 89,532. The sheet date is July 13 while the on-chain UTC time is July 12.",
+  "tx_urls": [
+    "https://bscscan.com/tx/0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481#code"
+  ],
+  "loss_usd": 89600,
+  "source_status": "sourcify_exact_match",
+  "public_original_vulnerable_source": true,
+  "attack_time_deployment_source_equivalence_verified": null,
+  "original_rows": [
+    108
+  ],
+  "source_sheet_snapshot": "../../../docs/cases/sources/20261002_sheet_rows_106_116.json",
+  "batch_results": "../../../docs/cases/sources/20261002_sheet_rows_106_116_results.json",
+  "source_verification": {
+    "kind": "public_original_source",
+    "provider": "Sourcify",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481?fields=all",
+    "chain_id": "56",
+    "address": "0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481",
+    "verified_at": "2026-06-28T13:36:01Z",
+    "creation_match": "exact_match",
+    "runtime_match": "exact_match",
+    "compiler": "solc",
+    "compiler_version": "0.8.35+commit.47b9dedd",
+    "path_base": "simplified_case_root",
+    "source_files": [
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/access/Ownable.sol",
+        "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+        "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+        "bytes": 3102,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/access/Ownable.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+        "original_source_path": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+        "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+        "bytes": 6540,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/interfaces/draft-IERC6093.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+        "bytes": 10800,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+        "bytes": 2781,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+        "bytes": 684,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/@openzeppelin/contracts/utils/Context.sol",
+        "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+        "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+        "bytes": 963,
+        "complete_path": "source-bundles/vulnerable/@openzeppelin/contracts/utils/Context.sol"
+      },
+      {
+        "path": "../../benchmark_complete/20260713_PHX/source-bundles/vulnerable/contracts/phx.sol",
+        "original_source_path": "contracts/phx.sol",
+        "sha256": "ec93584833f9c78bfc2eaf7749da82e977e02f6b0ea5f24a44e45feaa18dfb38",
+        "bytes": 16814,
+        "complete_path": "source-bundles/vulnerable/contracts/phx.sol"
+      }
+    ],
+    "local_compilation": "not run",
+    "historical_attack_block_code_read": "not run"
+  },
+  "verification_status": {
+    "local_compilation": "not_run",
+    "transaction_and_receipt_or_actions": "archived_and_checked",
+    "historical_state": "not_fully_verified",
+    "fork_replay": "not_run"
+  },
+  "view": "simplified_exact_slices"
+}

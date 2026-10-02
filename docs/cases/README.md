@@ -2,6 +2,40 @@
 
 这里收录已编写详细说明的 case。每篇都围绕三件事展开：**合约或协议平时负责什么、程序具体哪里出错、攻击者如何利用错误把钱拿走。** 正文先用直接的语言解释，再给出源码、交易和资料位置；没有查到的部分会明确说明。
 
+## 2026-10-02 按 X=116、Y=5 向上筛选
+
+本批重新读取 Google Sheet，按解析后的物理记录从第 116 行向上检查。扫描范围为第 106–116 行，到第 106 行时累计取得 5 条“合约代码缺陷 + 公开漏洞原始源码”记录并停止。原始导出见[只读 CSV](sources/20261002_sheet_gid0_raw.csv)，SHA-256 为 `862e92ed5b738acce956be4d560e1e5f747375a92839debc3eb7ec7cc00c5b90`；完整 11 行内容见[固定快照](sources/20261002_sheet_rows_106_116.json)，逐行源码资格与处置见[批次结果](sources/20261002_sheet_rows_106_116_results.json)。
+
+| 源表行 | 处置 | 事件 | 结论 |
+| --- | --- | --- | --- |
+| 116 | 跳过 | Summer Finance | 技术复盘将根因定为离职权限未完成回收的运营失误，未确立合约代码缺陷。 |
+| 115 | 跳过 | BonkDAO | 恶意治理提案利用 quorum、timelock 和押金配置，未确立合约代码错误。 |
+| 114 | 跳过 | USDT 授权钓鱼 | 用户签署恶意授权，不是代币或受害合约的代码缺陷。 |
+| 113 | 新增 | [BFB：零数量转账反复烧池子](20260709_BFB.md) | Sourcify creation/runtime `match`；完整 BFB 源码与回执已归档。 |
+| 112 | 跳过 | CodexField | 公开信息只称 scam/rug pull，无攻击交易、已确认代码缺陷和漏洞源码。 |
+| 111 | 跳过 | Solana 鲸鱼钱包 | 疑似私钥泄漏，未确立智能合约代码缺陷。 |
+| 110 | 新增 | [Bonzo / Supra：BLS 零签名通过](20260711_Bonzo_Supra.md) | 有公开 Supra 原始漏洞源码和 Hedera 攻击 actions；XDC/Hedera runtime 不同，未声称部署等价。 |
+| 109 | 跳过 | SpaceXAI / Starlink | 社交账号被盗后推广代币，没有受害合约代码缺陷。 |
+| 108 | 新增 | [PHX：卖出路径烧 pair 并重写储备](20260713_PHX.md) | Sourcify creation/runtime `exact_match`；交易日期与源表日期差异已单列。 |
+| 107 | 新增 | [Lumi / Sodium：ERC-1271 会话绕过与持久授权](20260713_Lumi_Sodium.md) | Sourcify creation/runtime `exact_match`；三组交易与回执已归档。 |
+| 106 | 新增 | [VECAndETH：可操纵现货价结算奖励](20260714_VECAndETH.md) | Sourcify creation/runtime `exact_match`；毛付款、手续费、净收益与源表损失分开记录。 |
+
+本批新增 5 个 case，无重复、无已有 case 补全，跳过 6 行。四个 Sourcify 案例保存完整原始源包与匹配状态；Bonzo/Supra 保存 XDCScan 原始 Supra 源码、Hedera 攻击时代理/实现调用和两份 runtime 对比。对攻击时 Hedera runtime 使用用户指定的 Panoramix 官方仓库（工具自报版本 Panoramix 17 Feb 2020）处理，得到 9,550 行完整反汇编和 20 个 selector（包括 `0x2818300e`），但全量及目标函数符号执行均未收敛，因此没有高层伪代码；失败的 `.pan`/`.json` 未归档。详见[运行记录](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)和[反汇编](../../dataset/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)。所有精简版都是完整版的原文行切片并补齐理解漏洞所需的关键接口、状态、常量、入口、计算和付款/验证路径；人工语义检查见[语义审查记录](sources/20261002_semantic_review.json)，机械校验见[验证输出](sources/20261002_validation.json)。本批未本地编译、未完成攻击重放；只有 Bonzo 取得 Hedera 完整 actions，其他案例以交易、回执日志和公开跟踪分析为证据。
+
+## 2026-10-01 读取的源表第 114–118 行
+
+本批参数为 `X=118`、`Y=5`，按解析后的 CSV 记录逆序处理 `118、117、116、115、114`，没有因跳过或重复而补选其他行。原始 `gid=0` 导出见[只读快照](sources/20261001_sheet_gid0_raw.csv)，SHA-256 为 `b52633e537c2a66e8e90e43783686c91308184d18c43237b5a1569723ecc459f`；五行固定内容见[选行快照](sources/20261001_sheet_rows_114_118.json)，逐行处置、源码资格和证据边界见[批次结果](sources/20261001_sheet_rows_114_118_results.json)。
+
+| 源表行 | 处置 | 事件 | 源码资格与原因 |
+| --- | --- | --- | --- |
+| 118 | 跳过 | Polymarket 用户钓鱼 | 钓鱼事件，不是合约代码漏洞；无攻击交易和公开原始漏洞源码。不补选。 |
+| 117 | 收录（反编译） | [Edel Finance / xStock [Decompiled]](20260701_EdelFinance_decompiled.md) | 使用 Etherscan Palkeoramix/Panoramix 完整反编译价格适配器；页面输入与攻击区块 25434062 的 3,577 字节 runtime 完全一致。AaveOracle 和 wGOOGLx 使用验证源码补足上下文。明确不是已验证原始 Solidity，未编译或分叉重放。 |
+| 116 | 合并重复 | Edel Finance / Backed xStocks | 与第 117 行是同一攻击交易，保留本行 30.5 万美元及包装股票口径；合并到 `20260701_EdelFinance_decompiled`，不重复建立 case。 |
+| 115 | 跳过 | corezcat / GameStopfun Rugpull | 披露称为 Rugpull，未给攻击交易、确认的合约代码缺陷或公开原始漏洞源码。不补选。 |
+| 114 | 跳过 | Hinkal | Hinkal、helper、in-logic 有验证 Solidity，但根因所在的攻击时 Circom / 生成 verifier 原始源码未公开匹配；后来公开的仓库已含子群检查修复，不能代替漏洞版本。转账第二页仍有下一页游标，也不能用当前归档声称完整损失总额。 |
+
+本批结果是 1 个正式收录 case、1 个重复行合并、3 个跳过，共覆盖 5 行。Edel 是用户明确批准的单例反编译源码例外：两套 dataset 都保留 Etherscan `.pan` 全文和攻击区块 runtime 绑定证据，并用 `[Decompiled]`、`source_kind=decompiled`、`verified_original_source=false` 标出性质。公开的 204,200、305,000、403,000 美元口径没有统一，所以中英文 CSV 损失列留空。Hinkal 仍因攻击时电路/verifier 原始源码未匹配而跳过；钓鱼和 Rugpull 行也没有转成合约漏洞 case。
+
 ## 2026-09-14 读取的源表第 98–102 行
 
 本批按[固定五行快照](sources/20260914_sheet_rows_98_102.json)整理以下五篇说明。dataset 和中英文 CSV 现保留 DLMC、Royalties、Taiko 三条；ATM 与非合约的 SecondFi 钱包事件均已移出数据集，仅保留文档及引用资料。日期和损失保留源表口径，中文金额单位为万美元，英文为千美元。

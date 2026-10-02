@@ -1,0 +1,9 @@
+{
+  "case_id": "20260709_BFB",
+  "vulnerable_contract": {
+    "address": "0x719699762fFCC7AadBdCec4E7cf03569E5e99999",
+    "url": "https://bscscan.com/address/0x719699762fFCC7AadBdCec4E7cf03569E5e99999#code"
+  },
+  "representative_transaction": "0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520",
+  "note": "Victim/vulnerable component is kept separate from attacker, helper, proxy, implementation, pair, router and lending venues in the case document."
+}

@@ -1,0 +1,13 @@
+{
+  "source_archive": "complete",
+  "source_hashes": "verified while extracting the public source bundle",
+  "simplified_slice_comparison": "validated by the batch test against exact complete-source line ranges",
+  "transaction_fetch": "success",
+  "receipt_or_actions_fetch": "success",
+  "local_compilation": "not_run",
+  "deployed_bytecode_comparison": "Sourcify provider match status archived; no independent local compilation or attack-block eth_getCode comparison",
+  "historical_state_reads": "not_run except that Bonzo's transaction actions bind proxy and implementation",
+  "full_internal_trace": "Hedera actions archived for Bonzo; otherwise not independently obtained",
+  "closed_source_chain_decompilation": "not run; closed-source helper/execution components are described only to the extent supported by receipts and public analyses",
+  "fork_replay": "not_run"
+}

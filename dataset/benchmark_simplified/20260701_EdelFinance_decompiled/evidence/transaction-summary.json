@@ -1,0 +1,95 @@
+{
+  "chain": "Ethereum",
+  "chain_id": 1,
+  "transaction": "0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612",
+  "block_number": 25434062,
+  "timestamp_utc": "2026-07-01T00:24:47.000000Z",
+  "status": "ok",
+  "sender": "0x58428161bB55c14A413945f06cbDeC157F411C76",
+  "created_attack_contract": "0x1F05c70Db2fFa1B1BAc62b27e7678B765ebe7167",
+  "trace_observations": {
+    "aave_oracle": "0xBd497eE429D9D3E46446339286271b3714a83B29",
+    "price_adapter": "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+    "wGOOGLx_wrapper": "0x1630F08370917E79df0B7572395a5e907508bBBc",
+    "adapter_latestAnswer_unique_sequence": [
+      "213678000000",
+      "2808571882820"
+    ],
+    "convertToAssets_1e18_unique_sequence_raw": [
+      "6000000000000000481",
+      "78863670087342969727"
+    ],
+    "convertToAssets_1e18_unique_sequence_GOOGLx": [
+      "6.000000000000000481",
+      "78.863670087342969727"
+    ],
+    "direct_underlying_transfers_into_wrapper": [
+      {
+        "from": "0xa65a2f97044f4398200e02ff9c88351cb7cc1500",
+        "amount_raw": 8489334153345952365,
+        "amount": "8.489334153345952365",
+        "asset": "GOOGLx"
+      }
+    ]
+  },
+  "token_transfer_records": 228,
+  "attacker_eoa_net_positive_assets": [
+    {
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "amount_raw": "204215572188",
+      "amount": "204215.572188"
+    },
+    {
+      "address": "0x93E62845C1DD5822EbC807ab71A5Fb750DecD15A",
+      "symbol": "WNVDAX",
+      "decimals": 18,
+      "amount_raw": "99854367795581762710",
+      "amount": "99.85436779558176271"
+    },
+    {
+      "address": "0x266E5923F6118F8b340cA5a23AE7f71897361476",
+      "symbol": "wMSTRx",
+      "decimals": 18,
+      "amount_raw": "293123092617121394703",
+      "amount": "293.123092617121394703"
+    },
+    {
+      "address": "0xdbD9232fee15351068Fe02F0683146e16D9f2cEa",
+      "symbol": "wQQQx",
+      "decimals": 18,
+      "amount_raw": "62969726160938091585",
+      "amount": "62.969726160938091585"
+    },
+    {
+      "address": "0xc88FcD8B874fDb3256E8B55b3decB8c24EAb4c02",
+      "symbol": "wSPYx",
+      "decimals": 18,
+      "amount_raw": "122196850288612833306",
+      "amount": "122.196850288612833306"
+    },
+    {
+      "address": "0x43680aBF18cf54898Be84C6eF78237CFBD441883",
+      "symbol": "wTSLAx",
+      "decimals": 18,
+      "amount_raw": "37589277017463227843",
+      "amount": "37.589277017463227843"
+    }
+  ],
+  "loss_reconciliation": {
+    "row_117_claim_usd": "204200",
+    "row_116_claim_usd": "305000",
+    "other_public_bad_debt_claim_usd": "403000",
+    "exact_net_usdc_to_attacker_eoa": "204215.572188",
+    "wrapped_equity_assets_also_received": true,
+    "usd_total_resolved": false,
+    "csv_loss_fields": "blank"
+  },
+  "verification_limits": [
+    "The Etherscan Palkeoramix output is decompiler pseudocode, not verified original Solidity.",
+    "The decompiler input, attack-block eth_getCode result, and latest runtime are byte-identical; this does not establish pseudocode/source equivalence.",
+    "The currently exposed pool implementation is not proof of the attack-time proxy implementation; the pool is context and is not claimed as the vulnerable component.",
+    "No fork replay, independent historical storage reconstruction, Solidity compilation, or decompiled-source recompilation was run."
+  ]
+}

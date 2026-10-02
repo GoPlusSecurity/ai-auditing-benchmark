@@ -1,0 +1,13 @@
+{
+  "source_archive": "complete",
+  "source_hashes": "verified while extracting the public source bundle",
+  "simplified_slice_comparison": "validated by the batch test against exact complete-source line ranges",
+  "transaction_fetch": "success",
+  "receipt_or_actions_fetch": "success",
+  "local_compilation": "not_run",
+  "deployed_bytecode_comparison": "XDC and Hedera runtimes archived and not byte-identical; exact source equivalence unverified",
+  "historical_state_reads": "not_run except that Bonzo's transaction actions bind proxy and implementation",
+  "full_internal_trace": "Hedera actions archived for Bonzo; otherwise not independently obtained",
+  "closed_source_chain_decompilation": "Panoramix full-runtime disassembly archived; high-level pseudocode for selector 0x2818300e did not converge",
+  "fork_replay": "not_run"
+}

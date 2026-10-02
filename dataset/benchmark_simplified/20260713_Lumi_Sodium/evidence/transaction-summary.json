@@ -1,0 +1,28 @@
+{
+  "case_id": "20260713_Lumi_Sodium",
+  "representative_transaction": "0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90",
+  "transaction_url": "https://arbiscan.io/tx/0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90",
+  "rpc_path_base": "transaction_summary_parent",
+  "rpc_files": [
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-sheet-transaction.json",
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-sheet-receipt.json",
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-approval-transaction.json",
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-approval-receipt.json",
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-drain-transaction.json",
+    "../../../benchmark_complete/20260713_Lumi_Sodium/evidence/lumi-drain-receipt.json"
+  ],
+  "verification": "Transaction and receipt/result files were fetched from public read-only endpoints. No local replay was run.",
+  "status": "success",
+  "chain_blocks": [
+    483389834,
+    483390113,
+    483390715
+  ],
+  "related_transactions": {
+    "example_approval": "0x630654fb1c8914405cf81bb02f091b049f19403a152f624f7b8a00c7724c6604",
+    "example_drain": "0x1cdba4c3f9c925e6d03ce8d07965a7521ee4e7258f6c5eeae8a7998886c2b9f0",
+    "source_sheet_transaction": "0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90"
+  },
+  "observed": "All three transactions succeeded. The public analysis decodes the approval transaction as EntryPoint validation creating a maximum token allowance and the drain transaction as later transferFrom use.",
+  "trace_status": "Raw public RPC transactions and receipts are archived. The detailed nested call interpretation comes from the linked Verichains trace analysis; no independent debug trace was obtained."
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "slices/BFBToken.pair-interface.sol",
+    "complete_path": "source-bundles/vulnerable/BFBToken.sol",
+    "original_start_line": 64,
+    "original_end_line": 113,
+    "sha256": "6894c450eaf7faac97a2eb54e263a379d11e6647eb37df196e5defbc2b6c4d28",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BFBToken.state-and-pair-setup.sol",
+    "complete_path": "source-bundles/vulnerable/BFBToken.sol",
+    "original_start_line": 294,
+    "original_end_line": 345,
+    "sha256": "572080ca4aaa84df7491380ddd9e3322377510827fffae2718b5bbc3d2377cc7",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BFBToken.transfer-path.sol",
+    "complete_path": "source-bundles/vulnerable/BFBToken.sol",
+    "original_start_line": 357,
+    "original_end_line": 390,
+    "sha256": "011607eeba7a61c04a6b5638f463ee0a64e23419364df247dcbcc74babb793d0",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BFBToken.price-deflation.sol",
+    "complete_path": "source-bundles/vulnerable/BFBToken.sol",
+    "original_start_line": 448,
+    "original_end_line": 487,
+    "sha256": "eb5fab471bfc9c8713f9f19768475aba7661657e8c94d03ad00273e9e62dac79",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BFBToken.public-transfers.sol",
+    "complete_path": "source-bundles/vulnerable/BFBToken.sol",
+    "original_start_line": 489,
+    "original_end_line": 510,
+    "sha256": "6c26c171081dc5f67c853271761b886889f26ca0fee853fdcdd6e7cdfb435e86",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  }
+]

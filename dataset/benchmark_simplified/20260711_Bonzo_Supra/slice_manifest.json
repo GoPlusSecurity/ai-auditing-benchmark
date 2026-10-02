@@ -1,0 +1,34 @@
+[
+  {
+    "path": "slices/SupraSValueFeedVerifier.state.sol",
+    "complete_path": "source-bundles/xdc-reference/src/SupraSValueFeedVerifier.sol",
+    "original_start_line": 102,
+    "original_end_line": 134,
+    "sha256": "02bf1e6aca246f3cac6f65c6d981e53a2435a76679200b7e744eae157b0c6002",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/SupraSValueFeedVerifier.requireHashVerified.sol",
+    "complete_path": "source-bundles/xdc-reference/src/SupraSValueFeedVerifier.sol",
+    "original_start_line": 286,
+    "original_end_line": 333,
+    "sha256": "8085a7d3ea623130512f63443e375c59df7d71005095975a7642ef122b0058ba",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BLS.verifySingle.sol",
+    "complete_path": "source-bundles/xdc-reference/src/BLS.sol",
+    "original_start_line": 7,
+    "original_end_line": 56,
+    "sha256": "62440c07978280937d24676e38978a0960bef36995d2a5c345d4f5573cb10460",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  },
+  {
+    "path": "slices/BLS.unused-validation-helpers.sol",
+    "complete_path": "source-bundles/xdc-reference/src/BLS.sol",
+    "original_start_line": 176,
+    "original_end_line": 226,
+    "sha256": "80a30b96518107232081aed4ed2c0180d1c6d85e9b104ac053f82a03f5c2408f",
+    "semantics": "Exact original-source excerpt; not a standalone compilation unit. State declarations, imports and full dependencies remain in the complete view."
+  }
+]

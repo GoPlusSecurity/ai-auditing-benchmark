@@ -1,0 +1,249 @@
+{
+  "batch": {
+    "x": 116,
+    "y": 5,
+    "snapshot": "20261002_sheet_rows_106_116.json",
+    "results": "20261002_sheet_rows_106_116_results.json"
+  },
+  "authorship": "Manually authored semantic review. Validation code checks these requirements but must not generate, rewrite or infer them.",
+  "status": "reviewed",
+  "cases": [
+    {
+      "case_id": "20260709_BFB",
+      "status": "reviewed_causal_chain_complete",
+      "reviewed_slice_paths": [
+        "slices/BFBToken.pair-interface.sol",
+        "slices/BFBToken.state-and-pair-setup.sol",
+        "slices/BFBToken.transfer-path.sol",
+        "slices/BFBToken.price-deflation.sol",
+        "slices/BFBToken.public-transfers.sol"
+      ],
+      "required_path_elements": [
+        {
+          "literal": "interface IUniswapV2Pair",
+          "role": "Defines reserve and sync calls used by the burn path."
+        },
+        {
+          "literal": "WBNB_Token_LP_Address = IUniswapV2Factory(factoryAddress).createPair",
+          "role": "Binds the stored address to the BFB/WBNB pair."
+        },
+        {
+          "literal": "function transferFrom(address from, address to, uint256 amount)",
+          "role": "Public entry accepts amount zero because no positive-amount check is present."
+        },
+        {
+          "literal": "_priceDeflPool(from, to);",
+          "role": "Connects an ordinary transfer to the vulnerable reserve-deflation routine."
+        },
+        {
+          "literal": "balanceOf[WBNB_Token_LP_Address] * fallPriceBurnRatio",
+          "role": "Computes the pair-token burn from the pair balance."
+        },
+        {
+          "literal": "IUniswapV2Pair(WBNB_Token_LP_Address).sync();",
+          "role": "Makes the burned token balance the new AMM reserve."
+        },
+        {
+          "literal": "function _getTokenPrice()",
+          "role": "Shows the reserve-derived spot-price input."
+        },
+        {
+          "literal": "function isContract(address account)",
+          "role": "Shows why an EOA-to-EOA zero transfer reaches the branch."
+        }
+      ],
+      "manual_conclusion": "The excerpts retain the zero-value public entry, EOA gate, reserve-derived trigger, pair burn, sync, and pair construction needed for the full causal chain."
+    },
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "status": "reviewed_causal_chain_complete_with_deployment_gap",
+      "reviewed_slice_paths": [
+        "slices/SupraSValueFeedVerifier.state.sol",
+        "slices/SupraSValueFeedVerifier.requireHashVerified.sol",
+        "slices/BLS.verifySingle.sol",
+        "slices/BLS.unused-validation-helpers.sol"
+      ],
+      "required_path_elements": [
+        {
+          "literal": "mapping(uint256 committee_id => uint256[4] public_key) private committee_public_key",
+          "role": "Shows the committee key source controlled by committee id."
+        },
+        {
+          "literal": "function requireHashVerified_V2",
+          "role": "Vulnerable verification entry used by the oracle path."
+        },
+        {
+          "literal": "committee_public_key[committee_id]",
+          "role": "Connects attacker-selected committee id to the key passed into BLS verification."
+        },
+        {
+          "literal": "BLS.verifySingle(",
+          "role": "Connects the verifier entry to the pairing wrapper."
+        },
+        {
+          "literal": "staticcall(precompileGasCost, 8",
+          "role": "Shows trust in the pairing precompile result."
+        },
+        {
+          "literal": "function isOnCurveG1",
+          "role": "Shows available validation helpers that verifySingle does not call."
+        },
+        {
+          "literal": "function isOnCurveG2",
+          "role": "Shows available G2 curve validation that is absent from verifySingle."
+        }
+      ],
+      "manual_conclusion": "The XDC excerpts retain key lookup, both verifier entries, pairing call and unused validation helpers. They explain the defect but are not claimed as the exact Hedera attack-time deployment. Panoramix disassembled the Hedera runtime and recovered its selectors, but target high-level pseudocode did not converge."
+    },
+    {
+      "case_id": "20260713_Lumi_Sodium",
+      "status": "reviewed_causal_chain_complete",
+      "reviewed_slice_paths": [
+        "slices/Sodium.validation-approval.sol",
+        "slices/Sodium.signature-validation.sol",
+        "slices/Sodium.erc1271-signer.sol",
+        "slices/SessionManager.sessions.sol",
+        "slices/SignatureChecker.sol"
+      ],
+      "required_path_elements": [
+        {
+          "literal": "function validateUserOp(",
+          "role": "ERC-4337 validation entry where persistent side effects occur."
+        },
+        {
+          "literal": "paymasterAndData[20:24]",
+          "role": "Attacker-controlled selector parsing for approve."
+        },
+        {
+          "literal": "payToken.approve(address(paymaster), suggestApproveValue);",
+          "role": "Persistent token approval written during validation."
+        },
+        {
+          "literal": "bool isSafe = _safeSession.owner == address(0);",
+          "role": "Unsafe default when no safe session is configured."
+        },
+        {
+          "literal": "return sessionKey == signer && isSafe ? 0 : 1;",
+          "role": "Connects attacker-selected signer/session key to validation success."
+        },
+        {
+          "literal": "SignatureChecker.isValidSignatureNow(",
+          "role": "Routes contract signers through ERC-1271."
+        },
+        {
+          "literal": "IERC1271.isValidSignature.selector",
+          "role": "Shows acceptance of a contract-provided ERC-1271 magic value."
+        }
+      ],
+      "manual_conclusion": "The excerpts retain UserOperation validation, attacker-controlled approval, session checks, ERC-1271 signer acceptance and the persistent authorization path."
+    },
+    {
+      "case_id": "20260713_PHX",
+      "status": "reviewed_causal_chain_complete",
+      "reviewed_slice_paths": [
+        "slices/PHX.pair-interfaces.sol",
+        "slices/PHX.state-and-pair-setup.sol",
+        "slices/PHX.update-dispatch.sol",
+        "slices/PHX.take-sell-fee.sol",
+        "slices/ERC20.update-transfer.sol",
+        "slices/ERC20.burn.sol"
+      ],
+      "required_path_elements": [
+        {
+          "literal": "interface IPancakePair",
+          "role": "Defines the sync call used after burning pair inventory."
+        },
+        {
+          "literal": "uint256 public constant DENOMINATOR = 10_000",
+          "role": "Denominator for fee and pair-burn calculations."
+        },
+        {
+          "literal": "uint256 public sellPairBurnRate = 5000",
+          "role": "Shows the default pair burn is 50 percent of the sell amount."
+        },
+        {
+          "literal": "address public router",
+          "role": "Retains the router role and associated pair setup."
+        },
+        {
+          "literal": "address public pair",
+          "role": "Identifies the balance that is burned and synchronized."
+        },
+        {
+          "literal": "createPair(address(this), wbnb)",
+          "role": "Shows that pair is the PHX/WBNB AMM pair."
+        },
+        {
+          "literal": "bool isSell = isAMMPair[to]",
+          "role": "Connects a transfer into the pair to the sell-fee path."
+        },
+        {
+          "literal": "uint256 pairBurnAmount = amount * sellPairBurnRate / DENOMINATOR",
+          "role": "Computes pair inventory destruction from the sell amount."
+        },
+        {
+          "literal": "_burn(pair, pairBurnAmount);",
+          "role": "Destroys PHX directly from the AMM pair."
+        },
+        {
+          "literal": "IPancakePair(pair).sync();",
+          "role": "Rewrites reserves before the seller net amount reaches the pair."
+        },
+        {
+          "literal": "super._update(from, to, receiveAmount);",
+          "role": "Final net input arrives after sync and drives the oversized swap."
+        }
+      ],
+      "manual_conclusion": "The expanded excerpts retain pair interfaces, constants, default rate, addresses, constructor binding, sell dispatch, pair burn, sync ordering and final net transfer."
+    },
+    {
+      "case_id": "20260714_VECAndETH",
+      "status": "reviewed_causal_chain_complete",
+      "reviewed_slice_paths": [
+        "slices/VECAndETH.router-interface.sol",
+        "slices/VECAndETH.state-update-and-router-setup.sol",
+        "slices/VECAndETH.getReward.sol",
+        "slices/VECAndETH.earned-and-quote.sol"
+      ],
+      "required_path_elements": [
+        {
+          "literal": "interface IPancakeRouter01",
+          "role": "Defines the router quote interface."
+        },
+        {
+          "literal": "function getAmountsOut(uint amountIn, address[] calldata path)",
+          "role": "Shows use of a current AMM quote rather than a resistant oracle."
+        },
+        {
+          "literal": "IPancakeRouter02 public pancakeRouter",
+          "role": "Retains the router state used by reward conversion."
+        },
+        {
+          "literal": "uint256 public rewardRate",
+          "role": "Time-based USDT-denominated accrual input."
+        },
+        {
+          "literal": "function earned(address account)",
+          "role": "Connects elapsed time and rewardRate to the claim amount."
+        },
+        {
+          "literal": "calculateUSDTToETH(receivableValue)",
+          "role": "Converts accrued USDT value using the manipulable quote."
+        },
+        {
+          "literal": "function getReward()",
+          "role": "Final payout entry."
+        },
+        {
+          "literal": "ETHToken.transfer(msg.sender, reward);",
+          "role": "Transfers real Binance-Peg ETH to the claimant."
+        },
+        {
+          "literal": "ETHToken.transfer(address(fundAddress), fee);",
+          "role": "Separates the fee payment from attacker proceeds."
+        }
+      ],
+      "manual_conclusion": "The excerpts retain the router interface and setup, accrual state, spot-price conversion, claim update and both final token transfers."
+    }
+  ]
+}

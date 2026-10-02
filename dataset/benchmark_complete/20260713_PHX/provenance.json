@@ -1,0 +1,59 @@
+{
+  "kind": "public_original_source",
+  "provider": "Sourcify",
+  "url": "https://sourcify.dev/server/v2/contract/56/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481?fields=all",
+  "chain_id": "56",
+  "address": "0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481",
+  "verified_at": "2026-06-28T13:36:01Z",
+  "creation_match": "exact_match",
+  "runtime_match": "exact_match",
+  "compiler": "solc",
+  "compiler_version": "0.8.35+commit.47b9dedd",
+  "path_base": "complete_case_root",
+  "source_files": [
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/access/Ownable.sol",
+      "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "original_source_path": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "source-bundles/vulnerable/@openzeppelin/contracts/utils/Context.sol",
+      "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "source-bundles/vulnerable/contracts/phx.sol",
+      "original_source_path": "contracts/phx.sol",
+      "sha256": "ec93584833f9c78bfc2eaf7749da82e977e02f6b0ea5f24a44e45feaa18dfb38",
+      "bytes": 16814
+    }
+  ],
+  "local_compilation": "not run",
+  "historical_attack_block_code_read": "not run"
+}

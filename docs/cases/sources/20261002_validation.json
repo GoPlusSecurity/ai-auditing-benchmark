@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "parameters": {
+    "x": 116,
+    "y": 5
+  },
+  "actual_scan_range": [
+    106,
+    116
+  ],
+  "qualifying_source_rows": [
+    113,
+    110,
+    108,
+    107,
+    106
+  ],
+  "case_ids": [
+    "20260709_BFB",
+    "20260711_Bonzo_Supra",
+    "20260713_PHX",
+    "20260713_Lumi_Sodium",
+    "20260714_VECAndETH"
+  ],
+  "checks": {
+    "selection_rule_recomputed_from_raw_export": true,
+    "raw_export_sha256": "862e92ed5b738acce956be4d560e1e5f747375a92839debc3eb7ec7cc00c5b90",
+    "snapshot_rows_compared_to_raw_csv": 11,
+    "public_solidity_source_files_hashed": 58,
+    "standard_input_source_entries_checked": 58,
+    "exact_slices_compared": 24,
+    "semantic_path_elements_checked": 42,
+    "machine_readable_file_references_checked": 162,
+    "sha256sum_entries_checked": 191,
+    "local_markdown_links_checked": 59,
+    "inline_file_references_checked": 17,
+    "bilingual_csv_rows_checked": 10,
+    "documents_with_required_sections_and_mermaid": 5
+  },
+  "unresolved_evidence_gaps": [
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "gap": "Panoramix disassembled the 13,293-byte Hedera attack-time runtime, but full-contract and selector 0x2818300e symbolic execution did not converge to high-level pseudocode."
+    }
+  ],
+  "not_claimed": {
+    "local_compilation": "not run",
+    "fork_replay": "not run",
+    "complete_historical_state_reconstruction": "not run",
+    "closed_source_attack_time_runtime_decompilation": "full-runtime disassembly and selector recovery only; target high-level pseudocode not recovered",
+    "full_internal_trace": "only Hedera actions for Bonzo were archived; other cases use receipts plus public analyses"
+  }
+}

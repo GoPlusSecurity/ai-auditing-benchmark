@@ -1,0 +1,136 @@
+{
+  "parameters": {
+    "x": 118,
+    "y": 5,
+    "source_rows": [
+      118,
+      117,
+      116,
+      115,
+      114
+    ],
+    "snapshot": "20261001_sheet_rows_114_118.json",
+    "raw_export": "20261001_sheet_gid0_raw.csv",
+    "raw_export_sha256": "b52633e537c2a66e8e90e43783686c91308184d18c43237b5a1569723ecc459f"
+  },
+  "counts": {
+    "selected_rows": 5,
+    "new_cases": 1,
+    "duplicate_rows_merged": 1,
+    "skipped_rows": 3,
+    "complete_existing_cases": 0
+  },
+  "rows": [
+    {
+      "row": 118,
+      "status": "skipped",
+      "case_id": null,
+      "reason": "Phishing campaign against users, not a contract-code vulnerability. No attack transaction or public original vulnerable contract source. No replacement row selected."
+    },
+    {
+      "row": 117,
+      "status": "new",
+      "case_id": "20260701_EdelFinance_decompiled",
+      "candidate_event_id": "20260701_EdelFinance",
+      "merged_source_rows": [
+        117,
+        116
+      ],
+      "reason": "Included under the user-approved decompiled-source exception. Etherscan Palkeoramix/Panoramix output for the price adapter is archived in full, and its 3577-byte input matches attack-block eth_getCode byte-for-byte. Verified AaveOracle and wGOOGLx source plus the trace complete the causal pricing chain. The sample is explicitly non-original source, and no compilation, source-equivalence proof, storage reconstruction, or fork replay is claimed."
+    },
+    {
+      "row": 116,
+      "status": "duplicate",
+      "case_id": "20260701_EdelFinance_decompiled",
+      "candidate_event_id": "20260701_EdelFinance",
+      "merged_into_row": 117,
+      "merged_event_disposition": "new",
+      "reason": "Same Ethereum attack transaction as row 117. Its USD 305000 and wrapped-equity wording is retained as a conflicting public scope, but it does not create a second case."
+    },
+    {
+      "row": 115,
+      "status": "skipped",
+      "case_id": null,
+      "reason": "Alleged rug pulls with no attack transaction, confirmed contract-code defect, or public original vulnerable source. No replacement row selected."
+    },
+    {
+      "row": 114,
+      "status": "skipped",
+      "case_id": null,
+      "candidate_event_id": "20260703_Hinkal",
+      "reason": "The called Hinkal, helper, and in-logic deployments have verified Solidity, but the asserted root cause lies in the attack-time Circom/generated verifier. That original vulnerable circuit source was not publicly matched; the later public repository contains subgroup-check hardening and cannot substitute for it. Transfer pagination is also incomplete, so no final aggregate loss is admitted."
+    }
+  ],
+  "excluded_events": [
+    {
+      "candidate_event_id": "20260703_Hinkal",
+      "source_rows": [
+        114
+      ],
+      "chain": "Ethereum",
+      "proofless_deposit_transaction": "0xbf7252af56be8867a12e27cc332f85e8f39e906756e559d6a076dc8bd9d50008",
+      "representative_withdrawal_transaction": "0x93aeb876ebb375fe04d5d1fde3bb1a0fcb9335c232e819deb021ad302aa1edc9",
+      "trace_addresses": {
+        "hinkal": "0x25e5e82f5702a27c3466fe68f14abdbbadfca826",
+        "helper": "0xf498fa8b0c1328a22f5d3764dcab712728d12562",
+        "in_logic": "0xde88ff7ba99ac02109f4604bef2b48e01be27a4b",
+        "verifier_facade": "0x163fe0b047ef9b4553e2aff620ae3020883dfec5",
+        "generated_verifier": "0x2617f5b358dd51fe8e2357b0ef80254e8d515d74"
+      },
+      "source_available": "Explorer-verified deployed Solidity for Hinkal, HinkalHelper, and HinkalInLogic.",
+      "source_gap": "The verifier facade and generated Groth16 verifier have bytecode only. The public Hinkal circuit repository was created after the attack and its added circuit contains subgroup-check hardening, so it is fix/context evidence rather than the attack-time vulnerable source.",
+      "pagination_gap": {
+        "archived_pages": 2,
+        "second_page_next_page_params": {
+          "index": 138,
+          "filter": "from",
+          "block_number": 25448333
+        },
+        "effect": "The transfer archive is not exhausted across the claimed attack interval. Counts and aggregate outflow from only these two pages are partial and are not admitted as final loss/profit figures."
+      },
+      "loss_status": "unresolved and not written to CSV",
+      "formal_dataset_case_created": false
+    }
+  ],
+  "evidence_boundary": "One event is formally included under the user-approved decompiled-source exception: Edel uses full Etherscan Palkeoramix/Panoramix output bound byte-for-byte to the attack-block runtime, with verified oracle/wrapper context and trace evidence. It remains explicitly non-original source. Hinkal, phishing, and rug-pull rows remain skipped; the duplicate Edel row is merged. No compilation, decompiled-source equivalence proof, fork replay, circuit reproduction, recovery, or compensation claim is made.",
+  "included_events": [
+    {
+      "case_id": "20260701_EdelFinance_decompiled",
+      "candidate_event_id": "20260701_EdelFinance",
+      "source_rows": [
+        117,
+        116
+      ],
+      "chain": "Ethereum",
+      "attack_transaction": "0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612",
+      "vulnerable_component": {
+        "address": "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+        "role": "price adapter that combines Data Streams price with wGOOGLx convertToAssets(1e18)",
+        "source_kind": "decompiled",
+        "representation": "etherscan_palkeoramix_pseudocode",
+        "verified_original_source": false,
+        "decompiler_url": "https://etherscan.io/bytecode-decompiler?a=0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2"
+      },
+      "runtime_binding": {
+        "attack_block": 25434062,
+        "runtime_bytes": 3577,
+        "etherscan_input_matches_attack_block": true,
+        "latest_matches_attack_block": true
+      },
+      "verified_context": [
+        "Explorer-verified AaveOracle source at 0xBd497eE429D9D3E46446339286271b3714a83B29",
+        "Explorer-verified wGOOGLx proxy and implementation source at 0x1630F08370917E79df0B7572395a5e907508bBBc / 0x14f3714b711E5F32A396d87D6Df481941F8B3F63",
+        "Complete archived transaction trace and token transfers",
+        "Pinned post-incident DeFiHackLabs reproduction at commit 8c520a6ed54c9a19896bfc921d98728b078ffdc2 (reproduction evidence only)"
+      ],
+      "source_limitations": [
+        "The adapter artifact is decompiler pseudocode, not verified original Solidity.",
+        "Runtime equality does not prove exact pseudocode/source equivalence.",
+        "The attack-time Edel pool implementation was not independently matched; the pool is context and is not claimed as the vulnerable component.",
+        "No compilation, historical storage reconstruction, or fork replay was run."
+      ],
+      "loss_status": "Public USD scopes of 204200, 305000 and 403000 are unresolved; CSV loss remains blank.",
+      "formal_dataset_case_created": true
+    }
+  ]
+}

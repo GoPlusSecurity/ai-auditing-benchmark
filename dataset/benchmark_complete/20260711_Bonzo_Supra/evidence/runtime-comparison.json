@@ -1,0 +1,11 @@
+{
+  "xdc_reference_address": "0xbb37c65aab92c41ec696c18600cabb4fc6309549",
+  "xdc_runtime_bytes": 13244,
+  "xdc_runtime_sha256": "975f6c65a40c0551d3eef6e5cffdc0fb1ee6cc24ee9a7a2a72e3cc1b02fa4518",
+  "hedera_attack_time_implementation": "0x63e0a27bc77ca817c89f5231d568c4e58100fbf0",
+  "hedera_contract_id": "0.0.10414935",
+  "hedera_runtime_bytes": 13293,
+  "hedera_runtime_sha256": "85aa286443fa3b38986b1ba454152bf9dbc4b3214fd4fe326758d1d1f3527367",
+  "byte_for_byte_equal": false,
+  "conclusion": "The XDC source is public original Supra verifier source and exposes the same missing validation in requireHashVerified_V2/BLS.verifySingle. Its deployed runtime is not byte-identical to the Hedera attack implementation, so it is vulnerability-mechanism source, not proof of exact attack-time source equivalence."
+}

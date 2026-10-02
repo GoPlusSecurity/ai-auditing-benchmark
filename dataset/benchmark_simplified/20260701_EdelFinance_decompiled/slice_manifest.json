@@ -1,0 +1,52 @@
+{
+  "case_id": "20260701_EdelFinance_decompiled",
+  "decompiler_output_retained_in_full": true,
+  "decompiler_output": {
+    "path": "EdelPriceAdapter.decompiled.pan",
+    "sha256": "e46cb553f8bf6f98f1c7f6670d1854c21a52691bc42a69cb3ff2b6f83c8a3b42",
+    "characters": 6031,
+    "logical_lines": 74
+  },
+  "slices": [
+    {
+      "slice_path": "slices/aave-oracle/AaveOracle.getAssetPrice.sol",
+      "complete_path": "source-bundles/aave-oracle/@aave/core-v3/contracts/misc/AaveOracle.sol",
+      "original_source_path": "@aave/core-v3/contracts/misc/AaveOracle.sol",
+      "line_start": 101,
+      "line_end": 116,
+      "slice_sha256": "5c3808520d8f7b28083f6e27fe96b093ff6239cffbe42f7043cf4d596cf26f7d",
+      "complete_source_sha256": "e41aeccc496f8d751017c8a9832022414cd022d92313eaf63926a37369994564",
+      "literal_bytes": 500
+    },
+    {
+      "slice_path": "slices/wrapper/WrappedBackedTokenImplementation.initialize.sol",
+      "complete_path": "source-bundles/wrapper-implementation/contracts/WrappedBackedTokenImplementation.sol",
+      "original_source_path": "contracts/WrappedBackedTokenImplementation.sol",
+      "line_start": 57,
+      "line_end": 105,
+      "slice_sha256": "2b3439c0f1ca4997afef64ce78abe3abd07d8056dccbd1819deae9f786b6d392",
+      "complete_source_sha256": "469039950740a7817af45fd3a4eadf7a3f5176cddfa344ec842caf2e41c6ed02",
+      "literal_bytes": 1818
+    },
+    {
+      "slice_path": "slices/wrapper/ERC4626Upgradeable.totalAssets-convertToAssets.sol",
+      "complete_path": "source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+      "original_source_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+      "line_start": 97,
+      "line_end": 115,
+      "slice_sha256": "edbedc66ece3b6d50af8e5e5a5081f938c238824183b972c0cd38cdb51f70ec3",
+      "complete_source_sha256": "f91fa9617d3745afa27b26788713e25f0fe4d522240b01c94d0d6ad656dd0c40",
+      "literal_bytes": 763
+    },
+    {
+      "slice_path": "slices/wrapper/ERC4626Upgradeable.conversion-formulas.sol",
+      "complete_path": "source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+      "original_source_path": "@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol",
+      "line_start": 201,
+      "line_end": 213,
+      "slice_sha256": "7becd6eeb8a7a9e384de81efb25194e826bf32fa3d98a6c2b040aeec8909c89e",
+      "complete_source_sha256": "f91fa9617d3745afa27b26788713e25f0fe4d522240b01c94d0d6ad656dd0c40",
+      "literal_bytes": 695
+    }
+  ]
+}

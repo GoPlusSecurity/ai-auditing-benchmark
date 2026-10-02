@@ -1,0 +1,9 @@
+{
+  "case_id": "20260711_Bonzo_Supra",
+  "vulnerable_contract": {
+    "address": "0x2fa6dbfe4291136cf272e1a3294362b6651e8517",
+    "url": "https://hashscan.io/mainnet/contract/0.0.4323006"
+  },
+  "representative_transaction": "0xd50c55e24eb8483ec55bf74e84fc9853d0f0fe36f64abdb812a2d9afa2a10a60",
+  "note": "Victim/vulnerable component is kept separate from attacker, helper, proxy, implementation, pair, router and lending venues in the case document."
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "public_original_source",
+  "provider": "Sourcify",
+  "url": "https://sourcify.dev/server/v2/contract/56/0x3e505942bfa3ed145935223f9e3d1e2103cd47a1?fields=all",
+  "chain_id": "56",
+  "address": "0x3E505942BFa3ED145935223f9e3d1e2103Cd47a1",
+  "verified_at": "2026-07-01T07:00:42Z",
+  "creation_match": "exact_match",
+  "runtime_match": "exact_match",
+  "compiler": "solc",
+  "compiler_version": "0.8.30+commit.73712a01",
+  "path_base": "complete_case_root",
+  "source_files": [
+    {
+      "path": "source-bundles/vulnerable/V4/VECAndETHFinance.sol",
+      "original_source_path": "V4/VECAndETHFinance.sol",
+      "sha256": "c978a555b1b396d0bc1e46ef760c9fdb36516bdd0d963dc69d9c4c217ffaa26c",
+      "bytes": 51433
+    }
+  ],
+  "local_compilation": "not run",
+  "historical_attack_block_code_read": "not run"
+}

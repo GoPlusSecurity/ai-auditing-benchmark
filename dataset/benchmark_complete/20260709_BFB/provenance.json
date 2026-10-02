@@ -1,0 +1,23 @@
+{
+  "kind": "public_original_source",
+  "provider": "Sourcify",
+  "url": "https://sourcify.dev/server/v2/contract/56/0x719699762fFCC7AadBdCec4E7cf03569E5e99999?fields=all",
+  "chain_id": "56",
+  "address": "0x719699762fFCC7AadBdCec4E7cf03569E5e99999",
+  "verified_at": "2026-06-03T17:36:15Z",
+  "creation_match": "match",
+  "runtime_match": "match",
+  "compiler": "solc",
+  "compiler_version": "0.8.30+commit.73712a01",
+  "path_base": "complete_case_root",
+  "source_files": [
+    {
+      "path": "source-bundles/vulnerable/BFBToken.sol",
+      "original_source_path": "BFBToken.sol",
+      "sha256": "2803982440c79fffc9d245a91b25a714ba27dd4a9460001611ba4950d2de5362",
+      "bytes": 24885
+    }
+  ],
+  "local_compilation": "not run",
+  "historical_attack_block_code_read": "not run"
+}

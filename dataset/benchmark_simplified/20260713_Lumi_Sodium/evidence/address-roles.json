@@ -1,0 +1,9 @@
+{
+  "case_id": "20260713_Lumi_Sodium",
+  "vulnerable_contract": {
+    "address": "0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b",
+    "url": "https://arbiscan.io/address/0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b#code"
+  },
+  "representative_transaction": "0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90",
+  "note": "Victim/vulnerable component is kept separate from attacker, helper, proxy, implementation, pair, router and lending venues in the case document."
+}

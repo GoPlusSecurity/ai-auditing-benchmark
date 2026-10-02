@@ -1,0 +1,8 @@
+{
+  "libraries": {},
+  "optimizer": {
+    "runs": 200,
+    "enabled": true
+  },
+  "evmVersion": "cancun"
+}

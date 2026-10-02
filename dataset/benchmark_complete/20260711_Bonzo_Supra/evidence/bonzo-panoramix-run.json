@@ -1,0 +1,90 @@
+{
+  "case_id": "20260711_Bonzo_Supra",
+  "recorded_at": "2026-10-02T20:14:04+08:00",
+  "tool": {
+    "name": "Panoramix",
+    "repository": "https://github.com/eveem-org/panoramix",
+    "declared_version": "17 Feb 2020",
+    "requirements_sha256": "09524abefbfeca82c5cef1184552ec6cec868a8dc4b89f2143260daddfb0ac05",
+    "readme_runtime_requirement": "Python 3.8",
+    "actual_runtime": "Python 3.11.9 on Windows",
+    "direct_dependencies": {
+      "coloredlogs": "15.0.1",
+      "requests": "2.34.2",
+      "web3": "8.0.0",
+      "timeout-decorator": "0.5.0"
+    }
+  },
+  "input": {
+    "contract_id": "0.0.10414935",
+    "evm_address": "0x63e0a27bc77ca817c89f5231d568c4e58100fbf0",
+    "runtime_file": "hedera-attack-implementation-runtime.bin",
+    "runtime_bytes": 13293,
+    "runtime_sha256": "85aa286443fa3b38986b1ba454152bf9dbc4b3214fd4fe326758d1d1f3527367",
+    "stdin_encoding": "raw runtime bytes converted to lowercase hexadecimal without 0x prefix",
+    "deterministic_stdin_id": "0x74ae99897bfd70be",
+    "target_selector": "0x2818300e"
+  },
+  "temporary_environment": "The temporary checkout, environment and local compatibility changes were intentionally not archived and were deleted after use.",
+  "signature_database": {
+    "status": "empty local schema",
+    "reason": "The database is not in the Git repository and the checkout points to a legacy HTTP download. Selector names therefore remain unknown<selector>(?).",
+    "effect": "Function-name decoration is unavailable; disassembly and selector/control-flow discovery still run."
+  },
+  "runs": [
+    {
+      "stage": "unmodified checkout",
+      "result": "loader_failed",
+      "detail": "Opcode 0x5f was UNKNOWN, so the dispatcher did not resolve regular functions."
+    },
+    {
+      "stage": "PUSH0 compatibility enabled",
+      "result": "disassembly_and_dispatch_complete_pseudocode_failed",
+      "detail": "Panoramix produced 9,550 assembly lines and found 20 selectors, but every per-function call hit the tool's POSIX-only SIGALRM path on Windows.",
+      "archived_output": "bonzo-panoramix-disassembly.asm",
+      "failed_pan_and_json_archived": false
+    },
+    {
+      "stage": "external supervision, full contract",
+      "result": "manually_terminated_no_convergence",
+      "detail": "The first symbolic function did not converge after more than five minutes. No new completed output replaced the archived prior-stage files."
+    },
+    {
+      "stage": "external supervision, target selector 0x2818300e only",
+      "result": "manually_terminated_no_convergence",
+      "detail": "The target symbolic execution did not converge after more than four minutes; observed working set reached 5,792,555,008 bytes."
+    }
+  ],
+  "dispatch_selectors": [
+    "0x1f3ac958",
+    "0x2818300e",
+    "0x3659cfe6",
+    "0x371e8375",
+    "0x4a755aec",
+    "0x4a9c0165",
+    "0x4b1bcc4e",
+    "0x4f1ef286",
+    "0x52d1902d",
+    "0x6a4e3e39",
+    "0x715018a6",
+    "0x7861c629",
+    "0x79ba5097",
+    "0x8da5cb5b",
+    "0x9bb4c707",
+    "0x9dc2f7aa",
+    "0xab32aaed",
+    "0xe30c3978",
+    "0xf110052b",
+    "0xf2fde38b"
+  ],
+  "outputs": [
+    {
+      "path": "bonzo-panoramix-disassembly.asm",
+      "bytes": 168682,
+      "sha256": "f2bcb3a7c2f92fa3c6e4918f46e6f5ee9d7a20350977dae6627d5dfbc51c0ee3",
+      "description": "Complete Panoramix disassembly, 9,550 lines. The nine remaining UNKNOWN bytes are in the Solidity metadata tail after executable code."
+    }
+  ],
+  "conclusion": "Panoramix successfully disassembled the full attack-time runtime and recovered its dispatcher selectors, including 0x2818300e, but it did not produce converged high-level pseudocode for that selector.",
+  "evidence_boundary": "These files are tool output, not verified Solidity source. They do not establish equivalence to the archived XDC Solidity, reconstruct historical storage, or prove the full exploit path by themselves."
+}

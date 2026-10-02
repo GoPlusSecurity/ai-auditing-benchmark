@@ -1,0 +1,39 @@
+{
+  "folder": "20260701_EdelFinance_decompiled",
+  "date": "2026.07.01",
+  "project_cn": "Edel Finance / xStock [Decompiled]",
+  "project_en": "Edel Finance / xStock [Decompiled]",
+  "vulnerability_cn": "把可捐赠操纵的 ERC-4626 convertToAssets 直接用于抵押品价格",
+  "vulnerability_en": "Donation-manipulable ERC-4626 convertToAssets used directly in collateral pricing",
+  "detail_cn": "Edel 的 AaveOracle 调用价格适配器；Etherscan Palkeoramix 反编译显示适配器把 Data Streams 的 getPrice 结果与 wGOOGLx.convertToAssets(1e18) 相乘。ERC-4626 的 totalAssets 读取包装合约持有的 GOOGLx 余额，攻击者直接捐入 8.489334153345952365 GOOGLx 而不铸造份额，把 1 wGOOGLx 的换算值从约 6.0 抬到 78.8636700873，随后借走 USDC 及五种包装股票。攻击者地址净收 204215.572188 USDC，公开损失另有 204,200、305,000、403,000 美元口径，未能统一，所以损失栏留空。适配器反编译伪代码不是已验证原始源码；攻击区块 runtime 与 Etherscan 输入逐字节一致，但没有编译或分叉重放。",
+  "detail_en": "Edel's AaveOracle called a price adapter. Etherscan Palkeoramix decompiled pseudocode shows the adapter multiplying a Data Streams getPrice result by wGOOGLx.convertToAssets(1e18). ERC-4626 totalAssets reads the wrapper's GOOGLx balance, so a direct donation of 8.489334153345952365 GOOGLx without minting shares raised the value of one wGOOGLx from about 6.0 to 78.8636700873. The attacker then borrowed USDC and five wrapped equities. The attacker address received net 204215.572188 USDC, while public loss scopes of USD 204,200, 305,000 and 403,000 remain unreconciled, so the loss field is blank. The adapter output is decompiled pseudocode, not verified original source; its Etherscan input matches the attack-block runtime byte-for-byte, but no compilation or fork replay was run.",
+  "tx_urls": [
+    "https://etherscan.io/tx/0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2#code"
+  ],
+  "supporting_context_urls": [
+    "https://etherscan.io/address/0xBd497eE429D9D3E46446339286271b3714a83B29#code",
+    "https://etherscan.io/address/0x1630F08370917E79df0B7572395a5e907508bBBc#code"
+  ],
+  "loss_usd": null,
+  "loss_claims_usd": [
+    204200,
+    305000,
+    403000
+  ],
+  "source_kind": "decompiled",
+  "representation": "etherscan_palkeoramix_pseudocode",
+  "source_status": "etherscan_palkeoramix_decompiled_with_verified_context",
+  "verified_original_source": false,
+  "runtime_input_matches_attack_block": true,
+  "source_rows": [
+    117,
+    116
+  ],
+  "source_verification": "Etherscan Palkeoramix/Panoramix decompiled the adapter runtime. Its textarea input SHA-256 matches the archived runtime, and attack-block/latest eth_getCode results match byte-for-byte. AaveOracle, wrapper proxy, and wrapper implementation have explorer-verified source. Decompiled pseudocode is not verified original Solidity. No compilation, pseudocode equivalence proof, storage reconstruction, or fork replay was run.",
+  "source_sheet_snapshot": "../../../docs/cases/sources/20261001_sheet_rows_114_118.json",
+  "batch_results": "../../../docs/cases/sources/20261001_sheet_rows_114_118_results.json",
+  "dataset_view": "complete"
+}

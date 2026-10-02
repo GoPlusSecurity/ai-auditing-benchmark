@@ -1,0 +1,37 @@
+{
+  "endpoint": "https://eth.blockscout.com/api/eth-rpc",
+  "retrieved_at_utc": "2026-09-30T23:41:32.800677Z",
+  "address": "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+  "attack_block_number": 25434062,
+  "attack_block_hex": "0x18417ce",
+  "requests": [
+    {
+      "label": "attack",
+      "block": "0x18417ce",
+      "request": {
+        "jsonrpc": "2.0",
+        "method": "eth_getCode",
+        "params": [
+          "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+          "0x18417ce"
+        ],
+        "id": 1
+      },
+      "response_file": "edel-adapter-eth_getCode-attack.json"
+    },
+    {
+      "label": "latest",
+      "block": "latest",
+      "request": {
+        "jsonrpc": "2.0",
+        "method": "eth_getCode",
+        "params": [
+          "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2",
+          "latest"
+        ],
+        "id": 2
+      },
+      "response_file": "edel-adapter-eth_getCode-latest.json"
+    }
+  ]
+}

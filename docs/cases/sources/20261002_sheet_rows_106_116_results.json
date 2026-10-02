@@ -1,0 +1,228 @@
+{
+  "parameters": {
+    "x": 116,
+    "y": 5,
+    "actual_scan_range": [
+      106,
+      116
+    ],
+    "processing_order": [
+      116,
+      115,
+      114,
+      113,
+      112,
+      111,
+      110,
+      109,
+      108,
+      107,
+      106
+    ],
+    "selected_source_rows": [
+      113,
+      110,
+      108,
+      107,
+      106
+    ],
+    "snapshot": "20261002_sheet_rows_106_116.json",
+    "raw_export": "20261002_sheet_gid0_raw.csv",
+    "raw_export_sha256": "862e92ed5b738acce956be4d560e1e5f747375a92839debc3eb7ec7cc00c5b90",
+    "retrieved_at": "2026-10-02T07:44:58+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "counts": {
+    "scanned_rows": 11,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 6
+  },
+  "rows": [
+    {
+      "row": 116,
+      "sheet_event": "@summerfinance_",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "Summer Finance",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "Technical postmortem identifies an operational offboarding failure: a former key retained authority. The accounting contracts performed the configured checks; no contract-code defect with vulnerable original source was established.",
+      "references": [
+        "https://gist.github.com/halaprix/52bd5e32b35be100dc40ba30539e4169",
+        "https://forum.summer.fi/t/recap-community-call-16-july-6-incident-review-community-q-a-next-steps/858"
+      ]
+    },
+    {
+      "row": 115,
+      "sheet_event": "@bonk_inu",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "BonkDAO",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "The treasury loss followed a malicious governance proposal. Public reporting attributes the outcome to quorum, timelock and deposit configuration choices, not a defect in contract code; no vulnerable source-qualified code defect was established.",
+      "references": [
+        "https://blockworks.com/token-transparency/filing/bonk"
+      ]
+    },
+    {
+      "row": 114,
+      "sheet_event": "0x8c949361b49320c48a51f4b1c6f9f83862530f89",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "USDT approval phishing victim",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "The row is an approval-phishing loss. It does not identify a defect in the token or another victim contract and supplies no public vulnerable original source.",
+      "references": [
+        "https://x.com/realscamsniffer/status/2075007064154452200?s=46"
+      ]
+    },
+    {
+      "row": 113,
+      "sheet_event": "#BFB on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "event": "BFB",
+      "case_id": "20260709_BFB",
+      "source_qualification": "Sourcify creationMatch=match and runtimeMatch=match for the vulnerable BFB token source.",
+      "reason": "BFB transferFrom accepts amount=0 and still runs _priceDeflPool, which burns BFB held by the Pancake pair and calls sync. The source-qualified code defect and the resulting WBNB outflow are public.",
+      "references": [
+        "https://sourcify.dev/server/v2/contract/56/0x719699762fFCC7AadBdCec4E7cf03569E5e99999?fields=all",
+        "https://anomly.rs/bfb-zero-transfer-deflation-exploit-bsc"
+      ]
+    },
+    {
+      "row": 112,
+      "sheet_event": "@CodexField",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "CodexField",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "The disclosure calls the project a suspected scam or rug pull and provides no attack transaction, confirmed contract-code defect, or public vulnerable original source.",
+      "references": [
+        "https://x.com/SpecterAnalyst/status/2075230614928679073"
+      ]
+    },
+    {
+      "row": 111,
+      "sheet_event": "HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "Solana whale key compromise",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "The report concerns likely private-key compromise of a wallet. No victim smart-contract code defect or corresponding vulnerable original source was established.",
+      "references": [
+        "https://t.me/investigations/353"
+      ]
+    },
+    {
+      "row": 110,
+      "sheet_event": "@bonzo_financ",
+      "qualifies": true,
+      "status": "new",
+      "event": "Bonzo Finance / Supra verifier",
+      "case_id": "20260711_Bonzo_Supra",
+      "source_qualification": "Public explorer-verified original Supra verifier source contains the same vulnerable requireHashVerified_V2 path; exact source equivalence to the Hedera attack-time implementation remains unverified and is explicitly recorded.",
+      "reason": "The verifier passed a zero signature and a zero committee public key to the pairing precompile without rejecting identity points. Hedera transaction actions bind the exploit to verifier proxy 0.0.4323006 and implementation 0.0.10414935; an XDC deployment provides public original source for the vulnerable code path.",
+      "references": [
+        "https://bonzo.finance/blog/bonzo-lend-incident-report-oracle-provider-exploit",
+        "https://xdcscan.com/address/0xbb37c65aab92c41ec696c18600cabb4fc6309549#code",
+        "https://mainnet-public.mirrornode.hedera.com/api/v1/contracts/results/0xd50c55e24eb8483ec55bf74e84fc9853d0f0fe36f64abdb812a2d9afa2a10a60/actions"
+      ]
+    },
+    {
+      "row": 109,
+      "sheet_event": "@SpaceXAI\n@Starlink",
+      "qualifies": false,
+      "status": "skipped",
+      "event": "SpaceXAI / Starlink social account takeover",
+      "case_id": null,
+      "source_qualification": "not_applicable",
+      "reason": "The row describes compromised social accounts promoting a token. It does not establish a victim contract-code defect with public vulnerable original source.",
+      "references": [
+        "https://x.com/lookonchain/status/2076468576400359783?s=20"
+      ]
+    },
+    {
+      "row": 108,
+      "sheet_event": "#PHX on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "event": "PHX",
+      "case_id": "20260713_PHX",
+      "source_qualification": "Sourcify exact creation and runtime match for the vulnerable PHX token and its seven-file source bundle.",
+      "reason": "The sell-fee path burns PHX directly from its AMM pair and calls sync before the seller's net PHX reaches the pair. That lets a thin PHX reserve become the baseline for an oversized WBNB withdrawal.",
+      "references": [
+        "https://sourcify.dev/server/v2/contract/56/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481?fields=all",
+        "https://anomly.rs/phx-pair-burn-reserve-manipulation"
+      ]
+    },
+    {
+      "row": 107,
+      "sheet_event": "@Lumi_Finance",
+      "qualifies": true,
+      "status": "new",
+      "event": "Lumi Finance / Sodium",
+      "case_id": "20260713_Lumi_Sodium",
+      "source_qualification": "Sourcify exact creation and runtime match for the Sodium implementation and its 31-file source bundle.",
+      "reason": "Sodium accepted an attacker-selected ERC-1271 contract as both signer and proposed session key, then made an attacker-directed ERC-20 approval during ERC-4337 validation. The later zero-gas execution failed without removing the validation-phase allowance.",
+      "references": [
+        "https://sourcify.dev/server/v2/contract/42161/0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b?fields=all",
+        "https://blog.verichains.io/p/lumi-finance-exploit-erc-1271-bypass"
+      ]
+    },
+    {
+      "row": 106,
+      "sheet_event": "#VECAndETH on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "event": "VECAndETH",
+      "case_id": "20260714_VECAndETH",
+      "source_qualification": "Sourcify exact creation and runtime match for the VECAndETH reward contract source.",
+      "reason": "earned converts a USDT-denominated reward using PancakeRouter.getAmountsOut at the current manipulable pool price. The attacker temporarily distorted the ETH/USDT pool, caused getReward to overpay ETH, then restored the market and repaid temporary liquidity.",
+      "references": [
+        "https://sourcify.dev/server/v2/contract/56/0x3e505942bfa3ed145935223f9e3d1e2103cd47a1?fields=all",
+        "https://coinkyt.com/blog/kontrakt-schital-nagradu-po-siyuminutnoj-cene-zloumyshlennik-eyo-obrushil-i-poluchil-109-tys"
+      ]
+    }
+  ],
+  "included_cases": [
+    {
+      "case_id": "20260709_BFB",
+      "source_rows": [
+        113
+      ]
+    },
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "source_rows": [
+        110
+      ]
+    },
+    {
+      "case_id": "20260713_PHX",
+      "source_rows": [
+        108
+      ]
+    },
+    {
+      "case_id": "20260713_Lumi_Sodium",
+      "source_rows": [
+        107
+      ]
+    },
+    {
+      "case_id": "20260714_VECAndETH",
+      "source_rows": [
+        106
+      ]
+    }
+  ],
+  "evidence_boundary": "All five included rows have public original source that contains the vulnerable code. BFB is a Sourcify match; PHX, Lumi/Sodium and VECAndETH are Sourcify exact matches. Bonzo/Supra uses explorer-verified original source from another Supra deployment with the same vulnerable function; transaction actions prove the Hedera proxy and implementation path, but the archived XDC and Hedera runtimes differ, so exact attack-time deployment/source equivalence is not claimed. No case was locally compiled or fork-replayed."
+}

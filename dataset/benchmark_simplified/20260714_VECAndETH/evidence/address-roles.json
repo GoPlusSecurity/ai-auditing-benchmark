@@ -1,0 +1,9 @@
+{
+  "case_id": "20260714_VECAndETH",
+  "vulnerable_contract": {
+    "address": "0x3e505942bfa3ed145935223f9e3d1e2103cd47a1",
+    "url": "https://bscscan.com/address/0x3e505942bfa3ed145935223f9e3d1e2103cd47a1#code"
+  },
+  "representative_transaction": "0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72",
+  "note": "Victim/vulnerable component is kept separate from attacker, helper, proxy, implementation, pair, router and lending venues in the case document."
+}

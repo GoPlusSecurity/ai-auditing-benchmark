@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "bytecodeHash": "ipfs",
+    "useLiteralContent": true
+  },
+  "libraries": {},
+  "optimizer": {
+    "runs": 200,
+    "enabled": true
+  },
+  "evmVersion": "london",
+  "remappings": []
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "20260709_BFB",
+  "date": "2026.07.09",
+  "project_cn": "#BFB on #BSC",
+  "project_en": "#BFB on #BSC",
+  "chain": "BNB Smart Chain",
+  "vulnerability_cn": "零数量转账触发交易池销毁与储备重写",
+  "vulnerability_en": "Zero-value transfer triggers pair burn and reserve rewrite",
+  "detail_cn": "BFB 的 transferFrom 允许 amount=0 继续进入 _transfer，之后无条件调用 _priceDeflPool。攻击者在小额卖出压低价格后，用零数量 EOA 转账反复从 BFB/WBNB 池销毁 BFB 并 sync，再用很少 BFB 换出 WBNB。交易回执显示池子净流出 350.616633079707222431 WBNB；源表保留 220,000 美元口径，技术报告按交易内价格约为 197,817 美元。Sourcify 显示 creation/runtime match，未本地编译或分叉重放。",
+  "detail_en": "BFB transferFrom accepts amount=0, still enters _transfer, and unconditionally reaches _priceDeflPool. After small sells lowered the price, repeated zero-value EOA transfers burned BFB directly from the BFB/WBNB pair and called sync, allowing tiny BFB sells to withdraw WBNB. Receipt transfers show 350.616633079707222431 WBNB left the pair; the sheet USD scope remains 220,000 while the technical report values it near USD 197,817. Sourcify reports creation/runtime match; no local compilation or fork replay was run.",
+  "tx_urls": [
+    "https://bscscan.com/tx/0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x719699762fFCC7AadBdCec4E7cf03569E5e99999#code"
+  ],
+  "loss_usd": 220000,
+  "source_status": "sourcify_match",
+  "public_original_vulnerable_source": true,
+  "attack_time_deployment_source_equivalence_verified": null,
+  "original_rows": [
+    113
+  ],
+  "source_sheet_snapshot": "../../../docs/cases/sources/20261002_sheet_rows_106_116.json",
+  "batch_results": "../../../docs/cases/sources/20261002_sheet_rows_106_116_results.json",
+  "source_verification": {
+    "kind": "public_original_source",
+    "provider": "Sourcify",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x719699762fFCC7AadBdCec4E7cf03569E5e99999?fields=all",
+    "chain_id": "56",
+    "address": "0x719699762fFCC7AadBdCec4E7cf03569E5e99999",
+    "verified_at": "2026-06-03T17:36:15Z",
+    "creation_match": "match",
+    "runtime_match": "match",
+    "compiler": "solc",
+    "compiler_version": "0.8.30+commit.73712a01",
+    "path_base": "complete_case_root",
+    "source_files": [
+      {
+        "path": "source-bundles/vulnerable/BFBToken.sol",
+        "original_source_path": "BFBToken.sol",
+        "sha256": "2803982440c79fffc9d245a91b25a714ba27dd4a9460001611ba4950d2de5362",
+        "bytes": 24885
+      }
+    ],
+    "local_compilation": "not run",
+    "historical_attack_block_code_read": "not run"
+  },
+  "verification_status": {
+    "local_compilation": "not_run",
+    "transaction_and_receipt_or_actions": "archived_and_checked",
+    "historical_state": "not_fully_verified",
+    "fork_replay": "not_run"
+  }
+}

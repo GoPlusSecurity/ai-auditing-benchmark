@@ -1,0 +1,19 @@
+{
+  "case_id": "20260714_VECAndETH",
+  "representative_transaction": "0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72",
+  "transaction_url": "https://bscscan.com/tx/0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72",
+  "rpc_path_base": "transaction_summary_parent",
+  "rpc_files": [
+    "vec-transaction.json",
+    "vec-receipt.json"
+  ],
+  "verification": "Transaction and receipt/result files were fetched from public read-only endpoints. No local replay was run.",
+  "status": "success",
+  "chain_block": 109708922,
+  "observed": {
+    "gross_attacker_payment": "68.498286303203816978 Binance-Peg ETH from VECAndETH to the attacker.",
+    "fund_payment": "7.610920700355979664 Binance-Peg ETH from VECAndETH to the configured fund address.",
+    "temporary_liquidity": "Large WBNB and Binance-Peg ETH transfers enter and leave the attacker during the same transaction; these are not counted as loss."
+  },
+  "trace_status": "debug_traceTransaction returned missing trie node and was not archived as proof of a full trace; receipt logs are the direct evidence used here."
+}

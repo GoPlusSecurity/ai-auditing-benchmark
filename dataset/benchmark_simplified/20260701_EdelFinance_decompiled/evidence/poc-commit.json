@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "8c520a6ed54c9a19896bfc921d98728b078ffdc2",
+    "node_id": "C_kwDOHevFFNoAKDhjNTIwYTZlZDU0YzlhMTk4OTZiZmM5MjFkOTg3MjhiMDc4ZmZkYzI",
+    "commit": {
+      "author": {
+        "name": "Z-Bra0",
+        "email": "209417172+Z-Bra0@users.noreply.github.com",
+        "date": "2026-07-01T02:35:04Z"
+      },
+      "committer": {
+        "name": "Z-Bra0",
+        "email": "209417172+Z-Bra0@users.noreply.github.com",
+        "date": "2026-07-01T02:35:04Z"
+      },
+      "message": "Add Edel xStock PoC. Jul 1. 204,215.57 USDC",
+      "tree": {
+        "sha": "83561d67d8986789fa706e47391b1945113546d7",
+        "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/git/trees/83561d67d8986789fa706e47391b1945113546d7"
+      },
+      "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/git/commits/8c520a6ed54c9a19896bfc921d98728b078ffdc2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits/8c520a6ed54c9a19896bfc921d98728b078ffdc2",
+    "html_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/commit/8c520a6ed54c9a19896bfc921d98728b078ffdc2",
+    "comments_url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits/8c520a6ed54c9a19896bfc921d98728b078ffdc2/comments",
+    "author": {
+      "login": "Z-Bra0",
+      "id": 209417172,
+      "node_id": "U_kgDODHtz1A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209417172?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Z-Bra0",
+      "html_url": "https://github.com/Z-Bra0",
+      "followers_url": "https://api.github.com/users/Z-Bra0/followers",
+      "following_url": "https://api.github.com/users/Z-Bra0/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Z-Bra0/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Z-Bra0/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Z-Bra0/subscriptions",
+      "organizations_url": "https://api.github.com/users/Z-Bra0/orgs",
+      "repos_url": "https://api.github.com/users/Z-Bra0/repos",
+      "events_url": "https://api.github.com/users/Z-Bra0/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Z-Bra0/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Z-Bra0",
+      "id": 209417172,
+      "node_id": "U_kgDODHtz1A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209417172?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Z-Bra0",
+      "html_url": "https://github.com/Z-Bra0",
+      "followers_url": "https://api.github.com/users/Z-Bra0/followers",
+      "following_url": "https://api.github.com/users/Z-Bra0/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Z-Bra0/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Z-Bra0/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Z-Bra0/subscriptions",
+      "organizations_url": "https://api.github.com/users/Z-Bra0/orgs",
+      "repos_url": "https://api.github.com/users/Z-Bra0/repos",
+      "events_url": "https://api.github.com/users/Z-Bra0/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Z-Bra0/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5521ad3889e7156aad2e2824a2d9097c9e145d86",
+        "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits/5521ad3889e7156aad2e2824a2d9097c9e145d86",
+        "html_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/commit/5521ad3889e7156aad2e2824a2d9097c9e145d86"
+      }
+    ]
+  }
+]

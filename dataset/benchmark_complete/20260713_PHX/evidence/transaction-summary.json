@@ -1,0 +1,21 @@
+{
+  "case_id": "20260713_PHX",
+  "representative_transaction": "0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe",
+  "transaction_url": "https://bscscan.com/tx/0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe",
+  "rpc_path_base": "transaction_summary_parent",
+  "rpc_files": [
+    "phx-transaction.json",
+    "phx-receipt.json"
+  ],
+  "verification": "Transaction and receipt/result files were fetched from public read-only endpoints. No local replay was run.",
+  "status": "success",
+  "chain_block": 109472554,
+  "observed": {
+    "pair_burn": "296.749734747201453268 PHX moved from the pair to address(0).",
+    "net_sell_into_pair": "504.474549070242470556 PHX moved from the attacker to the pair after the burn/sync path.",
+    "pair_wbnb_outflow": "467711.693712892500744808 WBNB left the pair during the manipulated swap.",
+    "attacker_final_wbnb": "156.205683366923083775 WBNB moved from the execution contract to the attacker EOA."
+  },
+  "date_boundary": "The source sheet uses 2026-07-13; the focal transaction was 2026-07-12 02:05:29 UTC.",
+  "trace_status": "Receipt logs were archived; the ordered internal flow is also supported by the public technical analysis, but no independent full trace file was obtained."
+}

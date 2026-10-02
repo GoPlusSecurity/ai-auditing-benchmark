@@ -1,0 +1,25 @@
+{
+  "case_id": "20260711_Bonzo_Supra",
+  "representative_transaction": "0xd50c55e24eb8483ec55bf74e84fc9853d0f0fe36f64abdb812a2d9afa2a10a60",
+  "transaction_url": "https://hashscan.io/mainnet/transaction/1783731093.686041919",
+  "rpc_path_base": "transaction_summary_parent",
+  "rpc_files": [
+    "../../../benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-transaction.json",
+    "../../../benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-contract-result.json",
+    "../../../benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-actions.json",
+    "../../../benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-verifier-contract-current.json",
+    "../../../benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-verifier-implementation.json"
+  ],
+  "verification": "Transaction and receipt/result files were fetched from public read-only endpoints. No local replay was run.",
+  "status": "SUCCESS",
+  "hedera_consensus_timestamp": "1783731099.646109213",
+  "proxy": "0.0.4323006 / 0x2fa6dbfe4291136cf272e1a3294362b6651e8517",
+  "attack_time_implementation": "0.0.10414935 / 0x63e0a27bc77ca817c89f5231d568c4e58100fbf0",
+  "observed": {
+    "implementation_delegatecall_selector": "0x2818300e",
+    "pairing_precompile": "0.0.8",
+    "pairing_result": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "forged_input": "The top-level input contains committee ID 2 and a [0,0] BLS signature; the official report independently decodes those fields."
+  },
+  "trace_status": "Hedera Mirror Node actions provide the complete archived nested action list used for these address and precompile claims."
+}

@@ -1,0 +1,17 @@
+{
+  "libraries": {},
+  "optimizer": {
+    "enabled": true,
+    "runs": 10
+  },
+  "outputSelection": {
+    "*": {
+      "": [
+        "*"
+      ],
+      "*": [
+        "*"
+      ]
+    }
+  }
+}
