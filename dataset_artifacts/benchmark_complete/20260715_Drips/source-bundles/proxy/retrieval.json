@@ -1,0 +1,10 @@
+{
+  "file": "drips/proxy.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x73043143e0a6418cc45d82d4505b096b802fd365?fields=all",
+  "retrieved_at": "2026-10-16T08:48:33.568412+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x73043143e0a6418cc45d82d4505b096b802fd365?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 186021,
+  "sha256": "12cc5ddb2c851541657217d221cccdf986ba09bd3e809e8a0f1d73430ce080a3"
+}

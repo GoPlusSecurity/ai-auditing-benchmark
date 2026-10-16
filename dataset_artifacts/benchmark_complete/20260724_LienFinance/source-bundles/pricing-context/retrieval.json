@@ -1,0 +1,10 @@
+{
+  "file": "lien/pricer.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x6e33f11625b2c8b7270cf8e0319b8b9ffb8f086d?fields=all",
+  "retrieved_at": "2026-10-16T09:14:34.620216+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x6e33f11625b2c8b7270cf8e0319b8b9ffb8f086d?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 174719,
+  "sha256": "0e4dfd448b2ab1e075f131d9468964b4f77eaa73932da6c5388ab920c85e0adc"
+}

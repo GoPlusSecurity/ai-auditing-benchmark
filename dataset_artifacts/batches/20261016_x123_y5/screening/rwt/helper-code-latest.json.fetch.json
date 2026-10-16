@@ -1,0 +1,19 @@
+{
+  "file": "rwt/helper-code-latest.json",
+  "url": "https://bsc-dataseed.binance.org",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 52,
+    "method": "eth_getCode",
+    "params": [
+      "0x8812bb5fb89d69d35ac84d2c37b55769395b9f90",
+      "latest"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:58:41.142217+08:00",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.binance.org",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 14879,
+  "sha256": "bbd3465b6b3fba9a45e694414dd543e6f4f183543329291ee8d7b3ccfd12667f"
+}

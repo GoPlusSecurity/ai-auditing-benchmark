@@ -1,0 +1,124 @@
+{
+  "registered_groups": [
+    {
+      "target": "0xda6fc5625e617bb92f5359921d43321cebc6bef0",
+      "returned_group_id": 36,
+      "maturity": 1792112400,
+      "bond_ids": [
+        "0x07be1697301a7e5459c404e5b8a509efa607880dbc361c6fa2bf3963656673e8",
+        "0x3a9430a06fed8c682d06ad8cce0f1e791e538d9ed6459d8b90745fdb3426178b"
+      ],
+      "trace_address": [
+        3
+      ]
+    },
+    {
+      "target": "0xda6fc5625e617bb92f5359921d43321cebc6bef0",
+      "returned_group_id": 37,
+      "maturity": 1792112400,
+      "bond_ids": [
+        "0xb14ded1568a93e247b0ae8479ed358d16177a441707d75a00bfa808e3e742014",
+        "0x07be1697301a7e5459c404e5b8a509efa607880dbc361c6fa2bf3963656673e8",
+        "0x07be1697301a7e5459c404e5b8a509efa607880dbc361c6fa2bf3963656673e8"
+      ],
+      "trace_address": [
+        4
+      ]
+    },
+    {
+      "target": "0x843225cf6e663e4454732d6b551a737ac7b47de0",
+      "returned_group_id": 2,
+      "maturity": 1792112400,
+      "bond_ids": [
+        "0x306a2880c1db6dfcf94e6123d17d75fda87e0b4c4bfed9e5910b72c2b1c67ffe",
+        "0x58e11d7e617227ac20ac4ccd8fddcd7abb92480c02d3539f8f27f943771fdfcb",
+        "0x0a2ca8e9afac1dd5b03b860b54583492bf7387876f8df71f68cba0a2cb91dbe8"
+      ],
+      "trace_address": [
+        15
+      ]
+    },
+    {
+      "target": "0x843225cf6e663e4454732d6b551a737ac7b47de0",
+      "returned_group_id": 3,
+      "maturity": 1792112400,
+      "bond_ids": [
+        "0x306a2880c1db6dfcf94e6123d17d75fda87e0b4c4bfed9e5910b72c2b1c67ffe",
+        "0x58e11d7e617227ac20ac4ccd8fddcd7abb92480c02d3539f8f27f943771fdfcb",
+        "0x58e11d7e617227ac20ac4ccd8fddcd7abb92480c02d3539f8f27f943771fdfcb",
+        "0x303ac23012b014ba642f904d216bd2539db3a77f9db5c4fd85b4ecaa0274f63d"
+      ],
+      "trace_address": [
+        16
+      ]
+    },
+    {
+      "target": "0x843225cf6e663e4454732d6b551a737ac7b47de0",
+      "returned_group_id": 4,
+      "maturity": 1792112400,
+      "bond_ids": [
+        "0x8b398271e49dbb6a6398f5cc081eebc13f616cf6a2640f8403ce7dc463a39d75",
+        "0x303ac23012b014ba642f904d216bd2539db3a77f9db5c4fd85b4ecaa0274f63d"
+      ],
+      "trace_address": [
+        17
+      ]
+    }
+  ],
+  "exchangeEquivalentBonds_calls": [
+    {
+      "target": "0xda6fc5625e617bb92f5359921d43321cebc6bef0",
+      "input_group": 36,
+      "output_group": 37,
+      "amount_raw": "6968565865905",
+      "exceptions": [
+        "0x07be1697301a7e5459c404e5b8a509efa607880dbc361c6fa2bf3963656673e8",
+        "0x3a9430a06fed8c682d06ad8cce0f1e791e538d9ed6459d8b90745fdb3426178b"
+      ],
+      "trace_address": [
+        9
+      ]
+    },
+    {
+      "target": "0x843225cf6e663e4454732d6b551a737ac7b47de0",
+      "input_group": 2,
+      "output_group": 3,
+      "amount_raw": "44979960202",
+      "exceptions": [
+        "0x306a2880c1db6dfcf94e6123d17d75fda87e0b4c4bfed9e5910b72c2b1c67ffe",
+        "0x58e11d7e617227ac20ac4ccd8fddcd7abb92480c02d3539f8f27f943771fdfcb",
+        "0x0a2ca8e9afac1dd5b03b860b54583492bf7387876f8df71f68cba0a2cb91dbe8"
+      ],
+      "trace_address": [
+        20
+      ]
+    }
+  ],
+  "USDC_transfers": [
+    {
+      "from": "0xA961684a3a654fb2cCA8F8991226C0CEfc514d80",
+      "to": "0xe74d17c1bE3721E65e0af286D47B3BA58B08062e",
+      "raw": "532070026484"
+    },
+    {
+      "from": "0xA961684a3a654fb2cCA8F8991226C0CEfc514d80",
+      "to": "0xe74d17c1bE3721E65e0af286D47B3BA58B08062e",
+      "raw": "74602120"
+    },
+    {
+      "from": "0xA961684a3a654fb2cCA8F8991226C0CEfc514d80",
+      "to": "0xe74d17c1bE3721E65e0af286D47B3BA58B08062e",
+      "raw": "10000000000"
+    },
+    {
+      "from": "0xe74d17c1bE3721E65e0af286D47B3BA58B08062e",
+      "to": "0x0D7d9023531aD1A88414E216Ee2715F63561808a",
+      "raw": "542144628604"
+    }
+  ],
+  "victim_net_USDC": "-542144.628604",
+  "attacker_net_USDC": "542144.628604",
+  "full_internal_trace_obtained": true,
+  "trace_calls": 142,
+  "bondmaker_addresses_are_two_deployments_not_proxy_implementation": true
+}

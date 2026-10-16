@@ -131,16 +131,16 @@ class SelectionRuleTests(unittest.TestCase):
 
 
 class FormalBatchArtifactTests(unittest.TestCase):
-    def test_dataset_contains_only_auditable_code_and_abi(self):
+    def test_dataset_contains_only_auditable_code(self):
         unexpected = [
             path for path in (ROOT / "dataset").rglob("*")
-            if path.is_file() and path.suffix.lower() not in {".sol", ".rs", ".cairo", ".pan", ".ts"} and path.name != "abi.json"
+            if path.is_file() and path.suffix.lower() not in {".sol", ".rs", ".cairo", ".pan", ".ts", ".cpp", ".h"}
         ]
         self.assertEqual(len(unexpected), 0, f"non-source files remain: {unexpected[:3]}")
 
-    def test_abi_archives_are_kept_with_dataset_code(self):
-        self.assertEqual(list((ROOT / "dataset_artifacts").rglob("abi.json")), [])
-        self.assertTrue(list((ROOT / "dataset").rglob("abi.json")))
+    def test_abi_archives_are_kept_with_companion_material(self):
+        self.assertEqual(list((ROOT / "dataset").rglob("abi.json")), [])
+        self.assertTrue(list((ROOT / "dataset_artifacts").rglob("abi.json")))
 
     def test_saved_batch_recomputes_to_expected_selection(self):
         report = batch.main()
@@ -263,8 +263,8 @@ class SplitChecksumTests(unittest.TestCase):
             encoding="utf-8",
         )
 
-    def test_split_layout_allows_abi_but_rejects_other_json(self):
-        # A real ABI must be accepted without permitting arbitrary metadata in dataset.
+    def test_split_layout_requires_abi_in_artifacts(self):
+        # ABI is useful companion material, but it is not source code.
         abi = self.source / "abi.json"
         abi.write_bytes(b"[]\r\n")
         sums = self.artifacts / "SHA256SUMS"
@@ -274,14 +274,17 @@ class SplitChecksumTests(unittest.TestCase):
         (self.root / "docs/cases").mkdir(parents=True)
         for name in ("README.md", "README_cn.md"):
             (self.root / name).write_bytes(b"fixture\n")
-        try:
-            report = batch.validate_dataset_layout(self.root)
-        except batch.ValidationError as exc:
-            self.fail(f"valid ABI rejected: {exc}")
+        with self.assertRaisesRegex(batch.ValidationError, "non-source files"):
+            batch.validate_dataset_layout(self.root)
+        archived_abi = self.artifacts / "abi.json"
+        abi.rename(archived_abi)
+        sums.write_text(sums.read_text("utf-8").replace(
+            "../../../dataset/benchmark_complete/case/abi.json", "abi.json"), encoding="utf-8")
+        report = batch.validate_dataset_layout(self.root)
         self.assertEqual(report["source_files"], 1)
         self.assertEqual(report["abi_files"], 1)
-        self.assertEqual(report["dataset_files"], 2)
-        self.assertEqual(abi.read_bytes(), b"[]\r\n")
+        self.assertEqual(report["dataset_files"], 1)
+        self.assertEqual(archived_abi.read_bytes(), b"[]\r\n")
         (self.source / "metadata.json").write_bytes(b"{}\n")
         with self.assertRaisesRegex(batch.ValidationError, "non-source files"):
             batch.validate_dataset_layout(self.root)

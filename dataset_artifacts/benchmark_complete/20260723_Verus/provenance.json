@@ -1,0 +1,1945 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "imports",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x27c76df6912698e6d4c55aaa87cf88c30db90cf7?fields=all",
+      "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+      "address": "0x27c76DF6912698e6D4C55aaa87cF88C30Db90CF7",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:38Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "SubmitImports",
+        "fullyQualifiedName": "contracts/VerusBridge/SubmitImports.sol:SubmitImports"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+          "bytes": 4026
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/CreateExports.sol",
+          "original_source_path": "contracts/VerusBridge/CreateExports.sol",
+          "sha256": "d3785ee103a748a64b6a4197adf6bff043267e690c2f7d56e673a598d8f97b0b",
+          "bytes": 17563
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/ExportManager.sol",
+          "original_source_path": "contracts/VerusBridge/ExportManager.sol",
+          "sha256": "55d8144086e0d67ae17a5884e6018930073b82f7c3c541ee34c2aef885623892",
+          "bytes": 12774
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/SubmitImports.sol",
+          "original_source_path": "contracts/VerusBridge/SubmitImports.sol",
+          "sha256": "74b2f7a3efb469f1a3652891af808669f44737401cb1ee75a2eac4a055b55885",
+          "bytes": 25483
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/TokenManager.sol",
+          "original_source_path": "contracts/VerusBridge/TokenManager.sol",
+          "sha256": "5b801c244684733121dd288abd3fbb4d90677191e4459997d2b9b96054334c49",
+          "bytes": 12036
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "cf291c88f40e1d7ee417b6bc84d313789c38598b9192fb03204c6167390d1afb",
+          "bytes": 4993
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/VerusCrossChainExport.sol",
+          "original_source_path": "contracts/VerusBridge/VerusCrossChainExport.sol",
+          "sha256": "e3fea023be5b8430b56f80a97f03f88a675b58384534b0a7f75fbe3ffcd79f71",
+          "bytes": 8376
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "1dfc5a7abf065112796ae1e078d1bceda8c35908fd84cb96691033fa7a3dd932",
+          "bytes": 27907
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/imports/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        }
+      ],
+      "abi_path": "source-bundles/imports/abi.json",
+      "response_path": "source-bundles/imports/source-response.json",
+      "response_sha256": "72879d165908b1130f8a777849d24a06ac9b79dc25ddd7e006356221b14d5909",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "proof",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x54e03a1682fd0bb065b669f6296f97028dcfd4ce?fields=all",
+      "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+      "address": "0x54E03a1682fd0bB065B669f6296f97028DcFD4Ce",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:19:45Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "remappings": []
+        },
+        "name": "VerusProof",
+        "fullyQualifiedName": "contracts/MMR/VerusProof.sol:VerusProof"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/MMR/VerusProof.sol",
+          "original_source_path": "contracts/MMR/VerusProof.sol",
+          "sha256": "bacc0664811d3e3c116e17c3d97dedf733a24835469ae6fb99831c7596b0a378",
+          "bytes": 40737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/MMR/VerusBlake2b.sol",
+          "original_source_path": "contracts/MMR/VerusBlake2b.sol",
+          "sha256": "f05c2352c1d7cd4c9bcf09fbcba00792599e62a08a09cdfc63d60fe6a137753c",
+          "bytes": 357
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/MMR/Blake2b.sol",
+          "original_source_path": "contracts/MMR/Blake2b.sol",
+          "sha256": "b3ac2b82298d89770536d847db3920a5e0a9489656277550c10d6f6bee4ccdd3",
+          "bytes": 10265
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusNotarizer/VerusNotarizer.sol",
+          "original_source_path": "contracts/VerusNotarizer/VerusNotarizer.sol",
+          "sha256": "6f35dd2a58c35ecf5dd373d553eb368e893a7afcc1e3695e98f50f0f56459147",
+          "bytes": 16154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "original_source_path": "contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "sha256": "3441c8b8e4aaedc338d7774469202316b0fe95d3a188840b87af288eec2556bc",
+          "bytes": 19060
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "cf291c88f40e1d7ee417b6bc84d313789c38598b9192fb03204c6167390d1afb",
+          "bytes": 4993
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/CreateExports.sol",
+          "original_source_path": "contracts/VerusBridge/CreateExports.sol",
+          "sha256": "6535eca7538eefb1bb8e407c2f91fce38a8e1fda50c0ef321e8cbfcea8208ab5",
+          "bytes": 17555
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/VerusCrossChainExport.sol",
+          "original_source_path": "contracts/VerusBridge/VerusCrossChainExport.sol",
+          "sha256": "e3fea023be5b8430b56f80a97f03f88a675b58384534b0a7f75fbe3ffcd79f71",
+          "bytes": 8376
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "1dfc5a7abf065112796ae1e078d1bceda8c35908fd84cb96691033fa7a3dd932",
+          "bytes": 27907
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/ExportManager.sol",
+          "original_source_path": "contracts/VerusBridge/ExportManager.sol",
+          "sha256": "55d8144086e0d67ae17a5884e6018930073b82f7c3c541ee34c2aef885623892",
+          "bytes": 12774
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+          "bytes": 4026
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/SubmitImports.sol",
+          "original_source_path": "contracts/VerusBridge/SubmitImports.sol",
+          "sha256": "71ffbbbecde53327828fde2fcab5468e7bd407de6aedb103b07b4cea368d6a45",
+          "bytes": 25473
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/VerusBridge/TokenManager.sol",
+          "original_source_path": "contracts/VerusBridge/TokenManager.sol",
+          "sha256": "5b801c244684733121dd288abd3fbb4d90677191e4459997d2b9b96054334c49",
+          "bytes": 12036
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/proof/contracts/MMR/VerusMMR.sol",
+          "original_source_path": "contracts/MMR/VerusMMR.sol",
+          "sha256": "b2ebc8888b18633a695f11a5bd828dc86d7441e7d747d43384a844727dfb03eb",
+          "bytes": 5806
+        }
+      ],
+      "abi_path": "source-bundles/proof/abi.json",
+      "response_path": "source-bundles/proof/source-response.json",
+      "response_sha256": "c6feed0455461361e2402a00dd33923f96b5ab577a1797cb6cc3ad26d0d7e225",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "blake2b",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xdd5cfb77a89a5fb082fa08fd1cac1d7857bb5752?fields=all",
+      "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+      "address": "0xDd5cFb77A89A5fB082fa08fd1Cac1d7857BB5752",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:30Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "VerusBlake2b",
+        "fullyQualifiedName": "contracts/MMR/VerusBlake2b.sol:VerusBlake2b"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/blake2b/contracts/MMR/Blake2b.sol",
+          "original_source_path": "contracts/MMR/Blake2b.sol",
+          "sha256": "b3ac2b82298d89770536d847db3920a5e0a9489656277550c10d6f6bee4ccdd3",
+          "bytes": 10265
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/blake2b/contracts/MMR/VerusBlake2b.sol",
+          "original_source_path": "contracts/MMR/VerusBlake2b.sol",
+          "sha256": "f05c2352c1d7cd4c9bcf09fbcba00792599e62a08a09cdfc63d60fe6a137753c",
+          "bytes": 357
+        }
+      ],
+      "abi_path": "source-bundles/blake2b/abi.json",
+      "response_path": "source-bundles/blake2b/source-response.json",
+      "response_sha256": "7f2454666f106bc1abaa3273aaec7d9eb0102df2ea9e7165b8305e5a7b4d2261",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "mmr",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xf25b678b730fb1a565c426e29b599ad154cd9ba0?fields=all",
+      "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+      "address": "0xf25B678b730Fb1A565C426e29B599aD154CD9Ba0",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:31Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          }
+        },
+        "name": "VerusMMR",
+        "fullyQualifiedName": "contracts/MMR/VerusMMR.sol:VerusMMR"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+          "bytes": 4026
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "b309cf07cd50ef7db906111231fcc1083b441bcfb85363c5e6fd25380f7a7394",
+          "bytes": 6130
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/MMR/Blake2b.sol",
+          "original_source_path": "contracts/MMR/Blake2b.sol",
+          "sha256": "b3ac2b82298d89770536d847db3920a5e0a9489656277550c10d6f6bee4ccdd3",
+          "bytes": 10265
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/MMR/VerusBlake2b.sol",
+          "original_source_path": "contracts/MMR/VerusBlake2b.sol",
+          "sha256": "f05c2352c1d7cd4c9bcf09fbcba00792599e62a08a09cdfc63d60fe6a137753c",
+          "bytes": 357
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/MMR/VerusMMR.sol",
+          "original_source_path": "contracts/MMR/VerusMMR.sol",
+          "sha256": "b2ebc8888b18633a695f11a5bd828dc86d7441e7d747d43384a844727dfb03eb",
+          "bytes": 5806
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/MMR/VerusProof.sol",
+          "original_source_path": "contracts/MMR/VerusProof.sol",
+          "sha256": "7eb7442d05bcec890c17ca027571e092108e5f1a3c861f86ef903aef488260c0",
+          "bytes": 22540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/CreateExports.sol",
+          "original_source_path": "contracts/VerusBridge/CreateExports.sol",
+          "sha256": "19fb4b227edb6fc93abfc839cdb6f0f55334b4f8251df96e6f9ee263c7f996b9",
+          "bytes": 17393
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/ExportManager.sol",
+          "original_source_path": "contracts/VerusBridge/ExportManager.sol",
+          "sha256": "c3aaa29054c98f95024e9b96643275a11f871f41c20d7499d27722f98fd46e54",
+          "bytes": 11470
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/SubmitImports.sol",
+          "original_source_path": "contracts/VerusBridge/SubmitImports.sol",
+          "sha256": "c80926d8c5c82e2a3ff5d7145e2c6ccd85e277e3e5fe6a7e68c5a24944c630a7",
+          "bytes": 21319
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/TokenManager.sol",
+          "original_source_path": "contracts/VerusBridge/TokenManager.sol",
+          "sha256": "40c8190fcd11ba2df3a567457e5702c9b0ffd019f270865f85aabb8202b82453",
+          "bytes": 11636
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "187b89ce8ec1d31e46f6b7adc68fc0b9c20908f1121d8e63be59f6494985ebb6",
+          "bytes": 5019
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/VerusCrossChainExport.sol",
+          "original_source_path": "contracts/VerusBridge/VerusCrossChainExport.sol",
+          "sha256": "442b9d064b6d8340cdc86f868b9ab8b2678cfabb8ed03f83f4537d91df66552b",
+          "bytes": 8137
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "b6bad85ebaf70b070f30ff80c76636d6e84ae1c12a84e1d98e2fedfcb14ef025",
+          "bytes": 28968
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "original_source_path": "contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "sha256": "d5cb18f5ad6cbee6a042ea45a5777fb71bad07311be6290b61ff82ab2749667d",
+          "bytes": 18589
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/mmr/contracts/VerusNotarizer/VerusNotarizer.sol",
+          "original_source_path": "contracts/VerusNotarizer/VerusNotarizer.sol",
+          "sha256": "063f6c6c7059610e7576d90320ea4747a048d3b50d02edac69ce77deaa997e7b",
+          "bytes": 15593
+        }
+      ],
+      "abi_path": "source-bundles/mmr/abi.json",
+      "response_path": "source-bundles/mmr/source-response.json",
+      "response_sha256": "a113770cd995c8ac0611fd0c6673fc57c6b961ad3f2d2ba73bd8a596ee884db2",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "token-manager",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a?fields=all",
+      "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+      "address": "0xC45EedC99A98Bc2e5Ce717Bb3ba16BDe1725730A",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:38Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "TokenManager",
+        "fullyQualifiedName": "contracts/VerusBridge/TokenManager.sol:TokenManager"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+          "bytes": 4026
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/CreateExports.sol",
+          "original_source_path": "contracts/VerusBridge/CreateExports.sol",
+          "sha256": "d3785ee103a748a64b6a4197adf6bff043267e690c2f7d56e673a598d8f97b0b",
+          "bytes": 17563
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/ExportManager.sol",
+          "original_source_path": "contracts/VerusBridge/ExportManager.sol",
+          "sha256": "55d8144086e0d67ae17a5884e6018930073b82f7c3c541ee34c2aef885623892",
+          "bytes": 12774
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/SubmitImports.sol",
+          "original_source_path": "contracts/VerusBridge/SubmitImports.sol",
+          "sha256": "74b2f7a3efb469f1a3652891af808669f44737401cb1ee75a2eac4a055b55885",
+          "bytes": 25483
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/TokenManager.sol",
+          "original_source_path": "contracts/VerusBridge/TokenManager.sol",
+          "sha256": "5b801c244684733121dd288abd3fbb4d90677191e4459997d2b9b96054334c49",
+          "bytes": 12036
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "cf291c88f40e1d7ee417b6bc84d313789c38598b9192fb03204c6167390d1afb",
+          "bytes": 4993
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/VerusCrossChainExport.sol",
+          "original_source_path": "contracts/VerusBridge/VerusCrossChainExport.sol",
+          "sha256": "e3fea023be5b8430b56f80a97f03f88a675b58384534b0a7f75fbe3ffcd79f71",
+          "bytes": 8376
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "1dfc5a7abf065112796ae1e078d1bceda8c35908fd84cb96691033fa7a3dd932",
+          "bytes": 27907
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/token-manager/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        }
+      ],
+      "abi_path": "source-bundles/token-manager/abi.json",
+      "response_path": "source-bundles/token-manager/source-response.json",
+      "response_sha256": "8fcd41a15d2fad6824d3837d582be6c656670bd7915dd2f18c971fc4272c7de7",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "notarizer",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x9ce91aa0f6d1d316a9535a36951143bc141318b8?fields=all",
+      "retrieved_at": "2026-10-16T09:16:31.798576+08:00",
+      "address": "0x9ce91Aa0f6D1D316a9535A36951143bc141318B8",
+      "chain_id": "1",
+      "verified_at": "2026-07-23T05:18:27Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "VerusNotarizer",
+        "fullyQualifiedName": "contracts/VerusNotarizer/VerusNotarizer.sol:VerusNotarizer"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+          "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+          "bytes": 4026
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/MMR/Blake2b.sol",
+          "original_source_path": "contracts/MMR/Blake2b.sol",
+          "sha256": "b3ac2b82298d89770536d847db3920a5e0a9489656277550c10d6f6bee4ccdd3",
+          "bytes": 10265
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/MMR/VerusBlake2b.sol",
+          "original_source_path": "contracts/MMR/VerusBlake2b.sol",
+          "sha256": "f05c2352c1d7cd4c9bcf09fbcba00792599e62a08a09cdfc63d60fe6a137753c",
+          "bytes": 357
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/CreateExports.sol",
+          "original_source_path": "contracts/VerusBridge/CreateExports.sol",
+          "sha256": "d3785ee103a748a64b6a4197adf6bff043267e690c2f7d56e673a598d8f97b0b",
+          "bytes": 17563
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/ExportManager.sol",
+          "original_source_path": "contracts/VerusBridge/ExportManager.sol",
+          "sha256": "55d8144086e0d67ae17a5884e6018930073b82f7c3c541ee34c2aef885623892",
+          "bytes": 12774
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/SubmitImports.sol",
+          "original_source_path": "contracts/VerusBridge/SubmitImports.sol",
+          "sha256": "74b2f7a3efb469f1a3652891af808669f44737401cb1ee75a2eac4a055b55885",
+          "bytes": 25483
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/TokenManager.sol",
+          "original_source_path": "contracts/VerusBridge/TokenManager.sol",
+          "sha256": "5b801c244684733121dd288abd3fbb4d90677191e4459997d2b9b96054334c49",
+          "bytes": 12036
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "cf291c88f40e1d7ee417b6bc84d313789c38598b9192fb03204c6167390d1afb",
+          "bytes": 4993
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/VerusCrossChainExport.sol",
+          "original_source_path": "contracts/VerusBridge/VerusCrossChainExport.sol",
+          "sha256": "e3fea023be5b8430b56f80a97f03f88a675b58384534b0a7f75fbe3ffcd79f71",
+          "bytes": 8376
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "1dfc5a7abf065112796ae1e078d1bceda8c35908fd84cb96691033fa7a3dd932",
+          "bytes": 27907
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "original_source_path": "contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "sha256": "3441c8b8e4aaedc338d7774469202316b0fe95d3a188840b87af288eec2556bc",
+          "bytes": 19060
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarizer/contracts/VerusNotarizer/VerusNotarizer.sol",
+          "original_source_path": "contracts/VerusNotarizer/VerusNotarizer.sol",
+          "sha256": "6f35dd2a58c35ecf5dd373d553eb368e893a7afcc1e3695e98f50f0f56459147",
+          "bytes": 16154
+        }
+      ],
+      "abi_path": "source-bundles/notarizer/abi.json",
+      "response_path": "source-bundles/notarizer/source-response.json",
+      "response_sha256": "7be86efc1f268f7ca8a084df60a5359c1414a6f24e0d8da5a570ea36a8d3f3c1",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "notarization-serializer",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x95b8005c4d9fe80f0aee5b7adce53766080600fb?fields=all",
+      "retrieved_at": "2026-10-16T09:16:31.798576+08:00",
+      "address": "0x95b8005c4d9FE80f0AEE5B7adCe53766080600fB",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:36Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "NotarizationSerializer",
+        "fullyQualifiedName": "contracts/VerusNotarizer/NotarizationSerializer.sol:NotarizationSerializer"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/VerusBridge/Token.sol",
+          "original_source_path": "contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/VerusBridge/UpgradeManager.sol",
+          "original_source_path": "contracts/VerusBridge/UpgradeManager.sol",
+          "sha256": "cf291c88f40e1d7ee417b6bc84d313789c38598b9192fb03204c6167390d1afb",
+          "bytes": 4993
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/VerusBridge/dsrinterface.sol",
+          "original_source_path": "contracts/VerusBridge/dsrinterface.sol",
+          "sha256": "b609eb1c387204e4775a348d45832c061f8fe049c015d44544ac04a4967cb483",
+          "bytes": 643
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notarization-serializer/contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "original_source_path": "contracts/VerusNotarizer/NotarizationSerializer.sol",
+          "sha256": "3441c8b8e4aaedc338d7774469202316b0fe95d3a188840b87af288eec2556bc",
+          "bytes": 19060
+        }
+      ],
+      "abi_path": "source-bundles/notarization-serializer/abi.json",
+      "response_path": "source-bundles/notarization-serializer/source-response.json",
+      "response_sha256": "77abfac2c4f5fb3b23029e5ddff98e6c009391fe68bc9bc2a79379e507d690a6",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "transfer-serializer",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x747d5eed7aa4436b3d7a6cf2db7d78b8e93600fc?fields=all",
+      "retrieved_at": "2026-10-16T09:53:29.029030+08:00",
+      "address": "0x747d5eED7aA4436b3d7a6CF2DB7D78B8E93600fc",
+      "chain_id": "1",
+      "verified_at": "2026-07-10T11:25:33Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "VerusSerializer",
+        "fullyQualifiedName": "contracts/VerusBridge/VerusSerializer.sol:VerusSerializer"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/transfer-serializer/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "contracts/Libraries/VerusConstants.sol",
+          "sha256": "87d5a1bc624a9333921c33ca903957a0ca970150e52768705c9a1146bdc0e90a",
+          "bytes": 6967
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/transfer-serializer/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/transfer-serializer/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/transfer-serializer/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/transfer-serializer/contracts/VerusBridge/VerusSerializer.sol",
+          "original_source_path": "contracts/VerusBridge/VerusSerializer.sol",
+          "sha256": "1dfc5a7abf065112796ae1e078d1bceda8c35908fd84cb96691033fa7a3dd932",
+          "bytes": 27907
+        }
+      ],
+      "abi_path": "source-bundles/transfer-serializer/abi.json",
+      "response_path": "source-bundles/transfer-serializer/source-response.json",
+      "response_sha256": "ed9b2ebe41632569220d437794be7156d8b603d8e200eb2b37c598f8859f0fab",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "gateway",
+      "kind": "public_original_source",
+      "provider": "Blockscout",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x71518580f36feceffe0721f06ba4703218cd7f63",
+      "retrieved_at": "2026-10-16T09:14:34.111009+08:00",
+      "address": "0x71518580f36feceffe0721f06ba4703218cd7f63",
+      "chain_id": "1",
+      "verified_at": "2024-12-01T18:35:27.057391Z",
+      "compiler": {
+        "compilerVersion": "v0.8.9",
+        "name": "Delegator"
+      },
+      "explorer_verified": true,
+      "historical_runtime_match_independently_checked": false,
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Main/Delegator.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Main/Delegator.sol",
+          "sha256": "2d4d85de902d7b1da30b32d7ab27cf097e1219984d39f9ca02138619c866b3e2",
+          "bytes": 10980
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+          "bytes": 161
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+          "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+          "bytes": 810
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/interfaces/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC721.sol",
+          "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+          "bytes": 154
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+          "sha256": "578834a1bcdac6a22de5e07ae63bbbd4d41615f35950afc6e6c068d92619b334",
+          "bytes": 2502
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+          "sha256": "a7ad38fa0a06fe6e24f81fee4f1fc3870767db96d1ba37df7be1199f7a3ace7f",
+          "bytes": 974
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+          "sha256": "cf407886a0ce7e2af7efe7867e2d2864903426f63eeaa68eecf33d57f7d910c2",
+          "bytes": 611
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+          "bytes": 12845
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+          "bytes": 683
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+          "bytes": 17006
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+          "bytes": 4877
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+          "bytes": 2273
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+          "bytes": 761
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol",
+          "sha256": "995380c950997080660556ba6bc4e3bb37c1323b0539f31d6af40349fb2d7c4c",
+          "bytes": 768
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+          "bytes": 2780
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+          "bytes": 12785
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+          "bytes": 1263
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Libraries/VerusConstants.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Libraries/VerusConstants.sol",
+          "sha256": "b66b94006c77436ac44abdc644f586e1dc6b2dc8e504dd52983964824e13b679",
+          "bytes": 5852
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Libraries/VerusObjects.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Libraries/VerusObjects.sol",
+          "sha256": "fe9556902b9b2c62fc374c5bebdf1825c4d5be296996be8c80b2fd12cb7be837",
+          "bytes": 5142
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Libraries/VerusObjectsCommon.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Libraries/VerusObjectsCommon.sol",
+          "sha256": "68e1db54259735c0bf4a2272b71118027f9ed1ef87b3c152a995247e23c358ab",
+          "bytes": 332
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Libraries/VerusObjectsNotarization.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Libraries/VerusObjectsNotarization.sol",
+          "sha256": "0fb306c8742bc74f0870641e3699558d0165a98882a3402f14048a65c0275d84",
+          "bytes": 3004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/Storage/StorageMaster.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/Storage/StorageMaster.sol",
+          "sha256": "83f513ab29cacb00bfa430fd3e68368337fb336fcb3ccac65d444aeabdd6076c",
+          "bytes": 2282
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/gateway/Verus-Ethereum-Contracts/contracts/VerusBridge/Token.sol",
+          "original_source_path": "Verus-Ethereum-Contracts/contracts/VerusBridge/Token.sol",
+          "sha256": "3f3a8186ea0df13c41a8e570a3dcab590307f203d62decad8a69e9881d065fc9",
+          "bytes": 1715
+        }
+      ],
+      "abi_path": "source-bundles/gateway/abi.json",
+      "response_path": "source-bundles/gateway/source-response.json",
+      "response_sha256": "2adf96cc2377160a1ea4ba2c447dd329190d046a88842f0371a97d7f865b20be",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "notary-blake2b",
+      "kind": "public_original_source",
+      "provider": "Blockscout",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x5951a800712b5f2c448a175e30b428faaea87b1a",
+      "retrieved_at": "2026-10-16T09:17:34.105919+08:00",
+      "address": "0x5951a800712b5f2c448a175e30b428faaea87b1a",
+      "chain_id": "1",
+      "verified_at": "2026-07-23T12:57:56.530300Z",
+      "compiler": {
+        "compilerVersion": "v0.8.9+commit.e5eed63a",
+        "name": "VerusBlake2b"
+      },
+      "explorer_verified": true,
+      "historical_runtime_match_independently_checked": false,
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notary-blake2b/contracts/MMR/VerusBlake2b.sol",
+          "original_source_path": "contracts/MMR/VerusBlake2b.sol",
+          "sha256": "f05c2352c1d7cd4c9bcf09fbcba00792599e62a08a09cdfc63d60fe6a137753c",
+          "bytes": 357
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260723_Verus/source-bundles/notary-blake2b/contracts/MMR/Blake2b.sol",
+          "original_source_path": "contracts/MMR/Blake2b.sol",
+          "sha256": "b3ac2b82298d89770536d847db3920a5e0a9489656277550c10d6f6bee4ccdd3",
+          "bytes": 10265
+        }
+      ],
+      "abi_path": "source-bundles/notary-blake2b/abi.json",
+      "response_path": "source-bundles/notary-blake2b/source-response.json",
+      "response_sha256": "ce8aa2634f52119af36babc4407b923b234a3a731e0aebced0081707899426d9",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/transaction.json",
+      "sha256": "b740ded47325be1791d72823d180b63aaf8fc239742f0b4d35cc8b064a5a3bba",
+      "bytes": 27305,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099",
+      "retrieved_at": "2026-10-16T09:11:00.297792+08:00"
+    },
+    {
+      "path": "evidence/trace.json",
+      "sha256": "541aef67f8900561d2f951223b399af094733152a12beeb1eeb9e7a14a3bb1c4",
+      "bytes": 60696,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099/raw-trace",
+      "retrieved_at": "2026-10-16T09:11:00.300266+08:00"
+    },
+    {
+      "path": "evidence/prep1-trace.json",
+      "sha256": "3f74da80c28a9dbbecb6a74c7dc1953fece90788fe8b53792f925b050eac8bda",
+      "bytes": 22122,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0x8f21bd8f0fce72ac959caa93a9923d85f902dfc6eddac2785ac5bc49c3b28d8f/raw-trace",
+      "retrieved_at": "2026-10-16T09:14:34.129727+08:00"
+    },
+    {
+      "path": "evidence/prep2-trace.json",
+      "sha256": "7c2a8c47d3fd250e1c3b93cdbff85a39a4a571217f2c2d2a4727490b2a26b65a",
+      "bytes": 23146,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0x51b1c8341da4092b7d1e0e4865f7b318de4e96245358b05b2bff2df50adaf0c9/raw-trace",
+      "retrieved_at": "2026-10-16T09:14:34.130851+08:00"
+    },
+    {
+      "path": "evidence/recomputed.json",
+      "sha256": "7d8fb2cedaa473d6178d986b1edc0c97a4980a665fd8886be608b345ec21d381",
+      "bytes": 3102,
+      "kind": "derived_independent_recalculation",
+      "derived_from": "archived transaction/receipt/raw-trace records",
+      "computed_at": "2026-10-16T09:55:56.596656+08:00"
+    },
+    {
+      "path": "evidence/report.html",
+      "sha256": "c7f572e0d8109f1ffbec79797cd8b0baae917972050eafa4c6c9c9b35560354a",
+      "bytes": 119849,
+      "url": "https://www.certik.com/blog/verus-incident-analysis",
+      "retrieved_at": "2026-10-16T09:12:35.637547+08:00"
+    },
+    {
+      "path": "evidence/transfer-parameters.json",
+      "sha256": "f63ce124491339306406efcb35667b6690a06e6dce5879257935b895b7c6f040",
+      "bytes": 6541,
+      "kind": "derived_independent_ABI_and_payment_reconciliation",
+      "derived_from": "evidence/trace.json and evidence/recomputed.json",
+      "script": "../../batches/20261016_x123_y5/verify_transfer_parameters.py"
+    }
+  ],
+  "source_context": [
+    {
+      "kind": "public_original_source_chain_context",
+      "path": "../../../dataset/benchmark_complete/20260723_Verus/source-chain/pbaas.h",
+      "url": "https://raw.githubusercontent.com/VerusCoin/VerusCoin/a10e2fb39e42a7c31d4e447c9e152090a562a57f/src/pbaas/pbaas.h",
+      "commit": "a10e2fb39e42a7c31d4e447c9e152090a562a57f",
+      "sha256": "e57c7f0153cdebbfabb990a50b2042260070bc7d62d8d824cfa845d0784f1d50",
+      "bytes": 68496,
+      "scope": "Original source-chain context; not a standalone C++ build, not verified against the historical notary executable."
+    },
+    {
+      "kind": "public_original_source_chain_context",
+      "path": "../../../dataset/benchmark_complete/20260723_Verus/source-chain/notarization.cpp",
+      "url": "https://raw.githubusercontent.com/VerusCoin/VerusCoin/a10e2fb39e42a7c31d4e447c9e152090a562a57f/src/pbaas/notarization.cpp",
+      "commit": "a10e2fb39e42a7c31d4e447c9e152090a562a57f",
+      "sha256": "84bb3b9973ebbfe8feebe4f189be615bee91159d069cf448bddc689d80185fa0",
+      "bytes": 644657,
+      "scope": "Original source-chain context; not a standalone C++ build, not verified against the historical notary executable."
+    }
+  ]
+}

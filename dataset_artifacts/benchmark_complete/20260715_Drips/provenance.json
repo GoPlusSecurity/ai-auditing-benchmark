@@ -1,0 +1,161 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "implementation",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x8d321e80487356c846f34456d31ce761776ef697?fields=all",
+      "retrieved_at": "2026-10-16T08:48:33.567413+08:00",
+      "address": "0x8d321e80487356c846F34456d31cE761776eF697",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T16:42:44Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.7+commit.e28d00a7",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 10000,
+            "enabled": true
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "DaiDripsHub",
+        "fullyQualifiedName": "DaiDripsHub.sol:DaiDripsHub"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260715_Drips/source-bundles/implementation/DaiDripsHub.sol",
+          "original_source_path": "DaiDripsHub.sol",
+          "sha256": "de1aed34eede28aa102d8d41e6988d9aa7d396c0aaf2e468f66fd8e8ef562af2",
+          "bytes": 92974
+        }
+      ],
+      "abi_path": "source-bundles/implementation/abi.json",
+      "response_path": "source-bundles/implementation/source-response.json",
+      "response_sha256": "e46a72c95c44909762ed0c0d54c4e12f041025856d84de7aa145cc4ff9ea72fe",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "proxy",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x73043143e0a6418cc45d82d4505b096b802fd365?fields=all",
+      "retrieved_at": "2026-10-16T08:48:33.568412+08:00",
+      "address": "0x73043143e0A6418cc45d82D4505B096b802FD365",
+      "chain_id": "1",
+      "verified_at": "2025-06-22T23:21:55Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.7+commit.e28d00a7",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 10000,
+            "enabled": true
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "ManagedDripsHubProxy",
+        "fullyQualifiedName": "ManagedDripsHubProxy.sol:ManagedDripsHubProxy"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260715_Drips/source-bundles/proxy/ManagedDripsHubProxy.sol",
+          "original_source_path": "ManagedDripsHubProxy.sol",
+          "sha256": "2d53e0e3374f1b4a12005d1ee380e0376d07602da2622661f8cc2d75fbc8102e",
+          "bytes": 71922
+        }
+      ],
+      "abi_path": "source-bundles/proxy/abi.json",
+      "response_path": "source-bundles/proxy/source-response.json",
+      "response_sha256": "12cc5ddb2c851541657217d221cccdf986ba09bd3e809e8a0f1d73430ce080a3",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "reserve",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a?fields=all",
+      "retrieved_at": "2026-10-16T08:48:33.569412+08:00",
+      "address": "0xF9BBb2dF44cfe46e501cf91c99B2f8FeF9D9d44A",
+      "chain_id": "1",
+      "verified_at": "2025-07-05T02:09:22Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.7+commit.e28d00a7",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 10000,
+            "enabled": true
+          }
+        },
+        "name": "DaiReserve",
+        "fullyQualifiedName": "DaiReserve.sol:DaiReserve"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260715_Drips/source-bundles/reserve/DaiReserve.sol",
+          "original_source_path": "DaiReserve.sol",
+          "sha256": "8aad7869172e1be19e1ab2bb80e059150e9d05bb282afd6cebe860efb4318318",
+          "bytes": 9052
+        }
+      ],
+      "abi_path": "source-bundles/reserve/abi.json",
+      "response_path": "source-bundles/reserve/source-response.json",
+      "response_sha256": "090a14ff9d399e0c4fd07f458db1b94f1f4108a50d3d8647b5b083f963bd7573",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/transaction.json",
+      "sha256": "ab44359abf61f241476455a8fd99849234007141648ed7c5ac96d9e89f76bd65",
+      "bytes": 6475,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130",
+      "retrieved_at": "2026-10-16T08:48:33.570412+08:00"
+    },
+    {
+      "path": "evidence/raw-trace.json",
+      "sha256": "594c79a57d67cb918b38464f052fa6cedb2e035411a7fb709b12c711897cc119",
+      "bytes": 3952,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130/raw-trace",
+      "retrieved_at": "2026-10-16T08:53:45.314581+08:00"
+    },
+    {
+      "path": "evidence/recomputed.json",
+      "sha256": "107536e40e3c3dfd1d31b536258f7eda6e97f2ae67ee741588837cb6a4852f23",
+      "bytes": 626,
+      "kind": "derived_independent_recalculation",
+      "derived_from": "archived transaction/receipt/raw-trace records",
+      "computed_at": "2026-10-16T09:55:56.596656+08:00"
+    },
+    {
+      "path": "evidence/report.html",
+      "sha256": "574cb9918fe512ff4d00b1c5159cadb44c94df1ab07155a5359fbec255acb442",
+      "bytes": 177724,
+      "url": "https://blog.verichains.io/p/drips-network-when-giving-became",
+      "retrieved_at": "2026-10-16T08:48:33.570412+08:00"
+    }
+  ],
+  "source_context": []
+}

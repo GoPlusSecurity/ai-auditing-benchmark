@@ -43,7 +43,7 @@ The deterministic decoder follows the Cairo v2.2.0 serialization reference: [fel
 - Known Keccak empty-input and `abc` vectors passed. Recomputing the target class hash provides an independent expected result for the complete serialized input.
 - All 42 ABI entry points match their selector hashes. Every local branch remains inside its original function.
 
-[recovery.json](evidence/recovery.json) records exact counts, version words, selected functions, original function ranges and their internal call graph. [mySwap.sierra](onchain/mySwap.sierra) is the complete decoded standard Sierra text. [entry-points.json](onchain/entry-points.json) and [abi.json](../../../dataset/benchmark_complete/20260619_mySwap/onchain/abi.json) provide readable entry and type definitions. [Recovery script](recovery/restore.py) can verify or reproduce the output; see its [usage](recovery/README.md).
+[recovery.json](evidence/recovery.json) records exact counts, version words, selected functions, original function ranges and their internal call graph. [mySwap.sierra](onchain/mySwap.sierra) is the complete decoded standard Sierra text. [entry-points.json](onchain/entry-points.json) and [abi.json](onchain/abi.json) provide readable entry and type definitions. [Recovery script](recovery/restore.py) can verify or reproduce the output; see its [usage](recovery/README.md).
 
 ## Attack evidence and located code path
 

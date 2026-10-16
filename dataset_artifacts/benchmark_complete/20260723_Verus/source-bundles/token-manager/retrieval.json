@@ -1,0 +1,10 @@
+{
+  "file": "verus/0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a?fields=all",
+  "retrieved_at": "2026-10-16T09:12:31.615986+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 909436,
+  "sha256": "8fcd41a15d2fad6824d3837d582be6c656670bd7915dd2f18c971fc4272c7de7"
+}

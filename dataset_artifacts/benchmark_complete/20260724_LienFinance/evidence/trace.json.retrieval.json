@@ -1,0 +1,10 @@
+{
+  "file": "lien/trace.json",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7/raw-trace",
+  "retrieved_at": "2026-10-16T09:12:38.429684+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7/raw-trace",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 71855,
+  "sha256": "da32c4154e32a3d89d357a17ff4702882ddb7b6f13c7d379505917477d06de1d"
+}

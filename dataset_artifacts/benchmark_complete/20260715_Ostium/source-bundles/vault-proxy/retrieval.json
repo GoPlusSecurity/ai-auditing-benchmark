@@ -1,0 +1,10 @@
+{
+  "file": "ostium/callback-context-info.json",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x20d419a8e12c45f88fda7c5760bb6923cee27f98?fields=all",
+  "retrieved_at": "2026-10-16T09:17:34.105919+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0x20d419a8e12c45f88fda7c5760bb6923cee27f98?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 174252,
+  "sha256": "e117476c71286c724b6ca14bc90f262f192eb10f4a13154b18c6389023224d7f"
+}

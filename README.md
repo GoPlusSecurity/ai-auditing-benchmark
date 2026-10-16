@@ -11,7 +11,7 @@ A benchmark dataset for **AI smart-contract auditing**. It curates and extracts 
 
 ## Directory structure
 
-Audit code and `abi.json` files live under `dataset/`; other supporting material lives under the matching `dataset_artifacts/` tree. Both are organized by incident. Each incident directory name follows: `{IncidentDateYYYYMMDD}_{ProjectOrProtocolSlug}` (date first, to make sorting and searching easier).
+Only source code lives under `dataset/`; ABI and all other supporting material live under the matching `dataset_artifacts/` tree. Both are organized by incident. Each incident directory name follows: `{IncidentDateYYYYMMDD}_{ProjectOrProtocolSlug}` (date first, to make sorting and searching easier).
 
 ```
 dataset/
@@ -23,7 +23,7 @@ dataset_artifacts/
 └── benchmark_simplified/  # Matching metadata, slice manifests, evidence and checksums
 ```
 
-`dataset/` contains `.sol`, `.rs`, `.cairo`, `.pan` and `.ts` code, including decompiled code and archived project test source. Every file named `abi.json` also stays with its case under `dataset/`. Other supporting files formerly at `dataset/{view}/{case}/{path}` are now at `dataset_artifacts/{view}/{case}/{path}`. Source paths and bytes are unchanged. Build manifests, lockfiles, recovery tools and compiler inputs are in the artifacts tree; combine the matching trees in a temporary directory when a build needs the original snapshot layout.
+`dataset/` contains `.sol`, `.rs`, `.cairo`, `.pan`, `.ts`, `.cpp` and `.h` source, including previously archived decompiled code, project test source and necessary source-chain context. ABI files live at the corresponding paths under `dataset_artifacts/`. Other supporting files formerly at `dataset/{view}/{case}/{path}` are now at `dataset_artifacts/{view}/{case}/{path}`. Source paths and bytes are unchanged. Build manifests, lockfiles, recovery tools and compiler inputs are in the artifacts tree; combine the matching trees in a temporary directory when a build needs the original snapshot layout.
 
 Case-relative metadata paths, including `complete_case_root` and `simplified_case_root`, now use the corresponding artifacts case directory. Source references explicitly cross to `../../../dataset/{view}/{case}/...`; repository-root-relative paths retain their existing meaning. Each `SHA256SUMS` in the artifacts tree covers both that case's supporting files and its source files.
 
@@ -43,7 +43,7 @@ Case-relative metadata paths, including `complete_case_root` and `simplified_cas
 
 ## Incident index (CSV)
 
-The CSV in the repository root lists **all indexed incidents**, including cases with supporting evidence but no source code, and should be treated as the authoritative source of metadata. After the 2026-10-02 layout migration, each CSV retains 52 incidents and each source view contains 51 cases. JaredFromSubway has runtime bytecode and evidence only, stored entirely in `dataset_artifacts/`.
+The CSV in the repository root lists **all indexed incidents**, including cases with supporting evidence but no source code, and should be treated as the authoritative source of metadata. After the 2026-10-16 batch, each CSV has 57 incidents and each source view has 56 cases. See the [case-document index](docs/cases/README.md) and [row dispositions](dataset_artifacts/batches/20261016_x123_y5/results.json) for the latest batch. JaredFromSubway has runtime bytecode and evidence only, stored entirely in `dataset_artifacts/`.
 
 - Chinese: [`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - English: [`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)

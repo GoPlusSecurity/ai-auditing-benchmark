@@ -1,0 +1,505 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "AlreadyForwarder",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "AlreadyInitiated",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "InvalidInitialization",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "InvalidPrice",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "NotContract",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "NotForwarder",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "NotGov",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "NotInitializing",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "NotInitiated",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "NotRouter",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "NotTimelock",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "a",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "bits",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "value",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "WrongParams",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ForwarderAdded",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "newAddr",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "ForwarderRemoved",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "newAddr",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Initialized",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "version",
+        "type": "uint64",
+        "indexed": false,
+        "internalType": "uint64"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "MaxOrderAgeSecondsUpdated",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "newValue",
+        "type": "uint16",
+        "indexed": false,
+        "internalType": "uint16"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "PendingSlOrderUnregistered",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "PriceReceived",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "pairIndex",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "price",
+        "type": "int192",
+        "indexed": false,
+        "internalType": "int192"
+      },
+      {
+        "name": "nativeFee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "PriceRequested",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "feed",
+        "type": "bytes32",
+        "indexed": false,
+        "internalType": "bytes32"
+      },
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "PriceRequestedV2",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "orderType",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "enum IOstiumPriceUpKeep.OrderType"
+      },
+      {
+        "name": "feed",
+        "type": "bytes32",
+        "indexed": false,
+        "internalType": "bytes32"
+      },
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "getPrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "pairIndex",
+        "type": "uint16",
+        "internalType": "uint16"
+      },
+      {
+        "name": "orderType",
+        "type": "uint8",
+        "internalType": "enum IOstiumPriceUpKeep.OrderType"
+      },
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "initialize",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_registry",
+        "type": "address",
+        "internalType": "contract IOstiumRegistry"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "initializeV2",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_maxOrderAgeSeconds",
+        "type": "uint16",
+        "internalType": "uint16"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "isForwarder",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "maxOrderAgeSeconds",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint16",
+        "internalType": "uint16"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "orders",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "orderId",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "pairIndex",
+        "type": "uint16",
+        "internalType": "uint16"
+      },
+      {
+        "name": "orderType",
+        "type": "uint8",
+        "internalType": "enum IOstiumPriceUpKeep.OrderType"
+      },
+      {
+        "name": "initiated",
+        "type": "bool",
+        "internalType": "bool"
+      },
+      {
+        "name": "feedId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "performUpkeep",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "performData",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "registerForwarder",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "forwarderAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "registerForwarders",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "forwarderAddresses",
+        "type": "address[]",
+        "internalType": "address[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "registry",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IOstiumRegistry"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "setMaxOrderAgeSeconds",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_maxOrderAgeSeconds",
+        "type": "uint16",
+        "internalType": "uint16"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "unregisterForwarder",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "forwarderAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "unregisterForwarders",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "forwarderAddresses",
+        "type": "address[]",
+        "internalType": "address[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

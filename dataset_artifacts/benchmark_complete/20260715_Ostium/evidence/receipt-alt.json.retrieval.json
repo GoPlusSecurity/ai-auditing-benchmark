@@ -1,0 +1,18 @@
+{
+  "file": "ostium/receipt-alt.json",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 24,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:55:04.028250+08:00",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "bytes": 30577,
+  "sha256": "c46cab3c881247fb6ff53c42941937946b15335cad70591701be87890776209c"
+}

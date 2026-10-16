@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "command": "python -X utf8 -B -m unittest test_20261002_batch test_20261016_batch -v",
+  "working_directory": "docs/cases/sources",
+  "tests_run": 33,
+  "failures": 0,
+  "errors": 0,
+  "observed_duration_seconds": 13.829,
+  "execution_boundary": "Local file validation, pure integer/decimal arithmetic and archived ABI decoding only. No archived Solidity, exploit, live transaction or fork replay executed by this suite.",
+  "red_green_checks": [
+    "ABI-in-dataset fixture failed to reject ABI before source-only policy change, passed after moving ABI to artifacts and rejecting source-tree ABI.",
+    "Whole-tree source-only check initially rejected the four new original C++ header/source files and their slices; allowed original .cpp/.h source extensions and passed.",
+    "Three causal coverage checks observed failing on missing Ostium payment formula, missing Verus transfer parsing and missing actual serializer source binding; all passed after repair."
+  ],
+  "review_fix_status": "Both Important findings repaired in one fix pass. Diagram inference label and Lien output-group wording also corrected; no deferred findings.",
+  "line_ending_check": "git -c core.whitespace=cr-at-eol diff --check passed. CRLF in appended CSV records and existing companion Markdown is intentional; old CSV prefix bytes were not reformatted."
+}

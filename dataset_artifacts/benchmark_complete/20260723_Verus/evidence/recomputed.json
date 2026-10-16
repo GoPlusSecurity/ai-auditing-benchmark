@@ -1,0 +1,93 @@
+{
+  "ERC20_transfers": [
+    {
+      "symbol": "TBTC",
+      "token": "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "71504591500000000000",
+      "decimals": 18,
+      "amount": "71.5045915"
+    },
+    {
+      "symbol": "DAI",
+      "token": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "220357027072980000000001",
+      "decimals": 18,
+      "amount": "220357.027072980000000001"
+    },
+    {
+      "symbol": "MKR",
+      "token": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "59429543840000000000",
+      "decimals": 18,
+      "amount": "59.42954384"
+    },
+    {
+      "symbol": "USDC",
+      "token": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "149275074098",
+      "decimals": 6,
+      "amount": "149275.074098"
+    },
+    {
+      "symbol": "USDT",
+      "token": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "78300537681",
+      "decimals": 6,
+      "amount": "78300.537681"
+    },
+    {
+      "symbol": "EURC",
+      "token": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "31475664323",
+      "decimals": 6,
+      "amount": "31475.664323"
+    },
+    {
+      "symbol": "SCRVUSD",
+      "token": "0x0655977FEb2f289A4aB78af67BAB0d17aAb84367",
+      "from": "0x71518580f36FeCEFfE0721F06bA4703218cD7F63",
+      "to": "0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54",
+      "raw": "92784360277250000000000",
+      "decimals": 18,
+      "amount": "92784.36027725"
+    }
+  ],
+  "native_ETH_calls": [
+    {
+      "from": "0x71518580f36feceffe0721f06ba4703218cd7f63",
+      "to": "0xcfd0a20703cd11e0b9f665e1c3f1ef989c142d54",
+      "wei": "1137452815840000000000",
+      "ETH": "1137.45281584",
+      "trace_address": [
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "proof_and_payout_delegatecalls": [
+    "0x27c76df6912698e6d4c55aaa87cf88c30db90cf7",
+    "0x54e03a1682fd0bb065b669f6296f97028dcfd4ce",
+    "0xdd5cfb77a89a5fb082fa08fd1cac1d7857bb5752",
+    "0xf25b678b730fb1a565c426e29b599ad154cd9ba0",
+    "0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a",
+    "0x780a7a645fb43c9b0e0a1421854c6407237133f6",
+    "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+    "0xd8063123bba3b480569244ae66bfe72b6c84b00d"
+  ],
+  "full_internal_trace_obtained": true,
+  "USD_valuation_independently_verified": false,
+  "trace_calls": 55
+}

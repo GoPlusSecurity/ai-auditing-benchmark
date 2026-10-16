@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-16T10:03:51.878003+08:00",
+  "parameters": {
+    "x": 123,
+    "y": 5
+  },
+  "actual_scan_range": [
+    106,
+    123
+  ],
+  "counts": {
+    "scanned_rows": 18,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 13
+  },
+  "case_ids": [
+    "20260715_Drips",
+    "20260715_Ostium",
+    "20260717_CrowdRingCircle",
+    "20260723_Verus",
+    "20260724_LienFinance"
+  ],
+  "raw_export_sha256": "d62e6e56755ab3c678bb9645eb0e0fa3a5aae6bf378f0b582a49814cab480c30",
+  "checks": {
+    "snapshot_rows_compared": 18,
+    "original_source_bundles": 24,
+    "original_source_files_compared_to_raw_responses": 407,
+    "standard_input_source_entries_compared": 376,
+    "exact_continuous_slices_compared": 160,
+    "evidence_hashes_checked": 23,
+    "bilingual_appended_records_checked": 10,
+    "abi_files_moved_without_byte_changes": 37,
+    "pre_existing_source_files_unchanged": 1911,
+    "unchanged_baseline_files": 2432,
+    "changed_baseline_files_within_allowlist": [
+      "README.md",
+      "README_cn.md",
+      "ai-auditing-benchmark_cn.csv",
+      "ai-auditing-benchmark_en.csv",
+      "dataset_artifacts/benchmark_complete/20260619_mySwap/SHA256SUMS",
+      "dataset_artifacts/benchmark_complete/20260619_mySwap/SOURCE.md",
+      "dataset_artifacts/benchmark_complete/20260625_DLMC/SHA256SUMS",
+      "dataset_artifacts/benchmark_complete/20260709_BFB/SHA256SUMS",
+      "dataset_artifacts/benchmark_complete/20260713_Lumi_Sodium/SHA256SUMS",
+      "dataset_artifacts/benchmark_complete/20260713_PHX/SHA256SUMS",
+      "dataset_artifacts/benchmark_complete/20260714_VECAndETH/SHA256SUMS",
+      "dataset_artifacts/benchmark_simplified/20260619_mySwap/SHA256SUMS",
+      "dataset_artifacts/benchmark_simplified/20260625_DLMC/SHA256SUMS",
+      "docs/cases/20260619_mySwap.md",
+      "docs/cases/README.md",
+      "docs/cases/sources/test_20261002_batch.py",
+      "docs/cases/sources/validate_20261002_batch.py"
+    ],
+    "new_paths_checked_against_batch_scope": 905,
+    "case_local_links_checked": 112,
+    "offline_recalculation": {
+      "status": "passed",
+      "independent_recomputations_compared": 5,
+      "cases": [
+        "20260715_Drips",
+        "20260715_Ostium",
+        "20260717_CrowdRingCircle",
+        "20260723_Verus",
+        "20260724_LienFinance"
+      ],
+      "verus_transfer_parameters": {
+        "status": "passed",
+        "decoded_transfers": 8,
+        "input_and_output_recipient_amounts_checked": true
+      },
+      "semantic_source_elements_checked": 52
+    }
+  },
+  "whole_archive_layout_checks": {
+    "source_files": 2481,
+    "abi_files": 61,
+    "dataset_files": 2481,
+    "checksum_manifests": 34,
+    "checksum_entries": 1531,
+    "local_markdown_links_checked": 740,
+    "json_file_references_checked": 1602,
+    "source_hash_records_checked": 1430,
+    "original_explorer_source_names_checked": 26,
+    "exact_slices_compared": 262,
+    "preserved_historical_source_hash_differences": [
+      {
+        "document": "dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "a5cf43d6e4de390fb53b5518a6d940eb0f5cd9b9cd40c260a2f0b5789c4d535a"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "f9740a9757af1210386a112848d2879e8207f433101ce6224c5ab79381620bef"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol",
+        "recorded_sha256": "230e555ddd9e2cba2107c2b622edc75e7e384b3f0cab72179599835ee1acc738",
+        "current_sha256": "4c75d04c90ca4e642d30dead0ef96cd407650b72702cb48092a9273193af1ac8"
+      }
+    ]
+  },
+  "not_claimed": {
+    "included_case_compilation": "not run",
+    "fork_replay": "not run",
+    "complete_pre_attack_state": "not reconstructed",
+    "full_internal_traces": "Drips, Verus and Lien only; Ostium calldata/receipt and CRC receipt independently checked",
+    "source_chain_notarizations": "not independently re-read from Verus RPC"
+  },
+  "screening_compilation_only": "42DAO upstream Spotter compiled with solc 0.5.12 and compared to current target excluding CBOR metadata; skipped case, not attack-time equality or included-case replay."
+}

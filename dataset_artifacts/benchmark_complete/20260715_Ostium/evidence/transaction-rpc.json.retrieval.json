@@ -1,0 +1,18 @@
+{
+  "file": "ostium/transaction-rpc.json",
+  "url": "https://arbitrum-one-rpc.publicnode.com",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 13,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:53:45.314581+08:00",
+  "status": 200,
+  "final_url": "https://arbitrum-one-rpc.publicnode.com",
+  "content_type": "application/json",
+  "bytes": 5906,
+  "sha256": "02e6adeb93fb904e5fdad95dd038e88c0cf6d6616bf72a3bd81a4a0b5bda4480"
+}

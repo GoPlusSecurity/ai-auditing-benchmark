@@ -1,0 +1,6 @@
+{
+  "optimizer": {
+    "runs": 10000,
+    "enabled": true
+  }
+}

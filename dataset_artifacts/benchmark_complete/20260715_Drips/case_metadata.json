@@ -1,0 +1,41 @@
+{
+  "case_id": "20260715_Drips",
+  "event_date": "2026-07-15",
+  "project_cn": "Drips Network（旧版 DaiDripsHub）",
+  "project_en": "Drips Network (legacy DaiDripsHub)",
+  "vulnerability_cn": "整数类型转换错误导致付款方向反转",
+  "vulnerability_en": "Unsafe unsigned-to-signed conversion reverses payment direction",
+  "detail_cn": "give 将用户给出的 uint128 金额直接转成 int128 再取负数。历史调用传入 2^128-B，使 _transfer 收到正数 B，走储备提款而非用户入金分支；储备、Hub、攻击合约、攻击者之间的三笔 DAI 转账均为 24,882.995421947667857715 DAI。源码与历史 delegatecall 目标已对应；未独立重建攻击前全部状态，未重放。源表日期为 7 月 15 日，Ethereum 交易时间为 7 月 14 日 UTC；Polygon 参考交易尚未独立核查。",
+  "detail_en": "give casts the caller-controlled uint128 amount to int128 and negates it without a range check. Historical calldata used 2^128-B, so _transfer received positive B and withdrew from the reserve instead of collecting a deposit. Three DAI transfers link reserve, Hub, attack contract and attacker for 24,882.995421947667857715 DAI. Public source is tied to the historical delegatecall target; complete pre-attack state and replay remain unverified. The sheet date is July 15, while the Ethereum transaction is July 14 UTC; the Polygon reference transaction was not independently checked.",
+  "tx_urls": [
+    "https://etherscan.io/tx/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x73043143e0a6418cc45d82d4505b096b802fd365#code",
+    "https://etherscan.io/address/0x8d321e80487356c846f34456d31ce761776ef697#code",
+    "https://etherscan.io/address/0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a#code"
+  ],
+  "loss_usd": "24883",
+  "loss_scope": "Source-sheet reported approximate USD loss; raw DAI transfers are recorded separately.",
+  "source_status": "public_original_source_historical_limits_explicit",
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "original_rows": [
+    123
+  ],
+  "source_sheet_snapshot": "../../batches/20261016_x123_y5/snapshot.json",
+  "batch_results": "../../batches/20261016_x123_y5/results.json",
+  "case_document": "../../../docs/cases/20260715_Drips.md",
+  "verification_status": {
+    "original_source": "acquired_and_hashed",
+    "historical_call_targets": "observed_in_full_trace",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": true,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run"
+  },
+  "view": "benchmark_complete",
+  "source_provenance": "provenance.json"
+}

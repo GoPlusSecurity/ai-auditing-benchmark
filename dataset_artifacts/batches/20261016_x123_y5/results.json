@@ -1,0 +1,323 @@
+{
+  "parameters": {
+    "x": 123,
+    "y": 5,
+    "actual_scan_range": [
+      106,
+      123
+    ],
+    "processing_order": [
+      123,
+      122,
+      121,
+      120,
+      119,
+      118,
+      117,
+      116,
+      115,
+      114,
+      113,
+      112,
+      111,
+      110,
+      109,
+      108,
+      107,
+      106
+    ],
+    "selected_source_rows": [
+      123,
+      121,
+      117,
+      107,
+      106
+    ],
+    "snapshot": "snapshot.json",
+    "raw_export": "sheet_gid0_raw.csv",
+    "raw_export_sha256": "d62e6e56755ab3c678bb9645eb0e0fa3a5aae6bf378f0b582a49814cab480c30",
+    "retrieved_at": "2026-10-16T08:44:48.421628+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "counts": {
+    "scanned_rows": 18,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 13
+  },
+  "rows": [
+    {
+      "row": 123,
+      "sheet_event": "@dripsnetwork",
+      "event": "Drips Network (legacy DaiDripsHub)",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260715_Drips",
+      "source_qualification": "Public original vulnerable source acquired from Sourcify/explorer, with explicit historical-deployment limits. Core source does not require decompilation.",
+      "reason": "give 将用户给出的 uint128 金额直接转成 int128 再取负数。历史调用传入 2^128-B，使 _transfer 收到正数 B，走储备提款而非用户入金分支；储备、Hub、攻击合约、攻击者之间的三笔 DAI 转账均为 24,882.995421947667857715 DAI。源码与历史 delegatecall 目标已对应；未独立重建攻击前全部状态，未重放。源表日期为 7 月 15 日，Ethereum 交易时间为 7 月 14 日 UTC；Polygon 参考交易尚未独立核查。",
+      "references": [
+        "https://x.com/SlowMist_Team/status/2077232524955423144"
+      ]
+    },
+    {
+      "row": 122,
+      "sheet_event": "BarnBridge SMART Yield 协议",
+      "event": "BarnBridge",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "governance_capture",
+      "reason": "废弃治理系统被恶意提案接管并升级；未确立原合约代码缺陷。lost=776000 与 lost_u=77600000 相差 100 倍，不用来生成金额。",
+      "references": [
+        "https://x.com/Phalcon_xyz/status/2077243530280587721"
+      ]
+    },
+    {
+      "row": 121,
+      "sheet_event": "@Ostium",
+      "event": "Ostium (future-dated price-report path)",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260715_Ostium",
+      "source_qualification": "Public original vulnerable source acquired from Sourcify/explorer, with explicit historical-deployment limits. Core source does not require decompilation.",
+      "reason": "performUpkeep 检查订单年龄和报价不得早于订单，却不拒绝未来报价。代表交易批量提交同一时间戳 2000000000 的 5,000 和 60,000 报价，制造平仓收益；回执复算 oLP 净流出 1,078,403.5804 USDC、交易者净流入 1,078,319.4804 USDC。利用仍需要有效受信签名和已授权 forwarder，普通调用者不能任意伪造报价。源码已取得，但完整内部跟踪、历史权限映射及全部代理实现未独立核实；未重放。源表整体损失与描述、披露口径不一，金额留空。",
+      "references": [
+        "https://x.com/blockaid_/status/2077405527428989363?s=46"
+      ]
+    },
+    {
+      "row": 120,
+      "sheet_event": "@cascade_xyz",
+      "event": "Cascade",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "vulnerable_source_not_obtained",
+      "reason": "已披露 CLS 流动性策略损失；本批未取得与具体缺陷、历史受害模块对应的原始源码，不能仅凭策略亏损或报道收录。",
+      "references": [
+        "https://x.com/louisdives/status/2077573453813846427"
+      ]
+    },
+    {
+      "row": 119,
+      "sheet_event": "@DeFiTuna",
+      "event": "DeFiTuna",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "onchain_original_source_not_obtained",
+      "reason": "官方 tuna-sdk 固定提交 6a0e6b80b089e86cf4f59391ea7e10ee983c483e 中有客户端 is_healthy 计算，但 programs/tuna 仅有 package.json；未取得链上借款入口原始实现，SDK 镜像不能替代漏洞程序。",
+      "references": [
+        "https://x.com/DeFiTuna/status/2077772502521053668?s=20"
+      ]
+    },
+    {
+      "row": 118,
+      "sheet_event": "#FCOW on #BSC",
+      "event": "FCOW",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "original_vulnerable_source_not_obtained",
+      "reason": "公开跟踪分析指出 FCOW 受害代币未验证，本批未取得其公开原始漏洞源码；反编译或字节码不能单独使整起事件符合源码门槛。",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2077923223216566378"
+      ]
+    },
+    {
+      "row": 117,
+      "sheet_event": "#众环CRC (CrowdRingCircle) on #BSC",
+      "event": "CrowdRingCircle (CRC)",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260717_CrowdRingCircle",
+      "source_qualification": "Public original vulnerable source acquired from Sourcify/explorer, with explicit historical-deployment limits. Core source does not require decompilation.",
+      "reason": "CRC 的卖出分支先收手续费，再烧毁 pair 已有 CRC 并 sync，最后才记入卖方转来的净额。历史回执显示 40,629.6 CRC 被烧毁，同步时池内仅余 0.0000000001 CRC，随后入账的本金使真实余额高于缓存储备，支持大额 USDT 输出。实际原始交易复算 pair 净流出 209,061.632267871026055744 USDT，EOA 净流入 201,359.472267252045095696 USDT；源表约 201,400 美元单列。未把第三方复现数字当成原始交易，未取得完整内部跟踪或独立复现。源表为 7 月 17 日，交易为 7 月 16 日 UTC。",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2077925916228120766"
+      ]
+    },
+    {
+      "row": 116,
+      "sheet_event": "@AcrossProtocol",
+      "event": "Across Solana",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "offchain_relayer",
+      "reason": "公开技术分析将问题定位在链下中继对事件鉴别符的解析，未确立受害链上合约代码缺陷。",
+      "references": [
+        "https://x.com/AcrossProtocol/status/2078036118209982566"
+      ]
+    },
+    {
+      "row": 115,
+      "sheet_event": "0xE6F3D501eB6730C75965CdF523377470C1b23408",
+      "event": "USDT approval phishing",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "not_contract_code_defect",
+      "reason": "源表为恶意 Approve 授权钓鱼；未确立受害合约代码漏洞。",
+      "references": [
+        "https://x.com/GoPlusZH/status/2078771774544908516"
+      ]
+    },
+    {
+      "row": 114,
+      "sheet_event": "@Allbridge_io",
+      "event": "Allbridge Core Solana",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "original_vulnerable_source_not_obtained",
+      "reason": "官方仓库核查取得 EVM/Soroban、Classic 或 SDK 资料，未取得本次 Solana Core 池的原始漏洞实现；不使用其他链正常代码代替。",
+      "references": [
+        "https://x.com/Allbridge_io/status/2078932561036722319"
+      ]
+    },
+    {
+      "row": 113,
+      "sheet_event": "#RWT on #BSC",
+      "event": "RWT",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "essential_browser_decompilation_unavailable",
+      "reason": "RWT 原始代币源码已取得，但持有 burn 权限的 0x8812...9f90 卖币合约没有原始源码；公开浏览器反编译请求未返回可用输出。按用户补充跳过，不以行为跟踪代替关键卖币逻辑。",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2079016942556594337"
+      ]
+    },
+    {
+      "row": 112,
+      "sheet_event": "TeleSwap",
+      "event": "TeleSwap",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "private_key_or_unconfirmed_contract_defect",
+      "reason": "源表指向 Bitcoin 热钱包异常流出/疑似跨链私钥泄漏；未确立有原始源码的合约代码缺陷。",
+      "references": [
+        "https://t.me/investigations/356"
+      ]
+    },
+    {
+      "row": 111,
+      "sheet_event": "@wanchain_org",
+      "event": "Wanchain Cardano",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "original_vulnerable_source_not_obtained",
+      "reason": "已披露 Cardano 桥签名消息/编码问题；本批未取得能够对应漏洞版本的公开 Plutus 原始实现，不以已编译脚本或其他链源码替代。",
+      "references": [
+        "https://x.com/wanchain_org/status/2079444149066244340"
+      ]
+    },
+    {
+      "row": 110,
+      "sheet_event": "#GemJoin #42DAO \n@42dao_official\n on #BSC",
+      "event": "42DAO / GemJoin",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "essential_browser_decompilation_unavailable",
+      "reason": "已取得 Vat、出入金原始源码；上游 Maker Spotter 原文经 solc 0.5.12 编译，与当前目标执行代码去除 CBOR 元数据后相同。但关键 Median/OSM 的漏洞版本原始源码及浏览器反编译未取得，按用户补充跳过。不能把这次高价超借写成低价清算。",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2079736611605274771"
+      ]
+    },
+    {
+      "row": 109,
+      "sheet_event": "@BSquaredNetwork",
+      "event": "B2 Network",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "private_key_compromise",
+      "reason": "源表与披露归因于私钥泄漏，未确立对应原始源码中的合约代码缺陷。",
+      "references": [
+        "https://x.com/SpecterAnalyst/status/2079997330393010338?s=20"
+      ]
+    },
+    {
+      "row": 108,
+      "sheet_event": "@AFX_XYZ",
+      "event": "AFX bridge",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "source_qualification": "private_key_compromise",
+      "reason": "源表与披露归因于桥验证/签名密钥泄漏，未确立对应原始源码中的合约代码缺陷。",
+      "references": [
+        "https://x.com/AFX_XYZ/status/2080126901205770734"
+      ]
+    },
+    {
+      "row": 107,
+      "sheet_event": "@VerusCoin",
+      "event": "Verus Ethereum Bridge (July duplicate-root overwrite)",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260723_Verus",
+      "source_qualification": "Public original vulnerable source acquired from Sourcify/explorer, with explicit historical-deployment limits. Core source does not require decompilation.",
+      "reason": "同一组带签名的公证字节，在 Verus 的 map.insert 中保留首个 systemID 根，在 Ethereum 反序列化循环中由后续同 ID 根覆盖。受污染的可信根让伪造导入证明通过，SubmitImports 随后委托 TokenManager 释放真实 ETH 和代币。已归档两笔历史公证调用及主攻击完整跟踪，并对应公开原始模块源码；源链各笔公证字节未独立从 Verus RPC 重读，源码和历史状态等价性未全面核实，未重放。源表约 760 万美元与其他披露估值不统一，金额留空，逐币数量另记。",
+      "references": [
+        "https://x.com/Phalcon_xyz/status/2080157648096559110"
+      ]
+    },
+    {
+      "row": 106,
+      "sheet_event": "@LienFinance",
+      "event": "Lien Finance (equivalent-bond exchange)",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260724_LienFinance",
+      "source_qualification": "Public original vulnerable source acquired from Sourcify/explorer, with explicit historical-deployment limits. Core source does not require decompilation.",
+      "reason": "exchangeEquivalentBonds 对例外债券只累计匹配次数，不能保证每个 bondID 在输入、输出各出现正确次数。攻击交易在两套独立 BondMaker 部署登记输出组，重复列出属于例外列表的 bondID；例外列表本身没有重复。合约跳过输入销毁却铸造新债券，再通过三个 OTC 付款端点卖出。完整跟踪和转账复算显示，持有 USDC 的已授权流动性提供者钱包共向攻击合约支付 532,070.026484、74.602120、10,000 USDC，攻击者最终收到 542,144.628604 USDC。两套 BondMaker 不是代理与实现关系；未重放。CSV 保留源表约 542,000 美元口径。",
+      "references": [
+        "https://x.com/exvulsec/status/2080533373186109705?s=20"
+      ]
+    }
+  ],
+  "included_cases": [
+    {
+      "case_id": "20260715_Drips",
+      "source_rows": [
+        123
+      ]
+    },
+    {
+      "case_id": "20260715_Ostium",
+      "source_rows": [
+        121
+      ]
+    },
+    {
+      "case_id": "20260717_CrowdRingCircle",
+      "source_rows": [
+        117
+      ]
+    },
+    {
+      "case_id": "20260723_Verus",
+      "source_rows": [
+        107
+      ]
+    },
+    {
+      "case_id": "20260724_LienFinance",
+      "source_rows": [
+        106
+      ]
+    }
+  ],
+  "user_overrides": [
+    "dataset contains source code only; all ABI and companion files belong in dataset_artifacts",
+    "If essential missing chain logic needs decompilation and public browser output cannot be obtained, skip that row and continue upward"
+  ],
+  "verification_boundary": "No included case was compiled or fork-replayed. Only Drips, Verus and Lien have archived full internal traces; Ostium calldata and receipts and CRC receipts were independently checked. A local compilation comparison for skipped 42DAO is recorded only as screening evidence."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "verus/gateway-blockscout.json",
+  "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x71518580f36feceffe0721f06ba4703218cd7f63",
+  "retrieved_at": "2026-10-16T09:14:34.111009+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/smart-contracts/0x71518580f36feceffe0721f06ba4703218cd7f63",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 261178,
+  "sha256": "2adf96cc2377160a1ea4ba2c447dd329190d046a88842f0371a97d7f865b20be"
+}

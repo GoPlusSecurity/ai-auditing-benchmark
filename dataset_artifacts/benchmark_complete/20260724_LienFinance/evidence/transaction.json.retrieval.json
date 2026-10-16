@@ -1,0 +1,10 @@
+{
+  "file": "lien/transaction.json",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7",
+  "retrieved_at": "2026-10-16T09:11:00.298999+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 15926,
+  "sha256": "74d6598a2e9babb46040f64515cac6597ee877d0d7be6cdc9416a466cdf52d22"
+}

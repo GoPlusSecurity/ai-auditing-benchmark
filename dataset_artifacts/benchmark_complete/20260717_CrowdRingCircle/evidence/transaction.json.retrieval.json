@@ -1,0 +1,18 @@
+{
+  "file": "crc/transaction.json",
+  "url": "https://bsc-rpc.publicnode.com",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:51:47.927613+08:00",
+  "status": 200,
+  "final_url": "https://bsc-rpc.publicnode.com",
+  "content_type": "application/json",
+  "bytes": 26898,
+  "sha256": "a4e97a9bc64d2f586d02e05c77137cdf6fe25e6b7293de5f51b1295132a39054"
+}

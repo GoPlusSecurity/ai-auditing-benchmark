@@ -11,7 +11,7 @@
 
 ## 目录结构
 
-审计代码和 `abi.json` 位于 `dataset/`，其他配套资料位于对应的 `dataset_artifacts/`，两者均按事件分目录存放。每个事件目录名建议理解为：`{事件日期YYYYMMDD}_{项目或协议标识}`（日期在前，便于按时间排序与检索）。
+`dataset/` 只存放源码，ABI 和其他配套资料位于对应的 `dataset_artifacts/`，两者均按事件分目录存放。每个事件目录名建议理解为：`{事件日期YYYYMMDD}_{项目或协议标识}`（日期在前，便于按时间排序与检索）。
 
 ```
 dataset/
@@ -23,7 +23,7 @@ dataset_artifacts/
 └── benchmark_simplified/  # 对应的元数据、切片清单、交易证据及校验清单
 ```
 
-`dataset/` 保存 `.sol`、`.rs`、`.cairo`、`.pan` 和 `.ts` 代码，包括反编译代码和项目测试源码；所有文件名为 `abi.json` 的 ABI 文件也保留在对应案例目录。其他原来位于 `dataset/{版本}/{案例}/{路径}` 的配套文件，现位于 `dataset_artifacts/{版本}/{案例}/{路径}`；源码路径和文件字节保持原样。构建配置、锁文件、恢复工具及编译器输入位于资料目录，编译需要原工程布局时，应在临时目录中合并对应的两棵目录。
+`dataset/` 保存 `.sol`、`.rs`、`.cairo`、`.pan`、`.ts`、`.cpp` 和 `.h` 源码，包括既有反编译代码、项目测试源码和必要的源链上下文；ABI 文件统一放在 `dataset_artifacts/` 对应路径。其他原来位于 `dataset/{版本}/{案例}/{路径}` 的配套文件，现位于 `dataset_artifacts/{版本}/{案例}/{路径}`；源码路径和文件字节保持原样。构建配置、锁文件、恢复工具及编译器输入位于资料目录，编译需要原工程布局时，应在临时目录中合并对应的两棵目录。
 
 元数据中的案例相对路径，包括 `complete_case_root` 和 `simplified_case_root`，现在以对应的资料案例目录为基准；源码引用明确使用 `../../../dataset/{版本}/{案例}/...`，原有仓库根目录路径继续沿用。资料目录中的每份 `SHA256SUMS` 同时覆盖该案例的资料文件和源码文件。
 
@@ -43,7 +43,7 @@ dataset_artifacts/
 
 ## 事件索引（CSV）
 
-仓库根目录下的 CSV 列举了 **全部已索引事件**，包含只有配套证据、没有源码的案例，建议作为元数据的权威来源。2026-10-02 目录整理后，两份 CSV 各保留 52 条事件记录，两套源码目录各包含 51 个案例。JaredFromSubway 只有 runtime 字节码和证据，全部存放在 `dataset_artifacts/` 中。
+仓库根目录下的 CSV 列举了 **全部已索引事件**，包含只有配套证据、没有源码的案例，建议作为元数据的权威来源。2026-10-16 批次完成后，两份 CSV 各有 57 条事件记录，两套源码目录各有 56 个案例。最新批次见[案例说明索引](docs/cases/README.md)和[逐行处理结果](dataset_artifacts/batches/20261016_x123_y5/results.json)。JaredFromSubway 只有 runtime 字节码和证据，全部存放在 `dataset_artifacts/` 中。
 
 - 中文版：[`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - 英文版：[`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)

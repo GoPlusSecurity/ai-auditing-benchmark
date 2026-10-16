@@ -1,0 +1,16 @@
+{
+  "compiler": "solc 0.5.12+commit.7709ece9",
+  "source": "Ethereum Maker Spotter public original source",
+  "source_address": "0x65c79fcb50ca1594b025960e539ed7a9a6d434a3",
+  "target_address": "0x849dc2416cbe54995a1d725afe526c0e38829228",
+  "target_block": "latest; not attack-time state",
+  "source_optimizer_override": {
+    "enabled": true,
+    "runs": 200
+  },
+  "compiled_runtime_bytes": 2507,
+  "target_runtime_bytes": 2507,
+  "full_runtime_equal": false,
+  "executable_equal_excluding_cbor_metadata": true,
+  "historical_implementation_equivalence_verified": false
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "createHash",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "input",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

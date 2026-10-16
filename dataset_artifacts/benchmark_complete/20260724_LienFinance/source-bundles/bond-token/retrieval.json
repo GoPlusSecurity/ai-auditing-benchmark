@@ -1,0 +1,10 @@
+{
+  "file": "lien/bond-token.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x814a4cb84a0a1bb69126e4ac871a7f09fc417b49?fields=all",
+  "retrieved_at": "2026-10-16T09:14:34.576185+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x814a4cb84a0a1bb69126e4ac871a7f09fc417b49?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 240833,
+  "sha256": "5c48508342560fe5033261483ffc80a95add4a913e3188608272e9973b6fc104"
+}

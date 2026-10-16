@@ -1,0 +1,10 @@
+{
+  "file": "drips/implementation.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x8d321e80487356c846f34456d31ce761776ef697?fields=all",
+  "retrieved_at": "2026-10-16T08:48:33.567413+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x8d321e80487356c846f34456d31ce761776ef697?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 661637,
+  "sha256": "e46a72c95c44909762ed0c0d54c4e12f041025856d84de7aa145cc4ff9ea72fe"
+}

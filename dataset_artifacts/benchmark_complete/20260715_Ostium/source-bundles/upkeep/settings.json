@@ -1,0 +1,8 @@
+{
+  "viaIR": true,
+  "optimizer": {
+    "runs": 200,
+    "enabled": true
+  },
+  "evmVersion": "shanghai"
+}

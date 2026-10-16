@@ -1,0 +1,69 @@
+{
+  "scope": "Source-to-effect coverage for this fixed snapshot. Required literals supplement byte-exact slice validation; they are not replay or historical-state proof.",
+  "cases": {
+    "20260715_Drips": {
+      "causal_path": "give -> collectable state write -> unsafe uint128/int128 conversion -> positive transfer -> reserve.withdraw -> DAI transfer to caller",
+      "required_simplified_source": [
+        {"source_suffix":"/implementation/DaiDripsHub.sol","literals":["collectable += amt","_transfer(userOrAccount.user, -int128(amt))","erc20Reserve.withdraw(withdraw)","erc20.transfer(user, withdraw)","modifier whenNotPaused","UserOrAccount"]},
+        {"source_suffix":"/reserve/DaiReserve.sol","literals":["modifier onlyUser","function withdraw(uint256 amt)"]}
+      ],
+      "boundary":"Complete historical trace; all pre-attack storage not independently reconstructed."
+    },
+    "20260715_Ostium": {
+      "causal_path":"authorized forwarder + signer -> lower-only timestamp constraint -> report price -> spread-adjusted profit -> collateral plus profit minus fees -> vault and collateral payout",
+      "required_simplified_source": [
+        {"source_suffix":"/upkeep/src/OstiumPrivatePriceUpKeep.sol","literals":["isForwarder[msg.sender]","timestamp < order.timestamp","fulfill(a)"]},
+        {"source_suffix":"/src/OstiumPairInfos.sol","literals":["PRECISION_6 = 1e6","signedCollateral + (signedCollateral * percentProfit) / int32(PRECISION_6) / 100 - rolloverFee - fundingFee","if (value < 0)"]},
+        {"source_suffix":"/src/lib/TradingCallbacksLib.sol","literals":["function getDynamicTradePriceImpact(","function _priceImpactFunction(","vault.sendAssets(usdcSentToTrader - usdcLeftInStorage, trade.trader)"]},
+        {"source_suffix":"/src/OstiumVault.sol","literals":["external onlyCallbacks","SafeERC20.safeTransfer(_assetIERC20(), receiver, assets)"]}
+      ],
+      "boundary":"Calldata/receipt independently checked. Callback, PairInfos and vault implementation files are compilation context; historical implementations, full internal trace and signing cause not independently verified."
+    },
+    "20260717_CrowdRingCircle": {
+      "causal_path":"fee -> burn existing pair balance -> sync before principal credit -> cached/real reserve gap -> USDT output",
+      "required_simplified_source": [
+        {"source_suffix":"/token/contracts/CrowdRingCircle.sol","literals":["uint256 fee = (amount * sellFeeRate) / 10000","super._update(to, address(0), burnAmount)","IUniswapV2Pair(to).sync()","super._update(from, to, amount)","isExemptFromRestriction"]},
+        {"source_suffix":"/reference/PancakePair.sol","literals":["function swap(","function sync()"]}
+      ],
+      "boundary":"Actual receipt and burn event checked; no complete internal trace. Pair source is normal reference, not proven deployment-equivalent."
+    },
+    "20260723_Verus": {
+      "causal_path":"source first insert vs Ethereum last matching root -> notarization root storage -> proof compares to poisoned root -> same serializedTransfers passed to actual serializer -> PackedSend fields -> real ETH/token payout",
+      "required_simplified_source": [
+        {"source_suffix":"/source-chain/pbaas.h","literals":["proofRoots.insert(std::make_pair(oneRoot.systemID, oneRoot))"]},
+        {"source_suffix":"/notarization-serializer/contracts/VerusNotarizer/NotarizationSerializer.sol","literals":["if(systemID == VERUS)","stateRoot = tempStateRoot"]},
+        {"source_suffix":"/notarizer/contracts/VerusNotarizer/VerusNotarizer.sol","literals":["function checkNotarization(","function setNotarizationProofRoot(","proofs["]},
+        {"source_suffix":"/proof/contracts/MMR/VerusProof.sol","literals":["_validateHeaderProof(","retStateRoot != getLastConfirmedVRSCStateRoot()"]},
+        {"source_suffix":"/transfer-serializer/contracts/VerusBridge/VerusSerializer.sol","literals":["function deserializeTransfers(","currencyAndAmount = uint256(temporaryRegister1) << VerusConstants.UINT160_BITS_SIZE","destinationAndFlags = uint256(uint160(tempaddress))","function readVarint(","function readCompactSizeLE("]},
+        {"source_suffix":"/token-manager/contracts/VerusBridge/TokenManager.sol","literals":[".deserializeTransfers(serializedTransfers, uint8(numberOfTransfers))","refundsData = importTransactions(transfers, refundAddresses)","sendCurrencyToETHAddress(","destinationAddress.call{value:"]}
+      ],
+      "boundary":"Actual serializer source separately matched; historical ABI input/output and eight payments reconciled. Source-chain notarizations and complete historical mapping state not independently re-read."
+    },
+    "20260724_LienFinance": {
+      "causal_path":"registered economically checked groups -> repeated exception bondID in output group -> aggregate counter passes -> skipped input burn and new output mint -> OTC approved LP transferFrom -> EOA USDC",
+      "required_simplified_source": [
+        {"source_suffix":"/bondmaker-a/BondMakerCollateralizedEth.sol","literals":["function _assertBondGroup(","exceptionCount = exceptionCount.add(1)","exceptionCount = exceptionCount.sub(1)","_mintBond(outputIDs[i], msg.sender, amount)"]},
+        {"source_suffix":"/bondmaker-b/BondMakerCollateralizedEth.sol","literals":["function exchangeEquivalentBonds(","_burnBond(inputIDs[i], msg.sender, amount)"]},
+        {"source_suffix":"/otc-a/GeneralizedDotc.sol","literals":["bondToken.transferFrom(buyer, seller, bondAmount)","swapPairToken.safeTransferFrom(seller, buyer, swapPairAmount)"]},
+        {"source_suffix":"/otc-c/DecentralizedOTC.sol","literals":["function _exchangeLBT2ERC20("]}
+      ],
+      "boundary":"Full trace/actual group arrays and payment totals checked; two independent BondMakers, no duplicate exception list, no full historical allowance reconstruction."
+    }
+  },
+  "fresh_review": {
+    "reviewer":"independent read-only agent requested by executing-plans skill",
+    "critical_findings":0,
+    "important_findings":["Ostium missing profit-to-USDC formula in simplified source","Verus missing actual transfer deserializer source/field connection in simplified source"],
+    "other_findings_addressed":["Ostium diagram now distinguishes source-context inference from observed Transfer","Lien CSV and metadata now explicitly locate repetition in output groups, not the exception list"],
+    "fix_verification":"Three causal regression checks were observed failing before repair and passing after original slices/source binding were added. Final suite result is in test_results.json.",
+    "declined_to_judge_rulings":[
+      "No local contract execution or fork replay was requested/performed; replay success is not claimed.",
+      "All historical proxy slots, permissions, allowances, notary state and dependency runtime equivalence remain outside completed verification; stated separately in documents and metadata.",
+      "Verus source-chain consensus/notary binary facts rely partly on original source plus disclosure; independent Verus RPC reconstruction is not claimed.",
+      "Ostium signer recovery, signing cause and full execution topology were not obtained; authorized-signer/forwarder preconditions remain explicit.",
+      "Aggregate USD valuation was not independently reconstructed; conflicting Ostium/Verus totals remain blank.",
+      "Reviewer did not repeat the full mechanical suite; implementer ran and records final results separately."
+    ],
+    "deferred_minors":[]
+  }
+}

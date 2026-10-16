@@ -1,0 +1,10 @@
+{
+  "file": "crc/token-lower.json",
+  "url": "https://sourcify.dev/server/v2/contract/56/0x8581433150f2c48ff2efe5a22b17c7d405054509?fields=all",
+  "retrieved_at": "2026-10-16T08:53:45.311599+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/56/0x8581433150f2c48ff2efe5a22b17c7d405054509?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 1027502,
+  "sha256": "7c065290cc0da157c8c1b3802d8f7bb97894f23c4625835119bd315cbf56df69"
+}

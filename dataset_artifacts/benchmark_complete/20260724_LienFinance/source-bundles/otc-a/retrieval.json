@@ -1,0 +1,10 @@
+{
+  "file": "lien/otc.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x656e5e976d523a427f05b0c212a22a89ccd9ef18?fields=all",
+  "retrieved_at": "2026-10-16T09:12:38.186788+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x656e5e976d523a427f05b0c212a22a89ccd9ef18?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 750631,
+  "sha256": "1279fa24c8ecb1616fc1cd7ae97ca74f700275df190c31f49897f8902e5a0d0b"
+}

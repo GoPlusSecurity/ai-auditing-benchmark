@@ -1,0 +1,10 @@
+{
+  "file": "ostium/upkeep.json",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb?fields=all",
+  "retrieved_at": "2026-10-16T08:48:33.571411+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 311061,
+  "sha256": "75c4426b23e6dc62e8b79affa09168144435ee2b44e0d7511efd6f1a1b7b2856"
+}

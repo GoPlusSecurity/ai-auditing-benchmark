@@ -1,0 +1,18 @@
+{
+  "file": "rwt/receipt.json",
+  "url": "https://bsc-dataseed.binance.org",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 21,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x22300140e7c44899c2602382a6e7a4a34a70f47f9736721744bc6434c07171dc"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:55:04.026243+08:00",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.binance.org",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 299307,
+  "sha256": "47427499f4dbd6af1e43ee16fa48b199da984baa41ca172c8f2f547a0b177a8e"
+}

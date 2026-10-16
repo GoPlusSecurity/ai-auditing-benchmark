@@ -1,0 +1,10 @@
+{
+  "file": "lien/bondmaker-proxy.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0xda6fc5625e617bb92f5359921d43321cebc6bef0?fields=all",
+  "retrieved_at": "2026-10-16T09:12:37.665118+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0xda6fc5625e617bb92f5359921d43321cebc6bef0?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 542068,
+  "sha256": "afe4d56af3a1f718f91d2567dff1629175db81fbeff4eadc4e28c4401fc8891c"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "verus/notarization-serializer-blockscout.json",
+  "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x5951a800712b5f2c448a175e30b428faaea87b1a",
+  "retrieved_at": "2026-10-16T09:17:34.105919+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/smart-contracts/0x5951a800712b5f2c448a175e30b428faaea87b1a",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 20919,
+  "sha256": "ce8aa2634f52119af36babc4407b923b234a3a731e0aebced0081707899426d9"
+}

@@ -1,0 +1,398 @@
+{
+  "scope": "Read-only public screening evidence for skipped rows; not accepted dataset cases, no exploit scripts executed. Negative retrieval results document this run only.",
+  "files": [
+    {
+      "path": "screening/barnbridge/report.html",
+      "sha256": "5847473801cf00dd80b67877870274c458ec2b17df68c8a7c7c997d41571fac6",
+      "bytes": 213650
+    },
+    {
+      "path": "screening/barnbridge/report.html.fetch.json",
+      "sha256": "c23fad83dfd9cd11bde1b547ed5bc22a05b7e9d2fb37b4ef4318bfd574f60de1",
+      "bytes": 433
+    },
+    {
+      "path": "screening/cascade/contract.json.fetch.json",
+      "sha256": "33b085c5adb1fa757f8c608653557e425c16da2ad5ba38f3c926bf8f25c4da6a",
+      "bytes": 248
+    },
+    {
+      "path": "screening/cascade/statement.html.fetch.json",
+      "sha256": "4303d7c236809d895f23a3089bb1fd9f0b9ea627ccfc799c1218bbf33aa58b96",
+      "bytes": 204
+    },
+    {
+      "path": "screening/defituna/client-tuna-position.rs",
+      "sha256": "c207c7862863d6f2c51afa0f6ec2afc909adf9f6f39c145f55a5677875bb455a",
+      "bytes": 4775
+    },
+    {
+      "path": "screening/defituna/commits.json",
+      "sha256": "45c4314e14afae0a05708e307460b31941d528be3519488edeb2357baad67a9c",
+      "bytes": 9896
+    },
+    {
+      "path": "screening/defituna/commits.json.fetch.json",
+      "sha256": "d5aba4b70668de9b63d12755c679e0fb621c118fa631f8591799460afbba37d8",
+      "bytes": 485
+    },
+    {
+      "path": "screening/defituna/repo.json",
+      "sha256": "5201c2ff46cd18a09c666ab1669e38c25a1151de3cb32752130158561bc231b3",
+      "bytes": 6045
+    },
+    {
+      "path": "screening/defituna/repo.json.fetch.json",
+      "sha256": "78677abb9284e8230825b704882fa8f84f0a5e97643b468d14da05050301d4b2",
+      "bytes": 390
+    },
+    {
+      "path": "screening/defituna/report.html",
+      "sha256": "fc651c8c731805a661815a566f839e93b3dd583e95901be2ace7365f94f02ca4",
+      "bytes": 94573
+    },
+    {
+      "path": "screening/defituna/report.html.fetch.json",
+      "sha256": "cc22ba4d4b619fbc0a96b296d9e4360371b3ca88a4daedeb647de8c76b4b3d9b",
+      "bytes": 387
+    },
+    {
+      "path": "screening/defituna/repos.json",
+      "sha256": "421d6cbe0ab17d9a9fe27571dc0c4bec8d1f0579f1d72479de9f0f20bf63bc92",
+      "bytes": 32895
+    },
+    {
+      "path": "screening/defituna/repos.json.fetch.json",
+      "sha256": "0f3ff4ba27cee0b0bd5e2d86453f9345128e99bfdca47fe98aa1c065c9ecc620",
+      "bytes": 410
+    },
+    {
+      "path": "screening/defituna/source.zip",
+      "sha256": "26dbc1a6c92553f3a7f818748d0541c1737d437a8f1550a5faba6dc2e52370f8",
+      "bytes": 4478996
+    },
+    {
+      "path": "screening/defituna/source.zip.fetch.json",
+      "sha256": "5f5ed615e350971422dca9b0ccf6fd6f92e6e536fb08d1ad136283f14bd98e8b",
+      "bytes": 466
+    },
+    {
+      "path": "screening/fcow/report.html.fetch.json",
+      "sha256": "778a557b3931e23450932a73fb28a34a4af95182e8cb77c15f1e155e6cdb79d7",
+      "bytes": 234
+    },
+    {
+      "path": "screening/fcow/source.json.fetch.json",
+      "sha256": "5bf0d9014446e4d2c498ac976a2263fa2f089e093d75ccf5d6bc5d6c06d7bfdb",
+      "bytes": 242
+    },
+    {
+      "path": "screening/across/official.html.fetch.json",
+      "sha256": "7b72db2991edded5d3627f4ec0f608b64c76801edaab95efe133b0f8207506fb",
+      "bytes": 201
+    },
+    {
+      "path": "screening/across/statement.html",
+      "sha256": "ce07691ba7c41ad0f431d7a187c10df766fcb14da7055d50b73e6b5f4cdb6ac0",
+      "bytes": 137114
+    },
+    {
+      "path": "screening/across/statement.html.fetch.json",
+      "sha256": "6a03d67bd4c3ccb33caf32591607aad12e801da72916e85888bc8d3573c91017",
+      "bytes": 406
+    },
+    {
+      "path": "screening/allbridge/analysis.html",
+      "sha256": "956a364117b3c6d055f6641a343f726e81faf0bfab48e248bdd4523fab0e9f21",
+      "bytes": 1568374
+    },
+    {
+      "path": "screening/allbridge/analysis.html.fetch.json",
+      "sha256": "1f97227ef180bedcee5819148931a3a64f2a704aff99568a8431a2cbd3aeb25a",
+      "bytes": 419
+    },
+    {
+      "path": "screening/allbridge/repos.json",
+      "sha256": "34e290a69f394ae420c98680906dd692938e1119287e54449e2878c17921a284",
+      "bytes": 212420
+    },
+    {
+      "path": "screening/allbridge/repos.json.fetch.json",
+      "sha256": "18127cba62a327dce49e92487e227edae90fae5edff12c09e129b5649c0d6c64",
+      "bytes": 420
+    },
+    {
+      "path": "screening/allbridge/statement.html",
+      "sha256": "d96983131e2d449532d3d24b521d9dc02328433e9547993e9b9a7f2f06610d4b",
+      "bytes": 143449
+    },
+    {
+      "path": "screening/allbridge/statement.html.fetch.json",
+      "sha256": "9ad584040040720cf4ad709cc0ba40c2ce96e25346a843b5818d31fa23220fc1",
+      "bytes": 405
+    },
+    {
+      "path": "screening/rwt/helper-code-latest.json",
+      "sha256": "bbd3465b6b3fba9a45e694414dd543e6f4f183543329291ee8d7b3ccfd12667f",
+      "bytes": 14879
+    },
+    {
+      "path": "screening/rwt/helper-code-latest.json.fetch.json",
+      "sha256": "a0edd0dec385f2f117930bffd8020e0d0bf5f874b17578bc90a6c74d322d2db8",
+      "bytes": 552
+    },
+    {
+      "path": "screening/rwt/helper-code.json",
+      "sha256": "ed9d7c911f198ea7547737cdbb6067924b75dbaeba50ddc5c7427e825756856b",
+      "bytes": 79
+    },
+    {
+      "path": "screening/rwt/helper-code.json.fetch.json",
+      "sha256": "82dc7d8b5cea1e4d7ca20d5d6bf9d2527c65b63c248e21f882a1a0f430f6f815",
+      "bytes": 545
+    },
+    {
+      "path": "screening/rwt/helper-decompiler.html.fetch.json",
+      "sha256": "bc99bbcd3c839c0827c65cef38ce3129f5e14b6e9a287c4624d6112f01e8567b",
+      "bytes": 240
+    },
+    {
+      "path": "screening/rwt/poc-readonly.sol.fetch.json",
+      "sha256": "53c143fa07c7079924a7e97fd68d81e3022adbc3c97c635979d2883c2fb27fc7",
+      "bytes": 241
+    },
+    {
+      "path": "screening/rwt/receipt.json",
+      "sha256": "47427499f4dbd6af1e43ee16fa48b199da984baa41ca172c8f2f547a0b177a8e",
+      "bytes": 299307
+    },
+    {
+      "path": "screening/rwt/receipt.json.fetch.json",
+      "sha256": "7d97941588b5ebf5526b9b3e23622254c1f9d18cd06738c60eab01e2555e53d6",
+      "bytes": 563
+    },
+    {
+      "path": "screening/rwt/report.html",
+      "sha256": "016ac9c9f69e19dd3c2640bdad3b21ba316077651261e4c4e4954cdf18c75934",
+      "bytes": 43322
+    },
+    {
+      "path": "screening/rwt/report.html.fetch.json",
+      "sha256": "ec60f6a89bb91b4f541156cdad8a4c9d5e08dacfa101b4be9ab75773739f735c",
+      "bytes": 382
+    },
+    {
+      "path": "screening/rwt/token.json",
+      "sha256": "9ccbce35d2ad58808257760bcb07124ae9b788c7291d147e60a0bde71ff82a01",
+      "bytes": 208840
+    },
+    {
+      "path": "screening/rwt/token.json.fetch.json",
+      "sha256": "d2d33d6ce86be6e20b0ee496cb9b12e419b237aa0b5e7e0c5edd304f46df394e",
+      "bytes": 488
+    },
+    {
+      "path": "screening/wanchain/repos.json",
+      "sha256": "488c8950e4055cbcca90ffad916df1d215bf904feb7841573f89c3acf894d543",
+      "bytes": 65663
+    },
+    {
+      "path": "screening/wanchain/repos.json.fetch.json",
+      "sha256": "9b1fc5e531cce63a6dff5e932965284fdf98a6e1489cef44972dcc3bb85bb5bd",
+      "bytes": 410
+    },
+    {
+      "path": "screening/gemjoin/0x2f950d6c97d8813182c7ec2043f4f6deed956239.json.fetch.json",
+      "sha256": "6f0a6aa28cdf8d52ef73e778f36493dbe015d152b66739591c0cbbe4c21781de",
+      "bytes": 281
+    },
+    {
+      "path": "screening/gemjoin/0x5343b4586a3f2a3365df92ee705c3bf446c54668.json",
+      "sha256": "7c9c61f13b1e4e9802f14c15e69191a38e1fc2c241bda0aba5198df1c1c93b47",
+      "bytes": 117872
+    },
+    {
+      "path": "screening/gemjoin/0x5343b4586a3f2a3365df92ee705c3bf446c54668.json.fetch.json",
+      "sha256": "61d7b207582b9cffc0768c523efc4df01f167e8685b9ec6abbc3aa1f3a424f72",
+      "bytes": 529
+    },
+    {
+      "path": "screening/gemjoin/0x849dc2416cbe54995a1d725afe526c0e38829228.json.fetch.json",
+      "sha256": "7237783ebaeee2cb3e975dcc34324577e1c1c5540c01b378ab8a0df7d489bc00",
+      "bytes": 281
+    },
+    {
+      "path": "screening/gemjoin/0xb3974b312faf5057c693e5e135a752a5449f9483.json",
+      "sha256": "cadc88c68197991e2893995598a199253bd94b4b9a82188c8a1baf6537ffd32d",
+      "bytes": 57890
+    },
+    {
+      "path": "screening/gemjoin/0xb3974b312faf5057c693e5e135a752a5449f9483.json.fetch.json",
+      "sha256": "693359ddf4aa67e0cd986d2c6d1ec268b7eb74b5d4bb15c9d49d887d3de77dce",
+      "bytes": 528
+    },
+    {
+      "path": "screening/gemjoin/0xe53678566d4b68ccfa26896054b82082317185ba.json",
+      "sha256": "045ade9e9bcc417195bf69a41ed7498f21f28f29baa748835288a2a135b4c86f",
+      "bytes": 66136
+    },
+    {
+      "path": "screening/gemjoin/0xe53678566d4b68ccfa26896054b82082317185ba.json.fetch.json",
+      "sha256": "b242ebc84ae787496a9c00a85525e89a3ad702b9ee308df069f241e107c880b4",
+      "bytes": 528
+    },
+    {
+      "path": "screening/gemjoin/0xfa7cea82f8a6254ccebad71350125aa6171b8a84.json",
+      "sha256": "64acd802835bfdee6daf8d18d462f954ad56f3be8a2c22b3a58b0637f560a4c2",
+      "bytes": 232233
+    },
+    {
+      "path": "screening/gemjoin/0xfa7cea82f8a6254ccebad71350125aa6171b8a84.json.fetch.json",
+      "sha256": "1a1302f2d39b6b3e0d1372a900a9ec9d43d5884f3db792235d7d6e321c2bdcd8",
+      "bytes": 529
+    },
+    {
+      "path": "screening/gemjoin/maker-spot-commit.json",
+      "sha256": "bceae3242af4d820971334b91df555593a2036654b5ca3d54c6f1d5737035de1",
+      "bytes": 5020
+    },
+    {
+      "path": "screening/gemjoin/maker-spot-commit.json.fetch.json",
+      "sha256": "5d5ca833c77c858be271901b0a194157281df78dea7006c0b42e3d581383fbdb",
+      "bytes": 470
+    },
+    {
+      "path": "screening/gemjoin/maker-spot-source.json",
+      "sha256": "b22878958715fff3f68b4ec6c96f5ff733ef031ff78fed78fcdf522296768462",
+      "bytes": 95077
+    },
+    {
+      "path": "screening/gemjoin/maker-spot-source.json.fetch.json",
+      "sha256": "0b34b8a4fe9fce7a0c1b38d6703d6b97987db7d1ebebf24baaec8cd11a8dec88",
+      "bytes": 501
+    },
+    {
+      "path": "screening/gemjoin/maker-spot.sol",
+      "sha256": "f772861927801ca1e32ba818ffc55df6ceffcc530ac3d8b6b223e7411bed118f",
+      "bytes": 3345
+    },
+    {
+      "path": "screening/gemjoin/maker-spot.sol.fetch.json",
+      "sha256": "ac6c38336adcdd26a6ab9fa80aad82e5fef2c0dba5e3f2061c03520f546f5123",
+      "bytes": 428
+    },
+    {
+      "path": "screening/gemjoin/MakerSpotter.sol",
+      "sha256": "f7e655b8790146eacd92291276003cfaf2e6a3273c3d9cb11c7dd50a6dbdbc12",
+      "bytes": 5364
+    },
+    {
+      "path": "screening/gemjoin/official.html",
+      "sha256": "b95049e1a50501974bcd3a4529fa0fa2233d7c721afe3fb781e430233e24ef97",
+      "bytes": 17445
+    },
+    {
+      "path": "screening/gemjoin/official.html.fetch.json",
+      "sha256": "1898525774f11811e3fc56e85995ac4d1e23bedbc7573e8559c01d8b36ed2e6f",
+      "bytes": 331
+    },
+    {
+      "path": "screening/gemjoin/original-spot.sol",
+      "sha256": "d07519a232d528626ce470573d1c1967f7be1519295bc223d22a934eb9936425",
+      "bytes": 3084
+    },
+    {
+      "path": "screening/gemjoin/original-spot.sol.fetch.json",
+      "sha256": "b86f5e1e589b2c178cf4b99567ffd2ca152925b6772292fa3c996de9065ba878",
+      "bytes": 499
+    },
+    {
+      "path": "screening/gemjoin/poc-readonly.sol.fetch.json",
+      "sha256": "c6597c5c45350f92bb8267345df091362dfa737fd4f3f3b2e654067c52f59fa5",
+      "bytes": 249
+    },
+    {
+      "path": "screening/gemjoin/receipt.json",
+      "sha256": "6ddfb99fbc379744446013af4297df3c5435709b4b222aa840a9a7d2def1e387",
+      "bytes": 19963
+    },
+    {
+      "path": "screening/gemjoin/receipt.json.fetch.json",
+      "sha256": "5921810ebb498465a14f6eb8a1f237850205e77df769eeb407fd38ed0d84ed1d",
+      "bytes": 566
+    },
+    {
+      "path": "screening/gemjoin/receipt2.json",
+      "sha256": "4682afdcae7095cfb2e13999faad68a3267c76475e559f6945fd03121c2b2279",
+      "bytes": 161721
+    },
+    {
+      "path": "screening/gemjoin/receipt2.json.fetch.json",
+      "sha256": "4846da6f358c765ee54c9b515312d99bb97da1001eb2162ecc84a7c9ea905392",
+      "bytes": 568
+    },
+    {
+      "path": "screening/gemjoin/report.html",
+      "sha256": "e0d40c47d1a46a70f91e4cb71923908b28cf667caed57dbdf4ee5484ac2d7d8b",
+      "bytes": 51663
+    },
+    {
+      "path": "screening/gemjoin/report.html.fetch.json",
+      "sha256": "c5defdd2c7f5ca58dcdf4af5f56b3572e299aaa6799c64c47c234401bbe23caa",
+      "bytes": 378
+    },
+    {
+      "path": "screening/gemjoin/spot-history.json",
+      "sha256": "dcd5dd575bcb5290457c93ad54858d961e4a6941e7f0f3e56bd744640e1b4900",
+      "bytes": 4015
+    },
+    {
+      "path": "screening/gemjoin/spot-history.json.fetch.json",
+      "sha256": "2aed2006d365e4def571952b7f7254068dc3d39c62113d74a460c8d85cb973ee",
+      "bytes": 519
+    },
+    {
+      "path": "screening/gemjoin/spotter-comparison.json",
+      "sha256": "20ae1d99ab11604d3e8582f91eeb57467d14f0231c9663055a537a52ce407ff9",
+      "bytes": 575
+    },
+    {
+      "path": "screening/gemjoin/spotter-compiled-runtime.hex",
+      "sha256": "8eba26609bdb2b865b291267eb5264f87354e0911b2cb2e137845e28f176cbc1",
+      "bytes": 5015
+    },
+    {
+      "path": "screening/gemjoin/spotter-explorer.html.fetch.json",
+      "sha256": "64926f935f591b08b66d8d4efe6187302a13fe2fe8c234bfb06059eb1167ebaa",
+      "bytes": 234
+    },
+    {
+      "path": "screening/gemjoin/spotter-runtime.json",
+      "sha256": "373cc1065badaf4361ea4b49a89a042d1816fa36ed35ebbb037e3961353283dd",
+      "bytes": 5053
+    },
+    {
+      "path": "screening/gemjoin/spotter-runtime.json.fetch.json",
+      "sha256": "84badf6f38c582a21d7f10baf476e9c1df1b6ae0777a65302f0ee248549e7709",
+      "bytes": 552
+    },
+    {
+      "path": "screening/gemjoin/spotter-standard-input.json",
+      "sha256": "4f1c15d7e687a2391e5d54fe8178a5172a40595525db5a38084aec9b35ee7f09",
+      "bytes": 6010
+    },
+    {
+      "path": "screening/gemjoin/victim.json.fetch.json",
+      "sha256": "2ec98ffdd13f1dc468435e5b4784e84c98781240e2bdc9643b2b002819e06663",
+      "bytes": 245
+    }
+  ],
+  "browser_check": {
+    "row": 113,
+    "address": "0x8812bb5fb89d69d35ac84d2c37b55769395b9f90",
+    "url": "https://bscscan.com/bytecode-decompiler?a=0x8812bb5fb89d69d35ac84d2c37b55769395b9f90",
+    "result": "public Decompile Bytecode button clicked; page did not return usable pseudocode",
+    "output_archived": false,
+    "decompiler_dependencies_installed": false
+  }
+}

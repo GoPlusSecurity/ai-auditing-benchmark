@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "bytecodeHash": "ipfs"
+  },
+  "libraries": {},
+  "optimizer": {
+    "runs": 20000,
+    "enabled": true
+  },
+  "evmVersion": "constantinople",
+  "remappings": []
+}

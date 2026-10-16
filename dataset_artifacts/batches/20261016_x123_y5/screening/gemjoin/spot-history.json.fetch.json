@@ -1,0 +1,10 @@
+{
+  "file": "gemjoin/spot-history.json",
+  "url": "https://api.github.com/repos/makerdao/dss/commits?path=src/spot.sol&until=2020-01-01T00:00:00Z&per_page=1",
+  "retrieved_at": "2026-10-16T09:01:48.872516+08:00",
+  "status": 200,
+  "final_url": "https://api.github.com/repositories/135169042/commits?path=src/spot.sol&until=2020-01-01T00:00:00Z&per_page=1",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 4015,
+  "sha256": "dcd5dd575bcb5290457c93ad54858d961e4a6941e7f0f3e56bd744640e1b4900"
+}

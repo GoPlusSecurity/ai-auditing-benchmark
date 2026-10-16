@@ -1,0 +1,10 @@
+{
+  "file": "defituna/repos.json",
+  "url": "https://api.github.com/orgs/DefiTuna/repos?per_page=100",
+  "retrieved_at": "2026-10-16T08:53:45.667098+08:00",
+  "status": 200,
+  "final_url": "https://api.github.com/orgs/DefiTuna/repos?per_page=100",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 32895,
+  "sha256": "421d6cbe0ab17d9a9fe27571dc0c4bec8d1f0579f1d72479de9f0f20bf63bc92"
+}

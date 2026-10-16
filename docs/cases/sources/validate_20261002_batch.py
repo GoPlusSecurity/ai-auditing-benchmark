@@ -18,7 +18,7 @@ ROOT = HERE.parents[2]
 RESULTS_PATH = HERE / "20261002_sheet_rows_106_116_results.json"
 SNAPSHOT_PATH = HERE / "20261002_sheet_rows_106_116.json"
 SEMANTIC_REVIEW_PATH = HERE / "20261002_semantic_review.json"
-SOURCE_EXTENSIONS = {".sol", ".rs", ".cairo", ".pan", ".ts"}
+SOURCE_EXTENSIONS = {".sol", ".rs", ".cairo", ".pan", ".ts", ".cpp", ".h"}
 
 
 class ValidationError(RuntimeError):
@@ -291,12 +291,11 @@ def validate_dataset_layout(root: Path) -> dict:
     """Check the split archive, including legacy manifest schemas and path keys."""
     root = root.resolve()
     dataset_files = [p for p in (root / "dataset").rglob("*") if p.is_file()]
-    require(all(p.suffix.lower() in SOURCE_EXTENSIONS or p.name == "abi.json" for p in dataset_files),
-            "dataset contains non-source files other than abi.json")
+    require(all(p.suffix.lower() in SOURCE_EXTENSIONS for p in dataset_files),
+            "dataset contains non-source files")
     source_files = [p for p in dataset_files if p.suffix.lower() in SOURCE_EXTENSIONS]
-    abi_files = [p for p in dataset_files if p.name == "abi.json"]
     artifacts = root / "dataset_artifacts"
-    require(not list(artifacts.rglob("abi.json")), "abi.json must be kept in dataset")
+    abi_files = list(artifacts.rglob("abi.json"))
     sums = sorted(artifacts.rglob("SHA256SUMS"))
     checksum_entries = sum(check_sums(path.parent) for path in sums)
     local_links = sum(validate_local_links(path) for path in [

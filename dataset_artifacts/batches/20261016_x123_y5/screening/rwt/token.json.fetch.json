@@ -1,0 +1,10 @@
+{
+  "file": "rwt/token.json",
+  "url": "https://sourcify.dev/server/v2/contract/56/0xf8a36777415c09feaff3dc78dcbb3ed00ce989cd?fields=all",
+  "retrieved_at": "2026-10-16T08:57:12.041570+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/56/0xf8a36777415c09feaff3dc78dcbb3ed00ce989cd?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 208840,
+  "sha256": "9ccbce35d2ad58808257760bcb07124ae9b788c7291d147e60a0bde71ff82a01"
+}

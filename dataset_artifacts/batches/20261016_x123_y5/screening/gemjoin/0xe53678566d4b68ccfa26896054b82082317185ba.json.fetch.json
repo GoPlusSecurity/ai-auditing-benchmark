@@ -1,0 +1,10 @@
+{
+  "file": "gemjoin/0xe53678566d4b68ccfa26896054b82082317185ba.json",
+  "url": "https://sourcify.dev/server/v2/contract/56/0xe53678566d4b68ccfa26896054b82082317185ba?fields=all",
+  "retrieved_at": "2026-10-16T08:57:12.044625+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/56/0xe53678566d4b68ccfa26896054b82082317185ba?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 66136,
+  "sha256": "045ade9e9bcc417195bf69a41ed7498f21f28f29baa748835288a2a135b4c86f"
+}

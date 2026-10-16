@@ -1,0 +1,10 @@
+{
+  "file": "verus/trace.json",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099/raw-trace",
+  "retrieved_at": "2026-10-16T09:11:00.300266+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099/raw-trace",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 60696,
+  "sha256": "541aef67f8900561d2f951223b399af094733152a12beeb1eeb9e7a14a3bb1c4"
+}

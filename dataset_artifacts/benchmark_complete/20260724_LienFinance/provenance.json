@@ -1,0 +1,334 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "bondmaker-a",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xda6fc5625e617bb92f5359921d43321cebc6bef0?fields=all",
+      "retrieved_at": "2026-10-16T09:12:37.665118+08:00",
+      "address": "0xDA6FC5625E617bB92F5359921D43321cEbC6BEf0",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T13:34:42Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "BondMakerCollateralizedEth",
+        "fullyQualifiedName": "BondMakerCollateralizedEth.sol:BondMakerCollateralizedEth"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/bondmaker-a/BondMakerCollateralizedEth.sol",
+          "original_source_path": "BondMakerCollateralizedEth.sol",
+          "sha256": "87e0f3de62ea70e409c275fd3fc3ee225678124fb40f2a18a2cdb04c2072dbe2",
+          "bytes": 89362
+        }
+      ],
+      "abi_path": "source-bundles/bondmaker-a/abi.json",
+      "response_path": "source-bundles/bondmaker-a/source-response.json",
+      "response_sha256": "afe4d56af3a1f718f91d2567dff1629175db81fbeff4eadc4e28c4401fc8891c",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "bondmaker-b",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x843225cf6e663e4454732d6b551a737ac7b47de0?fields=all",
+      "retrieved_at": "2026-10-16T09:12:37.546137+08:00",
+      "address": "0x843225CF6e663e4454732D6B551A737Ac7b47de0",
+      "chain_id": "1",
+      "verified_at": "2025-06-23T04:26:18Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople"
+        },
+        "name": "BondMakerCollateralizedEth",
+        "fullyQualifiedName": "BondMakerCollateralizedEth.sol:BondMakerCollateralizedEth"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/bondmaker-b/BondMakerCollateralizedEth.sol",
+          "original_source_path": "BondMakerCollateralizedEth.sol",
+          "sha256": "a73114e22b6a81cd21003ea30d800b2db7679b4c586fb34dcff669551b577aca",
+          "bytes": 83850
+        }
+      ],
+      "abi_path": "source-bundles/bondmaker-b/abi.json",
+      "response_path": "source-bundles/bondmaker-b/source-response.json",
+      "response_sha256": "720478ea1f8bece0bc70386cf7e5329ca57632fdc96b7c5678dcd91e75317d05",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "otc-a",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x656e5e976d523a427f05b0c212a22a89ccd9ef18?fields=all",
+      "retrieved_at": "2026-10-16T09:12:38.186788+08:00",
+      "address": "0x656e5e976d523a427f05B0c212A22A89ccD9eF18",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T12:41:15Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "GeneralizedDotc",
+        "fullyQualifiedName": "GeneralizedDotc.sol:GeneralizedDotc"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/otc-a/GeneralizedDotc.sol",
+          "original_source_path": "GeneralizedDotc.sol",
+          "sha256": "a1e8aab5182708c8f633bee6f6863abb5bb10e90a8513747876fd2dfdae8f4f7",
+          "bytes": 119999
+        }
+      ],
+      "abi_path": "source-bundles/otc-a/abi.json",
+      "response_path": "source-bundles/otc-a/source-response.json",
+      "response_sha256": "1279fa24c8ecb1616fc1cd7ae97ca74f700275df190c31f49897f8902e5a0d0b",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "otc-b",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x7db84492cfd27e47c39499d852decc2a01476a75?fields=all",
+      "retrieved_at": "2026-10-16T09:14:34.145172+08:00",
+      "address": "0x7DB84492cfD27e47c39499D852DECC2a01476a75",
+      "chain_id": "1",
+      "verified_at": "2025-06-23T02:40:00Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "GeneralizedDotc",
+        "fullyQualifiedName": "GeneralizedDotc.sol:GeneralizedDotc"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/otc-b/GeneralizedDotc.sol",
+          "original_source_path": "GeneralizedDotc.sol",
+          "sha256": "a1e8aab5182708c8f633bee6f6863abb5bb10e90a8513747876fd2dfdae8f4f7",
+          "bytes": 119999
+        }
+      ],
+      "abi_path": "source-bundles/otc-b/abi.json",
+      "response_path": "source-bundles/otc-b/source-response.json",
+      "response_sha256": "0ef8e1022b298c0d5b6e99a287e38f1ba1725a0d630526eea286e51472b29054",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "otc-c",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x0949c77ad52602ac61b42d2de0eeb1b7cc79250f?fields=all",
+      "retrieved_at": "2026-10-16T09:14:34.145763+08:00",
+      "address": "0x0949C77aD52602Ac61B42d2DE0eEb1B7cC79250F",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T11:33:35Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "DecentralizedOTC",
+        "fullyQualifiedName": "DecentralizedOTC.sol:DecentralizedOTC"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/otc-c/DecentralizedOTC.sol",
+          "original_source_path": "DecentralizedOTC.sol",
+          "sha256": "24165915766bb7823afd09aeb843658b8573715ee34234bed8f685192288fac0",
+          "bytes": 108094
+        }
+      ],
+      "abi_path": "source-bundles/otc-c/abi.json",
+      "response_path": "source-bundles/otc-c/source-response.json",
+      "response_sha256": "b458c83817d17ab0c43d471bf522d7edae51179330978d694bd0f69da4b0312a",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "bond-token",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x814a4cb84a0a1bb69126e4ac871a7f09fc417b49?fields=all",
+      "retrieved_at": "2026-10-16T09:14:34.576185+08:00",
+      "address": "0x814A4CB84A0A1Bb69126e4aC871a7F09fc417B49",
+      "chain_id": "1",
+      "verified_at": "2026-07-24T01:30:18Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "BondTokenCollateralizedEth",
+        "fullyQualifiedName": "BondTokenCollateralizedEth.sol:BondTokenCollateralizedEth"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/bond-token/BondTokenCollateralizedEth.sol",
+          "original_source_path": "BondTokenCollateralizedEth.sol",
+          "sha256": "1cc77d60c1b3fc588be9b0f8783eea15febee4be2b61ad72004c00f29ca59240",
+          "bytes": 32467
+        }
+      ],
+      "abi_path": "source-bundles/bond-token/abi.json",
+      "response_path": "source-bundles/bond-token/source-response.json",
+      "response_sha256": "5c48508342560fe5033261483ffc80a95add4a913e3188608272e9973b6fc104",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "pricing-context",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x6e33f11625b2c8b7270cf8e0319b8b9ffb8f086d?fields=all",
+      "retrieved_at": "2026-10-16T09:14:34.620216+08:00",
+      "address": "0x6e33f11625b2c8B7270cf8e0319b8B9fFB8F086D",
+      "chain_id": "1",
+      "verified_at": "2024-08-16T08:50:05Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.6.6+commit.6c089d02",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "constantinople",
+          "remappings": []
+        },
+        "name": "LightMarketOracle",
+        "fullyQualifiedName": "LightMarketOracle.sol:LightMarketOracle"
+      },
+      "creation_match": "match",
+      "runtime_match": "match",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260724_LienFinance/source-bundles/pricing-context/LightMarketOracle.sol",
+          "original_source_path": "LightMarketOracle.sol",
+          "sha256": "207bd631101027380664555bcc03fb6e48d8cb3dfe5155e3737287b2768689a8",
+          "bytes": 20101
+        }
+      ],
+      "abi_path": "source-bundles/pricing-context/abi.json",
+      "response_path": "source-bundles/pricing-context/source-response.json",
+      "response_sha256": "0e4dfd448b2ab1e075f131d9468964b4f77eaa73932da6c5388ab920c85e0adc",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/transaction.json",
+      "sha256": "74d6598a2e9babb46040f64515cac6597ee877d0d7be6cdc9416a466cdf52d22",
+      "bytes": 15926,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7",
+      "retrieved_at": "2026-10-16T09:11:00.298999+08:00"
+    },
+    {
+      "path": "evidence/trace.json",
+      "sha256": "da32c4154e32a3d89d357a17ff4702882ddb7b6f13c7d379505917477d06de1d",
+      "bytes": 71855,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7/raw-trace",
+      "retrieved_at": "2026-10-16T09:12:38.429684+08:00"
+    },
+    {
+      "path": "evidence/recomputed.json",
+      "sha256": "b0b473ca527aed6b9e23541d9f9fbaf4dfd0c2abf0331c8e5456019960bf3240",
+      "bytes": 4057,
+      "kind": "derived_independent_recalculation",
+      "derived_from": "archived transaction/receipt/raw-trace records",
+      "computed_at": "2026-10-16T09:55:56.596656+08:00"
+    },
+    {
+      "path": "evidence/report.html",
+      "sha256": "ecbaab9d9c91e472da11427129a9ecab43662ad9506263f07de210b8e1e68e24",
+      "bytes": 180353,
+      "url": "https://blog.verichains.io/p/lien-finance-hack-analysis",
+      "retrieved_at": "2026-10-16T09:11:00.298999+08:00"
+    }
+  ],
+  "source_context": []
+}

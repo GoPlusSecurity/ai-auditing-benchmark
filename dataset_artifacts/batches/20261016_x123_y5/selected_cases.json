@@ -1,0 +1,64 @@
+[
+  {
+    "case_id":"20260715_Drips","row":123,"key":"drips","chain_id":"1","project_cn":"Drips Network（旧版 DaiDripsHub）","project_en":"Drips Network (legacy DaiDripsHub)",
+    "vulnerability_cn":"整数类型转换错误导致付款方向反转","vulnerability_en":"Unsafe unsigned-to-signed conversion reverses payment direction",
+    "detail_cn":"give 将用户给出的 uint128 金额直接转成 int128 再取负数。历史调用传入 2^128-B，使 _transfer 收到正数 B，走储备提款而非用户入金分支；储备、Hub、攻击合约、攻击者之间的三笔 DAI 转账均为 24,882.995421947667857715 DAI。源码与历史 delegatecall 目标已对应；未独立重建攻击前全部状态，未重放。源表日期为 7 月 15 日，Ethereum 交易时间为 7 月 14 日 UTC；Polygon 参考交易尚未独立核查。",
+    "detail_en":"give casts the caller-controlled uint128 amount to int128 and negates it without a range check. Historical calldata used 2^128-B, so _transfer received positive B and withdrew from the reserve instead of collecting a deposit. Three DAI transfers link reserve, Hub, attack contract and attacker for 24,882.995421947667857715 DAI. Public source is tied to the historical delegatecall target; complete pre-attack state and replay remain unverified. The sheet date is July 15, while the Ethereum transaction is July 14 UTC; the Polygon reference transaction was not independently checked.",
+    "loss_usd":"24883","loss_scope":"Source-sheet reported approximate USD loss; raw DAI transfers are recorded separately.",
+    "tx_urls":["https://etherscan.io/tx/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130"],
+    "victims":["https://etherscan.io/address/0x73043143e0a6418cc45d82d4505b096b802fd365#code","https://etherscan.io/address/0x8d321e80487356c846f34456d31ce761776ef697#code","https://etherscan.io/address/0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a#code"],
+    "bundles":[["implementation","drips/implementation.json"],["proxy","drips/proxy.json"],["reserve","drips/reserve.json"]],
+    "evidence":["drips/transaction.json","drips/raw-trace.json","drips/recomputed.json","drips/report.html"],
+    "full_trace":true,"report_url":"https://blog.verichains.io/p/drips-network-when-giving-became"
+  },
+  {
+    "case_id":"20260715_Ostium","row":121,"key":"ostium","chain_id":"42161","project_cn":"Ostium（未来时间戳报价路径）","project_en":"Ostium (future-dated price-report path)",
+    "vulnerability_cn":"报价时间上界缺失与受信签名路径组合","vulnerability_en":"Missing upper timestamp bound combined with a trusted signer path",
+    "detail_cn":"performUpkeep 检查订单年龄和报价不得早于订单，却不拒绝未来报价。代表交易批量提交同一时间戳 2000000000 的 5,000 和 60,000 报价，制造平仓收益；回执复算 oLP 净流出 1,078,403.5804 USDC、交易者净流入 1,078,319.4804 USDC。利用仍需要有效受信签名和已授权 forwarder，普通调用者不能任意伪造报价。源码已取得，但完整内部跟踪、历史权限映射及全部代理实现未独立核实；未重放。源表整体损失与描述、披露口径不一，金额留空。",
+    "detail_en":"performUpkeep checks order age and rejects reports older than the order, but has no upper timestamp bound. The focal batch submitted prices 5,000 and 60,000 with timestamp 2000000000 and settled artificial profit. Receipt reconciliation gives a 1,078,403.5804 USDC net oLP outflow and 1,078,319.4804 USDC net trader inflow. Exploitation still requires a valid trusted signature and an authorized forwarder; arbitrary callers cannot forge prices. Original source was acquired, while full internal traces, historical authorization mappings and all proxy implementations remain independently unverified; no replay. The aggregate USD loss is blank because sheet descriptions and disclosures conflict.",
+    "loss_usd":null,"loss_scope":"Unknown aggregate USD loss: source-sheet description says USD 11.86M while lost/lost_u say USD 24M; focal-transaction amounts are not the incident total.",
+    "tx_urls":["https://arbiscan.io/tx/0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c"],
+    "victims":["https://arbiscan.io/address/0xb71ec9ebd8145dacacf6724363143cb5667a3d36#code","https://arbiscan.io/address/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb#code","https://arbiscan.io/address/0x20d419a8e12c45f88fda7c5760bb6923cee27f98#code"],
+    "bundles":[["upkeep","ostium/upkeep.json"],["verifier-and-context","ostium/verifier.json"],["vault-proxy","ostium/callback-context-info.json"]],
+    "evidence":["ostium/transaction-rpc.json","ostium/receipt-alt.json","ostium/recomputed.json","ostium/report.html"],
+    "full_trace":false,"report_url":"https://anomly.rs/ostium-future-dated-price-report-exploit"
+  },
+  {
+    "case_id":"20260717_CrowdRingCircle","row":117,"key":"crc","chain_id":"56","project_cn":"众环 CRC（CrowdRingCircle）","project_en":"CrowdRingCircle (CRC)",
+    "vulnerability_cn":"卖出时销毁池内代币并过早同步储备","vulnerability_en":"Pair-balance burn and premature reserve synchronization during a sell",
+    "detail_cn":"CRC 的卖出分支先收手续费，再烧毁 pair 已有 CRC 并 sync，最后才记入卖方转来的净额。历史回执显示 40,629.6 CRC 被烧毁，同步时池内仅余 0.0000000001 CRC，随后入账的本金使真实余额高于缓存储备，支持大额 USDT 输出。实际原始交易复算 pair 净流出 209,061.632267871026055744 USDT，EOA 净流入 201,359.472267252045095696 USDT；源表约 201,400 美元单列。未把第三方复现数字当成原始交易，未取得完整内部跟踪或独立复现。源表为 7 月 17 日，交易为 7 月 16 日 UTC。",
+    "detail_en":"CRC takes a sell fee, burns CRC already held by the pair and calls sync before crediting the seller's net principal. The historical receipt records a 40,629.6 CRC burn leaving 0.0000000001 CRC during synchronization; the later principal credit creates a gap between real balance and cached reserve that enables excessive USDT output. The actual receipt reconciles to 209,061.632267871026055744 USDT net pair outflow and 201,359.472267252045095696 USDT net EOA inflow; the sheet's approximate USD 201,400 is kept separately. Third-party reproduction figures are not treated as historical transaction data. Full internal traces and an independent replay were not obtained. The sheet date is July 17 and the transaction date is July 16 UTC.",
+    "loss_usd":"201400","loss_scope":"Approximate source-sheet attacker-loss estimate, distinct from the measured pool net outflow and measured EOA inflow.",
+    "tx_urls":["https://bscscan.com/tx/0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834"],
+    "victims":["https://bscscan.com/address/0x8581433150f2c48ff2efe5a22b17c7d405054509#code"],
+    "bundles":[["token","crc/token-lower.json"]],
+    "evidence":["crc/transaction.json","crc/receipt-alt.json","crc/recomputed.json","crc/report-actual.html"],
+    "full_trace":false,"report_url":"https://anomly.rs/crowdringcircle-sell-destroy-amm-sync-exploit"
+  },
+  {
+    "case_id":"20260723_Verus","row":107,"key":"verus","chain_id":"1","project_cn":"Verus Ethereum Bridge（7 月重复根覆盖）","project_en":"Verus Ethereum Bridge (July duplicate-root overwrite)",
+    "vulnerability_cn":"跨链重复键解析差异与导入金额约束不足","vulnerability_en":"Duplicate-key interpretation mismatch and insufficient import-value constraints",
+    "detail_cn":"同一组带签名的公证字节，在 Verus 的 map.insert 中保留首个 systemID 根，在 Ethereum 反序列化循环中由后续同 ID 根覆盖。受污染的可信根让伪造导入证明通过，SubmitImports 随后委托 TokenManager 释放真实 ETH 和代币。已归档两笔历史公证调用及主攻击完整跟踪，并对应公开原始模块源码；源链各笔公证字节未独立从 Verus RPC 重读，源码和历史状态等价性未全面核实，未重放。源表约 760 万美元与其他披露估值不统一，金额留空，逐币数量另记。",
+    "detail_en":"The same signed notarization bytes preserve the first systemID root through Verus map.insert, but later entries overwrite the root in Ethereum's deserialization loop. The poisoned trusted root lets a fabricated import proof pass, after which SubmitImports delegates real ETH/token payouts to TokenManager. Two historical notarization calls and the focal attack's complete traces are archived and tied to public original module sources. Source-chain notarization bytes were not independently re-read from Verus RPC; full source/historical-state equivalence and replay remain unverified. Aggregate USD loss is blank because the sheet's approximate USD 7.6M and other disclosure valuations differ; per-asset quantities are recorded separately.",
+    "loss_usd":null,"loss_scope":"Aggregate USD estimates differ: sheet 7.6M, CertiK 7.44M, other contemporaneous reports 7.54M; no independent historical valuation was reconstructed.",
+    "tx_urls":["https://etherscan.io/tx/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099"],
+    "victims":["https://etherscan.io/address/0x71518580f36feceffe0721f06ba4703218cd7f63#code","https://etherscan.io/address/0x95b8005c4d9fe80f0aee5b7adce53766080600fb#code","https://etherscan.io/address/0x54e03a1682fd0bb065b669f6296f97028dcfd4ce#code"],
+    "bundles":[["imports","verus/0x27c76df6912698e6d4c55aaa87cf88c30db90cf7.json"],["proof","verus/0x54e03a1682fd0bb065b669f6296f97028dcfd4ce.json"],["blake2b","verus/0xdd5cfb77a89a5fb082fa08fd1cac1d7857bb5752.json"],["mmr","verus/0xf25b678b730fb1a565c426e29b599ad154cd9ba0.json"],["token-manager","verus/0xc45eedc99a98bc2e5ce717bb3ba16bde1725730a.json"],["notarizer","verus/0x9ce91aa0f6d1d316a9535a36951143bc141318b8.json"],["notarization-serializer","verus/0x95b8005c4d9fe80f0aee5b7adce53766080600fb.json"],["transfer-serializer","verus/transfer-serializer.json"]],
+    "blockscout_bundles":[["gateway","verus/gateway-blockscout.json","0x71518580f36feceffe0721f06ba4703218cd7f63"],["notary-blake2b","verus/notarization-serializer-blockscout.json","0x5951a800712b5f2c448a175e30b428faaea87b1a"]],
+    "context_sources":[["source-chain/pbaas.h","verus/pbaas.h"],["source-chain/notarization.cpp","verus/notarization.cpp"]],
+    "evidence":["verus/transaction.json","verus/trace.json","verus/prep1-trace.json","verus/prep2-trace.json","verus/recomputed.json","verus/report.html"],
+    "full_trace":true,"report_url":"https://www.certik.com/blog/verus-incident-analysis"
+  },
+  {
+    "case_id":"20260724_LienFinance","row":106,"key":"lien","chain_id":"1","project_cn":"Lien Finance（债券等价兑换）","project_en":"Lien Finance (equivalent-bond exchange)",
+    "vulnerability_cn":"例外债券总数检查不能保证逐项匹配","vulnerability_en":"Aggregate exception counts fail to enforce per-bond multiplicity",
+    "detail_cn":"exchangeEquivalentBonds 对例外债券只累计匹配次数，不能保证每个 bondID 在输入、输出各出现正确次数。攻击交易在两套独立 BondMaker 部署登记输出组，重复列出属于例外列表的 bondID；例外列表本身没有重复。合约跳过输入销毁却铸造新债券，再通过三个 OTC 付款端点卖出。完整跟踪和转账复算显示，持有 USDC 的已授权流动性提供者钱包共向攻击合约支付 532,070.026484、74.602120、10,000 USDC，攻击者最终收到 542,144.628604 USDC。两套 BondMaker 不是代理与实现关系；未重放。CSV 保留源表约 542,000 美元口径。",
+    "detail_en":"exchangeEquivalentBonds balances aggregate exception-match counts without enforcing each bondID's correct input/output multiplicity. On two independent BondMaker deployments, the transaction registered output groups that repeat bondIDs from the exception list; the exception list itself has no duplicates. It minted bonds through the skipped-burn path and sold them through three OTC payment endpoints. Complete traces and transfer reconciliation show an approved USDC liquidity-provider wallet paid the attack contract 532,070.026484, 74.602120 and 10,000 USDC; the attacker received 542,144.628604 USDC. The two BondMakers are separate deployments, not a proxy/implementation pair. No replay was run. CSV loss retains the sheet's approximate USD 542,000 scope.",
+    "loss_usd":"542000","loss_scope":"Approximate source-sheet USD loss; independently reconciled transaction payments total 542144.628604 USDC.",
+    "tx_urls":["https://etherscan.io/tx/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7"],
+    "victims":["https://etherscan.io/address/0xda6fc5625e617bb92f5359921d43321cebc6bef0#code","https://etherscan.io/address/0x843225cf6e663e4454732d6b551a737ac7b47de0#code","https://etherscan.io/address/0x656e5e976d523a427f05b0c212a22a89ccd9ef18#code"],
+    "bundles":[["bondmaker-a","lien/bondmaker-proxy.json"],["bondmaker-b","lien/bondmaker.json"],["otc-a","lien/otc.json"],["otc-b","lien/otc2.json"],["otc-c","lien/otc3.json"],["bond-token","lien/bond-token.json"],["pricing-context","lien/pricer.json"]],
+    "evidence":["lien/transaction.json","lien/trace.json","lien/recomputed.json","lien/report.html"],
+    "full_trace":true,"report_url":"https://blog.verichains.io/p/lien-finance-hack-analysis"
+  }
+]

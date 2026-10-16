@@ -1,0 +1,12 @@
+{
+  "given_receiver": "0x962f827743078b18cf437f1deea721b42dd19f8c",
+  "unsigned_amount": "340282366920938438580379185484100353741",
+  "reserve_balance_raw": "24882995421947667857715",
+  "signed_int128": "-24882995421947667857715",
+  "withdraw_raw": "24882995421947667857715",
+  "withdraw_DAI": "24882.995421947667857715",
+  "give_selector": "cab4aac0",
+  "historical_delegatecall_target": "0x8d321e80487356c846f34456d31ce761776ef697",
+  "checked_trace_calls": 10,
+  "historical_state_boundary": "Reserve amount is the value returned during the transaction, not an independently read pre-block storage snapshot."
+}

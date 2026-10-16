@@ -1,0 +1,227 @@
+{
+  "reason": "User requires dataset to contain source only; ABI belongs in dataset_artifacts.",
+  "files": [
+    {
+      "source": "dataset/benchmark_complete/20250617_meta_pool/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250617_meta_pool/abi.json",
+      "sha256": "2153b4deb3c5f16de4de4fe0ed41f1e8c060b911209a1a328f7f1c727cc26944",
+      "bytes": 20830
+    },
+    {
+      "source": "dataset/benchmark_complete/20250709_GMX_IO/OrderBook/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250709_GMX_IO/OrderBook/abi.json",
+      "sha256": "564ef68f51fbd824d0639b7458c67e30cb4cc85ab36ef962b8c75e60e0ccd02d",
+      "bytes": 25148
+    },
+    {
+      "source": "dataset/benchmark_complete/20250709_GMX_IO/PositionManager/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250709_GMX_IO/PositionManager/abi.json",
+      "sha256": "e18098f6f3503c148ee7b29f35aeb25a6010fadfe66be5475e7b3cc04c72f044",
+      "bytes": 14258
+    },
+    {
+      "source": "dataset/benchmark_complete/20250715_ArcadiaFi/AccountV1/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250715_ArcadiaFi/AccountV1/abi.json",
+      "sha256": "b6b117067e328738d660799f5408a14daf6d5d7d94d58552ca0d80db4c8f0400",
+      "bytes": 11942
+    },
+    {
+      "source": "dataset/benchmark_complete/20250715_ArcadiaFi/RebalancerSpot/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250715_ArcadiaFi/RebalancerSpot/abi.json",
+      "sha256": "5777c760d6368871a5dfbfc36981557d17e137de6791b4e4ac0b35ee52ec0ddd",
+      "bytes": 7447
+    },
+    {
+      "source": "dataset/benchmark_complete/20250728_SuperRare/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20250728_SuperRare/abi.json",
+      "sha256": "4d82b0b6a067c5e415e2601ad6a27fb3b17901abfe28532ed55369dd7d2552cf",
+      "bytes": 8490
+    },
+    {
+      "source": "dataset/benchmark_complete/20251004_MIM_Spell/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20251004_MIM_Spell/abi.json",
+      "sha256": "22a087b07cc183c02649ba6be66debbead6048465776333d143c46798885c25a",
+      "bytes": 12342
+    },
+    {
+      "source": "dataset/benchmark_complete/20251103_Balancer/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20251103_Balancer/abi.json",
+      "sha256": "19bbb7915ef39f9c3850aaa69fdace77381283569f34db455058bf2baa942a7c",
+      "bytes": 17250
+    },
+    {
+      "source": "dataset/benchmark_complete/20260103_valinitydefi/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260103_valinitydefi/abi.json",
+      "sha256": "4cd4e71562ef0bc188241629ffaaa2d85242be922716f835f2882a7db069c7e0",
+      "bytes": 12974
+    },
+    {
+      "source": "dataset/benchmark_complete/20260128_XPlayer_Media/NodeDistributePlus/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260128_XPlayer_Media/NodeDistributePlus/abi.json",
+      "sha256": "88de39a62fadb6643a10d6e6986a7205f5b5d4ec0dafe3801878f7be88a9f9e1",
+      "bytes": 13409
+    },
+    {
+      "source": "dataset/benchmark_complete/20260128_XPlayer_Media/XPL/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260128_XPlayer_Media/XPL/abi.json",
+      "sha256": "7b42b1c08c08522ab94cc8c2c5fa9245497d32708dbd66affca59bef64a89d9c",
+      "bytes": 25402
+    },
+    {
+      "source": "dataset/benchmark_complete/20260201_crosscurvefi/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260201_crosscurvefi/abi.json",
+      "sha256": "637212f5cf0c5e95016f35a9176b35ea600245195a404fccc29eab832ce3bc43",
+      "bytes": 9383
+    },
+    {
+      "source": "dataset/benchmark_complete/20260306_SolvProtocol/BitcoinReserveOffering/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260306_SolvProtocol/BitcoinReserveOffering/abi.json",
+      "sha256": "577668a07b865d21061bb1c4045671fc7a8cebc07113fe3849a92c9aac3502ec",
+      "bytes": 7081
+    },
+    {
+      "source": "dataset/benchmark_complete/20260306_SolvProtocol/OpenFundShareDelegate/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260306_SolvProtocol/OpenFundShareDelegate/abi.json",
+      "sha256": "8a0cdbc45295f18ff65c266088c275762ab293cd5a32216b18cf8954b0cba13b",
+      "bytes": 17317
+    },
+    {
+      "source": "dataset/benchmark_complete/20260309_gondixyz/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260309_gondixyz/abi.json",
+      "sha256": "d1dcf57f511c987eba55391a5889310c68c5d6c9fd39b7666c52bff63eab8728",
+      "bytes": 22067
+    },
+    {
+      "source": "dataset/benchmark_complete/20260311_AlkemiNetwork/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260311_AlkemiNetwork/abi.json",
+      "sha256": "57acd260048ab5a213f416373972f02bc361829af09e110db6cd187c59a575ef",
+      "bytes": 11620
+    },
+    {
+      "source": "dataset/benchmark_complete/20260311_planet_finance/PlanetDiscountDelegate/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260311_planet_finance/PlanetDiscountDelegate/abi.json",
+      "sha256": "566c45aae940b887c45a60e6d2ffc528a185e73cf3c4d4db11f5d840136be926",
+      "bytes": 7243
+    },
+    {
+      "source": "dataset/benchmark_complete/20260312_DBXen_crypto/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260312_DBXen_crypto/abi.json",
+      "sha256": "b2f4f3fa5fad0806984f1b38d93800b71d4a8c31c13d2ce6dd00b813f0b5dff6",
+      "bytes": 9210
+    },
+    {
+      "source": "dataset/benchmark_complete/20260323_Cyrus_finance/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260323_Cyrus_finance/abi.json",
+      "sha256": "85ee72aee021d820e204356e4798bdc89652f3ea71c5abe2a947fc7afaad6201",
+      "bytes": 9558
+    },
+    {
+      "source": "dataset/benchmark_complete/20260407_Squid/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260407_Squid/abi.json",
+      "sha256": "3cd99b37b660c90affe5f1f259f24d097ea55df62df3d5a32ef6e9d8e8d41f3f",
+      "bytes": 2118
+    },
+    {
+      "source": "dataset/benchmark_complete/20260407_TGAI/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260407_TGAI/abi.json",
+      "sha256": "e656b4ae7b57f953e33de10c39cb9684778abbf6c8ccf599129630e2baca1168",
+      "bytes": 17926
+    },
+    {
+      "source": "dataset/benchmark_complete/20260412_SubQueryNetwork/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260412_SubQueryNetwork/abi.json",
+      "sha256": "3c1390e26690b9add640be2980fcc3514a3a8991914ea0502bfc01493cbb48ca",
+      "bytes": 1762
+    },
+    {
+      "source": "dataset/benchmark_complete/20260413_hyperbridge/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260413_hyperbridge/abi.json",
+      "sha256": "496ae7ffea1423309f116602dd6fe20120a6c6dd3496ea69f1b63bdafcf1d033",
+      "bytes": 9123
+    },
+    {
+      "source": "dataset/benchmark_complete/20260426_ZetaChain/GatewayEVM/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260426_ZetaChain/GatewayEVM/abi.json",
+      "sha256": "4e9adef6ba633012a86b335ddca1b29214f8ba30f37f5c4dadb6f29197a4a0fd",
+      "bytes": 19936
+    },
+    {
+      "source": "dataset/benchmark_complete/20260507_WhiteEagle/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260507_WhiteEagle/abi.json",
+      "sha256": "fd6df8eb769ce11d9834b5c8477ec96ee4146b55a5ce7d0c43e989c9b1a1194a",
+      "bytes": 12176
+    },
+    {
+      "source": "dataset/benchmark_complete/20260511_humafinance/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260511_humafinance/abi.json",
+      "sha256": "b8e658dbc8a96483aa14e59a43c691c5b2df33cab61484af3a227b0abad97b71",
+      "bytes": 14709
+    },
+    {
+      "source": "dataset/benchmark_complete/20260512_BoostHook/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260512_BoostHook/abi.json",
+      "sha256": "8ad1c88d39188236ae82803e84c090d18dfa05de33d585b7c2de6ef227f1e4cb",
+      "bytes": 28975
+    },
+    {
+      "source": "dataset/benchmark_complete/20260512_eonx_ai/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260512_eonx_ai/abi.json",
+      "sha256": "9c291bbf47d5dd6286eb620f0329d362bbb31c4540b0a857753b000f3bfe9ec1",
+      "bytes": 15319
+    },
+    {
+      "source": "dataset/benchmark_complete/20260512_SQToken/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260512_SQToken/abi.json",
+      "sha256": "944165d6a3d6de5c0d08763bcccc8444360fbb13cfedb0cf25523e0124e54371",
+      "bytes": 13450
+    },
+    {
+      "source": "dataset/benchmark_complete/20260619_mySwap/onchain/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260619_mySwap/onchain/abi.json",
+      "sha256": "dc3c3c0b4d53bb35de148e19e1c6350c91c53e4f9fd8bc8e31c53c9b562a73ed",
+      "bytes": 33428
+    },
+    {
+      "source": "dataset/benchmark_complete/20260625_DLMC/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260625_DLMC/abi.json",
+      "sha256": "ca096abe810de2fe313bb392c6de70b05331f210078956f2735a60022f124d9e",
+      "bytes": 45089
+    },
+    {
+      "source": "dataset/benchmark_complete/20260709_BFB/source-bundles/vulnerable/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260709_BFB/source-bundles/vulnerable/abi.json",
+      "sha256": "19d6cce47c89f13bbcf5f052d422e2ece68bdac39d7616e4e9aaa6aa06443c0c",
+      "bytes": 13373
+    },
+    {
+      "source": "dataset/benchmark_complete/20260713_Lumi_Sodium/source-bundles/vulnerable/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260713_Lumi_Sodium/source-bundles/vulnerable/abi.json",
+      "sha256": "ba0d754199712bdb8494053c3d02d36e55fa6123049c08aa439b65adfddf6f56",
+      "bytes": 19277
+    },
+    {
+      "source": "dataset/benchmark_complete/20260713_PHX/source-bundles/vulnerable/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260713_PHX/source-bundles/vulnerable/abi.json",
+      "sha256": "0cb03ff30458b95d847b0340f73bc9fdc416ef73e43e01e85b899b729122f43d",
+      "bytes": 26240
+    },
+    {
+      "source": "dataset/benchmark_complete/20260714_VECAndETH/source-bundles/vulnerable/abi.json",
+      "destination": "dataset_artifacts/benchmark_complete/20260714_VECAndETH/source-bundles/vulnerable/abi.json",
+      "sha256": "1c22303146e02d5768b7c36e00ff4a5bdd109e1aadf4956e2ed7dd82359691aa",
+      "bytes": 14908
+    },
+    {
+      "source": "dataset/benchmark_simplified/20260619_mySwap/onchain/abi.json",
+      "destination": "dataset_artifacts/benchmark_simplified/20260619_mySwap/onchain/abi.json",
+      "sha256": "dc3c3c0b4d53bb35de148e19e1c6350c91c53e4f9fd8bc8e31c53c9b562a73ed",
+      "bytes": 33428
+    },
+    {
+      "source": "dataset/benchmark_simplified/20260625_DLMC/abi.json",
+      "destination": "dataset_artifacts/benchmark_simplified/20260625_DLMC/abi.json",
+      "sha256": "ca096abe810de2fe313bb392c6de70b05331f210078956f2735a60022f124d9e",
+      "bytes": 45089
+    }
+  ]
+}

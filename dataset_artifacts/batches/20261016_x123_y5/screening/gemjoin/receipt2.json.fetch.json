@@ -1,0 +1,18 @@
+{
+  "file": "gemjoin/receipt2.json",
+  "url": "https://bsc-dataseed.binance.org",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 23,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x3b26b3cb6b820a15b7216f07e6951de59990671f513bca62b40759c80ec42652"
+    ]
+  },
+  "retrieved_at": "2026-10-16T08:55:04.027245+08:00",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.binance.org",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 161721,
+  "sha256": "4682afdcae7095cfb2e13999faad68a3267c76475e559f6945fd03121c2b2279"
+}

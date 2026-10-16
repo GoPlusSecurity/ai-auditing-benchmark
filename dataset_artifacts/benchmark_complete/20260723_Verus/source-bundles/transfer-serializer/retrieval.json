@@ -1,0 +1,10 @@
+{
+  "file": "verus/transfer-serializer.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x747d5eed7aa4436b3d7a6cf2db7d78b8e93600fc?fields=all",
+  "retrieved_at": "2026-10-16T09:53:29.029030+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x747d5eed7aa4436b3d7a6cf2db7d78b8e93600fc?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 524211,
+  "sha256": "ed9b2ebe41632569220d437794be7156d8b603d8e200eb2b37c598f8859f0fab"
+}

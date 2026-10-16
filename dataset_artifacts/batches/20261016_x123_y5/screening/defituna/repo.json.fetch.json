@@ -1,0 +1,10 @@
+{
+  "file": "defituna/repo.json",
+  "url": "https://api.github.com/repos/DefiTuna/tuna-sdk",
+  "retrieved_at": "2026-10-16T08:48:35.801221+08:00",
+  "status": 200,
+  "final_url": "https://api.github.com/repos/DefiTuna/tuna-sdk",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 6045,
+  "sha256": "5201c2ff46cd18a09c666ab1669e38c25a1151de3cb32752130158561bc231b3"
+}

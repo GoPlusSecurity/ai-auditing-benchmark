@@ -1,0 +1,641 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "vETH",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Bridge",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Verus",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Dai",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Mkr",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_readyExports",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "exportHash",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "prevExportHash",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "endHeight",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "bestForks",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "bridgeConverterActive",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "cceLastEndHeight",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "cceLastStartHeight",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "claimableFees",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "contracts",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "deserializeNotarization",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "notarization",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "proposerAndLaunched",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "prevnotarizationtxid",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "hashprevcrossnotarization",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "stateRoot",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "height",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "exportHeights",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "initialize",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "lastImportInfo",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "hashOfTransfers",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "exporttxid",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "exporttxoutnum",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "height",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "lastTxIdImport",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "notaries",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "notaryAddressMapping",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "main",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "recovery",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "state",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "owner",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "processedTxids",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "readCompactSizeLE",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "incoming",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "offset",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "offset",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "value",
+            "type": "uint64",
+            "internalType": "uint64"
+          }
+        ],
+        "internalType": "struct VerusObjectsCommon.UintReader"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "readVarint",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "buf",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "idx",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "v",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "retidx",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "readVarintStruct",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "buf",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "idx",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "offset",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "value",
+            "type": "uint64",
+            "internalType": "uint64"
+          }
+        ],
+        "internalType": "struct VerusObjectsCommon.UintReader"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "refunds",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "rollingUpgradeVotes",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "rollingVoteIndex",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "saltsUsed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "serializeUint32",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "number",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "serializeUint64",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "v",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "storageGlobal",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "tokenList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "verusToERC20mapping",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "erc20ContractAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flags",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "tokenIndex",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "tokenID",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

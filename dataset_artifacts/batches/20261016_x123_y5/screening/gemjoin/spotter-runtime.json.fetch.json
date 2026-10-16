@@ -1,0 +1,19 @@
+{
+  "file": "gemjoin/spotter-runtime.json",
+  "url": "https://bsc-dataseed.binance.org",
+  "body": {
+    "jsonrpc": "2.0",
+    "id": 71,
+    "method": "eth_getCode",
+    "params": [
+      "0x849dc2416cbe54995a1d725afe526c0e38829228",
+      "latest"
+    ]
+  },
+  "retrieved_at": "2026-10-16T09:01:48.862736+08:00",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.binance.org",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 5053,
+  "sha256": "373cc1065badaf4361ea4b49a89a042d1816fa36ed35ebbb037e3961353283dd"
+}

@@ -1,0 +1,102 @@
+{
+  "batch_calls": [
+    {
+      "index": 0,
+      "target": "0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411",
+      "selector": "0x9a10cc32",
+      "calldata_bytes": 580
+    },
+    {
+      "index": 1,
+      "target": "0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
+      "selector": "0x4585e33b",
+      "calldata_bytes": 548,
+      "order_id": 2157519,
+      "feed": "0x7404e3d104ea7841c3d9e6fd20adfe99b4ad586bc08d8f3bd3afef894cf184de",
+      "timestamp": 2000000000,
+      "price_raw": "5000000000000000000000",
+      "bid_raw": "5000000000000000000000",
+      "ask_raw": "5000000000000000000000",
+      "is_market_open": true,
+      "signature": {
+        "r": "0xfc2016de940d4721be617de257ced3f736e567b2eff60502973e430646ac9fb5",
+        "s": "0x1ac7d3019f3a8883be66c2d974c3137c275eaf6948f19402b42cc0aca58db55d",
+        "v": 27
+      }
+    },
+    {
+      "index": 2,
+      "target": "0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411",
+      "selector": "0x9a10cc32",
+      "calldata_bytes": 292
+    },
+    {
+      "index": 3,
+      "target": "0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
+      "selector": "0x4585e33b",
+      "calldata_bytes": 548,
+      "order_id": 2157520,
+      "feed": "0x7404e3d104ea7841c3d9e6fd20adfe99b4ad586bc08d8f3bd3afef894cf184de",
+      "timestamp": 2000000000,
+      "price_raw": "60000000000000000000000",
+      "bid_raw": "60000000000000000000000",
+      "ask_raw": "60000000000000000000000",
+      "is_market_open": true,
+      "signature": {
+        "r": "0x8d6eb3d5e6cb5c6d64ede2714986cbcc8ff7f6ec75815baa9b5076fff2a7f0ed",
+        "s": "0x3d8a48a2e9f08343b73277d046d622c4f4fe6c4f9bdce4c694fb8d3ec12c3805",
+        "v": 27
+      }
+    }
+  ],
+  "block_number": 484138330,
+  "USDC_transfers": [
+    {
+      "from": "0x321df194646029e7a6193ea05573d4b9c398bfd9",
+      "to": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "raw": "120000000000",
+      "log_index": 0
+    },
+    {
+      "from": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "to": "0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9",
+      "raw": "36000000",
+      "log_index": 3
+    },
+    {
+      "from": "0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9",
+      "to": "0x20d419a8e12c45f88fda7c5760bb6923cee27f98",
+      "raw": "36000000",
+      "log_index": 4
+    },
+    {
+      "from": "0x321df194646029e7a6193ea05573d4b9c398bfd9",
+      "to": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "raw": "100000",
+      "log_index": 22
+    },
+    {
+      "from": "0x20d419a8e12c45f88fda7c5760bb6923cee27f98",
+      "to": "0x321df194646029e7a6193ea05573d4b9c398bfd9",
+      "raw": "1078439580400",
+      "log_index": 34
+    },
+    {
+      "from": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "to": "0x321df194646029e7a6193ea05573d4b9c398bfd9",
+      "raw": "119879900000",
+      "log_index": 36
+    },
+    {
+      "from": "0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "to": "0x321df194646029e7a6193ea05573d4b9c398bfd9",
+      "raw": "100000",
+      "log_index": 39
+    }
+  ],
+  "trader_net_USDC": "1078319.4804",
+  "vault_net_USDC": "-1078403.5804",
+  "full_internal_trace_obtained": false,
+  "signer_recovery_independently_run": false,
+  "note": "Signature bytes and future timestamps decoded; signature recovery and historical authorized-signer/forwarder mappings were not independently read."
+}

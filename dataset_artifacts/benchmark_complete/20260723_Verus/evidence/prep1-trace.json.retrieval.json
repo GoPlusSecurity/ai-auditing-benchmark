@@ -1,0 +1,10 @@
+{
+  "file": "verus/prep1-trace.json",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0x8f21bd8f0fce72ac959caa93a9923d85f902dfc6eddac2785ac5bc49c3b28d8f/raw-trace",
+  "retrieved_at": "2026-10-16T09:14:34.129727+08:00",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0x8f21bd8f0fce72ac959caa93a9923d85f902dfc6eddac2785ac5bc49c3b28d8f/raw-trace",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 22122,
+  "sha256": "3f74da80c28a9dbbecb6a74c7dc1953fece90788fe8b53792f925b050eac8bda"
+}

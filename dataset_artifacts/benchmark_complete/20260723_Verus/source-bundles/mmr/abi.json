@@ -1,0 +1,31 @@
+[
+  {
+    "name": "GetMMRProofIndex",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "pos",
+        "type": "uint64",
+        "internalType": "uint64"
+      },
+      {
+        "name": "mmvSize",
+        "type": "uint64",
+        "internalType": "uint64"
+      },
+      {
+        "name": "extrahashes",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "pure"
+  }
+]

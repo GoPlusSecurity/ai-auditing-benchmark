@@ -1,0 +1,1030 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "vETH",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Bridge",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "Verus",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_readyExports",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "exportHash",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "prevExportHash",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "endHeight",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "bestForks",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "bridgeConverterActive",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "cceLastEndHeight",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "cceLastStartHeight",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "checkBranch",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_hashToCheck",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "_branch",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "CMerkleBranchBase",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "nIndex",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "nSize",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "extraHashes",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "branch",
+            "type": "bytes32[]",
+            "internalType": "bytes32[]"
+          }
+        ],
+        "internalType": "struct VerusObjects.CMerkleBranch"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "checkExportAndTransfers",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_import",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "partialtransactionproof",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "version",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "typeC",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "txproof",
+                "type": "tuple[]",
+                "components": [
+                  {
+                    "name": "branchType",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "proofSequence",
+                    "type": "tuple",
+                    "components": [
+                      {
+                        "name": "CMerkleBranchBase",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "nIndex",
+                        "type": "uint32",
+                        "internalType": "uint32"
+                      },
+                      {
+                        "name": "nSize",
+                        "type": "uint32",
+                        "internalType": "uint32"
+                      },
+                      {
+                        "name": "extraHashes",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "branch",
+                        "type": "bytes32[]",
+                        "internalType": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct VerusObjects.CMerkleBranch"
+                  }
+                ],
+                "internalType": "struct VerusObjects.CTXProof[]"
+              },
+              {
+                "name": "components",
+                "type": "tuple[]",
+                "components": [
+                  {
+                    "name": "elType",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "elIdx",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "elVchObj",
+                    "type": "bytes",
+                    "internalType": "bytes"
+                  },
+                  {
+                    "name": "elProof",
+                    "type": "tuple[]",
+                    "components": [
+                      {
+                        "name": "branchType",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "proofSequence",
+                        "type": "tuple",
+                        "components": [
+                          {
+                            "name": "CMerkleBranchBase",
+                            "type": "uint8",
+                            "internalType": "uint8"
+                          },
+                          {
+                            "name": "nIndex",
+                            "type": "uint32",
+                            "internalType": "uint32"
+                          },
+                          {
+                            "name": "nSize",
+                            "type": "uint32",
+                            "internalType": "uint32"
+                          },
+                          {
+                            "name": "extraHashes",
+                            "type": "uint8",
+                            "internalType": "uint8"
+                          },
+                          {
+                            "name": "branch",
+                            "type": "bytes32[]",
+                            "internalType": "bytes32[]"
+                          }
+                        ],
+                        "internalType": "struct VerusObjects.CMerkleBranch"
+                      }
+                    ],
+                    "internalType": "struct VerusObjects.CTXProof[]"
+                  }
+                ],
+                "internalType": "struct VerusObjects.CComponents[]"
+              }
+            ],
+            "internalType": "struct VerusObjects.CPtransactionproof"
+          },
+          {
+            "name": "serializedTransfers",
+            "type": "bytes",
+            "internalType": "bytes"
+          }
+        ],
+        "internalType": "struct VerusObjects.CReserveTransferImport"
+      },
+      {
+        "name": "hashedTransfers",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint128",
+        "internalType": "uint128"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "checkProof",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "hashToProve",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "_branches",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "branchType",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "proofSequence",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "CMerkleBranchBase",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "nIndex",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "nSize",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "extraHashes",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "branch",
+                "type": "bytes32[]",
+                "internalType": "bytes32[]"
+              }
+            ],
+            "internalType": "struct VerusObjects.CMerkleBranch"
+          }
+        ],
+        "internalType": "struct VerusObjects.CTXProof[]"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "claimableFees",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "contracts",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "exportHeights",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getLastConfirmedVRSCStateRoot",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getTokenList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "start",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "components": [
+          {
+            "name": "iaddress",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "erc20ContractAddress",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "launchSystemID",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "flags",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "ticker",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "tokenID",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct VerusObjects.setupToken[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "initialize",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "lastImportInfo",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "hashOfTransfers",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "exporttxid",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "exporttxoutnum",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "height",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "lastTxIdImport",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "notaries",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "notaryAddressMapping",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "main",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "recovery",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "state",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "owner",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "processedTxids",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "proveComponents",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_import",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "partialtransactionproof",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "version",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "typeC",
+                "type": "uint8",
+                "internalType": "uint8"
+              },
+              {
+                "name": "txproof",
+                "type": "tuple[]",
+                "components": [
+                  {
+                    "name": "branchType",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "proofSequence",
+                    "type": "tuple",
+                    "components": [
+                      {
+                        "name": "CMerkleBranchBase",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "nIndex",
+                        "type": "uint32",
+                        "internalType": "uint32"
+                      },
+                      {
+                        "name": "nSize",
+                        "type": "uint32",
+                        "internalType": "uint32"
+                      },
+                      {
+                        "name": "extraHashes",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "branch",
+                        "type": "bytes32[]",
+                        "internalType": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct VerusObjects.CMerkleBranch"
+                  }
+                ],
+                "internalType": "struct VerusObjects.CTXProof[]"
+              },
+              {
+                "name": "components",
+                "type": "tuple[]",
+                "components": [
+                  {
+                    "name": "elType",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "elIdx",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "elVchObj",
+                    "type": "bytes",
+                    "internalType": "bytes"
+                  },
+                  {
+                    "name": "elProof",
+                    "type": "tuple[]",
+                    "components": [
+                      {
+                        "name": "branchType",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "proofSequence",
+                        "type": "tuple",
+                        "components": [
+                          {
+                            "name": "CMerkleBranchBase",
+                            "type": "uint8",
+                            "internalType": "uint8"
+                          },
+                          {
+                            "name": "nIndex",
+                            "type": "uint32",
+                            "internalType": "uint32"
+                          },
+                          {
+                            "name": "nSize",
+                            "type": "uint32",
+                            "internalType": "uint32"
+                          },
+                          {
+                            "name": "extraHashes",
+                            "type": "uint8",
+                            "internalType": "uint8"
+                          },
+                          {
+                            "name": "branch",
+                            "type": "bytes32[]",
+                            "internalType": "bytes32[]"
+                          }
+                        ],
+                        "internalType": "struct VerusObjects.CMerkleBranch"
+                      }
+                    ],
+                    "internalType": "struct VerusObjects.CTXProof[]"
+                  }
+                ],
+                "internalType": "struct VerusObjects.CComponents[]"
+              }
+            ],
+            "internalType": "struct VerusObjects.CPtransactionproof"
+          },
+          {
+            "name": "serializedTransfers",
+            "type": "bytes",
+            "internalType": "bytes"
+          }
+        ],
+        "internalType": "struct VerusObjects.CReserveTransferImport"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "txRoot",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "proveImports",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "dataIn",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint128",
+        "internalType": "uint128"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      },
+      {
+        "name": "",
+        "type": "uint176",
+        "internalType": "uint176"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "readVarint",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "buf",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "idx",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "v",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "retidx",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "refunds",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "rollingUpgradeVotes",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "rollingVoteIndex",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "saltsUsed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "storageGlobal",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "tokenList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "verusToERC20mapping",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "erc20ContractAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flags",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "tokenIndex",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "tokenID",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

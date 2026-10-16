@@ -1,0 +1,10 @@
+{
+  "file": "gemjoin/maker-spot-source.json",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x65c79fcb50ca1594b025960e539ed7a9a6d434a3?fields=all",
+  "retrieved_at": "2026-10-16T09:01:48.862736+08:00",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x65c79fcb50ca1594b025960e539ed7a9a6d434a3?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 95077,
+  "sha256": "b22878958715fff3f68b4ec6c96f5ff733ef031ff78fed78fcdf522296768462"
+}

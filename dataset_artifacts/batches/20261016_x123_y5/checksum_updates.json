@@ -1,0 +1,20 @@
+[
+  "dataset_artifacts/benchmark_complete/20260619_mySwap/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260625_DLMC/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260709_BFB/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260713_Lumi_Sodium/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260713_PHX/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260714_VECAndETH/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260715_Drips/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260715_Ostium/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260717_CrowdRingCircle/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260723_Verus/SHA256SUMS",
+  "dataset_artifacts/benchmark_complete/20260724_LienFinance/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260619_mySwap/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260625_DLMC/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260715_Drips/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260715_Ostium/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260717_CrowdRingCircle/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260723_Verus/SHA256SUMS",
+  "dataset_artifacts/benchmark_simplified/20260724_LienFinance/SHA256SUMS"
+]

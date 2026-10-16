@@ -1,0 +1,10 @@
+{
+  "file": "allbridge/repos.json",
+  "url": "https://api.github.com/orgs/allbridge-io/repos?per_page=100",
+  "retrieved_at": "2026-10-16T08:51:48.962946+08:00",
+  "status": 200,
+  "final_url": "https://api.github.com/orgs/allbridge-io/repos?per_page=100",
+  "content_type": "application/json; charset=utf-8",
+  "bytes": 212420,
+  "sha256": "34e290a69f394ae420c98680906dd692938e1119287e54449e2878c17921a284"
+}
