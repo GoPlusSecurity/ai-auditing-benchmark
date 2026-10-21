@@ -2,7 +2,7 @@
 
 这里收录已编写详细说明的 case。每篇都围绕三件事展开：**合约或协议平时负责什么、程序具体哪里出错、攻击者如何利用错误把钱拿走。** 正文先用直接的语言解释，再给出源码、交易和资料位置；没有查到的部分会明确说明。
 
-源码与既有反编译代码位于仓库根目录的 `dataset/`；ABI、配套元数据、来源记录、交易证据和校验清单位于对应的 `dataset_artifacts/`，案例说明位于 `docs/cases/`。两棵目录沿用相同的完整／精简版本和案例层级；只有字节码及证据的 JaredFromSubway 位于资料目录，仍保留在事件索引中。
+源码与既有反编译代码位于仓库根目录的 `dataset/`；ABI、配套元数据、来源记录、交易证据和校验清单位于对应的 `dataset_artifacts/`，案例说明位于 `docs/cases/`。只有字节码及证据的 JaredFromSubway 位于资料目录，仍保留在事件索引中。
 
 ## 2026-10-16 按 X=123、Y=5 向上筛选
 
@@ -18,7 +18,7 @@
 
 5 个案例均取得核心漏洞原始源码。RWT、42DAO 因关键未开源逻辑的公开浏览器反编译结果未取得，按用户补充跳过；其他跳过理由逐行记录，未将“本批未取得源码”写成“公开源码永不存在”。仅有未验证编排合约、而核心缺陷与实际参数已分别由原始源码和完整跟踪覆盖的 Drips/Lien，不需要用编排合约反编译推定核心逻辑。
 
-所有源码仅在 `dataset/`，ABI、编译配置、原始来源响应和交易证据在 `dataset_artifacts/`，说明在 `docs/cases/`。原有 37 个 ABI 逐字节迁移，旧源码保留。Ostium、Verus 的整体美元损失口径不能统一，两份 CSV 留空；代表交易的精确币量在各案例单列。5 例未本地编译、未分叉重放；筛选时仅对未收录的 42DAO 上游 Spotter 做过当前执行代码比较，不属于已收录案例的编译或复现验收。
+所有源码仅在 `dataset/`，ABI、编译配置、原始来源响应和交易证据在 `dataset_artifacts/`，说明在 `docs/cases/`。原有 ABI 逐字节迁移到资料目录，旧源码保留。Ostium、Verus 的整体美元损失口径不能统一，两份 CSV 留空；代表交易的精确币量在各案例单列。5 例未本地编译、未分叉重放；筛选时仅对未收录的 42DAO 上游 Spotter 做过当前执行代码比较，不属于已收录案例的编译或复现验收。
 
 批次入口：[原始 CSV](../../dataset_artifacts/batches/20261016_x123_y5/sheet_gid0_raw.csv)、[固定快照](../../dataset_artifacts/batches/20261016_x123_y5/snapshot.json)、[逐行结果](../../dataset_artifacts/batches/20261016_x123_y5/results.json)、[验证报告](../../dataset_artifacts/batches/20261016_x123_y5/validation.json)。原始导出 SHA-256：`d62e6e56755ab3c678bb9645eb0e0fa3a5aae6bf378f0b582a49814cab480c30`。
 
@@ -40,7 +40,7 @@
 | 107 | 新增 | [Lumi / Sodium：ERC-1271 会话绕过与持久授权](20260713_Lumi_Sodium.md) | Sourcify creation/runtime `exact_match`；三组交易与回执已归档。 |
 | 106 | 新增 | [VECAndETH：可操纵现货价结算奖励](20260714_VECAndETH.md) | Sourcify creation/runtime `exact_match`；毛付款、手续费、净收益与源表损失分开记录。 |
 
-本批新增 5 个 case，无重复、无已有 case 补全，跳过 6 行。四个 Sourcify 案例保存完整原始源包与匹配状态；Bonzo/Supra 保存 XDCScan 原始 Supra 源码、Hedera 攻击时代理/实现调用和两份 runtime 对比。对攻击时 Hedera runtime 使用用户指定的 Panoramix 官方仓库（工具自报版本 Panoramix 17 Feb 2020）处理，得到 9,550 行完整反汇编和 20 个 selector（包括 `0x2818300e`），但全量及目标函数符号执行均未收敛，因此没有高层伪代码；失败的 `.pan`/`.json` 未归档。详见[运行记录](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)和[反汇编](../../dataset_artifacts/benchmark_complete/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)。所有精简版都是完整版的原文行切片并补齐理解漏洞所需的关键接口、状态、常量、入口、计算和付款/验证路径；人工语义检查见[语义审查记录](sources/20261002_semantic_review.json)，机械校验见[验证输出](sources/20261002_validation.json)。本批未本地编译、未完成攻击重放；只有 Bonzo 取得 Hedera 完整 actions，其他案例以交易、回执日志和公开跟踪分析为证据。
+本批新增 5 个 case，无重复、无已有 case 补全，跳过 6 行。四个 Sourcify 案例保存完整原始源包与匹配状态；Bonzo/Supra 保存 XDCScan 原始 Supra 源码、Hedera 攻击时代理/实现调用和两份 runtime 对比。对攻击时 Hedera runtime 使用用户指定的 Panoramix 官方仓库（工具自报版本 Panoramix 17 Feb 2020）处理，得到 9,550 行完整反汇编和 20 个 selector（包括 `0x2818300e`），但全量及目标函数符号执行均未收敛，因此没有高层伪代码；失败的 `.pan`/`.json` 未归档。详见[运行记录](../../dataset_artifacts/20260711_Bonzo_Supra/evidence/bonzo-panoramix-run.json)和[反汇编](../../dataset_artifacts/20260711_Bonzo_Supra/evidence/bonzo-panoramix-disassembly.asm)。人工语义检查见[语义审查记录](sources/20261002_semantic_review.json)，机械校验见[验证输出](sources/20261002_validation.json)。本批未本地编译、未完成攻击重放；只有 Bonzo 取得 Hedera 完整 actions，其他案例以交易、回执日志和公开跟踪分析为证据。
 
 ## 2026-10-01 读取的源表第 114–118 行
 
@@ -54,7 +54,7 @@
 | 115 | 跳过 | corezcat / GameStopfun Rugpull | 披露称为 Rugpull，未给攻击交易、确认的合约代码缺陷或公开原始漏洞源码。不补选。 |
 | 114 | 跳过 | Hinkal | Hinkal、helper、in-logic 有验证 Solidity，但根因所在的攻击时 Circom / 生成 verifier 原始源码未公开匹配；后来公开的仓库已含子群检查修复，不能代替漏洞版本。转账第二页仍有下一页游标，也不能用当前归档声称完整损失总额。 |
 
-本批结果是 1 个正式收录 case、1 个重复行合并、3 个跳过，共覆盖 5 行。Edel 是用户明确批准的单例反编译源码例外：两套 dataset 都保留 Etherscan `.pan` 全文和攻击区块 runtime 绑定证据，并用 `[Decompiled]`、`source_kind=decompiled`、`verified_original_source=false` 标出性质。公开的 204,200、305,000、403,000 美元口径没有统一，所以中英文 CSV 损失列留空。Hinkal 仍因攻击时电路/verifier 原始源码未匹配而跳过；钓鱼和 Rugpull 行也没有转成合约漏洞 case。
+本批结果是 1 个正式收录 case、1 个重复行合并、3 个跳过，共覆盖 5 行。Edel 是用户明确批准的单例反编译源码例外：dataset 保留 Etherscan `.pan` 全文和攻击区块 runtime 绑定证据，并用 `[Decompiled]`、`source_kind=decompiled`、`verified_original_source=false` 标出性质。公开的 204,200、305,000、403,000 美元口径没有统一，所以中英文 CSV 损失列留空。Hinkal 仍因攻击时电路/verifier 原始源码未匹配而跳过；钓鱼和 Rugpull 行也没有转成合约漏洞 case。
 
 ## 2026-09-14 读取的源表第 98–102 行
 
@@ -62,11 +62,11 @@
 
 | 源表行 | Case / 数据集日期 | 详细说明 | 源码与事件证据状态 |
 | --- | --- | --- | --- |
-| 98 | DLMC / 2026.06.25 | [入金抬价和推荐奖励如何合在一起取走资金](20260625_DLMC.md) | 已取得并验证原始 Solidity；两套源码本地编译通过，交易回执和金额已核对，未分叉重放。 |
-| 99 | Royalties / 2026.06.24 | [没有转入 NFT，却被记成拥有 100 份分红权](20260624_Royalties.md) | 两份实现共 45 个 Solidity 文件及代理源码已归档；17 份原文切片。历史代理槽及状态未独立读取。 |
-| 100 | SecondFi / 2026.06.23 | [签名里的秘密变成公开值，钱包为何失守](20260623_SecondFi.md) | 非合约事件；已从两套 dataset 目录和 CSV 移除，仅保留文档与事件证据。 |
-| 101 | ATM / 2026.06.22 | [先把 LP 转进池子，为何别人能取走资产](20260622_ATM.md) | 仅保留文档及引用资料，已从两套 dataset 目录和中英文 CSV 移除；说明 LP 分步操作的风险。 |
-| 102 | Taiko / 2026.06.22 | [假证明如何让跨链桥释放真实资产](20260622_Taiko.md) | 实际 SGX verifier 源包与官方固定版本核对；其他组件为上游源码上下文，46 份原文切片。 |
+| 98 | DLMC / 2026.06.25 | [入金抬价和推荐奖励如何合在一起取走资金](20260625_DLMC.md) | 已取得并验证原始 Solidity；完整源码本地编译通过，交易回执和金额已核对，未分叉重放。 |
+| 99 | Royalties / 2026.06.24 | [没有转入 NFT，却被记成拥有 100 份分红权](20260624_Royalties.md) | 两份实现共 45 个 Solidity 文件及代理源码已归档。历史代理槽及状态未独立读取。 |
+| 100 | SecondFi / 2026.06.23 | [签名里的秘密变成公开值，钱包为何失守](20260623_SecondFi.md) | 非合约事件；已从 dataset 目录和 CSV 移除，仅保留文档与事件证据。 |
+| 101 | ATM / 2026.06.22 | [先把 LP 转进池子，为何别人能取走资产](20260622_ATM.md) | 仅保留文档及引用资料，已从 dataset 目录和中英文 CSV 移除；说明 LP 分步操作的风险。 |
+| 102 | Taiko / 2026.06.22 | [假证明如何让跨链桥释放真实资产](20260622_Taiko.md) | 实际 SGX verifier 源包与官方固定版本核对；其他组件为上游源码上下文。 |
 
 数据集中的 `source_status` 区分已验证原始源码、SGX 源码与上游上下文。SecondFi 与 ATM 只保留文档证据，不计入数据集或中英文 CSV；Taiko 也不能仅审计付款 Vault 而忽略上游证明链。目录数量不代表已完成编译或重放的样本数量，具体限制以每篇说明和 SOURCE.md 为准。
 
@@ -76,11 +76,11 @@
 
 | 源表行 | Case / 数据集日期 | 详细说明 | 源码与事件证据状态 |
 | --- | --- | --- | --- |
-| 99 | JaredFromSubway / 2026.06.21 | [交易赚了小钱，却留下了以后扣款的权限](20260621_JaredFromSubway.md) | 两套目录已保存受害机器人的 13,835 字节 runtime，固定攻击区块及前一区块的查询一致；原始源码和反编译未取得。 |
+| 99 | JaredFromSubway / 2026.06.21 | [交易赚了小钱，却留下了以后扣款的权限](20260621_JaredFromSubway.md) | 资料目录已保存受害机器人的 13,835 字节 runtime，固定攻击区块及前一区块的查询一致；原始源码和反编译未取得。 |
 | 100 | BnbLabubu / 2026.06.20 | [代币转账为何会异常减少交易池储备](20260620_BnbLabubu.md) | OLPCToken 原始 Solidity 源码与链上字节码匹配；详见案例的参数和资金流核查范围。 |
 | 101 | Namada / 2026.06.20 | [证明不成立，却被上层当成通过](20260620_Namada.md) | 有事发前 Rust 源码、官方修复与假证明测试；缺少历史攻击交易的逐笔对应。 |
 | 102 | Axelar / Secret / 2026.06.19 | [不认消息来源，拿空头凭证换走真钱](20260619_Axelar_Secret.md) | 有官方指认版本的 Rust 源码；未重建主网 Wasm 或重放跨链攻击。 |
-| 103 | mySwap CL / 2026.06.19 | [先建立头寸再初始化价格，如何领出真实资产](20260619_mySwap.md) | 已取得历史执行类的链上 Sierra 并校验类哈希；完整／精简反编译分别保留 425／276 个函数，原始跟踪核对全部 12 轮。 |
+| 103 | mySwap CL / 2026.06.19 | [先建立头寸再初始化价格，如何领出真实资产](20260619_mySwap.md) | 已取得历史执行类的链上 Sierra 并校验类哈希；反编译保留 425 个函数，原始跟踪核对全部 12 轮。 |
 
 这五条保留源表的 `date` 和 `lost_u` 口径。中文 CSV 的金额单位为万美元，英文 CSV 为千美元。Namada 的原表未给攻击交易和合约地址，CSV 留空并在项目名、详情中标明证据限制。
 
@@ -96,7 +96,7 @@
 | LittleBoyPlus / 2026.06.18 | [把奖励分数算大，再借交易池账户领出奖励](20260618_LittleBoyPlus.md) | 临时改变的池内余额影响记分，再通过交易池账户和推荐关系取得奖励。 |
 | JB / 2026.06.19 | [每次卖币拿到 USDT 后，程序又烧掉池子里的 JB](20260619_JB_decompiled.md) | 官方交易程序在每轮卖出之后额外减少池子资产，攻击者反复利用。 |
 
-每个 case 只有一份说明，完整版和精简版通过各自的 `SOURCE.md` 指向同一文档。上表五条来自 **2026-09-09 当时**的源表第 99–104 行；当时第 103 行的钱包钓鱼事件未纳入。这些旧行号仅对应各批快照；2026-09-10 快照中的第 103 行是 mySwap。
+每个 case 只有一份说明，对应资料目录的 `SOURCE.md` 指向同一文档。上表五条来自 **2026-09-09 当时**的源表第 99–104 行；当时第 103 行的钱包钓鱼事件未纳入。这些旧行号仅对应各批快照；2026-09-10 快照中的第 103 行是 mySwap。
 
 文中的数字例子会明确标注为示意，不会与实际交易金额混在一起。原表日期与 CSV 金额保持原来的记录方式；借款本金、最后赚到的钱和还没有卖出的资产也分别说明。
 

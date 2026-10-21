@@ -10,7 +10,7 @@ from pathlib import Path
 
 getcontext().prec=100
 ROOT=Path(__file__).resolve().parents[3]
-ART=ROOT/'dataset_artifacts/benchmark_complete/20260723_Verus'
+ART=ROOT/'dataset_artifacts/20260723_Verus'
 def load(path): return json.loads(path.read_text('utf-8'))
 def word(data,offset):
     if offset<0 or offset+32>len(data): raise ValueError('ABI word outside captured data')

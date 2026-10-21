@@ -150,8 +150,7 @@ class FormalBatchArtifactTests(unittest.TestCase):
         self.assertTrue(report["checks"]["selection_rule_recomputed_from_raw_export"])
 
     def test_only_successful_panoramix_assembly_is_archived(self):
-        complete = ROOT / "dataset_artifacts" / "benchmark_complete" / "20260711_Bonzo_Supra"
-        simplified = ROOT / "dataset_artifacts" / "benchmark_simplified" / "20260711_Bonzo_Supra"
+        complete = ROOT / "dataset_artifacts" / "20260711_Bonzo_Supra"
         evidence = complete / "evidence"
         run = json.loads((evidence / "bonzo-panoramix-run.json").read_text("utf-8"))
         self.assertEqual([item["path"] for item in run["outputs"]], ["bonzo-panoramix-disassembly.asm"])
@@ -159,7 +158,7 @@ class FormalBatchArtifactTests(unittest.TestCase):
             any(token in key.lower() for key in run["tool"] for token in ("commit", "revision"))
         )
         self.assertNotIn("compatibility_changes", run)
-        all_files = [path for root in (complete, simplified) for path in root.rglob("*") if path.is_file()]
+        all_files = [path for path in complete.rglob("*") if path.is_file()]
         forbidden_extensions = [
             path for path in all_files if path.suffix.lower() in {".pan", ".patch", ".diff"}
         ]
@@ -175,7 +174,6 @@ class FormalBatchArtifactTests(unittest.TestCase):
         bundle = (
             ROOT
             / "dataset_artifacts"
-            / "benchmark_complete"
             / "20260711_Bonzo_Supra"
             / "source-bundles"
             / "xdc-reference"
@@ -192,7 +190,7 @@ class FormalBatchArtifactTests(unittest.TestCase):
 
 class ArchivedReferenceTests(unittest.TestCase):
     def test_upstream_manifests_resolve_every_archived_file(self):
-        complete = ROOT / "dataset_artifacts/benchmark_complete"
+        complete = ROOT / "dataset_artifacts"
         for manifest in complete.glob("*/source_manifest.json"):
             payload = batch.load_json(manifest)
             records = list(payload.get("files", []))
@@ -207,9 +205,9 @@ class ArchivedReferenceTests(unittest.TestCase):
 
     def test_explorer_source_names_still_identify_original_sources(self):
         case_id = "20260622_Taiko"
-        source_root = ROOT / "dataset/benchmark_complete" / case_id / "verified-sgx"
+        source_root = ROOT / "dataset" / case_id / "verified-sgx"
         records = batch.load_json(
-            ROOT / "dataset_artifacts/benchmark_complete" / case_id / "verified-sgx/provenance.json"
+            ROOT / "dataset_artifacts" / case_id / "verified-sgx/provenance.json"
         )
         for bundle in records:
             for record in bundle["files"]:
@@ -225,29 +223,13 @@ class ArchivedReferenceTests(unittest.TestCase):
                     self.assertTrue((document.parent / relative).is_file(),
                                     f"missing hash dictionary target: {document}: {relative}")
 
-    def test_simplified_full_bundle_references_resolve(self):
-        royalties = ROOT / "dataset_artifacts/benchmark_simplified/20260624_Royalties/SOURCE.json"
-        dlmc = ROOT / "dataset_artifacts/benchmark_simplified/20260625_DLMC/provenance.json"
-        groups = [(royalties, group["source_files"])
-                  for group in batch.load_json(royalties)["implementation_bundles"]]
-        groups.append((dlmc, batch.load_json(dlmc)["sources"]))
-        labubu = ROOT / "dataset_artifacts/benchmark_simplified/20260620_BnbLabubu/provenance.json"
-        groups.append((labubu, batch.load_json(labubu)["sources"]))
-        for document, records in groups:
-            for record in records:
-                with self.subTest(document=document, path=record["path"]):
-                    target = (document.parent / record["path"]).resolve()
-                    self.assertTrue(target.is_file())
-                    self.assertEqual(batch.sha256(target), record["sha256"])
-
-
 class SplitChecksumTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
-        self.source = self.root / "dataset/benchmark_complete/case"
-        self.artifacts = self.root / "dataset_artifacts/benchmark_complete/case"
+        self.source = self.root / "dataset/case"
+        self.artifacts = self.root / "dataset_artifacts/case"
         self.source.mkdir(parents=True)
         self.artifacts.mkdir(parents=True)
         (self.source / "Vault.sol").write_bytes(b"contract Vault {}\r\n")
@@ -257,7 +239,7 @@ class SplitChecksumTests(unittest.TestCase):
     def write_sums(self, omit_source=False):
         paths = [(self.artifacts / "case_metadata.json", "case_metadata.json")]
         if not omit_source:
-            paths.append((self.source / "Vault.sol", "../../../dataset/benchmark_complete/case/Vault.sol"))
+            paths.append((self.source / "Vault.sol", "../../dataset/case/Vault.sol"))
         (self.artifacts / "SHA256SUMS").write_text(
             "".join(f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {relative}\n" for path, relative in paths),
             encoding="utf-8",
@@ -269,7 +251,7 @@ class SplitChecksumTests(unittest.TestCase):
         abi.write_bytes(b"[]\r\n")
         sums = self.artifacts / "SHA256SUMS"
         sums.write_text(sums.read_text("utf-8") +
-                        f"{hashlib.sha256(abi.read_bytes()).hexdigest()}  ../../../dataset/benchmark_complete/case/abi.json\n",
+                        f"{hashlib.sha256(abi.read_bytes()).hexdigest()}  ../../dataset/case/abi.json\n",
                         encoding="utf-8")
         (self.root / "docs/cases").mkdir(parents=True)
         for name in ("README.md", "README_cn.md"):
@@ -279,7 +261,7 @@ class SplitChecksumTests(unittest.TestCase):
         archived_abi = self.artifacts / "abi.json"
         abi.rename(archived_abi)
         sums.write_text(sums.read_text("utf-8").replace(
-            "../../../dataset/benchmark_complete/case/abi.json", "abi.json"), encoding="utf-8")
+            "../../dataset/case/abi.json", "abi.json"), encoding="utf-8")
         report = batch.validate_dataset_layout(self.root)
         self.assertEqual(report["source_files"], 1)
         self.assertEqual(report["abi_files"], 1)
@@ -308,7 +290,7 @@ class SplitChecksumTests(unittest.TestCase):
         other.write_bytes(b"contract Other {}\n")
         sums = self.artifacts / "SHA256SUMS"
         sums.write_text(
-            sums.read_text("utf-8") + f"{hashlib.sha256(other.read_bytes()).hexdigest()}  ../../../dataset/benchmark_complete/another-case/Vault.sol\n",
+            sums.read_text("utf-8") + f"{hashlib.sha256(other.read_bytes()).hexdigest()}  ../../dataset/another-case/Vault.sol\n",
             encoding="utf-8",
         )
         with self.assertRaisesRegex(batch.ValidationError, "outside case"):
@@ -316,7 +298,7 @@ class SplitChecksumTests(unittest.TestCase):
 
     def test_missing_cross_tree_source_link_is_rejected(self):
         document = self.artifacts / "SOURCE.md"
-        document.write_text("[missing](../../../dataset/benchmark_complete/case/Missing.sol#L1)\n", encoding="utf-8")
+        document.write_text("[missing](../../dataset/case/Missing.sol#L1)\n", encoding="utf-8")
         with self.assertRaisesRegex(batch.ValidationError, "broken local link"):
             batch.validate_local_links(document)
 

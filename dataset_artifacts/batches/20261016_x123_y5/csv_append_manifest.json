@@ -1,8 +1,8 @@
 {
   "cn": {
     "path": "ai-auditing-benchmark_cn.csv",
-    "baseline_bytes": 27271,
-    "baseline_sha256": "6c6450b0a2badbfe40904d5e3203554385f607d4b7b90baf92b2e16d694490e9",
+    "baseline_bytes": 27357,
+    "baseline_sha256": "b615ad00feeafb29f1107c797c111abd681cd7a319bb4269de0c56d3980e0a5e",
     "baseline_event_count": 52,
     "appended_case_ids": [
       "20260715_Drips",
@@ -60,13 +60,13 @@
     ],
     "appended_bytes": 4866,
     "new_record_newline": "CRLF",
-    "original_bytes_preserved": true,
+    "original_bytes_preserved": false,
     "bom_preserved": false
   },
   "en": {
     "path": "ai-auditing-benchmark_en.csv",
-    "baseline_bytes": 29830,
-    "baseline_sha256": "d2f0b71828d84ba487a90269a7de075f37fb5efefd716d58ee7e9dd04d807ec7",
+    "baseline_bytes": 29910,
+    "baseline_sha256": "02cea2125976b369200038dbd3d73bcba9c110fcf1746d0e653f0b8153cd25cd",
     "baseline_event_count": 52,
     "appended_case_ids": [
       "20260715_Drips",
@@ -124,7 +124,7 @@
     ],
     "appended_bytes": 5607,
     "new_record_newline": "CRLF",
-    "original_bytes_preserved": true,
+    "original_bytes_preserved": false,
     "bom_preserved": false
   }
 }

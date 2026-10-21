@@ -21,7 +21,7 @@ CRC 代币在用户向交易池卖币时，除了扣卖方手续费，还会烧�
 
 ## 错误操作顺序
 
-[CRC `_update` 原文](../../dataset/benchmark_complete/20260717_CrowdRingCircle/source-bundles/token/contracts/CrowdRingCircle.sol#L146-L203)依次执行：
+[CRC `_update` 原文](../../dataset/20260717_CrowdRingCircle/source-bundles/token/contracts/CrowdRingCircle.sol#L146-L203)依次执行：
 
 1. 核查黑名单、买入限制和最低保留余额。
 2. 卖出收费：`fee = amount * sellFeeRate / 10000`，从卖方转 fee 给费用接收人，并减少待转本金。
@@ -29,11 +29,11 @@ CRC 代币在用户向交易池卖币时，除了扣卖方手续费，还会烧�
 4. 立即调用 pair 的 `sync()`。
 5. 最后才执行 `super._update(from, pair, netAmount)`，把卖方净本金记入 pair。
 
-`_safeDeductBalance` 只算可扣数量，不自行改变余额；实际烧毁发生在后面的父类 `_update`。父类来自本源包内 [OpenZeppelin ERC20 原文](../../dataset/benchmark_complete/20260717_CrowdRingCircle/source-bundles/token/@openzeppelin/contracts/token/ERC20/ERC20.sol)，同时保存了 `transferFrom` 的授权扣减路径。错误的关键是第 3–5 步的对象和顺序，不能仅把它归类成“税率太高”。
+`_safeDeductBalance` 只算可扣数量，不自行改变余额；实际烧毁发生在后面的父类 `_update`。父类来自本源包内 [OpenZeppelin ERC20 原文](../../dataset/20260717_CrowdRingCircle/source-bundles/token/@openzeppelin/contracts/token/ERC20/ERC20.sol)，同时保存了 `transferFrom` 的授权扣减路径。错误的关键是第 3–5 步的对象和顺序，不能仅把它归类成“税率太高”。
 
 ## 原始交易中的数值
 
-[代表交易](https://bscscan.com/tx/0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834)的[成功回执](../../dataset_artifacts/benchmark_complete/20260717_CrowdRingCircle/evidence/receipt-alt.json)含 `BurnFromPair`，事件 log index **150**。对原始整数按 18 位精度换算：
+[代表交易](https://bscscan.com/tx/0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834)的[成功回执](../../dataset_artifacts/20260717_CrowdRingCircle/evidence/receipt-alt.json)含 `BurnFromPair`，事件 log index **150**。对原始整数按 18 位精度换算：
 
 | 项目 | 数量 |
 | --- | --- |
@@ -60,10 +60,10 @@ flowchart TD
     H --> I[偿还借款和费用，剩余 USDT 转给 EOA]
 ```
 
-逐笔 Transfer 加减后的 [复算记录](../../dataset_artifacts/benchmark_complete/20260717_CrowdRingCircle/evidence/recomputed.json)显示，pair **净流出 209,061.632267871026055744 USDT**；EOA **净流入 201,359.472267252045095696 USDT**。两者相差 **7,702.160000618980960048 USDT**，对应交易链中借款费用等差额；借来的约 1.85 亿 USDT 本金不能当成利润。CSV 保留源表约 **201,400 美元**，即中文 **20.14 万美元**、英文 **201.4 千美元**，同时在详情中保留精确链上值。
+逐笔 Transfer 加减后的 [复算记录](../../dataset_artifacts/20260717_CrowdRingCircle/evidence/recomputed.json)显示，pair **净流出 209,061.632267871026055744 USDT**；EOA **净流入 201,359.472267252045095696 USDT**。两者相差 **7,702.160000618980960048 USDT**，对应交易链中借款费用等差额；借来的约 1.85 亿 USDT 本金不能当成利润。CSV 保留源表约 **201,400 美元**，即中文 **20.14 万美元**、英文 **201.4 千美元**，同时在详情中保留精确链上值。
 
 ## 源码资格和核查边界
 
-CRC 原始源码包由 Sourcify 返回 creation/runtime `exact_match`，共 26 个文件，原始路径、匹配状态、ABI、编译配置及响应哈希见[来源清单](../../dataset_artifacts/benchmark_complete/20260717_CrowdRingCircle/provenance.json)。[完整源码目录](../../dataset/benchmark_complete/20260717_CrowdRingCircle)另保存一份既有归档中的 PancakePair 原始源码，供说明正常 `swap/sync/_update` 算术；**没有声称这份参考 pair 与 CRC pair 部署逐字节等价**。缺陷本体位于已有公开原始源码的 CRC 代币，不依赖反编译关键模块。
+CRC 原始源码包由 Sourcify 返回 creation/runtime `exact_match`，共 26 个文件，原始路径、匹配状态、ABI、编译配置及响应哈希见[来源清单](../../dataset_artifacts/20260717_CrowdRingCircle/provenance.json)。[完整源码目录](../../dataset/20260717_CrowdRingCircle)另保存一份既有归档中的 PancakePair 原始源码，供说明正常 `swap/sync/_update` 算术；**没有声称这份参考 pair 与 CRC pair 部署逐字节等价**。缺陷本体位于已有公开原始源码的 CRC 代币，不依赖反编译关键模块。
 
-本例独立核查交易、回执、销毁事件、USDT 转账和净额；**未取得完整内部跟踪**。多路借款的调用拓扑、豁免 treasury 的利用和既有 allowance 的准备由[公开技术分析](https://anomly.rs/crowdringcircle-sell-destroy-amm-sync-exploit)支持，不能据此声称独立重建了完整攻击前状态。[精简版](../../dataset/benchmark_simplified/20260717_CrowdRingCircle)保留核心转账、限制、状态和 AMM 参考函数；[切片清单](../../dataset_artifacts/benchmark_simplified/20260717_CrowdRingCircle/slice_manifest.json)记录连续行和哈希。未本地编译或分叉重放。
+本例独立核查交易、回执、销毁事件、USDT 转账和净额；**未取得完整内部跟踪**。多路借款的调用拓扑、豁免 treasury 的利用和既有 allowance 的准备由[公开技术分析](https://anomly.rs/crowdringcircle-sell-destroy-amm-sync-exploit)支持，不能据此声称独立重建了完整攻击前状态。核心转账、限制、状态和 AMM 参考函数见[完整源码](../../dataset/20260717_CrowdRingCircle)。未本地编译或分叉重放。

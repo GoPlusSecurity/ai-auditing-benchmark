@@ -11,13 +11,6 @@
     {
       "case_id": "20260709_BFB",
       "status": "reviewed_causal_chain_complete",
-      "reviewed_slice_paths": [
-        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.pair-interface.sol",
-        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.state-and-pair-setup.sol",
-        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.transfer-path.sol",
-        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.price-deflation.sol",
-        "../../../dataset/benchmark_simplified/20260709_BFB/slices/BFBToken.public-transfers.sol"
-      ],
       "required_path_elements": [
         {
           "literal": "interface IUniswapV2Pair",
@@ -52,17 +45,11 @@
           "role": "Shows why an EOA-to-EOA zero transfer reaches the branch."
         }
       ],
-      "manual_conclusion": "The excerpts retain the zero-value public entry, EOA gate, reserve-derived trigger, pair burn, sync, and pair construction needed for the full causal chain."
+      "manual_conclusion": "The original source retains the zero-value public entry, EOA gate, reserve-derived trigger, pair burn, sync, and pair construction needed for the full causal chain."
     },
     {
       "case_id": "20260711_Bonzo_Supra",
       "status": "reviewed_causal_chain_complete_with_deployment_gap",
-      "reviewed_slice_paths": [
-        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.state.sol",
-        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/SupraSValueFeedVerifier.requireHashVerified.sol",
-        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.verifySingle.sol",
-        "../../../dataset/benchmark_simplified/20260711_Bonzo_Supra/slices/BLS.unused-validation-helpers.sol"
-      ],
       "required_path_elements": [
         {
           "literal": "mapping(uint256 committee_id => uint256[4] public_key) private committee_public_key",
@@ -98,13 +85,6 @@
     {
       "case_id": "20260713_Lumi_Sodium",
       "status": "reviewed_causal_chain_complete",
-      "reviewed_slice_paths": [
-        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.validation-approval.sol",
-        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.signature-validation.sol",
-        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/Sodium.erc1271-signer.sol",
-        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/SessionManager.sessions.sol",
-        "../../../dataset/benchmark_simplified/20260713_Lumi_Sodium/slices/SignatureChecker.sol"
-      ],
       "required_path_elements": [
         {
           "literal": "function validateUserOp(",
@@ -135,19 +115,11 @@
           "role": "Shows acceptance of a contract-provided ERC-1271 magic value."
         }
       ],
-      "manual_conclusion": "The excerpts retain UserOperation validation, attacker-controlled approval, session checks, ERC-1271 signer acceptance and the persistent authorization path."
+      "manual_conclusion": "The original source retains UserOperation validation, attacker-controlled approval, session checks, ERC-1271 signer acceptance and the persistent authorization path."
     },
     {
       "case_id": "20260713_PHX",
       "status": "reviewed_causal_chain_complete",
-      "reviewed_slice_paths": [
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.pair-interfaces.sol",
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.state-and-pair-setup.sol",
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.update-dispatch.sol",
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/PHX.take-sell-fee.sol",
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.update-transfer.sol",
-        "../../../dataset/benchmark_simplified/20260713_PHX/slices/ERC20.burn.sol"
-      ],
       "required_path_elements": [
         {
           "literal": "interface IPancakePair",
@@ -194,17 +166,11 @@
           "role": "Final net input arrives after sync and drives the oversized swap."
         }
       ],
-      "manual_conclusion": "The expanded excerpts retain pair interfaces, constants, default rate, addresses, constructor binding, sell dispatch, pair burn, sync ordering and final net transfer."
+      "manual_conclusion": "The original source retains pair interfaces, constants, default rate, addresses, constructor binding, sell dispatch, pair burn, sync ordering and final net transfer."
     },
     {
       "case_id": "20260714_VECAndETH",
       "status": "reviewed_causal_chain_complete",
-      "reviewed_slice_paths": [
-        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.router-interface.sol",
-        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.state-update-and-router-setup.sol",
-        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.getReward.sol",
-        "../../../dataset/benchmark_simplified/20260714_VECAndETH/slices/VECAndETH.earned-and-quote.sol"
-      ],
       "required_path_elements": [
         {
           "literal": "interface IPancakeRouter01",
@@ -243,7 +209,7 @@
           "role": "Separates the fee payment from attacker proceeds."
         }
       ],
-      "manual_conclusion": "The excerpts retain the router interface and setup, accrual state, spot-price conversion, claim update and both final token transfers."
+      "manual_conclusion": "The original source retains the router interface and setup, accrual state, spot-price conversion, claim update and both final token transfers."
     }
   ]
 }

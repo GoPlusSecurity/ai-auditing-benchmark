@@ -65,14 +65,13 @@ def validate():
     require(counts['scanned_rows']==len(processed) and counts['qualifying_source_rows']==y and counts['skipped_rows']==len(processed)-y,'derived counts differ')
     require(counts['new_cases']==y and not counts['completed_existing_cases'] and not counts['duplicate_rows_merged'],'unexpected disposition')
 
-    source_count=slice_count=bundles=source_inputs=evidence_count=links=semantic_literals=0
+    source_count=bundles=source_inputs=evidence_count=links=semantic_literals=0
     semantic_review=load(BATCH/'semantic_review.json')
     require(set(semantic_review['cases'])==set(ids),'semantic review case set differs from selected snapshot')
     metadata={}
     for decision in selected:
-        cid=decision['case_id']; art=ROOT/'dataset_artifacts/benchmark_complete'/cid
-        simple_art=ROOT/'dataset_artifacts/benchmark_simplified'/cid
-        code=ROOT/'dataset/benchmark_complete'/cid; short=ROOT/'dataset/benchmark_simplified'/cid
+        cid=decision['case_id']; art=ROOT/'dataset_artifacts'/cid
+        code=ROOT/'dataset'/cid
         meta=load(art/'case_metadata.json'); metadata[cid]=meta
         require(meta['case_id']==cid and meta['original_rows']==[decision['row']],'metadata row binding differs')
         require(meta['public_original_vulnerable_source'] and not meta['requires_decompilation_for_core_vulnerable_logic'],'source qualification not met')
@@ -113,34 +112,20 @@ def validate():
             path=(art/record['path']).resolve()
             require(path.is_relative_to(art.resolve()) and sha(path)==record['sha256'],'evidence hash differs')
             evidence_count+=1
-        manifest=load(simple_art/'slice_manifest.json'); slice_paths=set()
-        require(manifest['no_logic_rewritten'],'simplified source rewritten')
-        for segment in manifest['slices']:
-            small=(simple_art/segment['path']).resolve(); full=(simple_art/segment['complete_path']).resolve()
-            require(full in original_paths and small.is_relative_to(short.resolve()),'wrong slice case')
-            start,end=segment['original_start_line'],segment['original_end_line']
-            lines=full.read_bytes().splitlines(keepends=True)
-            require(1<=start<=end<=len(lines),'slice range outside original')
-            require(small.read_bytes()==b''.join(lines[start-1:end]),'slice not continuous original bytes')
-            require(sha(small)==segment['sha256'] and sha(full)==segment['complete_source_sha256'],'slice/source hash differs')
-            slice_paths.add(small); slice_count+=1
-        require(slice_paths=={p.resolve() for p in short.rglob('*') if p.is_file()},'unrecorded simplified source')
-        for requirement in semantic_review['cases'][cid]['required_simplified_source']:
-            text='\n'.join((simple_art/s['path']).resolve().read_text('utf-8') for s in manifest['slices'] if s['complete_path'].endswith(requirement['source_suffix']))
+        for requirement in semantic_review['cases'][cid]['required_source']:
+            matches=[p for p in code.rglob('*') if p.is_file() and p.as_posix().endswith(requirement['source_suffix'])]
+            require(matches,f'missing causal source file: {cid}: {requirement["source_suffix"]}')
+            text='\n'.join(p.read_text('utf-8') for p in matches)
             for literal in requirement['literals']:
                 require(literal in text,f'missing causal source element: {cid}: {literal}')
                 semantic_literals+=1
-        simple_meta=load(simple_art/'case_metadata.json')
-        for field in ('case_id','event_date','tx_urls','vulnerable_contract_urls','loss_usd','original_rows','verification_status'):
-            require(simple_meta[field]==meta[field],f'complete/simplified metadata differs: {field}')
         doc=ROOT/'docs/cases'/f'{cid}.md'; text=doc.read_text('utf-8')
         require(text.count('```')%2==0 and text.count('```mermaid')>=1,'unclosed document/Mermaid code block')
         require(all(term in text for term in ('正常','源码','未','交易')),'case document missing explanation')
         links+=shared.validate_local_links(doc)
-        for view,a in [('benchmark_complete',art),('benchmark_simplified',simple_art)]:
-            source_doc=a/'SOURCE.md'
-            require('../../../docs/cases/'+cid+'.md' in source_doc.read_text('utf-8'),'views do not link to common document')
-            links+=shared.validate_local_links(source_doc)
+        source_doc=art/'SOURCE.md'
+        require('../../docs/cases/'+cid+'.md' in source_doc.read_text('utf-8'),'case source note does not link to its document')
+        links+=shared.validate_local_links(source_doc)
 
     append=load(BATCH/'csv_append_manifest.json'); csv_checks=0
     for language,scale in [('cn',10000),('en',1000)]:
@@ -162,11 +147,11 @@ def validate():
     for entry in moves:
         require(baseline['files'][entry['source']]==entry['sha256'],'ABI not bound to baseline'); check_move(ROOT,entry)
     checksum_updates=set(load(BATCH/'checksum_updates.json'))
-    moved_cases={(Path(m['source']).parts[1],Path(m['source']).parts[2]) for m in moves}
+    moved_case_ids={Path(m['source']).parts[1] for m in moves}
     for name in checksum_updates:
         parts=Path(name).parts
-        require(parts[0]=='dataset_artifacts' and parts[-1]=='SHA256SUMS' and (parts[2] in ids or (parts[1],parts[2]) in moved_cases),'checksum update outside allowed cases')
-    allowed={'README.md','README_cn.md','docs/cases/README.md','docs/cases/20260619_mySwap.md','dataset_artifacts/benchmark_complete/20260619_mySwap/SOURCE.md','ai-auditing-benchmark_cn.csv','ai-auditing-benchmark_en.csv','docs/cases/sources/test_20261002_batch.py','docs/cases/sources/validate_20261002_batch.py',*checksum_updates}
+        require(parts[0]=='dataset_artifacts' and parts[-1]=='SHA256SUMS' and parts[1] in set(ids)|moved_case_ids,'checksum update outside allowed cases')
+    allowed={'README.md','README_cn.md','docs/cases/README.md','docs/cases/20260619_mySwap.md','docs/cases/20260619_JB_decompiled.md','docs/cases/20260620_Namada.md','.gitignore','dataset_artifacts/20260619_mySwap/SOURCE.md','ai-auditing-benchmark_cn.csv','ai-auditing-benchmark_en.csv','docs/cases/sources/test_20261002_batch.py','docs/cases/sources/validate_20261002_batch.py',*checksum_updates}
     move_sources={m['source'] for m in moves}; changed=[]; unchanged=0; old_source_count=0
     for name,digest in baseline['files'].items():
         path=ROOT/name
@@ -178,10 +163,9 @@ def validate():
         else: unchanged+=1
         if name.startswith('dataset/'):
             require(current==digest,'pre-existing source bytes changed'); old_source_count+=1
-    for view in ('benchmark_complete','benchmark_simplified'):
-        prior={Path(name).parts[2] for name in baseline['files'] if name.startswith('dataset/'+view+'/')}
-        now={p.name for p in (ROOT/'dataset'/view).iterdir() if p.is_dir()}
-        require(now-prior==set(ids),'new source case directories differ from this snapshot')
+    prior={Path(name).parts[1] for name in baseline['files'] if name.startswith('dataset/')}
+    now={p.name for p in (ROOT/'dataset').iterdir() if p.is_dir()}
+    require(now-prior==set(ids),'new source case directories differ from this snapshot')
     for record in load(BATCH/'screening_manifest.json')['files']:
         path=BATCH/record['path']; require(sha(path)==record['sha256'],'screening record changed')
     # The baseline was clean: every newly visible path must also stay in this task's scope.
@@ -189,7 +173,7 @@ def validate():
     new_allowed.update('docs/cases/'+cid+'.md' for cid in ids)
     new_allowed.update({'docs/cases/sources/validate_20261016_batch.py','docs/cases/sources/test_20261016_batch.py'})
     new_prefixes=['dataset_artifacts/batches/20261016_x123_y5/']
-    new_prefixes += [tree+'/'+view+'/'+cid+'/' for tree in ('dataset','dataset_artifacts') for view in ('benchmark_complete','benchmark_simplified') for cid in ids]
+    new_prefixes += [tree+'/'+cid+'/' for tree in ('dataset','dataset_artifacts') for cid in ids]
     status=subprocess.check_output(['git','status','--porcelain=v1','-z','--untracked-files=all'],cwd=ROOT).decode('utf-8')
     checked_new_paths=0
     for item in status.split('\0'):
@@ -208,7 +192,7 @@ def validate():
     # This existing whole-archive check includes historical source manifests and local links.
     layout=shared.validate_dataset_layout(ROOT)
     require(layout['dataset_files']==layout['source_files'],'dataset still contains non-source material')
-    return {'status':'passed','validated_at':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(),'parameters':{'x':x,'y':y},'actual_scan_range':[min(processed),max(processed)],'counts':counts,'case_ids':ids,'raw_export_sha256':HASH,'checks':{'snapshot_rows_compared':len(processed),'original_source_bundles':bundles,'original_source_files_compared_to_raw_responses':source_count,'standard_input_source_entries_compared':source_inputs,'exact_continuous_slices_compared':slice_count,'evidence_hashes_checked':evidence_count,'bilingual_appended_records_checked':csv_checks,'abi_files_moved_without_byte_changes':len(moves),'pre_existing_source_files_unchanged':old_source_count,'unchanged_baseline_files':unchanged,'changed_baseline_files_within_allowlist':changed,'new_paths_checked_against_batch_scope':checked_new_paths,'case_local_links_checked':links,'offline_recalculation':arithmetic},'whole_archive_layout_checks':layout,'not_claimed':{'included_case_compilation':'not run','fork_replay':'not run','complete_pre_attack_state':'not reconstructed','full_internal_traces':'Drips, Verus and Lien only; Ostium calldata/receipt and CRC receipt independently checked','source_chain_notarizations':'not independently re-read from Verus RPC'},'screening_compilation_only':'42DAO upstream Spotter compiled with solc 0.5.12 and compared to current target excluding CBOR metadata; skipped case, not attack-time equality or included-case replay.'}
+    return {'status':'passed','validated_at':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(),'parameters':{'x':x,'y':y},'actual_scan_range':[min(processed),max(processed)],'counts':counts,'case_ids':ids,'raw_export_sha256':HASH,'checks':{'snapshot_rows_compared':len(processed),'original_source_bundles':bundles,'original_source_files_compared_to_raw_responses':source_count,'standard_input_source_entries_compared':source_inputs,'evidence_hashes_checked':evidence_count,'bilingual_appended_records_checked':csv_checks,'abi_files_moved_without_byte_changes':len(moves),'pre_existing_source_files_unchanged':old_source_count,'unchanged_baseline_files':unchanged,'changed_baseline_files_within_allowlist':changed,'new_paths_checked_against_batch_scope':checked_new_paths,'case_local_links_checked':links,'offline_recalculation':arithmetic},'whole_archive_layout_checks':layout,'not_claimed':{'included_case_compilation':'not run','fork_replay':'not run','complete_pre_attack_state':'not reconstructed','full_internal_traces':'Drips, Verus and Lien only; Ostium calldata/receipt and CRC receipt independently checked','source_chain_notarizations':'not independently re-read from Verus RPC'},'screening_compilation_only':'42DAO upstream Spotter compiled with solc 0.5.12 and compared to current target excluding CBOR metadata; skipped case, not attack-time equality or included-case replay.'}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('--output',type=Path); args=parser.parse_args()

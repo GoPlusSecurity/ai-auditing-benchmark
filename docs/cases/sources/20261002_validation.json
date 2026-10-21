@@ -50,22 +50,10 @@
     "exact_slices_compared": 102,
     "preserved_historical_source_hash_differences": [
       {
-        "document": "dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.json",
-        "path": "dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "document": "dataset_artifacts/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
         "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
         "current_sha256": "a5cf43d6e4de390fb53b5518a6d940eb0f5cd9b9cd40c260a2f0b5789c4d535a"
-      },
-      {
-        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
-        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
-        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
-        "current_sha256": "f9740a9757af1210386a112848d2879e8207f433101ce6224c5ab79381620bef"
-      },
-      {
-        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
-        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol",
-        "recorded_sha256": "230e555ddd9e2cba2107c2b622edc75e7e384b3f0cab72179599835ee1acc738",
-        "current_sha256": "4c75d04c90ca4e642d30dead0ef96cd407650b72702cb48092a9273193af1ac8"
       }
     ]
   },

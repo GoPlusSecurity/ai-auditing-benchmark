@@ -18,7 +18,7 @@ OLPC 和 LABUBU 是两种不同的代币。各自的代币合约负责记账、�
 
 ## 漏洞具体在哪
 
-正常入口是 [ERC20.transfer](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L406)，它经过 `_transfer()`，最终进入 OLPCToken 重写的 [_update()](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1403)。真正出错的分支是：
+正常入口是 [ERC20.transfer](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L406)，它经过 `_transfer()`，最终进入 OLPCToken 重写的 [_update()](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1403)。真正出错的分支是：
 
 ```solidity
 if (
@@ -35,9 +35,9 @@ if (
 
 这段代码把“指定池子向外转币”视为特殊操作。只要接收方不是池子本身、也不在免税名单里，它就把 `value × decimalsValue` 从池子转到 `0x…dEaD`，然后把真正应转给接收方的 `value` 清零。函数末尾仍执行 `super._update(from, to, value)`，但这时接收方得到的是 0。
 
-这里所谓“销毁”是转到 `BURN_ADDRESS = address(0xdEaD)`。它会减少池子可用余额，但不是调用 `_burn()` 把 ERC20 的 `totalSupply` 减掉；[基类 `_update()`](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L483)只有在收款地址为零地址时才减少总供应量。
+这里所谓“销毁”是转到 `BURN_ADDRESS = address(0xdEaD)`。它会减少池子可用余额，但不是调用 `_burn()` 把 ERC20 的 `totalSupply` 减掉；[基类 `_update()`](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L483)只有在收款地址为零地址时才减少总供应量。
 
-`decimalsValue` 是放大扣款的普通整数，和代币本身的 18 位小数不是一回事。它初始为 1；[setDecimalsValue()](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1773)要求 `onlyOwner`，却没有数值上限：
+`decimalsValue` 是放大扣款的普通整数，和代币本身的 18 位小数不是一回事。它初始为 1；[setDecimalsValue()](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1773)要求 `onlyOwner`，却没有数值上限：
 
 ```solidity
 function setDecimalsValue(uint256 decimalsValue_) external onlyOwner {
@@ -47,7 +47,7 @@ function setDecimalsValue(uint256 decimalsValue_) external onlyOwner {
 
 因此，这里不能写成“攻击者可以随便设置管理员参数”。危险参数已经存在时，攻击者只需调用公开的池子方法就能使用它。[GoPlus 的分析](https://x.com/GoPlusSecurity/status/2068705989365530729)称，管理员在 2026 年 5 月 5 日把参数设成了 `7326680472586200649`。本次没有拿到那笔历史设置交易；这个日期属于报告口径。下面的攻击回执则能独立核对实际扣款比例与该数值一致。
 
-池子的 [skim()](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L487)仅计算 `balanceOf(pair) - reserve`，并要求代币转出这部分零头。它不会预先知道 OLPC 会多扣几百万、几千万枚。后续 [sync()](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L495)又会把已经被扣低的实际余额写入储备，于是下一次兑换会采用这个失衡的比例。
+池子的 [skim()](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L487)仅计算 `balanceOf(pair) - reserve`，并要求代币转出这部分零头。它不会预先知道 OLPC 会多扣几百万、几千万枚。后续 [sync()](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L495)又会把已经被扣低的实际余额写入储备，于是下一次兑换会采用这个失衡的比例。
 
 ## 攻击者怎样一步步利用
 
@@ -63,7 +63,7 @@ flowchart TD
     G --> H[卖出 LABUBU 经过 WBNB 最终收到 USDT]
 ```
 
-以下数字来自已保存的[成功交易回执](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/transaction-receipt.json)和[事件解码结果](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/decoded-events.json)。事件中的 `log_index` 是原始回执编号。
+以下数字来自已保存的[成功交易回执](../../dataset_artifacts/20260620_BnbLabubu/evidence/transaction-receipt.json)和[事件解码结果](../../dataset_artifacts/20260620_BnbLabubu/evidence/decoded-events.json)。事件中的 `log_index` 是原始回执编号。
 
 这段攻击的关键是：**攻击者让池子“只转出一点零头”，OLPC 合约却从池子里扣掉了几千万枚币；随后再把这个缩水后的余额更新成储备，用极少的 OLPC 换走池子原有的大量 LABUBU。**
 
@@ -84,7 +84,7 @@ flowchart TD
 多出来的部分：1 OLPC
 ```
 
-`skim(to)` 的职责是把这多出来的 1 OLPC 转给 `to`；`sync()` 的职责是把当前实际余额记成新的储备。它们是普通地址可以调用的公开函数。[池子的 skim 和 sync 实现](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L487)
+`skim(to)` 的职责是把这多出来的 1 OLPC 转给 `to`；`sync()` 的职责是把当前实际余额记成新的储备。它们是普通地址可以调用的公开函数。[池子的 skim 和 sync 实现](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L487)
 
 下面按你给出的六步展开。
 
@@ -113,7 +113,7 @@ LABUBU 储备：720,372.009849017508169693
 OLPC 储备：  51,928,295.152453531310626131
 ```
 
-**这里更新储备的作用，是让实际余额和保存储备重新相等。** 从这一刻开始，攻击者再直接转入多少 OLPC，池子实际余额就会比储备多出多少，后面的 `skim` 就会尝试转出这个差额。[OLPC 卖出税处理](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1450)
+**这里更新储备的作用，是让实际余额和保存储备重新相等。** 从这一刻开始，攻击者再直接转入多少 OLPC，池子实际余额就会比储备多出多少，后面的 `skim` 就会尝试转出这个差额。[OLPC 卖出税处理](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1450)
 
 **第二步，用极小的一笔转入，制造一个非零的余额差。**
 
@@ -194,7 +194,7 @@ super._update(from, to, value);
 2. 把原本应该付给接收方的 `value` 改成 0。
 3. 再向接收方执行一笔金额为 0 的转账。
 
-所以，**接收方拿到 0，不能说明池子没有损失。池子的大额损失发生在前面那笔“池子 → dead”的转账里。** [异常扣款源码](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1441)
+所以，**接收方拿到 0，不能说明池子没有损失。池子的大额损失发生在前面那笔“池子 → dead”的转账里。** [异常扣款源码](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1441)
 
 本次交易对应的放大倍数是：
 
@@ -229,7 +229,7 @@ D = 7,326,680,472,586,200,649
 
 **池子原本只要求转出约六万亿分之一枚 OLPC，却实际损失了约 4673.55 万枚 OLPC。**
 
-池子没有在 `skim` 中检查“自己的余额是否只减少了要求转出的数量”。其 `_safeTransfer` 主要检查底层调用是否成功、返回值是否表示成功，因此这种异常扣款仍然可以完成。[池子的转账成功检查](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L341)
+池子没有在 `skim` 中检查“自己的余额是否只减少了要求转出的数量”。其 `_safeTransfer` 主要检查底层调用是否成功、返回值是否表示成功，因此这种异常扣款仍然可以完成。[池子的转账成功检查](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L341)
 
 另外两条零金额事件也能解释：
 
@@ -296,7 +296,7 @@ D = 7,326,680,472,586,200,649
 = 上轮余额 + 本轮实际输入 − 本轮转入 dead 的数量
 ```
 
-[逐轮事件和储备记录](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/decoded-events.json)
+[逐轮事件和储备记录](../../dataset_artifacts/20260620_BnbLabubu/evidence/decoded-events.json)
 
 **第五步，输入 8.1 OLPC，在已经失衡的池子里换出约 95.56% 的 LABUBU。**
 
@@ -355,7 +355,7 @@ OLPC：
 
 作为同一公式下的对照，如果仍使用最开始约 5192.83 万 OLPC 的储备，8.1 OLPC 只能换出约 **0.112086 LABUBU**。前面的储备削减改变了兑换结果。
 
-**池子的 `K` 检查为什么没有阻止这次兑换，也由此能解释：它使用的是最近保存的储备。** 前面的 `skim` 发生异常扣款，`sync` 又把较低的余额写入储备；最后 `swap` 检查的是这组新储备下的乘积关系。此次兑换符合这组储备的计算结果。[兑换及手续费、K 检查](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L456)
+**池子的 `K` 检查为什么没有阻止这次兑换，也由此能解释：它使用的是最近保存的储备。** 前面的 `skim` 发生异常扣款，`sync` 又把较低的余额写入储备；最后 `swap` 检查的是这组新储备下的乘积关系。此次兑换符合这组储备的计算结果。[兑换及手续费、K 检查](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L456)
 
 **第六步，把换出的 LABUBU 经后续交易池卖成 USDT。**
 
@@ -398,13 +398,13 @@ OLPC：
 攻击者地址
 ```
 
-这两笔 LABUBU 转入 dead 的合计，是**本次转账路径下观察到的扣款**。LABUBU 源码还包含基础税、动态税及相关条件，不能据此写成“所有卖出永远收取同一个固定比例”。[LABUBU 卖出处理](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/LABUBUToken.sol#L1302)
+这两笔 LABUBU 转入 dead 的合计，是**本次转账路径下观察到的扣款**。LABUBU 源码还包含基础税、动态税及相关条件，不能据此写成“所有卖出永远收取同一个固定比例”。[LABUBU 卖出处理](../../dataset/20260620_BnbLabubu/contracts/LABUBUToken.sol#L1302)
 
 这里不同阶段的资产数量也不能相加：烧掉的 OLPC、换出的 LABUBU、中间经过的 WBNB、最终收到的 USDT，描述的是同一条攻击链上的不同环节。最终这笔 **1,115,903.6634 USDT** 是交易中实际转入攻击者的数量，尚未扣除最初取得 OLPC 的成本和 gas。
 
-还需要把漏洞成立的条件说清楚：`setDecimalsValue()` 是 `onlyOwner`，攻击者不能通过普通地址随意设置这个倍数。它的问题是没有上限约束，而转账分支又直接用它放大池子的扣款。**当危险参数已经存在、接收方又不在免税名单时，公开的 `skim` 和 `sync` 就能把异常扣款接到兑换流程上。** [参数设置函数](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1773)
+还需要把漏洞成立的条件说清楚：`setDecimalsValue()` 是 `onlyOwner`，攻击者不能通过普通地址随意设置这个倍数。它的问题是没有上限约束，而转账分支又直接用它放大池子的扣款。**当危险参数已经存在、接收方又不在免税名单时，公开的 `skim` 和 `sync` 就能把异常扣款接到兑换流程上。** [参数设置函数](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1773)
 
-上述金额、零金额转账和储备变化来自已保存的成功回执；调用链由源码及已保存的公开复现说明共同支持。本次核对没有执行攻击交易，也没有运行本地分叉复现或完整 `debug trace`。可以继续对照[原始交易回执](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/transaction-receipt.json)和[金额汇总](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/transaction-summary.json)逐项检查。
+上述金额、零金额转账和储备变化来自已保存的成功回执；调用链由源码及已保存的公开复现说明共同支持。本次核对没有执行攻击交易，也没有运行本地分叉复现或完整 `debug trace`。可以继续对照[原始交易回执](../../dataset_artifacts/20260620_BnbLabubu/evidence/transaction-receipt.json)和[金额汇总](../../dataset_artifacts/20260620_BnbLabubu/evidence/transaction-summary.json)逐项检查。
 
 ## 解释说明
 
@@ -436,7 +436,7 @@ OLPC：
 - `skim(to)`：要求代币合约把“实际余额减去储备”的部分转给 `to`。
 - `sync()`：读取两种代币的实际余额，把它们保存成新的储备。
 
-对应代码见 [PancakePair.sol 的 skim 和 sync](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L487)。
+对应代码见 [PancakePair.sol 的 skim 和 sync](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L487)。
 
 **2. 最开始转入 1 OLPC，是把后面的余额差明确下来。**
 
@@ -518,7 +518,7 @@ if (
 super._update(from, to, value);
 ```
 
-意思是：**只要指定池子向一个非免税地址转出 OLPC，就把请求数量乘以 `decimalsValue`，从池子转到 dead；给原接收人的数量则改为 0。** 见 [OLPC 异常扣款分支](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1441)。
+意思是：**只要指定池子向一个非免税地址转出 OLPC，就把请求数量乘以 `decimalsValue`，从池子转到 dead；给原接收人的数量则改为 0。** 见 [OLPC 异常扣款分支](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1441)。
 
 `skim` 正好可以触发这个条件：
 
@@ -558,17 +558,17 @@ OLPC 看到转出方是 swapPair
 
 ## 代码、来源和验证范围
 
-| 需要查看的逻辑                | 完整源码                                                                                              | 精简源码                                                                                               |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| OLPC 转账分支、相关查询和配置 | [OLPCToken.sol](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/OLPCToken.sol#L1403)     | [OLPCToken.sol](../../dataset/benchmark_simplified/20260620_BnbLabubu/contracts/OLPCToken.sol#L482)     |
-| 池子的清理、储备更新和兑换    | [PancakePair.sol](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/PancakePair.sol#L456)  | [PancakePair.sol](../../dataset/benchmark_simplified/20260620_BnbLabubu/contracts/PancakePair.sol#L270) |
-| LABUBU 转账和卖出税上下文     | [LABUBUToken.sol](../../dataset/benchmark_complete/20260620_BnbLabubu/contracts/LABUBUToken.sol#L1257) | [LABUBUToken.sol](../../dataset/benchmark_simplified/20260620_BnbLabubu/contracts/LABUBUToken.sol#L408) |
+| 需要查看的逻辑 | 完整源码 |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------- |
+| OLPC 转账分支、相关查询和配置 | [OLPCToken.sol](../../dataset/20260620_BnbLabubu/contracts/OLPCToken.sol#L1403) |
+| 池子的清理、储备更新和兑换 | [PancakePair.sol](../../dataset/20260620_BnbLabubu/contracts/PancakePair.sol#L456) |
+| LABUBU 转账和卖出税上下文 | [LABUBUToken.sol](../../dataset/20260620_BnbLabubu/contracts/LABUBUToken.sol#L1257) |
 
 OLPCToken 和 LABUBUToken 来自 [OLPC 的 Sourcify 源码包](https://sourcify.dev/server/v2/contract/56/0x58815CDF9955121a6274680ab396a36FC9e00000?fields=all)及 [LABUBU 的 Sourcify 源码包](https://sourcify.dev/server/v2/contract/56/0x3494dfE19b721DAC6c5c8d7470c8F89548177777?fields=all)。两者的 `creationMatch` 和 `runtimeMatch` 均为 `match`，未声称 metadata exact match。完整源码按原始内容保存，必要接口和基类都已包含在 flattened 文件内。
 
-目标池自身在 Sourcify 没有匹配源码。因此池子上下文来自 [已验证的 WBNB/USDT 参考池](https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae?fields=all)，并将它的完整链上 runtime 与读取时目标池的完整 runtime 逐字节比较，结果相同，见[比对记录](../../dataset_artifacts/benchmark_complete/20260620_BnbLabubu/evidence/pair-runtime-comparison.json)。这一项比对使用 `latest` 状态；没有把它说成目标池在攻击前区块的独立历史字节码核验，也没有把参考池列为漏洞合约。
+目标池自身在 Sourcify 没有匹配源码。因此池子上下文来自 [已验证的 WBNB/USDT 参考池](https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae?fields=all)，并将它的完整链上 runtime 与读取时目标池的完整 runtime 逐字节比较，结果相同，见[比对记录](../../dataset_artifacts/20260620_BnbLabubu/evidence/pair-runtime-comparison.json)。这一项比对使用 `latest` 状态；没有把它说成目标池在攻击前区块的独立历史字节码核验，也没有把参考池列为漏洞合约。
 
-本地用 Solidity `0.8.33+commit.64118f21` 分别编译了 OLPC 和 LABUBU 的完整、精简版本，四项均无编译错误。精简版按 AST 保留完整函数及其依赖，并核对保留函数内容；Pair 精简版只删除整段无关函数。Pair 原编译器为 `0.5.16+commit.9c3226ce`，本地没有该版本，未重新编译 Pair。精简版本不用于复现部署字节码。
+本地用 Solidity `0.8.33+commit.64118f21` 编译了 OLPC 和 LABUBU 的完整源码，均无编译错误。Pair 原编译器为 `0.5.16+commit.9c3226ce`，本地没有该版本，未重新编译 Pair。
 
 成功回执、事件解码、金额汇总和源码哈希已经保存。回执能证明事件顺序与金额，但不直接展示每一层内部函数调用；本次未取得完整 debug trace，也未运行本地链上分叉攻击复现。管理员 5 月 5 日调参的历史交易，以及攻击前 `decimalsValue`、`isTaxExempt`、价格更新开关等完整存储状态，均未独立读取。上述攻击路径以已验证源码、成功回执中的实际扣款和零到账事件、公开复现记录共同支持，不能声称从默认部署参数就能无条件复现。
 

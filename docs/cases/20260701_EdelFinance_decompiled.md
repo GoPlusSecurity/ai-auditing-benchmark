@@ -10,15 +10,15 @@ Edel 的借贷市场允许用户存入抵押品，再借出 USDC 或包装股票
 2. `wGOOGLx` 是 ERC-4626 包装份额。用户存入 GOOGLx 后拿到 wGOOGLx；正常情况下，一份 wGOOGLx 能换回多少 GOOGLx，由包装合约的总资产和总份额决定。
 3. Edel 的 `AaveOracle` 给借贷市场提供抵押品价格。它不直接给 wGOOGLx 定价，而是调用价格适配器 `0x4C2C…4CE2`，再把适配器返回值当成价格。
 
-包装合约的标准实现中，`totalAssets()` 直接返回合约持有的 GOOGLx 余额，`convertToAssets()` 再按总资产和总份额计算换算值。对应原文见 [`totalAssets/convertToAssets`](../../dataset/benchmark_simplified/20260701_EdelFinance_decompiled/slices/wrapper/ERC4626Upgradeable.totalAssets-convertToAssets.sol) 和 [`_convertToAssets`](../../dataset/benchmark_simplified/20260701_EdelFinance_decompiled/slices/wrapper/ERC4626Upgradeable.conversion-formulas.sol)。
+包装合约的标准实现中，`totalAssets()` 直接返回合约持有的 GOOGLx 余额，`convertToAssets()` 再按总资产和总份额计算换算值。对应原文见 [`totalAssets`](../../dataset/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol#L103)、[`convertToAssets`](../../dataset/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol#L113) 和 [`_convertToAssets`](../../dataset/20260701_EdelFinance_decompiled/source-bundles/wrapper-implementation/@openzeppelin/contracts-upgradeable-new/token/ERC20/extensions/ERC4626Upgradeable.sol#L211)。
 
 ## 漏洞具体在哪里
 
 问题不是“ERC-4626 允许别人直接转入底层代币”这一件事本身，而是**价格适配器把这个可被即时捐赠改变的换算率，直接乘进了借贷抵押品价格**，没有采用抗操纵的价格、延迟窗口或其他隔离措施。
 
-完整反编译结果中的 `unknown50d25bcd()` 对应 AaveOracle 实际调用的价格入口。反编译伪代码显示它先向 `0x49b8…b530` 调用 `getPrice(bytes32 orderId)`，再向 wGOOGLx `0x1630…bBBc` 调用选择器 `0x7a2d13a`，参数是 `10^18`。后一个调用就是查询一整份 wGOOGLx 能换回多少 GOOGLx。随后适配器把两个结果经过精度换算后相乘。关键伪代码见 [`EdelPriceAdapter.decompiled.pan` 第 21–42 行](../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/EdelPriceAdapter.decompiled.pan#L21)。另一个聚合器式入口 `unknownfeaf968c()` 重复同一条定价链，见[第 44 行起](../../dataset/benchmark_complete/20260701_EdelFinance_decompiled/EdelPriceAdapter.decompiled.pan#L44)。
+完整反编译结果中的 `unknown50d25bcd()` 对应 AaveOracle 实际调用的价格入口。反编译伪代码显示它先向 `0x49b8…b530` 调用 `getPrice(bytes32 orderId)`，再向 wGOOGLx `0x1630…bBBc` 调用选择器 `0x7a2d13a`，参数是 `10^18`。后一个调用就是查询一整份 wGOOGLx 能换回多少 GOOGLx。随后适配器把两个结果经过精度换算后相乘。关键伪代码见 [`EdelPriceAdapter.decompiled.pan` 第 21–42 行](../../dataset/20260701_EdelFinance_decompiled/EdelPriceAdapter.decompiled.pan#L21)。另一个聚合器式入口 `unknownfeaf968c()` 重复同一条定价链，见[第 44 行起](../../dataset/20260701_EdelFinance_decompiled/EdelPriceAdapter.decompiled.pan#L44)。
 
-`AaveOracle.getAssetPrice()` 的验证源码又说明：只要配置了 source，它就直接读取 source 的 `latestAnswer()`，正值就作为资产价格返回，见 [`AaveOracle.getAssetPrice`](../../dataset/benchmark_simplified/20260701_EdelFinance_decompiled/slices/aave-oracle/AaveOracle.getAssetPrice.sol)。因此因果链是连续的：
+`AaveOracle.getAssetPrice()` 的验证源码又说明：只要配置了 source，它就直接读取 source 的 `latestAnswer()`，正值就作为资产价格返回，见 [`AaveOracle.getAssetPrice`](../../dataset/20260701_EdelFinance_decompiled/source-bundles/aave-oracle/@aave/core-v3/contracts/misc/AaveOracle.sol#L101)。因此因果链是连续的：
 
 ```mermaid
 flowchart LR
@@ -55,7 +55,7 @@ flowchart LR
 6. 辅助合约原来供给的 wGOOGLx 因此被借贷系统高估。攻击者以这批被高估的抵押品借走市场中的 USDC、wSPYx、wQQQx、wMSTRx、wNVDAx 和 wTSLAx。
 7. 攻击合约允许 Morpho 收回临时本金，剩余资产转给攻击者地址。
 
-这里归档的 [DeFiHackLabs PoC](../../dataset/benchmark_simplified/20260701_EdelFinance_decompiled/evidence/edel-xstock_exp.sol) 来自固定 commit `8c520a6ed54c9a19896bfc921d98728b078ffdc2`，只作为事后复现材料。本次没有在本地运行它，也不把它当作原始漏洞源码。
+这里归档的 [DeFiHackLabs PoC](../../dataset/20260701_EdelFinance_decompiled/evidence/raw/edel-xstock_exp.sol) 来自固定 commit `8c520a6ed54c9a19896bfc921d98728b078ffdc2`，只作为事后复现材料。本次没有在本地运行它，也不把它当作原始漏洞源码。
 
 ## 钱具体怎样流走
 
@@ -84,9 +84,9 @@ flowchart LR
 
 ## 证据与边界
 
-- [runtime 对比记录](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/adapter-runtime-comparison.json)保存了 Etherscan 输入、攻击区块 `25434062` 的 `eth_getCode` 和最新 `eth_getCode` 的长度及 SHA-256。三份都是同一份 3,577 字节 runtime。
-- [Etherscan 反编译元数据](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/etherscan-bytecode-decompiler.json)保存反编译 URL、获取时间、文本长度和哈希。
-- [交易汇总](../../dataset_artifacts/benchmark_complete/20260701_EdelFinance_decompiled/evidence/transaction-summary.json)保存 trace 中的价格序列、换算率、捐赠数量和攻击者净流入；完整原始 trace/转账/API 响应在 complete 视图的 `evidence/raw/`。
+- [runtime 对比记录](../../dataset_artifacts/20260701_EdelFinance_decompiled/evidence/adapter-runtime-comparison.json)保存了 Etherscan 输入、攻击区块 `25434062` 的 `eth_getCode` 和最新 `eth_getCode` 的长度及 SHA-256。三份都是同一份 3,577 字节 runtime。
+- [Etherscan 反编译元数据](../../dataset_artifacts/20260701_EdelFinance_decompiled/evidence/etherscan-bytecode-decompiler.json)保存反编译 URL、获取时间、文本长度和哈希。
+- [交易汇总](../../dataset_artifacts/20260701_EdelFinance_decompiled/evidence/transaction-summary.json)保存 trace 中的价格序列、换算率、捐赠数量和攻击者净流入；完整原始 trace/转账/API 响应在 complete 视图的 `evidence/raw/`。
 - 攻击区块 runtime 与 Etherscan 输入一致，只证明“反编译的机器码就是攻击时执行的适配器机器码”。它**不能**证明反编译伪代码等价于原始 Solidity，也不能恢复原作者变量名、注释和完整类型信息。
 - 本次没有编译 `.pan`（它也不是 Solidity）、没有做反编译源码等价证明、没有分叉重放、没有重建历史存储，也没有核验攻击时池代理实现。
 

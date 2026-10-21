@@ -1,0 +1,40 @@
+{
+  "case_id": "20260724_LienFinance",
+  "event_date": "2026-07-24",
+  "project_cn": "Lien Finance（债券等价兑换）",
+  "project_en": "Lien Finance (equivalent-bond exchange)",
+  "vulnerability_cn": "例外债券总数检查不能保证逐项匹配",
+  "vulnerability_en": "Aggregate exception counts fail to enforce per-bond multiplicity",
+  "detail_cn": "exchangeEquivalentBonds 对例外债券只累计匹配次数，不能保证每个 bondID 在输入、输出各出现正确次数。攻击交易在两套独立 BondMaker 部署登记输出组，重复列出属于例外列表的 bondID；例外列表本身没有重复。合约跳过输入销毁却铸造新债券，再通过三个 OTC 付款端点卖出。完整跟踪和转账复算显示，持有 USDC 的已授权流动性提供者钱包共向攻击合约支付 532,070.026484、74.602120、10,000 USDC，攻击者最终收到 542,144.628604 USDC。两套 BondMaker 不是代理与实现关系；未重放。CSV 保留源表约 542,000 美元口径。",
+  "detail_en": "exchangeEquivalentBonds balances aggregate exception-match counts without enforcing each bondID's correct input/output multiplicity. On two independent BondMaker deployments, the transaction registered output groups that repeat bondIDs from the exception list; the exception list itself has no duplicates. It minted bonds through the skipped-burn path and sold them through three OTC payment endpoints. Complete traces and transfer reconciliation show an approved USDC liquidity-provider wallet paid the attack contract 532,070.026484, 74.602120 and 10,000 USDC; the attacker received 542,144.628604 USDC. The two BondMakers are separate deployments, not a proxy/implementation pair. No replay was run. CSV loss retains the sheet's approximate USD 542,000 scope.",
+  "tx_urls": [
+    "https://etherscan.io/tx/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0xda6fc5625e617bb92f5359921d43321cebc6bef0#code",
+    "https://etherscan.io/address/0x843225cf6e663e4454732d6b551a737ac7b47de0#code",
+    "https://etherscan.io/address/0x656e5e976d523a427f05b0c212a22a89ccd9ef18#code"
+  ],
+  "loss_usd": "542000",
+  "loss_scope": "Approximate source-sheet USD loss; independently reconciled transaction payments total 542144.628604 USDC.",
+  "source_status": "public_original_source_historical_limits_explicit",
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "original_rows": [
+    106
+  ],
+  "source_sheet_snapshot": "../batches/20261016_x123_y5/snapshot.json",
+  "batch_results": "../batches/20261016_x123_y5/results.json",
+  "case_document": "../../docs/cases/20260724_LienFinance.md",
+  "verification_status": {
+    "original_source": "acquired_and_hashed",
+    "historical_call_targets": "observed_in_full_trace",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": true,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run"
+  },
+  "source_provenance": "provenance.json"
+}

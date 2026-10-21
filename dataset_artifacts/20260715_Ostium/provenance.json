@@ -1,0 +1,831 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "upkeep",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb?fields=all",
+      "retrieved_at": "2026-10-16T08:48:33.571411+08:00",
+      "address": "0x0aEBC4094B60Ea4E21E937E80DafDD58C07C5ebB",
+      "chain_id": "42161",
+      "verified_at": "2026-05-29T16:35:40Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.24+commit.e11b9ed9",
+        "compilerSettings": {
+          "viaIR": true,
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "shanghai"
+        },
+        "name": "OstiumPrivatePriceUpKeep",
+        "fullyQualifiedName": "src/OstiumPrivatePriceUpKeep.sol:OstiumPrivatePriceUpKeep"
+      },
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "source_files": [
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+          "bytes": 9279
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/@openzeppelin/contracts/utils/math/SafeCast.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+          "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+          "bytes": 34943
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumForwarded.sol",
+          "original_source_path": "src/interfaces/IOstiumForwarded.sol",
+          "sha256": "0ced0b4ea8bf91395d014de9eb7d41738c1d60603ef953b5b79f3a9b18ef29b2",
+          "bytes": 634
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumPairsStorage.sol",
+          "original_source_path": "src/interfaces/IOstiumPairsStorage.sol",
+          "sha256": "3c0d39f77eba65652ebc1b94a3ae435c5c7eefad2659b95162289174c2a5c7c7",
+          "bytes": 4428
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumPriceUpKeep.sol",
+          "original_source_path": "src/interfaces/IOstiumPriceUpKeep.sol",
+          "sha256": "ff509e905c4f0d94bd680399c5a4bc151cdc963b639910442f7d893a35365910",
+          "bytes": 1594
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumRegistry.sol",
+          "original_source_path": "src/interfaces/IOstiumRegistry.sol",
+          "sha256": "12222d99e8d89a9f012dbe8558de51535c309941a16a9021f877488e213cc03f",
+          "bytes": 1372
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumTradingCallbacks.sol",
+          "original_source_path": "src/interfaces/IOstiumTradingCallbacks.sol",
+          "sha256": "a9d90750f01b9def73145a6e9a52619944dd5a7e699a974a8c1ad93483c0d86b",
+          "bytes": 5219
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumTradingStorage.sol",
+          "original_source_path": "src/interfaces/IOstiumTradingStorage.sol",
+          "sha256": "7fb7f097f6db1590db01a5998a88e67b75a076a29c8c164d80b874077e49df4b",
+          "bytes": 10388
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumVault.sol",
+          "original_source_path": "src/interfaces/IOstiumVault.sol",
+          "sha256": "d793b310de9fdab7aad769e561e10188cacefe77b355da87ee9a56af52c9df71",
+          "bytes": 10458
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOstiumVerifier.sol",
+          "original_source_path": "src/interfaces/IOstiumVerifier.sol",
+          "sha256": "653a3ce4c1dc41327e7a9eeead786826e2c783100bbcacbd0c8e71ef43eb7282",
+          "bytes": 831
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/IOwnable.sol",
+          "original_source_path": "src/interfaces/IOwnable.sol",
+          "sha256": "3b3d575716aa16465c465a5d75df3d9b00a7381e89dfff7a0f5feeb0f3b51ae9",
+          "bytes": 135
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/interfaces/TokenInterfaceV5.sol",
+          "original_source_path": "src/interfaces/TokenInterfaceV5.sol",
+          "sha256": "9065639197146e65423f8ca74f448a35296a7655443762cd4883a1aa29d445fd",
+          "bytes": 596
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/upkeep/src/OstiumPrivatePriceUpKeep.sol",
+          "original_source_path": "src/OstiumPrivatePriceUpKeep.sol",
+          "sha256": "1da7d64946e6c92ab985988c94e442ae61939ccf1f67e2777b0d36646c931df6",
+          "bytes": 6222
+        }
+      ],
+      "abi_path": "source-bundles/upkeep/abi.json",
+      "response_path": "source-bundles/upkeep/source-response.json",
+      "response_sha256": "75c4426b23e6dc62e8b79affa09168144435ee2b44e0d7511efd6f1a1b7b2856",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "verifier-and-context",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0xd456939e54f68ef9b0be62abb2ec4a37397cb814?fields=all",
+      "retrieved_at": "2026-10-16T08:48:35.311036+08:00",
+      "address": "0xd456939e54F68Ef9B0BE62aBB2EC4A37397Cb814",
+      "chain_id": "42161",
+      "verified_at": "2026-03-03T16:37:28Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.24+commit.e11b9ed9",
+        "compilerSettings": {
+          "viaIR": true,
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "paris"
+        },
+        "name": "OstiumVerifier",
+        "fullyQualifiedName": "src/OstiumVerifier.sol:OstiumVerifier"
+      },
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "source_files": [
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+          "bytes": 9279
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+          "sha256": "5c0c6f1cc199d0e388beb7cb63b8d157b878fe7018f29fe83a3dd3c9102c4e8b",
+          "bytes": 12128
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC4626Upgradeable.sol",
+          "sha256": "8769acf7e5cb0c978bdf117255097c59afb250b725f9114145eed6e59a9f35f0",
+          "bytes": 13293
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "a08e16324da33a9d666dc07a22ae58031c242a3869f6808e55b4b82fc70cb209",
+          "bytes": 1194
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol",
+          "sha256": "28874e9eb73a2dcf03367ad26d89fd38d83f08509685c404a618f86435a8dd6d",
+          "bytes": 2005
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/access/AccessControl.sol",
+          "original_source_path": "@openzeppelin/contracts/access/AccessControl.sol",
+          "sha256": "93c8ebfe7b36ef4d180f1660a5a741125691957726209720af476fdd5c7bac43",
+          "bytes": 7028
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/access/IAccessControl.sol",
+          "original_source_path": "@openzeppelin/contracts/access/IAccessControl.sol",
+          "sha256": "140304b7e99d517c57a13f391dfd3b550ca633a507f7b2af130f391b6cd89cc5",
+          "bytes": 3343
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/access/Ownable.sol",
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/governance/TimelockController.sol",
+          "original_source_path": "@openzeppelin/contracts/governance/TimelockController.sol",
+          "sha256": "4a5946a9ea4abbaef29225dc42da6c50c66bb13cae1b592607222599b0526f64",
+          "bytes": 16324
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+          "sha256": "df936240c9a5d342582cbda70dd773b1c1d0e0dda3042b1c17b902ef0c36827b",
+          "bytes": 6538
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/interfaces/IERC1363.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/interfaces/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/interfaces/IERC4626.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC4626.sol",
+          "sha256": "4e2150a099080629a8e9e30d346e79d92b6eedf8d6dfae3fdf1295fda0e146ec",
+          "bytes": 12183
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+          "sha256": "3df310870e0187a59020ea48e910ed2693778b1f758b57b97a47365d74b92af5",
+          "bytes": 2599
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+          "sha256": "08dbc044feab0e187a81a52142f907be598ecca0d35311766a346343af7b18af",
+          "bytes": 1319
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "9f906af4cba6e7e091dc12d45e6687e1239cf82d17678198424250fd64ab96bd",
+          "bytes": 10798
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "ac1fd9fa99b194a8db8dfa9ae8e3ff44feaa8f16668241fd2b66ae8b47d7c082",
+          "bytes": 10075
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+          "sha256": "330a87f2bf94083df8ddd341735d712866455042aaca58d33ee1799773e1cae1",
+          "bytes": 16102
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+          "sha256": "2eda4a86ad7947336c407da89826eb604dea67f966dccbf1fb04dca55666e130",
+          "bytes": 7236
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+          "sha256": "03c8c0b9ebbe6fe0a682332d9f980723996a1856ff0a767378eae95288069649",
+          "bytes": 1040
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+          "sha256": "33223782ea652dca413702ce92f9f59d91d758a035065b24bbedb7dc60c63a78",
+          "bytes": 792
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+          "sha256": "ff0eb9902bf0ac099205615fac90eacf34fae637571b05aab3ea35dea53d5f17",
+          "bytes": 4929
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+          "sha256": "eafee3ffdc7cb2fba4bf6bd16fb28f8e5b4679742e81c2ad42a1b1df5c179feb",
+          "bytes": 997
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol",
+          "sha256": "fa1e231eedfd128232d8f34e9599165fb302c9dee5e58ef009f3b99f7e5d930d",
+          "bytes": 795
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/token/ERC721/utils/ERC721Utils.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC721/utils/ERC721Utils.sol",
+          "sha256": "f2041b1685dcf0cf6b968d9b8454e5a46068b1df5ab0e82ba0b269fa2f3099a8",
+          "bytes": 1922
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "f1a9255dbc40cf9ae7c786abed3b022691a9d24bca0c7f05dc60e63421d405ab",
+          "bytes": 5996
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/Errors.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Errors.sol",
+          "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+          "bytes": 896
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "61a2b12c96857aaa35f48aeda67a4281637a42494c0b3795be0ae976aa7b3793",
+          "bytes": 879
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/math/Math.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/Math.sol",
+          "sha256": "92fee281fd46a1b058b190cf21d6b1a528f0433a907850ae1c9bcf36c5c0cd98",
+          "bytes": 32145
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/math/SafeCast.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+          "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+          "bytes": 34943
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+          "sha256": "1ed50b1056af886752f0fb48a0165d381e69bb4a4b18b893b066dc144a7e08d7",
+          "bytes": 2613
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/Panic.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Panic.sol",
+          "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+          "bytes": 1973
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/@openzeppelin/contracts/utils/Strings.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Strings.sol",
+          "sha256": "2db7d21151644c57f75ed3ab55e87f3cf7fbf587a65345650fd740e2cfd50be3",
+          "bytes": 19280
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/abstract/Delegatable.sol",
+          "original_source_path": "src/abstract/Delegatable.sol",
+          "sha256": "a68a5d4a785038f4f82aa4a74a7110d40c06247f0c5c913129cf88dd8f36364c",
+          "bytes": 1648
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/external/IArbSys.sol",
+          "original_source_path": "src/interfaces/external/IArbSys.sol",
+          "sha256": "cc39b37fb3e518521a0cf4ac4867bc639b604bc391ec568bd8419049b6441964",
+          "bytes": 3933
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/external/IChainlinkFeeManager.sol",
+          "original_source_path": "src/interfaces/external/IChainlinkFeeManager.sol",
+          "sha256": "15853424e7ebda92609550e3ccb4e393839d0c2cba609e8c3d77f12b9b617521",
+          "bytes": 2936
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/external/IChainlinkRewardManager.sol",
+          "original_source_path": "src/interfaces/external/IChainlinkRewardManager.sol",
+          "sha256": "bec81d55fde2fc8277e0c67ed3e39a255a167446d0ec3d6e630073383c71b95a",
+          "bytes": 2874
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/external/IChainlinkVerifierFeeManager.sol",
+          "original_source_path": "src/interfaces/external/IChainlinkVerifierFeeManager.sol",
+          "sha256": "7e88f96bbf23da49e84f5b454547e6c4007cd6e937d5ad64f8407ea19df74adf",
+          "bytes": 1403
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/external/IChainlinkVerifierProxy.sol",
+          "original_source_path": "src/interfaces/external/IChainlinkVerifierProxy.sol",
+          "sha256": "ec247ffada6ee97aaf656437febc12c11dfde83c427cb3f3aca5e541445cf82d",
+          "bytes": 1303
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IDelegatable.sol",
+          "original_source_path": "src/interfaces/IDelegatable.sol",
+          "sha256": "fddf9bacc227632ff8ec037ae2ca38a171bd75e2735a3e804d1f4ec19ba5f1f8",
+          "bytes": 680
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumAutomationCompatible.sol",
+          "original_source_path": "src/interfaces/IOstiumAutomationCompatible.sol",
+          "sha256": "d9ee04495de1adf35321e1117369ad45464169ad5ae3a194bff37060813a0a76",
+          "bytes": 378
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumForwarded.sol",
+          "original_source_path": "src/interfaces/IOstiumForwarded.sol",
+          "sha256": "0ced0b4ea8bf91395d014de9eb7d41738c1d60603ef953b5b79f3a9b18ef29b2",
+          "bytes": 634
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumLockedDepositNft.sol",
+          "original_source_path": "src/interfaces/IOstiumLockedDepositNft.sol",
+          "sha256": "fe98304ca4222a482206f1e7f3add3ed24e91d974c5323a3cf17425821a91516",
+          "bytes": 330
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumOpenPnl.sol",
+          "original_source_path": "src/interfaces/IOstiumOpenPnl.sol",
+          "sha256": "e098b019ed4fa25a82b4fda4bdf88cafc39b478734f769e2ea43b25fbdb6e3ed",
+          "bytes": 1766
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumPairInfos.sol",
+          "original_source_path": "src/interfaces/IOstiumPairInfos.sol",
+          "sha256": "5d3873b7f422ed29986efcb34f069d3b17be00c43af7e107dc6701d0f26adfe3",
+          "bytes": 13641
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumPairsStorage.sol",
+          "original_source_path": "src/interfaces/IOstiumPairsStorage.sol",
+          "sha256": "db80f412af58f7e5ec64686b5b1539f2abd87e8766085e87aadfb6a8a614c79e",
+          "bytes": 4448
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumPriceRouter.sol",
+          "original_source_path": "src/interfaces/IOstiumPriceRouter.sol",
+          "sha256": "274a517ff9d2f36e0275cf3a719a63225dfb358d51c35cc6ae46a2a0adacbceb",
+          "bytes": 535
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumPriceUpKeep.sol",
+          "original_source_path": "src/interfaces/IOstiumPriceUpKeep.sol",
+          "sha256": "f44b943e3cc0821a51375acf636464877f9a62852252da8eda1b608e87cb50a7",
+          "bytes": 1397
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumRegistry.sol",
+          "original_source_path": "src/interfaces/IOstiumRegistry.sol",
+          "sha256": "12222d99e8d89a9f012dbe8558de51535c309941a16a9021f877488e213cc03f",
+          "bytes": 1372
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumTradesUpKeep.sol",
+          "original_source_path": "src/interfaces/IOstiumTradesUpKeep.sol",
+          "sha256": "6932da2645de37f5003e7dffdf775f8e6c562ab7c054eefc6189d5a9f6a3584b",
+          "bytes": 410
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumTrading.sol",
+          "original_source_path": "src/interfaces/IOstiumTrading.sol",
+          "sha256": "02c4656e484111c874ba73f77d8d8d935d4d0d79eba37fa9629381ca6fdbdb5b",
+          "bytes": 6687
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumTradingCallbacks.sol",
+          "original_source_path": "src/interfaces/IOstiumTradingCallbacks.sol",
+          "sha256": "a9d90750f01b9def73145a6e9a52619944dd5a7e699a974a8c1ad93483c0d86b",
+          "bytes": 5219
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumTradingStorage.sol",
+          "original_source_path": "src/interfaces/IOstiumTradingStorage.sol",
+          "sha256": "65b71ce23fe72f45c2d17a6525772681df05ef85ce15804012a8c86eaee6e167",
+          "bytes": 10091
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumVault.sol",
+          "original_source_path": "src/interfaces/IOstiumVault.sol",
+          "sha256": "abb5aeef31323c606ba056c8f01bdea95c2edad731a3cb49c65060d5b8387906",
+          "bytes": 9393
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOstiumVerifier.sol",
+          "original_source_path": "src/interfaces/IOstiumVerifier.sol",
+          "sha256": "653a3ce4c1dc41327e7a9eeead786826e2c783100bbcacbd0c8e71ef43eb7282",
+          "bytes": 831
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IOwnable.sol",
+          "original_source_path": "src/interfaces/IOwnable.sol",
+          "sha256": "3b3d575716aa16465c465a5d75df3d9b00a7381e89dfff7a0f5feeb0f3b51ae9",
+          "bytes": 135
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/IPayable.sol",
+          "original_source_path": "src/interfaces/IPayable.sol",
+          "sha256": "dec8133f315eaae965edb9a6a45aa25ad1862b1d6ea18d7867f1890412ac9535",
+          "bytes": 269
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/interfaces/TokenInterfaceV5.sol",
+          "original_source_path": "src/interfaces/TokenInterfaceV5.sol",
+          "sha256": "9065639197146e65423f8ca74f448a35296a7655443762cd4883a1aa29d445fd",
+          "bytes": 596
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/lib/ChainUtils.sol",
+          "original_source_path": "src/lib/ChainUtils.sol",
+          "sha256": "8700750e7c41ab7acf2a39a6b3ea77766ae924ff23824b309a7f925be42c68bd",
+          "bytes": 637
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/lib/TradingCallbacksLib.sol",
+          "original_source_path": "src/lib/TradingCallbacksLib.sol",
+          "sha256": "28fcb2a3d425ddf4846c3ac6033fc098c51944c53c88b812298811f919f0a3db",
+          "bytes": 24538
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/lib/TradingLib.sol",
+          "original_source_path": "src/lib/TradingLib.sol",
+          "sha256": "3f0b7777eddf212e75c4c3b68914629381a4e1981cfa60a30c154b7ec81d95f2",
+          "bytes": 7340
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/ChainlinkRegistryMock.sol",
+          "original_source_path": "src/mocks/ChainlinkRegistryMock.sol",
+          "sha256": "459a5513e7c6a0918f586c350a74cc033285772a961826790f9fd270c8f21da9",
+          "bytes": 401
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/ChainlinkVerifierFeeManagerMock.sol",
+          "original_source_path": "src/mocks/ChainlinkVerifierFeeManagerMock.sol",
+          "sha256": "61ca2c67030e2eebd4283dc2c790006ff52a0214320884e370ba62b474cacf55",
+          "bytes": 781
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/ChainlinkVerifierProxyMock.sol",
+          "original_source_path": "src/mocks/ChainlinkVerifierProxyMock.sol",
+          "sha256": "b65defcad2b23d6d2f46651c0cd4cfe4c78082a22eeb7b9d725f60df0017d1ca",
+          "bytes": 583
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/MockLINK.sol",
+          "original_source_path": "src/mocks/MockLINK.sol",
+          "sha256": "b58597cc3f452e3ae08e557a3a785acec18047b22d8de3f58ba4261551fa47ce",
+          "bytes": 455
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/MockUSDC.sol",
+          "original_source_path": "src/mocks/MockUSDC.sol",
+          "sha256": "92e84833278b17239793a6067c1f436e4e04bc63992ea92f9db548c53fe65df8",
+          "bytes": 744
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/mocks/OstiumVerifierMock.sol",
+          "original_source_path": "src/mocks/OstiumVerifierMock.sol",
+          "sha256": "4b2aa2e7a8051481ee1c919c91a70b7fc04ff43c6d0d529aac00a94f6cdad1ea",
+          "bytes": 843
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumLockedDepositNft.sol",
+          "original_source_path": "src/OstiumLockedDepositNft.sol",
+          "sha256": "4d1bce55145c972bc136370a37c60d2850e51743974c58c399c9557af7d83055",
+          "bytes": 935
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumOpenPnl.sol",
+          "original_source_path": "src/OstiumOpenPnl.sol",
+          "sha256": "8ef7f313dd955aee494872aa66e6a446c50e2e5e57c6ed4170529fe947d99401",
+          "bytes": 6516
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumPairInfos.sol",
+          "original_source_path": "src/OstiumPairInfos.sol",
+          "sha256": "b2bf043515238b944e392348786f06309e61701cb411585f919ec38062b80eb1",
+          "bytes": 38050
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumPairsStorage.sol",
+          "original_source_path": "src/OstiumPairsStorage.sol",
+          "sha256": "2cc6db61d9edd692e2e2ae77536059ecb231ac2d0c50d8be389e465de8c62fd1",
+          "bytes": 12559
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumPriceRouter.sol",
+          "original_source_path": "src/OstiumPriceRouter.sol",
+          "sha256": "41b48111fb0d51d55769c14e5c3db205e2a1821e8e512cfa3218fdc75b7b66f2",
+          "bytes": 2477
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumPriceUpKeep.sol",
+          "original_source_path": "src/OstiumPriceUpKeep.sol",
+          "sha256": "f530268ae2806b45a1977f481f5d252bdf732e4ec5f6b98fc343f783c0ae67fe",
+          "bytes": 6407
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumPrivatePriceUpKeep.sol",
+          "original_source_path": "src/OstiumPrivatePriceUpKeep.sol",
+          "sha256": "769c3f45a2252ed3770e23e0f983e7e3d97b9a60fa701b8fcbd0ce5503f8ee19",
+          "bytes": 5278
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumRegistry.sol",
+          "original_source_path": "src/OstiumRegistry.sol",
+          "sha256": "c417991dd4502c32ab873cbdde0c16d81c3c72ad2e2bc3100c777dd3161560fe",
+          "bytes": 3767
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTimelockManager.sol",
+          "original_source_path": "src/OstiumTimelockManager.sol",
+          "sha256": "2e0977f58e3fa118f23107b3b2079c33ef0e1786daa971e848199e35199f220d",
+          "bytes": 362
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTimelockOwner.sol",
+          "original_source_path": "src/OstiumTimelockOwner.sol",
+          "sha256": "c7f744d21531d600a8feb5514805f2ecb7dc06fc8ad7f0cfecd386bca0492b01",
+          "bytes": 360
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTradesUpKeep.sol",
+          "original_source_path": "src/OstiumTradesUpKeep.sol",
+          "sha256": "b8f3ab192421ea923fb251dacc693690fabc0e72df2277317f00cea5bffad232",
+          "bytes": 3201
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTrading.sol",
+          "original_source_path": "src/OstiumTrading.sol",
+          "sha256": "64227ab71ce5c994216f24573e18e1fdba555248ef13b0382a3ee678473460ea",
+          "bytes": 27275
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTradingCallbacks.sol",
+          "original_source_path": "src/OstiumTradingCallbacks.sol",
+          "sha256": "d262e9fc886f10e14feecd04ab524df82f002a8018a723a0aa394793d3c889d2",
+          "bytes": 30049
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumTradingStorage.sol",
+          "original_source_path": "src/OstiumTradingStorage.sol",
+          "sha256": "d20f3dc4cab70545f7a9535f610b8dd1c4667cfffc189677b728c4df4ea7b9c3",
+          "bytes": 22006
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumVault.sol",
+          "original_source_path": "src/OstiumVault.sol",
+          "sha256": "348e426e5457ff3eea4be75da26da35da0f7e6472b1b2ca7ebce40e029fc8fa6",
+          "bytes": 30100
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/verifier-and-context/src/OstiumVerifier.sol",
+          "original_source_path": "src/OstiumVerifier.sol",
+          "sha256": "152733aed82ef0ea333f5ae347e32e4a0082d1b78546cbe7f70533ab7e661abc",
+          "bytes": 2329
+        }
+      ],
+      "abi_path": "source-bundles/verifier-and-context/abi.json",
+      "response_path": "source-bundles/verifier-and-context/source-response.json",
+      "response_sha256": "d2081088ad64e8f64c3901d807e695d3103320f183c6f1b6b1ac55cb97659080",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    },
+    {
+      "id": "vault-proxy",
+      "kind": "public_original_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0x20d419a8e12c45f88fda7c5760bb6923cee27f98?fields=all",
+      "retrieved_at": "2026-10-16T09:17:34.105919+08:00",
+      "address": "0x20D419a8e12C45f88fDA7c5760bb6923Cee27F98",
+      "chain_id": "42161",
+      "verified_at": "2024-08-08T15:03:30Z",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "TransparentUpgradeableProxy",
+        "fullyQualifiedName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy"
+      },
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "source_files": [
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/Proxy.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/Proxy.sol",
+          "sha256": "b3b79c95884570b4d01629e13985aea8a3c71bc37c257e1ea7fae9f23cffe8c4",
+          "bytes": 3247
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8160a4242e8a7d487d940814e5279d934e81f0436689132a4e73394bab084a6d",
+          "bytes": 9159
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/utils/StorageSlot.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/StorageSlot.sol",
+          "sha256": "7583bd6ad3fdd5160823f090beb6b1519f54436d73ea7b7b4051b5d0758d533d",
+          "bytes": 2671
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/interfaces/IERC1967.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC1967.sol",
+          "sha256": "9afca2989dde856cbc01279218056a4fde51004fcffeed9904260976b78e2176",
+          "bytes": 665
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+          "sha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011",
+          "bytes": 450
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+          "sha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630",
+          "bytes": 879
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+          "sha256": "f64dc961f262436fc9fd3235f16a8495fd43c8f1d98d0a750a376ea8c8d5365d",
+          "bytes": 1291
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+          "sha256": "da1090369e77c00ea6a7805e20a83a9c628fae1ef1acb08a396e46e63241e493",
+          "bytes": 6186
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "sha256": "be83b87e6f2dbc5d0dea923bb45092689382f1580893dfda28438452ffa10e88",
+          "bytes": 8279
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/access/Ownable.sol",
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "9353af89436556f7ba8abb3f37a6677249aa4df6024fbfaa94f79ab2f44f3231",
+          "bytes": 2623
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol",
+          "sha256": "96140d8378a174f30d2a36859f63c39b331a91e3f59b330d9516530f5eca85ed",
+          "bytes": 2096
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
+          "sha256": "62837cd05e75f09d5b7c02faf786032cafd749375f9bd710106fec84d77be149",
+          "bytes": 2040
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+          "original_source_path": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+          "sha256": "e1f18ca464715b24fa20b49ca2b75aff9084a96bd7e726ace63097270719433b",
+          "bytes": 2860
+        },
+        {
+          "path": "../../dataset/20260715_Ostium/source-bundles/vault-proxy/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "1458c260d010a08e4c20a4a517882259a23a4baa0b5bd9add9fb6d6a1549814a",
+          "bytes": 844
+        }
+      ],
+      "abi_path": "source-bundles/vault-proxy/abi.json",
+      "response_path": "source-bundles/vault-proxy/source-response.json",
+      "response_sha256": "e117476c71286c724b6ca14bc90f262f192eb10f4a13154b18c6389023224d7f",
+      "scope": "The compilation target is associated with this deployment. Other files in the source bundle are compilation dependencies/context; they are not automatically all attack-time deployed contracts."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/transaction-rpc.json",
+      "sha256": "02e6adeb93fb904e5fdad95dd038e88c0cf6d6616bf72a3bd81a4a0b5bda4480",
+      "bytes": 5906,
+      "url": "https://arbitrum-one-rpc.publicnode.com",
+      "retrieved_at": "2026-10-16T08:53:45.314581+08:00"
+    },
+    {
+      "path": "evidence/receipt-alt.json",
+      "sha256": "c46cab3c881247fb6ff53c42941937946b15335cad70591701be87890776209c",
+      "bytes": 30577,
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-10-16T08:55:04.028250+08:00"
+    },
+    {
+      "path": "evidence/recomputed.json",
+      "sha256": "6d9a0490d2bc729474f99b56a8a9cca32b10f931dc7fdb4fae0e01e951d28096",
+      "bytes": 3401,
+      "kind": "derived_independent_recalculation",
+      "derived_from": "archived transaction/receipt/raw-trace records",
+      "computed_at": "2026-10-16T09:55:56.596656+08:00"
+    },
+    {
+      "path": "evidence/report.html",
+      "sha256": "c3d3e26b4f0851c5ec026ddb10d904f017991fcc4b86e9999eee272d054020bb",
+      "bytes": 43663,
+      "url": "https://anomly.rs/ostium-future-dated-price-report-exploit",
+      "retrieved_at": "2026-10-16T08:48:35.531727+08:00"
+    }
+  ],
+  "source_context": []
+}
