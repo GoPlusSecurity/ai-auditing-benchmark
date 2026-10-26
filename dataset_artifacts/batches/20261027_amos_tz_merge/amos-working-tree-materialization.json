@@ -1,0 +1,17 @@
+{
+  "commit": "14920dcd252a0f9dee40453f4b6e885708979f78",
+  "files": [
+    {
+      "path": "LICENSE",
+      "previous_worktree_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "amos_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "reason": "Git restore may retain an unchanged stat-cached CRLF worktree file; materialize the authoritative blob bytes explicitly."
+    },
+    {
+      "path": "docs/cases/sources/20260910_sheet_rows_99_103.json",
+      "previous_worktree_sha256": "4ed9902aa38545b99aea4378c3621433bfc759f076cbd62b107a0abd68b2df76",
+      "amos_sha256": "043c1b00166fe3cfdaad61f86b7df059db3a81039d0acc3b46d4554d83a931ea",
+      "reason": "Git restore may retain an unchanged stat-cached CRLF worktree file; materialize the authoritative blob bytes explicitly."
+    }
+  ]
+}

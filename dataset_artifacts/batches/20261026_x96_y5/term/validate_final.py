@@ -7,14 +7,12 @@ spec=json.loads((B/'case_spec.json').read_text());provenance=json.loads((B/'prov
 source_by_id={s['id']:json.loads((R/s['response_path']).read_text())for s in spec['sources']}
 links=re.findall(r'\]\(([^)]+)\)',draft);source_links=0;local_artifact_links=0
 for link in links:
- if link.startswith('../../dataset/benchmark_complete/'+spec['case_id']+'/source-bundles/'):
+ if link.startswith('../../dataset/'+spec['case_id']+'/source-bundles/'):
   part=link.split('/source-bundles/',1)[1];base,anchor=part.split('#',1);bid,name=base.split('/',1)
   text=source_by_id[bid]['sources'][name]['content'];m=re.fullmatch(r'L(\d+)-L(\d+)',anchor);assert m,link
   start,end=map(int,m.groups());assert 1<=start<=end<=len(text.splitlines()),link
-  ranges=spec['slices'][bid][name]
-  if ranges!='all':assert any(a<=start<=end<=z for a,z in ranges),('reference outside simplified slices',link)
   source_links+=1
- elif link.startswith('../../dataset/benchmark_complete/'+spec['case_id']+'/decompiled/'):
+ elif link.startswith('../../dataset/'+spec['case_id']+'/decompiled/'):
   tail=link.split('/decompiled/',1)[1];name,anchor=tail.split('#');path=B/name;m=re.fullmatch(r'L(\d+)-L(\d+)',anchor);a,z=map(int,m.groups());assert1=1<=a<=z<=len(path.read_text().splitlines());assert assert1
  elif link.startswith('../../dataset_artifacts/'):
   path=R/link.removeprefix('../../').split('#')[0];assert path.is_file(),link;local_artifact_links+=1
@@ -47,5 +45,5 @@ assert json.loads((B/'sheet-row.json').read_text())['fields']['target (社媒 or
 assert len(spec['sources'])==9
 q=json.loads((B/'qualification.json').read_text());assert q['qualified'] is True
 v=json.loads((B/'validation.json').read_text());v.update(draft_source_links_checked=source_links,draft_existing_artifact_links_checked=local_artifact_links,all_17_action_selectors_and_arguments_checked=True,authoritative_selector_signatures_checked=9,draft_sha256=hashlib.sha256((B/'draft.md').read_bytes()).hexdigest(),case_spec_sha256=hashlib.sha256((B/'case_spec.json').read_bytes()).hexdigest())
-(B/'validation.json').write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(B/'validation-current.json').write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(v,ensure_ascii=False,indent=2))

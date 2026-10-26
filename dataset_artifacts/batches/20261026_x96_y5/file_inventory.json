@@ -37,8 +37,8 @@
     },
     {
       "path": "build_batch.py",
-      "bytes": 18700,
-      "sha256": "467df4117823cf123fdbd87cae739474767bccc3ccaf46dc09995841c9b0f367"
+      "bytes": 14501,
+      "sha256": "7294df19fcafcae198274cf8b0b78de013de4726365318c7b9490c481eb18d25"
     },
     {
       "path": "candidate_jobs-fetch-results.json",
@@ -217,8 +217,8 @@
     },
     {
       "path": "fh/build_case.py",
-      "bytes": 9496,
-      "sha256": "eb9ba09a1f5cd3f51051aa3e735b38ddbd5021a15bec77b7b7136a6dd8d0500e"
+      "bytes": 9477,
+      "sha256": "51ea66851e2e9977fd93ccb7703b120f37b8bf556c18e3760a774e67cccf5843"
     },
     {
       "path": "fh/case_spec.json",
@@ -267,8 +267,8 @@
     },
     {
       "path": "fh/draft.md",
-      "bytes": 12485,
-      "sha256": "9b7d2385f0c281d2c892ccbf200a0e82d3fb2ad213c1dff687df5b6730e35965"
+      "bytes": 12165,
+      "sha256": "859236256b93919933461e27a2c67394e05914dede53766be5bebaaa22dec82c"
     },
     {
       "path": "fh/ethervm-decompile-page.html",
@@ -282,8 +282,8 @@
     },
     {
       "path": "fh/finish_case.py",
-      "bytes": 16085,
-      "sha256": "26d26c86f8aa826c3277733f515981edeee84564a94d259f5a459907588a4ef6"
+      "bytes": 16066,
+      "sha256": "274df27217b7a132e900a4b7a6836b8ceeccde8f29c4140ac17c88413b86e826"
     },
     {
       "path": "fh/online-decompilation-acquisition.json",
@@ -757,8 +757,8 @@
     },
     {
       "path": "finalize_batch.py",
-      "bytes": 9073,
-      "sha256": "d3fe99fafd44b782f4f73e7f59b51318f9bb7789e984a417d484efcc16cfd66d"
+      "bytes": 8821,
+      "sha256": "32205d3fc5ab2ebeb88d172857314a25f88269dca684c8bc9e76d3ceeaab4e20"
     },
     {
       "path": "input_snapshot.json",
@@ -1987,8 +1987,8 @@
     },
     {
       "path": "moonwell/draft.md",
-      "bytes": 15338,
-      "sha256": "54efea1ef956ee5ce76c9d685742866c033a9aa0663a4c2b57a0c8480889a496"
+      "bytes": 14846,
+      "sha256": "4ccf94c66823e639b3765816d345477f4610e19cd5f1c8d574c8d77008eec079"
     },
     {
       "path": "moonwell/final-borrow-mamo-price.json",
@@ -2512,8 +2512,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6132,
-      "sha256": "c6be94161b7574882acb69202730487037228950c576bb6e3d1c602b123ba9f4"
+      "bytes": 6487,
+      "sha256": "259beb894402f39052e79cbff786b4250271e24dc0a8207f368b5a8bfa51db5c"
     },
     {
       "path": "results.json",
@@ -2557,8 +2557,8 @@
     },
     {
       "path": "sandbox/draft.md",
-      "bytes": 19965,
-      "sha256": "1c8be5a70b14620a886caf13b838f8b149304eed1008b523eda5130f598ff818"
+      "bytes": 19414,
+      "sha256": "471b9937b719333324dd92e126565daa449bd87fba7188642e5253a32cc88656"
     },
     {
       "path": "sandbox/dvn-verify-receipt.json",
@@ -3792,8 +3792,8 @@
     },
     {
       "path": "term/draft.md",
-      "bytes": 24182,
-      "sha256": "d1ecc2aef813282579b9a7918310e930817cd014dab32110a6b97812ad70ad26"
+      "bytes": 23614,
+      "sha256": "e514502b60c61a3a85eb83f8d94e90e385aa98a9140800af73170286ee745719"
     },
     {
       "path": "term/ethervm-form.html",
@@ -4997,8 +4997,8 @@
     },
     {
       "path": "term/validate_final.py",
-      "bytes": 4231,
-      "sha256": "1395bc1c0ed48c11eb56dcaccd91703d5ac6d29a5eae1beadc3d8b784ee46502"
+      "bytes": 4054,
+      "sha256": "ad8adb268295b8eef44b4c7d74d9f32ff5ff802bec0852e918631e35047f370e"
     },
     {
       "path": "term/validation.json",
@@ -5017,8 +5017,8 @@
     },
     {
       "path": "validate_batch.py",
-      "bytes": 9004,
-      "sha256": "fa90da1b006b2b4d12e16edd9634fab306673719e8c9b6fe53d801c179cdd02b"
+      "bytes": 5514,
+      "sha256": "af5336dcd20483148f462a0f4de7eb1208955a66796dea8584cfe61cd6585cf2"
     },
     {
       "path": "validation.json",
@@ -5033,6 +5033,8 @@
   ],
   "excludes": [
     "file_inventory.json",
-    "SHA256SUMS"
+    "SHA256SUMS",
+    "__pycache__",
+    "*.pyc"
   ]
 }

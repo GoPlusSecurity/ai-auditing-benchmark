@@ -1,0 +1,523 @@
+{
+  "case_id": "20260826_FH",
+  "path_base": "this artifact directory",
+  "bundles": [
+    {
+      "id": "fh-token",
+      "role": "vulnerable_contract",
+      "provider": "Sourcify",
+      "address": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37?fields=all",
+      "retrieved_at": "2026-10-26T14:33:11.114447+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/fh-token/source-response.json",
+      "response_sha256": "40eb071f5098a30d0b82cc84c3cd0c1dc3130efd3161869cf7d6eb4d99b9eeda",
+      "chain_id": "56",
+      "verified_at": "2026-08-18T16:20:47Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xfb1d377fe0907d1f04895740dce0c1082e3f67f57b7b3ffab346f0ea2c136710",
+        "blockNumber": "116687253",
+        "transactionIndex": "125",
+        "deployer": "0x624FaeF18DbdfcE8929805CA10f7cD6FA61943B1"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/contracts/FHToken.sol",
+          "original_source_path": "contracts/FHToken.sol",
+          "sha256": "0cff64bf8a5864df614a281d09e1bd5b295cb19ef70980b59d6c6c2cd522924f",
+          "bytes": 20337
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/@openzeppelin/contracts/access/Ownable.sol",
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/@openzeppelin/contracts/utils/Address.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+          "bytes": 6803
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/@openzeppelin/contracts/utils/Errors.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Errors.sol",
+          "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+          "bytes": 896
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/fh-token/@openzeppelin/contracts/utils/LowLevelCall.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/LowLevelCall.sol",
+          "sha256": "e128cbe9c6c406d5a42c26e4079c0a95b369ce552f2d0c3dfd2fcb836c5708f2",
+          "bytes": 5547
+        }
+      ]
+    },
+    {
+      "id": "pancake-v2-router",
+      "role": "normal_dependency_fee_on_transfer_swap",
+      "provider": "Sourcify",
+      "address": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x10ED43C718714eb63d5aA57B78B54704E256024E?fields=all",
+      "retrieved_at": "2026-10-26T14:33:09.853526+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/pancake-v2-router/source-response.json",
+      "response_sha256": "6f2ac070beec100cf0982447a4ccfe6106e767290517f5fc85e1bc0e130ffe3b",
+      "chain_id": "56",
+      "verified_at": "2024-08-08T12:26:47Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0x1bfbff8411ed44e609d911476b0d35a28284545b690902806ea0a7ff0453e931",
+        "blockNumber": "6810080",
+        "transactionIndex": "214",
+        "deployer": "0xDb6F5FB9311aE8885620Ee893887C3D85C8293d6"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v2-router/PancakeRouter.sol",
+          "original_source_path": "PancakeRouter.sol",
+          "sha256": "694adb2be85718132163b329b921626be16d3e8c0739cc4329c9418e4447abec",
+          "bytes": 34690
+        }
+      ]
+    },
+    {
+      "id": "pancake-v3-router",
+      "role": "normal_dependency_whitelisted_recipient_and_sweep",
+      "provider": "Sourcify",
+      "address": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x1b81D678ffb9C0263b24A97847620C99d213eB14?fields=all",
+      "retrieved_at": "2026-10-26T14:33:10.070103+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/pancake-v3-router/source-response.json",
+      "response_sha256": "3cf82371cedb2d9c21fe4b6edcc80bbb681fbdda58a14de1b720c634baf9cc82",
+      "chain_id": "56",
+      "verified_at": "2024-11-11T03:00:21Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0x0704b424205934a0d6f41db60a35bb07d86ea3caf69cebeb477fd508560c392a",
+        "blockNumber": "26931952",
+        "transactionIndex": "72",
+        "deployer": "0x3af75af6F056d4D72c1675dA919aebF908A109D6"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/SwapRouter.sol",
+          "original_source_path": "contracts/SwapRouter.sol",
+          "sha256": "f96d3d9e0ff7e1ce3a936779508c780f220f7547446295cce078539ff4b83ec7",
+          "bytes": 9160
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/Multicall.sol",
+          "original_source_path": "contracts/base/Multicall.sol",
+          "sha256": "029ad0bcade48ff32da51094a3fb245fd7d8324c4fb4dd20fb4b2614efc9618c",
+          "bytes": 964
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/libraries/Path.sol",
+          "original_source_path": "contracts/libraries/Path.sol",
+          "sha256": "42edaa8b6c577bee7a24b2f1d377fa7fb7649526a935040ccdd1a91a7f3b46a0",
+          "bytes": 2787
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/SelfPermit.sol",
+          "original_source_path": "contracts/base/SelfPermit.sol",
+          "sha256": "48bb499a5e2bb8063788faf42ba0abd71cbd63392aa4d4c12531b530419d6afa",
+          "bytes": 2003
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/libraries/BytesLib.sol",
+          "original_source_path": "contracts/libraries/BytesLib.sol",
+          "sha256": "abe5da07d5e9f890fc64ca7b9283fa88a81a0909e4510452bdfb470d4d49bddf",
+          "bytes": 4202
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/BlockTimestamp.sol",
+          "original_source_path": "contracts/base/BlockTimestamp.sol",
+          "sha256": "e5ca9a8b6b9e0cafcd9a9966b05228a1572f82fccee396d2e0eff5f8aa9bb1f4",
+          "bytes": 428
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/IMulticall.sol",
+          "original_source_path": "contracts/interfaces/IMulticall.sol",
+          "sha256": "fd259a304bdad5fd198ac0279109c6a97198869a2ae72121c7edd66cee91167f",
+          "bytes": 705
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/libraries/PoolAddress.sol",
+          "original_source_path": "contracts/libraries/PoolAddress.sol",
+          "sha256": "a729e927ae00735e1806d08ba5925a9c4d948548a32d752440bb549874d847dc",
+          "bytes": 1828
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/PeripheryPayments.sol",
+          "original_source_path": "contracts/base/PeripheryPayments.sol",
+          "sha256": "68cef83e01906a13f4a2bb1c12a9e99fad3e957eea6ddbb54bac30ba3b06a436",
+          "bytes": 2459
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/ISelfPermit.sol",
+          "original_source_path": "contracts/interfaces/ISelfPermit.sol",
+          "sha256": "d6d2a3af8ec6afcfceba970371caaf23debbd002faedcc37f96bae44944d2694",
+          "bytes": 3882
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/ISwapRouter.sol",
+          "original_source_path": "contracts/interfaces/ISwapRouter.sol",
+          "sha256": "516bd03ab29f1cdcb41207f5368c9a0ba73fa2b53545fb01cae2bd91f12956ef",
+          "bytes": 2728
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/PeripheryValidation.sol",
+          "original_source_path": "contracts/base/PeripheryValidation.sol",
+          "sha256": "40877c212ebd04f41a3c582bbbf8ad925f31b2a4f7f129352f55777c8fd584a0",
+          "bytes": 297
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/libraries/TransferHelper.sol",
+          "original_source_path": "contracts/libraries/TransferHelper.sol",
+          "sha256": "7d02f695d41542209c5aa2b18b4041b53412e494491b3c44a361828261c366fd",
+          "bytes": 2538
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/external/IWETH9.sol",
+          "original_source_path": "contracts/interfaces/external/IWETH9.sol",
+          "sha256": "e0394b612c06c730766ab904f7a2a090e2b37ebeee4dd5e922d7213342c6a519",
+          "bytes": 376
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/PeripheryImmutableState.sol",
+          "original_source_path": "contracts/base/PeripheryImmutableState.sol",
+          "sha256": "f4611f54f13d0599648bf88fc5bba7fe8eb3bfc27f898c5cc0e2f27272ebca99",
+          "bytes": 716
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/libraries/CallbackValidation.sol",
+          "original_source_path": "contracts/libraries/CallbackValidation.sol",
+          "sha256": "c555690f8951945669c83eb7b788f1ff46943f2005b0766ff1241477f5236c05",
+          "bytes": 1503
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/base/PeripheryPaymentsWithFee.sol",
+          "original_source_path": "contracts/base/PeripheryPaymentsWithFee.sol",
+          "sha256": "4283f11d5dbd878b594cf4f99a8a0c13720d6dff98ee9bfbb63503391beeefc8",
+          "bytes": 1988
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/IPeripheryPayments.sol",
+          "original_source_path": "contracts/interfaces/IPeripheryPayments.sol",
+          "sha256": "7dc30ff757e09b7ae754dbe36542c7fe416abf2cbda9042b4bf14e3e3ca4caa9",
+          "bytes": 1506
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "663bde8def619689c9f219a5774486f1770f3be73411f1fe3ad9071c098c76a4",
+          "bytes": 2696
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@openzeppelin/contracts/drafts/IERC20Permit.sol",
+          "original_source_path": "@openzeppelin/contracts/drafts/IERC20Permit.sol",
+          "sha256": "ec032179af802dd3efbf4377ab603bf5bdbfe11dbc963a319dbf3c1654f428d7",
+          "bytes": 2115
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/IPeripheryImmutableState.sol",
+          "original_source_path": "contracts/interfaces/IPeripheryImmutableState.sol",
+          "sha256": "94cc1e5ca66cf6318cdf85843c14b9054eb1fd927384aa094a8b117752e5c9b0",
+          "bytes": 548
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+          "original_source_path": "contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+          "sha256": "d13973e6bb1982fa9bf397c199bff4e3eef5c67cfa2ff6e0a48a5daee87fbe71",
+          "bytes": 1182
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/libraries/SafeCast.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/libraries/SafeCast.sol",
+          "sha256": "9aed494b56d3dd16b7d6535583ded2cdfb03dc80aaa919347b13d35fd597e8bf",
+          "bytes": 1048
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/libraries/TickMath.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/libraries/TickMath.sol",
+          "sha256": "e68d3c6c8c847d16c287c1f17f684d11cf0f6267a8d8dc29e81656bccf68f062",
+          "bytes": 8645
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/contracts/interfaces/external/IERC20PermitAllowed.sol",
+          "original_source_path": "contracts/interfaces/external/IERC20PermitAllowed.sol",
+          "sha256": "97a8d607694194b6de26c0a15d9439394748e8157fa38813bc7614f7d2e4ba67",
+          "bytes": 1203
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+          "sha256": "394107ff2dbbaded5612452af5e77b4af9d0871b096c1514b0ea659b862fc46f",
+          "bytes": 1696
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/IPancakeV3Pool.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/IPancakeV3Pool.sol",
+          "sha256": "9e6d78a58ddc4b62ecc5e048f50c74daf084b4b035b4073c190864d09dfc05f9",
+          "bytes": 817
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolState.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolState.sol",
+          "sha256": "927132adb0fea744a5f88fefdbca7e1a0f518c58f8cdbb74475fe0f83f863e58",
+          "bytes": 6511
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolEvents.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolEvents.sol",
+          "sha256": "c9979f9c2678921e77f3cc4484c24438267c2aa0c289c4199a59455899d56930",
+          "bytes": 6224
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolActions.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolActions.sol",
+          "sha256": "362a9ee3ca6dbfd3d53129113ddc400f297fe35d1be88fc1ec6ea24da44eb696",
+          "bytes": 6304
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolImmutables.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolImmutables.sol",
+          "sha256": "6c28e27b8ea34d9adce7fb604e291a9cd454990886293c3c9abb460cec26cd6f",
+          "bytes": 1811
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/callback/IPancakeV3SwapCallback.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/callback/IPancakeV3SwapCallback.sol",
+          "sha256": "b416735205854ca1d71d92e40426b2986b38ff438387b9ab2554d2e441e64ef6",
+          "bytes": 1293
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolDerivedState.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolDerivedState.sol",
+          "sha256": "96c66ce5dcbd2c3a3f40c27206012daa0a370d024f6abf2623485737177b4157",
+          "bytes": 2602
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol",
+          "original_source_path": "@pancakeswap/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol",
+          "sha256": "3b7226c2813484ee5a67401ebaacae57b5e9a3b6b17d825a3aeda79153dc758f",
+          "bytes": 1299
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/IBagelV3Pool.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/IBagelV3Pool.sol",
+          "sha256": "8baee5c58ab9914c30ed4dfd894cdef86574df087fcc1d8716a9b424942fb1be",
+          "bytes": 787
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/callback/IBagelV3SwapCallback.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/callback/IBagelV3SwapCallback.sol",
+          "sha256": "5ecdbda18748bd4a0cb983ddf2bc9a1285401a8c86e3430e8499d06597807aab",
+          "bytes": 1279
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolActions.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolActions.sol",
+          "sha256": "dcda836322a2122fb3efdd4fed7b86090f8dfb252f8360ecd72c01d67daba653",
+          "bytes": 6296
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolDerivedState.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolDerivedState.sol",
+          "sha256": "0d7a3107ddc0af14ebfe7422a1cd5a67c84c27d61bf082ec109677e9c441318b",
+          "bytes": 2600
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolEvents.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolEvents.sol",
+          "sha256": "ccebe1033121f5aa38e005d0e79b41fedbc129093e9ed624063890788b54a88b",
+          "bytes": 6222
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolImmutables.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolImmutables.sol",
+          "sha256": "55c85b5f1b2d03a9b4435bdfbebb1ecd6f72e4fd78053b785e1bb95cd1b163d2",
+          "bytes": 1807
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolOwnerActions.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolOwnerActions.sol",
+          "sha256": "843a16d04ecf8b2cf3b9df9315c5d0374e43d29b623b51bac36355eb11e30307",
+          "bytes": 1297
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolState.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/interfaces/pool/IBagelV3PoolState.sol",
+          "sha256": "0566a4bd405e755e65c08367127cec31c0bf1dfdf4d49cac9b7d6ceaad9c4430",
+          "bytes": 6509
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+          "sha256": "394107ff2dbbaded5612452af5e77b4af9d0871b096c1514b0ea659b862fc46f",
+          "bytes": 1696
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/libraries/SafeCast.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/libraries/SafeCast.sol",
+          "sha256": "9aed494b56d3dd16b7d6535583ded2cdfb03dc80aaa919347b13d35fd597e8bf",
+          "bytes": 1048
+        },
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-v3-router/@bagelswap/v3-core/contracts/libraries/TickMath.sol",
+          "original_source_path": "@bagelswap/v3-core/contracts/libraries/TickMath.sol",
+          "sha256": "e68d3c6c8c847d16c287c1f17f684d11cf0f6267a8d8dc29e81656bccf68f062",
+          "bytes": 8645
+        }
+      ]
+    },
+    {
+      "id": "pancake-pair-reference",
+      "role": "normal_protocol_reference_source_with_identical_target_historical_runtime",
+      "provider": "Sourcify",
+      "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+      "target_pool": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+      "binding_status": "Target runtime at blocks 117979401 and 117979402 exactly equals this verified reference address runtime; not direct target source verification or target creation-compilation proof.",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x63844BD4BFad910B1643713302a1cC1ed20d50c3?fields=all",
+      "retrieved_at": "2026-10-26T14:35:30.329138+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/pancake-pair-reference/source-response.json",
+      "response_sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+      "chain_id": "56",
+      "verified_at": "2026-09-11T15:40:24Z",
+      "runtime_match": "match",
+      "creation_match": null,
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/pancake-pair-reference/PancakePair.sol",
+          "original_source_path": "PancakePair.sol",
+          "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+          "bytes": 22004
+        }
+      ]
+    },
+    {
+      "id": "bsc-usdt",
+      "role": "normal_payout_token_historical_runtime_bound",
+      "provider": "Sourcify",
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x55d398326f99059fF775485246999027B3197955?fields=all",
+      "retrieved_at": "2026-10-26T14:45:43.599697+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/bsc-usdt/source-response.json",
+      "response_sha256": "158d36ee6871cf4d79c43d9a461d5143daba3f252e01d76365113e25dd3ad1f8",
+      "chain_id": "56",
+      "verified_at": "2024-08-08T12:32:05Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0x05ec6203d7d0d8794449e4d8393c4e3cc397f2477839248e16db25469e37721d",
+        "blockNumber": "176416",
+        "transactionIndex": "0",
+        "deployer": "0x970609bA2C160a1b491b90867681918BDc9773aF"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260826_FH/source-bundles/bsc-usdt/BEP20USDT.sol",
+          "original_source_path": "BEP20USDT.sol",
+          "sha256": "524e5600fd0447b3ac724e01d6b12945ad417cf261abbdf7278657f3a579822e",
+          "bytes": 19319
+        }
+      ]
+    }
+  ],
+  "decompilations": [
+    {
+      "id": "fh-attacker-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "attacker_execution_contract_supplementary_context",
+      "address": "0x727Fb666E3F2531e807E987532C6e2C22ADC45aD",
+      "chain_id": 56,
+      "source_path": "../batches/20261026_x96_y5/fh/attacker.ethervm.decompiled.sol",
+      "original_file_path": "../batches/20261026_x96_y5/fh/attacker.ethervm.decompiled.sol",
+      "target_path": "decompiled/attacker.ethervm.decompiled.sol",
+      "raw_response_path": "../batches/20261026_x96_y5/fh/attacker-ethervm-response.html",
+      "request_path": "../batches/20261026_x96_y5/fh/attacker-ethervm-request.txt",
+      "runtime_path": "../batches/20261026_x96_y5/fh/attacker-runtime-before-blast.json",
+      "runtime_hex_path": "../batches/20261026_x96_y5/fh/attacker-runtime.hex",
+      "historical_block": 117979401,
+      "also_confirmed_at_block": 117979402,
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "engine version not reported by returned page; no frontend or CDN version substituted",
+      "sha256": "77fdcee43155e214b1376c1cc7fc43ee93d71e50d7d3e4c4af358fec7c7bc283",
+      "runtime_sha256": "9466bf0dd8f8017357fd9a60cffbcc60124884f95cb5dd157ae21d85bbe1b26f",
+      "raw_response_sha256": "20c8ace904c79f93b3934131afd176994544a5e4dea2bc6aaa555291828e267c",
+      "runtime_bytes": 3577,
+      "decompiled_error_comment_count": 2,
+      "retrieved_at_utc": "2026-10-26T14:49:46.405528+00:00",
+      "bytecode_binding": "POST request contains the exact historical runtime. The returned separate disassembly was checked against all 3577 input bytes with no mismatches.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "artifact_only_files": [
+        "raw HTML",
+        "request body",
+        "runtime hex/RPC responses",
+        "disassembly",
+        "provenance and hashes"
+      ],
+      "provenance_path": "../batches/20261026_x96_y5/fh/decompilation-provenance.json",
+      "path": "../../dataset/20260826_FH/decompiled/attacker.ethervm.decompiled.sol"
+    }
+  ],
+  "batch_evidence_root": "../batches/20261026_x96_y5",
+  "batch_retrieval_inventory": "../batches/20261026_x96_y5/retrieval_inventory.json",
+  "roles": [
+    {
+      "address": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37",
+      "role": "vulnerable FH token; owns balances and sell-time tokenomics"
+    },
+    {
+      "address": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+      "role": "victim FH/USDT AMM pool; funds paid out here"
+    },
+    {
+      "address": "0x727Fb666E3F2531e807E987532C6e2C22ADC45aD",
+      "role": "attacker execution contract; not the vulnerable source"
+    },
+    {
+      "address": "0x7FA3bC0d5667fFd14d7ACD6Ce5f2432AC13a6FDA",
+      "role": "transaction sender and USDT profit recipient; sheet malicious_address"
+    },
+    {
+      "address": "0x8F73b65B4caAf64FBA2aF91cC5D4a2A1318E5D8C",
+      "role": "temporary USDT funding source; equal returned amount in same receipt"
+    }
+  ],
+  "evidence_gaps": [
+    "Full internal call trace unavailable; particular intermediate entry-point calldata is inferred from original source, event sender, online supplementary decompilation, and exact output arithmetic.",
+    "Target pair source lookup returned Sourcify 404 and BscScan 403. Its historical runtime exactly equals the verified reference address runtime, but the reference response is not direct target verification, target creation-transaction proof, or independent local compilation.",
+    "The complete pre-transaction whitelist, dynamic-fee, and totalSupply state was not reconstructed; successful receipt proves the exercised path conditions, not all other state.",
+    "Attacker original source unavailable. Online high-level decompilation is supplementary reconstructed code with two preserved Error comments; the service did not report its engine version. It is not authoritative original source or a full execution trace."
+  ],
+  "source_vs_history": "Provider source verification, historical deployment binding, state reads and transaction observations are separate; see case document and batch evidence."
+}

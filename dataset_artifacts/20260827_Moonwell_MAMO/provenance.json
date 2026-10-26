@@ -1,0 +1,1718 @@
+{
+  "case_id": "20260827_Moonwell_MAMO",
+  "path_base": "this artifact directory",
+  "bundles": [
+    {
+      "id": "mmamo",
+      "provider": "Sourcify",
+      "address": "0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:46.771848+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mmamo/source-response.json",
+      "response_sha256": "0d6f04d29c7d4d445b57b1f6375bcf13f344dd6ecae900c4b336d1fab3509f2c",
+      "verified_at": "2025-10-10T18:10:24Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xfec0d159bc7cef8ddaec54a5862249268b639374ab0dfee64c93a878e743d3a1",
+        "blockNumber": "36665237",
+        "transactionIndex": "294",
+        "deployer": "0x10b83c88e88910Cd5293324800d1a6e751004bE5"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "7f6581db57dc54f0cde5e05b04f53838e462df92f961becbf4cf8fc1e0263a83",
+          "bytes": 2845
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/TokenErrorReporter.sol",
+          "original_source_path": "src/TokenErrorReporter.sol",
+          "sha256": "4256ae6a95957bc4cde5fce58d03a945f6a6aa407e27096909dc185cbcbadc44",
+          "bytes": 7957
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/MErc20Delegator.sol",
+          "original_source_path": "src/MErc20Delegator.sol",
+          "sha256": "82bed3fb3ad0d9dc0da0ea3daf63ce68822467f8a7d59aef53ffce5892d622fa",
+          "bytes": 26572
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "fcbd9af7add41575cacb7210ec106f6ec27127546432d6213f34d68aa4df48ab",
+          "bytes": 10829
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "f8a8862949d9f5057015e7630a1a7578d81a8001ba998a57ba661ff2eb7ce084",
+          "bytes": 3520
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mmamo/src/irm/InterestRateModel.sol",
+          "original_source_path": "src/irm/InterestRateModel.sol",
+          "sha256": "5b0318b2d4c81cba59f1f2fcd66950c3a41b03a5dc6bd6790b684d6287b79594",
+          "bytes": 1458
+        }
+      ]
+    },
+    {
+      "id": "musdc",
+      "provider": "Sourcify",
+      "address": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:47.258494+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/musdc/source-response.json",
+      "response_sha256": "f9ec1de2b92d05bee44d94332f5e7804a87d79d078bbd78eca26a95da295e7cf",
+      "verified_at": "2024-08-08T13:09:21Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xfce35fe67acd6847480cd61912e6c1cb74c0c71214c00205d450b36a61db48e6",
+        "blockNumber": "3702954",
+        "transactionIndex": "3",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/ErrorReporter.sol",
+          "original_source_path": "src/ErrorReporter.sol",
+          "sha256": "f94e8ed0df445dced40155e0cb04312d9b7fc243c404b7849114f7927d1b39d5",
+          "bytes": 7910
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/MErc20Delegator.sol",
+          "original_source_path": "src/MErc20Delegator.sol",
+          "sha256": "1c7a315e91fa827d6a9856aafb9bdb184d933e30b4dd0b309cf80e31e615a821",
+          "bytes": 24887
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "229d790960d391d782019289305d9c0476e336a63e61f741f83de7b4c47e418a",
+          "bytes": 10139
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "556a8c76408647e54b6762a300ace6f56a53899a53a58fb0e23fce821a5c5030",
+          "bytes": 3195
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "e6296c00805fd3665b9a9fdad855aa5922548bef480ff07278b302db3efc49d3",
+          "bytes": 2793
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/musdc/src/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/IRModels/InterestRateModel.sol",
+          "sha256": "b7c67161b63d976f43cb86b6eefe8f2d20da6c1f570b6c83ff1a480cb5ac5aa7",
+          "bytes": 1407
+        }
+      ]
+    },
+    {
+      "id": "mcbBTC",
+      "provider": "Sourcify",
+      "address": "0xF877ACaFA28c19b96727966690b2f44d35aD5976",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xF877ACaFA28c19b96727966690b2f44d35aD5976?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:46.381341+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mcbBTC/source-response.json",
+      "response_sha256": "0f924875e16c0c06c78d9d34200df212e22f300e1ce8e812c9d15b2f94c8f362",
+      "verified_at": "2024-09-05T20:27:00Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x2c9bdde17773466a966338171a85bbdecb30f701b8ff4b74b9158ef7da05c47b",
+        "blockNumber": "19389314",
+        "transactionIndex": "59",
+        "deployer": "0x29B28B0Ff5B6B26448F3Ac02Cd209539626D96Ab"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/ErrorReporter.sol",
+          "original_source_path": "src/ErrorReporter.sol",
+          "sha256": "4256ae6a95957bc4cde5fce58d03a945f6a6aa407e27096909dc185cbcbadc44",
+          "bytes": 7957
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/MErc20Delegator.sol",
+          "original_source_path": "src/MErc20Delegator.sol",
+          "sha256": "82bed3fb3ad0d9dc0da0ea3daf63ce68822467f8a7d59aef53ffce5892d622fa",
+          "bytes": 26572
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "db5bf687457652dc254d2d581fb8cf59b6c363c93beaec668e19d09910fd20be",
+          "bytes": 10824
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "f8a8862949d9f5057015e7630a1a7578d81a8001ba998a57ba661ff2eb7ce084",
+          "bytes": 3520
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/irm/InterestRateModel.sol",
+          "original_source_path": "src/irm/InterestRateModel.sol",
+          "sha256": "5b0318b2d4c81cba59f1f2fcd66950c3a41b03a5dc6bd6790b684d6287b79594",
+          "bytes": 1458
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mcbBTC/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "7f6581db57dc54f0cde5e05b04f53838e462df92f961becbf4cf8fc1e0263a83",
+          "bytes": 2845
+        }
+      ]
+    },
+    {
+      "id": "mwsteth",
+      "provider": "Sourcify",
+      "address": "0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:47.365659+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mwsteth/source-response.json",
+      "response_sha256": "43b802775a79f7fa7d85a45f789ec15e79f2d50d75cd3c61adb68313b0fef605",
+      "verified_at": "2024-08-08T12:03:15Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xdbda94ee3389786c6230c8b6c63ae66291f3201406c006a0426cdb9230a187e0",
+        "blockNumber": "6272868",
+        "transactionIndex": "1",
+        "deployer": "0x3073fCAD986fbE9F94CC6Caa44f76c12e34516d4"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/ErrorReporter.sol",
+          "original_source_path": "src/ErrorReporter.sol",
+          "sha256": "f94e8ed0df445dced40155e0cb04312d9b7fc243c404b7849114f7927d1b39d5",
+          "bytes": 7910
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/MErc20Delegator.sol",
+          "original_source_path": "src/MErc20Delegator.sol",
+          "sha256": "1c7a315e91fa827d6a9856aafb9bdb184d933e30b4dd0b309cf80e31e615a821",
+          "bytes": 24887
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "229d790960d391d782019289305d9c0476e336a63e61f741f83de7b4c47e418a",
+          "bytes": 10139
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "556a8c76408647e54b6762a300ace6f56a53899a53a58fb0e23fce821a5c5030",
+          "bytes": 3195
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "e6296c00805fd3665b9a9fdad855aa5922548bef480ff07278b302db3efc49d3",
+          "bytes": 2793
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mwsteth/src/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/IRModels/InterestRateModel.sol",
+          "sha256": "b7c67161b63d976f43cb86b6eefe8f2d20da6c1f570b6c83ff1a480cb5ac5aa7",
+          "bytes": 1407
+        }
+      ]
+    },
+    {
+      "id": "mweth",
+      "provider": "Sourcify",
+      "address": "0x628ff693426583D9a7FB391E54366292F509D457",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x628ff693426583D9a7FB391E54366292F509D457?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:45:08.521880+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mweth/source-response.json",
+      "response_sha256": "0b6ab55773a0126c54484aabf8ff7c84838ac5e6db0429e04e934204811fac04",
+      "verified_at": "2024-08-08T12:02:58Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x52a659a781ffe49a61bda019d5fc896547808f07d5def7413f5eb0240a019e78",
+        "blockNumber": "2162460",
+        "transactionIndex": "11",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/ErrorReporter.sol",
+          "original_source_path": "src/core/ErrorReporter.sol",
+          "sha256": "b1b374f04d3c814541c041ae86bfc22d761a0796408d610c1e16b88e21ea41ab",
+          "bytes": 8121
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/MErc20Delegator.sol",
+          "original_source_path": "src/core/MErc20Delegator.sol",
+          "sha256": "3e23fd2b23a5e59e8c8897b404a94eca49cf4863ed835880c1e6bb2701d0610f",
+          "bytes": 25398
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/MTokenInterfaces.sol",
+          "original_source_path": "src/core/MTokenInterfaces.sol",
+          "sha256": "3f4ddc27410ccd9715098358444bdfea2cbf76964451ade4033d2360e2ad9539",
+          "bytes": 10364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/ComptrollerInterface.sol",
+          "original_source_path": "src/core/ComptrollerInterface.sol",
+          "sha256": "309d51d3615ce5ace9a876b7fe454b330311c74d42d48a82913731b0ede26d13",
+          "bytes": 3281
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/core/EIP20NonStandardInterface.sol",
+          "sha256": "3dc0b1f31a27fe817f3f651527424570670425477ae202948d610a3951a04adf",
+          "bytes": 2864
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth/src/core/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/core/IRModels/InterestRateModel.sol",
+          "sha256": "27a4fe3192c9275dd1027e6096ca341082cedd284d7f7e68d1b86edcf166bbc1",
+          "bytes": 1438
+        }
+      ]
+    },
+    {
+      "id": "mamo-token",
+      "provider": "Sourcify",
+      "address": "0x7300B37DfdfAb110d83290A29DfB31B1740219fE",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x7300B37DfdfAb110d83290A29DfB31B1740219fE?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:47.113513+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mamo-token/source-response.json",
+      "response_sha256": "4664961b1c4d70038e60ecf89f70f6ca4fa118703e3779a22ab535f9156346e7",
+      "verified_at": "2025-05-28T07:17:16Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x4130912ecf5afa39ace57a46bd939f47a9dd42be78c5564cfbe96b3165580914",
+        "blockNumber": "30479515",
+        "transactionIndex": "161",
+        "deployer": "0xDca82E03057329f53Ed4173429D46B0511E46Fb8"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/src/token/Mamo.sol",
+          "original_source_path": "src/token/Mamo.sol",
+          "sha256": "dcaee063836ec071139e6dc6084c055f7eced09a0e121feecf14ae640f601956",
+          "bytes": 2412
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/src/interfaces/IERC7802.sol",
+          "original_source_path": "src/interfaces/IERC7802.sol",
+          "sha256": "99619c0b92d7f0a0d072dd5b2a1ea444b2fc5212a58ecf21807e0337ea9f947d",
+          "bytes": 1443
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+          "sha256": "c322867b0b30f6d5f791e5ab9af5e3f5ff1c8c127906748f6725e592a5f40719",
+          "bytes": 10894
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "30edf7394bab78d48b7db3a059248e1ea7c2c77d2ec0e37a13bb91415aafbe5a",
+          "bytes": 2780
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+          "sha256": "e9b23399b1019fcdbe78d35c1d7e9da9f2c5ab19451060db6e4e8c89acfd628d",
+          "bytes": 1182
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol",
+          "sha256": "75f9f66db047b1413aa45538a53211e7b20479d74c3dd2657335bf4dc50b8811",
+          "bytes": 2774
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Votes.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Votes.sol",
+          "sha256": "f2a0c9b7b4b67cec3ae19dad94454da68da553512f22e4eaf39c46447e11815a",
+          "bytes": 3606
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/Nonces.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Nonces.sol",
+          "sha256": "9b4cbb85d1f5053c744e83302538eb643a713ffd14bc37665b224f1c66529339",
+          "bytes": 1490
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "sha256": "49abfb8fa26e3f1715fe05948a96e3762b805bd4a77d103eb40ba96b1acfa144",
+          "bytes": 192
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "9e7c70ec72d2f7d592e23ea84f3852b04f91f6f644ce57e0263493046b36afb9",
+          "bytes": 684
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+          "sha256": "56380323009ef4a119d44550b910fde1bff9cedde8f7f4c690152c7629bc3338",
+          "bytes": 6538
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "026aca1c8ee4574eb9719dca7dfc33e3e57a618715ae702a675e8a8c9ea1e82d",
+          "bytes": 3805
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+          "sha256": "0964ddd02f4a7a8cf9ba130e3aeead588ca3d425d5bc13cc4221358c69108ed0",
+          "bytes": 7815
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol",
+          "sha256": "e7f41ef62494c6c26ddaaac0f2790fa365b635e7c5aaacbeafba3067574e38d7",
+          "bytes": 6611
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/governance/utils/Votes.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/governance/utils/Votes.sol",
+          "sha256": "feded838fdab8e52e1a3352f95dd7e63311b2c079f2293bda17633fbefda6d96",
+          "bytes": 9711
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/structs/Checkpoints.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/structs/Checkpoints.sol",
+          "sha256": "51fdad936cefb4c63e987e97e516af965fbfca31e1798f380ae16e5b3a6fb3d1",
+          "bytes": 21425
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "sha256": "7c5c3f98ab876991e7dd34b84d41137e836306eb9f36f6386a631f5be3f5d6d4",
+          "bytes": 870
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+          "sha256": "93e4c09f9c65d37a14d796601b67a67fc918e16957a6328261f8635e136adf76",
+          "bytes": 3703
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol",
+          "sha256": "c5970e9c77c9a797941fcb9ab8c9a5d0b1227c610a919ee8a04ba061e6881873",
+          "bytes": 4282
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/interfaces/IERC5267.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC5267.sol",
+          "sha256": "efd1ebd1e04b6ef9c3b8781a097588f83da954323f438d54a71dc06508e6c7b8",
+          "bytes": 739
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/interfaces/IERC5805.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC5805.sol",
+          "sha256": "6ecc2370599496e6d862c2b4893975ec240f0ef8475daef1d20b5dd1efa90102",
+          "bytes": 272
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
+          "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+          "bytes": 34943
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/types/Time.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/types/Time.sol",
+          "sha256": "79534431c3934b23eafab9d02bda493cfc2ae383ba117a7c9698750c2e4845f1",
+          "bytes": 5156
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+          "sha256": "68cf79a637995d5ed243c4a5856b42a5e134ee8786a05034e24d75927fc40ebc",
+          "bytes": 28308
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+          "sha256": "1d47b183ce3217de32c41cf6034281a783f41380ca99d1ca043509018b656165",
+          "bytes": 16839
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+          "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+          "bytes": 4182
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/governance/utils/IVotes.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/governance/utils/IVotes.sol",
+          "sha256": "f033b73ce92762d9ed9496b8a0f5f72bd0479e42388da584c2ff276cbb5cb9b1",
+          "bytes": 2322
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/interfaces/IERC6372.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC6372.sol",
+          "sha256": "2294c70df203a6a38985d064adca030293bec4b7aaa1237b62c7b1a34154f130",
+          "bytes": 519
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/Panic.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Panic.sol",
+          "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+          "bytes": 1973
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-token/lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+          "sha256": "1ed50b1056af886752f0fb48a0165d381e69bb4a4b18b893b066dc144a7e08d7",
+          "bytes": 2613
+        }
+      ]
+    },
+    {
+      "id": "unitroller-proxy",
+      "provider": "Sourcify",
+      "address": "0xfBb21d0380beE3312B33c4353c8936a0F13EF26C",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xfBb21d0380beE3312B33c4353c8936a0F13EF26C?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:53:50.108513+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/unitroller-proxy/source-response.json",
+      "response_sha256": "3444967a7799ce457dfde3f38fae313c3482380503908e21e810892dcfcc6605",
+      "verified_at": "2024-08-08T13:38:52Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xfaba46702630a30f6842b28c613e2ee431899452ebc5f5bc48131537852b63de",
+        "blockNumber": "2162390",
+        "transactionIndex": "2",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/MToken.sol",
+          "original_source_path": "src/core/MToken.sol",
+          "sha256": "4e41db1ae56aaa154806999486bff42101a6692abc237a66bbcbaaa8e63bb6cb",
+          "bytes": 71439
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/Unitroller.sol",
+          "original_source_path": "src/core/Unitroller.sol",
+          "sha256": "c7b79df4de50e3ee21b832fd057644bc1db0497c9293323443e57b541c4a6328",
+          "bytes": 5833
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/CarefulMath.sol",
+          "original_source_path": "src/core/CarefulMath.sol",
+          "sha256": "59487490f33fe24776d468991beeddf1f2d2f38645c397a8bed284356efbbe1a",
+          "bytes": 2317
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/Comptroller.sol",
+          "original_source_path": "src/core/Comptroller.sol",
+          "sha256": "9d2893bf84469838680afa6c920c7d1f74dd27f77115766f1a9ebcd9c9812fa9",
+          "bytes": 47693
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/Exponential.sol",
+          "original_source_path": "src/core/Exponential.sol",
+          "sha256": "8f3ff5290a3fc2eeb78c3ae4a8a96c8594b3926e79ed8af760eff4dccb2cfb5a",
+          "bytes": 7199
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/ErrorReporter.sol",
+          "original_source_path": "src/core/ErrorReporter.sol",
+          "sha256": "b1b374f04d3c814541c041ae86bfc22d761a0796408d610c1e16b88e21ea41ab",
+          "bytes": 8121
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/EIP20Interface.sol",
+          "original_source_path": "src/core/EIP20Interface.sol",
+          "sha256": "7c340f2c004fd9c9f69d49f3ba04096bea655724f540001c6dd7690704f51f57",
+          "bytes": 2766
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/MTokenInterfaces.sol",
+          "original_source_path": "src/core/MTokenInterfaces.sol",
+          "sha256": "3f4ddc27410ccd9715098358444bdfea2cbf76964451ade4033d2360e2ad9539",
+          "bytes": 10364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/ComptrollerStorage.sol",
+          "original_source_path": "src/core/ComptrollerStorage.sol",
+          "sha256": "98291ee8463ce7997bd5356e513c6cc5e4dd55ae6ac9afd573b025e2b73a7186",
+          "bytes": 3929
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/ExponentialNoError.sol",
+          "original_source_path": "src/core/ExponentialNoError.sol",
+          "sha256": "6caafe686073d1fafda91ded3099eee913299f41ae9cfc1ace8e1a63a057d526",
+          "bytes": 6814
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/Oracles/PriceOracle.sol",
+          "original_source_path": "src/core/Oracles/PriceOracle.sol",
+          "sha256": "a2ce740f2c7dffe01838b5e6e20e0e21b8597365f9cb7129a0517dc6419012d4",
+          "bytes": 610
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/ComptrollerInterface.sol",
+          "original_source_path": "src/core/ComptrollerInterface.sol",
+          "sha256": "309d51d3615ce5ace9a876b7fe454b330311c74d42d48a82913731b0ede26d13",
+          "bytes": 3281
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/core/EIP20NonStandardInterface.sol",
+          "sha256": "3dc0b1f31a27fe817f3f651527424570670425477ae202948d610a3951a04adf",
+          "bytes": 2864
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/core/IRModels/InterestRateModel.sol",
+          "sha256": "27a4fe3192c9275dd1027e6096ca341082cedd284d7f7e68d1b86edcf166bbc1",
+          "bytes": 1438
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "1458c260d010a08e4c20a4a517882259a23a4baa0b5bd9add9fb6d6a1549814a",
+          "bytes": 844
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+          "sha256": "2072248d2f79e661c149fd6a6593a8a3f038466557c9b75e50e0b001bcb5cf97",
+          "bytes": 2553
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/MultiRewardDistributor/MultiRewardDistributor.sol",
+          "original_source_path": "src/core/MultiRewardDistributor/MultiRewardDistributor.sol",
+          "sha256": "1d38263a07679574d9cd939214ab0ab201d3bd12b412951ca00ac8ea1d9fd010",
+          "bytes": 49851
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/src/core/MultiRewardDistributor/MultiRewardDistributorCommon.sol",
+          "original_source_path": "src/core/MultiRewardDistributor/MultiRewardDistributorCommon.sol",
+          "sha256": "faac0f6eb5597396ab17072e7c1c33806e22c638eba75a992d33d70752115308",
+          "bytes": 3137
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "sha256": "fa97ea556c990ee44f2ef4c80d4ef7d0af3f5f9b33a02142911140688106f5a9",
+          "bytes": 3127
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+          "sha256": "6166f84ded782b5c1f471fc4aed9ee3d1fb74f55ec79e920f50510392e235eaa",
+          "bytes": 6619
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/unitroller-proxy/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        }
+      ]
+    },
+    {
+      "id": "market-implementation",
+      "provider": "Sourcify",
+      "address": "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:57:13.393542+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/market-implementation/source-response.json",
+      "response_sha256": "8a0928d03d2b55ecc0d39f5c680b2f86c128a7290ebb9f69da793bdab87476f5",
+      "verified_at": "2024-08-08T11:13:49Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x85dbb4174f05a7ab7c2906bcf09d80597c075735ee3c40744b39bebc93f3676c",
+        "blockNumber": "2162430",
+        "transactionIndex": "5",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20.sol",
+          "original_source_path": "src/core/MErc20.sol",
+          "sha256": "4185b46f1645bdb4471f6d442f82bb6f22d01d7aeb27fc27632d6801f9da747a",
+          "bytes": 11356
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol",
+          "original_source_path": "src/core/MToken.sol",
+          "sha256": "4e41db1ae56aaa154806999486bff42101a6692abc237a66bbcbaaa8e63bb6cb",
+          "bytes": 71439
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/CarefulMath.sol",
+          "original_source_path": "src/core/CarefulMath.sol",
+          "sha256": "59487490f33fe24776d468991beeddf1f2d2f38645c397a8bed284356efbbe1a",
+          "bytes": 2317
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/Exponential.sol",
+          "original_source_path": "src/core/Exponential.sol",
+          "sha256": "8f3ff5290a3fc2eeb78c3ae4a8a96c8594b3926e79ed8af760eff4dccb2cfb5a",
+          "bytes": 7199
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/ErrorReporter.sol",
+          "original_source_path": "src/core/ErrorReporter.sol",
+          "sha256": "b1b374f04d3c814541c041ae86bfc22d761a0796408d610c1e16b88e21ea41ab",
+          "bytes": 8121
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/EIP20Interface.sol",
+          "original_source_path": "src/core/EIP20Interface.sol",
+          "sha256": "7c340f2c004fd9c9f69d49f3ba04096bea655724f540001c6dd7690704f51f57",
+          "bytes": 2766
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20Delegate.sol",
+          "original_source_path": "src/core/MErc20Delegate.sol",
+          "sha256": "7a69cd404abebac60a4d38cd413e0c7e94d6beb76ba648894f2e7bd68405ab32",
+          "bytes": 1333
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MTokenInterfaces.sol",
+          "original_source_path": "src/core/MTokenInterfaces.sol",
+          "sha256": "3f4ddc27410ccd9715098358444bdfea2cbf76964451ade4033d2360e2ad9539",
+          "bytes": 10364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/ExponentialNoError.sol",
+          "original_source_path": "src/core/ExponentialNoError.sol",
+          "sha256": "6caafe686073d1fafda91ded3099eee913299f41ae9cfc1ace8e1a63a057d526",
+          "bytes": 6814
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/ComptrollerInterface.sol",
+          "original_source_path": "src/core/ComptrollerInterface.sol",
+          "sha256": "309d51d3615ce5ace9a876b7fe454b330311c74d42d48a82913731b0ede26d13",
+          "bytes": 3281
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/core/EIP20NonStandardInterface.sol",
+          "sha256": "3dc0b1f31a27fe817f3f651527424570670425477ae202948d610a3951a04adf",
+          "bytes": 2864
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/core/IRModels/InterestRateModel.sol",
+          "sha256": "27a4fe3192c9275dd1027e6096ca341082cedd284d7f7e68d1b86edcf166bbc1",
+          "bytes": 1438
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        }
+      ]
+    },
+    {
+      "id": "comptroller-implementation",
+      "provider": "Sourcify",
+      "address": "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:57:12.493850+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/comptroller-implementation/source-response.json",
+      "response_sha256": "040e76a5a04346265dccbd585e94e773a0b7a377262f981fe866871debdb275a",
+      "verified_at": "2024-08-08T12:12:41Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x929f9c3870d1f03fbe56f30fc475c500e1491e577134be44ef0f21ce7c7c6b20",
+        "blockNumber": "2162395",
+        "transactionIndex": "13",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/MToken.sol",
+          "original_source_path": "src/core/MToken.sol",
+          "sha256": "4e41db1ae56aaa154806999486bff42101a6692abc237a66bbcbaaa8e63bb6cb",
+          "bytes": 71439
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Unitroller.sol",
+          "original_source_path": "src/core/Unitroller.sol",
+          "sha256": "c7b79df4de50e3ee21b832fd057644bc1db0497c9293323443e57b541c4a6328",
+          "bytes": 5833
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/CarefulMath.sol",
+          "original_source_path": "src/core/CarefulMath.sol",
+          "sha256": "59487490f33fe24776d468991beeddf1f2d2f38645c397a8bed284356efbbe1a",
+          "bytes": 2317
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol",
+          "original_source_path": "src/core/Comptroller.sol",
+          "sha256": "9d2893bf84469838680afa6c920c7d1f74dd27f77115766f1a9ebcd9c9812fa9",
+          "bytes": 47693
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Exponential.sol",
+          "original_source_path": "src/core/Exponential.sol",
+          "sha256": "8f3ff5290a3fc2eeb78c3ae4a8a96c8594b3926e79ed8af760eff4dccb2cfb5a",
+          "bytes": 7199
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/ErrorReporter.sol",
+          "original_source_path": "src/core/ErrorReporter.sol",
+          "sha256": "b1b374f04d3c814541c041ae86bfc22d761a0796408d610c1e16b88e21ea41ab",
+          "bytes": 8121
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/EIP20Interface.sol",
+          "original_source_path": "src/core/EIP20Interface.sol",
+          "sha256": "7c340f2c004fd9c9f69d49f3ba04096bea655724f540001c6dd7690704f51f57",
+          "bytes": 2766
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/MTokenInterfaces.sol",
+          "original_source_path": "src/core/MTokenInterfaces.sol",
+          "sha256": "3f4ddc27410ccd9715098358444bdfea2cbf76964451ade4033d2360e2ad9539",
+          "bytes": 10364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/ComptrollerStorage.sol",
+          "original_source_path": "src/core/ComptrollerStorage.sol",
+          "sha256": "98291ee8463ce7997bd5356e513c6cc5e4dd55ae6ac9afd573b025e2b73a7186",
+          "bytes": 3929
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/ExponentialNoError.sol",
+          "original_source_path": "src/core/ExponentialNoError.sol",
+          "sha256": "6caafe686073d1fafda91ded3099eee913299f41ae9cfc1ace8e1a63a057d526",
+          "bytes": 6814
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Oracles/PriceOracle.sol",
+          "original_source_path": "src/core/Oracles/PriceOracle.sol",
+          "sha256": "a2ce740f2c7dffe01838b5e6e20e0e21b8597365f9cb7129a0517dc6419012d4",
+          "bytes": 610
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/ComptrollerInterface.sol",
+          "original_source_path": "src/core/ComptrollerInterface.sol",
+          "sha256": "309d51d3615ce5ace9a876b7fe454b330311c74d42d48a82913731b0ede26d13",
+          "bytes": 3281
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/core/EIP20NonStandardInterface.sol",
+          "sha256": "3dc0b1f31a27fe817f3f651527424570670425477ae202948d610a3951a04adf",
+          "bytes": 2864
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/core/IRModels/InterestRateModel.sol",
+          "sha256": "27a4fe3192c9275dd1027e6096ca341082cedd284d7f7e68d1b86edcf166bbc1",
+          "bytes": 1438
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "1458c260d010a08e4c20a4a517882259a23a4baa0b5bd9add9fb6d6a1549814a",
+          "bytes": 844
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+          "sha256": "2072248d2f79e661c149fd6a6593a8a3f038466557c9b75e50e0b001bcb5cf97",
+          "bytes": 2553
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/MultiRewardDistributor/MultiRewardDistributor.sol",
+          "original_source_path": "src/core/MultiRewardDistributor/MultiRewardDistributor.sol",
+          "sha256": "1d38263a07679574d9cd939214ab0ab201d3bd12b412951ca00ac8ea1d9fd010",
+          "bytes": 49851
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/MultiRewardDistributor/MultiRewardDistributorCommon.sol",
+          "original_source_path": "src/core/MultiRewardDistributor/MultiRewardDistributorCommon.sol",
+          "sha256": "faac0f6eb5597396ab17072e7c1c33806e22c638eba75a992d33d70752115308",
+          "bytes": 3137
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "sha256": "fa97ea556c990ee44f2ef4c80d4ef7d0af3f5f9b33a02142911140688106f5a9",
+          "bytes": 3127
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+          "sha256": "6166f84ded782b5c1f471fc4aed9ee3d1fb74f55ec79e920f50510392e235eaa",
+          "bytes": 6619
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        }
+      ]
+    },
+    {
+      "id": "chainlink-oracle",
+      "provider": "Sourcify",
+      "address": "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T13:57:12.621920+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/chainlink-oracle/source-response.json",
+      "response_sha256": "7b24b29674acb63176e6bc2e6467aaa1f18fb4ee7b4dceaf04b8c53094068840",
+      "verified_at": "2024-08-08T13:08:26Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x5fc210b0dc604c3e91923b7641cce0fabbf6d2471bb1ae7da2c3f9ec0b8ada1a",
+        "blockNumber": "2162491",
+        "transactionIndex": "7",
+        "deployer": "0xC3F9774aF21a030Ab785CB45510BA9EdC9d0c8CD"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/MErc20.sol",
+          "original_source_path": "src/core/MErc20.sol",
+          "sha256": "4185b46f1645bdb4471f6d442f82bb6f22d01d7aeb27fc27632d6801f9da747a",
+          "bytes": 11356
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/MToken.sol",
+          "original_source_path": "src/core/MToken.sol",
+          "sha256": "4e41db1ae56aaa154806999486bff42101a6692abc237a66bbcbaaa8e63bb6cb",
+          "bytes": 71439
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/SafeMath.sol",
+          "original_source_path": "src/core/SafeMath.sol",
+          "sha256": "6d7fdf43a361449a2cff36fa62ca32bb2a2f836ef6e1908972d0c67e424fcdd2",
+          "bytes": 6639
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/CarefulMath.sol",
+          "original_source_path": "src/core/CarefulMath.sol",
+          "sha256": "59487490f33fe24776d468991beeddf1f2d2f38645c397a8bed284356efbbe1a",
+          "bytes": 2317
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Exponential.sol",
+          "original_source_path": "src/core/Exponential.sol",
+          "sha256": "8f3ff5290a3fc2eeb78c3ae4a8a96c8594b3926e79ed8af760eff4dccb2cfb5a",
+          "bytes": 7199
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/ErrorReporter.sol",
+          "original_source_path": "src/core/ErrorReporter.sol",
+          "sha256": "b1b374f04d3c814541c041ae86bfc22d761a0796408d610c1e16b88e21ea41ab",
+          "bytes": 8121
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/EIP20Interface.sol",
+          "original_source_path": "src/core/EIP20Interface.sol",
+          "sha256": "7c340f2c004fd9c9f69d49f3ba04096bea655724f540001c6dd7690704f51f57",
+          "bytes": 2766
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/MTokenInterfaces.sol",
+          "original_source_path": "src/core/MTokenInterfaces.sol",
+          "sha256": "3f4ddc27410ccd9715098358444bdfea2cbf76964451ade4033d2360e2ad9539",
+          "bytes": 10364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/ExponentialNoError.sol",
+          "original_source_path": "src/core/ExponentialNoError.sol",
+          "sha256": "6caafe686073d1fafda91ded3099eee913299f41ae9cfc1ace8e1a63a057d526",
+          "bytes": 6814
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Oracles/PriceOracle.sol",
+          "original_source_path": "src/core/Oracles/PriceOracle.sol",
+          "sha256": "a2ce740f2c7dffe01838b5e6e20e0e21b8597365f9cb7129a0517dc6419012d4",
+          "bytes": 610
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/ComptrollerInterface.sol",
+          "original_source_path": "src/core/ComptrollerInterface.sol",
+          "sha256": "309d51d3615ce5ace9a876b7fe454b330311c74d42d48a82913731b0ede26d13",
+          "bytes": 3281
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Oracles/ChainlinkOracle.sol",
+          "original_source_path": "src/core/Oracles/ChainlinkOracle.sol",
+          "sha256": "eb18a138b9db338fd65037f8316e75ca0e1537e4ac64b8c68617115b5614dbfe",
+          "bytes": 6986
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/core/EIP20NonStandardInterface.sol",
+          "sha256": "3dc0b1f31a27fe817f3f651527424570670425477ae202948d610a3951a04adf",
+          "bytes": 2864
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/core/IRModels/InterestRateModel.sol",
+          "sha256": "27a4fe3192c9275dd1027e6096ca341082cedd284d7f7e68d1b86edcf166bbc1",
+          "bytes": 1438
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Oracles/AggregatorV3Interface.sol",
+          "original_source_path": "src/core/Oracles/AggregatorV3Interface.sol",
+          "sha256": "ec8f62cd8a46ba5e40ec857e7c8ff4508e85717960f2a6f6ab1bafd56901c5e3",
+          "bytes": 1198
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        }
+      ]
+    },
+    {
+      "id": "mamo-feed",
+      "provider": "Sourcify",
+      "address": "0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:00:28.709258+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mamo-feed/source-response.json",
+      "response_sha256": "edd3fc76d18fee9ce0a6773949431622a62f8f3f85b4992c0ddce10786fd9343",
+      "verified_at": "2026-10-12T13:17:07Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xdabadf7d177f4835e604c840261eca15edc2ef18fa2d7466a3bbac5783624c92",
+        "blockNumber": "46129330",
+        "transactionIndex": "52",
+        "deployer": "0x10b83c88e88910Cd5293324800d1a6e751004bE5"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/oracles/ChainlinkOEVWrapper.sol",
+          "original_source_path": "src/oracles/ChainlinkOEVWrapper.sol",
+          "sha256": "d75b7526771a207cb272dc6d20e8d79ab96a00c780e65d8c7f80c668baf585a6",
+          "bytes": 27424
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+          "bytes": 2616
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+          "sha256": "fa97ea556c990ee44f2ef4c80d4ef7d0af3f5f9b33a02142911140688106f5a9",
+          "bytes": 3127
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/oracles/AggregatorV3Interface.sol",
+          "original_source_path": "src/oracles/AggregatorV3Interface.sol",
+          "sha256": "8be3140c3ac9749b4588f6ecdde662845be498e4a4675e166d4bc481bb95b854",
+          "bytes": 1346
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "fcbd9af7add41575cacb7210ec106f6ec27127546432d6213f34d68aa4df48ab",
+          "bytes": 10829
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/EIP20Interface.sol",
+          "original_source_path": "src/EIP20Interface.sol",
+          "sha256": "785e49bdb8be43cb397414454907748a751e0dc20f1dc28bb7f34efc8a443a42",
+          "bytes": 2803
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/interfaces/IChainlinkOracle.sol",
+          "original_source_path": "src/interfaces/IChainlinkOracle.sol",
+          "sha256": "9867fac59b061173c09cb469dba734217c425d143b02cbbdbc0792bd169390f3",
+          "bytes": 350
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/oracles/IOEVWrapperFeed.sol",
+          "original_source_path": "src/oracles/IOEVWrapperFeed.sol",
+          "sha256": "9640af5b3ff7fde8df6f3bfb22eae12ff65c0027b7a955fa0b6e729968529692",
+          "bytes": 595
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "1458c260d010a08e4c20a4a517882259a23a4baa0b5bd9add9fb6d6a1549814a",
+          "bytes": 844
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "f8a8862949d9f5057015e7630a1a7578d81a8001ba998a57ba661ff2eb7ce084",
+          "bytes": 3520
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/irm/InterestRateModel.sol",
+          "original_source_path": "src/irm/InterestRateModel.sol",
+          "sha256": "5b0318b2d4c81cba59f1f2fcd66950c3a41b03a5dc6bd6790b684d6287b79594",
+          "bytes": 1458
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "7f6581db57dc54f0cde5e05b04f53838e462df92f961becbf4cf8fc1e0263a83",
+          "bytes": 2845
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/TokenErrorReporter.sol",
+          "original_source_path": "src/TokenErrorReporter.sol",
+          "sha256": "4256ae6a95957bc4cde5fce58d03a945f6a6aa407e27096909dc185cbcbadc44",
+          "bytes": 7957
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/MToken.sol",
+          "original_source_path": "src/MToken.sol",
+          "sha256": "04aa057cee22ef9acf2ebcb067c9790ee66e24317ea552dc8f250c3387ddc2ab",
+          "bytes": 79960
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/Exponential.sol",
+          "original_source_path": "src/Exponential.sol",
+          "sha256": "dfdd03349038e008b2490d1055badcc4324f762fb561d9f4a8e733418da9b4c7",
+          "bytes": 7418
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/CarefulMath.sol",
+          "original_source_path": "src/CarefulMath.sol",
+          "sha256": "e7dddd7ebe78947cc6051c8eb4330025f80b523b16f7d5fbb28a60d20d601a58",
+          "bytes": 2267
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/ExponentialNoError.sol",
+          "original_source_path": "src/ExponentialNoError.sol",
+          "sha256": "67efe520104f7639dfbc0354b4bf4cd8b5d03346ba6977b8fb39663c4d0a5ce3",
+          "bytes": 7138
+        }
+      ]
+    },
+    {
+      "id": "chainlink-feed-proxy",
+      "provider": "Sourcify",
+      "address": "0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:03:48.157777+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/chainlink-feed-proxy/source-response.json",
+      "response_sha256": "ab1d9d7ffa91380f84e940bd7f7e38db6e6f45823a79e0032715b4155fc45e1e",
+      "verified_at": "2025-10-01T19:30:06Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xdddf67f9bdbfe49c63f2ee3a1ebe81d15d69b0123679a6d63970d119f8c1af22",
+        "blockNumber": "36278829",
+        "transactionIndex": "276",
+        "deployer": "0xD820Dc7CFC52352b573aAAf5cB7F854bfAFD1cc6"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/AggregatorProxy.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/AggregatorProxy.sol",
+          "sha256": "ff4ead426e0e037289a83bfbc4485be63e65d428f599a683eece8bd3c01c2968",
+          "bytes": 13095
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/EACAggregatorProxy.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/EACAggregatorProxy.sol",
+          "sha256": "e3b24adfaed698c60882cf4d12fb7f36debde80129ada2d1a9690eeb13d0d479",
+          "bytes": 9493
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/Owned.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/Owned.sol",
+          "sha256": "6b39095bbfcce3f399a9d8de40a5b3588897e9363f9c985767e70c9d12487fb6",
+          "bytes": 1218
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/interfaces/AccessControllerInterface.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AccessControllerInterface.sol",
+          "sha256": "db1e0bbc248d0d78239e71ad7590e27b52e50abd9b4e3667efb14a5867c4af1b",
+          "bytes": 151
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/interfaces/AggregatorInterface.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorInterface.sol",
+          "sha256": "3814bd452889e47822b119730ad65bd3fca54191c5941f19371726f11488d0e3",
+          "bytes": 563
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/interfaces/AggregatorV2V3Interface.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol",
+          "sha256": "a438072c8ada1bef0eb9a815a10631e036f3fd0817b34fdf9f28be83da4d072a",
+          "bytes": 185
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-feed-proxy/src/v0.6/interfaces/AggregatorV3Interface.sol",
+          "original_source_path": "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorV3Interface.sol",
+          "sha256": "b1ff171249a248aecb31ec8e055a1478340d9960c51768f16602c46a484fdbba",
+          "bytes": 847
+        }
+      ]
+    },
+    {
+      "id": "chainlink-aggregator",
+      "provider": "Sourcify",
+      "address": "0x6F49F44436A220C8aebd5776AB58b80Ecb41622E",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x6F49F44436A220C8aebd5776AB58b80Ecb41622E?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:28:10.807640+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/chainlink-aggregator/source-response.json",
+      "response_sha256": "ad6096911455141a0fc5cea1c76d5af74a98a0a889a948cb5a321ba513e19a4f",
+      "verified_at": "2026-04-14T20:04:14Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x5adcfd15e11e461eb75e7e2be396ecdf8bb38539d51f9b98e38a0d5de1553e80",
+        "blockNumber": "44703637",
+        "transactionIndex": "120",
+        "deployer": "0xFaE42741dB0e9719279DA3985245e630981e8A83"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/OCR2Abstract.sol",
+          "original_source_path": "src/OCR2Abstract.sol",
+          "sha256": "1d758076de8fd54efaab54dc59588f2898b99dc080bb8320278e23eb35019c1b",
+          "bytes": 5484
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/ConfirmedOwner.sol",
+          "original_source_path": "src/ConfirmedOwner.sol",
+          "sha256": "47260676a59f6624576822d8fc16d491499378ca88ca40f8f4dfe6479eb46580",
+          "bytes": 390
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/OCR2Aggregator.sol",
+          "original_source_path": "src/OCR2Aggregator.sol",
+          "sha256": "8b3151aa6fe45f2ede68ed863270198886df0403a84c3560c34bc958ad56da38",
+          "bytes": 56053
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/OwnerIsCreator.sol",
+          "original_source_path": "src/OwnerIsCreator.sol",
+          "sha256": "76a3b007b9e55fcd034fd840a58815d769ed5e2444b26da32961126933464aa1",
+          "bytes": 317
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/ConfirmedOwnerWithProposal.sol",
+          "original_source_path": "src/ConfirmedOwnerWithProposal.sol",
+          "sha256": "9288f9176889b8d7687e722bceb433326b916dcbe90f32bcd91fb6c09f65a62a",
+          "bytes": 2116
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/SimpleReadAccessController.sol",
+          "original_source_path": "src/SimpleReadAccessController.sol",
+          "sha256": "53ed64aea4d705a43015ff04b93db42c30c2f0e5588541a89f3f976c6bba81b5",
+          "bytes": 1009
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/SimpleWriteAccessController.sol",
+          "original_source_path": "src/SimpleWriteAccessController.sol",
+          "sha256": "6baadb7518eacb8a50de8ddf499b0344a3e42547b2d25bf46dc24d50d474f29b",
+          "bytes": 2277
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/OwnableInterface.sol",
+          "original_source_path": "src/interfaces/OwnableInterface.sol",
+          "sha256": "0a045e9453faa09a5de33575669dc7e6eb9f92b6521f59169c58a704afdaeb72",
+          "bytes": 270
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/LinkTokenInterface.sol",
+          "original_source_path": "src/interfaces/LinkTokenInterface.sol",
+          "sha256": "4f0187f1d33b38773a8343e02dc45edea092530e564d7ea320b237167813901b",
+          "bytes": 1092
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/AccessControlledOCR2Aggregator.sol",
+          "original_source_path": "src/AccessControlledOCR2Aggregator.sol",
+          "sha256": "395d59fa00d868ec2eb852eeca0458a80f3f3665bb76e1c7adf063988dde164e",
+          "bytes": 2754
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/AggregatorInterface.sol",
+          "original_source_path": "src/interfaces/AggregatorInterface.sol",
+          "sha256": "f19884531b23a90e1b8d2787b61d94f0f06296250b41d63793c9432d4501bca3",
+          "bytes": 594
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/AggregatorV3Interface.sol",
+          "original_source_path": "src/interfaces/AggregatorV3Interface.sol",
+          "sha256": "5388bbf1a35c8c3ce667f0b85c9b20dfed6381897543918cf75fa677d1a30055",
+          "bytes": 667
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/AggregatorV2V3Interface.sol",
+          "original_source_path": "src/interfaces/AggregatorV2V3Interface.sol",
+          "sha256": "21ed0e4c8f365d104b371d00cbdbf7847081046a377ca0513f486ae6731aa7ed",
+          "bytes": 215
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/TypeAndVersionInterface.sol",
+          "original_source_path": "src/interfaces/TypeAndVersionInterface.sol",
+          "sha256": "11333ae8c832e453d8ef684601ed290ca369560149a9a6cb38097e154c0f1add",
+          "bytes": 172
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/AccessControllerInterface.sol",
+          "original_source_path": "src/interfaces/AccessControllerInterface.sol",
+          "sha256": "9e0964fe911289631e2cda9558bf3f4d189057c07f900b847f410f601de518d4",
+          "bytes": 183
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/interfaces/AggregatorValidatorInterface.sol",
+          "original_source_path": "src/interfaces/AggregatorValidatorInterface.sol",
+          "sha256": "c3a6b83e3dc04f6203778836252a12c352a660dfed87e1edb8388cdfb5cecdf0",
+          "bytes": 258
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/OCRConfigurationStoreEVMSimple.sol",
+          "original_source_path": "src/OCRConfigurationStoreEVMSimple.sol",
+          "sha256": "916a1aab99886144cce1e426fa195f723451dc0b7acf65bc318091784102ade5",
+          "bytes": 2152
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-aggregator/src/lib/ConfigDigestUtilEVMSimple.sol",
+          "original_source_path": "src/lib/ConfigDigestUtilEVMSimple.sol",
+          "sha256": "8b3827480425dac83c50ce323a8b9098988dcbb8926920c0f5c2f1b80ba5cf73",
+          "bytes": 1201
+        }
+      ]
+    },
+    {
+      "id": "mweth-implementation",
+      "provider": "Sourcify",
+      "address": "0x599D4a1538d686814eE11b331EACBBa166D7C41a",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x599D4a1538d686814eE11b331EACBBa166D7C41a?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:45:38.711396+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/mweth-implementation/source-response.json",
+      "response_sha256": "a2d4f77166bdffbd1ebfb7a492a7bccd0d31c8e402b37628f39bb6983249e873",
+      "verified_at": "2024-08-08T11:57:41Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xc969be09b45f07d952bd6a7f8c5a91187d852958b3872354c8ee42c51e087a20",
+        "blockNumber": "2710198",
+        "transactionIndex": "1",
+        "deployer": "0x3073fCAD986fbE9F94CC6Caa44f76c12e34516d4"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MErc20.sol",
+          "original_source_path": "src/MErc20.sol",
+          "sha256": "a7880f8aa4660f5c77365f20cb065221a524fce8fc37dc9c590da1332bcc7f51",
+          "bytes": 11113
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MToken.sol",
+          "original_source_path": "src/MToken.sol",
+          "sha256": "2c9a2581e228af2dfc8464b703bf79ca17aa60d3cf365469930277d359e59042",
+          "bytes": 69919
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/CarefulMath.sol",
+          "original_source_path": "src/CarefulMath.sol",
+          "sha256": "6457f7c80fafaff49fc1b799b43bc9de6857f0a81f6f6c7b43ab68c5e134907e",
+          "bytes": 2232
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/Exponential.sol",
+          "original_source_path": "src/Exponential.sol",
+          "sha256": "d35828b410cf33195f458e0bb976649a4e16a56cf403d64d3d8cf52529ff7332",
+          "bytes": 7015
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/router/IWETH.sol",
+          "original_source_path": "src/router/IWETH.sol",
+          "sha256": "3093ae61e6f7e67e5bd192ec478bb3992988942c146b09a3fe28118e32ccd3c0",
+          "bytes": 1323
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/ErrorReporter.sol",
+          "original_source_path": "src/ErrorReporter.sol",
+          "sha256": "f94e8ed0df445dced40155e0cb04312d9b7fc243c404b7849114f7927d1b39d5",
+          "bytes": 7910
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MWethDelegate.sol",
+          "original_source_path": "src/MWethDelegate.sol",
+          "sha256": "61602786704d921e892af3f3eb69dfc9eb734dccc5866d01a724d72f5b2935cd",
+          "bytes": 1241
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/WethUnwrapper.sol",
+          "original_source_path": "src/WethUnwrapper.sol",
+          "sha256": "b86cc3a50f7aeba7bdf98830d91fb8da89fa58578d339e0d5126137b310e018b",
+          "bytes": 1244
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/EIP20Interface.sol",
+          "original_source_path": "src/EIP20Interface.sol",
+          "sha256": "ebf83bc323a460cd11726117340a6a5a8d76c7deadcb084dde295d2475030863",
+          "bytes": 2703
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MErc20Delegate.sol",
+          "original_source_path": "src/MErc20Delegate.sol",
+          "sha256": "7805a81251c94ef7ef9f8aef38661ee271484dac3815ac9ab9fcc05c67746dc5",
+          "bytes": 1289
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MTokenInterfaces.sol",
+          "original_source_path": "src/MTokenInterfaces.sol",
+          "sha256": "229d790960d391d782019289305d9c0476e336a63e61f741f83de7b4c47e418a",
+          "bytes": 10139
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/ExponentialNoError.sol",
+          "original_source_path": "src/ExponentialNoError.sol",
+          "sha256": "2af74313be18fd8d616b2f2b2e1681b9852d5efd43c85b53760081b0278019bc",
+          "bytes": 6618
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/ComptrollerInterface.sol",
+          "original_source_path": "src/ComptrollerInterface.sol",
+          "sha256": "556a8c76408647e54b6762a300ace6f56a53899a53a58fb0e23fce821a5c5030",
+          "bytes": 3195
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/EIP20NonStandardInterface.sol",
+          "original_source_path": "src/EIP20NonStandardInterface.sol",
+          "sha256": "e6296c00805fd3665b9a9fdad855aa5922548bef480ff07278b302db3efc49d3",
+          "bytes": 2793
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/IRModels/InterestRateModel.sol",
+          "original_source_path": "src/IRModels/InterestRateModel.sol",
+          "sha256": "b7c67161b63d976f43cb86b6eefe8f2d20da6c1f570b6c83ff1a480cb5ac5aa7",
+          "bytes": 1407
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c8309ed2c1c7edf52a23833798c94507702248debfc4ed1f645e571e3c230f8b",
+          "bytes": 6913
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "b7383c48331f3cc9901fc05e5d5830fcd533699a77f3ee1e756a98681bfbb2ee",
+          "bytes": 2261
+        }
+      ]
+    },
+    {
+      "id": "weth-router",
+      "provider": "Sourcify",
+      "address": "0x1382cFf3CeE10D283DccA55A30496187759e4cAf",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1382cFf3CeE10D283DccA55A30496187759e4cAf?fields=all",
+      "kind": "public_original_source",
+      "retrieved_at": "2026-10-26T14:45:08.019193+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/weth-router/source-response.json",
+      "response_sha256": "23f8069e5a45cdd7d9b9b52c9e416f9859f56affca052fe8b1ab263914c094e1",
+      "verified_at": "2024-08-08T11:07:03Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x5deb6f88361299323de761eae812b86118d88a54bada5d9d0c0d90a69fddbed8",
+        "blockNumber": "2629646",
+        "transactionIndex": "1",
+        "deployer": "0x3073fCAD986fbE9F94CC6Caa44f76c12e34516d4"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/weth-router/src/router/IWETH.sol",
+          "original_source_path": "src/router/IWETH.sol",
+          "sha256": "3093ae61e6f7e67e5bd192ec478bb3992988942c146b09a3fe28118e32ccd3c0",
+          "bytes": 1323
+        },
+        {
+          "path": "../../dataset/20260827_Moonwell_MAMO/source-bundles/weth-router/src/WethUnwrapper.sol",
+          "original_source_path": "src/WethUnwrapper.sol",
+          "sha256": "b86cc3a50f7aeba7bdf98830d91fb8da89fa58578d339e0d5126137b310e018b",
+          "bytes": 1244
+        }
+      ]
+    }
+  ],
+  "decompilations": [],
+  "batch_evidence_root": "../batches/20261026_x96_y5",
+  "batch_retrieval_inventory": "../batches/20261026_x96_y5/retrieval_inventory.json",
+  "roles": [
+    {
+      "address": "0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "mmamo"
+    },
+    {
+      "address": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
+      "role": "required_normal_dependency",
+      "bundle": "musdc"
+    },
+    {
+      "address": "0xF877ACaFA28c19b96727966690b2f44d35aD5976",
+      "role": "required_normal_dependency",
+      "bundle": "mcbBTC"
+    },
+    {
+      "address": "0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b",
+      "role": "required_normal_dependency",
+      "bundle": "mwsteth"
+    },
+    {
+      "address": "0x628ff693426583D9a7FB391E54366292F509D457",
+      "role": "required_normal_dependency",
+      "bundle": "mweth"
+    },
+    {
+      "address": "0x7300B37DfdfAb110d83290A29DfB31B1740219fE",
+      "role": "required_normal_dependency",
+      "bundle": "mamo-token"
+    },
+    {
+      "address": "0xfBb21d0380beE3312B33c4353c8936a0F13EF26C",
+      "role": "required_normal_dependency",
+      "bundle": "unitroller-proxy"
+    },
+    {
+      "address": "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "market-implementation"
+    },
+    {
+      "address": "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "comptroller-implementation"
+    },
+    {
+      "address": "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-oracle"
+    },
+    {
+      "address": "0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6",
+      "role": "required_normal_dependency",
+      "bundle": "mamo-feed"
+    },
+    {
+      "address": "0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-feed-proxy"
+    },
+    {
+      "address": "0x6F49F44436A220C8aebd5776AB58b80Ecb41622E",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-aggregator"
+    },
+    {
+      "address": "0x599D4a1538d686814eE11b331EACBBa166D7C41a",
+      "role": "required_normal_dependency",
+      "bundle": "mweth-implementation"
+    },
+    {
+      "address": "0x1382cFf3CeE10D283DccA55A30496187759e4cAf",
+      "role": "required_normal_dependency",
+      "bundle": "weth-router"
+    }
+  ],
+  "evidence_gaps": [
+    "Historical calls are block-end state, not intra-transaction state snapshots.",
+    "Only selected funding, donation, borrow and bridge receipts were obtained; full swaps, liquidations, all liabilities and final profit were not independently reconstructed.",
+    "Source verification is reported by Sourcify; no local compilation or fork replay was run."
+  ],
+  "source_vs_history": "Provider source verification, historical deployment binding, state reads and transaction observations are separate; see case document and batch evidence."
+}

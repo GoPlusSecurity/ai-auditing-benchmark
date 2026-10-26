@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "original_files_accounted_for": 2715,
+  "new_source_files_byte_identical": 776,
+  "removed_simplified_files": 252,
+  "removed_simplified_source_files": 216,
+  "removed_simplified_artifact_files": 36,
+  "old_amos_case_counts": {
+    "dataset": 56,
+    "dataset_artifacts": 49
+  },
+  "old_amos_files_byte_identical": 2572,
+  "csv_events_each": 66,
+  "allbridge_supplement_sha256": "3df28007d206186483aa8ef802b0831d9f67585d715e692b2ef2e57822b6b078",
+  "actions": {
+    "amos_base_with_required_new_entries": 5,
+    "moved_byte_exact": 1040,
+    "removed_simplified_archived_in_zip": 252,
+    "current_batch_tool_doc_or_inventory_updated": 16,
+    "preserved_byte_exact": 1354,
+    "current_paths_metadata_or_checksums_updated": 36,
+    "current_doc_or_validator_updated": 12
+  }
+}

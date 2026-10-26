@@ -29,9 +29,9 @@ Term 的 ETH Meta Vault 接受 WETH 存款，给存款人 LP 份额，再把资�
 
 ### 1. 投票分母只包含主动封装的 LP
 
-[`GovernanceWrappedERC20.depositFor`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol#L80-L86)调用 OpenZeppelin 的 [`ERC20WrapperUpgradeable.depositFor`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol#L46-L51)：从调用方转入 underlying LP，再给指定账户铸造同额封装代币。该封装代币的 [`_afterTokenTransfer`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol#L96-L109)还会在首次接收且没有委托记录时自委托，产生投票权。
+[`GovernanceWrappedERC20.depositFor`](../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol#L80-L86)调用 OpenZeppelin 的 [`ERC20WrapperUpgradeable.depositFor`](../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol#L46-L51)：从调用方转入 underlying LP，再给指定账户铸造同额封装代币。该封装代币的 [`_afterTokenTransfer`](../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol#L96-L109)还会在首次接收且没有委托记录时自委托，产生投票权。
 
-[`TokenVoting.totalVotingPower`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L66-L69)直接使用这个封装代币的 `getPastTotalSupply`。[`createProposal`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L72-L147)选取前一区块作为快照，并按该分母计算最低参与票权；提案中的目标、金额和 calldata 则按输入原样保存。历史票权读取来自 [`ERC20VotesUpgradeable`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol#L78-L99) 的 checkpoint。
+[`TokenVoting.totalVotingPower`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L66-L69)直接使用这个封装代币的 `getPastTotalSupply`。[`createProposal`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L72-L147)选取前一区块作为快照，并按该分母计算最低参与票权；提案中的目标、金额和 calldata 则按输入原样保存。历史票权读取来自 [`ERC20VotesUpgradeable`](../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol#L78-L99) 的 checkpoint。
 
 本案提案快照是区块 **25,772,693**。历史 trace 里的真实返回值是：总封装供给 **0.535216182805348480 LP**，攻击辅助合约票权 **0.485216182805348480 LP**，占 **90.65798053079714%**。两者相减可知，攻击者封装前已有的封装供给只有 **0.05 LP**。这些值来自当时的 `getPastTotalSupply` 和 `getPastVotes` 调用，未用当前总供给代替历史值。
 
@@ -39,27 +39,27 @@ Term 的 ETH Meta Vault 接受 WETH 存款，给存款人 LP 份额，再把资�
 
 ### 2. 通过提案后可以执行动作列表，角色范围没有停在“否决某笔操作”
 
-[`TokenVoting._vote`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L158-L200)把历史票权累加到对应选项；[`MajorityVotingBase._canExecute`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol#L478-L509)检查支持率、参与率和是否已经执行。通过后，[`_execute`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol#L456-L465)和 [`_executeProposal`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/proposal/ProposalUpgradeable.sol#L72-L81)把已保存的动作交给 DAO。
+[`TokenVoting._vote`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol#L158-L200)把历史票权累加到对应选项；[`MajorityVotingBase._canExecute`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol#L478-L509)检查支持率、参与率和是否已经执行。通过后，[`_execute`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol#L456-L465)和 [`_executeProposal`](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/proposal/ProposalUpgradeable.sol#L72-L81)把已保存的动作交给 DAO。
 
-[`DAO.execute`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-dao/src/core/dao/DAO.sol#L233-L299)先检查执行权限，再逐个 `.call` 目标地址。其执行内容不限于 `setTxNonce`；业务范围要靠实际授予的目标权限约束。历史跟踪显示本案 DAO 成功调用 Roles 的 `callTargetFunctionWithRole`，role 参数为 **1**。
+[`DAO.execute`](../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/dao/DAO.sol#L233-L299)先检查执行权限，再逐个 `.call` 目标地址。其执行内容不限于 `setTxNonce`；业务范围要靠实际授予的目标权限约束。历史跟踪显示本案 DAO 成功调用 Roles 的 `callTargetFunctionWithRole`，role 参数为 **1**。
 
-[`Roles.callTargetFunctionWithRole`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-roles/contracts/Roles.sol#L356-L373)有 `moduleOnly`，也调用了 [`Permissions.check`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol#L177-L194)。后者检查角色成员，再由 [`checkTransaction`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol#L247-L290)检查目标、函数或参数权限。通过后，Roles 直接向指定目标发出调用。
+[`Roles.callTargetFunctionWithRole`](../../dataset/20260823_TermLabs/source-bundles/term-roles/contracts/Roles.sol#L356-L373)有 `moduleOnly`，也调用了 [`Permissions.check`](../../dataset/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol#L177-L194)。后者检查角色成员，再由 [`checkTransaction`](../../dataset/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol#L247-L290)检查目标、函数或参数权限。通过后，Roles 直接向指定目标发出调用。
 
 本案实际通过了三次检查：`Delay.setTxCooldown(0)`、`Delay.setTxExpiration(0)`、`Delay.enableModule(DAO)`。这足以证明实际配置授予 DAO 的能力超过了官方描述的单纯否决。未取得完整历史权限存储，因此不声称 role 1 一定用了“所有函数通配”，也不把某种具体权限配置方式当成已证实事实。
 
 ### 3. 可被治理修改的延时，无法再约束同一个治理动作列表
 
-[`Delay.setTxCooldown`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L92-L109)是正常的 `onlyOwner` 管理函数，允许把冷却期设为零；`setTxExpiration(0)`使操作不因有效期到期失效。[`Modifier.enableModule`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Modifier.sol#L82-L94)也有 `onlyOwner`。历史调用来自真正通过 owner 检查的 Roles，未绕过这些检查。
+[`Delay.setTxCooldown`](../../dataset/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L92-L109)是正常的 `onlyOwner` 管理函数，允许把冷却期设为零；`setTxExpiration(0)`使操作不因有效期到期失效。[`Modifier.enableModule`](../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Modifier.sol#L82-L94)也有 `onlyOwner`。历史调用来自真正通过 owner 检查的 Roles，未绕过这些检查。
 
-接着 DAO 已被加入 Delay 的模块列表，可以调用 [`execTransactionFromModule`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L123-L143)排队。它记录的是本次交易的 `block.timestamp`。随后同一动作列表立即调用 [`executeNextTx`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L172-L203)，检查的是“当前时间减排队时间是否大于等于当前 cooldown”。此时左边为零、cooldown 也已为零，所以无需再经过独立的等待期。
+接着 DAO 已被加入 Delay 的模块列表，可以调用 [`execTransactionFromModule`](../../dataset/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L123-L143)排队。它记录的是本次交易的 `block.timestamp`。随后同一动作列表立即调用 [`executeNextTx`](../../dataset/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol#L172-L203)，检查的是“当前时间减排队时间是否大于等于当前 cooldown”。此时左边为零、cooldown 也已为零，所以无需再经过独立的等待期。
 
-这条路径继续经 [`Module.exec`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Module.sol#L43-L77)进入 Safe。Safe 的 [`execTransactionFromModule`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-safe/contracts/base/ModuleManager.sol#L56-L73)检查来者是已启用模块，然后直接执行，不要求每笔重新附带 Safe owner 的签名。本案该模块是 Delay。
+这条路径继续经 [`Module.exec`](../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Module.sol#L43-L77)进入 Safe。Safe 的 [`execTransactionFromModule`](../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/ModuleManager.sol#L56-L73)检查来者是已启用模块，然后直接执行，不要求每笔重新附带 Safe owner 的签名。本案该模块是 Delay。
 
 ### 4. 真实资产按合法管理接口被配置给了恶意策略
 
-Vault 的 [`_enforce_role`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1521-L1526)、[`add_strategy`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1698-L1707)、[`update_max_debt_for_strategy` 和 `update_debt`](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1731-L1762)都有相应角色要求。本案实际调用者是有相关权限的管理 Safe。
+Vault 的 [`_enforce_role`](../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1521-L1526)、[`add_strategy`](../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1698-L1707)、[`update_max_debt_for_strategy` 和 `update_debt`](../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1731-L1762)都有相应角色要求。本案实际调用者是有相关权限的管理 Safe。
 
-[`_update_debt` 的减债分支](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L965-L1045)按 `maxRedeem`、`convertToAssets` 和实际 WETH 余额增量收回资金。增债分支则按 max debt、策略 `maxDeposit` 和可用 idle 资金限制金额，批准策略拉取资产，再调用 `deposit`，最后用金库真实余额减少量记入策略债务。完整增加分支在 [1046–1111 行](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1046-L1111)。
+[`_update_debt` 的减债分支](../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L965-L1045)按 `maxRedeem`、`convertToAssets` 和实际 WETH 余额增量收回资金。增债分支则按 max debt、策略 `maxDeposit` 和可用 idle 资金限制金额，批准策略拉取资产，再调用 `deposit`，最后用金库真实余额减少量记入策略债务。完整增加分支在 [1046–1111 行](../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy#L1046-L1111)。
 
 这些正常会计检查能证明“金库确实把资产交了出去”，不能证明“治理选择的策略会善意管理资产”。恶意策略接收这笔 WETH 后立即转给攻击钱包，金库则把同额资产记成了该策略的债务。
 
@@ -74,7 +74,7 @@ Vault 的 [`_enforce_role`](../../dataset/benchmark_complete/20260823_TermLabs/s
 1. **8 月 17 日取得 LP。** [准备交易 `0x724e…a0e`](https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e)位于区块 **25,772,675**。Vault 的原始 `Deposit` 日志记录 **0.5 WETH** 资产和 **0.485216182805348480 LP** 份额，随后 LP 经路由最终到攻击 EOA。路由器深层源码未完整归档，但这笔存款和份额流转有原始日志。
 2. **封装并形成票权。** [交易 `0x7876…8cc2`](https://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2)，区块 **25,772,681**，把上述 LP 经辅助合约转入 wrapper，并给辅助合约铸造同额封装代币。历史 trace 和转账日志均已保存。
 3. **创建提案 5。** [交易 `0x284f…a8b8`](https://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8)，区块 **25,772,694**，提案开始于 **8 月 17 日 05:25:35 UTC**，结束于 **8 月 23 日 06:25:35 UTC**，持续 **522,000 秒，即六天一小时**。从原始事件 bytes 独立解出了全部 17 个动作，并与 explorer 的解码逐项比对。
-4. **给自己提案投 Yes。** [交易 `0x6e73…2a8d`](https://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d)，区块 **25,772,700**，`VoteCast` 的选项为 **2**，票权为 **485216182805348480** 原始单位。[枚举定义](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/IMajorityVoting.sol#L16-L21)确认 2 是 Yes。提案文字伪装成“投 Yes 否决参数修改”，但 metadata 不决定执行语义，实际 Yes 支持的是保存的恶意动作列表。
+4. **给自己提案投 Yes。** [交易 `0x6e73…2a8d`](https://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d)，区块 **25,772,700**，`VoteCast` 的选项为 **2**，票权为 **485216182805348480** 原始单位。[枚举定义](../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/IMajorityVoting.sol#L16-L21)确认 2 是 Yes。提案文字伪装成“投 Yes 否决参数修改”，但 metadata 不决定执行语义，实际 Yes 支持的是保存的恶意动作列表。
 5. **投票结束 12 秒后执行。** [主交易 `0xd354…4129`](https://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129)中的 395 个 rawtrace frame 和 78 个完整原始日志交叉对应。DAO 的 `Executed` 事件里 `callId=5`，`allowFailureMap=0`、`failureMap=0`，17 个动作与创建提案时的原始动作完全相同。其后还有 `ProposalExecuted(5)`。
 
 | 动作位置（从 1 开始） | 原始动作的含义 | 结果 |
@@ -114,7 +114,7 @@ flowchart TD
 
 四笔返还的整数和恰好为 **2841743535791961701401**。所以这里只能说收回了本次可提部分，不能说四个策略全部清空。普通策略深层代码尚未完整归档；这些已发生的返回金额由 WETH 原始 Transfer 日志、trace 中的真实调用和 Vault 债务事件共同证明。
 
-主交易原始日志索引 **1200** 记录 Vault 向恶意策略转出 **2841743535791961701401** 个 WETH 原始单位；索引 **1201** 记录恶意策略随即向攻击 EOA 转出同额。WETH 的 [18 位小数与转账实现](../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-weth/WETH9.sol#L18-L77)来自已验证原始源码，因此人类单位为 **2841.743535791961701401 WETH**。索引 **1206** 的 `DebtUpdated` 又把恶意策略债务从零更新成这个金额。转账并非只有一个自定义事件声称成功；真实 WETH 合约按正常余额／授权规则完成了两跳付款。
+主交易原始日志索引 **1200** 记录 Vault 向恶意策略转出 **2841743535791961701401** 个 WETH 原始单位；索引 **1201** 记录恶意策略随即向攻击 EOA 转出同额。WETH 的 [18 位小数与转账实现](../../dataset/20260823_TermLabs/source-bundles/term-weth/WETH9.sol#L18-L77)来自已验证原始源码，因此人类单位为 **2841.743535791961701401 WETH**。索引 **1206** 的 `DebtUpdated` 又把恶意策略债务从零更新成这个金额。转账并非只有一个自定义事件声称成功；真实 WETH 合约按正常余额／授权规则完成了两跳付款。
 
 这是这笔交易的金库毛流出和攻击钱包毛入账，不是扣除最初 0.5 ETH、gas、事后追回后的净利润。源表给出的约 **850 万美元**属于更广事件口径。[官方恢复分配更新](https://www.term.finance/post/term-vault-recovery-distribution-update)还涉及不同 USDC 存款池、追回资金和 RepoToken 分配，不能直接把它们相加或当成本笔美元价值。本案未逐一核验其他 USDC vault 全部交易，也未固定事发价格，故 **CSV 的美元损失字段留空**。
 
@@ -136,7 +136,7 @@ flowchart TD
 
 前八行绑定采用准备或执行交易中的历史 `delegatecall` 目标，包括实际调用 Permissions 库的 frame；没有直接用当前网页的 implementation 标签冒充历史绑定。逐条 frame 位置在[历史实现映射](../../dataset_artifacts/batches/20261026_x96_y5/term/historical_bindings.json)，原始数据分别为[封装 trace](../../dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json)、[提案 trace](../../dataset_artifacts/batches/20261026_x96_y5/term/blockscout-proposal-trace.json)、[投票 trace](../../dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json)和[执行 trace](../../dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json)。我们没有本地重新编译来独立重做提供方的源码／字节码匹配。
 
-恶意策略原始源码不可得，另保存 [ethervm.io](https://ethervm.io/decompile) 返回的[高层反编译输出](../../dataset/benchmark_complete/20260823_TermLabs/decompiled/attacker-strategy.ethervm.decompiled.sol#L1-L599)，原样保留推断变量名和结构。输入是区块 **25,772,662** 创建交易返回的 **2497 字节 runtime**；输入原始字节 SHA256 为 `04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9`。该 runtime 与采集时 explorer 返回的 runtime 相同，服务返回的独立反汇编也逐字节核对覆盖全部 2497 字节。工具未报告反编译引擎版本，因此版本记为 `null`；不能拿网页前端库版本代替。反编译只能帮助理解恶意策略，不能当作作者公开源码，更没有替代上述受害链路的原始源码。
+恶意策略原始源码不可得，另保存 [ethervm.io](https://ethervm.io/decompile) 返回的[高层反编译输出](../../dataset/20260823_TermLabs/decompiled/attacker-strategy.ethervm.decompiled.sol#L1-L599)，原样保留推断变量名和结构。输入是区块 **25,772,662** 创建交易返回的 **2497 字节 runtime**；输入原始字节 SHA256 为 `04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9`。该 runtime 与采集时 explorer 返回的 runtime 相同，服务返回的独立反汇编也逐字节核对覆盖全部 2497 字节。工具未报告反编译引擎版本，因此版本记为 `null`；不能拿网页前端库版本代替。反编译只能帮助理解恶意策略，不能当作作者公开源码，更没有替代上述受害链路的原始源码。
 
 攻击辅助代理的实现 `0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1` 同样没有可用的已验证原始源码。保存其创建区块 **25,772,663** 的 **12318 字节 runtime**；提交 runtime 和按地址查询 ethervm 均返回超时，无可用高层代码。原始[失败响应](../../dataset_artifacts/batches/20261026_x96_y5/term/helper-implementation-ethervm-response.html)和[按地址查询失败响应](../../dataset_artifacts/batches/20261026_x96_y5/term/helper-implementation-ethervm-address-response.html)均保留。没有补写伪代码冒充反编译。
 
@@ -149,4 +149,4 @@ flowchart TD
 - 原始 [CertiK 披露入口](https://x.com/certikalert/status/2091433962795106499?s=46)获取受限；第三方分析仅用于定位交易和地址。金额、根因与“确实取得治理权限”的结论分别由上述源码和历史数据核验。
 - 所有下载失败、空结果、源码 404、GitHub 限流、Etherscan 反编译 Cloudflare 页面及在线反编译超时均留在[采集记录](../../dataset_artifacts/batches/20261026_x96_y5/term/retrievals.json)和[反编译来源](../../dataset_artifacts/batches/20261026_x96_y5/term/decompilation-provenance.json)。某些读取时间仅有本地下载文件最后写入时间，记录中明确标识，没有伪造精确响应时间。
 
-本批只执行本地离线数据解析、原文提取和哈希／范围核对。没有执行下载的脚本或 PoC，没有编译 Solidity／Vyper、部署、fork 重放或发送交易。完整原始源码与精简连续切片用于审核推理，不承诺精简版本可独立编译。
+本批只执行本地离线数据解析、原文提取和哈希／范围核对。没有执行下载的脚本或 PoC，没有编译 Solidity／Vyper、部署、fork 重放或发送交易。完整原始源码用于审核推理；本次未执行编译。

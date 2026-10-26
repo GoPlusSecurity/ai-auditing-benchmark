@@ -4,20 +4,22 @@ import tempfile
 import unittest
 import validate_20261016_batch as batch
 
-def slice_text(case_id, ending):
-    art=batch.ROOT/'dataset_artifacts/benchmark_simplified'/case_id
-    manifest=batch.load(art/'slice_manifest.json')
-    return '\n'.join((art/item['path']).resolve().read_text('utf-8') for item in manifest['slices'] if item['complete_path'].endswith(ending))
+def source_text(case_id, ending):
+    root=batch.ROOT/'dataset'/case_id
+    matches=[path for path in root.rglob('*') if path.is_file() and path.as_posix().endswith(ending)]
+    if len(matches)!=1:
+        raise AssertionError(f'{case_id} {ending} matched {len(matches)} files')
+    return matches[0].read_text('utf-8')
 
 class CausalCoverageTests(unittest.TestCase):
     def test_ostium_keeps_profit_to_payment_formula(self):
-        text=slice_text('20260715_Ostium','/src/OstiumPairInfos.sol')
+        text=source_text('20260715_Ostium','/src/OstiumPairInfos.sol')
         self.assertIn('signedCollateral + (signedCollateral * percentProfit) / int32(PRECISION_6) / 100 - rolloverFee - fundingFee',text)
         self.assertIn('if (value < 0)',text)
         self.assertIn('PRECISION_6 = 1e6',text)
 
     def test_verus_keeps_raw_transfer_to_packed_payment_fields(self):
-        text=slice_text('20260723_Verus','/transfer-serializer/contracts/VerusBridge/VerusSerializer.sol')
+        text=source_text('20260723_Verus','/transfer-serializer/contracts/VerusBridge/VerusSerializer.sol')
         self.assertIn('function deserializeTransfers(',text)
         self.assertIn('currencyAndAmount = uint256(temporaryRegister1) << VerusConstants.UINT160_BITS_SIZE',text)
         self.assertIn('destinationAndFlags = uint256(uint160(tempaddress))',text)
@@ -25,7 +27,7 @@ class CausalCoverageTests(unittest.TestCase):
         self.assertIn('function readCompactSizeLE(',text)
 
     def test_verus_source_is_bound_to_actual_serializer_target(self):
-        provenance=batch.load(batch.ROOT/'dataset_artifacts/benchmark_complete/20260723_Verus/provenance.json')
+        provenance=batch.load(batch.ROOT/'dataset_artifacts/20260723_Verus/provenance.json')
         bundles=[b for b in provenance['bundles'] if b['address'].lower()=='0x747d5eed7aa4436b3d7a6cf2db7d78b8e93600fc']
         self.assertEqual(len(bundles),1,'actual staticcall target has no separately verified original source bundle')
         self.assertIn(bundles[0]['runtime_match'],('match','exact_match'))

@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_flat_case_counts_and_no_variant_directories (__main__.MigrationTests.test_flat_case_counts_and_no_variant_directories)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\code\vibe-coding\ai-auditing-benchmark\ai-auditing-benchmark\dataset_artifacts\batches\20261027_amos_tz_merge\test_migration.py", line 44, in test_flat_case_counts_and_no_variant_directories
+    self.assertEqual(len([p for p in (ROOT/'dataset').iterdir() if p.is_dir()]),65)
+AssertionError: 58 != 65
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+FAILED (failures=1)

@@ -1,3 +1,5 @@
+> 2026-10-27 目录迁移：当前使用 `dataset/<case_id>/` 与 `dataset_artifacts/<case_id>/`，不再生成精简版本。原 `baseline.json`、`snapshot.json`、`validation.json`、`csv_append_manifest.json` 及取证和执行记录均为当时的历史信息，旧路径不作为当前入口。原始文件按字节封存在 [迁移备份](../20261027_amos_tz_merge/premerge-backup.zip)；当前验收见 [迁移报告](../20261027_amos_tz_merge/README.md)。
+
 # X=112，Y=5 批次结果
 
 固定导出读取时间：2026-10-21T05:24:24.548224+08:00，时区 Asia/Shanghai。原始导出解析为 1057 条记录，前两条分别为说明和表头，均为 14 列。
@@ -47,7 +49,7 @@
 
 ## 核查范围
 
-207 个完整原始 Solidity 文件逐字节与归档的 Sourcify response sources.content 对照。精简版所有片段均来自连续原始行，实际片段数量以验证报告为准；不增删、修复或重写合约逻辑，不保证片段单独编译。所有 ABI 和 standard-input.json 位于资料目录。
+207 个完整原始 Solidity 文件逐字节与归档的 Sourcify response sources.content 对照。历史精简片段记录已封存；当前仅保留完整源码；不增删、修复或重写合约逻辑，本次未执行编译。所有 ABI 和 standard-input.json 位于资料目录。
 
 USM 取得完整 raw trace；其他 4 例独立取得原始回执、交易数据和事件，未声称拥有完整内部跟踪。Fox 历史实现槽与早期 BSC 跟踪接口返回 missing trie node；备用节点返回 429。Base Blockscout 返回 403，后用 Base 官方 RPC 取得交易和回执。错误响应本身不构成源码不存在或历史实现已核实的证明。
 

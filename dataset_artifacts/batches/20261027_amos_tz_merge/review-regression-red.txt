@@ -1,0 +1,24 @@
+F
+======================================================================
+FAIL: test_rebuilding_both_batches_keeps_all_csv_rows_and_exact_sources (__main__.FlatToolTests.test_rebuilding_both_batches_keeps_all_csv_rows_and_exact_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\code\vibe-coding\ai-auditing-benchmark\ai-auditing-benchmark\dataset_artifacts\batches\20261027_amos_tz_merge\test_flat_tools.py", line 55, in test_rebuilding_both_batches_keeps_all_csv_rows_and_exact_sources
+    self.assertEqual(errors,[])
+AssertionError: Lists differ: ['hash mismatch: \\\\?\\D:\\code\\vibe-cod[288 chars]ime'] != []
+
+First list contains 4 additional elements.
+First extra element 0:
+'hash mismatch: \\\\?\\D:\\code\\vibe-coding\\ai-auditing-benchmark\\ai-auditing-benchmark\\.cache\\m-ohtnyuj_\\dataset_artifacts\\batches\\20261021_x112_y5\\README.md'
+
++ []
+- ['hash mismatch: '
+-  '\\\\?\\D:\\code\\vibe-coding\\ai-auditing-benchmark\\ai-auditing-benchmark\\.cache\\m-ohtnyuj_\\dataset_artifacts\\batches\\20261021_x112_y5\\README.md',
+-  'Repeated finalizer changed its retrieval inventory',
+-  'Derived inventory treated as a raw acquisition log',
+-  'Current filesystem mtime labelled as acquisition time']
+
+----------------------------------------------------------------------
+Ran 1 test in 57.396s
+
+FAILED (failures=1)

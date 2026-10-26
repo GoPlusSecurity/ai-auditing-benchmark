@@ -15,7 +15,7 @@ def read(name):
     key,tail=name.split('/',1)
     if name=='crc/token-lower.json': tail='source-bundles/token/source-response.json'
     else: tail='evidence/'+tail
-    return json.loads((ROOT/'dataset_artifacts/benchmark_complete'/CASE_IDS[key]/tail).read_text('utf-8'))
+    return json.loads((ROOT/'dataset_artifacts'/CASE_IDS[key]/tail).read_text('utf-8'))
 def write(name,value):
     if value != read(name): raise ValueError('recomputation differs: '+name)
     COMPUTED[name]=value

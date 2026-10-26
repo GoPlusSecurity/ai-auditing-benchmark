@@ -23,7 +23,7 @@
 
 第一部分是公开披露中的解释：处理 claim，也就是领取已有权益时，最终输出没有和合法接收人正确对应。攻击者因此能替换最终收款归属，同时让证明仍被接受。这里所说的“电路”，就是生成和验证这类证明时使用的一组计算约束；当前样本没有收录这部分原始代码。[事件分析中的披露转述](https://www.darknavy.org/web3/exploits/aztec-private-rollup-bridge-escape-hatch-claim-proof-drain/)
 
-第二部分可以在本地代码直接看到：[processRollupProof()](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L390) 先调用验证器，验证通过后，[processDepositsAndWithdrawals()](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L538) 就读取证明写明的提款金额和接收人，再调用 `withdraw()` 付钱。
+第二部分可以在本地代码直接看到：[processRollupProof()](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L390) 先调用验证器，验证通过后，[processDepositsAndWithdrawals()](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L538) 就读取证明写明的提款金额和接收人，再调用 `withdraw()` 付钱。
 
 因此，一旦前面的证明规则接受了错误收款人，后面的资金合约就会照着这个错误结果执行。
 
@@ -77,17 +77,17 @@ flowchart TD
 
 ## 对应代码在哪里
 
-下面的链接分别指向完整版和精简版，便于对照上面的操作步骤。
+下面的链接指向完整源码，便于对照上面的操作步骤。
 
-| 阅读点 | 完整版 | 精简版 |
-| --- | --- | --- |
-| 逃生入口及窗口 | [escapeHatch](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L347) | [对应入口](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L174) |
-| 验证到结算的顺序 | [processRollupProof](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L390) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L185) |
-| 调用验证器并更新状态 | [verifyProofAndUpdateState](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L403) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L194) |
-| 旧根、序号及逃生数量处理 | [validateMerkleRoots](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L483) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L247) |
-| 真正执行密码学验证 | [TurboVerifier.verify](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/verifier/TurboVerifier.sol#L41) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/verifier/TurboVerifier.sol#L26) |
-| 公开数据到提款 | [processDepositsAndWithdrawals](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L538) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L289) |
-| 最终发送 ETH/ERC-20 | [withdraw](../../dataset/benchmark_complete/20260618_aztecnetwork/contracts/RollupProcessor.sol#L647) | [对应实现](../../dataset/benchmark_simplified/20260618_aztecnetwork/contracts/RollupProcessor.sol#L368) |
+| 阅读点 | 完整版 |
+| --- | --- |
+| 逃生入口及窗口 | [escapeHatch](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L347) |
+| 验证到结算的顺序 | [processRollupProof](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L390) |
+| 调用验证器并更新状态 | [verifyProofAndUpdateState](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L403) |
+| 旧根、序号及逃生数量处理 | [validateMerkleRoots](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L483) |
+| 真正执行密码学验证 | [TurboVerifier.verify](../../dataset/20260618_aztecnetwork/contracts/verifier/TurboVerifier.sol#L41) |
+| 公开数据到提款 | [processDepositsAndWithdrawals](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L538) |
+| 最终发送 ETH/ERC-20 | [withdraw](../../dataset/20260618_aztecnetwork/contracts/RollupProcessor.sol#L647) |
 
 ## 资料说明
 
@@ -99,6 +99,6 @@ flowchart TD
 
 这是 `20260618_aztecnetwork` 旧版 RollupProcessor 事件，与仓库已有的 `20260614_aztecnetwork`、RollupProcessorV3 交易数量检查事件不同。当前样本包含以太坊上的处理器、验证器等源码，但缺少原始 claim 电路；本说明没有独立生成攻击证明或重放交易。
 
-- [源码内容及缺失范围](../../dataset_artifacts/benchmark_complete/20260618_aztecnetwork/SOURCE.md)。
+- [源码内容及缺失范围](../../dataset_artifacts/20260618_aztecnetwork/SOURCE.md)。
 - [固定版本主交易记录](https://github.com/DarkNavySecurity/web3-exploit-analysis/blob/0dedb932869fff89899d75a3e6e2315cd87768bd/artifacts/analysis_0xab306cd2184d23b6ba3e151b10b3b9a0b81f211cc16f4f3b0c79f0b17a59c2b5/trace_callTracer.json)：根节点 `0` 为应急入口，`0.0` 为验证器调用，`0.1` 为向攻击者发送 ETH。
 - [原表告警](https://x.com/evilcos/status/2067488848788262957)；[DarkNavy 事件分析及披露转述](https://www.darknavy.org/web3/exploits/aztec-private-rollup-bridge-escape-hatch-claim-proof-drain/)。

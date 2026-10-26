@@ -22,7 +22,7 @@
 | 107 | 20260723_Verus | [重复根在两端解释不同](../../../docs/cases/20260723_Verus.md) |
 | 106 | 20260724_LienFinance | [例外债券计数无法保证逐项匹配](../../../docs/cases/20260724_LienFinance.md) |
 
-`dataset/benchmark_complete/<case>` 仅有完整原始源码和明确标注的必要参考源码，`dataset/benchmark_simplified/<case>` 仅有连续原文切片。ABI、原始来源响应、编译输入/配置、交易和跟踪位于对应的 `dataset_artifacts`，中文解释在 `docs/cases`。两套 `SOURCE.md` 均链接同一篇案例说明。
+`dataset/<case>` 仅有完整原始源码和明确标注的必要参考源码。ABI、原始来源响应、编译输入/配置、交易和跟踪位于对应的 `dataset_artifacts`，中文解释在 `docs/cases`。`SOURCE.md` 链接同一篇案例说明。
 
 ## 按补充要求跳过的部分
 

@@ -32,14 +32,14 @@ class CausalEvidenceTests(unittest.TestCase):
         hits=[t for t in transfers if t['token']=='0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9' and t['from']==pair and t['to']==router]
         self.assertEqual([(t['index'],t['amount']) for t in hits],[(9,31739425952813599235352140),(10,31739425952813599235352140)])
 
-    def test_simplification_preserves_parent_balance_math_and_state_writes(self):
+    def test_full_sources_preserve_parent_balance_math_and_state_writes(self):
         for cid,terms in {
             '20260803_MOKE':['_balances[from] = fromBalance - value','function _update(address from, address to, uint256 value)','function _snapshotUser(address user)','Claim interval not reached','receive() external payable','unprocessedBNB += msg.value'],
             '20260804_NEX_AIC':['mapping(address => uint256) private _balances','library SafeMath','function mul(uint256 a, uint256 b)','function _transfer(address from, address to, uint256 amount) internal virtual'],
             '20260810_USM_FUM':['storedState = StoredState(','uint avgFumSellPrice = fumSellPrice0 + fumSellPrice2','to.sendValue(ethOut)'],
             '20260820_Allbridge_CCTP':['relayers[msg.sender] || msg.sender == recipientAddr','usedMessages[messageHash] = true','function _getDecimals(address token)'],
         }.items():
-            root=batch.ROOT/'dataset/benchmark_simplified'/cid
+            root=batch.ROOT/'dataset'/cid
             text='\n'.join(p.read_text('utf-8') for p in root.rglob('*.sol'))
             for term in terms:self.assertIn(term,text,cid+': '+term)
 

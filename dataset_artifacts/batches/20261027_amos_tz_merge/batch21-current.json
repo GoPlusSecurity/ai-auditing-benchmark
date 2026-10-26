@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-27T01:11:05.532357+08:00",
+  "parameters": {
+    "x": 112,
+    "y": 5
+  },
+  "actual_scan_range": [
+    88,
+    112
+  ],
+  "counts": {
+    "scanned_rows": 25,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "reused_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 20
+  },
+  "case_ids": [
+    "20260803_MOKE",
+    "20260804_NEX_AIC",
+    "20260810_USM_FUM",
+    "20260817_Fox",
+    "20260820_Allbridge_CCTP"
+  ],
+  "raw_export_sha256": "dc2c5338c964434d780f49bf215d112ec0bb06ee24cad24a12435bf5453ea794",
+  "checks": {
+    "source_bundles": 21,
+    "original_source_files_compared": 207,
+    "evidence_hashes": 44,
+    "semantic_source_literals": 35,
+    "case_links": 64,
+    "csv_events_each": 66,
+    "independent_raw_receipt_or_trace_decoding": "passed",
+    "current_pool_runtime_byte_comparisons": 5,
+    "local_decompilation": "prohibited_not_run"
+  },
+  "whole_archive_layout": {
+    "source_files": 2809,
+    "abi_files": 119,
+    "dataset_files": 2809,
+    "checksum_manifests": 28,
+    "checksum_entries": 3588,
+    "local_markdown_links_checked": 825,
+    "json_file_references_checked": 2023,
+    "source_hash_records_checked": 1829,
+    "original_explorer_source_names_checked": 26,
+    "exact_slices_compared": 0,
+    "preserved_historical_source_hash_differences": []
+  },
+  "not_claimed": {
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "complete_pre_attack_state": "not_reconstructed",
+    "fox_historical_proxy_slots": "RPC missing trie node",
+    "complete_internal_traces": "USM only; remaining four cases receipts and public analysis"
+  }
+}

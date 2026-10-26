@@ -1,0 +1,6 @@
+# Archived source and evidence must retain exact bytes on every platform.
+dataset/** -text
+dataset_artifacts/** -text
+docs/cases/** -text
+*.csv -text
+README*.md -text

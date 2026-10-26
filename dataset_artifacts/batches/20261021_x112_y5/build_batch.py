@@ -15,6 +15,7 @@ BASE = Path(__file__).resolve().parent
 ROOT = BASE.parents[2]
 sys.path.insert(0, str(ROOT/'docs/cases/sources'))
 import validate_20261002_batch as shared
+from archive_maintenance import append_missing_rows
 
 SHEET = 'https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0#gid=0'
 EXPORT = 'https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/export?format=csv&gid=0'
@@ -48,9 +49,9 @@ def dump(path, value):
     path.write_bytes((json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
 def relative(path, base): return Path(os.path.relpath(path,base)).as_posix()
 
-def checksum(case_id, view):
-    art=ROOT/'dataset_artifacts'/view/case_id
-    code=ROOT/'dataset'/view/case_id
+def checksum(case_id):
+    art=ROOT/'dataset_artifacts'/case_id
+    code=ROOT/'dataset'/case_id
     entries=[p for tree in (art,code) for p in tree.rglob('*') if p.is_file() and p.name!='SHA256SUMS']
     (art/'SHA256SUMS').write_text(''.join(sha(p)+'  '+relative(p,art)+'\n' for p in sorted(entries,key=lambda p:relative(p,art))),encoding='utf-8')
 
@@ -83,17 +84,16 @@ def main():
             if case['tx_hash'] in content:
                 own=load(BASE/'csv_append_manifest.json') if (BASE/'csv_append_manifest.json').exists() else {}
                 assert any(case['tx_hash'] in row[4] for row in own.get(language,{}).get('appended_records',[])), 'existing focal transaction requires surgical reuse review'
-    retrieved=dt.datetime.fromtimestamp(raw.stat().st_mtime,dt.timezone(dt.timedelta(hours=8))).isoformat()
+    retrieved=load(BASE/'snapshot.json')['parameters']['retrieved_at']
     parameters={'x':112,'y':5,'actual_scan_range':[min(processed),max(processed)],'processing_order':processed,'selected_source_rows':[s['row'] for s in selected],'raw_export':raw.name,'raw_export_sha256':sha(raw),'timezone':'Asia/Shanghai','retrieved_at':retrieved,'source_url':SHEET,'export_url':EXPORT}
     snapshot={'parameters':parameters,'raw_export_sha256':sha(raw),'parsed_record_count':len(rows),'header':rows[1],'structure':{'row_1':'explanation','row_2':'header','first_event_row':3},'rows':[{'row':r,'cells':rows[r-1],'fields':dict(zip(rows[1],rows[r-1]))} for r in processed]}
     counts={'scanned_rows':len(processed),'qualifying_source_rows':len(selected),'new_cases':len(set(s['case_id'] for s in selected)),'completed_existing_cases':0,'reused_existing_cases':0,'duplicate_rows_merged':0,'skipped_rows':len(processed)-len(selected)}
-    dump(BASE/'snapshot.json',snapshot)
-    dump(BASE/'results.json',{'parameters':parameters,'counts':counts,'rows':decisions,'included_cases':[{'case_id':c['case_id'],'source_rows':[c['row']]} for c in cases],'decompilation_policy':{'local':'prohibited and not run','online':'official or authoritative sites only','missing_required_online_output':'skip entire case'},'formal_write_gate':'five source-qualified rows reached before dataset/CSV writes'})
-    source_count=slice_count=0
+    dump(BASE/'snapshot-current.json',snapshot)
+    dump(BASE/'results-current.json',{'parameters':parameters,'counts':counts,'rows':decisions,'included_cases':[{'case_id':c['case_id'],'source_rows':[c['row']]} for c in cases],'decompilation_policy':{'local':'prohibited and not run','online':'official or authoritative sites only','missing_required_online_output':'skip entire case'},'formal_write_gate':'five source-qualified rows reached before dataset/CSV writes'})
+    source_count=0
     for case in cases:
-        cid=case['case_id']; full=ROOT/'dataset/benchmark_complete'/cid; art=ROOT/'dataset_artifacts/benchmark_complete'/cid
-        small=ROOT/'dataset/benchmark_simplified'/cid; sa=ROOT/'dataset_artifacts/benchmark_simplified'/cid
-        art.mkdir(parents=True,exist_ok=True);sa.mkdir(parents=True,exist_ok=True)
+        cid=case['case_id']; full=ROOT/'dataset'/cid; art=ROOT/'dataset_artifacts'/cid
+        art.mkdir(parents=True,exist_ok=True)
         bundles=[]; source_lookup={}
         for bundle in case['bundles']:
             original=BASE/'screening'/f'{bundle}-source.json'; response=load(original)
@@ -114,48 +114,20 @@ def main():
             assert original.is_file(), 'missing requested evidence: '+name
             destination=art/'evidence'/name;destination.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(original,destination)
             evidence.append({'path':relative(destination,art),'sha256':sha(destination),'bytes':destination.stat().st_size})
-        prior_slices=load(sa/'slice_manifest.json')['slices'] if (sa/'slice_manifest.json').exists() else []
-        slices=[]
-        for spec,ranges in case['slices'].items():
-            source=source_lookup[spec];lines=source.read_bytes().splitlines(keepends=True)
-            if ranges=='all':ranges=[[1,len(lines)]]
-            bundle,name=spec.split(':',1)
-            for start,end in ranges:
-                assert 1<=start<=end<=len(lines),(cid,spec,start,end,len(lines))
-                target=small/'slices'/bundle/Path(name).parent/(f'{Path(name).stem}_L{start}_L{end}.sol')
-                target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b''.join(lines[start-1:end]))
-                slices.append({'path':relative(target,sa),'complete_path':relative(source,sa),'original_start_line':start,'original_end_line':end,'sha256':sha(target),'complete_source_sha256':sha(source),'kind':'original_source_verbatim_slice'});slice_count+=1
-        current_paths={s['path'] for s in slices}
-        for old in prior_slices:
-            if old['path'] not in current_paths:
-                target=(sa/old['path']).resolve()
-                assert target.is_relative_to(small.resolve()) and sha(target)==old['sha256']
-                target.unlink()
-        joined='\n'.join((sa/s['path']).resolve().read_text('utf-8') for s in slices)
+        joined='\n'.join(p.read_text('utf-8') for p in source_lookup.values())
         for literal in case['core_requirements']: assert literal in joined,(cid,'missing causal source',literal)
-        dump(sa/'slice_manifest.json',{'case_id':cid,'path_base':'simplified_case_root','no_logic_rewritten':True,'standalone_compilation':'not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations','slices':slices})
         dump(art/'provenance.json',{'kind':'public_original_source','path_base':'complete_case_root','bundles':bundles,'evidence':evidence,'context_limits':'PancakePair reference is the verified original source from the separately identified PRO pool, not a claim of bytecode identity at every incident pool. Circle current proxy implementation is context; its historical slot was not independently reconstructed.'})
         explorer='etherscan.io' if case['chain_id']=='1' else ('basescan.org' if case['chain_id']=='8453' else 'bscscan.com')
         base_meta={k:case[k] for k in ['case_id','project_cn','project_en','vulnerability_cn','vulnerability_en','detail_cn','detail_en','loss_usd','loss_scope']}
-        base_meta.update(event_date=rows[case['row']-1][5],original_rows=[case['row']],tx_urls=[f"https://{explorer}/tx/{case['tx_hash']}"],vulnerable_contract_urls=[f'https://{explorer}/address/{a}#code' for a in case['victims']],public_original_vulnerable_source=True,requires_decompilation_for_core_vulnerable_logic=False,attack_time_deployment_source_equivalence_verified=False,source_sheet_snapshot='../../batches/20261021_x112_y5/snapshot.json',batch_results='../../batches/20261021_x112_y5/results.json',case_document=f'../../../docs/cases/{cid}.md',verification_status={'original_source':'acquired_hashed_compared_to_provider_response','historical_call_targets':'complete_trace' if case['full_internal_trace'] else 'receipt_emitters_observed; internal calls not independently traced','transaction_receipt_or_transfers':'checked','full_internal_trace':case['full_internal_trace'],'complete_pre_attack_state':'not_independently_reconstructed','local_compilation':'not_run','fork_replay':'not_run','local_decompilation':'prohibited_not_run','online_decompilation':'not_required_for_included_core_logic'})
-        for view,a in [('benchmark_complete',art),('benchmark_simplified',sa)]:
-            dump(a/'case_metadata.json',{**base_meta,'view':view,'source_provenance':'provenance.json' if view=='benchmark_complete' else 'slice_manifest.json'})
-            (a/'SOURCE.md').write_text(f'# {cid}\n\n公开原始源码在[对应代码目录](../../../dataset/{view}/{cid})；本目录只保存配套资料。\n\n- [共同中文说明](../../../docs/cases/{cid}.md)\n- [固定快照](../../batches/20261021_x112_y5/snapshot.json)\n- [逐行结果](../../batches/20261021_x112_y5/results.json)\n- [来源与切片清单]({"provenance.json" if view=="benchmark_complete" else "slice_manifest.json"})\n\n本批不做本地反编译。原始源码取得和 Sourcify 匹配不代替攻击时代理实现、历史状态或交易复现证明。精简版只保留原文连续片段，不保证单独编译。普通 PancakePair 参考源包与 Circle 当前实现的使用范围见完整来源清单；未据此声称所有历史部署都完全等价。\n\n本例完整内部跟踪取得状态：{case["full_internal_trace"]}。未本地编译，未分叉复现。\n',encoding='utf-8')
-    # Append records without reserializing any pre-existing CSV byte.
-    append={}
-    for language,scale in [('cn',10000),('en',1000)]:
-        path=ROOT/f'ai-auditing-benchmark_{language}.csv';data=path.read_bytes();old=load(BASE/'csv_append_manifest.json').get(language) if (BASE/'csv_append_manifest.json').exists() else None
-        baseline_size=old['baseline_bytes'] if old else len(data)
-        assert hashlib.sha256(data[:baseline_size]).hexdigest()==baseline['files'][path.name]
-        records=[]
-        for case in sorted(cases,key=lambda c:c['case_id']):
-            meta=load(ROOT/'dataset_artifacts/benchmark_complete'/case['case_id']/'case_metadata.json')
-            records.append([meta['event_date'].replace('-','.'),meta['project_'+language],meta['vulnerability_'+language],meta['detail_'+language],'\n'.join(meta['tx_urls']),'\n'.join(meta['vulnerable_contract_urls']),'' if meta['loss_usd'] is None else format(Decimal(meta['loss_usd'])/scale,'f')])
-        buffer=io.StringIO(newline='');csv.writer(buffer,lineterminator='\r\n').writerows(records)
-        path.write_bytes(data[:baseline_size]+buffer.getvalue().encode('utf-8'))
-        append[language]={'path':path.name,'baseline_bytes':baseline_size,'baseline_sha256':baseline['files'][path.name],'baseline_event_count':len(list(csv.reader(io.StringIO(data[:baseline_size].decode('utf-8'),newline=''))))-1,'appended_records':records}
-    dump(BASE/'csv_append_manifest.json',append)
-    dump(BASE/'semantic_review.json',{'case_ids':[c['case_id'] for c in cases],'cases':{c['case_id']:{'required_literals':c['core_requirements'],'review_boundary':'Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit.'} for c in cases}})
-    print(json.dumps({'status':'materialized','counts':counts,'source_files':source_count,'verbatim_slices':slice_count,'csv_new_rows_each':len(cases)},ensure_ascii=False))
+        base_meta.update(event_date=rows[case['row']-1][5],original_rows=[case['row']],tx_urls=[f"https://{explorer}/tx/{case['tx_hash']}"],vulnerable_contract_urls=[f'https://{explorer}/address/{a}#code' for a in case['victims']],public_original_vulnerable_source=True,requires_decompilation_for_core_vulnerable_logic=False,attack_time_deployment_source_equivalence_verified=False,source_sheet_snapshot='../batches/20261021_x112_y5/snapshot.json',batch_results='../batches/20261021_x112_y5/results.json',case_document=f'../../docs/cases/{cid}.md',verification_status={'original_source':'acquired_hashed_compared_to_provider_response','historical_call_targets':'complete_trace' if case['full_internal_trace'] else 'receipt_emitters_observed; internal calls not independently traced','transaction_receipt_or_transfers':'checked','full_internal_trace':case['full_internal_trace'],'complete_pre_attack_state':'not_independently_reconstructed','local_compilation':'not_run','fork_replay':'not_run','local_decompilation':'prohibited_not_run','online_decompilation':'not_required_for_included_core_logic'})
+        if (art/'case_metadata.json').exists():
+            appearances=load(art/'case_metadata.json').get('batch_appearances')
+            if appearances: base_meta['batch_appearances']=appearances
+        dump(art/'case_metadata.json',{**base_meta,'source_provenance':'provenance.json'})
+        (art/'SOURCE.md').write_text(f'# {cid}\n\n[完整源码](../../dataset/{cid}/)、[案例说明](../../docs/cases/{cid}.md)、[来源清单](provenance.json)。\n\n取得原始源码与提供方匹配不代替历史绑定、历史状态或重放证明。未本地编译或分叉重放。\n',encoding='utf-8')
+        checksum(cid)
+    dump(BASE/'csv_append_current.json',append_missing_rows(ROOT,[c['case_id'] for c in cases]))
+    dump(BASE/'semantic_review-current.json',{'case_ids':[c['case_id'] for c in cases],'cases':{c['case_id']:{'required_literals':c['core_requirements'],'review_boundary':'Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit.'} for c in cases}})
+    print(json.dumps({'status':'materialized','counts':counts,'source_files':source_count,'csv_new_rows_each':len(cases)},ensure_ascii=False))
 
 if __name__=='__main__':main()

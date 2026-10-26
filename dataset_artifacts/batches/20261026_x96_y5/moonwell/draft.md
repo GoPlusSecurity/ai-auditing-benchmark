@@ -21,13 +21,13 @@ Moonwell 是抵押借贷市场。用户把一种代币存入市场，取得代�
 
 正常流程是：**用户授权并存入 MAMO → 供应上限检查 → 按存入前兑换率增加份额 → 用户加入抵押市场 → 控制器按份额、兑换率、价格和抵押因子计算额度 → 借款市场记债并付款。**
 
-存款入口见 [MErc20.mint](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20.sol#L46-L49)。[MToken.mintFresh](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L498-L563)先调用控制器，再读取兑换率，转入资产并同时增加总份额及个人份额。[Comptroller.mintAllowed](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L215-L242)只在这一入口检查供应上限。加入抵押市场的权限和记账在 [enterMarkets / addToMarketInternal](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L102-L145)。
+存款入口见 [MErc20.mint](../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20.sol#L46-L49)。[MToken.mintFresh](../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L498-L563)先调用控制器，再读取兑换率，转入资产并同时增加总份额及个人份额。[Comptroller.mintAllowed](../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L215-L242)只在这一入口检查供应上限。加入抵押市场的权限和记账在 [enterMarkets / addToMarketInternal](../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L102-L145)。
 
 ## 具体错误：现金余额变化被直接放大为抵押权益
 
 一句话说，**控制器信任了可以通过直接转账抬高的存款凭证兑换率，再把它乘以被推高的 MAMO 报价；供应上限没有覆盖这种额外抵押增量。**
 
-[MErc20.getCashPrior](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20.sol#L171-L174)直接读取 MAMO 的 `balanceOf(address(this))`。[MToken.exchangeRateStoredInternal](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L340-L370)采用：
+[MErc20.getCashPrior](../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MErc20.sol#L171-L174)直接读取 MAMO 的 `balanceOf(address(this))`。[MToken.exchangeRateStoredInternal](../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L340-L370)采用：
 
 ```text
 每份 mMAMO 对应的 MAMO = (池内实际余额 + 已借出 MAMO - 协议储备) / mMAMO 总份额
@@ -36,9 +36,9 @@ Moonwell 是抵押借贷市场。用户把一种代币存入市场，取得代�
 
 直接调用 MAMO 的普通 `transfer` 向 mMAMO 转账，会改变第一式的分子，但不会调用 mMAMO 的存款函数，也不会新增份额。原有持有人分享这笔捐赠。捐赠本身确实付出了代币成本；并非凭空增加美元价值。只有在攻击者掌握较高份额、能够取得大量 MAMO，同时市场报价显著偏离大额清算可实现价值时，这种记账与估值组合才会造成有利可图的坏账路径。
 
-控制器在 [getHypotheticalAccountLiquidityInternal](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L563-L619)把兑换率、价格和抵押因子相乘，再扣除已有债务及本次新增借款。这里没有对“由直接捐赠形成的额外抵押量”再次套用供应上限，也没有按薄市场能实际变现的数量折价。[borrowAllowed](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L310-L356)依然检查暂停、市场、借款上限和短缺，但输入的抵押价值已经过高。
+控制器在 [getHypotheticalAccountLiquidityInternal](../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L563-L619)把兑换率、价格和抵押因子相乘，再扣除已有债务及本次新增借款。这里没有对“由直接捐赠形成的额外抵押量”再次套用供应上限，也没有按薄市场能实际变现的数量折价。[borrowAllowed](../../dataset/20260827_Moonwell_MAMO/source-bundles/comptroller-implementation/src/core/Comptroller.sol#L310-L356)依然检查暂停、市场、借款上限和短缺，但输入的抵押价值已经过高。
 
-价格路径也有正常检查。[ChainlinkOracle](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Oracles/ChainlinkOracle.sol#L50-L113)要求正数报价及有效更新时间，管理员价格设置带权限检查；[ChainlinkOEVWrapper.latestRoundData](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/oracles/ChainlinkOEVWrapper.sol#L210-L258)按已有配置选择有效报价轮次。本文没有发现攻击者修改管理员报价、盗取 Chainlink 签名或绕过签名验证的证据。市场价格能被交易推高、借贷系统又缺少相应抵押规模保护，是与普通报价验证不同的问题。
+价格路径也有正常检查。[ChainlinkOracle](../../dataset/20260827_Moonwell_MAMO/source-bundles/chainlink-oracle/src/core/Oracles/ChainlinkOracle.sol#L50-L113)要求正数报价及有效更新时间，管理员价格设置带权限检查；[ChainlinkOEVWrapper.latestRoundData](../../dataset/20260827_Moonwell_MAMO/source-bundles/mamo-feed/src/oracles/ChainlinkOEVWrapper.sol#L210-L258)按已有配置选择有效报价轮次。本文没有发现攻击者修改管理员报价、盗取 Chainlink 签名或绕过签名验证的证据。市场价格能被交易推高、借贷系统又缺少相应抵押规模保护，是与普通报价验证不同的问题。
 
 ## 利用条件及历史状态
 
@@ -62,8 +62,8 @@ Moonwell 是抵押借贷市场。用户把一种代币存入市场，取得代�
 2. **第一次直接捐赠。** [交易 0x056597…](https://basescan.org/tx/0x056597f42302ab7f9f5e91c7f84856d3ba73827da7f956645d1f26bdde109ce9)将 **34,910,396.684792643774173421 MAMO** 从攻击账户转入 mMAMO。回执没有该市场的 Mint 事件；紧随其后的历史份额总量仍相同。因此这是原有份额增厚，不能记为新增正式存款份额。
 3. **第二次直接捐赠。** [交易 0xaf284d…](https://basescan.org/tx/0xaf284d7f60dd8f2ebb41cba6a080e95a6deceb3a2c93ff58016996de61de3cd9)又转入 **18,482,893.625840745520359231 MAMO**，同样没有 Mint。两笔合计 **53,393,290.310633389294532652 MAMO**。
 4. **高报价与增厚后的兑换率进入同一抵押公式。** 选定早期区块报价为 0.01054105 美元，后续采样区块读取到 0.40248571 美元，最后一笔借款区块为 0.39844045 美元。上涨的历史报价已直接读取；“攻击者如何通过每一笔外部交易把价格推高”仍以官方调查为背景，本文没有完整复演这一市场过程。
-5. **按放大的抵押价值分批借款。** 已取得 17 笔成功借款回执，解码出 18 个 Borrow 事件，并逐个对应真实 ERC20 Transfer 或 WETH Withdrawal。源码 [borrowInternal / borrowFresh](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L728-L814)在控制器允许后检查现金、增加债务，再执行 `doTransferOut`。首批 cbBTC 的[源表交易](https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f)和最后 USDC 的[源表交易](https://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18)均已取得原始回执。
-6. **代币或 ETH 交到攻击账户。** cbBTC、USDC、wstETH 的回执显示市场直接转给借款人。mWETH 使用不同的历史实现：[MWethDelegate.doTransferOut](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MWethDelegate.sol#L16-L35)先把 WETH 交给解包器，再调用 [WethUnwrapper.send](../../dataset/benchmark_complete/20260827_Moonwell_MAMO/source-bundles/weth-router/src/WethUnwrapper.sol#L24-L36)，该函数限制调用者为 mWETH，提现 WETH 并通过原生 ETH 调用付款。[560 ETH 借款交易](https://basescan.org/tx/0x7043f55bdcf70ea2980c8729299a022e842a9a6b8622e1c5a7ac527051800f02)的[原始调用树](../../dataset_artifacts/batches/20261026_x96_y5/moonwell/weth-borrow-raw-trace.json)直接证实解包器向攻击地址支付 560 ETH，无调用错误。
+5. **按放大的抵押价值分批借款。** 已取得 17 笔成功借款回执，解码出 18 个 Borrow 事件，并逐个对应真实 ERC20 Transfer 或 WETH Withdrawal。源码 [borrowInternal / borrowFresh](../../dataset/20260827_Moonwell_MAMO/source-bundles/market-implementation/src/core/MToken.sol#L728-L814)在控制器允许后检查现金、增加债务，再执行 `doTransferOut`。首批 cbBTC 的[源表交易](https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f)和最后 USDC 的[源表交易](https://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18)均已取得原始回执。
+6. **代币或 ETH 交到攻击账户。** cbBTC、USDC、wstETH 的回执显示市场直接转给借款人。mWETH 使用不同的历史实现：[MWethDelegate.doTransferOut](../../dataset/20260827_Moonwell_MAMO/source-bundles/mweth-implementation/src/MWethDelegate.sol#L16-L35)先把 WETH 交给解包器，再调用 [WethUnwrapper.send](../../dataset/20260827_Moonwell_MAMO/source-bundles/weth-router/src/WethUnwrapper.sol#L24-L36)，该函数限制调用者为 mWETH，提现 WETH 并通过原生 ETH 调用付款。[560 ETH 借款交易](https://basescan.org/tx/0x7043f55bdcf70ea2980c8729299a022e842a9a6b8622e1c5a7ac527051800f02)的[原始调用树](../../dataset_artifacts/batches/20261026_x96_y5/moonwell/weth-borrow-raw-trace.json)直接证实解包器向攻击地址支付 560 ETH，无调用错误。
 7. **后续处置及最终损益。** 本批保存了选定跨链转出回执作为背景，但没有重建全部回款、清算、偿还和持仓。这里的借款不是已经在同笔归还的闪电贷本金；借款总量也不能直接当作最终净收益。
 
 ```mermaid
@@ -96,7 +96,7 @@ flowchart TD
 
 ## 原始源码、历史绑定与证据边界
 
-[完整来源清单](../../dataset_artifacts/benchmark_complete/20260827_Moonwell_MAMO/provenance.json)保存每个原始 URL、原响应和源码哈希；[精简切片清单](../../dataset_artifacts/benchmark_simplified/20260827_Moonwell_MAMO/slice_manifest.json)记录原文件及连续行号。源码进入 `dataset`，ABI、编译设置、抓取记录与说明留在 `dataset_artifacts`。Chainlink 源包包含开发机绝对路径，本批只去掉原机器路径前缀形成安全相对路径；源码内容逐字不变，原始文件名保留在清单。
+[完整来源清单](../../dataset_artifacts/20260827_Moonwell_MAMO/provenance.json)保存每个原始 URL、原响应和源码哈希源码进入 `dataset`，ABI、编译设置、抓取记录与说明留在 `dataset_artifacts`。Chainlink 源包包含开发机绝对路径，本批只去掉原机器路径前缀形成安全相对路径；源码内容逐字不变，原始文件名保留在清单。
 
 已经分别核实：
 
@@ -105,6 +105,6 @@ flowchart TD
 - **历史状态与交易：** 两笔捐赠前后余额、份额和兑换率，选定区块的价格、供应上限和抵押因子，17 笔成功借款及 560 ETH 的完整付款调用树。区块末状态不是交易内部逐指令状态。
 - **尚未复核：** 所有外部操纵买单、所有历史管理配置、全部清算及最终净损失。其余借款未逐笔取得完整内部跟踪。当前标签和当前实现显示没有被单独当成历史绑定证据。
 
-本批只进行公开资料下载、原文提取和离线整数核算；未执行上游脚本或 PoC，未编译、部署、分叉重放或发送交易。精简代码是原文片段，不保证脱离完整源包后可以独立编译。直接 EOA 捐赠与借款的核心路径不需要未开源攻击辅助合约。
+本批只进行公开资料下载、原文提取和离线整数核算；未执行上游脚本或 PoC，未编译、部署、分叉重放或发送交易。直接 EOA 捐赠与借款的核心路径不需要未开源攻击辅助合约。
 
 批次入口：[固定快照](../../dataset_artifacts/batches/20261026_x96_y5/snapshot.json)、[逐行处理结果](../../dataset_artifacts/batches/20261026_x96_y5/results.json)、[原始状态与交易解码](../../dataset_artifacts/batches/20261026_x96_y5/moonwell/decoded_evidence.json)。

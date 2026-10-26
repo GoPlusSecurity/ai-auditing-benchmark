@@ -2,7 +2,7 @@
 
 <!-- 20261026_x96_y5 -->
 
-2026-10-26 批次 X=96、Y=5 重新定位为固定快照第 95 行。已重新下载核心 Messenger 与 Router 权威原始源码，30 个文件与既有版本逐字一致，完整/精简校验及 9 个切片复核通过，因此复用本例和两份 CSV 的原记录，不新增重复事件。旧批次第 88 行仍仅表示原来的快照位置。[本批复核记录](../../dataset_artifacts/batches/20261026_x96_y5/allbridge_requalification.json)。
+2026-10-26 批次 X=96、Y=5 重新定位为固定快照第 95 行。已重新下载核心 Messenger 与 Router 权威原始源码，30 个文件与既有版本逐字一致，当时的完整/精简校验及 9 个切片复核通过（历史结果；当前仅保留完整源码），因此复用本例和两份 CSV 的原记录，不新增重复事件。旧批次第 88 行仍仅表示原来的快照位置。[本批复核记录](../../dataset_artifacts/batches/20261026_x96_y5/allbridge_requalification.json)。
 
 源表第 **88** 行，目录日期保留 **2026-08-20**。Base [代表交易](https://basescan.org/tx/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8)实际发生于 **2026-08-19 01:47:17 UTC**，北京时间同日 09:47:17。源表与链上日期并非单纯时区转换。原始披露见 [Defimon](https://defimon.xyz/blog/allbridge-hack-august-2026)及[源表披露入口](https://x.com/DefimonAlerts/status/2090369928494719263)。
 
@@ -26,7 +26,7 @@ Circle 的底层 MessageTransmitter 同时也是通用消息工具。它可以�
 
 **Allbridge 把“底层接受了一条有签名的通用消息”直接当成“USDC 已经到账”，并从攻击者可构造的消息体读取入账金额。**
 
-[`receiveCctpMessage` 146–183 行](../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/CCTPTokenMessenger.sol#L146-L183)读取固定位置：
+[`receiveCctpMessage` 146–183 行](../../dataset/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/CCTPTokenMessenger.sol#L146-L183)读取固定位置：
 
 - 头部 `[4:8]` 是源 domain，`[108:140]` 是指定调用者，必须等于 Allbridge messenger。
 - 消息体 `[216:248]` 是声明金额，`[312:344]` 是执行费，`[248:280]` 是声称的远端发送人。
@@ -34,9 +34,9 @@ Circle 的底层 MessageTransmitter 同时也是通用消息工具。它可以�
 
 代码检查已配置源 domain 和消息体中的远端发送人，再调用 Circle 的 `receiveMessage`。成功后直接执行 `receivedMessages[messageHash]=amount-feeExecuted`。它没有验证 header 中的真实发送人和接收者确实属于合法 TokenMessenger 路径，也没有按 USDC 余额增量确认真的铸币到账。
 
-Circle 当前公开实现的 [`sendMessage`、`receiveMessage` 和 `_validateReceivedMessage`](../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol#L135-L322)说明这个边界：`sendMessage` 允许普通调用者提交 body；`receiveMessage` 验签后把 body 交给 header 的 `_recipient`，并不是每条合法消息都会铸 USDC。本批该实现只作为公开机制上下文，未拿当前代理实现自动证明攻击时实现。
+Circle 当前公开实现的 [`sendMessage`、`receiveMessage` 和 `_validateReceivedMessage`](../../dataset/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol#L135-L322)说明这个边界：`sendMessage` 允许普通调用者提交 body；`receiveMessage` 验签后把 body 交给 header 的 `_recipient`，并不是每条合法消息都会铸 USDC。本批该实现只作为公开机制上下文，未拿当前代理实现自动证明攻击时实现。
 
-[`Router.receiveToken` 226–289 行](../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol#L226-L289)再取 `receivedTokenAmount(messageHash)`，计算目标付款金额，标记已处理并执行 USDC `safeTransfer`。因此错误账目沿着真实的资金付款接口被兑现。相关金额规格化、消息 hash 和小数转换也保留在[324–372 行](../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol#L324-L372)。
+[`Router.receiveToken` 226–289 行](../../dataset/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol#L226-L289)再取 `receivedTokenAmount(messageHash)`，计算目标付款金额，标记已处理并执行 USDC `safeTransfer`。因此错误账目沿着真实的资金付款接口被兑现。相关金额规格化、消息 hash 和小数转换也保留在[324–372 行](../../dataset/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol#L324-L372)。
 
 ## 条件、检查为什么仍会通过
 
@@ -68,7 +68,7 @@ flowchart TD
 
 ## 证据、金额和限制
 
-[完整原始源码及来源](../../dataset_artifacts/benchmark_complete/20260820_Allbridge_CCTP/provenance.json)、[精简切片清单](../../dataset_artifacts/benchmark_simplified/20260820_Allbridge_CCTP/slice_manifest.json)、[原始回执](../../dataset_artifacts/benchmark_complete/20260820_Allbridge_CCTP/evidence/allbridge-receipt.json)、[原始交易](../../dataset_artifacts/benchmark_complete/20260820_Allbridge_CCTP/evidence/allbridge-transaction.json)与[离线解码](../../dataset_artifacts/batches/20261021_x112_y5/decoded_evidence.json)可交叉检查。
+[完整原始源码及来源](../../dataset_artifacts/20260820_Allbridge_CCTP/provenance.json)、[原始回执](../../dataset_artifacts/20260820_Allbridge_CCTP/evidence/allbridge-receipt.json)、[原始交易](../../dataset_artifacts/20260820_Allbridge_CCTP/evidence/allbridge-transaction.json)与[离线解码](../../dataset_artifacts/batches/20261021_x112_y5/decoded_evidence.json)可交叉检查。
 
 受害 Router 和 messenger 的原始源码均为 Sourcify `exact_match`。Circle 的代理和当前实现也分别归档；当前关系不能直接代替历史实现槽验证。本批核查了 calldata、成功回执、消息与付款事件和逐笔 USDC 收支，未取得完整内部跟踪，也未重建全部攻击前状态。
 

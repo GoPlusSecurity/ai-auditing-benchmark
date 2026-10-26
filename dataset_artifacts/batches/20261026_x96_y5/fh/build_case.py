@@ -76,7 +76,7 @@ for source in SOURCES:
  if source['id']=='pancake-pair-reference':
   item.update(url='https://sourcify.dev/server/v2/contract/56/0x63844BD4BFad910B1643713302a1cC1ed20d50c3?fields=all',
               retrieved_at='2026-10-21T05:40:34.869871+08:00',timestamp_kind='original_archive_provenance',
-              copied_from='dataset_artifacts/benchmark_complete/20260804_NEX_AIC/source-bundles/pro-pair/source-response.json')
+              copied_from='dataset_artifacts/20260804_NEX_AIC/source-bundles/pro-pair/source-response.json')
  else:
   rec=next(r for r in records if r['path']=='fh/'+path.name)
   item.update(url=rec['url'],retrieved_at=rec['retrieved_at'],timestamp_kind=rec['timestamp_kind'])

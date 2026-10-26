@@ -1,0 +1,52 @@
+{
+  "project_cn": "Moonwell（MAMO 抵押市场）",
+  "project_en": "Moonwell (MAMO collateral market)",
+  "vulnerability_cn": "直接捐赠抬高抵押份额兑换率，并与被推高的预言机价格共同放大借款能力",
+  "vulnerability_en": "Donation-driven collateral exchange-rate inflation combined with inflated oracle prices",
+  "detail_cn": "mMAMO以实际代币余额计算份额兑换率；直接转入MAMO不经过mintAllowed的供应上限检查，也不增加份额。两次捐赠共53,393,290.310633389294532652 MAMO，历史状态显示份额总量不变、兑换率升至约3.6786倍。Comptroller将份额、兑换率、MAMO报价与50%抵押因子相乘，未限制捐赠造成的抵押增量或按可清算深度折价。实际采用的MAMO价格一度为0.40248571美元。17笔成功交易包含18次借款，流出cbBTC、WETH/ETH、USDC及wstETH；WETH付款经WethUnwrapper解包。原始源码与核心历史运行码已比对；未复核全部价格操纵交易、清算及最终净损益。美元金额因早期报道、借款总额和剩余坏账口径不一留空。",
+  "detail_en": "mMAMO computes its exchange rate from the actual underlying balance. Direct MAMO transfers bypass the mintAllowed supply-cap check and create no shares. Two donations totaled 53,393,290.310633389294532652 MAMO; historical state shows unchanged share supply and an approximately 3.6786-fold exchange-rate increase. Comptroller multiplies shares, exchange rate, the MAMO quote and a 50% collateral factor without capping donation-induced collateral growth or discounting for realizable market depth. The accepted MAMO price reached USD 0.40248571. Seventeen successful transactions contain 18 borrows of cbBTC, WETH/ETH, USDC and wstETH; WETH payouts unwrap through WethUnwrapper. Original sources and core historical runtime code were compared. Full price-manipulation trades, liquidations and final net results were not reconstructed. The USD loss field is blank because early reports, gross borrowing and residual bad debt use different scopes.",
+  "loss_usd": null,
+  "loss_scope": "源表约800万美元、官方论坛借款总额约1102.8万美元、剩余债务约913.1万美元和估计净收益约678.4万美元口径不同；本批只独立汇总原币借款，不换算全案净损失。",
+  "event_date": "2026-08-27",
+  "chain_id": 8453,
+  "sheet_row": 85,
+  "tx_urls": [
+    "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f",
+    "https://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18",
+    "https://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7"
+  ],
+  "vulnerable_contract_urls": [
+    "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code",
+    "https://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code"
+  ],
+  "verification_status": {
+    "source": "Sourcify original verified code",
+    "historical_code": "eight core implementation/feed/unwrapper runtimes match provider onchain bytecode at block 50516833",
+    "historical_state": "specific block-end exchange rates, supply, cash, prices, caps, collateral factor and proxy implementations checked",
+    "receipts": "17 transactions,18 Borrow events and matching asset transfer/withdrawal logs",
+    "trace": "first 560 ETH final payout independently traced; not every transaction traced",
+    "compilation": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_needed_for_direct_EOA_core_path"
+  },
+  "case_id": "20260827_Moonwell_MAMO",
+  "original_rows": [
+    85
+  ],
+  "public_original_vulnerable_source": true,
+  "source_sheet_snapshot": "../batches/20261026_x96_y5/snapshot.json",
+  "batch_results": "../batches/20261026_x96_y5/results.json",
+  "case_document": "../../docs/cases/20260827_Moonwell_MAMO.md",
+  "evidence_gaps": [
+    "Historical calls are block-end state, not intra-transaction state snapshots.",
+    "Only selected funding, donation, borrow and bridge receipts were obtained; full swaps, liquidations, all liabilities and final profit were not independently reconstructed.",
+    "Source verification is reported by Sourcify; no local compilation or fork replay was run."
+  ],
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json"
+}

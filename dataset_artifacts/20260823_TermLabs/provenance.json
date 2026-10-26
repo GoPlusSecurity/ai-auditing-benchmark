@@ -1,0 +1,1264 @@
+{
+  "case_id": "20260823_TermLabs",
+  "path_base": "this artifact directory",
+  "bundles": [
+    {
+      "id": "term-voting",
+      "provider": "Sourcify",
+      "address": "0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27",
+      "role": "vulnerable_governance_composition_snapshot_and_action_executor",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27?fields=all",
+      "retrieved_at": "2026-10-26T14:44:39.582559+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-voting/source-response.json",
+      "response_sha256": "60808a27f66bbda8161c60e07f85804477a0b4c20baa405e6c34d99bec312e88",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:37:12Z",
+      "runtime_match": "exact_match",
+      "creation_match": null,
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/dao/IDAO.sol",
+          "original_source_path": "src/core/dao/IDAO.sol",
+          "sha256": "64a0238414797c769bc9ce225e426a84d98b4544a1c42630b4e4748806eafffc",
+          "bytes": 7343
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/utils/auth.sol",
+          "original_source_path": "src/core/utils/auth.sol",
+          "sha256": "6ab061ad83b19a4a1113ecaf2b26013a6db2c8e94195496fd310100429712367",
+          "bytes": 1357
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/IPlugin.sol",
+          "original_source_path": "src/core/plugin/IPlugin.sol",
+          "sha256": "bb46356bccdf5b18e7562df15b8e309d3b68b575e6f60af979aa4b0f421d369f",
+          "bytes": 402
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/utils/Ratio.sol",
+          "original_source_path": "src/plugins/utils/Ratio.sol",
+          "sha256": "b50de65155c817bafb1bdf8eb025f14d93f2264fba73f6dce33e57ab220e908d",
+          "bytes": 1056
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/proposal/IProposal.sol",
+          "original_source_path": "src/core/plugin/proposal/IProposal.sol",
+          "sha256": "401b392fbe79ba601797e4238034c497594fcafa0058b814c2ecded16aa4d2e3",
+          "bytes": 1556
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/PluginUUPSUpgradeable.sol",
+          "original_source_path": "src/core/plugin/PluginUUPSUpgradeable.sol",
+          "sha256": "632f8a4a741602e19da37c43670b575fe2b44035d8ebee9ae69157d5b27bd93a",
+          "bytes": 3496
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/membership/IMembership.sol",
+          "original_source_path": "src/core/plugin/membership/IMembership.sol",
+          "sha256": "b568df66e0f6493a422fc0ceb3a09555a87a633164ef4c77e8a979bd8fc8aa5a",
+          "bytes": 1186
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/proposal/ProposalUpgradeable.sol",
+          "original_source_path": "src/core/plugin/proposal/ProposalUpgradeable.sol",
+          "sha256": "8859405acbcacdea36a8e3d97066d5003b01d28f7b2ca3140e96bea115e01583",
+          "bytes": 4168
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/IMajorityVoting.sol",
+          "original_source_path": "src/plugins/governance/majority-voting/IMajorityVoting.sol",
+          "sha256": "ee2b42d35740521dac5bebaaaad2fd929d7b32e16fe94fc0b321497ce43df340",
+          "bytes": 5123
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol",
+          "original_source_path": "src/plugins/governance/majority-voting/token/TokenVoting.sol",
+          "sha256": "495e8e8c95bb8b93e4a19007e0c2ca7344e85c33575092362ed14bcadd41a275",
+          "bytes": 9539
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol",
+          "original_source_path": "src/plugins/governance/majority-voting/MajorityVotingBase.sol",
+          "sha256": "29666e17ccac3258951440d23a78dd53eaf0581544c0c717a8758ad7f55806ee",
+          "bytes": 27618
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol",
+          "original_source_path": "src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol",
+          "sha256": "981dca2975756a1b70b9c0d32bdf546a801f6c0a0fb8e3360d531f3be6ac216a",
+          "bytes": 1930
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "sha256": "1d7d481b79fd54d957c9a0696f6227f7799fec01d8ba41f5c130a7cc6b4eddc9",
+          "bytes": 8282
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "5fb301961e45cb482fe4e05646d2f529aa449fe0e90c6671475d6a32356fa2d4",
+          "bytes": 1345
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "98ce2984e449716f24043a8c11bbe969a6d34878b1d522b92c88d62708ba3376",
+          "bytes": 6629
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+          "sha256": "5c1ac829a429b0c2ca9b4c9ed8b78d412320e9175e45f088c4e9056ef95fbf21",
+          "bytes": 1407
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+          "sha256": "7517b26ac0cee066447b94cbf7df8ad5ce91cc6ddf0fd1e3425fe978889f5eb0",
+          "bytes": 4758
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+          "sha256": "05b696b46ca1be28e19dfba65ea71c3b3615bd39d19bfd8212864a16c54870fd",
+          "bytes": 2682
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "sha256": "4e09a7479aa3e7c313f8fc141c4c8fc04e0abfeb8754615ef7d78ec94c298b07",
+          "bytes": 2778
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
+          "sha256": "647d03e70d45c15cd9aa3afc3b32de945ec024a022614e263f33bb35c557ac94",
+          "bytes": 35092
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+          "sha256": "e0ac7115916f0dce0a8e80769694736f3e674bdc5b2e5853964c82004b1e1cc5",
+          "bytes": 461
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol",
+          "sha256": "400936c02700eb4147c65a91a15fb6f90d074d7519f8ebce49dce78a2c917186",
+          "bytes": 2075
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+          "sha256": "a94576fd98585c07b2a9725f7c89c910a3a1909a03f49ec2df465327c6a0ffc3",
+          "bytes": 890
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "sha256": "fd84e5284eccc479268f0ef36b830019d4f7999ceb7959430d8d8d9e602dd4ef",
+          "bytes": 1520
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "sha256": "a39bc026ad6214e9ecd526bd4a1ddf9862d80bd4a9d0d031d9bafa4c3c147c0b",
+          "bytes": 864
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+          "sha256": "f6c1a8b4512e9cc0168278c2a634b184fd86b1e39c7c283bcf34fb154236fc5d",
+          "bytes": 7837
+        }
+      ]
+    },
+    {
+      "id": "term-voting-token",
+      "provider": "Sourcify",
+      "address": "0xCC925a32fA4fa41c42a7d5585D69C980b6Fa9342",
+      "role": "vulnerable_governance_composition_opt_in_wrapped_electorate",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xCC925a32fA4fa41c42a7d5585D69C980b6Fa9342?fields=all",
+      "retrieved_at": "2026-10-26T14:46:46.241116+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-voting-token/source-response.json",
+      "response_sha256": "f3a96e42c42b01add4f431ab77744c1b2d7e79dcf764b20f51fe235ae043f4a0",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:30:45Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x7f4c85eb50728556d0e1e04eec9bff7ed62f12439ffe51890e6b17f2ef2b97b7",
+        "blockNumber": "18690782",
+        "transactionIndex": "89",
+        "deployer": "0x187a34c86aA6378333cE9033Aa34718D2CEdEd2C"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/core/dao/IDAO.sol",
+          "original_source_path": "src/core/dao/IDAO.sol",
+          "sha256": "64a0238414797c769bc9ce225e426a84d98b4544a1c42630b4e4748806eafffc",
+          "bytes": 7343
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/core/utils/auth.sol",
+          "original_source_path": "src/core/utils/auth.sol",
+          "sha256": "6ab061ad83b19a4a1113ecaf2b26013a6db2c8e94195496fd310100429712367",
+          "bytes": 1357
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol",
+          "original_source_path": "src/token/ERC20/governance/GovernanceWrappedERC20.sol",
+          "sha256": "81421386fdb859e4d93652733f71496056ed92045ebbfd2b197756eb739f6ad1",
+          "bytes": 6337
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/IGovernanceWrappedERC20.sol",
+          "original_source_path": "src/token/ERC20/governance/IGovernanceWrappedERC20.sol",
+          "sha256": "4b3e87475190bacd42db92ad645658b14fc6387982da90cd2f6025c7709235d7",
+          "bytes": 1153
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol",
+          "original_source_path": "src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol",
+          "sha256": "981dca2975756a1b70b9c0d32bdf546a801f6c0a0fb8e3360d531f3be6ac216a",
+          "bytes": 1930
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "sha256": "1d7d481b79fd54d957c9a0696f6227f7799fec01d8ba41f5c130a7cc6b4eddc9",
+          "bytes": 8282
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "5fb301961e45cb482fe4e05646d2f529aa449fe0e90c6671475d6a32356fa2d4",
+          "bytes": 1345
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+          "sha256": "68f5690fc266a6b48386c28cbfd72ec67c24b05a51ce26d24103577c15f61401",
+          "bytes": 2298
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "98ce2984e449716f24043a8c11bbe969a6d34878b1d522b92c88d62708ba3376",
+          "bytes": 6629
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+          "sha256": "5c1ac829a429b0c2ca9b4c9ed8b78d412320e9175e45f088c4e9056ef95fbf21",
+          "bytes": 1407
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+          "sha256": "158a0316fa289fad12c2ca764449e43e6724fb79c58fc438508d116f9af46b39",
+          "bytes": 12516
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+          "sha256": "7307fb68607d3c93995797209010e5048c9cc1777f3b97dc7940f41a7327d080",
+          "bytes": 13640
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "sha256": "4e09a7479aa3e7c313f8fc141c4c8fc04e0abfeb8754615ef7d78ec94c298b07",
+          "bytes": 2778
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
+          "sha256": "647d03e70d45c15cd9aa3afc3b32de945ec024a022614e263f33bb35c557ac94",
+          "bytes": 35092
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol",
+          "sha256": "400936c02700eb4147c65a91a15fb6f90d074d7519f8ebce49dce78a2c917186",
+          "bytes": 2075
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
+          "sha256": "2aee2a508bebf8e55bf78814d9d66a7a21c35c171e4010dfc3888c031f193628",
+          "bytes": 8571
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol",
+          "sha256": "91e9d20515fa1516a9e9dd754b8a3ced5552f955b039dbe69d08c566fbd2e024",
+          "bytes": 5056
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "sha256": "fd84e5284eccc479268f0ef36b830019d4f7999ceb7959430d8d8d9e602dd4ef",
+          "bytes": 1520
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "sha256": "45b47dd617d02875a7e6c896d1842ff9d8362ab15b8180645f3f4b180d4f028f",
+          "bytes": 4588
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "sha256": "a39bc026ad6214e9ecd526bd4a1ddf9862d80bd4a9d0d031d9bafa4c3c147c0b",
+          "bytes": 864
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol",
+          "sha256": "88763a9a0b498ca738c9a1c0c33a56464e0e8a2ad466426fe10b01cd9e01e2ae",
+          "bytes": 10828
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol",
+          "sha256": "a4ce312be935b8c0f4ae8d96f8f2d3f445b1fa21fd981a273156b43e718382a0",
+          "bytes": 2902
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+          "sha256": "68bcca423fc72ec9625e219c9e36306c726a347e43f3711467c579bd3f6500c8",
+          "bytes": 716
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol",
+          "sha256": "6d6ffe69a38a39c69acde1dd5edb74f80cff046c4a66d1cd816b98ca741c9a43",
+          "bytes": 4028
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
+          "sha256": "b97515a88e75c313eacf0a27c9439ef371d86d4c2730d3b13076640942f813df",
+          "bytes": 2263
+        }
+      ]
+    },
+    {
+      "id": "term-dao",
+      "provider": "Sourcify",
+      "address": "0x52Af16664155608b845BE18aa29620EbF6eA2D3a",
+      "role": "normal_permissioned_arbitrary_action_executor_in_vulnerable_composition",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x52Af16664155608b845BE18aa29620EbF6eA2D3a?fields=all",
+      "retrieved_at": "2026-10-26T14:44:39.052549+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-dao/source-response.json",
+      "response_sha256": "ec93c8e5af8cdf8695389ac8ae4e6bb0ba2ff3428afad23036fd0e1e1d7412b0",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:19:07Z",
+      "runtime_match": "exact_match",
+      "creation_match": null,
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/dao/DAO.sol",
+          "original_source_path": "src/core/dao/DAO.sol",
+          "sha256": "b297272542509b9ce11181a8d43099e08831c8e9c73d590bfa4a719803a678df",
+          "bytes": 18777
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/dao/IDAO.sol",
+          "original_source_path": "src/core/dao/IDAO.sol",
+          "sha256": "64a0238414797c769bc9ce225e426a84d98b4544a1c42630b4e4748806eafffc",
+          "bytes": 7343
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/dao/IEIP4824.sol",
+          "original_source_path": "src/core/dao/IEIP4824.sol",
+          "sha256": "68c1a857025ed01830d73ce90c21adaf1839c939ae78aafa639fc97340feb4ba",
+          "bytes": 1041
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/utils/BitMap.sol",
+          "original_source_path": "src/core/utils/BitMap.sol",
+          "sha256": "0dcd77a39106cd26265606983705f08e41b41d49974c6ec1ca939fb9036455f1",
+          "bytes": 686
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/utils/CallbackHandler.sol",
+          "original_source_path": "src/core/utils/CallbackHandler.sol",
+          "sha256": "7cc549828389a6bcc3ebcc5d0904d123b0321c65a5bc460f37e4a36e90c13b81",
+          "bytes": 3460
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/permission/PermissionLib.sol",
+          "original_source_path": "src/core/permission/PermissionLib.sol",
+          "sha256": "7c7992a68e5ae7d8a16aedfcba238921cbda6a2f4e4a25aa3f4ec0f71eb51a43",
+          "bytes": 2019
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/utils/protocol/ProtocolVersion.sol",
+          "original_source_path": "src/utils/protocol/ProtocolVersion.sol",
+          "sha256": "fec53caa185b644445c4d9dca37bc061ea7dbc425034256d320120ed26f40d12",
+          "bytes": 725
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/utils/protocol/IProtocolVersion.sol",
+          "original_source_path": "src/utils/protocol/IProtocolVersion.sol",
+          "sha256": "cfe51e4ee25f25489c814c32fa8fc796601dc851371e18fb27a1161435e9f7e3",
+          "bytes": 540
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/permission/PermissionManager.sol",
+          "original_source_path": "src/core/permission/PermissionManager.sol",
+          "sha256": "fa30649a40de3faef4759493379c568346adef0bedc26cdb436e08a206a2724b",
+          "bytes": 20671
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/permission/PermissionCondition.sol",
+          "original_source_path": "src/core/permission/PermissionCondition.sol",
+          "sha256": "37644965c59fb7fa79df59902628abd91ca584d20ea80879680be0d84b476ec9",
+          "bytes": 987
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/src/core/permission/IPermissionCondition.sol",
+          "original_source_path": "src/core/permission/IPermissionCondition.sol",
+          "sha256": "c4e5eb994f713836d1ecae036c27d0d4b7da8b73a69c7efd5d8a6022a5de6344",
+          "bytes": 1018
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts/interfaces/IERC1271.sol",
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC1271.sol",
+          "sha256": "c981ecaf1c2ec77e3e47f146306d7e99c669b5e733b0adcfd3436c7f6a7a46b6",
+          "bytes": 666
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+          "sha256": "1d7d481b79fd54d957c9a0696f6227f7799fec01d8ba41f5c130a7cc6b4eddc9",
+          "bytes": 8282
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "98ce2984e449716f24043a8c11bbe969a6d34878b1d522b92c88d62708ba3376",
+          "bytes": 6629
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+          "sha256": "7517b26ac0cee066447b94cbf7df8ad5ce91cc6ddf0fd1e3425fe978889f5eb0",
+          "bytes": 4758
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+          "sha256": "05b696b46ca1be28e19dfba65ea71c3b3615bd39d19bfd8212864a16c54870fd",
+          "bytes": 2682
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+          "sha256": "4e09a7479aa3e7c313f8fc141c4c8fc04e0abfeb8754615ef7d78ec94c298b07",
+          "bytes": 2778
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+          "sha256": "e0ac7115916f0dce0a8e80769694736f3e674bdc5b2e5853964c82004b1e1cc5",
+          "bytes": 461
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
+          "sha256": "5321f224c08b59651968dde0db5abeec4ea0bdf371c7b0c25707e56b455882fe",
+          "bytes": 4107
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+          "sha256": "a94576fd98585c07b2a9725f7c89c910a3a1909a03f49ec2df465327c6a0ffc3",
+          "bytes": 890
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+          "sha256": "fd84e5284eccc479268f0ef36b830019d4f7999ceb7959430d8d8d9e602dd4ef",
+          "bytes": 1520
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+          "sha256": "45b47dd617d02875a7e6c896d1842ff9d8362ab15b8180645f3f4b180d4f028f",
+          "bytes": 4588
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+          "sha256": "a39bc026ad6214e9ecd526bd4a1ddf9862d80bd4a9d0d031d9bafa4c3c147c0b",
+          "bytes": 864
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+          "sha256": "f6c1a8b4512e9cc0168278c2a634b184fd86b1e39c7c283bcf34fb154236fc5d",
+          "bytes": 7837
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+          "sha256": "ad8f8e470e39cde97310b6366c8d440aaa000789a7b8c257587fc2075de7cff6",
+          "bytes": 998
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol",
+          "sha256": "7108589dbf9528c2ffe4f17fe489e8183be55c15b51af3b88c70252c13bac539",
+          "bytes": 2535
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165StorageUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165StorageUpgradeable.sol",
+          "sha256": "5ef3665bd422c1438927546269fe653a8ef1d0e164aa53b6bd99168705a76dcc",
+          "bytes": 1915
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-dao/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
+          "sha256": "b97515a88e75c313eacf0a27c9439ef371d86d4c2730d3b13076640942f813df",
+          "bytes": 2263
+        }
+      ]
+    },
+    {
+      "id": "term-roles",
+      "provider": "Sourcify",
+      "address": "0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84",
+      "role": "normal_roles_owner_route_with_overbroad_deployment_permissions",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84?fields=all",
+      "retrieved_at": "2026-10-26T14:44:37.791380+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-roles/source-response.json",
+      "response_sha256": "8677824d51d30840f425f6a7d929ab061527d49db3e87a366a633fdab648792f",
+      "chain_id": "1",
+      "verified_at": "2025-03-14T00:01:25Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0x2f38106d0b8175259ac00fa32c681582ec6954fb23ff64e508d130e59905336c",
+        "blockNumber": "21388325",
+        "transactionIndex": "41",
+        "deployer": "0x3210CF0892b794A9403f958FDB94AE2E13Ac451F"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/contracts/Roles.sol",
+          "original_source_path": "contracts/Roles.sol",
+          "sha256": "d2721bf908bf48411a0471570f1460c4328074e26783d57fd3e9f5c3b99c73c6",
+          "bytes": 14208
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+          "sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+          "bytes": 4687
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/contracts/Permissions.sol",
+          "original_source_path": "contracts/Permissions.sol",
+          "sha256": "29952bcebecfa8d7cdf15c8c9c7871c7540e17cab2dab7f7024fdd7bd512e11b",
+          "bytes": 34985
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/interfaces/IAvatar.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/interfaces/IAvatar.sol",
+          "sha256": "4bcd682c51f1565202a9b16fbdf51410301e76b0f86c8c86349ff4f0422f60da",
+          "bytes": 3043
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/core/Module.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/core/Module.sol",
+          "sha256": "c557a87f052b7f5f00d88a18ea4a7a6e2b62420ff41d2dd25c323c0b39831c46",
+          "bytes": 4322
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "original_source_path": "@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+          "bytes": 222
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/factory/FactoryFriendly.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/factory/FactoryFriendly.sol",
+          "sha256": "44cd0d1625d10dd3482d41cd3d6197df1a1d2e51ed6d78f9e63b2cbd3890866d",
+          "bytes": 427
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/guard/Guardable.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/guard/Guardable.sol",
+          "sha256": "6b359df3fb6906c4092d1f55c4890996d864ec4e12f820a906b7368012db7bee",
+          "bytes": 1097
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "sha256": "50be14ba1da013afb247752c368784ce5da4b62caac969280f6c6bcef7b07d33",
+          "bytes": 2510
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "e371ddabc7037582ee174eae18b32662bda7723e5664aed8a469fc0847a7a2b8",
+          "bytes": 1058
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "8954474eb8ba4a536daa0a690f24680587079d364172d9f965f367d2a9f25839",
+          "bytes": 1742
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/safe-contracts/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@gnosis.pm/safe-contracts/contracts/interfaces/IERC165.sol",
+          "sha256": "5aac96d8d1b2f7ffd09a7213ee7109a343b1a8617e9e899af2050a82d069cfa8",
+          "bytes": 660
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/guard/BaseGuard.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/guard/BaseGuard.sol",
+          "sha256": "39373f945892fc0a16ee7ec323a24f039ee480951aa19f49c7ae279342de3a17",
+          "bytes": 1312
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/interfaces/IGuard.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/interfaces/IGuard.sol",
+          "sha256": "4cbc6a20cd34b90ef2db9c36ef047551a37d353364d93798daf0bd32c95c1fe7",
+          "bytes": 587
+        }
+      ]
+    },
+    {
+      "id": "term-permissions",
+      "provider": "Sourcify",
+      "address": "0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb",
+      "role": "normal_linked_role_permission_library",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb?fields=all",
+      "retrieved_at": "2026-10-26T14:44:38.515170+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-permissions/source-response.json",
+      "response_sha256": "ab536a4bfbf0313e6bad89810d583baf3b6fd57367f736b0b78d7dc5c72a374c",
+      "chain_id": "1",
+      "verified_at": "2024-12-12T18:49:43Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x3796c4238793799e9971c50f2c537d306c7ac5ea91ce9f4c6da7103d93993747",
+        "blockNumber": "21388324",
+        "transactionIndex": "4",
+        "deployer": "0x3210CF0892b794A9403f958FDB94AE2E13Ac451F"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol",
+          "original_source_path": "contracts/Permissions.sol",
+          "sha256": "29952bcebecfa8d7cdf15c8c9c7871c7540e17cab2dab7f7024fdd7bd512e11b",
+          "bytes": 34985
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-permissions/@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "original_source_path": "@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+          "bytes": 222
+        }
+      ]
+    },
+    {
+      "id": "term-delay",
+      "provider": "Sourcify",
+      "address": "0xd54895B1121A2eE3f37b502F507631FA1331BED6",
+      "role": "normal_owner_controlled_delay_in_vulnerable_composition",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xd54895B1121A2eE3f37b502F507631FA1331BED6?fields=all",
+      "retrieved_at": "2026-10-26T14:44:38.240877+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-delay/source-response.json",
+      "response_sha256": "f490a27622b5a737cd7c60d54cf33195e578a296c08b163e65a6f28999cbbccb",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:37:12Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x605273a4ee09615a564367489cc56ba4980bcea893514e2b67586f13c2f61c44",
+        "blockNumber": "18205916",
+        "transactionIndex": "57",
+        "deployer": "0x53bcFaEd43441C7bB6149563eC11f756739C9f6A"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol",
+          "original_source_path": "contracts/Delay.sol",
+          "sha256": "6b1136b248646eec8927c4b6f9a5b11d3ce0863adbca7d3d2332f4fa425d26ae",
+          "bytes": 8525
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Module.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/core/Module.sol",
+          "sha256": "c557a87f052b7f5f00d88a18ea4a7a6e2b62420ff41d2dd25c323c0b39831c46",
+          "bytes": 4322
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+          "sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+          "bytes": 4687
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/guard/BaseGuard.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/guard/BaseGuard.sol",
+          "sha256": "39373f945892fc0a16ee7ec323a24f039ee480951aa19f49c7ae279342de3a17",
+          "bytes": 1312
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/guard/Guardable.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/guard/Guardable.sol",
+          "sha256": "6b359df3fb6906c4092d1f55c4890996d864ec4e12f820a906b7368012db7bee",
+          "bytes": 1097
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/interfaces/IGuard.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/interfaces/IGuard.sol",
+          "sha256": "4cbc6a20cd34b90ef2db9c36ef047551a37d353364d93798daf0bd32c95c1fe7",
+          "bytes": 587
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/interfaces/IAvatar.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/interfaces/IAvatar.sol",
+          "sha256": "4bcd682c51f1565202a9b16fbdf51410301e76b0f86c8c86349ff4f0422f60da",
+          "bytes": 3043
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "original_source_path": "@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+          "sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+          "bytes": 222
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/factory/FactoryFriendly.sol",
+          "original_source_path": "@gnosis.pm/zodiac/contracts/factory/FactoryFriendly.sol",
+          "sha256": "44cd0d1625d10dd3482d41cd3d6197df1a1d2e51ed6d78f9e63b2cbd3890866d",
+          "bytes": 427
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/safe-contracts/contracts/interfaces/IERC165.sol",
+          "original_source_path": "@gnosis.pm/safe-contracts/contracts/interfaces/IERC165.sol",
+          "sha256": "5aac96d8d1b2f7ffd09a7213ee7109a343b1a8617e9e899af2050a82d069cfa8",
+          "bytes": 660
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "e371ddabc7037582ee174eae18b32662bda7723e5664aed8a469fc0847a7a2b8",
+          "bytes": 1058
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "sha256": "50be14ba1da013afb247752c368784ce5da4b62caac969280f6c6bcef7b07d33",
+          "bytes": 2510
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "8954474eb8ba4a536daa0a690f24680587079d364172d9f965f367d2a9f25839",
+          "bytes": 1742
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts/contracts-upgradeable/access/OwnableUpgradeable.sol",
+          "sha256": "50be14ba1da013afb247752c368784ce5da4b62caac969280f6c6bcef7b07d33",
+          "bytes": 2510
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "original_source_path": "@openzeppelin/contracts/contracts-upgradeable/proxy/utils/Initializable.sol",
+          "sha256": "8954474eb8ba4a536daa0a690f24680587079d364172d9f965f367d2a9f25839",
+          "bytes": 1742
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "original_source_path": "@openzeppelin/contracts/contracts-upgradeable/utils/ContextUpgradeable.sol",
+          "sha256": "e371ddabc7037582ee174eae18b32662bda7723e5664aed8a469fc0847a7a2b8",
+          "bytes": 1058
+        }
+      ]
+    },
+    {
+      "id": "term-safe",
+      "provider": "Sourcify",
+      "address": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+      "role": "normal_enabled_module_execution_dependency",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552?fields=all",
+      "retrieved_at": "2026-10-26T14:45:47.850059+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-safe/source-response.json",
+      "response_sha256": "19cadfc9313ae43cfd2bd6d867c596b9a6cc21d77ce8eaa58a0fd0200b65dd97",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T11:21:32Z",
+      "runtime_match": "exact_match",
+      "creation_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x0b04589bdc11585fb98f270b1bfeff0fb3bbb3c56d35b104f62d8115d6f7c57f",
+        "blockNumber": "12504268",
+        "transactionIndex": "12",
+        "deployer": "0xD7Df5bf3B8d2bd159664dF54A30101d7FAF6cA26"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/GnosisSafe.sol",
+          "original_source_path": "contracts/GnosisSafe.sol",
+          "sha256": "744af6600164990c36b32ccac95d105280450d0f7aa159a7b99e870752e29f9b",
+          "bytes": 20251
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/Enum.sol",
+          "original_source_path": "contracts/common/Enum.sol",
+          "sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+          "bytes": 222
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/Executor.sol",
+          "original_source_path": "contracts/base/Executor.sol",
+          "sha256": "87c8c6cb45069e68dfb58c2347e69b43ab8b5a31f34adcf5c0705b9f595a7815",
+          "bytes": 884
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/Singleton.sol",
+          "original_source_path": "contracts/common/Singleton.sol",
+          "sha256": "f016efcb4d1a78cb316ab024bade9f14278169765995207e8d00a4261b2a588b",
+          "bytes": 596
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/GuardManager.sol",
+          "original_source_path": "contracts/base/GuardManager.sol",
+          "sha256": "30bdb9512f4304f815e923123d14c4cd1766c8a183ee12c4b9773c72c2c2ed25",
+          "bytes": 1639
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/OwnerManager.sol",
+          "original_source_path": "contracts/base/OwnerManager.sol",
+          "sha256": "ba9726f488471f69def4ca08c30dfc0fe033b19e2a55a825a8aa0e1d8c69ea19",
+          "bytes": 6708
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/ModuleManager.sol",
+          "original_source_path": "contracts/base/ModuleManager.sol",
+          "sha256": "63ac8b6e0556ab32dee207b168916751982f4dc20efb9544740f5e35ff3ce6a5",
+          "bytes": 6035
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/base/FallbackManager.sol",
+          "original_source_path": "contracts/base/FallbackManager.sol",
+          "sha256": "7ac83eac33c7020b80c024cbfb90df1087f9658b2eb68e050b11b0a13e1d011a",
+          "bytes": 2184
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/SelfAuthorized.sol",
+          "original_source_path": "contracts/common/SelfAuthorized.sol",
+          "sha256": "24764612bf5539179a07a7655ec6ccb22eab6ffdd0b7c77730c79e1995b64326",
+          "bytes": 478
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/SignatureDecoder.sol",
+          "original_source_path": "contracts/common/SignatureDecoder.sol",
+          "sha256": "e02f9ec7b1c9b704614715fd36b3604bba2acf42b1e8663f0c42e55f7fc18365",
+          "bytes": 1574
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/external/GnosisSafeMath.sol",
+          "original_source_path": "contracts/external/GnosisSafeMath.sol",
+          "sha256": "c2aa6bd7987121b67160c2b7a61dcc241d8c6f6082c8397ccf87fa896128b95d",
+          "bytes": 1477
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/StorageAccessible.sol",
+          "original_source_path": "contracts/common/StorageAccessible.sol",
+          "sha256": "4d162739165dab25175d65496846e14ef23cc1c3b25d16bfcc988862c5657c2c",
+          "bytes": 2229
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/EtherPaymentFallback.sol",
+          "original_source_path": "contracts/common/EtherPaymentFallback.sol",
+          "sha256": "cc288699c1632ca3f3aab7715265ae941570a27f8b11a64a830131bff13d72e3",
+          "bytes": 462
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/common/SecuredTokenTransfer.sol",
+          "original_source_path": "contracts/common/SecuredTokenTransfer.sol",
+          "sha256": "ae5b0c85a607fbe4963c3cfc5724e073cd33f418d4b491df41a5eacff7473113",
+          "bytes": 1451
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/interfaces/ISignatureValidator.sol",
+          "original_source_path": "contracts/interfaces/ISignatureValidator.sol",
+          "sha256": "1be7e26bbbe0dfdadf2fbb834c6f2c6c4acc8ad08eac17cfcccadd10d59d495d",
+          "bytes": 885
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/@openzeppelin/contracts/math/SafeMath.sol",
+          "original_source_path": "@openzeppelin/contracts/math/SafeMath.sol",
+          "sha256": "4a04d0a20a19e3ef1dcabae9cad9ba006430a4e7eec4d9b519db87999722c98a",
+          "bytes": 7225
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+          "sha256": "eff65ebfa1cad6260b4916ce5293ed6c7231a34d2899c04227578c172990a1f8",
+          "bytes": 10796
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "0573c2961569aa4906845d0cd428b5b7394956170054ceeaa8f8af96cd44875c",
+          "bytes": 2704
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/@openzeppelin/contracts/utils/Context.sol",
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "9a3d1e5be0f0ace13e2d9aa1d0a1c3a6574983983ad5de94fc412f878bf7fe89",
+          "bytes": 941
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/GnosisSafeL2.sol",
+          "original_source_path": "contracts/GnosisSafeL2.sol",
+          "sha256": "164ccdbfd4f861e3abe3829c2d072dd1fa161a2f9fcd1e3c794e4acf7125c3d1",
+          "bytes": 3612
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/accessors/SimulateTxAccessor.sol",
+          "original_source_path": "contracts/accessors/SimulateTxAccessor.sol",
+          "sha256": "fb6005fba9b2340cfa027629193d05775273caec793aa50ae0ab059df92a3c45",
+          "bytes": 1720
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/examples/guards/DebugTransactionGuard.sol",
+          "original_source_path": "contracts/examples/guards/DebugTransactionGuard.sol",
+          "sha256": "862ce7a2f8e4987d4cd84cb67c5ed3dcbfcf2644da9d38fa2bc30bc39ce50001",
+          "bytes": 2242
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/examples/guards/DelegateCallTransactionGuard.sol",
+          "original_source_path": "contracts/examples/guards/DelegateCallTransactionGuard.sol",
+          "sha256": "90b193e554edf111b1a18ef71b8f48a3f0f60255ae563e60dbc89cc49c33ce59",
+          "bytes": 1128
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/examples/guards/ReentrancyTransactionGuard.sol",
+          "original_source_path": "contracts/examples/guards/ReentrancyTransactionGuard.sol",
+          "sha256": "354eaaa965b96233d8093b1dd6012eff0f218d12011824172973489609a27dd6",
+          "bytes": 1436
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/examples/libraries/Migrate_1_3_0_to_1_2_0.sol",
+          "original_source_path": "contracts/examples/libraries/Migrate_1_3_0_to_1_2_0.sol",
+          "sha256": "18edb968d5aec3b071478350cbd8d4bbc78ee85894f85954f059127ec5cfff70",
+          "bytes": 1264
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/handler/CompatibilityFallbackHandler.sol",
+          "original_source_path": "contracts/handler/CompatibilityFallbackHandler.sol",
+          "sha256": "26eaf077e3909687254616fa8444c39f4e21a3bb6428587827144f09bb3d5772",
+          "bytes": 7416
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/handler/DefaultCallbackHandler.sol",
+          "original_source_path": "contracts/handler/DefaultCallbackHandler.sol",
+          "sha256": "ddac3c0ee56d1cbafc4a3a0292b62724618a570e2bc65f4e43c688e4fc7c442c",
+          "bytes": 1803
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/handler/HandlerContext.sol",
+          "original_source_path": "contracts/handler/HandlerContext.sol",
+          "sha256": "0c8dee700dd00207247d4bbaa166082e6f791fede2148c15d05955c1155a8e6d",
+          "bytes": 1248
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/interfaces/ERC1155TokenReceiver.sol",
+          "original_source_path": "contracts/interfaces/ERC1155TokenReceiver.sol",
+          "sha256": "d1494e93f168682072cf56ed138db8f9b2c2e8cf2876e891e2a1f6dd8844d60d",
+          "bytes": 2930
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/interfaces/ERC721TokenReceiver.sol",
+          "original_source_path": "contracts/interfaces/ERC721TokenReceiver.sol",
+          "sha256": "733adab60e7394e48b45db9d23b77737e935c3ac9b6213f857075a0cc05f28e6",
+          "bytes": 1115
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/interfaces/ERC777TokensRecipient.sol",
+          "original_source_path": "contracts/interfaces/ERC777TokensRecipient.sol",
+          "sha256": "8066d1dca9c745f99bb61b803d38ec8c365d6e508f8f89ddfe4fd6f6b723419d",
+          "bytes": 313
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/interfaces/IERC165.sol",
+          "original_source_path": "contracts/interfaces/IERC165.sol",
+          "sha256": "5aac96d8d1b2f7ffd09a7213ee7109a343b1a8617e9e899af2050a82d069cfa8",
+          "bytes": 660
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/libraries/CreateCall.sol",
+          "original_source_path": "contracts/libraries/CreateCall.sol",
+          "sha256": "061e278a190a1e6b835b15ce6fcaa3668248cf7586b2e90296564d8cca3fad6f",
+          "bytes": 1160
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/libraries/GnosisSafeStorage.sol",
+          "original_source_path": "contracts/libraries/GnosisSafeStorage.sol",
+          "sha256": "9080d679778820582ee960d05e3e0031a110afd8e29a3711a58ed07caff7a0b2",
+          "bytes": 794
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/libraries/MultiSend.sol",
+          "original_source_path": "contracts/libraries/MultiSend.sol",
+          "sha256": "2e7f7eef21541eb638c0d16af5d72d13a1c530624ed7266ac8602d062d4a5e10",
+          "bytes": 3482
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/libraries/MultiSendCallOnly.sol",
+          "original_source_path": "contracts/libraries/MultiSendCallOnly.sol",
+          "sha256": "9a0ee19d2015f80bcf3dea7f01d55da972d7b5f790e320e489a7dc8e96ee372b",
+          "bytes": 3458
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/libraries/SignMessageLib.sol",
+          "original_source_path": "contracts/libraries/SignMessageLib.sol",
+          "sha256": "eb869d5171c5d45cda7daa43f04e1f0b3693281f514897a3f5c9064de7ddc196",
+          "bytes": 1448
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/proxies/GnosisSafeProxy.sol",
+          "original_source_path": "contracts/proxies/GnosisSafeProxy.sol",
+          "sha256": "13a8cd723b5a4fa5585f04d1cda2d46c6b2b66e15769ba3c14852c59d3ab5a8d",
+          "bytes": 2010
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/proxies/GnosisSafeProxyFactory.sol",
+          "original_source_path": "contracts/proxies/GnosisSafeProxyFactory.sol",
+          "sha256": "2e58cab4388dcadd0da0dcd690d4152ea04913e2c8ded57ad659f5da0a8c857c",
+          "bytes": 5827
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/proxies/IProxyCreationCallback.sol",
+          "original_source_path": "contracts/proxies/IProxyCreationCallback.sol",
+          "sha256": "a22596645893245f4ce64fad041ac9025a77e44d1765f8e7fd99b0acb4efd5db",
+          "bytes": 308
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/test/ERC1155Token.sol",
+          "original_source_path": "contracts/test/ERC1155Token.sol",
+          "sha256": "e3cda68dd50237165ae0921886bc29e06ea3d88ee019acb7315f695101cb5475",
+          "bytes": 3740
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/test/ERC20Token.sol",
+          "original_source_path": "contracts/test/ERC20Token.sol",
+          "sha256": "426e046412cdec080abf595a6a9821f2d182027528bb31488d4e76d87f6ab133",
+          "bytes": 268
+        },
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-safe/contracts/test/TestHandler.sol",
+          "original_source_path": "contracts/test/TestHandler.sol",
+          "sha256": "dbea0d6eee2b074bfe90581f9dd06474a5d9d30addf1dc7ff5fef8a43294386c",
+          "bytes": 290
+        }
+      ]
+    },
+    {
+      "id": "term-vault",
+      "provider": "Sourcify",
+      "address": "0xd8063123BBA3B480569244AE66BFE72B6c84b00d",
+      "role": "victim_vault_authorized_strategy_and_debt_allocation",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xd8063123BBA3B480569244AE66BFE72B6c84b00d?fields=all",
+      "retrieved_at": "2026-10-26T14:44:37.822685+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-vault/source-response.json",
+      "response_sha256": "5cc51925bdd40a0ac7b99a9a15935251a556b31c3c27817c74d207aa26ca44f5",
+      "chain_id": "1",
+      "verified_at": "2025-01-14T23:12:59Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0xd8024c84ffa5fbcdea53e7d3b23056bc10075e792d6bd0ebedc8c506667e9a6b",
+        "blockNumber": "21087100",
+        "transactionIndex": "135",
+        "deployer": "0x78d4BDEBc0B4140f01BAB63085F94A5a7A1294f2"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+          "original_source_path": "YearnV3Vault.vy",
+          "sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+          "bytes": 80545
+        }
+      ]
+    },
+    {
+      "id": "term-weth",
+      "provider": "Sourcify",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "role": "normal_payout_asset",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2?fields=all",
+      "retrieved_at": "2026-10-26T14:56:48.289907+00:00",
+      "retrieval_time_basis": "filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory",
+      "response_path": "source-bundles/term-weth/source-response.json",
+      "response_sha256": "c1565968c9dc78155ad1ddbf274e7c008ec5ddd4d89fffc6fba4884f336979b1",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T13:28:37Z",
+      "runtime_match": "match",
+      "creation_match": "match",
+      "deployment": {
+        "transactionHash": "0xb95343413e459a0f97461812111254163ae53467855c0d73e0f1e7c5b8442fa3",
+        "blockNumber": "4719568",
+        "transactionIndex": "85",
+        "deployer": "0x4F26FfBe5F04ED43630fdC30A87638d53D0b0876"
+      },
+      "source_files": [
+        {
+          "path": "../../dataset/20260823_TermLabs/source-bundles/term-weth/WETH9.sol",
+          "original_source_path": "WETH9.sol",
+          "sha256": "4a4205fff097f9364ebba3c8a32670a63fccffb39baddc0046a6da1ba398c767",
+          "bytes": 38401
+        }
+      ]
+    }
+  ],
+  "decompilations": [
+    {
+      "id": "term-attacker-strategy-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "attacker_strategy_supplementary_context",
+      "address": "0x184f2E57b4cE135181FA2A2166AC394339016338",
+      "chain_id": 1,
+      "source_path": "../batches/20261026_x96_y5/term/attacker-strategy.ethervm.decompiled.sol",
+      "original_file_path": "../batches/20261026_x96_y5/term/attacker-strategy.ethervm.decompiled.sol",
+      "target_path": "decompiled/attacker-strategy.ethervm.decompiled.sol",
+      "raw_response_path": "../batches/20261026_x96_y5/term/attacker-strategy-ethervm-response.html",
+      "request_path": "../batches/20261026_x96_y5/term/attacker-strategy-ethervm-request.txt",
+      "runtime_path": "../batches/20261026_x96_y5/term/blockscout-attacker-strategy-creation-trace.json",
+      "runtime_hex_path": "../batches/20261026_x96_y5/term/attacker-strategy-creation-runtime.hex",
+      "historical_block": 25772662,
+      "creation_transaction": "0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60",
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "Returned page does not report decompiler engine version; frontend library versions are not substituted.",
+      "sha256": "d5db55fb22f322d706336cfa1ec0471cbbab3d9c1da02091bee825b13b49e758",
+      "runtime_sha256": "04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9",
+      "raw_response_sha256": "4d5cd72fc873838267834f4e20275e6ca8eef4adc07b41d010a134f979e4d75c",
+      "runtime_bytes": 2497,
+      "decompiled_error_comment_count": 0,
+      "retrieved_at_utc": "2026-10-26T14:54:07.204787+00:00",
+      "retrieved_at_basis": "local downloaded response file last-write time",
+      "bytecode_binding": "Submitted original creation runtime matches current explorer runtime; all 2497 returned disassembly bytes match submitted runtime. Archive eth_getCode at attack block unavailable; this is not an independent attack-block code dump.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "provenance_path": "../batches/20261026_x96_y5/term/decompilation-provenance.json",
+      "path": "../../dataset/20260823_TermLabs/decompiled/attacker-strategy.ethervm.decompiled.sol"
+    }
+  ],
+  "batch_evidence_root": "../batches/20261026_x96_y5",
+  "batch_retrieval_inventory": "../batches/20261026_x96_y5/retrieval_inventory.json",
+  "roles": [
+    {
+      "address": "0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2",
+      "role": "受害 ETH Meta Vault，持有 WETH 并向策略分配债务；Vyper Yearn V3 实现"
+    },
+    {
+      "address": "0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0",
+      "role": "LP 封装投票代币，只统计已经主动封装的 LP"
+    },
+    {
+      "address": "0x213771693A4411446b4ECce5bce4a405778b2171",
+      "role": "TokenVoting 提案/快照投票插件"
+    },
+    {
+      "address": "0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6",
+      "role": "执行通过提案的任意动作，具有 Roles 模块身份与 role 1"
+    },
+    {
+      "address": "0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75",
+      "role": "Delay owner；通过成员/目标权限检查后直接调用 Delay"
+    },
+    {
+      "address": "0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33",
+      "role": "模块队列与冷却时间；本次先被 owner 调整，再允许 DAO 排队"
+    },
+    {
+      "address": "0x46DA347d1Db6EdCA62BF6Cd5892Dc284fC938613",
+      "role": "金库管理 Safe，已启用 Delay 模块；无需另外提供 owner 签名即可走模块入口"
+    },
+    {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "role": "普通结算资产，已验证原始源码"
+    },
+    {
+      "address": "0x64E477800051EFb06Ae4086f4b258b270668b4dF",
+      "role": "攻击者代理辅助合约，包装/提案/投票/执行；实现未开源且反编译超时"
+    },
+    {
+      "address": "0x184f2E57b4cE135181FA2A2166AC394339016338",
+      "role": "恶意策略，接收金库授权后拉走并转发 WETH；仅补充反编译"
+    },
+    {
+      "address": "0xa908b3472d76e7744baB0A5911768a4a6300612B",
+      "role": "攻击交易发起人和最终 WETH 收款 EOA"
+    }
+  ],
+  "evidence_gaps": [
+    "完整 JSON-RPC receipt 查询未得到可用结果；使用 Blockscout 原始 topics/data 日志、交易成功状态和完整 rawtrace 交叉核对，不把 null 或错误响应称为成功回执。",
+    "未取得全部历史 Roles 存储与投票参数。历史调用和正常检查源码证明 DAO 的 role 1 实际获准执行三个 Delay 管理动作；不推断该角色是否使用通配目标、具体 selector 白名单或某种参数规则，也不声称完整支持率/参与率配置。",
+    "历史 rawtrace 绑定了本案受害治理代理的实际实现地址；源码匹配等级由 Sourcify 提供，未本地编译或重新做完整部署字节码验证。部分 creationMatch 为 null，不能写成所有合约都是完整创建匹配。",
+    "官方治理文档描述正常七日延时和 LP 否决流程，但该现行页面本身不是攻击前状态快照；此前 cooldown 精确值没有重读。实际三项管理调用、设置为零和同交易执行由历史 trace 证明。",
+    "四个普通子策略及其 Aave/Morpho 深层依赖未形成完整原始源码包；本案不把它们列为漏洞点。原始 trace、WETH 日志和 DebtUpdated 证明这次提款确实发生。获取初始 LP 的路由器源码也未完整归档。",
+    "恶意策略原始源码不可得；高层反编译仅作辅助，原始创建 runtime 与当前 explorer runtime 一致且返回反汇编完整对上输入。未获得攻击区块独立 eth_getCode，不能声称完整证明期间从无变更。",
+    "攻击 helper 实现无已验证原始源码；ethervm 提交 runtime 和按地址查询均超时，无高层输出。保留实际失败页，不用手写伪代码或反汇编冒充高层反编译。历史 wrap/proposal/vote/execute rawtrace 仍展示其实际调用边界。",
+    "本案独立核验 ETH Meta Vault 资金流；未逐笔核验其他 USDC vault 的全部损失、追回与净额，未核定事发时美元价格。loss_usd 留空。",
+    "展示的调用链不需要管理员私钥泄露即可完成；这不是对所有链外事件或密钥安全的全面取证结论。"
+  ],
+  "source_vs_history": "Provider source verification, historical deployment binding, state reads and transaction observations are separate; see case document and batch evidence."
+}

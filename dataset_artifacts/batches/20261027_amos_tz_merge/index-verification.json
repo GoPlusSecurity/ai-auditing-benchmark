@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "reference": "INDEX",
+  "commit": null,
+  "parents": [
+    "abee605182854ba42b846f5674903f89a386d8f1",
+    "14920dcd252a0f9dee40453f4b6e885708979f78"
+  ],
+  "raw_blobs_compared_to_worktree": 5225,
+  "physical_delivery_files_present_in_git": 5218,
+  "case_counts": {
+    "dataset": 65,
+    "dataset_artifacts": 58
+  },
+  "unmerged_paths": 0,
+  "untracked_paths": 0,
+  "new_sources_byte_exact": 776,
+  "verification_method": "raw Git blob object IDs computed from physical bytes; no autocrlf, clean/smudge or text normalization"
+}

@@ -20,7 +20,7 @@
 
 问题发生在 `claim()` 大额取走资产之后，紧接着调用 `mint()` 的过程中。
 
-第一处问题在 [mint 的资产计算](../../dataset/benchmark_complete/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L974)：它按“当前资产数量 × 申请份额数 ÷ 当前总份额数”计算应交资产，并直接舍掉不足一个最小单位的部分。当合约只剩一点点资产时，结果可能是零。
+第一处问题在 [mint 的资产计算](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L974)：它按“当前资产数量 × 申请份额数 ÷ 当前总份额数”计算应交资产，并直接舍掉不足一个最小单位的部分。当合约只剩一点点资产时，结果可能是零。
 
 第二处问题是：**应交资产都算成零之后，合约仍然发出用户申请的非零份额。** 它执行五种资产的 `transferFrom()`，每种都只要求转入零，然后继续增加用户份额和总份额数。
 
@@ -122,7 +122,7 @@ flowchart TD
    totalSupply -= _day
    ```
 
-   这里的 `_day` 是反编译器起的名字，在这个函数里表示**交回的份额数量**。对应位置在 [claim 的份额扣减代码](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L416)。
+   这里的 `_day` 是反编译器起的名字，在这个函数里表示**交回的份额数量**。对应位置在 [claim 的份额扣减代码](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L1264)。
 
    用白话说，这几行就是：
 
@@ -143,7 +143,7 @@ flowchart TD
    **单独看这一步，攻击者还没有解决还款问题。** 如果必须把刚取出的资产完整交回去才能重新获得份额，那么基本没有便宜可占。后面的 `mint()` 漏洞让他绕过了这笔成本。
 3. **调用 `mint(2)`：申请的份额大于零，应交的资产却被算成零。**
 
-   `mint()` 的关键计算在 [资产转入数量的计算代码](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L143)：
+   `mint()` 的关键计算在 [资产转入数量的计算代码](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L991)：
 
    ```text
    unknowna622ee7c[stor9[idx]].field_256 * _wad / totalSupply
@@ -221,7 +221,7 @@ flowchart TD
 
    这是一笔零金额转账，可以正常成功。转账工具检查的是“这次转账有没有失败”，不会替指数合约判断“发这些新份额，究竟应该收到多少价值”。
 
-   **更关键的问题在收款之后。** [mint 末尾的代码](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L403)仍然执行：
+   **更关键的问题在收款之后。** [mint 末尾的代码](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L1251)仍然执行：
 
    ```python
    totalSupply += _wad
@@ -271,7 +271,7 @@ flowchart TD
        revert(...)
    ```
 
-   它能防止除数为零，但**总份额为 3 可以通过检查**。对应位置在 [mint 的总份额检查](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L138)。
+   它能防止除数为零，但**总份额为 3 可以通过检查**。对应位置在 [mint 的总份额检查](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L986)。
 
    这次实际交易共进行了 **37 次 `mint()`**：
 
@@ -364,13 +364,13 @@ flowchart TD
 
 ## 对应代码在哪里
 
-下面的链接分别指向完整版和精简版，便于对照上面的操作步骤。
+下面的链接指向完整源码，便于对照上面的操作步骤。
 
-| 阅读点                     | 完整版                                                                                                           | 精简版                                                                                                             |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| 供应量、余额及篮子账本存储 | [storage 声明](../../dataset/benchmark_complete/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L6) | [storage 声明](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L6) |
-| mint 的比例扣款与份额增发  | [mint](../../dataset/benchmark_complete/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L974)       | [mint](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L126)       |
-| claim 的份额销毁及篮子转出 | [claim](../../dataset/benchmark_complete/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L1264)     | [claim](../../dataset/benchmark_simplified/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L416)      |
+| 阅读点 | 完整版 |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 供应量、余额及篮子账本存储 | [storage 声明](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L6) |
+| mint 的比例扣款与份额增发 | [mint](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L974) |
+| claim 的份额销毁及篮子转出 | [claim](../../dataset/20260615_ThetanutsFi_decompiled/ThetanutsIndex.decompiled.pan#L1264) |
 
 ## 资料说明
 
@@ -378,6 +378,6 @@ flowchart TD
 
 数据集保存原表的 105,000 美元；实际已换出的 USDC、另外三种未换出的资产，以及其他白帽保护资金，需要分别统计。本说明没有重放攻击，也没有证明伪代码与链上字节码完全一致。
 
-- [源码性质说明](../../dataset_artifacts/benchmark_complete/20260615_ThetanutsFi_decompiled/SOURCE.md)、[机器可读来源记录](../../dataset_artifacts/benchmark_complete/20260615_ThetanutsFi_decompiled/SOURCE.json)、[原始反编译页面](https://etherscan.io/bytecode-decompiler?a=0xC2C3AE0a7b405058558C9b4a63b373486CB86Ac7)。
+- [源码性质说明](../../dataset_artifacts/20260615_ThetanutsFi_decompiled/SOURCE.md)、[机器可读来源记录](../../dataset_artifacts/20260615_ThetanutsFi_decompiled/SOURCE.json)、[原始反编译页面](https://etherscan.io/bytecode-decompiler?a=0xC2C3AE0a7b405058558C9b4a63b373486CB86Ac7)。
 - [固定版本调用记录](https://github.com/DarkNavySecurity/web3-exploit-analysis/blob/0dedb932869fff89899d75a3e6e2315cd87768bd/artifacts/analysis_0xbba9f138fe39503bfd1aa62932dbd6ab35d37d23d48e4b7bf2988a9d5dc39fec/trace_callTracer.json)。
 - [Blockaid 原始告警](https://x.com/blockaid_/status/2066524884583215322?s=46)；[DarkNavy 事件分析](https://www.darknavy.org/web3/exploits/thetanuts-legacy-index-vault-zero-cost-remint/)。

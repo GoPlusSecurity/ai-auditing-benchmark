@@ -9,6 +9,7 @@ BASE=Path(__file__).resolve().parent
 ROOT=BASE.parents[2]
 sys.path.insert(0,str(ROOT/'docs/cases/sources'))
 import validate_20261002_batch as shared
+from archive_maintenance import append_missing_rows
 BATCH='20261026_x96_y5'
 OLD='20260820_Allbridge_CCTP'
 EXTS={'.sol','.vy','.yul','.huff','.vyi'}
@@ -30,13 +31,10 @@ def safe_name(name):
  p=Path(name)
  assert not p.is_absolute() and '..' not in p.parts and ':' not in name,name
  return p
-def checksum(cid,view):
- art=ROOT/'dataset_artifacts'/view/cid;code=ROOT/'dataset'/view/cid
+def checksum(cid):
+ art=ROOT/'dataset_artifacts'/cid;code=ROOT/'dataset'/cid
  fs=[p for tree in [art,code] for p in tree.rglob('*') if p.is_file() and p.name!='SHA256SUMS']
  newline='\n'
- if cid==OLD:
-  original=subprocess.check_output(['git','show',load(BASE/'baseline.json')['head']+':'+rel(art/'SHA256SUMS',ROOT)],cwd=ROOT)
-  if b'\r\n' in original:newline='\r\n'
  (art/'SHA256SUMS').write_bytes(''.join(sha(p)+'  '+rel(p,art)+newline for p in sorted(fs,key=lambda p:rel(p,art))).encode())
 
 SKIPS={
@@ -75,7 +73,7 @@ def main():
   fields=dict(zip(rows[1],rows[row-1]));case=byrow.get(row)
   item={'row':row,'sheet_event':fields['target (社媒 or Addr)'],'references':[fields['original_link'].strip()]}
   if row==95:
-   item.update(event='Allbridge CCTP',case_id=OLD,qualifies=True,status='reused_existing',reason='本批重新下载并比较核心Messenger/Router原始源码30文件；既有哈希、精简9段与文档复核通过，复用原记录。',source_qualification='public_original_vulnerable_source_refreshed',evidence='allbridge_requalification.json')
+   item.update(event='Allbridge CCTP',case_id=OLD,qualifies=True,status='reused_existing',reason='本批重新下载并比较核心Messenger/Router原始源码30文件；既有原始源码哈希与文档复核通过，复用原记录。',source_qualification='public_original_vulnerable_source_refreshed',evidence='allbridge_requalification.json')
   elif case:
    item.update(event=case['metadata']['project_cn'],case_id=case['case_id'],qualifies=True,status='new',reason='取得与核心缺陷有关的权威公开原始源码，正常依赖、历史绑定、付款与未开源辅助合约边界见案例说明。',source_qualification='public_original_vulnerable_source_obtained',evidence=rel(resolve_batch(case.get('draft_path',case['case_id'])),BASE))
   else:
@@ -89,14 +87,15 @@ def main():
  assert [c['row'] for c in selected]==[95,92,91,89,85]
  # All gates above run before formal writes.
  params={**snapshot['parameters'],'x':96,'y':5,'actual_scan_range':[min(processed),max(processed)],'processing_order':processed,'selected_source_rows':[c['row'] for c in selected],'source_url':snapshot['source_url'],'export_url':snapshot['export_url'],'retrieved_at':snapshot['retrieved_at'],'timezone':snapshot['timezone'],'raw_export_sha256':sha(raw),'raw_export':raw.name}
- dump(BASE/'snapshot.json',{'parameters':params,'header':rows[1],'parsed_record_count':len(rows),'raw_export_sha256':sha(raw),'structure':snapshot['structure'],'rows':[{'row':r,'cells':rows[r-1],'fields':dict(zip(rows[1],rows[r-1]))} for r in processed]})
+ dump(BASE/'snapshot-current.json',{'parameters':params,'header':rows[1],'parsed_record_count':len(rows),'raw_export_sha256':sha(raw),'structure':snapshot['structure'],'rows':[{'row':r,'cells':rows[r-1],'fields':dict(zip(rows[1],rows[r-1]))} for r in processed]})
  counts={'scanned_rows':len(processed),'qualifying_source_rows':len(selected),'new_cases':len(specs),'reused_existing_cases':1,'completed_existing_cases':0,'duplicate_rows_merged':0,'skipped_rows':len(processed)-len(selected)}
- dump(BASE/'results.json',{'parameters':params,'counts':counts,'rows':decisions,'included_cases':[{'case_id':s['case_id'],'source_rows':[s['row']],'status':s['status']} for s in selected],'formal_write_gate':'five independently source-qualified rows reached before dataset/CSV writes','decompilation_policy':'public online outputs only, explicitly separate from original source; no local execution of contracts or PoCs'})
- source_count=slice_count=decomp_count=0
+ dump(BASE/'results-current.json',{'parameters':params,'counts':counts,'rows':decisions,'included_cases':[{'case_id':s['case_id'],'source_rows':[s['row']],'status':s['status']} for s in selected],'formal_write_gate':'five independently source-qualified rows reached before dataset/CSV writes','decompilation_policy':'public online outputs only, explicitly separate from original source; no local execution of contracts or PoCs'})
+ source_count=decomp_count=0
  for c in specs:
-  cid=c['case_id'];full=ROOT/'dataset/benchmark_complete'/cid;small=ROOT/'dataset/benchmark_simplified'/cid
-  art=ROOT/'dataset_artifacts/benchmark_complete'/cid;sa=ROOT/'dataset_artifacts/benchmark_simplified'/cid
-  art.mkdir(parents=True,exist_ok=True);sa.mkdir(parents=True,exist_ok=True)
+  cid=c['case_id'];full=ROOT/'dataset'/cid
+  art=ROOT/'dataset_artifacts'/cid
+  art.mkdir(parents=True,exist_ok=True)
+  prior_bundles={b['id']:b for b in load(art/'provenance.json').get('bundles',[])} if (art/'provenance.json').exists() else {}
   bundles=[];lookup={}
   for s in c['sources']:
    original=resolve_batch(s['response_path']);d=load(original);bundle=s['id'];ba=art/'source-bundles'/bundle;ba.mkdir(parents=True,exist_ok=True)
@@ -109,62 +108,32 @@ def main():
     records.append({'path':rel(p,art),'original_source_path':name,'sha256':sha(p),'bytes':p.stat().st_size});source_count+=1
    for name,key in [('abi.json','abi'),('standard-input.json','stdJsonInput'),('compiler-settings.json','compilation')]:
     if key in d:dump(ba/name,d[key])
-   bundles.append({**{k:v for k,v in s.items() if k not in ['response_path','path','bundle_dir']},'kind':'public_original_source','url':s.get('url',f"https://sourcify.dev/server/v2/contract/{d['chainId']}/{d['address']}?fields=all"),'retrieved_at':dt.datetime.fromtimestamp(original.stat().st_mtime,dt.timezone.utc).isoformat(),'retrieval_time_basis':'filesystem_write_time_after_download; request-level timestamps where available in batch retrieval inventory','response_path':rel(ba/'source-response.json',art),'response_sha256':sha(ba/'source-response.json'),'chain_id':d['chainId'],'verified_at':d.get('verifiedAt'),'runtime_match':d.get('runtimeMatch'),'creation_match':d.get('creationMatch'),'deployment':d.get('deployment'),'source_files':records})
-  slices=[]
-  for bundle,files in c['slices'].items():
-   for name,ranges in files.items():
-    source=lookup[bundle,name];lines=source.read_bytes().splitlines(keepends=True)
-    if ranges=='all':ranges=[[1,len(lines)]]
-    for start,end in ranges:
-     assert 1<=start<=end<=len(lines),(cid,bundle,name,start,end,len(lines))
-     n=safe_name(name);target=small/'slices'/bundle/n.parent/(f'{n.stem}_L{start}_L{end}'+n.suffix)
-     target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b''.join(lines[start-1:end]))
-     slices.append({'path':rel(target,sa),'complete_path':rel(source,sa),'original_start_line':start,'original_end_line':end,'sha256':sha(target),'complete_source_sha256':sha(source),'kind':'original_source_verbatim_slice'});slice_count+=1
+   bundles.append({**{k:v for k,v in s.items() if k not in ['response_path','path','bundle_dir']},'kind':'public_original_source','url':s.get('url',f"https://sourcify.dev/server/v2/contract/{d['chainId']}/{d['address']}?fields=all"),'retrieved_at':s.get('retrieved_at',prior_bundles.get(bundle,{}).get('retrieved_at')),'retrieval_time_basis':s.get('retrieval_time_basis',prior_bundles.get(bundle,{}).get('retrieval_time_basis','archived provenance; null timestamp means unavailable')),'response_path':rel(ba/'source-response.json',art),'response_sha256':sha(ba/'source-response.json'),'chain_id':d['chainId'],'verified_at':d.get('verifiedAt'),'runtime_match':d.get('runtimeMatch'),'creation_match':d.get('creationMatch'),'deployment':d.get('deployment'),'source_files':records})
   decomp=[]
   for d in c.get('decompilations',[]):
    original=resolve_batch(d.get('source_path',d.get('original_file_path')));name=d.get('target_path','decompiled/'+original.name)
    target=full/safe_name(name);assert target.suffix=='.sol' and 'decompiled' in target.name
    target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(original,target);decomp_count+=1
-   # The entire unmodified high-level output is retained when recovery errors make pruning unsafe.
-   sm=small/'decompiled'/target.name;sm.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(target,sm)
-   slices.append({'path':rel(sm,sa),'complete_path':rel(target,sa),'original_start_line':1,'original_end_line':len(target.read_bytes().splitlines(keepends=True)),'sha256':sha(sm),'complete_source_sha256':sha(target),'kind':'unmodified_decompiler_output_not_original_source','scope':'whole recovery output; preserve all recovered calls and tool error comments'});slice_count+=1
    rec={**d,'path':rel(target,art),'sha256':sha(target)}
    for k in ['source_path','original_file_path','raw_response_path','runtime_path','runtime_hex_path','request_path','provenance_path']:
     if d.get(k):rec[k]=rel(resolve_batch(d[k]),art)
    decomp.append(rec)
   dump(art/'provenance.json',{'case_id':cid,'path_base':'this artifact directory','bundles':bundles,'decompilations':decomp,'batch_evidence_root':rel(BASE,art),'batch_retrieval_inventory':rel(BASE/'retrieval_inventory.json',art),'roles':c.get('roles',[]),'evidence_gaps':c.get('evidence_gaps',[]),'source_vs_history':'Provider source verification, historical deployment binding, state reads and transaction observations are separate; see case document and batch evidence.'})
-  dump(sa/'slice_manifest.json',{'case_id':cid,'path_base':'this artifact directory','no_logic_rewritten':True,'standalone_compilation':'not_claimed','slices':slices})
-  meta={**c['metadata'],'case_id':cid,'event_date':rows[c['row']-1][5],'original_rows':[c['row']],'public_original_vulnerable_source':True,'source_sheet_snapshot':'../../batches/'+BATCH+'/snapshot.json','batch_results':'../../batches/'+BATCH+'/results.json','case_document':'../../../docs/cases/'+cid+'.md','evidence_gaps':c.get('evidence_gaps',[]),'local_compilation':'not_run','deployment':'not_run','fork_replay':'not_run','transactions_sent':False,'upstream_scripts_executed':False,'source_provenance_kind':'original_verified_source_with_separately_labelled_online_decompilation' if decomp else 'original_verified_source'}
-  for view,a in [('benchmark_complete',art),('benchmark_simplified',sa)]:
-   dump(a/'case_metadata.json',{**meta,'view':view,'source_provenance':'provenance.json' if view=='benchmark_complete' else 'slice_manifest.json'})
-   (a/'SOURCE.md').write_text('# '+cid+'\n\n源码在[代码目录](../../../dataset/'+view+'/'+cid+')；本目录保存来源和配套材料。\n\n- [共同中文案例说明](../../../docs/cases/'+cid+'.md)\n- [本批固定快照](../../batches/'+BATCH+'/snapshot.json)\n- [本批逐行结果](../../batches/'+BATCH+'/results.json)\n- [来源或切片清单]('+('provenance.json' if view=='benchmark_complete' else 'slice_manifest.json')+')\n\n公开原始源码直接来自权威验证站点。原始响应、编译配置、ABI、历史读取和工具失败另存 artifacts。取得原码、提供方匹配、历史代码比对、历史状态和复现各自记录，不能互相替代。所有源码字节保持不变；精简版只取连续原文，不保证独立编译。\n\n'+('decompiled/ 下是公开在线工具生成的高层反编译输出，不是原始源码；恢复错误与版本未披露限制保留在清单和案例文档中。\n\n' if decomp else '')+'未执行上游代码或 PoC，未本地编译、部署、分叉重放或发送交易。\n',encoding='utf-8')
+  meta={**c['metadata'],'case_id':cid,'event_date':rows[c['row']-1][5],'original_rows':[c['row']],'public_original_vulnerable_source':True,'source_sheet_snapshot':'../batches/'+BATCH+'/snapshot.json','batch_results':'../batches/'+BATCH+'/results.json','case_document':'../../docs/cases/'+cid+'.md','evidence_gaps':c.get('evidence_gaps',[]),'local_compilation':'not_run','deployment':'not_run','fork_replay':'not_run','transactions_sent':False,'upstream_scripts_executed':False,'source_provenance_kind':'original_verified_source_with_separately_labelled_online_decompilation' if decomp else 'original_verified_source'}
+  dump(art/'case_metadata.json',{**meta,'source_provenance':'provenance.json'})
+  (art/'SOURCE.md').write_text('# '+cid+'\n\n[完整源码](../../dataset/'+cid+'/)、[案例说明](../../docs/cases/'+cid+'.md)、[来源清单](provenance.json)。\n\n原始源码和明确标记的在线反编译输出分别记录；失败与历史绑定限制见来源清单及案例说明。未编译、部署或重放。\n',encoding='utf-8')
   doc=resolve_batch(c['draft_path']);shutil.copyfile(doc,ROOT/'docs/cases'/f'{cid}.md')
-  checksum(cid,'benchmark_complete');checksum(cid,'benchmark_simplified')
+  checksum(cid)
  # Reuse existing case without duplicate CSV, preserving prior snapshot identity.
- for view in ['benchmark_complete','benchmark_simplified']:
-  a=ROOT/'dataset_artifacts'/view/OLD;p=a/'case_metadata.json';m=load(p)
-  appearances=[v for v in m.get('batch_appearances',[]) if v.get('batch')!=BATCH]
-  appearances.append({'batch':BATCH,'source_rows':[95],'action':'requalified_and_reused','snapshot':'../../batches/'+BATCH+'/snapshot.json','evidence':'../../batches/'+BATCH+'/allbridge_requalification.json'})
-  m['batch_appearances']=appearances;dump(p,m);checksum(OLD,view)
+ a=ROOT/'dataset_artifacts'/OLD;p=a/'case_metadata.json';m=load(p)
+ appearances=[v for v in m.get('batch_appearances',[]) if v.get('batch')!=BATCH]
+ appearances.append({'batch':BATCH,'source_rows':[95],'action':'requalified_and_reused','snapshot':'../batches/'+BATCH+'/snapshot.json','evidence':'../batches/'+BATCH+'/allbridge_requalification.json'})
+ m['batch_appearances']=appearances;dump(p,m);checksum(OLD)
  doc=ROOT/'docs/cases'/f'{OLD}.md';s=doc.read_text('utf-8');marker='<!-- '+BATCH+' -->'
- paragraph=marker+'\n\n2026-10-26 批次 X=96、Y=5 重新定位为固定快照第 95 行。已重新下载核心 Messenger 与 Router 权威原始源码，30 个文件与既有版本逐字一致，完整/精简校验及 9 个切片复核通过，因此复用本例和两份 CSV 的原记录，不新增重复事件。旧批次第 88 行仍仅表示原来的快照位置。[本批复核记录](../../dataset_artifacts/batches/'+BATCH+'/allbridge_requalification.json)。\n\n'
+ paragraph=marker+'\n\n2026-10-26 批次 X=96、Y=5 重新定位为固定快照第 95 行。已重新下载核心 Messenger 与 Router 权威原始源码，30 个文件与既有版本逐字一致，历史复核已通过，因此复用本例和两份 CSV 的原记录，不新增重复事件。旧批次第 88 行仍仅表示原来的快照位置。[本批复核记录](../../dataset_artifacts/batches/'+BATCH+'/allbridge_requalification.json)。\n\n'
  if marker not in s:s=s.split('\n',1)[0]+'\n\n'+paragraph+s.split('\n',1)[1].lstrip('\n')
  doc.write_text(s,encoding='utf-8')
- # Keep every old CSV byte, only append sorted new rows. Idempotent across reruns.
- append={};old_manifest=load(BASE/'csv_append_manifest.json') if (BASE/'csv_append_manifest.json').exists() else {}
- for language,scale in [('cn',10000),('en',1000)]:
-  p=ROOT/f'ai-auditing-benchmark_{language}.csv';data=p.read_bytes()
-  n=old_manifest.get(language,{}).get('baseline_bytes',len(data))
-  assert hashlib.sha256(data[:n]).hexdigest()==baseline['files'][p.name]
-  assert data[:n].endswith(b'\r\n')
-  records=[]
-  for c in sorted(specs,key=lambda c:c['case_id']):
-   m=load(ROOT/'dataset_artifacts/benchmark_complete'/c['case_id']/'case_metadata.json')
-   assert not any(u.split('/')[-1] in data[:n].decode('utf-8') for u in m['tx_urls']),('unexpected duplicate',c['case_id'])
-   records.append([m['event_date'].replace('-','.'),m['project_'+language],m['vulnerability_'+language],m['detail_'+language],'\n'.join(m['tx_urls']),'\n'.join(m['vulnerable_contract_urls']),'' if m['loss_usd'] is None else format(Decimal(m['loss_usd'])/scale,'f')])
-  out=io.StringIO(newline='');csv.writer(out,lineterminator='\r\n').writerows(records);p.write_bytes(data[:n]+out.getvalue().encode('utf-8'))
-  append[language]={'path':p.name,'baseline_bytes':n,'baseline_sha256':baseline['files'][p.name],'appended_records':records}
- dump(BASE/'csv_append_manifest.json',append)
+ dump(BASE/'csv_append_current.json',append_missing_rows(ROOT,[c['case_id'] for c in specs]))
  # Index change is confined to one new section.
  p=ROOT/'docs/cases/README.md';old=p.read_text('utf-8');heading='## 2026-10-26 按 X=96、Y=5 向上筛选'
  section=heading+'\n\n使用本次重新下载并固定的 CSV，从第 96 行逆序检查，到第 85 行找到第五条合格记录，扫描 **85–96，共 12 行**。新增 **4** 例，复用 **1** 例，跳过 **7** 行；第 95 行 Allbridge 已重新取得核心原码并复核。\n\n| 源表行 | 案例 | 处理 |\n| --- | --- | --- |\n'
@@ -173,6 +142,6 @@ def main():
  if heading in old:
   start=old.index(heading);end=old.find('\n## ',start+len(heading));old=old[:start]+old[end+1:]
  offset=old.index('## ');p.write_text(old[:offset]+section+old[offset:],encoding='utf-8')
- dump(BASE/'materialization.json',{'counts':counts,'source_files':source_count,'slice_files_including_decompiled':slice_count,'decompiled_files':decomp_count,'csv_new_rows_each':len(specs),'case_ids':[s['case_id'] for s in selected]})
- print(json.dumps(load(BASE/'materialization.json'),ensure_ascii=False))
+ dump(BASE/'materialization-current.json',{'counts':counts,'source_files':source_count,'decompiled_files':decomp_count,'csv_new_rows_each':len(specs),'case_ids':[s['case_id'] for s in selected]})
+ print(json.dumps(load(BASE/'materialization-current.json'),ensure_ascii=False))
 if __name__=='__main__':main()

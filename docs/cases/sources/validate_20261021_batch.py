@@ -12,6 +12,7 @@ from pathlib import Path
 import subprocess
 import sys
 import validate_20261002_batch as shared
+from archive_maintenance import validate_csv_records
 
 ROOT=Path(__file__).resolve().parents[3]
 BASE=ROOT/'dataset_artifacts/batches/20261021_x112_y5'
@@ -38,8 +39,8 @@ def validate():
     sources=slices=bundles=evidence=links=literal_count=0
     metadata={}
     for case in cases:
-        cid=case['case_id'];art=ROOT/'dataset_artifacts/benchmark_complete'/cid;simple=ROOT/'dataset_artifacts/benchmark_simplified'/cid
-        code=ROOT/'dataset/benchmark_complete'/cid;short=ROOT/'dataset/benchmark_simplified'/cid
+        cid=case['case_id'];art=ROOT/'dataset_artifacts'/cid
+        code=ROOT/'dataset'/cid
         meta=load(art/'case_metadata.json');metadata[cid]=meta
         require(meta['public_original_vulnerable_source'] and not meta['requires_decompilation_for_core_vulnerable_logic'],'original vulnerable source gate not met')
         require(meta['event_date']==rows[case['row']-1][5] and cid[:8]==meta['event_date'].replace('-',''),'date differs from source snapshot')
@@ -64,58 +65,17 @@ def validate():
         require(original_paths=={p.resolve() for p in code.rglob('*') if p.is_file()},'unrecorded complete source files')
         for record in prov['evidence']:
             target=(art/record['path']).resolve();require(target.is_relative_to(art.resolve()) and sha(target)==record['sha256'],'evidence hash/path differs');evidence+=1
-        manifest=load(simple/'slice_manifest.json');slice_paths=set()
-        require(manifest['no_logic_rewritten'],'slice rewriting flag')
-        for segment in manifest['slices']:
-            small=(simple/segment['path']).resolve();full=(simple/segment['complete_path']).resolve();slice_paths.add(small)
-            require(full in original_paths and small.is_relative_to(short.resolve()),'slice source/case differs')
-            start,end=segment['original_start_line'],segment['original_end_line'];lines=full.read_bytes().splitlines(keepends=True)
-            require(1<=start<=end<=len(lines),'slice interval out of range')
-            require(small.read_bytes()==b''.join(lines[start-1:end]),'slice is not byte-exact continuous original lines')
-            require(sha(small)==segment['sha256'] and sha(full)==segment['complete_source_sha256'],'slice digest differs');slices+=1
-        require(slice_paths=={p.resolve() for p in short.rglob('*') if p.is_file()},'stale or unrecorded simplified files')
-        joined='\n'.join(p.read_text('utf-8') for p in slice_paths)
+        joined='\n'.join(p.read_text('utf-8') for p in original_paths)
         for literal in case['core_requirements']:
             require(literal in joined,'missing causal source: '+cid+': '+literal);literal_count+=1
-        sm=load(simple/'case_metadata.json')
-        for field in ('case_id','event_date','tx_urls','vulnerable_contract_urls','loss_usd','original_rows','verification_status'):
-            require(sm[field]==meta[field],'complete/simplified metadata differ: '+field)
         document=ROOT/'docs/cases'/f'{cid}.md';text=document.read_text('utf-8')
         require(text.count('```')%2==0 and '```mermaid\n' in text,'unclosed code block or missing Mermaid')
         require(all(t in text for t in ['背景','正常','错误','条件','步骤','资金','限制']),'case document missing required explanation')
         links+=shared.validate_local_links(document)
-        for a in (art,simple):
-            require(f'../../../docs/cases/{cid}.md' in (a/'SOURCE.md').read_text('utf-8'),'source views do not link to common doc')
+        for a in (art,):
+            require(f'../../docs/cases/{cid}.md' in (a/'SOURCE.md').read_text('utf-8'),'source views do not link to common doc')
             links+=shared.validate_local_links(a/'SOURCE.md');shared.check_sums(a)
-    append=load(BASE/'csv_append_manifest.json')
-    for language,scale in [('cn',10000),('en',1000)]:
-        entry=append[language];data=(ROOT/entry['path']).read_bytes();size=entry['baseline_bytes']
-        require(hashlib.sha256(data[:size]).hexdigest()==entry['baseline_sha256'],'pre-existing CSV bytes changed')
-        actual=list(csv.reader(io.StringIO(data[size:].decode('utf-8'),newline='')));expected=[]
-        for cid in sorted(ids):
-            m=metadata[cid];expected.append([m['event_date'].replace('-','.'),m['project_'+language],m['vulnerability_'+language],m['detail_'+language],'\n'.join(m['tx_urls']),'\n'.join(m['vulnerable_contract_urls']),'' if m['loss_usd'] is None else format(Decimal(m['loss_usd'])/scale,'f')])
-        require(actual==expected==entry['appended_records'],'CSV append/order/unit conversion differs')
-        parsed=shared.read_csv(ROOT/entry['path']);require(all(len(row)==7 for row in parsed),'CSV seven columns changed')
-        require(len(parsed)-1==entry['baseline_event_count']+len(set(ids)),'CSV count differs')
-        for row in actual:require(sum(r[4]==row[4] for r in parsed[1:])==1,'duplicate focal transaction')
-    baseline=load(BASE/'baseline.json');allow={'README.md','README_cn.md','docs/cases/README.md','ai-auditing-benchmark_cn.csv','ai-auditing-benchmark_en.csv'}
-    changed=[];unchanged=old_source_count=0
-    for name,digest in baseline['files'].items():
-        path=ROOT/name;require(path.is_file(),'baseline file disappeared: '+name)
-        current=sha(path)
-        if current!=digest:require(name in allow,'unrelated baseline file changed: '+name);changed.append(name)
-        else:unchanged+=1
-        if name.startswith('dataset/'):require(current==digest,'old source bytes changed');old_source_count+=1
-    new_prefixes=['dataset_artifacts/batches/20261021_x112_y5/']+[f'{tree}/{view}/{cid}/' for tree in ['dataset','dataset_artifacts'] for view in ['benchmark_complete','benchmark_simplified'] for cid in ids]
-    new_paths={f'docs/cases/{cid}.md' for cid in ids}|{'docs/cases/sources/validate_20261021_batch.py','docs/cases/sources/test_20261021_batch.py'}
-    checked_paths=0
-    for item in subprocess.check_output(['git','status','--porcelain=v1','-z','--untracked-files=all'],cwd=ROOT).decode('utf-8').split('\0'):
-        if not item:continue
-        if item[:2]=='??':require(item[3:] in new_paths or any(item[3:].startswith(prefix) for prefix in new_prefixes),'new file outside scope: '+item[3:]);checked_paths+=1
-    for view in ['benchmark_complete','benchmark_simplified']:
-        prior={Path(n).parts[2] for n in baseline['files'] if n.startswith('dataset/'+view+'/')}
-        current={p.name for p in (ROOT/'dataset'/view).iterdir() if p.is_dir()}
-        require(current-prior==set(ids),'new source case dirs differ')
+    validate_csv_records(ROOT,ids)
     for record in load(BASE/'screening_manifest.json')['files']:
         require(sha(BASE/record['path'])==record['sha256'],'screening archive changed')
     comparison=load(BASE/'pool_runtime_comparison.json');reference=comparison['reference']
@@ -144,10 +104,11 @@ def validate():
     require(Decimal(d['0xaa119f7442ecc28b9a8f236707ada8362cff24ff'])+Decimal(d['0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0'])+Decimal(d['0x4e65fe4dba92790696d040ac24aa414708f5c0ab'])==0,'Allbridge net outflow/fee/profit do not reconcile')
     layout=shared.validate_dataset_layout(ROOT)
     require(layout['dataset_files']==layout['source_files'],'dataset contains non-source')
-    return {'status':'passed','validated_at':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(),'parameters':{'x':parameters['x'],'y':parameters['y']},'actual_scan_range':parameters['actual_scan_range'],'counts':result['counts'],'case_ids':ids,'raw_export_sha256':sha(raw),'checks':{'source_bundles':bundles,'original_source_files_compared':sources,'byte_exact_continuous_slices':slices,'evidence_hashes':evidence,'semantic_source_literals':literal_count,'case_links':links,'unchanged_baseline_files':unchanged,'pre_existing_source_files_unchanged':old_source_count,'changed_baseline_files':changed,'new_paths_scoped':checked_paths,'csv_events_each':len(shared.read_csv(ROOT/'ai-auditing-benchmark_cn.csv'))-1,'independent_raw_receipt_or_trace_decoding':'passed','current_pool_runtime_byte_comparisons':len(comparison['targets']),'local_decompilation':'prohibited_not_run'},'whole_archive_layout':layout,'not_claimed':{'local_compilation':'not_run','fork_replay':'not_run','complete_pre_attack_state':'not_reconstructed','fox_historical_proxy_slots':'RPC missing trie node','complete_internal_traces':'USM only; remaining four cases receipts and public analysis'}}
+    return {'status':'passed','validated_at':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(),'parameters':{'x':parameters['x'],'y':parameters['y']},'actual_scan_range':parameters['actual_scan_range'],'counts':result['counts'],'case_ids':ids,'raw_export_sha256':sha(raw),'checks':{'source_bundles':bundles,'original_source_files_compared':sources,'evidence_hashes':evidence,'semantic_source_literals':literal_count,'case_links':links,'csv_events_each':len(shared.read_csv(ROOT/'ai-auditing-benchmark_cn.csv'))-1,'independent_raw_receipt_or_trace_decoding':'passed','current_pool_runtime_byte_comparisons':len(comparison['targets']),'local_decompilation':'prohibited_not_run'},'whole_archive_layout':layout,'not_claimed':{'local_compilation':'not_run','fork_replay':'not_run','complete_pre_attack_state':'not_reconstructed','fox_historical_proxy_slots':'RPC missing trie node','complete_internal_traces':'USM only; remaining four cases receipts and public analysis'}}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args()
+    if args.output: require(args.output.resolve()!=(BASE/'validation.json').resolve(),'historical validation.json is immutable')
     if args.output and not args.output.exists():args.output.write_text('{"status":"in_progress"}\n',encoding='utf-8')
     report=validate();rendered=json.dumps(report,ensure_ascii=False,indent=2)+'\n'
     if args.output:args.output.write_bytes(rendered.encode('utf-8'))
