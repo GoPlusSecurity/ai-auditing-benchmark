@@ -1,0 +1,42 @@
+{
+  "case_id": "20260803_MOKE",
+  "project_cn": "MOKE（释放与 LP 分红模块）",
+  "project_en": "MOKE (release and LP dividend modules)",
+  "vulnerability_cn": "可操纵现货价放大释放量，陈旧 LP 记录重复领取分红",
+  "vulnerability_en": "Manipulable spot-price release combined with stale LP dividend records",
+  "detail_cn": "MokeRelease 以两组即时储备换算已归属的 USDT 额度，攻击时 PriceSettled 为 0.000594140821297791 USDT/MOKE，4 次领取共移出 43,860,308.980417278429035188 MOKE。MokeLPDividend 在同步当前 LP 余额前，先用旧 userLPRecord 结算分红；回执记录 65 个旧 LP 记录清零后仍领款（64 笔同额、1 笔较小），分配 1,664.616180024096154954 BNB。已归档关键原始源码和回执；未取得完整内部跟踪，未重放。源表 8 月 3 日对应交易 8 月 2 日 UTC；美元估值口径不同，金额留空。",
+  "detail_en": "MokeRelease converts vested USDT quotas using two live reserve ratios. PriceSettled was 0.000594140821297791 USDT/MOKE; four claims released 43,860,308.980417278429035188 MOKE. MokeLPDividend accrues against the old userLPRecord before replacing it with current LP ownership. The receipt records 65 stale LP positions (64 equal and one smaller) resetting to zero while claiming dividends from a 1,664.616180024096154954 BNB distribution. Core original source and receipt are archived; full internal traces and replay were not obtained. The sheet date is August 3, versus August 2 UTC on chain. Conflicting USD valuations are left blank.",
+  "loss_usd": null,
+  "loss_scope": "Source sheet reports USD 907700; primary disclosure and transaction-based estimates use different prices and gross/net scopes. Exact token amounts are retained; no unified USD valuation is asserted.",
+  "event_date": "2026-08-03",
+  "original_rows": [
+    101
+  ],
+  "tx_urls": [
+    "https://bscscan.com/tx/0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377#code",
+    "https://bscscan.com/address/0x684d722ebf8980f49492f631f56765dd4fb302a7#code",
+    "https://bscscan.com/address/0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a#code"
+  ],
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "source_sheet_snapshot": "../../batches/20261021_x112_y5/snapshot.json",
+  "batch_results": "../../batches/20261021_x112_y5/results.json",
+  "case_document": "../../../docs/cases/20260803_MOKE.md",
+  "verification_status": {
+    "original_source": "acquired_hashed_compared_to_provider_response",
+    "historical_call_targets": "receipt_emitters_observed; internal calls not independently traced",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": false,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "local_decompilation": "prohibited_not_run",
+    "online_decompilation": "not_required_for_included_core_logic"
+  },
+  "view": "benchmark_simplified",
+  "source_provenance": "slice_manifest.json"
+}

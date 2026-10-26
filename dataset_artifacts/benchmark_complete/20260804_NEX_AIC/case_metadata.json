@@ -1,0 +1,40 @@
+{
+  "case_id": "20260804_NEX_AIC",
+  "project_cn": "NEX / AIC",
+  "project_en": "NEX / AIC",
+  "vulnerability_cn": "路由器分支重复扣账使 skim 耗尽 NEX 储备",
+  "vulnerability_en": "Router branch double-debits transfers and corrupts reserves through skim",
+  "detail_cn": "NEX._transfer 在涉及路由器时调用一次父转账后未返回，结尾再次转账。攻击者向 NEX/AIC 池补入带卖出税的 NEX，再 skim 到路由器；回执中连续两笔同额 31,739,425.952813599235352140 NEX 从池子转出，sync 后以少量 NEX 兑换 83,261,448.443378062678937598 AIC。池子净流出 40,279,208.819696511790081586 AIC，WBNB 退出量 32.361267289208020008。已取得两代币原始源码和回执；无完整内部跟踪、未重放。源表日期为 8 月 4 日，交易为 8 月 3 日 UTC；19,000 美元与其他估值不一致，金额留空。",
+  "detail_en": "NEX._transfer calls the parent transfer inside the router branch, then falls through to another parent transfer. After a taxed NEX donation, skim to the router debits the pair twice: the receipt contains consecutive transfers of 31,739,425.952813599235352140 NEX each. After sync, a small NEX input buys 83,261,448.443378062678937598 AIC. Net pair outflow was 40,279,208.819696511790081586 AIC; the WBNB exit was 32.361267289208020008. Original token source and receipt are archived; full internal tracing and replay were not performed. The sheet date is August 4, versus August 3 UTC. The USD 19000 estimate conflicts with other valuations, so loss is blank.",
+  "loss_usd": null,
+  "loss_scope": "The sheet reports USD 19000; observed conversion produced 21503.921643594504179252 BSC USDC before conversion to WBNB. No common valuation timestamp or aggregate loss basis was established.",
+  "event_date": "2026-08-04",
+  "original_rows": [
+    100
+  ],
+  "tx_urls": [
+    "https://bscscan.com/tx/0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9#code"
+  ],
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "source_sheet_snapshot": "../../batches/20261021_x112_y5/snapshot.json",
+  "batch_results": "../../batches/20261021_x112_y5/results.json",
+  "case_document": "../../../docs/cases/20260804_NEX_AIC.md",
+  "verification_status": {
+    "original_source": "acquired_hashed_compared_to_provider_response",
+    "historical_call_targets": "receipt_emitters_observed; internal calls not independently traced",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": false,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "local_decompilation": "prohibited_not_run",
+    "online_decompilation": "not_required_for_included_core_logic"
+  },
+  "view": "benchmark_complete",
+  "source_provenance": "provenance.json"
+}

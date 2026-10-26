@@ -1,0 +1,1559 @@
+{
+  "files": [
+    {
+      "path": "screening/aic-token-source.json",
+      "sha256": "c928998bba2cb064e4866f56ca3dbe6b7b075ad064c06060f65ceb9fcf24372a",
+      "bytes": 213928
+    },
+    {
+      "path": "screening/allbridge-block.json",
+      "sha256": "ab895f752dd01c3c63ca55bd08aac5a3c621c88f06c2764e5c4c2b76084d3d79",
+      "bytes": 13580
+    },
+    {
+      "path": "screening/allbridge-circle-implementation-source.json",
+      "sha256": "8500ff58072cd31ea56993331b73137560d8469e75293885b2b6404a828bc27d",
+      "bytes": 638140
+    },
+    {
+      "path": "screening/allbridge-circle-proxy-source.json",
+      "sha256": "97a97cbbafce2a8d9fb12d8e3a396644eea7403e16392eb84048c092a55e877f",
+      "bytes": 104824
+    },
+    {
+      "path": "screening/allbridge-messenger-source.json",
+      "sha256": "f70e0a8fe1d419550ddeb68b55a27f3c4e2372099773629493a279f10ae4ffa2",
+      "bytes": 254712
+    },
+    {
+      "path": "screening/allbridge-poc-commit.json",
+      "sha256": "58b55d7e6b8410fcf1379c959e134e82d51e5982cef33d7c140379beeabc19b2",
+      "bytes": 3409
+    },
+    {
+      "path": "screening/allbridge-primary-report.html",
+      "sha256": "2f0ef0e2a8991127d84b590606b424e3fd6f4f2d7a4b6f1f8df39a7718a68d84",
+      "bytes": 103952
+    },
+    {
+      "path": "screening/allbridge-public-reference-poc.sol",
+      "sha256": "345888575909721c513f465caf01e4db4375851b74e98cdd0eba880319af811f",
+      "bytes": 15896
+    },
+    {
+      "path": "screening/allbridge-receipt.json",
+      "sha256": "7747bc33583d8fd39b3d9b794f6ea60e5141cb46be02b881b5f645877ad8072f",
+      "bytes": 9310
+    },
+    {
+      "path": "screening/allbridge-router-source.json",
+      "sha256": "dacb3fc2df7de341244c5a67b5c65c075950783d8d38d4c331b4d22b73810c0f",
+      "bytes": 375581
+    },
+    {
+      "path": "screening/allbridge-transaction.json",
+      "sha256": "fbf22bbd4791e5958e585d510b926233371220f2ce6f603b2f5e4bf56f44bac8",
+      "bytes": 8487
+    },
+    {
+      "path": "screening/analysis-index1.html",
+      "sha256": "57f3d5a3be7c8a6b51577cba1161459cc46d34583139d49db0faff055ca4fefa",
+      "bytes": 24811
+    },
+    {
+      "path": "screening/analysis-index2.html",
+      "sha256": "f68ff7d134db3e27f980078ef42af5ea1f7808d430a68c43f4ca0f6f2ebf8b70",
+      "bytes": 24712
+    },
+    {
+      "path": "screening/analysis-index3.html",
+      "sha256": "c8b32a1ecf63cffb6eef2271e284a78564ce97535604198fc48f99a7678ef915",
+      "bytes": 25005
+    },
+    {
+      "path": "screening/base-call-receipt.json",
+      "sha256": "b86841366f9f09c1ab574de8f6880a155d7185ffc4fa6a89d77fab0800fd2298",
+      "bytes": 3776
+    },
+    {
+      "path": "screening/base-call-transaction.json",
+      "sha256": "8f2cadc3f608d8af50f92027a3b54ae211cf9b1e11a818c6e8728bd97f1e8b79",
+      "bytes": 9559
+    },
+    {
+      "path": "screening/coreum-analysis.html",
+      "sha256": "f74798c4fbd7af8a422886a0c5305d456dbba9a8d1a702380734bd19383822b8",
+      "bytes": 249808
+    },
+    {
+      "path": "screening/decoded-sources/aic-token/contracts/flatten/nexus_aic.sol",
+      "sha256": "5a5c1a07c815972b788d237c07f230627682dc8673669e94dfbf5a86eb8af433",
+      "bytes": 41017
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/memview-sol/contracts/SafeMath.sol",
+      "sha256": "67b73aa1957ee3e77c8e8f185f2d4b147dedef6bf19a34026a8167e35ee7cd70",
+      "bytes": 2728
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/memview-sol/contracts/TypedMemView.sol",
+      "sha256": "e8772d54d8d8b89991bcea4f9d7a28407de9c49d7d3d826b55be432e0b75c0b5",
+      "bytes": 31365
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/cryptography/ECDSA.sol",
+      "sha256": "0c3c8f0e880bfb11298ab86b2863e7a6ce8c85e443fbf4998b8ed3b32739c853",
+      "bytes": 3906
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+      "sha256": "4a04d0a20a19e3ef1dcabae9cad9ba006430a4e7eec4d9b519db87999722c98a",
+      "bytes": 7225
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "0573c2961569aa4906845d0cd428b5b7394956170054ceeaa8f8af96cd44875c",
+      "bytes": 2704
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+      "sha256": "eea796f96939e7dd6119de00941717ce5772d8a942b184f5e48d2b962d0ab655",
+      "bytes": 3721
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "sha256": "11ad5e3e21434e00c4ceba1f5a977b7a68bdd7d16b849276ce4ff4495129eec7",
+      "bytes": 7819
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "9a3d1e5be0f0ace13e2d9aa1d0a1c3a6574983983ad5de94fc412f878bf7fe89",
+      "bytes": 941
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/EnumerableSet.sol",
+      "sha256": "c8b73a000476872a00f6153d66be31a4a99b7565068f05336129748bfad704ea",
+      "bytes": 9388
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/interfaces/IReceiver.sol",
+      "sha256": "aad2f61e40599de54ea5297c822f5d1c4cfc0fbb43b176b6c4b76897f860424d",
+      "bytes": 1202
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/interfaces/v2/IMessageHandlerV2.sol",
+      "sha256": "0ad3e1686b59f16c79a114c10153aaa4c23684c77b5ab1a4770242220ab0d852",
+      "bytes": 2272
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/interfaces/v2/IMessageTransmitterV2.sol",
+      "sha256": "a6be814462bdcb5608fee66bb59044632c1079eee97b8de3c5c2101f5ea76fdb",
+      "bytes": 985
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/interfaces/v2/IReceiverV2.sol",
+      "sha256": "1b5e7a7ce9acfab166337690efd39b871cd43c70b56d74e9a714d974c6c80bd7",
+      "bytes": 934
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/interfaces/v2/IRelayerV2.sol",
+      "sha256": "b19d1873f266ff31feb3d14668727cd8be3bdc6e685fc97c7eb575e6eae2a9c5",
+      "bytes": 1969
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/messages/v2/AddressUtils.sol",
+      "sha256": "a619d6eacbc686df5dfa4eaa712c7d500b3033aba27d392ea005ee82159f5ee6",
+      "bytes": 1605
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/messages/v2/MessageV2.sol",
+      "sha256": "eda28ca9d890c26ad32badfdbc1f8569e1ffece0fb8568987d45cf124cccbbae",
+      "bytes": 6747
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/proxy/Initializable.sol",
+      "sha256": "43cdd64a5463f718ab4cb1dbb9a350a2a60a359dd7879e738a19fbbd27eab6c7",
+      "bytes": 7983
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/Attestable.sol",
+      "sha256": "2e97e082a853d86cbd6796136b8ade2f383a2245acb41dcade4b04c9a54f6c65",
+      "bytes": 11425
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/Ownable.sol",
+      "sha256": "360bb6855548425902964527a04dfab8e1c87b3722c0241296bc6aa4c86226a6",
+      "bytes": 3138
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/Ownable2Step.sol",
+      "sha256": "c93fbe6d3e97a6eceb4c90d59b091718e65d20e94eadf4dabd00cd031b6703f8",
+      "bytes": 2866
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/Pausable.sol",
+      "sha256": "01304cbe1eb52c1568b68fc9fdc427e3b82fa7a4d85df418e3a187225759cbe8",
+      "bytes": 2704
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/Rescuable.sol",
+      "sha256": "4efbae25b7485ceb8e59192335632736e24f5a0304edef44f33a02b39db3e350",
+      "bytes": 2751
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/roles/v2/AttestableV2.sol",
+      "sha256": "fdad4aabd542493db53c0f3d86a363b5beede6713151cb47cdca978bb200fe4f",
+      "bytes": 1478
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/v2/BaseMessageTransmitter.sol",
+      "sha256": "5a68980143673d291987894b0b54ad6ab5924f80735d8ace7dbf40dbaac1ebe0",
+      "bytes": 3402
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/v2/FinalityThresholds.sol",
+      "sha256": "bce770ff4fb92fcc93b2bec3b5cf59742aec68cd0a2d58cfa4a1111cef19cd08",
+      "bytes": 1083
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol",
+      "sha256": "b78a554bf191acbc4991ac47ddbd70fc92f11a127b063e051148514f09bd0714",
+      "bytes": 11809
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/src/CCTPTokenMessenger.sol",
+      "sha256": "1ee080f7eb55edf862ef9d9ad1a1a79f047988afa6a6b579d6a1ea87b912b52b",
+      "bytes": 7473
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/src/ChainGasUsage.sol",
+      "sha256": "59b254f0a03082a2e356736c10060c6312a24297803d23d6993d4bdbe0ae753a",
+      "bytes": 2171
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/src/interfaces/IGasOracle.sol",
+      "sha256": "c593662224bb92adc9c3696a6179a3c200b1d7f0a331a4fcf29f43715dcb5d74",
+      "bytes": 2059
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/src/interfaces/IGasUsage.sol",
+      "sha256": "102aa122b7aff234c50a7e9e46b1589e70cddd7156bab8b7234efeb5ad01d98b",
+      "bytes": 623
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-messenger/src/interfaces/ITokenMessenger.sol",
+      "sha256": "237e5e811202b7e946a120ca985230826477cc19c74201c8d5c86dd0b80caabc",
+      "bytes": 750
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/ChainGasUsage.sol",
+      "sha256": "59b254f0a03082a2e356736c10060c6312a24297803d23d6993d4bdbe0ae753a",
+      "bytes": 2171
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/interfaces/IGasOracle.sol",
+      "sha256": "c593662224bb92adc9c3696a6179a3c200b1d7f0a331a4fcf29f43715dcb5d74",
+      "bytes": 2059
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/interfaces/IGasUsage.sol",
+      "sha256": "102aa122b7aff234c50a7e9e46b1589e70cddd7156bab8b7234efeb5ad01d98b",
+      "bytes": 623
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/interfaces/ISwap.sol",
+      "sha256": "583a903e2a5e885aaca2bbe24e408781134b56c9e7b5c7062a99ab376d276aa5",
+      "bytes": 439
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/interfaces/ITokenMessenger.sol",
+      "sha256": "237e5e811202b7e946a120ca985230826477cc19c74201c8d5c86dd0b80caabc",
+      "bytes": 750
+    },
+    {
+      "path": "screening/decoded-sources/allbridge-router/src/Router.sol",
+      "sha256": "730230f3e42f3c228b1baa548187be36733d91b41a43cd9c53b710cadaedef9f",
+      "bytes": 14593
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/fox-actual-token/project/contracts/Fox.sol",
+      "sha256": "6c95831c25394712ad246ccd5b17e2de933423d054cccef8ec7e920f44590bc9",
+      "bytes": 4036
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+      "sha256": "d20bb6bb32dd1fdb895914012ad08dc1e4bbd66df2e75a02c1ca97d884df70ed",
+      "bytes": 4046
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+      "sha256": "caf06b4c93bbc1d54eb772e76e949bd4a2520c535cc591d07e57cbafaf90b2fd",
+      "bytes": 1215
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+      "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+      "bytes": 9279
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/project/contracts/FoxLpBondsPool.sol",
+      "sha256": "9d0e492c589860c28112720c37f9101aed84d285d4a371df1e17a4dea84ef99a",
+      "bytes": 7300
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds/project/contracts/FoxPoolBase.sol",
+      "sha256": "0f6c1a516c8aec7c4b4c0b61d99592b9a8fc58944f5a5587d59e0fa797867fa7",
+      "bytes": 14426
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+      "sha256": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+      "bytes": 637
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+      "sha256": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+      "bytes": 473
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+      "sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+      "bytes": 2636
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+      "sha256": "a89ba2032ab25959c6fde1e508ebf8f966ff632703d3ef79684f578a8fa8033f",
+      "bytes": 6260
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+      "sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+      "bytes": 2697
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+      "sha256": "4da9a90b1c8b45fdab7d73d8cf81f51cf7d990657ee4e3f943492c3bf0e4c2f1",
+      "bytes": 1965
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "sha256": "58c759fe76057e1cefa8909b446357aae5cac8a8ba7e6401650208d1b0481508",
+      "bytes": 6547
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+      "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+      "bytes": 6803
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+      "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+      "bytes": 896
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+      "sha256": "e128cbe9c6c406d5a42c26e4079c0a95b369ce552f2d0c3dfd2fcb836c5708f2",
+      "bytes": 5547
+    },
+    {
+      "path": "screening/decoded-sources/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+      "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+      "bytes": 4182
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+      "sha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630",
+      "bytes": 879
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "sha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011",
+      "bytes": 450
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "sha256": "f64dc961f262436fc9fd3235f16a8495fd43c8f1d98d0a750a376ea8c8d5365d",
+      "bytes": 1291
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "sha256": "a137681e196c44eaf1b819384a9633aef5cee10954ff1301138557cab2169dac",
+      "bytes": 6514
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+      "sha256": "b3b79c95884570b4d01629e13985aea8a3c71bc37c257e1ea7fae9f23cffe8c4",
+      "bytes": 3247
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "sha256": "36e855d6e7d1c09586002f8711b5c850c5ce36a73a50590e39b1cb099ee8702c",
+      "bytes": 5119
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "sha256": "8160a4242e8a7d487d940814e5279d934e81f0436689132a4e73394bab084a6d",
+      "bytes": 9159
+    },
+    {
+      "path": "screening/decoded-sources/fox-token/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "sha256": "7583bd6ad3fdd5160823f090beb6b1519f54436d73ea7b7b4051b5d0758d533d",
+      "bytes": 2671
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+      "sha256": "d20bb6bb32dd1fdb895914012ad08dc1e4bbd66df2e75a02c1ca97d884df70ed",
+      "bytes": 4046
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+      "sha256": "caf06b4c93bbc1d54eb772e76e949bd4a2520c535cc591d07e57cbafaf90b2fd",
+      "bytes": 1215
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+      "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+      "bytes": 9279
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury/project/contracts/Treasury.sol",
+      "sha256": "6f35c3bc2a5234301dedc13f19cd7b585258d212a5462cbb89eb1089694f91d0",
+      "bytes": 8577
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+      "sha256": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+      "bytes": 637
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+      "sha256": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+      "bytes": 473
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+      "sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+      "bytes": 2636
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+      "sha256": "a89ba2032ab25959c6fde1e508ebf8f966ff632703d3ef79684f578a8fa8033f",
+      "bytes": 6260
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+      "sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+      "bytes": 2697
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+      "sha256": "4da9a90b1c8b45fdab7d73d8cf81f51cf7d990657ee4e3f943492c3bf0e4c2f1",
+      "bytes": 1965
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "sha256": "58c759fe76057e1cefa8909b446357aae5cac8a8ba7e6401650208d1b0481508",
+      "bytes": 6547
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+      "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+      "bytes": 6803
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+      "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+      "bytes": 896
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+      "sha256": "e128cbe9c6c406d5a42c26e4079c0a95b369ce552f2d0c3dfd2fcb836c5708f2",
+      "bytes": 5547
+    },
+    {
+      "path": "screening/decoded-sources/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+      "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+      "bytes": 4182
+    },
+    {
+      "path": "screening/decoded-sources/fum/acc-erc20/contracts/ERC20.sol",
+      "sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+      "bytes": 2904
+    },
+    {
+      "path": "screening/decoded-sources/fum/acc-erc20/contracts/IERC20.sol",
+      "sha256": "6a6334993308fc81934fb830185ec897eadb72954308ba106a307afe66eeb6e1",
+      "bytes": 2695
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/FUM.sol",
+      "sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+      "bytes": 2903
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/IFUM.sol",
+      "sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+      "bytes": 542
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/IUSM.sol",
+      "sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+      "bytes": 8654
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/MinOut.sol",
+      "sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+      "bytes": 1193
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/OptOutable.sol",
+      "sha256": "235c479c146bf59932d915bcab80e5bcca05f574b79cafb50c53ac501c633bcc",
+      "bytes": 2905
+    },
+    {
+      "path": "screening/decoded-sources/fum/contracts/oracles/Oracle.sol",
+      "sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+      "bytes": 218
+    },
+    {
+      "path": "screening/decoded-sources/fum/erc20permit/contracts/ERC20Permit.sol",
+      "sha256": "b2bed2e52c1cd4c8ce6e9c0ea1e12b924a2484239d17a767ec1da88b26e935c7",
+      "bytes": 2719
+    },
+    {
+      "path": "screening/decoded-sources/fum/erc20permit/contracts/IERC2612.sol",
+      "sha256": "4f57ed3d052d147854fee70589aac1b78a6a2c18853831d4cc95ea707d72c9a7",
+      "bytes": 1861
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@openzeppelin/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@openzeppelin/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "sha256": "51d056199e3f5e41cb1a9f11ce581aa3e190cc982db5771ffeef8d8d1f962a0d",
+      "bytes": 661
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "sha256": "29c75e69ce173ff8b498584700fef76bc81498c1d98120e2877a1439f0c31b5a",
+      "bytes": 2424
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "sha256": "0439ffe0fd4a5e1f4e22d71ddbda76d63d61679947d158cba4ee0a1da60cf663",
+      "bytes": 3526
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+      "sha256": "a2900701961cb0b6152fc073856b972564f7c798797a4a044e83d2ab8f0e8d38",
+      "bytes": 1286
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/LULA/Const.sol",
+      "sha256": "d67324b1a340da7bd0be53244050bb9e139f6fc12d7ad31a62e05dc5c8605202",
+      "bytes": 220
+    },
+    {
+      "path": "screening/decoded-sources/lula-actual-token/LULA/LULA.sol",
+      "sha256": "ae30e73a099ee95e6f55877fdf380bd4a907523bac9dc241ac551a0606e2f199",
+      "bytes": 8617
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/project/contracts/interfaces/IMokeLPDividend.sol",
+      "sha256": "cf98bee43f71b8fc9853404493d4caf48dd8280878ebfdfe91f5caae3d47c8cf",
+      "bytes": 306
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/project/contracts/interfaces/IMokeToken.sol",
+      "sha256": "c411e923dbdf82cfd018f3617a91fc7b1a7bf70b5bbe497e0c5d69c84d8ef2e4",
+      "bytes": 686
+    },
+    {
+      "path": "screening/decoded-sources/moke-actual-token/project/contracts/MokeToken.sol",
+      "sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+      "bytes": 25080
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+      "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+      "bytes": 2706
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+      "sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+      "bytes": 4766
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+      "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+      "bytes": 4182
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/project/contracts/interfaces/IMokeAC.sol",
+      "sha256": "d61de72d17c5f1c3727d207530d26eb948d80c50998846c4800db031c581e2ae",
+      "bytes": 521
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/project/contracts/interfaces/IMokeReferral.sol",
+      "sha256": "851fc672586fcbf88ef6cd5d7f2b3d35d5af9488ed5ffc724f470a5c162aee5c",
+      "bytes": 975
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/project/contracts/interfaces/IMokeRelease.sol",
+      "sha256": "26f214c237e39a77fe239aa0fb3f9b51221234b62d5efe0d8aed0e6d39e5b329",
+      "bytes": 559
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/project/contracts/interfaces/IMokeToken.sol",
+      "sha256": "c411e923dbdf82cfd018f3617a91fc7b1a7bf70b5bbe497e0c5d69c84d8ef2e4",
+      "bytes": 686
+    },
+    {
+      "path": "screening/decoded-sources/moke-release/project/contracts/MokeRelease.sol",
+      "sha256": "17a9402aaf0246a3e09a397c88a7a2968fee712bca06edfb3f6927007f055ce9",
+      "bytes": 23448
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+      "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+      "bytes": 2706
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+      "sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+      "bytes": 4766
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+      "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+      "bytes": 4182
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/project/contracts/interfaces/IMokeLPDividend.sol",
+      "sha256": "cf98bee43f71b8fc9853404493d4caf48dd8280878ebfdfe91f5caae3d47c8cf",
+      "bytes": 306
+    },
+    {
+      "path": "screening/decoded-sources/moke-token/project/contracts/MokeLPDividend.sol",
+      "sha256": "41baca095aa9dd46cf1f375bb14165100e2f03291046fbe161f1058e2db32b36",
+      "bytes": 9279
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+      "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+      "bytes": 4454
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+      "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+      "bytes": 193
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+      "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+      "bytes": 182
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/ERC20Burnable.sol",
+      "sha256": "2e6108a11184dd0caab3f3ef31bd15fed1bc7e4c781a55bc867ccedd8474565c",
+      "bytes": 1182
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+      "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+      "bytes": 13314
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+      "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+      "bytes": 871
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+      "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+      "bytes": 2706
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/project/contracts/interfaces/IMokeAC.sol",
+      "sha256": "d61de72d17c5f1c3727d207530d26eb948d80c50998846c4800db031c581e2ae",
+      "bytes": 521
+    },
+    {
+      "path": "screening/decoded-sources/moke-tokenx/project/contracts/MokeAC.sol",
+      "sha256": "b1b03162c40f0768da7f48fa02cd46b39d76732b8b0f4556a1af5da19ac5d099",
+      "bytes": 2914
+    },
+    {
+      "path": "screening/decoded-sources/nex-token/contracts/flatten/nexus_nex.sol",
+      "sha256": "6f7f119138b15a4581e8e3bde06099c021c3dbd0c8af617334e1faadc4945caa",
+      "bytes": 60222
+    },
+    {
+      "path": "screening/decoded-sources/pro-pair/PancakePair.sol",
+      "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "bytes": 22004
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "bytes": 3102
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+      "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+      "bytes": 6540
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "bytes": 10800
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+      "bytes": 684
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+      "bytes": 2781
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "bytes": 963
+    },
+    {
+      "path": "screening/decoded-sources/pro-token/src/ProToken.sol",
+      "sha256": "a6cbe240921638cba19a9cd0779c7ad791d33cbe49294beee8aae7a02585c893",
+      "bytes": 9621
+    },
+    {
+      "path": "screening/decoded-sources/usm/acc-erc20/contracts/ERC20.sol",
+      "sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+      "bytes": 2904
+    },
+    {
+      "path": "screening/decoded-sources/usm/acc-erc20/contracts/IERC20.sol",
+      "sha256": "6a6334993308fc81934fb830185ec897eadb72954308ba106a307afe66eeb6e1",
+      "bytes": 2695
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/Address.sol",
+      "sha256": "5c7540d431c0fa51fbdeda9b2897ee279d8e617bb64e4bd510fee74a2ec98ba6",
+      "bytes": 1369
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/FUM.sol",
+      "sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+      "bytes": 2903
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/IFUM.sol",
+      "sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+      "bytes": 542
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/IUSM.sol",
+      "sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+      "bytes": 8654
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/MinOut.sol",
+      "sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+      "bytes": 1193
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/OptOutable.sol",
+      "sha256": "235c479c146bf59932d915bcab80e5bcca05f574b79cafb50c53ac501c633bcc",
+      "bytes": 2905
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/oracles/Oracle.sol",
+      "sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+      "bytes": 218
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/USM.sol",
+      "sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "bytes": 44381
+    },
+    {
+      "path": "screening/decoded-sources/usm/contracts/WadMath.sol",
+      "sha256": "30422781de176854bb990485d5ec42c13eabd9a2f29608e9fef5bf2bf2f636fd",
+      "bytes": 36004
+    },
+    {
+      "path": "screening/decoded-sources/usm/erc20permit/contracts/ERC20Permit.sol",
+      "sha256": "b2bed2e52c1cd4c8ce6e9c0ea1e12b924a2484239d17a767ec1da88b26e935c7",
+      "bytes": 2719
+    },
+    {
+      "path": "screening/decoded-sources/usm/erc20permit/contracts/IERC2612.sol",
+      "sha256": "4f57ed3d052d147854fee70589aac1b78a6a2c18853831d4cc95ea707d72c9a7",
+      "bytes": 1861
+    },
+    {
+      "path": "screening/defihacklabs-august.json",
+      "sha256": "1f9c894663983afd7de2738010295bdfd5d43d88afd2fef8cad1229e69671ded",
+      "bytes": 14146
+    },
+    {
+      "path": "screening/defihacklabs-july.json",
+      "sha256": "0ae7c83f6c8cb214ea11b233ffa684770a35019d9018eb561f73ae20160fe609",
+      "bytes": 2762
+    },
+    {
+      "path": "screening/fox-actual-token-source.json",
+      "sha256": "e67897268839dc52acb3ebe08d51261f8fb277d23ee8913d2a03db2f18663c14",
+      "bytes": 227372
+    },
+    {
+      "path": "screening/fox-block.json",
+      "sha256": "a3b732451ebe43ec519e4be2dff87eac1d08aae5add43b360fdc38507be50c90",
+      "bytes": 6289
+    },
+    {
+      "path": "screening/fox-bonds-historical-implementation.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78
+    },
+    {
+      "path": "screening/fox-bonds-proxy-source.json",
+      "sha256": "326a2fa184ed6f187eeeff5a1871754273507b08a5259ef03b73b2e913d4f44b",
+      "bytes": 158372
+    },
+    {
+      "path": "screening/fox-bonds-source.json",
+      "sha256": "6314cda8c518092aa22d4ffafe77774a8756f4003212570ada42be1267f91e40",
+      "bytes": 422526
+    },
+    {
+      "path": "screening/fox-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000
+    },
+    {
+      "path": "screening/fox-primary-analysis.html",
+      "sha256": "6d2837726e47382408f78a422933e36c8db7a640717860ff4d0d79191371f0bc",
+      "bytes": 60421
+    },
+    {
+      "path": "screening/fox-receipt.json",
+      "sha256": "a412301037f9502cf85b33fc22c06d58525f8371147db04e46fcdd6d1676742e",
+      "bytes": 124671
+    },
+    {
+      "path": "screening/fox-token-source.json",
+      "sha256": "ecee913b9784f7bfc6a69a2d024c5f02a48e3c72318b6fce3d9c574dc8feb865",
+      "bytes": 144812
+    },
+    {
+      "path": "screening/fox-transaction.json",
+      "sha256": "b60b5cf342ba71a41f0e62becffad1604a552a201c9977c0faf0d63f87947c56",
+      "bytes": 687
+    },
+    {
+      "path": "screening/fox-treasury-historical-implementation.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78
+    },
+    {
+      "path": "screening/fox-treasury-proxy-source.json",
+      "sha256": "71e087241bbe368c91b5981ca9a87eca4414cf115d03c47950f500f88b00b95d",
+      "bytes": 157220
+    },
+    {
+      "path": "screening/fox-treasury-source.json",
+      "sha256": "98a9c11aa137f73c9e67d1e5c8cacebac45cc02cecf6336ae8bccbd2fcbe9a4e",
+      "bytes": 280302
+    },
+    {
+      "path": "screening/fum-source.json",
+      "sha256": "ee83c6c127637414634dcea31c8a6c5aa1fe44a75d4c6dc4c7debadac839aaa7",
+      "bytes": 259920
+    },
+    {
+      "path": "screening/garden-htlc-source.json",
+      "sha256": "703057003ebd9fd7cfcc184ae82e914afa4fa5050f77e346162b4bdce3aa5a99",
+      "bytes": 200746
+    },
+    {
+      "path": "screening/garden-transaction.json",
+      "sha256": "aaf3b60a800061c0ae8b97da1070867fab40a8ff5786037d2f16bace54fe8202",
+      "bytes": 3442
+    },
+    {
+      "path": "screening/heimdall-release.json",
+      "sha256": "58e176d75c177a56e057a30ee110291d07f007ca6e6de7783517f5c2f3063c19",
+      "bytes": 10129
+    },
+    {
+      "path": "screening/lula-actual-token-source.json",
+      "sha256": "c1febb4bb03b217c72a3c8052cdc74f37f37cd6749f488901417acb7288a948f",
+      "bytes": 232925
+    },
+    {
+      "path": "screening/lula-analysis.html",
+      "sha256": "e0acfca9b9677a3f5789a5bf009dc651fe4fc5cb230e870128546b1c30cce876",
+      "bytes": 63956
+    },
+    {
+      "path": "screening/lula-analysis.txt",
+      "sha256": "a7df11b4e86542f04808652f3445be26ad89125ea10af7c3250729b9c3aec16b",
+      "bytes": 7445
+    },
+    {
+      "path": "screening/lula-receipt.json",
+      "sha256": "021cc5ba2b546f4757c1a87a671408c583e872e77f308d50a64c9b42eeea1af9",
+      "bytes": 156722
+    },
+    {
+      "path": "screening/lula-rental-online-decompiler-dom.html",
+      "sha256": "1dfc443e7bd865102cc6dac16ae8aa3c0cbcc9cff0b5848c588fdce30289da1e",
+      "bytes": 161192
+    },
+    {
+      "path": "screening/lula-rental-online-decompiler.png",
+      "sha256": "f1ae2c7f6eeb0746686c3183c4339dfde4d99653bdd158f726f801306fde9b2f",
+      "bytes": 151391
+    },
+    {
+      "path": "screening/lula-rental-runtime.json",
+      "sha256": "dcb3a1e95e5583fb4c8d87bccc5f2588a0a0d3d5a78ccba0fc304eafe9d98eb9",
+      "bytes": 43800
+    },
+    {
+      "path": "screening/lula-token-source.json",
+      "sha256": "125da65a7449f140add9337457f7126e634d6c8a4d725660a129658951df35dc",
+      "bytes": 140696
+    },
+    {
+      "path": "screening/lula-trace.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78
+    },
+    {
+      "path": "screening/moke-actual-token-source.json",
+      "sha256": "7a4f892694e5bafdb4fd269b7c8fbe40525acf75d37a9915c9b4982695cbedc9",
+      "bytes": 670327
+    },
+    {
+      "path": "screening/moke-analysis.html",
+      "sha256": "20976702ff758723d009e87b0790eed61b0a1a50fbc794e7de4a38cef7ba5466",
+      "bytes": 67899
+    },
+    {
+      "path": "screening/moke-analysis.txt",
+      "sha256": "50bc5fd0bbb2261b317743625ce23d6d90d02f03e7d92ba5208c736fc7401025",
+      "bytes": 9089
+    },
+    {
+      "path": "screening/moke-block.json",
+      "sha256": "1fd97ee32bb5559901d4301b353334fe5afdc38d010d25909f640b36164715b7",
+      "bytes": 5461
+    },
+    {
+      "path": "screening/moke-blocksec.html",
+      "sha256": "45e61e41cffa41b9e56372e235cbd33592c080735f783f521350778e0a485b56",
+      "bytes": 215974
+    },
+    {
+      "path": "screening/moke-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000
+    },
+    {
+      "path": "screening/moke-receipt.json",
+      "sha256": "e1cfafb32c75fd4bb3551ddc2ca19043efb2d8437d9a21f5bf6c758b106426db",
+      "bytes": 158905
+    },
+    {
+      "path": "screening/moke-release-runtime.json",
+      "sha256": "e5d7facc030e126ccb40ff9a2a6649e6c4002168afd944076ebcb57262b1a896",
+      "bytes": 23442
+    },
+    {
+      "path": "screening/moke-release-source.json",
+      "sha256": "95df37a9071687e1e59b7e77cb61e38032606de52f5e8b44869b43fe6c08c4b3",
+      "bytes": 454698
+    },
+    {
+      "path": "screening/moke-reserve-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000
+    },
+    {
+      "path": "screening/moke-token-source.json",
+      "sha256": "5e3dcc85469fcecdfdaec78fc943b91ee0ea1b5995ce3d8e2656f748bd441534",
+      "bytes": 289864
+    },
+    {
+      "path": "screening/moke-tokenx-source.json",
+      "sha256": "b4810d6c82298c949539aa97df7e1daacf3279c27c6311cfc175d54b8f0498e1",
+      "bytes": 256270
+    },
+    {
+      "path": "screening/moke-transaction.json",
+      "sha256": "c7b3b3754caf8591495b3dca994a493afbb80c3b92958855d86f66dbb70690ce",
+      "bytes": 7437
+    },
+    {
+      "path": "screening/moke-x-source.json",
+      "sha256": "bf2e4535c690222a44bb58aef2823749f9320142d935fd4c8163262ac4dffce3",
+      "bytes": 183940
+    },
+    {
+      "path": "screening/nex-analysis.html",
+      "sha256": "1924583143e1bd7fad90b0a9e3482ea62a5f7b4526924a80ee925818efdbd03a",
+      "bytes": 107779
+    },
+    {
+      "path": "screening/nex-analysis.txt",
+      "sha256": "be460e27cba43bf4b289c78f28894c623c025ec44ad608b8e2c04b44851bfff7",
+      "bytes": 7958
+    },
+    {
+      "path": "screening/nex-block.json",
+      "sha256": "e99c3e953d8d31daf75f5e0954f665b596556e6aad46b6e67b10c9040cf16f58",
+      "bytes": 10430
+    },
+    {
+      "path": "screening/nex-flash-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000
+    },
+    {
+      "path": "screening/nex-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000
+    },
+    {
+      "path": "screening/nex-receipt.json",
+      "sha256": "af7d8a10aa91becd2d79a84f54568f13b765c965ae9e9212e0351c3a7f0fd162",
+      "bytes": 20407
+    },
+    {
+      "path": "screening/nex-token-source.json",
+      "sha256": "90ec3fc429c4e2d6a92b29cdecab9380d706210312454c900d9efb7325d53189",
+      "bytes": 303797
+    },
+    {
+      "path": "screening/nex-transaction.json",
+      "sha256": "a51c7c3461bde04b447493dcc5acfe67d4baa085e19b37b2ab2b0220e80d7c02",
+      "bytes": 11180
+    },
+    {
+      "path": "screening/pro-actual-executor-source-runtime.json",
+      "sha256": "177fd5efca4f100add842dee62725af4592d9f46d23e1b47c8e088857525c96b",
+      "bytes": 8672
+    },
+    {
+      "path": "screening/pro-analysis.html",
+      "sha256": "784e01be2646cc3778dc94b6c595eb228ab5dd552b00030baec2a2205f075670",
+      "bytes": 77110
+    },
+    {
+      "path": "screening/pro-analysis.txt",
+      "sha256": "18c2b29b3e318ecd1b8091108f7c24517fb2c6d8950aa363469b4aa46417a640",
+      "bytes": 7123
+    },
+    {
+      "path": "screening/pro-pair-source.json",
+      "sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+      "bytes": 284256
+    },
+    {
+      "path": "screening/pro-receipt.json",
+      "sha256": "09cf926242d9b2864398bc769faf31629683deba4d8576f97e09de36caae2438",
+      "bytes": 1207406
+    },
+    {
+      "path": "screening/pro-token-source.json",
+      "sha256": "d1007ff995c36307ca79c5fdaa49adb889fb8ca84c3d07b881c848e20c225dd7",
+      "bytes": 266230
+    },
+    {
+      "path": "screening/pro-trace.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78
+    },
+    {
+      "path": "screening/sandbox-poc-commit.json",
+      "sha256": "748dfb4f15fb1a02f439b554928715758887ae65124a6eb9b1a0c2c8373c0a6f",
+      "bytes": 3397
+    },
+    {
+      "path": "screening/solido-official-report.pdf",
+      "sha256": "9d71b6511baf0d34eacec0c6761aef85737e1d4b9b72b4ca93f60b75a18db7f7",
+      "bytes": 176246
+    },
+    {
+      "path": "screening/solido-official-repos.json",
+      "sha256": "fd2408844452309079a578eadae5d111bc8952fd32ad7917a909504b5806351b",
+      "bytes": 27114
+    },
+    {
+      "path": "screening/swan-buy-browser-dom.html",
+      "sha256": "ccc11e0cfdcc8a389dd07d0cef56fa19ef25aaa1020fd00642939b961bcfb8f6",
+      "bytes": 200042
+    },
+    {
+      "path": "screening/swan-buy-routescan.json",
+      "sha256": "c40ab24ce30c550fc0c2a637e174da8b9583744b7517e408d1572e71fcd6a10b",
+      "bytes": 60
+    },
+    {
+      "path": "screening/swan-public-analysis.html",
+      "sha256": "423082bcc3c76ced5f479538882826457d5e16ac1eeed5d31fb6e3bc7f4e063a",
+      "bytes": 101182
+    },
+    {
+      "path": "screening/swan-receipt.json",
+      "sha256": "69c40845de33a8200e23d2fd9460918e16f4d17ca403c4cea602a8ebd6c43321",
+      "bytes": 43335
+    },
+    {
+      "path": "screening/swan-trace.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78
+    },
+    {
+      "path": "screening/usm-analysis.html",
+      "sha256": "c4a04cbdf07db90e49b6a5f7ea758202a2b7f09d13baeedb8c4abc02577bb6eb",
+      "bytes": 44477
+    },
+    {
+      "path": "screening/usm-blockscout-source.json",
+      "sha256": "7e299ddc8ac442a9672ff66b6c7b20f3cb289b66bff485167bade2c78e6a945d",
+      "bytes": 240243
+    },
+    {
+      "path": "screening/usm-internal-transactions-page2.json",
+      "sha256": "f2d8233f9dae1b671c95812e22f9ca508dd630a4a0a24ca6720218a60d3c543c",
+      "bytes": 89879
+    },
+    {
+      "path": "screening/usm-internal-transactions.json",
+      "sha256": "a01efb1a0c4b9a5938dfe79de962078e4fc0a802b37443f6798160299b1ab45b",
+      "bytes": 90150
+    },
+    {
+      "path": "screening/usm-poc-commit.json",
+      "sha256": "36edcf1751907b8d9c0c60e5bcca813df4cecb45811df4541d4862c636839cc5",
+      "bytes": 3382
+    },
+    {
+      "path": "screening/usm-public-reference-poc.sol",
+      "sha256": "c2ba4965fb96afbb92772fdd40e0093d07a1e4b3767b954a0f8a00671d6130ae",
+      "bytes": 5866
+    },
+    {
+      "path": "screening/usm-source.json",
+      "sha256": "155ced2cfd13c1e485f65308e8bd651bab8a916ff7a342755343ed9815768614",
+      "bytes": 1019603
+    },
+    {
+      "path": "screening/usm-token-transfers-page2.json",
+      "sha256": "5aa2c4fa1602f24a3fb76f1925dcc49ae82483b2604201ae8cd9b39d0709f7b8",
+      "bytes": 47678
+    },
+    {
+      "path": "screening/usm-token-transfers.json",
+      "sha256": "4320116f6374a2d854461db4b376bcd1c03d10806fa24f4750e14f9ea0777caf",
+      "bytes": 126205
+    },
+    {
+      "path": "screening/usm-trace.json",
+      "sha256": "c5ad2c0b24d6982240fa28400aec7eabfa3010a5fa9d5cfd0a0ae713c780de49",
+      "bytes": 468982
+    },
+    {
+      "path": "screening/usm-transaction.json",
+      "sha256": "499199c6ecafa67440b5150cd42a4ae7c69c9dea13d3e7990f041da63a7bf934",
+      "bytes": 26897
+    }
+  ]
+}

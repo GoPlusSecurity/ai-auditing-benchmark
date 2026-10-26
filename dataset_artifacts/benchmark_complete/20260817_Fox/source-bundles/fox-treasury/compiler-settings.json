@@ -1,0 +1,21 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.28+commit.7893614a",
+  "compilerSettings": {
+    "viaIR": true,
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "cancun",
+    "remappings": [
+      "npm/@openzeppelin/contracts-upgradeable@5.6.1/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts-upgradeable/=npm/@openzeppelin/contracts-upgradeable@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+    ]
+  },
+  "name": "Treasury",
+  "fullyQualifiedName": "project/contracts/Treasury.sol:Treasury"
+}

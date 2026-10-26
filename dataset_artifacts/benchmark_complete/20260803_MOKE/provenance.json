@@ -1,0 +1,740 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "moke-token",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x5ae569d8a0539a6A603E96A26ac8CaEA7CEba377?fields=all",
+      "address": "0x5ae569d8a0539a6A603E96A26ac8CaEA7CEba377",
+      "chain_id": "56",
+      "verified_at": "2026-04-12T08:13:12Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x0ec0339ab3d700f63aa9fa2b2582fc859dd55a4b678d64c115652ec8bbb3946a",
+        "blockNumber": "92068754",
+        "transactionIndex": "77",
+        "deployer": "0xf5aA24B07bE11B53498BD4cF311E68F15ac3653e"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "MokeLPDividend",
+        "fullyQualifiedName": "project/contracts/MokeLPDividend.sol:MokeLPDividend"
+      },
+      "response_path": "source-bundles/moke-token/source-response.json",
+      "response_sha256": "5e3dcc85469fcecdfdaec78fc943b91ee0ea1b5995ce3d8e2656f748bd441534",
+      "abi_path": "source-bundles/moke-token/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+          "bytes": 2706
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+          "sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+          "bytes": 4766
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+          "bytes": 4182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/project/contracts/interfaces/IMokeLPDividend.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeLPDividend.sol",
+          "sha256": "cf98bee43f71b8fc9853404493d4caf48dd8280878ebfdfe91f5caae3d47c8cf",
+          "bytes": 306
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/project/contracts/MokeLPDividend.sol",
+          "original_source_path": "project/contracts/MokeLPDividend.sol",
+          "sha256": "41baca095aa9dd46cf1f375bb14165100e2f03291046fbe161f1058e2db32b36",
+          "bytes": 9279
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:42:00.872936+08:00"
+    },
+    {
+      "id": "moke-actual-token",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x1A35C16cE21903Bc17Fd020c4ED73fEdC70c1b2A?fields=all",
+      "address": "0x1A35C16cE21903Bc17Fd020c4ED73fEdC70c1b2A",
+      "chain_id": "56",
+      "verified_at": "2026-04-12T08:12:09Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xa44c94440502b66abadb1764448a798aeb56c9226f3c8bfb17c0d904d8585776",
+        "blockNumber": "92068698",
+        "transactionIndex": "83",
+        "deployer": "0xf5aA24B07bE11B53498BD4cF311E68F15ac3653e"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "MokeToken",
+        "fullyQualifiedName": "project/contracts/MokeToken.sol:MokeToken"
+      },
+      "response_path": "source-bundles/moke-actual-token/source-response.json",
+      "response_sha256": "7a4f892694e5bafdb4fd269b7c8fbe40525acf75d37a9915c9b4982695cbedc9",
+      "abi_path": "source-bundles/moke-actual-token/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+          "bytes": 6540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+          "bytes": 10800
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/interfaces/IMokeLPDividend.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeLPDividend.sol",
+          "sha256": "cf98bee43f71b8fc9853404493d4caf48dd8280878ebfdfe91f5caae3d47c8cf",
+          "bytes": 306
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/interfaces/IMokeToken.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeToken.sol",
+          "sha256": "c411e923dbdf82cfd018f3617a91fc7b1a7bf70b5bbe497e0c5d69c84d8ef2e4",
+          "bytes": 686
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/MokeToken.sol",
+          "original_source_path": "project/contracts/MokeToken.sol",
+          "sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+          "bytes": 25080
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:50:17.329466+08:00"
+    },
+    {
+      "id": "moke-release",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x684D722EbF8980f49492f631f56765DD4Fb302A7?fields=all",
+      "address": "0x684D722EbF8980f49492f631f56765DD4Fb302A7",
+      "chain_id": "56",
+      "verified_at": "2026-08-03T04:14:00Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x2b2808c23625b7af17e41ded67aa6daf9d79e40fe3bda619ee3b42d74dc33939",
+        "blockNumber": "111423896",
+        "transactionIndex": "112",
+        "deployer": "0xf5aA24B07bE11B53498BD4cF311E68F15ac3653e"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "MokeRelease",
+        "fullyQualifiedName": "project/contracts/MokeRelease.sol:MokeRelease"
+      },
+      "response_path": "source-bundles/moke-release/source-response.json",
+      "response_sha256": "95df37a9071687e1e59b7e77cb61e38032606de52f5e8b44869b43fe6c08c4b3",
+      "abi_path": "source-bundles/moke-release/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+          "bytes": 2706
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+          "sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+          "bytes": 4766
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+          "bytes": 4182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/interfaces/IMokeAC.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeAC.sol",
+          "sha256": "d61de72d17c5f1c3727d207530d26eb948d80c50998846c4800db031c581e2ae",
+          "bytes": 521
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/interfaces/IMokeReferral.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeReferral.sol",
+          "sha256": "851fc672586fcbf88ef6cd5d7f2b3d35d5af9488ed5ffc724f470a5c162aee5c",
+          "bytes": 975
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/interfaces/IMokeRelease.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeRelease.sol",
+          "sha256": "26f214c237e39a77fe239aa0fb3f9b51221234b62d5efe0d8aed0e6d39e5b329",
+          "bytes": 559
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/interfaces/IMokeToken.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeToken.sol",
+          "sha256": "c411e923dbdf82cfd018f3617a91fc7b1a7bf70b5bbe497e0c5d69c84d8ef2e4",
+          "bytes": 686
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/MokeRelease.sol",
+          "original_source_path": "project/contracts/MokeRelease.sol",
+          "sha256": "17a9402aaf0246a3e09a397c88a7a2968fee712bca06edfb3f6927007f055ce9",
+          "bytes": 23448
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:50:16.901701+08:00"
+    },
+    {
+      "id": "moke-x",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0xFd3071Ca05757992d5A010eee55743D54a496F48?fields=all",
+      "address": "0xFd3071Ca05757992d5A010eee55743D54a496F48",
+      "chain_id": "56",
+      "verified_at": "2026-04-12T08:12:18Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x21ed667acabd79d07078a8cd9cf1d799355c09dc993a46a3416945eb7ebb9bd2",
+        "blockNumber": "92068702",
+        "transactionIndex": "73",
+        "deployer": "0xf5aA24B07bE11B53498BD4cF311E68F15ac3653e"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "TokenX",
+        "fullyQualifiedName": "project/contracts/TokenX.sol:TokenX"
+      },
+      "response_path": "source-bundles/moke-x/source-response.json",
+      "response_sha256": "bf2e4535c690222a44bb58aef2823749f9320142d935fd4c8163262ac4dffce3",
+      "abi_path": "source-bundles/moke-x/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+          "bytes": 6540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+          "bytes": 10800
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/project/contracts/TokenX.sol",
+          "original_source_path": "project/contracts/TokenX.sol",
+          "sha256": "19823e0a0156d7d8902aa541ddd4501a2dab13eddf8b99e5947889b4a605295b",
+          "bytes": 2223
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:04:52.095100+08:00"
+    },
+    {
+      "id": "moke-tokenx",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x729Bdaf6dAa7464Ab7432d4b2bC1D6F306C92282?fields=all",
+      "address": "0x729Bdaf6dAa7464Ab7432d4b2bC1D6F306C92282",
+      "chain_id": "56",
+      "verified_at": "2026-04-12T08:11:37Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xf5f6ffa02b405a4706ce815a32de5671b84ad29701d79b43f30b372fb11d8ea1",
+        "blockNumber": "92068691",
+        "transactionIndex": "18",
+        "deployer": "0xf5aA24B07bE11B53498BD4cF311E68F15ac3653e"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "MokeAC",
+        "fullyQualifiedName": "project/contracts/MokeAC.sol:MokeAC"
+      },
+      "response_path": "source-bundles/moke-tokenx/source-response.json",
+      "response_sha256": "b4810d6c82298c949539aa97df7e1daacf3279c27c6311cfc175d54b8f0498e1",
+      "abi_path": "source-bundles/moke-tokenx/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+          "bytes": 6540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+          "bytes": 10800
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/ERC20Burnable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/ERC20Burnable.sol",
+          "sha256": "2e6108a11184dd0caab3f3ef31bd15fed1bc7e4c781a55bc867ccedd8474565c",
+          "bytes": 1182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+          "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+          "bytes": 2706
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/project/contracts/interfaces/IMokeAC.sol",
+          "original_source_path": "project/contracts/interfaces/IMokeAC.sol",
+          "sha256": "d61de72d17c5f1c3727d207530d26eb948d80c50998846c4800db031c581e2ae",
+          "bytes": 521
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/project/contracts/MokeAC.sol",
+          "original_source_path": "project/contracts/MokeAC.sol",
+          "sha256": "b1b03162c40f0768da7f48fa02cd46b39d76732b8b0f4556a1af5da19ac5d099",
+          "bytes": 2914
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:58:36.943333+08:00"
+    },
+    {
+      "id": "pro-pair",
+      "kind": "public_original_source",
+      "role": "normal_protocol_reference_context",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x63844BD4BFad910B1643713302a1cC1ed20d50c3?fields=all",
+      "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+      "chain_id": "56",
+      "verified_at": "2026-09-11T15:40:24Z",
+      "creation_match": null,
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.5.16+commit.9c3226ce",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          }
+        },
+        "name": "PancakePair",
+        "fullyQualifiedName": "PancakePair.sol:PancakePair"
+      },
+      "response_path": "source-bundles/pro-pair/source-response.json",
+      "response_sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+      "abi_path": "source-bundles/pro-pair/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/pro-pair/PancakePair.sol",
+          "original_source_path": "PancakePair.sol",
+          "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+          "bytes": 22004
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:40:34.869871+08:00"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/moke-receipt.json",
+      "sha256": "e1cfafb32c75fd4bb3551ddc2ca19043efb2d8437d9a21f5bf6c758b106426db",
+      "bytes": 158905,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:40:33.609432+08:00"
+    },
+    {
+      "path": "evidence/moke-transaction.json",
+      "sha256": "c7b3b3754caf8591495b3dca994a493afbb80c3b92958855d86f66dbb70690ce",
+      "bytes": 7437,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:58:35.612334+08:00"
+    },
+    {
+      "path": "evidence/moke-block.json",
+      "sha256": "1fd97ee32bb5559901d4301b353334fe5afdc38d010d25909f640b36164715b7",
+      "bytes": 5461,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.557667+08:00"
+    },
+    {
+      "path": "evidence/moke-analysis.html",
+      "sha256": "20976702ff758723d009e87b0790eed61b0a1a50fbc794e7de4a38cef7ba5466",
+      "bytes": 67899,
+      "url": "https://anomly.rs/moke-lp-dividend-stale-record-exploit",
+      "retrieved_at": "2026-10-21T05:41:59.688621+08:00"
+    },
+    {
+      "path": "evidence/moke-blocksec.html",
+      "sha256": "45e61e41cffa41b9e56372e235cbd33592c080735f783f521350778e0a485b56",
+      "bytes": 215974,
+      "url": "https://blocksec.com/blog/web3-security-moke-token-lpdfi-exploits",
+      "retrieved_at": "2026-10-21T05:41:59.307324+08:00"
+    },
+    {
+      "path": "evidence/moke-release-runtime.json",
+      "sha256": "e5d7facc030e126ccb40ff9a2a6649e6c4002168afd944076ebcb57262b1a896",
+      "bytes": 23442,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:50:17.893071+08:00"
+    },
+    {
+      "path": "evidence/moke-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:24:38.097663+08:00"
+    },
+    {
+      "path": "evidence/moke-reserve-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+    },
+    {
+      "path": "evidence/decoded-events-and-flows.json",
+      "sha256": "1293161db0cc758cdda414ea3288bac0713caf9c98d7955b3b7efd11f0d47785",
+      "bytes": 62274,
+      "kind": "offline_decode_of_archived_receipts_or_trace"
+    },
+    {
+      "path": "evidence/pool-runtime-comparison.json",
+      "sha256": "d287e1a1ce833dffacf47ddf0db0c51ba88e908cfec94450d9bed5bb8dc12205",
+      "bytes": 1907,
+      "kind": "current_pool_runtime_byte_comparison_not_historical_binding"
+    }
+  ],
+  "context_limits": "PancakePair verified source comes from the separately identified PRO pool. Five actual incident pools have byte-identical current runtime, recorded in the batch comparison; no attack-block runtime equivalence is claimed. Circle current proxy implementation is context; its historical slot was not independently reconstructed.",
+  "current_pool_runtime_comparison": "evidence/pool-runtime-comparison.json"
+}

@@ -43,7 +43,7 @@ Case-relative metadata paths, including `complete_case_root` and `simplified_cas
 
 ## Incident index (CSV)
 
-The CSV in the repository root lists **all indexed incidents**, including cases with supporting evidence but no source code, and should be treated as the authoritative source of metadata. After the 2026-10-16 batch, each CSV has 57 incidents and each source view has 56 cases. See the [case-document index](docs/cases/README.md) and [row dispositions](dataset_artifacts/batches/20261016_x123_y5/results.json) for the latest batch. JaredFromSubway has runtime bytecode and evidence only, stored entirely in `dataset_artifacts/`.
+The CSV in the repository root lists **all indexed incidents**, including cases with supporting evidence but no source code, and should be treated as the authoritative source of metadata. After the 2026-10-21 batch, each CSV has 62 incidents and each source view has 61 cases. See the [case-document index](docs/cases/README.md) and [row dispositions](dataset_artifacts/batches/20261021_x112_y5/results.json) for the latest batch. JaredFromSubway has runtime bytecode and evidence only, stored entirely in `dataset_artifacts/`.
 
 - Chinese: [`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - English: [`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)

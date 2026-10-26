@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c63381",
+        false
+      ]
+    }
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c82e78",
+        false
+      ]
+    }
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6ec9959",
+        false
+      ]
+    }
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+      ]
+    }
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-bonds-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x9fa6d8a13b35e051bfc145918db0111dec13d1a0",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    }
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-treasury-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x361d08ff43761e6a7e8fcabe48048ae9010801cc",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    }
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x2fd5721",
+        false
+      ]
+    }
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xfd3071ca05757992d5a010eee55743d54a496f48?fields=all",
+    "path": "screening/moke-x-source.json"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x81d40f21f12a8f0e3252bccb954d722d4c464b64?fields=all",
+    "path": "screening/allbridge-circle-proxy-source.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/d4d26edbf1393537f6166523a21368b1a34499c8/src/test/2026-08/USM_exp.sol",
+    "path": "screening/usm-public-reference-poc.sol"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/b1f9489318ad9dbf5c9188a88f36e06415d1d91b/src/test/2026-08/AllbridgeCCTP_exp.sol",
+    "path": "screening/allbridge-public-reference-poc.sol"
+  }
+]

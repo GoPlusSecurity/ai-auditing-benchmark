@@ -1,0 +1,13 @@
+50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20_L1_L305.sol
+6c95831c25394712ad246ccd5b17e2de933423d054cccef8ec7e920f44590bc9  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-actual-token/project/contracts/Fox_L1_L138.sol
+41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy_L1_L62.sol
+fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy_L1_L69.sol
+9d0e492c589860c28112720c37f9101aed84d285d4a371df1e17a4dea84ef99a  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds/project/contracts/FoxLpBondsPool_L1_L205.sol
+0f6c1a516c8aec7c4b4c0b61d99592b9a8fc58944f5a5587d59e0fa797867fa7  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds/project/contracts/FoxPoolBase_L1_L430.sol
+555e8287bf0fb35aa1ee01b3b1e270d89b42c5535c7a4694405a0cdc471b4dc0  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L115_L128.sol
+6779d936ad22c4e7514438f1f945927514551224b171834ed86005516adb076a  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L168_L187.sol
+2ec21ddc2c9705c97d79946b909f2e07ed4baddfb9179d45644bd1ba78b15389  ../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L1_L98.sol
+bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd  ../../../dataset/benchmark_simplified/20260817_Fox/slices/pro-pair/PancakePair_L1_L497.sol
+49106f0f9ddfc652b03194eb761d7c5a95445abb3d368fd8483132e51a6ea691  SOURCE.md
+5cba44c25354be6635bc334c1173a48b329b919683dcf81a7f6dcf935cc1b640  case_metadata.json
+c70219be83c312337a6f5604354400e04f5460fc2d06ab33e1d4f3d373e4ebf8  slice_manifest.json

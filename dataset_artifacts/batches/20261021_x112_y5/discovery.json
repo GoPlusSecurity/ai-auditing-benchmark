@@ -1,0 +1,10 @@
+[
+  {"url":"https://bsc-rpc.publicnode.com","path":"screening/pro-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4"]}},
+  {"url":"https://bsc-rpc.publicnode.com","path":"screening/lula-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c"]}},
+  {"url":"https://bsc-rpc.publicnode.com","path":"screening/swan-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4"]}},
+  {"url":"https://sourcify.dev/server/v2/contract/56/0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C?fields=all","path":"screening/swan-buy-source.json"},
+  {"url":"https://sourcify.dev/server/v2/contract/56/0xD6A4F5AADD88ebA9A170AcF67f737BD488142857?fields=all","path":"screening/swan-token-source.json"},
+  {"url":"https://app.solido.money/reports/solido-cash-incident-july-2026.pdf","path":"screening/solido-official-report.pdf"},
+  {"url":"https://api.github.com/orgs/SolidoMoney/repos?per_page=100","path":"screening/solido-github-repos.json"},
+  {"url":"https://anomly.rs/swan-treasury-sty-discounted-buy-exploit","path":"screening/swan-public-analysis.html"}
+]

@@ -1,0 +1,71 @@
+{
+  "case_ids": [
+    "20260803_MOKE",
+    "20260804_NEX_AIC",
+    "20260810_USM_FUM",
+    "20260817_Fox",
+    "20260820_Allbridge_CCTP"
+  ],
+  "cases": {
+    "20260803_MOKE": {
+      "required_literals": [
+        "userLPRecord[user] = currentLP",
+        "userPendingDividend[user] += accumulated - debt",
+        "payable(msg.sender).call{value: pending}",
+        "pendingUsdt * PRECISION / settledMokePrice",
+        "releaseFromPair(msg.sender, mokeAmount)",
+        "msg.sender == releaseContract",
+        "receive() external payable",
+        "unprocessedBNB += msg.value"
+      ],
+      "review_boundary": "Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit."
+    },
+    "20260804_NEX_AIC": {
+      "required_literals": [
+        "bool isRouter",
+        "super._transfer(from, to, amount)",
+        "automatedMarketMakerPairs[to]",
+        "function skim(address to)",
+        "function sync()"
+      ],
+      "review_boundary": "Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit."
+    },
+    "20260810_USM_FUM": {
+      "required_literals": [
+        "uint avgFumSellPrice = fumSellPrice0 + fumSellPrice2",
+        "ethOut = fumIn.wadMulDown(avgFumSellPrice)",
+        "ls.bidAskAdjustment = ls.bidAskAdjustment.wadMulDown(adjShrinkFactor)",
+        "fum.burn(from, fumToBurn)",
+        "to.sendValue(ethOut)",
+        "function fund(address to"
+      ],
+      "review_boundary": "Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit."
+    },
+    "20260817_Fox": {
+      "required_literals": [
+        "uint256 stakeAmount = _usdtAmount * 1e18 / swapPrice",
+        "getAmountsOut(1e18, foxToUsdtPath)",
+        "ITreasury(treasury).lpBonds(liquidity, stakeAmount",
+        "modifier onlyStakingPool()",
+        "IMintableERC20(foxToken).mint(address(this), _stakeAmount + inviterRewardAmount)",
+        "safeTransfer(inviterAddress, inviterRewardAmount)",
+        "require(msg.sender == treasury, \"Unauthorized\")"
+      ],
+      "review_boundary": "Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit."
+    },
+    "20260820_Allbridge_CCTP": {
+      "required_literals": [
+        "receivedMessages[messageHash] = receivedAmount",
+        "message[248:280]",
+        "receiveMessage(message, attestation)",
+        "receivedTokenAmount(messageHash)",
+        "safeTransfer(recipientAddr, amountAfterFee)",
+        "function _calculateMessageHash",
+        "function _denormalize",
+        "function sendMessage(",
+        "IMessageHandlerV2(_recipient).handleReceiveFinalizedMessage"
+      ],
+      "review_boundary": "Original checks, caller permissions, state/math and real payout preserved; see detailed Chinese case document. Historical-state gaps remain explicit."
+    }
+  }
+}

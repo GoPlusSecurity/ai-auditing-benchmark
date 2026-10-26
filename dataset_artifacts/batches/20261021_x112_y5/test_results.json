@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "run_at": "2026-10-21T06:30:36.723806+08:00",
+  "command": "python -X utf8 -B dataset_artifacts/batches/20261021_x112_y5/run_tests.py",
+  "test_modules": [
+    "test_20261002_batch.SelectionRuleTests",
+    "test_20261021_batch"
+  ],
+  "tests_run": 19,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 23.21799999999348,
+  "contract_execution": "not_run",
+  "local_decompilation": "prohibited_not_run"
+}

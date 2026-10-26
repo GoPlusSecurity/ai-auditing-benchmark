@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/pro-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 1207406,
+    "sha256": "09cf926242d9b2864398bc769faf31629683deba4d8576f97e09de36caae2438",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:18.767073+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/lula-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 156722,
+    "sha256": "021cc5ba2b546f4757c1a87a671408c583e872e77f308d50a64c9b42eeea1af9",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:17.749135+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/swan-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 43335,
+    "sha256": "69c40845de33a8200e23d2fd9460918e16f4d17ca403c4cea602a8ebd6c43321",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:17.584669+08:00"
+  },
+  {
+    "url": "https://bscscan.com/address/0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C#code",
+    "path": "screening/swan-buy-explorer.html",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:38:17.354579+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/solido-money/cdp-contracts",
+    "path": "screening/solido-repo.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:17.545383+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x72ad494fda63d2b91b9d7290737e8ef1194a0c47?fields=all",
+    "path": "screening/lula-token-source.json",
+    "http_status": 200,
+    "bytes": 140696,
+    "sha256": "125da65a7449f140add9337457f7126e634d6c8a4d725660a129658951df35dc",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:19.426262+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x377a015f44C3FDf71060e94648EDC9e0316C7f1a?fields=all",
+    "path": "screening/lula-rental-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:18.240306+08:00"
+  },
+  {
+    "url": "https://solido-money.gitbook.io/solido-money/security/audits",
+    "path": "screening/solido-audits.html",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:21.904016+08:00"
+  }
+]

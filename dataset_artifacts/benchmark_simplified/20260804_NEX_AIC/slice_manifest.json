@@ -1,0 +1,53 @@
+{
+  "case_id": "20260804_NEX_AIC",
+  "path_base": "simplified_case_root",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/nex-token/contracts/flatten/nexus_nex_L1_L720.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/nex-token/contracts/flatten/nexus_nex.sol",
+      "original_start_line": 1,
+      "original_end_line": 720,
+      "sha256": "9cea0fad487d2d9e2584fbd7c631826d61e40d6d68acd94546dd589479cd0b5e",
+      "complete_source_sha256": "6f7f119138b15a4581e8e3bde06099c021c3dbd0c8af617334e1faadc4945caa",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/nex-token/contracts/flatten/nexus_nex_L1097_L1754.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/nex-token/contracts/flatten/nexus_nex.sol",
+      "original_start_line": 1097,
+      "original_end_line": 1754,
+      "sha256": "df0c6458f573f81d31baaff5e033fb3b7cb49be85528e53f48f2b0bcbaf61e25",
+      "complete_source_sha256": "6f7f119138b15a4581e8e3bde06099c021c3dbd0c8af617334e1faadc4945caa",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/aic-token/contracts/flatten/nexus_aic_L1_L720.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/aic-token/contracts/flatten/nexus_aic.sol",
+      "original_start_line": 1,
+      "original_end_line": 720,
+      "sha256": "0cd10ed5cb532003b0e614d3517cc3e9535c42c8088d5d4c05459bbb4043a08e",
+      "complete_source_sha256": "5a5c1a07c815972b788d237c07f230627682dc8673669e94dfbf5a86eb8af433",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/aic-token/contracts/flatten/nexus_aic_L930_L1103.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/aic-token/contracts/flatten/nexus_aic.sol",
+      "original_start_line": 930,
+      "original_end_line": 1103,
+      "sha256": "86ca2c71c3585edb95d48e85056ac83d76c024bd6b69ccf258eac1b92f31936a",
+      "complete_source_sha256": "5a5c1a07c815972b788d237c07f230627682dc8673669e94dfbf5a86eb8af433",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/pro-pair/PancakePair_L1_L497.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/pro-pair/PancakePair.sol",
+      "original_start_line": 1,
+      "original_end_line": 497,
+      "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "complete_source_sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "kind": "original_source_verbatim_slice"
+    }
+  ]
+}

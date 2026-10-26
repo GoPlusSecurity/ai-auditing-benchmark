@@ -1,0 +1,131 @@
+[
+  {
+    "url": "https://anomly.rs/pro-token-executor-forced-sell-exploit",
+    "path": "screening/pro-analysis.html",
+    "http_status": 200,
+    "bytes": 77110,
+    "sha256": "784e01be2646cc3778dc94b6c595eb228ab5dd552b00030baec2a2205f075670",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.841430+08:00"
+  },
+  {
+    "url": "https://anomly.rs/lula-recycle-price-manipulation",
+    "path": "screening/lula-analysis.html",
+    "http_status": 200,
+    "bytes": 63956,
+    "sha256": "e0acfca9b9677a3f5789a5bf009dc651fe4fc5cb230e870128546b1c30cce876",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.204771+08:00"
+  },
+  {
+    "url": "https://anomly.rs/moke-lp-dividend-stale-record-exploit",
+    "path": "screening/moke-analysis.html",
+    "http_status": 200,
+    "bytes": 67899,
+    "sha256": "20976702ff758723d009e87b0790eed61b0a1a50fbc794e7de4a38cef7ba5466",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.688621+08:00"
+  },
+  {
+    "url": "https://anomly.rs/nex-aic-pancakeswap-double-transfer-exploit",
+    "path": "screening/nex-analysis.html",
+    "http_status": 200,
+    "bytes": 107779,
+    "sha256": "1924583143e1bd7fad90b0a9e3482ea62a5f7b4526924a80ee925818efdbd03a",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.388967+08:00"
+  },
+  {
+    "url": "https://blocksec.com/blog/web3-security-moke-token-lpdfi-exploits",
+    "path": "screening/moke-blocksec.html",
+    "http_status": 200,
+    "bytes": 215974,
+    "sha256": "45e61e41cffa41b9e56372e235cbd33592c080735f783f521350778e0a485b56",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:41:59.307324+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x86ac451a0c0bcac5b74116ae90832e89e9c630df?fields=all",
+    "path": "screening/pro-executor-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:41:58.130053+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377?fields=all",
+    "path": "screening/moke-token-source.json",
+    "http_status": 200,
+    "bytes": 289864,
+    "sha256": "5e3dcc85469fcecdfdaec78fc943b91ee0ea1b5995ce3d8e2656f748bd441534",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.872936+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9?fields=all",
+    "path": "screening/nex-token-source.json",
+    "http_status": 200,
+    "bytes": 303797,
+    "sha256": "90ec3fc429c4e2d6a92b29cdecab9380d706210312454c900d9efb7325d53189",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.118261+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xc0dc449de632586a00409873521afc251ac5ce74?fields=all",
+    "path": "screening/aic-token-source.json",
+    "http_status": 200,
+    "bytes": 213928,
+    "sha256": "c928998bba2cb064e4866f56ca3dbe6b7b075ad064c06060f65ceb9fcf24372a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.985603+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x974c0078740480ae830d379fdb8d5f441c9ddc75?fields=all",
+    "path": "screening/nex-pair-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:42:00.270385+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions",
+    "path": "screening/usm-internal-transactions.json",
+    "http_status": 200,
+    "bytes": 90150,
+    "sha256": "a01efb1a0c4b9a5938dfe79de962078e4fc0a802b37443f6798160299b1ab45b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:23.050191+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers",
+    "path": "screening/usm-token-transfers.json",
+    "http_status": 200,
+    "bytes": 126205,
+    "sha256": "4320116f6374a2d854461db4b376bcd1c03d10806fa24f4750e14f9ea0777caf",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.913495+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xCF5E5e28848cFe779f7Fb711C57857Cb3b144A19",
+    "path": "screening/garden-htlc-source.json",
+    "http_status": 200,
+    "bytes": 200746,
+    "sha256": "703057003ebd9fd7cfcc184ae82e914afa4fa5050f77e346162b4bdce3aa5a99",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.612946+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-07",
+    "path": "screening/defihacklabs-july.json",
+    "http_status": 200,
+    "bytes": 2762,
+    "sha256": "0ae7c83f6c8cb214ea11b233ffa684770a35019d9018eb561f73ae20160fe609",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.284428+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-08",
+    "path": "screening/defihacklabs-august.json",
+    "http_status": 200,
+    "bytes": 14146,
+    "sha256": "1f9c894663983afd7de2738010295bdfd5d43d88afd2fef8cad1229e69671ded",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.466042+08:00"
+  }
+]

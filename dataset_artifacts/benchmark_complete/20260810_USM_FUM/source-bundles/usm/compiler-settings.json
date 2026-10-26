@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.9+commit.e5eed63a",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 1000000,
+      "enabled": true
+    },
+    "evmVersion": "london",
+    "remappings": []
+  },
+  "name": "USM",
+  "fullyQualifiedName": "contracts/USM.sol:USM"
+}

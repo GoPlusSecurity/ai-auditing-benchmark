@@ -1,0 +1,8 @@
+0cd10ed5cb532003b0e614d3517cc3e9535c42c8088d5d4c05459bbb4043a08e  ../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/aic-token/contracts/flatten/nexus_aic_L1_L720.sol
+86ca2c71c3585edb95d48e85056ac83d76c024bd6b69ccf258eac1b92f31936a  ../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/aic-token/contracts/flatten/nexus_aic_L930_L1103.sol
+df0c6458f573f81d31baaff5e033fb3b7cb49be85528e53f48f2b0bcbaf61e25  ../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/nex-token/contracts/flatten/nexus_nex_L1097_L1754.sol
+9cea0fad487d2d9e2584fbd7c631826d61e40d6d68acd94546dd589479cd0b5e  ../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/nex-token/contracts/flatten/nexus_nex_L1_L720.sol
+bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd  ../../../dataset/benchmark_simplified/20260804_NEX_AIC/slices/pro-pair/PancakePair_L1_L497.sol
+9b74cfc98c24e222784b59655664725d00cb434ad2a235dfe336891d38b7c81d  SOURCE.md
+6f6b41ecd42c0e4b43b0cfbf59980ff30b3c0fab9a049b81687cc522162bca4e  case_metadata.json
+973245349724b1cc83e5e2ec111d268e11b1a3cba6dd222baf2299e96500f6a9  slice_manifest.json

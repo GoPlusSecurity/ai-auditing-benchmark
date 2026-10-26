@@ -1,0 +1,194 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "nex-token",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0xaE04AE29bdB7aB7Eb249d3aFa7Bc3D37564e8Cf9?fields=all",
+      "address": "0xaE04AE29bdB7aB7Eb249d3aFa7Bc3D37564e8Cf9",
+      "chain_id": "56",
+      "verified_at": "2026-08-17T11:22:54Z",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": "0x6e8ae1c9ef1b60404facb51ac498e4f37510eeb95c1d0a4617cea3be9cac72ea",
+        "blockNumber": "104669711",
+        "transactionIndex": "20",
+        "deployer": "0x13b81C2e8a4EDD2aAc1A096889B778103b16F7e8"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.18+commit.87f61d96",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          }
+        },
+        "name": "NEX",
+        "fullyQualifiedName": "contracts/flatten/nexus_nex.sol:NEX"
+      },
+      "response_path": "source-bundles/nex-token/source-response.json",
+      "response_sha256": "90ec3fc429c4e2d6a92b29cdecab9380d706210312454c900d9efb7325d53189",
+      "abi_path": "source-bundles/nex-token/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/nex-token/contracts/flatten/nexus_nex.sol",
+          "original_source_path": "contracts/flatten/nexus_nex.sol",
+          "sha256": "6f7f119138b15a4581e8e3bde06099c021c3dbd0c8af617334e1faadc4945caa",
+          "bytes": 60222
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:42:01.118261+08:00"
+    },
+    {
+      "id": "aic-token",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0xc0DC449De632586A00409873521AFC251aC5cE74?fields=all",
+      "address": "0xc0DC449De632586A00409873521AFC251aC5cE74",
+      "chain_id": "56",
+      "verified_at": "2026-08-17T12:00:39Z",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": "0x00b3fde6a293c628c0a23db5fb0aef2e2e033a5e146e8def94f9efa8ad1d57b2",
+        "blockNumber": "104663223",
+        "transactionIndex": "40",
+        "deployer": "0x13b81C2e8a4EDD2aAc1A096889B778103b16F7e8"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.18+commit.87f61d96",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          }
+        },
+        "name": "AIC",
+        "fullyQualifiedName": "contracts/flatten/nexus_aic.sol:AIC"
+      },
+      "response_path": "source-bundles/aic-token/source-response.json",
+      "response_sha256": "c928998bba2cb064e4866f56ca3dbe6b7b075ad064c06060f65ceb9fcf24372a",
+      "abi_path": "source-bundles/aic-token/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/aic-token/contracts/flatten/nexus_aic.sol",
+          "original_source_path": "contracts/flatten/nexus_aic.sol",
+          "sha256": "5a5c1a07c815972b788d237c07f230627682dc8673669e94dfbf5a86eb8af433",
+          "bytes": 41017
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:42:00.985603+08:00"
+    },
+    {
+      "id": "pro-pair",
+      "kind": "public_original_source",
+      "role": "normal_protocol_reference_context",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x63844BD4BFad910B1643713302a1cC1ed20d50c3?fields=all",
+      "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+      "chain_id": "56",
+      "verified_at": "2026-09-11T15:40:24Z",
+      "creation_match": null,
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.5.16+commit.9c3226ce",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          }
+        },
+        "name": "PancakePair",
+        "fullyQualifiedName": "PancakePair.sol:PancakePair"
+      },
+      "response_path": "source-bundles/pro-pair/source-response.json",
+      "response_sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+      "abi_path": "source-bundles/pro-pair/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260804_NEX_AIC/source-bundles/pro-pair/PancakePair.sol",
+          "original_source_path": "PancakePair.sol",
+          "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+          "bytes": 22004
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:40:34.869871+08:00"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/nex-receipt.json",
+      "sha256": "af7d8a10aa91becd2d79a84f54568f13b765c965ae9e9212e0351c3a7f0fd162",
+      "bytes": 20407,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:40:33.411026+08:00"
+    },
+    {
+      "path": "evidence/nex-transaction.json",
+      "sha256": "a51c7c3461bde04b447493dcc5acfe67d4baa085e19b37b2ab2b0220e80d7c02",
+      "bytes": 11180,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:58:35.597692+08:00"
+    },
+    {
+      "path": "evidence/nex-block.json",
+      "sha256": "e99c3e953d8d31daf75f5e0954f665b596556e6aad46b6e67b10c9040cf16f58",
+      "bytes": 10430,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.572667+08:00"
+    },
+    {
+      "path": "evidence/nex-analysis.html",
+      "sha256": "1924583143e1bd7fad90b0a9e3482ea62a5f7b4526924a80ee925818efdbd03a",
+      "bytes": 107779,
+      "url": "https://anomly.rs/nex-aic-pancakeswap-double-transfer-exploit",
+      "retrieved_at": "2026-10-21T05:41:59.388967+08:00"
+    },
+    {
+      "path": "evidence/nex-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+    },
+    {
+      "path": "evidence/nex-flash-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:24:38.127476+08:00"
+    },
+    {
+      "path": "evidence/decoded-events-and-flows.json",
+      "sha256": "88e6309e8ccf0f3864fcbc0dc7832ca1a4da5207cb0c5b96f86ab5c0b59201b3",
+      "bytes": 8535,
+      "kind": "offline_decode_of_archived_receipts_or_trace"
+    },
+    {
+      "path": "evidence/pool-runtime-comparison.json",
+      "sha256": "58bc62ce9d66b6a4c100fa2dd356733f9ae3dce59f15a5fed45c68aec5ba2f5b",
+      "bytes": 1901,
+      "kind": "current_pool_runtime_byte_comparison_not_historical_binding"
+    }
+  ],
+  "context_limits": "PancakePair verified source comes from the separately identified PRO pool. Five actual incident pools have byte-identical current runtime, recorded in the batch comparison; no attack-block runtime equivalence is claimed. Circle current proxy implementation is context; its historical slot was not independently reconstructed.",
+  "current_pool_runtime_comparison": "evidence/pool-runtime-comparison.json"
+}

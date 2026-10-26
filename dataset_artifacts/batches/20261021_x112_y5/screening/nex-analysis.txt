@@ -1,0 +1,295 @@
+NEX/AIC PancakeSwap Pool Exploit Analysis — anomly.rs
+anomly.rs
+anomly.rs
+Log in
+NEX/AIC PancakeSwap Pool Exploit Analysis
+bsc
+/
+Published
+0x905cc861bc...ddd69f87
+0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87
+/
+Aug 3, 2026, 1:03 PM
+Report
+PoC
+Source
+Download PoC
+NEX/AIC PancakeSwap Pool Exploit Analysis
+Date
+: 2026-08-03
+Loss Estimate
+: 40,279,208.819696511790081586 AIC drained from the NEX/AIC pair; attacker realized 32.361267289208020008 BNB gross (
+$21,503.92) and 32.359524394208020008 BNB net after gas (
+$21,502.76).
+I. Executive Summary
+Verdict
+: Confirmed Exploit - NEX transfer double-count / AMM reserve manipulation.
+Root Cause
+: The NEX token at
+0xaE04AE29bdB7aB7Eb249d3aFa7Bc3D37564e8Cf9
+overrides
+_transfer
+so router-involved transfers call
+super._transfer(from, to, amount)
+once in the
+isRouter
+branch and then fall through to a second unconditional
+super._transfer
+. The attacker forced the Pancake NEX/AIC pair to
+skim
+NEX to the router, causing a double debit from the pair, then called
+sync
+so the pair recorded a near-zero NEX reserve. A follow-up swap against that corrupted reserve withdrew nearly all AIC from the pair and converted the proceeds to BNB.
+II. Vulnerability
+A. Business Logic Context
+NEX is a fee-on-transfer token paired against AIC on a PancakeSwap V2-style pair. Its intended behavior is to take DAO/node fees on sells into automated market-maker pairs while allowing router interactions.
+The Pancake pair is standard:
+skim(to)
+transfers token balances above stored reserves to any recipient, and
+sync()
+updates reserves to current token balances. Those functions assume token transfers move exactly the requested amount from the pair once.
+B. The Vulnerability
+// contracts/flatten/nexus_nex.sol @ 0xaE04AE29bdB7aB7Eb249d3aFa7Bc3D37564e8Cf9
+function
+_transfer(
+address
+from
+,
+address
+to,
+uint256
+amount)
+internal
+override
+{
+    ...
+bool
+isSell = automatedMarketMakerPairs[to];
+bool
+isRouter = (
+from
+== uniswapV2Router || to == uniswapV2Router);
+if
+(isRouter){
+super
+._transfer(
+from
+, to, amount);
+    }
+else
+if
+(isSell){
+uint256
+daoTokens = amount.mul(daoFee).div(
+100
+);
+uint256
+nodeTokens = amount.mul(nodeFee).div(
+100
+);
+        amount = amount.sub(daoTokens).sub(nodeTokens);
+        ...
+    }
+super
+._transfer(
+from
+, to, amount);
+}
+The missing
+return
+or
+else
+after the
+isRouter
+branch violates the ERC-20 invariant that one transfer call moves
+amount
+once. When
+from
+is the NEX/AIC pair and
+to
+is the Pancake router, a single
+transfer(router, amount)
+debits the pair twice and credits the router twice.
+// Contract.sol PancakePair @ 0x974C0078740480aE830D379fDB8d5f441C9dDC75
+function
+skim(
+address
+to)
+external
+lock {
+address
+_token0 = token0;
+address
+_token1 = token1;
+    _safeTransfer(_token0, to, IERC20(_token0).balanceOf(
+address
+(
+this
+)).sub(reserve0));
+    _safeTransfer(_token1, to, IERC20(_token1).balanceOf(
+address
+(
+this
+)).sub(reserve1));
+}
+function
+sync()
+external
+lock {
+    _update(IERC20(token0).balanceOf(
+address
+(
+this
+)), IERC20(token1).balanceOf(
+address
+(
+this
+)), reserve0, reserve1);
+}
+C. Why It Was Exploitable
+The pair already held a large NEX reserve. The helper contract created a NEX surplus just above the pair's reserve, then chose the Pancake router as the
+skim
+recipient specifically to trigger NEX's router branch. Because the requested skim amount was about half the pair's NEX balance, the double debit did not revert and left the pair with only
+1 wei
+of NEX.
+sync()
+then made that manipulated balance the official reserve, breaking the constant-product pricing basis for the next swap.
+III. Technical Attack Flow
+Focal tx
+created
+0xF0F74b90aFB29903C80ED7531B50764C49089E25
+, which created unverified helper
+0x29977d9B8a888B17BFfA2958b003956a5E8BE69A
+and invoked selector
+0x28022411
+.
+The helper called
+sync()
+on the AIC/USDC pair
+0xe89636FB73D04Db51e5Fbd0Ce1379fb8d2b96415
+, then flash-swapped out
+42,982,239.623681550888856012 AIC
+.
+Inside
+pancakeCall
+, the helper routed the borrowed AIC through the NEX/AIC pair
+0x974C0078740480aE830D379fDB8d5f441C9dDC75
+, receiving
+33,784,701.156466997300742224 NEX
+.
+The helper sent
+33,765,346.758312339612076744 NEX
+back to the NEX/AIC pair. NEX's sell fee sent
+2,025,920.805498740376724604 NEX
+to fee address
+0x0f7e35653f6A8E09A0865a183B51177e16237CB5
+and
+31,739,425.952813599235352140 NEX
+to the pair, creating a skimmable excess.
+The helper called
+skim(0x10ED43C718714eb63d5aA57B78B54704E256024E)
+. The trace records two identical NEX
+Transfer
+logs from the pair to the router for
+31,739,425.952813599235352140 NEX
+; afterward
+sync()
+set NEX/AIC reserves to
+1 wei NEX
+and
+83,261,448.443378062678942187 AIC
+.
+The helper swapped its remaining
+19,354.398154657688665480 NEX
+into the now-corrupted pair. After the NEX fee, the pair saw only
+18,193.134265378227345552 NEX
+input, but because the stored NEX reserve was
+1 wei
+, Pancake's swap math released
+83,261,448.443378062678937598 AIC
+, leaving only
+4,589 wei AIC
+in the pair.
+The helper repaid the flash swap with
+43,093,993.446703122921167038 AIC
+, which included a
+111,753.823021572032311026 AIC
+flash-swap fee, and sold the remaining
+40,167,454.996674939757770560 AIC
+through AIC/USDC and USDC/WBNB for
+21,503.921643594504179252 USDC
+and then
+32.361267289208020008 WBNB
+, which was unwrapped and sent to the attacker EOA.
+IV. Attacker Timeline
+Preparation
+2026-08-02 15:02:13 UTC: The attacker EOA created an earlier helper contract in
+0x225de606b9b43c2f642e5b8f4d98ec7bd1f83978d88d890e2379ff8284e33d9f
+.
+2026-08-03 11:59:21 UTC: The EOA approved
+1000
+USDT to Pancake router in
+0x945122e8c6ba1d848ca5d9d6def51e05c96b32acb738158dd53018fcbb642317
+.
+2026-08-03 11:59:21 UTC: In
+0x31dc365ad88dbd434ce416dfffa63e85ca5c9b174d0d75e8e64b5bc3ab7a3f54
+, the EOA swapped USDT for BNB through Pancake and received
+1.699325504673607913 BNB
+internally.
+Focal Transaction
+2026-08-03 13:03:53 UTC:
+0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87
+deployed the attack helper, manipulated the NEX/AIC pair reserve with
+skim
+/
+sync
+, drained AIC, repaid the flash swap, and exited to BNB.
+Exit
+The exit occurred inside the focal transaction: Pancake router unwrapped
+32.361267289208020008 WBNB
+and sent
+32.361267289208020008 BNB
+to the attacker EOA. The EOA's focal native balance delta was
++32.359524394208020008 BNB
+after
+0.001742895 BNB
+gas.
+2026-08-03 13:03:55 UTC: The next observed EOA transaction was another contract creation,
+0xdf1a134bc10b10a90dfd353a3714c4743532a2ff01250ebb7db4333f366b9d60
+, not a separate cash-out of this transaction's BNB proceeds.
+V. Loss Quantification
+Asset
+Amount
+USD (at tx time)
+AIC removed from NEX/AIC pair
+40,279,208.819696511790081586 AIC
+~$21,503.92, using the in-transaction AIC -> USDC -> WBNB exit
+NEX removed from NEX/AIC pair
+65,505,933.975015218308748812 NEX
+Not independently priced; reserve-manipulation side effect
+Gross attacker proceeds
+32.361267289208020008 BNB
+~$21,503.92
+Gas paid
+0.001742895 BNB
+~$1.16
+Net attacker proceeds
+32.359524394208020008 BNB
+~$21,502.76
+Balance-change reconciliation: the NEX/AIC pair's AIC balance fell from
+40,279,208.819696511790086175 AIC
+to
+0.000000000000004589 AIC
+, a net loss of
+40,279,208.819696511790081586 AIC
+. That loss funded
+40,167,454.996674939757770560 AIC
+sold by the attacker plus the
+111,753.823021572032311026 AIC
+flash-swap repayment fee. The AIC/USDC pair gained the same net AIC amount while losing
+21,503.921643594504179252 USDC
+; the USDC/WBNB pair then gained the USDC and lost
+32.361267289208020008 WBNB
+. The attacker's EOA native balance increased by
+32.359524394208020008 BNB
+after gas, matching the realized exit less transaction cost.

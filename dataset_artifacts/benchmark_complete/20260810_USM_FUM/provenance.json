@@ -1,0 +1,304 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "usm",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x2a7FFf44C19f39468064ab5e5c304De01D591675?fields=all",
+      "address": "0x2a7FFf44C19f39468064ab5e5c304De01D591675",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:14:33Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x82f9dfac1a1bb285715263c32a63fb5e65148d06a76217fefd6399ae5fa393b1",
+        "blockNumber": "13390185",
+        "transactionIndex": "21",
+        "deployer": "0xC89234DDC6Fec3Eb20beec3DA67Bd183C3A4be06"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": true
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 1000000,
+            "enabled": true
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "USM",
+        "fullyQualifiedName": "contracts/USM.sol:USM"
+      },
+      "response_path": "source-bundles/usm/source-response.json",
+      "response_sha256": "155ced2cfd13c1e485f65308e8bd651bab8a916ff7a342755343ed9815768614",
+      "abi_path": "source-bundles/usm/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/erc20permit/contracts/IERC2612.sol",
+          "original_source_path": "erc20permit/contracts/IERC2612.sol",
+          "sha256": "4f57ed3d052d147854fee70589aac1b78a6a2c18853831d4cc95ea707d72c9a7",
+          "bytes": 1861
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/FUM.sol",
+          "original_source_path": "contracts/FUM.sol",
+          "sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+          "bytes": 2903
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+          "original_source_path": "contracts/USM.sol",
+          "sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+          "bytes": 44381
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/IFUM.sol",
+          "original_source_path": "contracts/IFUM.sol",
+          "sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+          "bytes": 542
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/IUSM.sol",
+          "original_source_path": "contracts/IUSM.sol",
+          "sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+          "bytes": 8654
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/MinOut.sol",
+          "original_source_path": "contracts/MinOut.sol",
+          "sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+          "bytes": 1193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/Address.sol",
+          "original_source_path": "contracts/Address.sol",
+          "sha256": "5c7540d431c0fa51fbdeda9b2897ee279d8e617bb64e4bd510fee74a2ec98ba6",
+          "bytes": 1369
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/WadMath.sol",
+          "original_source_path": "contracts/WadMath.sol",
+          "sha256": "30422781de176854bb990485d5ec42c13eabd9a2f29608e9fef5bf2bf2f636fd",
+          "bytes": 36004
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/OptOutable.sol",
+          "original_source_path": "contracts/OptOutable.sol",
+          "sha256": "235c479c146bf59932d915bcab80e5bcca05f574b79cafb50c53ac501c633bcc",
+          "bytes": 2905
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/oracles/Oracle.sol",
+          "original_source_path": "contracts/oracles/Oracle.sol",
+          "sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+          "bytes": 218
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/acc-erc20/contracts/ERC20.sol",
+          "original_source_path": "acc-erc20/contracts/ERC20.sol",
+          "sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+          "bytes": 2904
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/acc-erc20/contracts/IERC20.sol",
+          "original_source_path": "acc-erc20/contracts/IERC20.sol",
+          "sha256": "6a6334993308fc81934fb830185ec897eadb72954308ba106a307afe66eeb6e1",
+          "bytes": 2695
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/erc20permit/contracts/ERC20Permit.sol",
+          "original_source_path": "erc20permit/contracts/ERC20Permit.sol",
+          "sha256": "b2bed2e52c1cd4c8ce6e9c0ea1e12b924a2484239d17a767ec1da88b26e935c7",
+          "bytes": 2719
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:50:17.910068+08:00"
+    },
+    {
+      "id": "fum",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x86729873e3b88DE2Ab85CA292D6d6D69D548eDF3?fields=all",
+      "address": "0x86729873e3b88DE2Ab85CA292D6d6D69D548eDF3",
+      "chain_id": "1",
+      "verified_at": "2024-08-08T14:25:24Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x82f9dfac1a1bb285715263c32a63fb5e65148d06a76217fefd6399ae5fa393b1",
+        "blockNumber": "13390185",
+        "transactionIndex": "21",
+        "deployer": "0xC89234DDC6Fec3Eb20beec3DA67Bd183C3A4be06"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.9+commit.e5eed63a",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": true
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 1000000,
+            "enabled": true
+          },
+          "evmVersion": "london",
+          "remappings": []
+        },
+        "name": "FUM",
+        "fullyQualifiedName": "contracts/FUM.sol:FUM"
+      },
+      "response_path": "source-bundles/fum/source-response.json",
+      "response_sha256": "ee83c6c127637414634dcea31c8a6c5aa1fe44a75d4c6dc4c7debadac839aaa7",
+      "abi_path": "source-bundles/fum/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/FUM.sol",
+          "original_source_path": "contracts/FUM.sol",
+          "sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+          "bytes": 2903
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/IFUM.sol",
+          "original_source_path": "contracts/IFUM.sol",
+          "sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+          "bytes": 542
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/IUSM.sol",
+          "original_source_path": "contracts/IUSM.sol",
+          "sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+          "bytes": 8654
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/MinOut.sol",
+          "original_source_path": "contracts/MinOut.sol",
+          "sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+          "bytes": 1193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/OptOutable.sol",
+          "original_source_path": "contracts/OptOutable.sol",
+          "sha256": "235c479c146bf59932d915bcab80e5bcca05f574b79cafb50c53ac501c633bcc",
+          "bytes": 2905
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/contracts/oracles/Oracle.sol",
+          "original_source_path": "contracts/oracles/Oracle.sol",
+          "sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+          "bytes": 218
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/acc-erc20/contracts/ERC20.sol",
+          "original_source_path": "acc-erc20/contracts/ERC20.sol",
+          "sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+          "bytes": 2904
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/acc-erc20/contracts/IERC20.sol",
+          "original_source_path": "acc-erc20/contracts/IERC20.sol",
+          "sha256": "6a6334993308fc81934fb830185ec897eadb72954308ba106a307afe66eeb6e1",
+          "bytes": 2695
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/erc20permit/contracts/IERC2612.sol",
+          "original_source_path": "erc20permit/contracts/IERC2612.sol",
+          "sha256": "4f57ed3d052d147854fee70589aac1b78a6a2c18853831d4cc95ea707d72c9a7",
+          "bytes": 1861
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/fum/erc20permit/contracts/ERC20Permit.sol",
+          "original_source_path": "erc20permit/contracts/ERC20Permit.sol",
+          "sha256": "b2bed2e52c1cd4c8ce6e9c0ea1e12b924a2484239d17a767ec1da88b26e935c7",
+          "bytes": 2719
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:50:17.483236+08:00"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/usm-transaction.json",
+      "sha256": "499199c6ecafa67440b5150cd42a4ae7c69c9dea13d3e7990f041da63a7bf934",
+      "bytes": 26897,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e",
+      "retrieved_at": "2026-10-21T05:40:35.006671+08:00"
+    },
+    {
+      "path": "evidence/usm-trace.json",
+      "sha256": "c5ad2c0b24d6982240fa28400aec7eabfa3010a5fa9d5cfd0a0ae713c780de49",
+      "bytes": 468982,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/raw-trace",
+      "retrieved_at": "2026-10-21T05:50:17.179970+08:00"
+    },
+    {
+      "path": "evidence/usm-internal-transactions.json",
+      "sha256": "a01efb1a0c4b9a5938dfe79de962078e4fc0a802b37443f6798160299b1ab45b",
+      "bytes": 90150,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions",
+      "retrieved_at": "2026-10-21T05:42:23.050191+08:00"
+    },
+    {
+      "path": "evidence/usm-internal-transactions-page2.json",
+      "sha256": "f2d8233f9dae1b671c95812e22f9ca508dd630a4a0a24ca6720218a60d3c543c",
+      "bytes": 89879,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions?index=50&block_number=25716150&transaction_index=1193&items_count=50",
+      "retrieved_at": "2026-10-21T06:00:33.591057+08:00"
+    },
+    {
+      "path": "evidence/usm-token-transfers.json",
+      "sha256": "4320116f6374a2d854461db4b376bcd1c03d10806fa24f4750e14f9ea0777caf",
+      "bytes": 126205,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers",
+      "retrieved_at": "2026-10-21T05:42:00.913495+08:00"
+    },
+    {
+      "path": "evidence/usm-token-transfers-page2.json",
+      "sha256": "5aa2c4fa1602f24a3fb76f1925dcc49ae82483b2604201ae8cd9b39d0709f7b8",
+      "bytes": 47678,
+      "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers?index=826&block_number=25716150",
+      "retrieved_at": "2026-10-21T06:00:17.002922+08:00"
+    },
+    {
+      "path": "evidence/usm-analysis.html",
+      "sha256": "c4a04cbdf07db90e49b6a5f7ea758202a2b7f09d13baeedb8c4abc02577bb6eb",
+      "bytes": 44477,
+      "url": "https://anomly.rs/usm-fum-fund-defund-splitting-exploit",
+      "retrieved_at": "2026-10-21T05:58:35.348844+08:00"
+    },
+    {
+      "path": "evidence/usm-public-reference-poc.sol",
+      "sha256": "c2ba4965fb96afbb92772fdd40e0093d07a1e4b3767b954a0f8a00671d6130ae",
+      "bytes": 5866,
+      "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/d4d26edbf1393537f6166523a21368b1a34499c8/src/test/2026-08/USM_exp.sol",
+      "retrieved_at": "2026-10-21T06:04:50.044597+08:00"
+    },
+    {
+      "path": "evidence/usm-poc-commit.json",
+      "sha256": "36edcf1751907b8d9c0c60e5bcca813df4cecb45811df4541d4862c636839cc5",
+      "bytes": 3382,
+      "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/USM_exp.sol&per_page=1",
+      "retrieved_at": "2026-10-21T05:58:35.519691+08:00"
+    },
+    {
+      "path": "evidence/decoded-events-and-flows.json",
+      "sha256": "96809fbebf25a00d2e04cfa5c85bd66de9ea31a12619c9832a61438fbe785374",
+      "bytes": 50668,
+      "kind": "offline_decode_of_archived_receipts_or_trace"
+    }
+  ],
+  "context_limits": "PancakePair verified source comes from the separately identified PRO pool. Five actual incident pools have byte-identical current runtime, recorded in the batch comparison; no attack-block runtime equivalence is claimed. Circle current proxy implementation is context; its historical slot was not independently reconstructed."
+}

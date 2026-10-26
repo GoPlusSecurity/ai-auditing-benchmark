@@ -1,0 +1,24 @@
+test_duplicate_case_ids_still_count_as_two_qualifying_rows (test_20261002_batch.SelectionRuleTests.test_duplicate_case_ids_still_count_as_two_qualifying_rows) ... ok
+test_embedded_csv_newline_is_one_parsed_sheet_row (test_20261002_batch.SelectionRuleTests.test_embedded_csv_newline_is_one_parsed_sheet_row) ... ok
+test_ineligible_start_and_consecutive_skips_continue_upward (test_20261002_batch.SelectionRuleTests.test_ineligible_start_and_consecutive_skips_continue_upward) ... ok
+test_insufficient_qualifying_rows_raises (test_20261002_batch.SelectionRuleTests.test_insufficient_qualifying_rows_raises) ... ok
+test_last_parsed_row_is_valid_upper_boundary (test_20261002_batch.SelectionRuleTests.test_last_parsed_row_is_valid_upper_boundary) ... ok
+test_missing_or_non_boolean_decision_fails_closed (test_20261002_batch.SelectionRuleTests.test_missing_or_non_boolean_decision_fails_closed) ... ok
+test_non_integer_x_or_y_is_rejected_including_bool (test_20261002_batch.SelectionRuleTests.test_non_integer_x_or_y_is_rejected_including_bool) ... ok
+test_non_positive_y_is_rejected (test_20261002_batch.SelectionRuleTests.test_non_positive_y_is_rejected) ... ok
+test_row_three_is_valid_lower_boundary (test_20261002_batch.SelectionRuleTests.test_row_three_is_valid_lower_boundary) ... ok
+test_x_must_name_an_event_row_inside_the_export (test_20261002_batch.SelectionRuleTests.test_x_must_name_an_event_row_inside_the_export) ... ok
+test_y_cannot_exceed_rows_available_through_x (test_20261002_batch.SelectionRuleTests.test_y_cannot_exceed_rows_available_through_x) ... ok
+test_y_one_selects_starting_row (test_20261002_batch.SelectionRuleTests.test_y_one_selects_starting_row) ... ok
+test_fixed_snapshot_and_all_archive_checks (test_20261021_batch.BatchAcceptanceTests.test_fixed_snapshot_and_all_archive_checks) ... ok
+test_keccak_against_independent_known_vectors (test_20261021_batch.CausalEvidenceTests.test_keccak_against_independent_known_vectors) ... ok
+test_moke_has_64_equal_stale_records_and_one_smaller (test_20261021_batch.CausalEvidenceTests.test_moke_has_64_equal_stale_records_and_one_smaller) ... ok
+test_nex_really_transferred_the_same_amount_twice_from_pair (test_20261021_batch.CausalEvidenceTests.test_nex_really_transferred_the_same_amount_twice_from_pair) ... ok
+test_online_only_policy_and_lula_exclusion (test_20261021_batch.CausalEvidenceTests.test_online_only_policy_and_lula_exclusion) ... ok
+test_simplification_preserves_parent_balance_math_and_state_writes (test_20261021_batch.CausalEvidenceTests.test_simplification_preserves_parent_balance_math_and_state_writes) ... ok
+test_usdc_is_six_decimals (test_20261021_batch.CausalEvidenceTests.test_usdc_is_six_decimals) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 23.217s
+
+OK

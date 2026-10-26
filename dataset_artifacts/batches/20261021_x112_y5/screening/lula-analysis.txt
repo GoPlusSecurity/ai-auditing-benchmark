@@ -1,0 +1,179 @@
+LULA Recycle Price Manipulation Exploit Analysis — anomly.rs
+anomly.rs
+anomly.rs
+Log in
+LULA Recycle Price Manipulation Exploit Analysis
+bsc
+/
+Published
+0xa219ab9d57...a0411d7c
+0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c
+/
+Jul 28, 2026, 4:08 PM
+Report
+PoC
+Source
+Download PoC
+LULA Recycle Price Manipulation Exploit Analysis
+Date
+: 2026-07-28
+Loss Estimate
+: 591,659.751036 USDT drained from the LULA/USDT PancakeSwap V2 pair, about $591,056 at the in-transaction USDT oracle price. The attacker kept 578,295.907588 USDT after 13,363.843449 USDT of flash fees.
+I. Executive Summary
+Verdict
+: Confirmed Exploit - AMM reserve manipulation through LULA's reward/recycle path.
+Root Cause
+: The verified LULA token at
+0xF5d7029eb6751d170dcF0Bb1c87Af6f93d5A2e9a
+exposes
+recycle(uint256)
+, callable by its
+rentalContract
+, which transfers LULA directly out of the PancakeSwap pair and immediately calls
+sync()
+. In the focal transaction, the attacker used flash liquidity to fill the pair with USDT, then routed repeated reward claims through the unverified rental contract
+0x377a015f44C3FDf71060e94648EDC9e0316C7f1a
+. Each claim invoked
+recycle()
+, shrinking the pair's LULA reserve while the USDT reserve stayed high, so a final LULA sell extracted almost the entire temporary USDT reserve.
+II. Vulnerability
+A. Business Logic Context
+LULA trades against USDT in PancakeSwap V2 pair
+0xF0b36389a12A28be1280c0ec2A4bbc76889D6a96
+. Its token code includes sell taxes, automatic liquidity handling, and a rental/reward subsystem. A PancakeSwap V2 pair prices swaps from its synced token reserves, so reserve balances should not be changed by an external reward path without a corresponding swap or liquidity action.
+The rental contract is unverified;
+get_source_code_list
+returned no source for
+0x377a015f44C3FDf71060e94648EDC9e0316C7f1a
+. The execution trace nevertheless shows it calling
+LULA.recycle()
+from
+claimTeamReward()
+and
+claimReferralReward()
+flows.
+B. The Vulnerability
+// LULA/LULA.sol @ 0xF5d7029eb6751d170dcF0Bb1c87Af6f93d5A2e9a
+function
+recycle(
+uint256
+amount)
+external
+{
+require
+(
+msg
+.sender == rentalContract,
+"Only Rental"
+);
+uint256
+pairBalance = balanceOf[uniswapV2Pair];
+uint256
+maxTake = pairBalance /
+3
+;
+uint256
+actual = amount >= maxTake ? maxTake : amount;
+if
+(actual ==
+0
+)
+return
+;
+    _basicTransfer(uniswapV2Pair, rentalContract, actual);
+    IUniswapV2Pair(uniswapV2Pair).sync();
+}
+This function lets the authorized rental contract remove up to one-third of the pair's LULA balance and then force the AMM to accept the reduced balance as the new reserve. Repeating the call exponentially depletes the LULA reserve without removing USDT, violating the pair's pricing invariant.
+C. Why It Was Exploitable
+The exploitable precondition was that reward-claim calls could reach
+recycle()
+repeatedly in one transaction. After the attacker made the pair hold 197,642,262.105713 USDT and only 24,022.137030 LULA, the repeated
+recycle()
+calls reduced the LULA reserve to 0.004352 LULA. At that point, selling 4,749.05 LULA into the pair returned 197,642,080.528989 USDT.
+III. Technical Attack Flow
+The attacker EOA
+0x2677806d48325ced7533c54b86ed5e99b129a4ed
+called the unverified attack contract
+0x5E506Ba06Fa6C61D1069B0E68d7013DE35AFA816
+in
+the focal transaction
+.
+The attack contract assembled temporary capital: 4,403,307.398128 USDT and 407,751.430796 WBNB from
+0x8F73...
+, 14,636,621.772420 USDT through an Aave borrow/repay leg, 64,955,663.379339 USDT through a Venus borrow/repay leg, plus PancakeSwap V3 and pool-manager flash liquidity. The Venus and Aave debts were repaid before transaction end.
+Before manipulation, the LULA/USDT pair reserves were 591,841.327761 USDT and 8,001,957.949148 LULA. The attacker first pulled 5,000 LULA from the EOA and sold through the pair, triggering normal sell-tax/liquidity code.
+The attack contract then swapped 197,050,771.007709 USDT into the LULA/USDT pair for 7,982,785.687430 LULA. The pair's synced reserves became 197,642,262.105714 USDT and 24,022.137030 LULA.
+The contract called helper reward contracts such as
+0x2a6C...
+,
+0xF60F...
+,
+0xFE255...
+, and
+0xfD7e...
+. Those helpers called the rental contract, which repeatedly called
+LULA.recycle()
+. Trace examples include
+recycle(5466425413399659914651)
+at index 2981,
+recycle(5549422583180852016752)
+at index 3089, and later referral-claim recycle calls at indices 3554 and 3703.
+Each recycle transferred LULA from the pair to the rental contract and called
+sync()
+. The pair's LULA reserve fell from 24,022.137030 LULA to 0.004352 LULA while the USDT reserve remained 197,642,262.105714 USDT.
+The attacker sold 4,999 LULA through PancakeSwap; after LULA sell taxes, 4,749.05 LULA reached the pair. The pair sent 197,642,080.528989 USDT to the attack contract.
+The attack contract repaid the stacked flash liquidity and lending legs, then transferred 578,295.907588 USDT to the EOA at the end of the focal transaction.
+IV. Attacker Timeline
+Preparation
+2026-07-16 09:56:49 UTC - the EOA funded helper contract
+0x2a6Cf8592D1CC22BEd916481bb745ccAf80aE6F1
+with 0.001 BNB in
+0x529d6d0a640e4632d05175c717843d1d822531a8d145c03c6b1d1318e4efa562
+.
+2026-07-16 10:07:59 UTC - that helper interacted with the LULA rental contract in
+0x816a82ecd8325c438871dce8699eec9c94c717e708c2f0d3e4538efc86592482
+, setting up reward-state access later used in the focal transaction.
+2026-07-28 15:57:37 UTC - the EOA deployed the attack contract
+0x5E506Ba06Fa6C61D1069B0E68d7013DE35AFA816
+in
+0x52592c5abe9ff770162402be42ba171b035c9d3d37ab06720eec91c8851b5cc3
+.
+2026-07-28 15:59:01 UTC - the EOA approved LULA spending in
+0xdb93d985c19785f04709388828972b33aacf44824406b2a66240a3d4eb6b9ed2
+.
+Focal Transaction
+The focal transaction
+0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c
+ran at 2026-07-28 16:08:29 UTC. It manipulated the LULA/USDT pair reserves through
+recycle()
+, drained the pair's USDT side, repaid all temporary capital, and transferred 578,295.907588 USDT to the EOA.
+Exit
+In the focal transaction, the attack contract transferred 578,295.907588 USDT to the EOA at trace index 7222.
+On 2026-07-29 01:13:03 UTC, the EOA sent 1,000 USDT to
+0x5b114fB2047Ef3c0f65Dc396F7C89AD593137E34
+in
+0x8bdd4ed2335d4c52c7354cd0dd0b8cab90f8cb34522ccac09063faaac21d855f
+.
+On 2026-07-29 01:13:39 UTC, it sent another 10,000 USDT to the same recipient in
+0xde60dea60404658b5c79ef1b6566b85efa28a9df3376588241ef1af731ebaed4
+. Additional later transfers to the same recipient included 50,000 USDT transactions at 01:14:19 and 01:15:24 UTC.
+V. Loss Quantification
+Asset
+Amount
+USD (at tx time)
+USDT drained from LULA/USDT pair
+591,659.751036 USDT
+~$591,056
+Flash-loan / pool fees paid from proceeds
+13,363.843449 USDT
+~$13,350
+Attacker net USDT profit
+578,295.907588 USDT
+~$577,706
+The USDT accounting reconciles exactly from observed balance deltas:
+591,659.751036620107104457 = 578,295.907588061000526778 + 13,363.843448559106577679
+. The 13,363.843449 USDT fee total is the sum of the positive USDT deltas on the flash-liquidity pools, including the 7,500 USDT fee on
+0x4f31...
+and smaller Pancake V3 flash fees. The LULA/USDT pair also lost 7,997,208.894796 LULA from its token-side inventory due to the repeated
+recycle()
+transfers.

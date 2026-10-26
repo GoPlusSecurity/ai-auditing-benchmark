@@ -1,0 +1,677 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "allbridge-router",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xaA119F7442eCC28b9a8F236707ADA8362CFF24fF?fields=all",
+      "address": "0xaA119F7442eCC28b9a8F236707ADA8362CFF24fF",
+      "chain_id": "8453",
+      "verified_at": "2026-04-28T12:09:32Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x1eae1311381b8612123963452a082ca805fa2c166aa97ece14529ba4bff3e02d",
+        "blockNumber": "45294373",
+        "transactionIndex": "32",
+        "deployer": "0xfA00c78931F236949D1b52E60d9dbE762A632641"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.25+commit.b61c2a91",
+        "compilerSettings": {
+          "viaIR": true,
+          "metadata": {
+            "appendCBOR": true,
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": false
+          },
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "@layerzerolabs/lz-evm-protocol-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/protocol/contracts/",
+            "@layerzerolabs/lz-evm-messagelib-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/messagelib/contracts/",
+            "@layerzerolabs/lz-evm-oapp-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/oapp/contracts/",
+            "@layerzerolabs/oft-evm/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/oapp/contracts/oft/",
+            "@uniswap/v4-core/=lib/v4-core/",
+            "@uniswap/v4-periphery/=lib/v4-periphery/",
+            "@uniswap/permit2/=lib/permit2/",
+            "@uniswap/universal-router/=lib/universal-router/",
+            "@uniswap/v3-core/=lib/v3-core/",
+            "@uniswap/v2-core/=lib/v2-core/",
+            "@uniswap/v2-periphery/=lib/v2-periphery/",
+            "@uniswap/v3-periphery/=lib/universal-router/lib/v3-periphery/",
+            "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+            "solidity-bytes-utils/=lib/solidity-bytes-utils/",
+            "@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+            "ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/",
+            "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+            "forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/",
+            "forge-std/=lib/forge-std/src/",
+            "halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/",
+            "hardhat/=lib/v4-core/node_modules/hardhat/",
+            "layerzero-v2/=lib/layerzero-v2/",
+            "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+            "permit2/=lib/permit2/",
+            "poseidon-solidity/=lib/poseidon-solidity/contracts/",
+            "solmate/=lib/universal-router/lib/solmate/",
+            "universal-router/=lib/universal-router/",
+            "v2-core/=lib/v2-core/contracts/",
+            "v2-periphery/=lib/v2-periphery/contracts/",
+            "v3-core/=lib/v3-core/",
+            "v3-periphery/=lib/v3-periphery/contracts/",
+            "v4-core/=lib/v4-core/src/",
+            "v4-periphery/=lib/v4-periphery/"
+          ]
+        },
+        "name": "Router",
+        "fullyQualifiedName": "src/Router.sol:Router"
+      },
+      "response_path": "source-bundles/allbridge-router/source-response.json",
+      "response_sha256": "dacb3fc2df7de341244c5a67b5c65c075950783d8d38d4c331b4d22b73810c0f",
+      "abi_path": "source-bundles/allbridge-router/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol",
+          "original_source_path": "src/Router.sol",
+          "sha256": "730230f3e42f3c228b1baa548187be36733d91b41a43cd9c53b710cadaedef9f",
+          "bytes": 14593
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+          "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+          "bytes": 10800
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/ChainGasUsage.sol",
+          "original_source_path": "src/ChainGasUsage.sol",
+          "sha256": "59b254f0a03082a2e356736c10060c6312a24297803d23d6993d4bdbe0ae753a",
+          "bytes": 2171
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/ISwap.sol",
+          "original_source_path": "src/interfaces/ISwap.sol",
+          "sha256": "583a903e2a5e885aaca2bbe24e408781134b56c9e7b5c7062a99ab376d276aa5",
+          "bytes": 439
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/ITokenMessenger.sol",
+          "original_source_path": "src/interfaces/ITokenMessenger.sol",
+          "sha256": "237e5e811202b7e946a120ca985230826477cc19c74201c8d5c86dd0b80caabc",
+          "bytes": 750
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+          "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+          "bytes": 6540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/IGasUsage.sol",
+          "original_source_path": "src/interfaces/IGasUsage.sol",
+          "sha256": "102aa122b7aff234c50a7e9e46b1589e70cddd7156bab8b7234efeb5ad01d98b",
+          "bytes": 623
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/IGasOracle.sol",
+          "original_source_path": "src/interfaces/IGasOracle.sol",
+          "sha256": "c593662224bb92adc9c3696a6179a3c200b1d7f0a331a4fcf29f43715dcb5d74",
+          "bytes": 2059
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:58:35.225955+08:00"
+    },
+    {
+      "id": "allbridge-messenger",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xf9B710E427bf4D93598E0F80A84de22C7Ad9B577?fields=all",
+      "address": "0xf9B710E427bf4D93598E0F80A84de22C7Ad9B577",
+      "chain_id": "8453",
+      "verified_at": "2026-04-28T12:09:33Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x1685d88033341bdcc3afc1b9790b76654a0c5abfe61e545a06e3d17430bc5261",
+        "blockNumber": "45294373",
+        "transactionIndex": "34",
+        "deployer": "0xfA00c78931F236949D1b52E60d9dbE762A632641"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.25+commit.b61c2a91",
+        "compilerSettings": {
+          "viaIR": true,
+          "metadata": {
+            "appendCBOR": true,
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": false
+          },
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "@layerzerolabs/lz-evm-protocol-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/protocol/contracts/",
+            "@layerzerolabs/lz-evm-messagelib-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/messagelib/contracts/",
+            "@layerzerolabs/lz-evm-oapp-v2/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/oapp/contracts/",
+            "@layerzerolabs/oft-evm/contracts/=lib/layerzero-v2/packages/layerzero-v2/evm/oapp/contracts/oft/",
+            "@uniswap/v4-core/=lib/v4-core/",
+            "@uniswap/v4-periphery/=lib/v4-periphery/",
+            "@uniswap/permit2/=lib/permit2/",
+            "@uniswap/universal-router/=lib/universal-router/",
+            "@uniswap/v3-core/=lib/v3-core/",
+            "@uniswap/v2-core/=lib/v2-core/",
+            "@uniswap/v2-periphery/=lib/v2-periphery/",
+            "@uniswap/v3-periphery/=lib/universal-router/lib/v3-periphery/",
+            "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+            "solidity-bytes-utils/=lib/solidity-bytes-utils/",
+            "@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+            "ds-test/=lib/universal-router/lib/forge-std/lib/ds-test/src/",
+            "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+            "forge-gas-snapshot/=lib/permit2/lib/forge-gas-snapshot/src/",
+            "forge-std/=lib/forge-std/src/",
+            "halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/",
+            "hardhat/=lib/v4-core/node_modules/hardhat/",
+            "layerzero-v2/=lib/layerzero-v2/",
+            "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+            "permit2/=lib/permit2/",
+            "poseidon-solidity/=lib/poseidon-solidity/contracts/",
+            "solmate/=lib/universal-router/lib/solmate/",
+            "universal-router/=lib/universal-router/",
+            "v2-core/=lib/v2-core/contracts/",
+            "v2-periphery/=lib/v2-periphery/contracts/",
+            "v3-core/=lib/v3-core/",
+            "v3-periphery/=lib/v3-periphery/contracts/",
+            "v4-core/=lib/v4-core/src/",
+            "v4-periphery/=lib/v4-periphery/"
+          ]
+        },
+        "name": "CCTPTokenMessenger",
+        "fullyQualifiedName": "src/CCTPTokenMessenger.sol:CCTPTokenMessenger"
+      },
+      "response_path": "source-bundles/allbridge-messenger/source-response.json",
+      "response_sha256": "f70e0a8fe1d419550ddeb68b55a27f3c4e2372099773629493a279f10ae4ffa2",
+      "abi_path": "source-bundles/allbridge-messenger/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/CCTPTokenMessenger.sol",
+          "original_source_path": "src/CCTPTokenMessenger.sol",
+          "sha256": "1ee080f7eb55edf862ef9d9ad1a1a79f047988afa6a6b579d6a1ea87b912b52b",
+          "bytes": 7473
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/interfaces/ITokenMessenger.sol",
+          "original_source_path": "src/interfaces/ITokenMessenger.sol",
+          "sha256": "237e5e811202b7e946a120ca985230826477cc19c74201c8d5c86dd0b80caabc",
+          "bytes": 750
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/ChainGasUsage.sol",
+          "original_source_path": "src/ChainGasUsage.sol",
+          "sha256": "59b254f0a03082a2e356736c10060c6312a24297803d23d6993d4bdbe0ae753a",
+          "bytes": 2171
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/interfaces/IGasUsage.sol",
+          "original_source_path": "src/interfaces/IGasUsage.sol",
+          "sha256": "102aa122b7aff234c50a7e9e46b1589e70cddd7156bab8b7234efeb5ad01d98b",
+          "bytes": 623
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/interfaces/IGasOracle.sol",
+          "original_source_path": "src/interfaces/IGasOracle.sol",
+          "sha256": "c593662224bb92adc9c3696a6179a3c200b1d7f0a331a4fcf29f43715dcb5d74",
+          "bytes": 2059
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:58:35.284036+08:00"
+    },
+    {
+      "id": "allbridge-circle-proxy",
+      "kind": "public_original_source",
+      "role": "normal_protocol_reference_context",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x81D40F21F12A8F0E3252Bccb954D722d4c464B64?fields=all",
+      "address": "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+      "chain_id": "8453",
+      "verified_at": "2025-03-11T20:12:40Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x062c506d43a1b4fd5ae3fb6a63afe6bd19939096fe3e4929f54592dcf6206b6e",
+        "blockNumber": "26217124",
+        "transactionIndex": "103",
+        "deployer": "0xadB384F7fa7486422051D2a896417EAAb9E5A9D1"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.7.6+commit.7338295f",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 100000,
+            "enabled": true
+          },
+          "evmVersion": "istanbul",
+          "remappings": [
+            ":@memview-sol/=lib/memview-sol/",
+            ":@openzeppelin/=lib/openzeppelin-contracts/",
+            ":centre-tokens.git/=lib/centre-tokens.git/",
+            ":ds-test/=lib/ds-test/src/",
+            ":forge-std/=lib/forge-std/src/",
+            ":memview-sol/=lib/memview-sol/contracts/",
+            ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+          ]
+        },
+        "name": "AdminUpgradableProxy",
+        "fullyQualifiedName": "src/proxy/AdminUpgradableProxy.sol:AdminUpgradableProxy"
+      },
+      "response_path": "source-bundles/allbridge-circle-proxy/source-response.json",
+      "response_sha256": "97a97cbbafce2a8d9fb12d8e3a396644eea7403e16392eb84048c092a55e877f",
+      "abi_path": "source-bundles/allbridge-circle-proxy/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-proxy/src/proxy/AdminUpgradableProxy.sol",
+          "original_source_path": "src/proxy/AdminUpgradableProxy.sol",
+          "sha256": "86128f0fd1f551ddab766a733d7f365a90f7d7f7f30eab161cebdc5b3b86fc33",
+          "bytes": 4975
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-proxy/lib/openzeppelin-contracts/contracts/proxy/UpgradeableProxy.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/UpgradeableProxy.sol",
+          "sha256": "37b919b73cc882815acbc8e803fe703536515ff6791faa43940b251a0fc164f6",
+          "bytes": 2855
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-proxy/lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+          "sha256": "c795b86880d9694a8a8dc3fbf4cc6b268d6e35be227a890e8fefed490772d19c",
+          "bytes": 3196
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-proxy/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "11ad5e3e21434e00c4ceba1f5a977b7a68bdd7d16b849276ce4ff4495129eec7",
+          "bytes": 7819
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:04:51.942953+08:00"
+    },
+    {
+      "id": "allbridge-circle-implementation",
+      "kind": "public_original_source",
+      "role": "normal_protocol_reference_context",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x7Db629f6Acc20Be49a0A7565c21CC178E9Ac21e3?fields=all",
+      "address": "0x7Db629f6Acc20Be49a0A7565c21CC178E9Ac21e3",
+      "chain_id": "8453",
+      "verified_at": "2026-06-24T19:44:49Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x5d49fa77f99d97f0204d9926d4856f16542d883a143ec1d9674b7b513db5b4ee",
+        "blockNumber": "26217078",
+        "transactionIndex": "174",
+        "deployer": "0xadB384F7fa7486422051D2a896417EAAb9E5A9D1"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.7.6+commit.7338295f",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 100000,
+            "enabled": true
+          },
+          "evmVersion": "istanbul",
+          "remappings": [
+            ":@memview-sol/=lib/memview-sol/",
+            ":@openzeppelin/=lib/openzeppelin-contracts/",
+            ":centre-tokens.git/=lib/centre-tokens.git/",
+            ":ds-test/=lib/ds-test/src/",
+            ":forge-std/=lib/forge-std/src/",
+            ":memview-sol/=lib/memview-sol/contracts/",
+            ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+          ]
+        },
+        "name": "MessageTransmitterV2",
+        "fullyQualifiedName": "src/v2/MessageTransmitterV2.sol:MessageTransmitterV2"
+      },
+      "response_path": "source-bundles/allbridge-circle-implementation/source-response.json",
+      "response_sha256": "8500ff58072cd31ea56993331b73137560d8469e75293885b2b6404a828bc27d",
+      "abi_path": "source-bundles/allbridge-circle-implementation/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/interfaces/IReceiver.sol",
+          "original_source_path": "src/interfaces/IReceiver.sol",
+          "sha256": "aad2f61e40599de54ea5297c822f5d1c4cfc0fbb43b176b6c4b76897f860424d",
+          "bytes": 1202
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol",
+          "original_source_path": "src/v2/MessageTransmitterV2.sol",
+          "sha256": "b78a554bf191acbc4991ac47ddbd70fc92f11a127b063e051148514f09bd0714",
+          "bytes": 11809
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/interfaces/v2/IMessageTransmitterV2.sol",
+          "original_source_path": "src/interfaces/v2/IMessageTransmitterV2.sol",
+          "sha256": "a6be814462bdcb5608fee66bb59044632c1079eee97b8de3c5c2101f5ea76fdb",
+          "bytes": 985
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/BaseMessageTransmitter.sol",
+          "original_source_path": "src/v2/BaseMessageTransmitter.sol",
+          "sha256": "5a68980143673d291987894b0b54ad6ab5924f80735d8ace7dbf40dbaac1ebe0",
+          "bytes": 3402
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/messages/v2/MessageV2.sol",
+          "original_source_path": "src/messages/v2/MessageV2.sol",
+          "sha256": "eda28ca9d890c26ad32badfdbc1f8569e1ffece0fb8568987d45cf124cccbbae",
+          "bytes": 6747
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/messages/v2/AddressUtils.sol",
+          "original_source_path": "src/messages/v2/AddressUtils.sol",
+          "sha256": "a619d6eacbc686df5dfa4eaa712c7d500b3033aba27d392ea005ee82159f5ee6",
+          "bytes": 1605
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/memview-sol/contracts/TypedMemView.sol",
+          "original_source_path": "lib/memview-sol/contracts/TypedMemView.sol",
+          "sha256": "e8772d54d8d8b89991bcea4f9d7a28407de9c49d7d3d826b55be432e0b75c0b5",
+          "bytes": 31365
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/interfaces/v2/IMessageHandlerV2.sol",
+          "original_source_path": "src/interfaces/v2/IMessageHandlerV2.sol",
+          "sha256": "0ad3e1686b59f16c79a114c10153aaa4c23684c77b5ab1a4770242220ab0d852",
+          "bytes": 2272
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/FinalityThresholds.sol",
+          "original_source_path": "src/v2/FinalityThresholds.sol",
+          "sha256": "bce770ff4fb92fcc93b2bec3b5cf59742aec68cd0a2d58cfa4a1111cef19cd08",
+          "bytes": 1083
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/interfaces/v2/IReceiverV2.sol",
+          "original_source_path": "src/interfaces/v2/IReceiverV2.sol",
+          "sha256": "1b5e7a7ce9acfab166337690efd39b871cd43c70b56d74e9a714d974c6c80bd7",
+          "bytes": 934
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/interfaces/v2/IRelayerV2.sol",
+          "original_source_path": "src/interfaces/v2/IRelayerV2.sol",
+          "sha256": "b19d1873f266ff31feb3d14668727cd8be3bdc6e685fc97c7eb575e6eae2a9c5",
+          "bytes": 1969
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/v2/AttestableV2.sol",
+          "original_source_path": "src/roles/v2/AttestableV2.sol",
+          "sha256": "fdad4aabd542493db53c0f3d86a363b5beede6713151cb47cdca978bb200fe4f",
+          "bytes": 1478
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/Pausable.sol",
+          "original_source_path": "src/roles/Pausable.sol",
+          "sha256": "01304cbe1eb52c1568b68fc9fdc427e3b82fa7a4d85df418e3a187225759cbe8",
+          "bytes": 2704
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/Rescuable.sol",
+          "original_source_path": "src/roles/Rescuable.sol",
+          "sha256": "4efbae25b7485ceb8e59192335632736e24f5a0304edef44f33a02b39db3e350",
+          "bytes": 2751
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/proxy/Initializable.sol",
+          "original_source_path": "src/proxy/Initializable.sol",
+          "sha256": "43cdd64a5463f718ab4cb1dbb9a350a2a60a359dd7879e738a19fbbd27eab6c7",
+          "bytes": 7983
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/memview-sol/contracts/SafeMath.sol",
+          "original_source_path": "lib/memview-sol/contracts/SafeMath.sol",
+          "sha256": "67b73aa1957ee3e77c8e8f185f2d4b147dedef6bf19a34026a8167e35ee7cd70",
+          "bytes": 2728
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/Attestable.sol",
+          "original_source_path": "src/roles/Attestable.sol",
+          "sha256": "2e97e082a853d86cbd6796136b8ade2f383a2245acb41dcade4b04c9a54f6c65",
+          "bytes": 11425
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/Ownable2Step.sol",
+          "original_source_path": "src/roles/Ownable2Step.sol",
+          "sha256": "c93fbe6d3e97a6eceb4c90d59b091718e65d20e94eadf4dabd00cd031b6703f8",
+          "bytes": 2866
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+          "sha256": "0573c2961569aa4906845d0cd428b5b7394956170054ceeaa8f8af96cd44875c",
+          "bytes": 2704
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+          "sha256": "eea796f96939e7dd6119de00941717ce5772d8a942b184f5e48d2b962d0ab655",
+          "bytes": 3721
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+          "sha256": "11ad5e3e21434e00c4ceba1f5a977b7a68bdd7d16b849276ce4ff4495129eec7",
+          "bytes": 7819
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/EnumerableSet.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/EnumerableSet.sol",
+          "sha256": "c8b73a000476872a00f6153d66be31a4a99b7565068f05336129748bfad704ea",
+          "bytes": 9388
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/cryptography/ECDSA.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/cryptography/ECDSA.sol",
+          "sha256": "0c3c8f0e880bfb11298ab86b2863e7a6ce8c85e443fbf4998b8ed3b32739c853",
+          "bytes": 3906
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/roles/Ownable.sol",
+          "original_source_path": "src/roles/Ownable.sol",
+          "sha256": "360bb6855548425902964527a04dfab8e1c87b3722c0241296bc6aa4c86226a6",
+          "bytes": 3138
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+          "sha256": "4a04d0a20a19e3ef1dcabae9cad9ba006430a4e7eec4d9b519db87999722c98a",
+          "bytes": 7225
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "original_source_path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+          "sha256": "9a3d1e5be0f0ace13e2d9aa1d0a1c3a6574983983ad5de94fc412f878bf7fe89",
+          "bytes": 941
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:06:38.266260+08:00"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/allbridge-receipt.json",
+      "sha256": "7747bc33583d8fd39b3d9b794f6ea60e5141cb46be02b881b5f645877ad8072f",
+      "bytes": 9310,
+      "url": "https://mainnet.base.org",
+      "retrieved_at": "2026-10-21T06:00:15.685452+08:00"
+    },
+    {
+      "path": "evidence/allbridge-transaction.json",
+      "sha256": "fbf22bbd4791e5958e585d510b926233371220f2ce6f603b2f5e4bf56f44bac8",
+      "bytes": 8487,
+      "url": "https://mainnet.base.org",
+      "retrieved_at": "2026-10-21T06:00:15.696905+08:00"
+    },
+    {
+      "path": "evidence/allbridge-block.json",
+      "sha256": "ab895f752dd01c3c63ca55bd08aac5a3c621c88f06c2764e5c4c2b76084d3d79",
+      "bytes": 13580,
+      "url": "https://mainnet.base.org",
+      "retrieved_at": "2026-10-21T06:04:50.310263+08:00"
+    },
+    {
+      "path": "evidence/allbridge-primary-report.html",
+      "sha256": "2f0ef0e2a8991127d84b590606b424e3fd6f4f2d7a4b6f1f8df39a7718a68d84",
+      "bytes": 103952,
+      "url": "https://defimon.xyz/blog/allbridge-hack-august-2026",
+      "retrieved_at": "2026-10-21T05:58:34.959152+08:00"
+    },
+    {
+      "path": "evidence/allbridge-public-reference-poc.sol",
+      "sha256": "345888575909721c513f465caf01e4db4375851b74e98cdd0eba880319af811f",
+      "bytes": 15896,
+      "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/b1f9489318ad9dbf5c9188a88f36e06415d1d91b/src/test/2026-08/AllbridgeCCTP_exp.sol",
+      "retrieved_at": "2026-10-21T06:04:50.051577+08:00"
+    },
+    {
+      "path": "evidence/allbridge-poc-commit.json",
+      "sha256": "58b55d7e6b8410fcf1379c959e134e82d51e5982cef33d7c140379beeabc19b2",
+      "bytes": 3409,
+      "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/AllbridgeCCTP_exp.sol&per_page=1",
+      "retrieved_at": "2026-10-21T05:58:35.569691+08:00"
+    },
+    {
+      "path": "evidence/decoded-events-and-flows.json",
+      "sha256": "5b201707e50c8dead1c3cc3f9084e97935202978c1aaa2ee8ff962efef64b82f",
+      "bytes": 3445,
+      "kind": "offline_decode_of_archived_receipts_or_trace"
+    }
+  ],
+  "context_limits": "PancakePair verified source comes from the separately identified PRO pool. Five actual incident pools have byte-identical current runtime, recorded in the batch comparison; no attack-block runtime equivalence is claimed. Circle current proxy implementation is context; its historical slot was not independently reconstructed."
+}

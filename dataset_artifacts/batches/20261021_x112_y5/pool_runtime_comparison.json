@@ -1,0 +1,75 @@
+{
+  "kind": "read_only_current_runtime_byte_comparison",
+  "reference": {
+    "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+    "source_provider": "Sourcify",
+    "source_runtime_match": "match",
+    "response_path": "screening/pro-pair-source.json",
+    "response_sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+    "runtime_bytes": 14981,
+    "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7"
+  },
+  "targets": [
+    {
+      "case_label": "moke",
+      "address": "0xba6a49a97cc725b3c39d6c5ea6deffddb64fe6b8",
+      "rpc_url": "https://bsc-dataseed.binance.org",
+      "block_selector": "latest",
+      "retrieved_at": "2026-10-21T06:24:38.097663+08:00",
+      "response_path": "screening/moke-main-pair-runtime.json",
+      "response_sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "runtime_bytes": 14981,
+      "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+      "byte_equal_to_reference": true
+    },
+    {
+      "case_label": "moke",
+      "address": "0x89715a0768e95942071ed52b37a90c6d53019b5a",
+      "rpc_url": "https://bsc-dataseed.binance.org",
+      "block_selector": "latest",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00",
+      "response_path": "screening/moke-reserve-pair-runtime.json",
+      "response_sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "runtime_bytes": 14981,
+      "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+      "byte_equal_to_reference": true
+    },
+    {
+      "case_label": "nex",
+      "address": "0x974c0078740480ae830d379fdb8d5f441c9ddc75",
+      "rpc_url": "https://bsc-dataseed.binance.org",
+      "block_selector": "latest",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00",
+      "response_path": "screening/nex-main-pair-runtime.json",
+      "response_sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "runtime_bytes": 14981,
+      "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+      "byte_equal_to_reference": true
+    },
+    {
+      "case_label": "nex",
+      "address": "0xe89636fb73d04db51e5fbd0ce1379fb8d2b96415",
+      "rpc_url": "https://bsc-dataseed.binance.org",
+      "block_selector": "latest",
+      "retrieved_at": "2026-10-21T06:24:38.127476+08:00",
+      "response_path": "screening/nex-flash-pair-runtime.json",
+      "response_sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "runtime_bytes": 14981,
+      "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+      "byte_equal_to_reference": true
+    },
+    {
+      "case_label": "fox",
+      "address": "0xaab18bcdee287aea288c0560612caadf7c328803",
+      "rpc_url": "https://bsc-dataseed.binance.org",
+      "block_selector": "latest",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00",
+      "response_path": "screening/fox-main-pair-runtime.json",
+      "response_sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "runtime_bytes": 14981,
+      "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+      "byte_equal_to_reference": true
+    }
+  ],
+  "limitation": "eth_getCode latest only. Attack-block runtime, historical proxy binding and pre-attack state were not independently reconstructed. No local compilation, decompilation or EVM execution."
+}

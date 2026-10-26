@@ -1,0 +1,424 @@
+{
+  "parameters": {
+    "x": 112,
+    "y": 5,
+    "actual_scan_range": [
+      88,
+      112
+    ],
+    "processing_order": [
+      112,
+      111,
+      110,
+      109,
+      108,
+      107,
+      106,
+      105,
+      104,
+      103,
+      102,
+      101,
+      100,
+      99,
+      98,
+      97,
+      96,
+      95,
+      94,
+      93,
+      92,
+      91,
+      90,
+      89,
+      88
+    ],
+    "selected_source_rows": [
+      101,
+      100,
+      98,
+      90,
+      88
+    ],
+    "raw_export": "sheet_gid0_raw.csv",
+    "raw_export_sha256": "dc2c5338c964434d780f49bf215d112ec0bb06ee24cad24a12435bf5453ea794",
+    "timezone": "Asia/Shanghai",
+    "retrieved_at": "2026-10-21T05:24:24.548224+08:00",
+    "source_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0#gid=0",
+    "export_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/export?format=csv&gid=0"
+  },
+  "counts": {
+    "scanned_rows": 25,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "reused_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 20
+  },
+  "rows": [
+    {
+      "row": 112,
+      "sheet_event": "0x3e1b8f98ed69c6a97a8540e1d7aed33fdf4509aa",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/realScamSniffer/status/2080559865895022730?s=20"
+      ],
+      "event": "授权钓鱼",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "用户通过 multicall 签署恶意授权；没有确认的受害合约代码缺陷。"
+    },
+    {
+      "row": 111,
+      "sheet_event": "@TripleAHQ",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/SpecterAnalyst/status/2080764538874462386"
+      ],
+      "event": "Triple-A",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "多链热钱包失窃及凭据事件；未确立合约代码缺陷和漏洞原始源码。"
+    },
+    {
+      "row": 110,
+      "sheet_event": "@SolidoMoney",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://app.solido.money/reports/solido-cash-incident-july-2026.pdf"
+      ],
+      "event": "Solido Cash",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "官方复盘承认预言机误绑定，但根因仍待源码确认；审计报告指向的 cdp-contracts 仓库及固定提交均返回 404，公开组织仓库不含该模块，未取得相关漏洞原始源码。"
+    },
+    {
+      "row": 109,
+      "sheet_event": "ChainConnect",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/b_block_oficial/status/2082782861799649733?s=20"
+      ],
+      "event": "ChainConnect",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "公开记录归类为私钥泄漏；未确立合约代码漏洞。"
+    },
+    {
+      "row": 108,
+      "sheet_event": "@gardenfi",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/blockaid_/status/2081409252489298100"
+      ],
+      "event": "Garden Finance",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "项目澄清指向独立 solver 的链外数据库；已取得 HTLC 原始源码与正常 redeem 调用记录，未确立 HTLC 代码缺陷。"
+    },
+    {
+      "row": 107,
+      "sheet_event": "@WemixNetwork",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/WemixNetwork/status/2081472302655668507"
+      ],
+      "event": "Wemix",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "铸币管理员凭据失窃，管理员路径不等于合约权限绕过。"
+    },
+    {
+      "row": 106,
+      "sheet_event": "Pro token by @CryptoDAOGlobal\n ",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/blockaid_/status/2082139977299657109?s=46"
+      ],
+      "event": "PRO",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "已取得代币和标准池源码，但缺失关键 exec 实现 0x7fba63d0c45f265c1bea3ed2e49f0691a9d9aa87 的公开漏洞原始源码；报道中的重建伪代码不能满足原始源码门槛。"
+    },
+    {
+      "row": 105,
+      "sheet_event": "#LULA on #BSC",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/TenArmorAlert/status/2082278410211180627?s=20"
+      ],
+      "event": "LULA",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "核心 token 有原始源码，但必要 Rental 合约未开源；BscScan 官网在线反编译点击后未返回可归档代码，按用户追加规则跳过。未运行本地反编译。"
+    },
+    {
+      "row": 104,
+      "sheet_event": "@COLDCARDwallet",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/COLDCARDwallet/status/2082961993070247948"
+      ],
+      "event": "Coldcard",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "钱包密码算法或设备事件，不属于本批合约代码漏洞。"
+    },
+    {
+      "row": 103,
+      "sheet_event": "@SwanTreasurpaj",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/defimonalerts/status/2083039796784410802?s=46"
+      ],
+      "event": "Swan Treasury",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "官网显示 ZhaiquanBuy 已验证源码，披露交易使用配置的受信签名签发 discount=1 的订单。签名来源未核实，现有材料未确立签名绕过或不依赖签名系统失守的合约缺陷，不将缺少业务折扣下限单独认定为已证实代码漏洞。"
+    },
+    {
+      "row": 102,
+      "sheet_event": "0x386218744a2053d949a1cafae0b7b49a35e03f53",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/SlowMist_Team/status/2083509411243299252"
+      ],
+      "event": "Base 非验证 CALL 合约",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "已取得原始创建交易与回执，并从输入定位 0xa31722ca2a32695280d0e7e325b3dd6d699fc170；Sourcify 返回 404，未取得关键低层 CALL 逻辑的公开原始源码。"
+    },
+    {
+      "row": 101,
+      "sheet_event": "#MOKE on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260803_MOKE",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2084102947500368164"
+      ],
+      "event": "MOKE（释放与 LP 分红模块）",
+      "source_qualification": "public_original_vulnerable_source: moke-token: exact_match; moke-actual-token: exact_match; moke-release: exact_match; moke-x: exact_match; moke-tokenx: exact_match",
+      "reason": "已取得含核心缺陷的公开原始源码；相关历史绑定和状态限制另列，关键逻辑不依赖未取得的反编译。"
+    },
+    {
+      "row": 100,
+      "sheet_event": "#NEX/AIC on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260804_NEX_AIC",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2084461507312857521"
+      ],
+      "event": "NEX / AIC",
+      "source_qualification": "public_original_vulnerable_source: nex-token: match; aic-token: match",
+      "reason": "已取得含核心缺陷的公开原始源码；相关历史绑定和状态限制另列，关键逻辑不依赖未取得的反编译。"
+    },
+    {
+      "row": 99,
+      "sheet_event": "@nereusfinance",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/DefimonAlerts/status/2084871269854384356?s=20"
+      ],
+      "event": "Nereus",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "源表描述使用 ProxyAdmin 所有者权限恶意升级提款；未确立被绕过的代码权限检查。"
+    },
+    {
+      "row": 98,
+      "sheet_event": "@usmfum",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260810_USM_FUM",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2086627835360456784"
+      ],
+      "event": "USM / FUM",
+      "source_qualification": "public_original_vulnerable_source: usm: exact_match; fum: exact_match",
+      "reason": "已取得含核心缺陷的公开原始源码；相关历史绑定和状态限制另列，关键逻辑不依赖未取得的反编译。"
+    },
+    {
+      "row": 97,
+      "sheet_event": "@coinsbuycom",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/DarkWebInformer/status/2086566165665522120"
+      ],
+      "event": "Coinsbuy",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "热钱包失窃；没有确认的合约代码缺陷及相应漏洞原始源码。"
+    },
+    {
+      "row": 96,
+      "sheet_event": "@ody_defi",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/DarcyAri/status/2087082488166236546"
+      ],
+      "event": "ODY",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "增发跑路事件；没有确认的合约代码漏洞。"
+    },
+    {
+      "row": 95,
+      "sheet_event": "#CoreumBridge",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/osint_based/status/2087157944018178202?s=20"
+      ],
+      "event": "Coreum Bridge",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "核查材料定位 XRPL 链外 relayer 的入账解析/目的地检查，不是智能合约代码缺陷。"
+    },
+    {
+      "row": 94,
+      "sheet_event": "0x9B4Ded0ab7754428F7eC0f63a42bAe70D2f51D83",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/CyversAlerts/status/2087172620328243330?s=20"
+      ],
+      "event": "地址投毒",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "钱包地址投毒，不是合约代码漏洞。"
+    },
+    {
+      "row": 93,
+      "sheet_event": "@harmonyprotocol",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/the_juice_berg/status/2087353885765620127"
+      ],
+      "event": "Harmony",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "跨分片回执/节点协议验证漏洞，涉及链节点协议，不是本批智能合约代码漏洞。"
+    },
+    {
+      "row": 92,
+      "sheet_event": "#TLBL",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/SpecterAnalyst/status/2087661729945723040"
+      ],
+      "event": "TLBL",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "公开记录归类为私钥失窃；未确立合约代码缺陷。"
+    },
+    {
+      "row": 91,
+      "sheet_event": "0xa707d3d5d174f59d2c2b81491bdc5650e55f065b",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/realScamSniffer/status/2087800074017648983"
+      ],
+      "event": "Arbitrum 钱包钓鱼",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "钱包钓鱼授权，不是合约代码漏洞。"
+    },
+    {
+      "row": 90,
+      "sheet_event": "#Fox on #BSC",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260817_Fox",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2089170318049132843"
+      ],
+      "event": "Fox Market（LP Bonds）",
+      "source_qualification": "public_original_vulnerable_source: fox-bonds: exact_match; fox-treasury: exact_match; fox-bonds-proxy: exact_match; fox-treasury-proxy: exact_match; fox-actual-token: exact_match",
+      "reason": "已取得含核心缺陷的公开原始源码；相关历史绑定和状态限制另列，关键逻辑不依赖未取得的反编译。"
+    },
+    {
+      "row": 89,
+      "sheet_event": "@Maya_Protocol",
+      "qualifies": false,
+      "status": "skipped",
+      "case_id": null,
+      "references": [
+        "https://x.com/aaluxxmyth/status/2089792721086996703?s=46"
+      ],
+      "event": "Maya Protocol",
+      "source_qualification": "not_qualified_this_batch",
+      "reason": "Trade Account 与盗窃补贴检查位于链协议节点模块，不属于本批智能合约源码案例。"
+    },
+    {
+      "row": 88,
+      "sheet_event": "@Allbridge_io",
+      "qualifies": true,
+      "status": "new",
+      "case_id": "20260820_Allbridge_CCTP",
+      "references": [
+        "https://x.com/DefimonAlerts/status/2090369928494719263?s=20"
+      ],
+      "event": "Allbridge Core（CCTP 路由）",
+      "source_qualification": "public_original_vulnerable_source: allbridge-router: exact_match; allbridge-messenger: exact_match",
+      "reason": "已取得含核心缺陷的公开原始源码；相关历史绑定和状态限制另列，关键逻辑不依赖未取得的反编译。"
+    }
+  ],
+  "included_cases": [
+    {
+      "case_id": "20260803_MOKE",
+      "source_rows": [
+        101
+      ]
+    },
+    {
+      "case_id": "20260804_NEX_AIC",
+      "source_rows": [
+        100
+      ]
+    },
+    {
+      "case_id": "20260810_USM_FUM",
+      "source_rows": [
+        98
+      ]
+    },
+    {
+      "case_id": "20260817_Fox",
+      "source_rows": [
+        90
+      ]
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "source_rows": [
+        88
+      ]
+    }
+  ],
+  "decompilation_policy": {
+    "local": "prohibited and not run",
+    "online": "official or authoritative sites only",
+    "missing_required_online_output": "skip entire case"
+  },
+  "formal_write_gate": "five source-qualified rows reached before dataset/CSV writes"
+}

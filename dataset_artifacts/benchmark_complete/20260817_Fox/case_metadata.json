@@ -1,0 +1,43 @@
+{
+  "case_id": "20260817_Fox",
+  "project_cn": "Fox Market（LP Bonds）",
+  "project_en": "Fox Market (LP Bonds)",
+  "vulnerability_cn": "以交易前现货价记录债券并立即发放过量推荐奖励",
+  "vulnerability_en": "Pre-swap spot valuation overstates LP bonds and immediately pays excess referral rewards",
+  "detail_cn": "FoxLpBondsPool.stake 先按 getAmountsOut 得到现货价计算 stakeAmount，再把一半 USDT 兑换 FOX、加入同一池子；交易改变价格后没有按实际 LP 价值重算。Treasury.lpBonds 信任登记的质押池并据旧 stakeAmount 铸币、支付推荐人 FOX。UserStake 记录 88,659,280.805328378079051095 份额和 2,659,778.424159851342371532 FOX 推荐奖励；真实转账显示 FOX/USDT 池净流出 677,549.050517106599255604 USDT，但攻击主合约净增 112,976.118753142627232237 USDT，不能混为获利。代理和实现原始源码均归档；历史实现槽读取失败，无完整内部跟踪、未重放。源表为 8 月 17 日，交易为 8 月 15 日 UTC，损失列留空。",
+  "detail_en": "FoxLpBondsPool.stake computes stakeAmount from a live getAmountsOut quote before swapping half of the USDT for FOX and adding liquidity to the same pair. It never reprices the bond from the actual LP value after its swap changes reserves. Treasury.lpBonds trusts registered staking pools and mints and pays referral FOX using the stale amount. UserStake records 88,659,280.805328378079051095 bond units and 2,659,778.424159851342371532 referral FOX. Transfer logs show a 677,549.050517106599255604 USDT pair outflow, but only 112,976.118753142627232237 USDT net gain at the main attack contract. Proxy and implementation source is archived; historical implementation-slot reads failed, full internal traces and replay were not obtained. The sheet date is August 17, versus August 15 UTC. Loss is blank because scopes differ.",
+  "loss_usd": null,
+  "loss_scope": "Sheet USD 120000, principal-pair gross USDT outflow 677549.050517106599255604, and multi-asset attacker net gains are different scopes. Unlocked and time-locked FOX claims are not added as realized USD loss.",
+  "event_date": "2026-08-17",
+  "original_rows": [
+    90
+  ],
+  "tx_urls": [
+    "https://bscscan.com/tx/0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0#code",
+    "https://bscscan.com/address/0x58e2a853bb14e46befd3148bd4280370fea4655a#code",
+    "https://bscscan.com/address/0x361d08ff43761e6a7e8fcabe48048ae9010801cc#code",
+    "https://bscscan.com/address/0x87614d97808dcdecb069fe8489848fa1c001e04d#code"
+  ],
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "source_sheet_snapshot": "../../batches/20261021_x112_y5/snapshot.json",
+  "batch_results": "../../batches/20261021_x112_y5/results.json",
+  "case_document": "../../../docs/cases/20260817_Fox.md",
+  "verification_status": {
+    "original_source": "acquired_hashed_compared_to_provider_response",
+    "historical_call_targets": "receipt_emitters_observed; internal calls not independently traced",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": false,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "local_decompilation": "prohibited_not_run",
+    "online_decompilation": "not_required_for_included_core_logic"
+  },
+  "view": "benchmark_complete",
+  "source_provenance": "provenance.json"
+}

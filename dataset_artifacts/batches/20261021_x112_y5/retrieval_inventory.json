@@ -1,0 +1,1254 @@
+[
+  {
+    "url": "https://bsc-rpc.publicnode.com",
+    "path": "screening/pro-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4"
+      ]
+    },
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:37:13.596363+08:00"
+  },
+  {
+    "url": "https://bsc-rpc.publicnode.com",
+    "path": "screening/lula-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c"
+      ]
+    },
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:37:13.596363+08:00"
+  },
+  {
+    "url": "https://bsc-rpc.publicnode.com",
+    "path": "screening/swan-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4"
+      ]
+    },
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:37:13.609364+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C?fields=all",
+    "path": "screening/swan-buy-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:37:14.683992+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xD6A4F5AADD88ebA9A170AcF67f737BD488142857?fields=all",
+    "path": "screening/swan-token-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:37:13.845243+08:00"
+  },
+  {
+    "url": "https://app.solido.money/reports/solido-cash-incident-july-2026.pdf",
+    "path": "screening/solido-official-report.pdf",
+    "http_status": 200,
+    "bytes": 176246,
+    "sha256": "9d71b6511baf0d34eacec0c6761aef85737e1d4b9b72b4ca93f60b75a18db7f7",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-10-21T05:37:15.344507+08:00"
+  },
+  {
+    "url": "https://api.github.com/orgs/SolidoMoney/repos?per_page=100",
+    "path": "screening/solido-github-repos.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:37:14.051367+08:00"
+  },
+  {
+    "url": "https://anomly.rs/swan-treasury-sty-discounted-buy-exploit",
+    "path": "screening/swan-public-analysis.html",
+    "http_status": 200,
+    "bytes": 101182,
+    "sha256": "423082bcc3c76ced5f479538882826457d5e16ac1eeed5d31fb6e3bc7f4e063a",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:37:16.126004+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/pro-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 1207406,
+    "sha256": "09cf926242d9b2864398bc769faf31629683deba4d8576f97e09de36caae2438",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:18.767073+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/lula-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 156722,
+    "sha256": "021cc5ba2b546f4757c1a87a671408c583e872e77f308d50a64c9b42eeea1af9",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:17.749135+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/swan-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 43335,
+    "sha256": "69c40845de33a8200e23d2fd9460918e16f4d17ca403c4cea602a8ebd6c43321",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:17.584669+08:00"
+  },
+  {
+    "url": "https://bscscan.com/address/0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C#code",
+    "path": "screening/swan-buy-explorer.html",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:38:17.354579+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/solido-money/cdp-contracts",
+    "path": "screening/solido-repo.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:17.545383+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x72ad494fda63d2b91b9d7290737e8ef1194a0c47?fields=all",
+    "path": "screening/lula-token-source.json",
+    "http_status": 200,
+    "bytes": 140696,
+    "sha256": "125da65a7449f140add9337457f7126e634d6c8a4d725660a129658951df35dc",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:38:19.426262+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x377a015f44C3FDf71060e94648EDC9e0316C7f1a?fields=all",
+    "path": "screening/lula-rental-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:18.240306+08:00"
+  },
+  {
+    "url": "https://solido-money.gitbook.io/solido-money/security/audits",
+    "path": "screening/solido-audits.html",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:38:21.904016+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x8d65744527f55d0b2338350912d5c99a81ddf0e2?fields=all",
+    "path": "screening/pro-token-source.json",
+    "http_status": 200,
+    "bytes": 266230,
+    "sha256": "d1007ff995c36307ca79c5fdaa49adb889fb8ca84c3d07b881c848e20c225dd7",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.696206+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x63844bd4bfad910b1643713302a1cc1ed20d50c3?fields=all",
+    "path": "screening/pro-pair-source.json",
+    "http_status": 200,
+    "bytes": 284256,
+    "sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:34.869871+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xf5d7029eb6751d170dcf0bb1c87af6f93d5a2e9a?fields=all",
+    "path": "screening/lula-actual-token-source.json",
+    "http_status": 200,
+    "bytes": 232925,
+    "sha256": "c1febb4bb03b217c72a3c8052cdc74f37f37cd6749f488901417acb7288a948f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:34.749098+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xf0b36389a12a28be1280c0ec2a4bbc76889d6a96?fields=all",
+    "path": "screening/lula-pair-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:40:34.834616+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 158905,
+    "sha256": "e1cfafb32c75fd4bb3551ddc2ca19043efb2d8437d9a21f5bf6c758b106426db",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:33.609432+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 20407,
+    "sha256": "af7d8a10aa91becd2d79a84f54568f13b765c965ae9e9212e0351c3a7f0fd162",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:33.411026+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e",
+    "path": "screening/usm-transaction.json",
+    "http_status": 200,
+    "bytes": 26897,
+    "sha256": "499199c6ecafa67440b5150cd42a4ae7c69c9dea13d3e7990f041da63a7bf934",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.006671+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x9d7a961aa340156b7342839e9f6448a26dea9acd38dc7b2638966eb19e29d395",
+    "path": "screening/garden-transaction.json",
+    "http_status": 200,
+    "bytes": 3442,
+    "sha256": "aaf3b60a800061c0ae8b97da1070867fab40a8ff5786037d2f16bace54fe8202",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:34.580324+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/Solido-Money/cdp-contracts/commits/ab42ba766ac4634eb6f1efe3dbc3f1624071bec4",
+    "path": "screening/solido-audit-commit.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:40:35.008367+08:00"
+  },
+  {
+    "url": "https://api.github.com/orgs/Solido-Money/repos?per_page=100",
+    "path": "screening/solido-official-repos.json",
+    "http_status": 200,
+    "bytes": 27114,
+    "sha256": "fd2408844452309079a578eadae5d111bc8952fd32ad7917a909504b5806351b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.433156+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/pro-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.081438+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/lula-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.116303+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/swan-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.290690+08:00"
+  },
+  {
+    "url": "https://api.routescan.io/v2/network/mainnet/evm/56/etherscan/api?module=contract&action=getsourcecode&address=0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C",
+    "path": "screening/swan-buy-routescan.json",
+    "http_status": 200,
+    "bytes": 60,
+    "sha256": "c40ab24ce30c550fc0c2a637e174da8b9583744b7517e408d1572e71fcd6a10b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:40:35.797733+08:00"
+  },
+  {
+    "url": "https://anomly.rs/?page=2",
+    "path": "screening/analysis-index2.html",
+    "http_status": 200,
+    "bytes": 24712,
+    "sha256": "f68ff7d134db3e27f980078ef42af5ea1f7808d430a68c43f4ca0f6f2ebf8b70",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:40:36.573970+08:00"
+  },
+  {
+    "url": "https://anomly.rs/?page=3",
+    "path": "screening/analysis-index3.html",
+    "http_status": 200,
+    "bytes": 25005,
+    "sha256": "c8b32a1ecf63cffb6eef2271e284a78564ce97535604198fc48f99a7678ef915",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:40:36.284010+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xba6a49a97cc725b3c39d6c5ea6deffddb64fe6b8",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.097663+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-reserve-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x89715a0768e95942071ed52b37a90c6d53019b5a",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x974c0078740480ae830d379fdb8d5f441c9ddc75",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-flash-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xe89636fb73d04db51e5fbd0ce1379fb8d2b96415",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.127476+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xaab18bcdee287aea288c0560612caadf7c328803",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 3776,
+    "sha256": "b86841366f9f09c1ab574de8f6880a155d7185ffc4fa6a89d77fab0800fd2298",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:09:11.637980+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 9559,
+    "sha256": "8f2cadc3f608d8af50f92027a3b54ae211cf9b1e11a818c6e8728bd97f1e8b79",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:09:11.661318+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/None?fields=all",
+    "path": "screening/base-call-target-source.json",
+    "error": "HTTP Error 400: Bad Request",
+    "retrieved_at": "2026-10-21T06:09:45.087716+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xa31722ca2a32695280d0e7e325b3dd6d699fc170?fields=all",
+    "path": "screening/base-call-victim-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T06:09:58.073224+08:00"
+  },
+  {
+    "url": "https://anomly.rs/pro-token-executor-forced-sell-exploit",
+    "path": "screening/pro-analysis.html",
+    "http_status": 200,
+    "bytes": 77110,
+    "sha256": "784e01be2646cc3778dc94b6c595eb228ab5dd552b00030baec2a2205f075670",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.841430+08:00"
+  },
+  {
+    "url": "https://anomly.rs/lula-recycle-price-manipulation",
+    "path": "screening/lula-analysis.html",
+    "http_status": 200,
+    "bytes": 63956,
+    "sha256": "e0acfca9b9677a3f5789a5bf009dc651fe4fc5cb230e870128546b1c30cce876",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.204771+08:00"
+  },
+  {
+    "url": "https://anomly.rs/moke-lp-dividend-stale-record-exploit",
+    "path": "screening/moke-analysis.html",
+    "http_status": 200,
+    "bytes": 67899,
+    "sha256": "20976702ff758723d009e87b0790eed61b0a1a50fbc794e7de4a38cef7ba5466",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.688621+08:00"
+  },
+  {
+    "url": "https://anomly.rs/nex-aic-pancakeswap-double-transfer-exploit",
+    "path": "screening/nex-analysis.html",
+    "http_status": 200,
+    "bytes": 107779,
+    "sha256": "1924583143e1bd7fad90b0a9e3482ea62a5f7b4526924a80ee925818efdbd03a",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:41:59.388967+08:00"
+  },
+  {
+    "url": "https://blocksec.com/blog/web3-security-moke-token-lpdfi-exploits",
+    "path": "screening/moke-blocksec.html",
+    "http_status": 200,
+    "bytes": 215974,
+    "sha256": "45e61e41cffa41b9e56372e235cbd33592c080735f783f521350778e0a485b56",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:41:59.307324+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x86ac451a0c0bcac5b74116ae90832e89e9c630df?fields=all",
+    "path": "screening/pro-executor-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:41:58.130053+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377?fields=all",
+    "path": "screening/moke-token-source.json",
+    "http_status": 200,
+    "bytes": 289864,
+    "sha256": "5e3dcc85469fcecdfdaec78fc943b91ee0ea1b5995ce3d8e2656f748bd441534",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.872936+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9?fields=all",
+    "path": "screening/nex-token-source.json",
+    "http_status": 200,
+    "bytes": 303797,
+    "sha256": "90ec3fc429c4e2d6a92b29cdecab9380d706210312454c900d9efb7325d53189",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.118261+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xc0dc449de632586a00409873521afc251ac5ce74?fields=all",
+    "path": "screening/aic-token-source.json",
+    "http_status": 200,
+    "bytes": 213928,
+    "sha256": "c928998bba2cb064e4866f56ca3dbe6b7b075ad064c06060f65ceb9fcf24372a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.985603+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x974c0078740480ae830d379fdb8d5f441c9ddc75?fields=all",
+    "path": "screening/nex-pair-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:42:00.270385+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions",
+    "path": "screening/usm-internal-transactions.json",
+    "http_status": 200,
+    "bytes": 90150,
+    "sha256": "a01efb1a0c4b9a5938dfe79de962078e4fc0a802b37443f6798160299b1ab45b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:23.050191+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers",
+    "path": "screening/usm-token-transfers.json",
+    "http_status": 200,
+    "bytes": 126205,
+    "sha256": "4320116f6374a2d854461db4b376bcd1c03d10806fa24f4750e14f9ea0777caf",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:00.913495+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xCF5E5e28848cFe779f7Fb711C57857Cb3b144A19",
+    "path": "screening/garden-htlc-source.json",
+    "http_status": 200,
+    "bytes": 200746,
+    "sha256": "703057003ebd9fd7cfcc184ae82e914afa4fa5050f77e346162b4bdce3aa5a99",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.612946+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-07",
+    "path": "screening/defihacklabs-july.json",
+    "http_status": 200,
+    "bytes": 2762,
+    "sha256": "0ae7c83f6c8cb214ea11b233ffa684770a35019d9018eb561f73ae20160fe609",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.284428+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-08",
+    "path": "screening/defihacklabs-august.json",
+    "http_status": 200,
+    "bytes": 14146,
+    "sha256": "1f9c894663983afd7de2738010295bdfd5d43d88afd2fef8cad1229e69671ded",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:42:01.466042+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/Jon-Becker/heimdall-rs/releases/latest",
+    "path": "screening/heimdall-release.json",
+    "http_status": 200,
+    "bytes": 10129,
+    "sha256": "58e176d75c177a56e057a30ee110291d07f007ca6e6de7783517f5c2f3063c19",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:15.112164+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a?fields=all",
+    "path": "screening/moke-actual-token-source.json",
+    "http_status": 200,
+    "bytes": 670327,
+    "sha256": "7a4f892694e5bafdb4fd269b7c8fbe40525acf75d37a9915c9b4982695cbedc9",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.329466+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x684d722ebf8980f49492f631f56765dd4fb302a7?fields=all",
+    "path": "screening/moke-release-source.json",
+    "http_status": 200,
+    "bytes": 454698,
+    "sha256": "95df37a9071687e1e59b7e77cb61e38032606de52f5e8b44869b43fe6c08c4b3",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:16.901701+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/1/0x2a7fff44c19f39468064ab5e5c304de01d591675?fields=all",
+    "path": "screening/usm-source.json",
+    "http_status": 200,
+    "bytes": 1019603,
+    "sha256": "155ced2cfd13c1e485f65308e8bd651bab8a916ff7a342755343ed9815768614",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.910068+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x2a7fff44c19f39468064ab5e5c304de01d591675",
+    "path": "screening/usm-blockscout-source.json",
+    "http_status": 200,
+    "bytes": 240243,
+    "sha256": "7e299ddc8ac442a9672ff66b6c7b20f3cb289b66bff485167bade2c78e6a945d",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:16.189102+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/1/0x86729873e3b88de2ab85ca292d6d6d69d548edf3?fields=all",
+    "path": "screening/fum-source.json",
+    "http_status": 200,
+    "bytes": 259920,
+    "sha256": "ee83c6c127637414634dcea31c8a6c5aa1fe44a75d4c6dc4c7debadac839aaa7",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.483236+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/raw-trace",
+    "path": "screening/usm-trace.json",
+    "http_status": 200,
+    "bytes": 468982,
+    "sha256": "c5ad2c0b24d6982240fa28400aec7eabfa3010a5fa9d5cfd0a0ae713c780de49",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.179970+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 124671,
+    "sha256": "a412301037f9502cf85b33fc22c06d58525f8371147db04e46fcdd6d1676742e",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.039129+08:00"
+  },
+  {
+    "url": "https://anomly.rs/?page=1",
+    "path": "screening/analysis-index1.html",
+    "http_status": 200,
+    "bytes": 24811,
+    "sha256": "57f3d5a3be7c8a6b51577cba1161459cc46d34583139d49db0faff055ca4fefa",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:50:18.668654+08:00"
+  },
+  {
+    "url": "https://anomly.rs/usm-fum-split-redemption-exploit",
+    "path": "screening/usm-analysis.html",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:50:18.610412+08:00"
+  },
+  {
+    "url": "https://sigintzero.com/blog/coreum-bridge-200k-xrp-rippling-deposit-forgery",
+    "path": "screening/coreum-analysis.html",
+    "http_status": 200,
+    "bytes": 249808,
+    "sha256": "f74798c4fbd7af8a422886a0c5305d456dbba9a8d1a702380734bd19383822b8",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:18.725667+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/lula-rental-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x377a015f44c3fdf71060e94648edc9e0316c7f1a",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 43800,
+    "sha256": "dcb3a1e95e5583fb4c8d87bccc5f2588a0a0d3d5a78ccba0fc304eafe9d98eb9",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.749679+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-release-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x684d722ebf8980f49492f631f56765dd4fb302a7",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 23442,
+    "sha256": "e5d7facc030e126ccb40ff9a2a6649e6c4002168afd944076ebcb57262b1a896",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:17.893071+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/pro-actual-executor-source-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x7fba63d0c45f265c1bea3ed2e49f0691a9d9aa87",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 8672,
+    "sha256": "177fd5efca4f100add842dee62725af4592d9f46d23e1b47c8e088857525c96b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:50:18.018129+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x7fba63d0c45f265c1bea3ed2e49f0691a9d9aa87?fields=all",
+    "path": "screening/pro-actual-executor-source.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:50:18.826831+08:00"
+  },
+  {
+    "url": "https://anomly.rs/usm-fum-fund-defund-splitting-exploit",
+    "path": "screening/usm-analysis.html",
+    "http_status": 200,
+    "bytes": 44477,
+    "sha256": "c4a04cbdf07db90e49b6a5f7ea758202a2b7f09d13baeedb8c4abc02577bb6eb",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:58:35.348844+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xce24439f2d9c6a2289f741120fe202248b666666?fields=all",
+    "path": "screening/fox-token-source.json",
+    "http_status": 200,
+    "bytes": 144812,
+    "sha256": "ecee913b9784f7bfc6a69a2d024c5f02a48e3c72318b6fce3d9c574dc8feb865",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:34.921371+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xaab18bcdee287aea288c0560612caadf7c328803?fields=all",
+    "path": "screening/fox-source2.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:58:35.064676+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8",
+    "path": "screening/allbridge-transaction.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:33.497783+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8/raw-trace",
+    "path": "screening/allbridge-trace.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:33.492004+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xaa119f7442ecc28b9a8f236707ada8362cff24ff?fields=all",
+    "path": "screening/allbridge-router-source.json",
+    "http_status": 200,
+    "bytes": 375581,
+    "sha256": "dacb3fc2df7de341244c5a67b5c65c075950783d8d38d4c331b4d22b73810c0f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.225955+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577?fields=all",
+    "path": "screening/allbridge-messenger-source.json",
+    "http_status": 200,
+    "bytes": 254712,
+    "sha256": "f70e0a8fe1d419550ddeb68b55a27f3c4e2372099773629493a279f10ae4ffa2",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.284036+08:00"
+  },
+  {
+    "url": "https://defimon.xyz/blog/allbridge-hack-august-2026",
+    "path": "screening/allbridge-primary-report.html",
+    "http_status": 200,
+    "bytes": 103952,
+    "sha256": "2f0ef0e2a8991127d84b590606b424e3fd6f4f2d7a4b6f1f8df39a7718a68d84",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:34.959152+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9",
+    "path": "screening/sandbox-transaction.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:35.127077+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace",
+    "path": "screening/sandbox-trace.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:35.147092+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/USM_exp.sol&per_page=1",
+    "path": "screening/usm-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3382,
+    "sha256": "36edcf1751907b8d9c0c60e5bcca813df4cecb45811df4541d4862c636839cc5",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.519691+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/AllbridgeCCTP_exp.sol&per_page=1",
+    "path": "screening/allbridge-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3409,
+    "sha256": "58b55d7e6b8410fcf1379c959e134e82d51e5982cef33d7c140379beeabc19b2",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.569691+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/SandboxOFT_exp.sol&per_page=1",
+    "path": "screening/sandbox-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3397,
+    "sha256": "748dfb4f15fb1a02f439b554928715758887ae65124a6eb9b1a0c2c8373c0a6f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.612334+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x729bdaf6daa7464ab7432d4b2bc1d6f306c92282?fields=all",
+    "path": "screening/moke-tokenx-source.json",
+    "http_status": 200,
+    "bytes": 256270,
+    "sha256": "b4810d6c82298c949539aa97df7e1daacf3279c27c6311cfc175d54b8f0498e1",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:36.943333+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 7437,
+    "sha256": "c7b3b3754caf8591495b3dca994a493afbb80c3b92958855d86f66dbb70690ce",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.612334+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 11180,
+    "sha256": "a51c7c3461bde04b447493dcc5acfe67d4baa085e19b37b2ab2b0220e80d7c02",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.597692+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x58e2a853bb14e46befd3148bd4280370fea4655a?fields=all",
+    "path": "screening/fox-bonds-source.json",
+    "http_status": 200,
+    "bytes": 422526,
+    "sha256": "6314cda8c518092aa22d4ffafe77774a8756f4003212570ada42be1267f91e40",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:16.076829+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x87614d97808dcdecb069fe8489848fa1c001e04d?fields=all",
+    "path": "screening/fox-treasury-source.json",
+    "http_status": 200,
+    "bytes": 280302,
+    "sha256": "98a9c11aa137f73c9e67d1e5c8cacebac45cc02cecf6336ae8bccbd2fcbe9a4e",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.177042+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0?fields=all",
+    "path": "screening/fox-bonds-proxy-source.json",
+    "http_status": 200,
+    "bytes": 158372,
+    "sha256": "326a2fa184ed6f187eeeff5a1871754273507b08a5259ef03b73b2e913d4f44b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:14.941857+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x361d08ff43761e6a7e8fcabe48048ae9010801cc?fields=all",
+    "path": "screening/fox-treasury-proxy-source.json",
+    "http_status": 200,
+    "bytes": 157220,
+    "sha256": "71e087241bbe368c91b5981ca9a87eca4414cf115d03c47950f500f88b00b95d",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:14.920701+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xdf81d50c6657487d19b66a1b5375e35a804abb93?fields=all",
+    "path": "screening/fox-actual-token-source.json",
+    "http_status": 200,
+    "bytes": 227372,
+    "sha256": "e67897268839dc52acb3ebe08d51261f8fb277d23ee8913d2a03db2f18663c14",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.108626+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/moke-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:13.895115+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/nex-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:14.410491+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/fox-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:15.010998+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 9310,
+    "sha256": "7747bc33583d8fd39b3d9b794f6ea60e5141cb46be02b881b5f645877ad8072f",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:00:15.685452+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 8487,
+    "sha256": "fbf22bbd4791e5958e585d510b926233371220f2ce6f603b2f5e4bf56f44bac8",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:00:15.696905+08:00"
+  },
+  {
+    "url": "https://yinhui1984.github.io/fox-attack-analysis/",
+    "path": "screening/fox-primary-analysis.html",
+    "http_status": 200,
+    "bytes": 60421,
+    "sha256": "6d2837726e47382408f78a422933e36c8db7a640717860ff4d0d79191371f0bc",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.826590+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers?index=826&block_number=25716150",
+    "path": "screening/usm-token-transfers-page2.json",
+    "http_status": 200,
+    "bytes": 47678,
+    "sha256": "5aa2c4fa1602f24a3fb76f1925dcc49ae82483b2604201ae8cd9b39d0709f7b8",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:17.002922+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions?index=50&block_number=25716150&transaction_index=1193&items_count=50",
+    "path": "screening/usm-internal-transactions-page2.json",
+    "http_status": 200,
+    "bytes": 89879,
+    "sha256": "f2d8233f9dae1b671c95812e22f9ca508dd630a4a0a24ca6720218a60d3c543c",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:33.591057+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c63381",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 5461,
+    "sha256": "1fd97ee32bb5559901d4301b353334fe5afdc38d010d25909f640b36164715b7",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.557667+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c82e78",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 10430,
+    "sha256": "e99c3e953d8d31daf75f5e0954f665b596556e6aad46b6e67b10c9040cf16f58",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.572667+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6ec9959",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 6289,
+    "sha256": "a3b732451ebe43ec519e4be2dff87eac1d08aae5add43b360fdc38507be50c90",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.571666+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 687,
+    "sha256": "b60b5cf342ba71a41f0e62becffad1604a552a201c9977c0faf0d63f87947c56",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.561668+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-bonds-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x9fa6d8a13b35e051bfc145918db0111dec13d1a0",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.553209+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-treasury-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x361d08ff43761e6a7e8fcabe48048ae9010801cc",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.554216+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x2fd5721",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 13580,
+    "sha256": "ab895f752dd01c3c63ca55bd08aac5a3c621c88f06c2764e5c4c2b76084d3d79",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:04:50.310263+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xfd3071ca05757992d5a010eee55743d54a496f48?fields=all",
+    "path": "screening/moke-x-source.json",
+    "http_status": 200,
+    "bytes": 183940,
+    "sha256": "bf2e4535c690222a44bb58aef2823749f9320142d935fd4c8163262ac4dffce3",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:52.095100+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x81d40f21f12a8f0e3252bccb954d722d4c464b64?fields=all",
+    "path": "screening/allbridge-circle-proxy-source.json",
+    "http_status": 200,
+    "bytes": 104824,
+    "sha256": "97a97cbbafce2a8d9fb12d8e3a396644eea7403e16392eb84048c092a55e877f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:51.942953+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/d4d26edbf1393537f6166523a21368b1a34499c8/src/test/2026-08/USM_exp.sol",
+    "path": "screening/usm-public-reference-poc.sol",
+    "http_status": 200,
+    "bytes": 5866,
+    "sha256": "c2ba4965fb96afbb92772fdd40e0093d07a1e4b3767b954a0f8a00671d6130ae",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:50.044597+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/b1f9489318ad9dbf5c9188a88f36e06415d1d91b/src/test/2026-08/AllbridgeCCTP_exp.sol",
+    "path": "screening/allbridge-public-reference-poc.sol",
+    "http_status": 200,
+    "bytes": 15896,
+    "sha256": "345888575909721c513f465caf01e4db4375851b74e98cdd0eba880319af811f",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:50.051577+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x7db629f6acc20be49a0a7565c21cc178e9ac21e3?fields=all",
+    "path": "screening/allbridge-circle-implementation-source.json",
+    "http_status": 200,
+    "bytes": 638140,
+    "sha256": "8500ff58072cd31ea56993331b73137560d8469e75293885b2b6404a828bc27d",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:06:38.266260+08:00"
+  }
+]

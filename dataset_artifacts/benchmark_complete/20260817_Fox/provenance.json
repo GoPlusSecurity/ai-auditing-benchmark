@@ -1,0 +1,654 @@
+{
+  "kind": "public_original_source",
+  "path_base": "complete_case_root",
+  "bundles": [
+    {
+      "id": "fox-bonds",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x58E2A853BB14e46BefD3148bd4280370fEA4655A?fields=all",
+      "address": "0x58E2A853BB14e46BefD3148bd4280370fEA4655A",
+      "chain_id": "56",
+      "verified_at": "2026-08-10T07:12:30Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x62bedfcbd74c340d77c43b8b9acfbb98c2c40987ccaf877d2f59e3e570b3fd7f",
+        "blockNumber": "115078670",
+        "transactionIndex": "113",
+        "deployer": "0x12896036059ce563b713754f959353F4f4c1c55C"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "npm/@openzeppelin/contracts-upgradeable@5.6.1/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts-upgradeable/=npm/@openzeppelin/contracts-upgradeable@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "FoxLpBondsPool",
+        "fullyQualifiedName": "project/contracts/FoxLpBondsPool.sol:FoxLpBondsPool"
+      },
+      "response_path": "source-bundles/fox-bonds/source-response.json",
+      "response_sha256": "6314cda8c518092aa22d4ffafe77774a8756f4003212570ada42be1267f91e40",
+      "abi_path": "source-bundles/fox-bonds/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+          "sha256": "d20bb6bb32dd1fdb895914012ad08dc1e4bbd66df2e75a02c1ca97d884df70ed",
+          "bytes": 4046
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+          "sha256": "caf06b4c93bbc1d54eb772e76e949bd4a2520c535cc591d07e57cbafaf90b2fd",
+          "bytes": 1215
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+          "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+          "bytes": 9279
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/project/contracts/FoxLpBondsPool.sol",
+          "original_source_path": "project/contracts/FoxLpBondsPool.sol",
+          "sha256": "9d0e492c589860c28112720c37f9101aed84d285d4a371df1e17a4dea84ef99a",
+          "bytes": 7300
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/project/contracts/FoxPoolBase.sol",
+          "original_source_path": "project/contracts/FoxPoolBase.sol",
+          "sha256": "0f6c1a516c8aec7c4b4c0b61d99592b9a8fc58944f5a5587d59e0fa797867fa7",
+          "bytes": 14426
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:00:16.076829+08:00"
+    },
+    {
+      "id": "fox-treasury",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x87614D97808DcDEcB069fe8489848fa1C001e04D?fields=all",
+      "address": "0x87614D97808DcDEcB069fe8489848fa1C001e04D",
+      "chain_id": "56",
+      "verified_at": "2026-08-10T06:39:17Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xd275cc467725020bc4e74919fbd44e3a3a5b3d741b37aa09602d2d327daa6c93",
+        "blockNumber": "115074203",
+        "transactionIndex": "31",
+        "deployer": "0x12896036059ce563b713754f959353F4f4c1c55C"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "npm/@openzeppelin/contracts-upgradeable@5.6.1/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+            "project/:@openzeppelin/contracts-upgradeable/=npm/@openzeppelin/contracts-upgradeable@5.6.1/",
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "Treasury",
+        "fullyQualifiedName": "project/contracts/Treasury.sol:Treasury"
+      },
+      "response_path": "source-bundles/fox-treasury/source-response.json",
+      "response_sha256": "98a9c11aa137f73c9e67d1e5c8cacebac45cc02cecf6336ae8bccbd2fcbe9a4e",
+      "abi_path": "source-bundles/fox-treasury/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts-upgradeable@5.6.1/access/OwnableUpgradeable.sol",
+          "sha256": "d20bb6bb32dd1fdb895914012ad08dc1e4bbd66df2e75a02c1ca97d884df70ed",
+          "bytes": 4046
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts-upgradeable@5.6.1/utils/ContextUpgradeable.sol",
+          "sha256": "caf06b4c93bbc1d54eb772e76e949bd4a2520c535cc591d07e57cbafaf90b2fd",
+          "bytes": 1215
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+          "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+          "bytes": 4454
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+          "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+          "bytes": 193
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+          "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+          "bytes": 182
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/utils/Initializable.sol",
+          "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+          "bytes": 9279
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+          "bytes": 13314
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+          "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+          "bytes": 871
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/project/contracts/Treasury.sol",
+          "original_source_path": "project/contracts/Treasury.sol",
+          "sha256": "6f35c3bc2a5234301dedc13f19cd7b585258d212a5462cbb89eb1089694f91d0",
+          "bytes": 8577
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:00:15.177042+08:00"
+    },
+    {
+      "id": "fox-bonds-proxy",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x9fa6D8a13b35E051BFc145918db0111dEc13D1A0?fields=all",
+      "address": "0x9fa6D8a13b35E051BFc145918db0111dEc13D1A0",
+      "chain_id": "56",
+      "verified_at": "2026-08-10T07:12:37Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xe6e65f70500d788191a2d34072f52233b519b5d26bc3dc6cda67953824c18b9a",
+        "blockNumber": "115078679",
+        "transactionIndex": "51",
+        "deployer": "0x12896036059ce563b713754f959353F4f4c1c55C"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": []
+        },
+        "name": "TransparentUpgradeableProxy",
+        "fullyQualifiedName": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy"
+      },
+      "response_path": "source-bundles/fox-bonds-proxy/source-response.json",
+      "response_sha256": "326a2fa184ed6f187eeeff5a1871754273507b08a5259ef03b73b2e913d4f44b",
+      "abi_path": "source-bundles/fox-bonds-proxy/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+          "sha256": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+          "bytes": 637
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+          "sha256": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+          "bytes": 473
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+          "sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+          "bytes": 2636
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+          "sha256": "a89ba2032ab25959c6fde1e508ebf8f966ff632703d3ef79684f578a8fa8033f",
+          "bytes": 6260
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+          "sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+          "bytes": 2697
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+          "sha256": "4da9a90b1c8b45fdab7d73d8cf81f51cf7d990657ee4e3f943492c3bf0e4c2f1",
+          "bytes": 1965
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "sha256": "58c759fe76057e1cefa8909b446357aae5cac8a8ba7e6401650208d1b0481508",
+          "bytes": 6547
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+          "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+          "bytes": 6803
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+          "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+          "bytes": 896
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+          "sha256": "e128cbe9c6c406d5a42c26e4079c0a95b369ce552f2d0c3dfd2fcb836c5708f2",
+          "bytes": 5547
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+          "bytes": 4182
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:00:14.941857+08:00"
+    },
+    {
+      "id": "fox-treasury-proxy",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x361d08ff43761E6a7E8Fcabe48048AE9010801cc?fields=all",
+      "address": "0x361d08ff43761E6a7E8Fcabe48048AE9010801cc",
+      "chain_id": "56",
+      "verified_at": "2026-08-10T06:39:22Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x4f93c0629f76234db693f45227c753cbad2a656939ec7af5c59d407e8f28d6ca",
+        "blockNumber": "115074212",
+        "transactionIndex": "24",
+        "deployer": "0x12896036059ce563b713754f959353F4f4c1c55C"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": []
+        },
+        "name": "TransparentUpgradeableProxy",
+        "fullyQualifiedName": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy"
+      },
+      "response_path": "source-bundles/fox-treasury-proxy/source-response.json",
+      "response_sha256": "71e087241bbe368c91b5981ca9a87eca4414cf115d03c47950f500f88b00b95d",
+      "abi_path": "source-bundles/fox-treasury-proxy/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1967.sol",
+          "sha256": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+          "bytes": 637
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/beacon/IBeacon.sol",
+          "sha256": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+          "bytes": 473
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+          "sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+          "bytes": 2636
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Utils.sol",
+          "sha256": "a89ba2032ab25959c6fde1e508ebf8f966ff632703d3ef79684f578a8fa8033f",
+          "bytes": 6260
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+          "sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+          "bytes": 2697
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/ProxyAdmin.sol",
+          "sha256": "4da9a90b1c8b45fdab7d73d8cf81f51cf7d990657ee4e3f943492c3bf0e4c2f1",
+          "bytes": 1965
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/proxy/transparent/TransparentUpgradeableProxy.sol",
+          "sha256": "58c759fe76057e1cefa8909b446357aae5cac8a8ba7e6401650208d1b0481508",
+          "bytes": 6547
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Address.sol",
+          "sha256": "73e54e15285455f0e01e136c3663732641537614723ae5dbd820eb3cb036b1fd",
+          "bytes": 6803
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Errors.sol",
+          "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+          "bytes": 896
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/LowLevelCall.sol",
+          "sha256": "e128cbe9c6c406d5a42c26e4079c0a95b369ce552f2d0c3dfd2fcb836c5708f2",
+          "bytes": 5547
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury-proxy/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+          "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+          "bytes": 4182
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:00:14.920701+08:00"
+    },
+    {
+      "id": "fox-actual-token",
+      "kind": "public_original_source",
+      "role": "vulnerable_or_required_source",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0xdF81d50c6657487D19B66A1b5375E35A804Abb93?fields=all",
+      "address": "0xdF81d50c6657487D19B66A1b5375E35A804Abb93",
+      "chain_id": "56",
+      "verified_at": "2026-07-03T08:53:35Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x38ba496f739623c47b22a12b5d49dfc3b19be6028177ef597e4a1697d1e1a2ec",
+        "blockNumber": "107800076",
+        "transactionIndex": "58",
+        "deployer": "0x12896036059ce563b713754f959353F4f4c1c55C"
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.28+commit.7893614a",
+        "compilerSettings": {
+          "viaIR": true,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "cancun",
+          "remappings": [
+            "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+          ]
+        },
+        "name": "Fox",
+        "fullyQualifiedName": "project/contracts/Fox.sol:Fox"
+      },
+      "response_path": "source-bundles/fox-actual-token/source-response.json",
+      "response_sha256": "e67897268839dc52acb3ebe08d51261f8fb277d23ee8913d2a03db2f18663c14",
+      "abi_path": "source-bundles/fox-actual-token/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+          "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+          "bytes": 6540
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+          "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+          "bytes": 10800
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+          "bytes": 684
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+          "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+          "bytes": 2781
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "original_source_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963
+        },
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/project/contracts/Fox.sol",
+          "original_source_path": "project/contracts/Fox.sol",
+          "sha256": "6c95831c25394712ad246ccd5b17e2de933423d054cccef8ec7e920f44590bc9",
+          "bytes": 4036
+        }
+      ],
+      "retrieved_at": "2026-10-21T06:00:15.108626+08:00"
+    },
+    {
+      "id": "pro-pair",
+      "kind": "public_original_source",
+      "role": "normal_protocol_reference_context",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x63844BD4BFad910B1643713302a1cC1ed20d50c3?fields=all",
+      "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+      "chain_id": "56",
+      "verified_at": "2026-09-11T15:40:24Z",
+      "creation_match": null,
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": null,
+        "blockNumber": null,
+        "transactionIndex": null,
+        "deployer": null
+      },
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.5.16+commit.9c3226ce",
+        "compilerSettings": {
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          }
+        },
+        "name": "PancakePair",
+        "fullyQualifiedName": "PancakePair.sol:PancakePair"
+      },
+      "response_path": "source-bundles/pro-pair/source-response.json",
+      "response_sha256": "62fdafa8a2e18164b3dca359eef3e6430acc3ec3c103160f3b5a4e0fcced64ef",
+      "abi_path": "source-bundles/pro-pair/abi.json",
+      "source_files": [
+        {
+          "path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/pro-pair/PancakePair.sol",
+          "original_source_path": "PancakePair.sol",
+          "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+          "bytes": 22004
+        }
+      ],
+      "retrieved_at": "2026-10-21T05:40:34.869871+08:00"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/fox-receipt.json",
+      "sha256": "a412301037f9502cf85b33fc22c06d58525f8371147db04e46fcdd6d1676742e",
+      "bytes": 124671,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T05:50:17.039129+08:00"
+    },
+    {
+      "path": "evidence/fox-transaction.json",
+      "sha256": "b60b5cf342ba71a41f0e62becffad1604a552a201c9977c0faf0d63f87947c56",
+      "bytes": 687,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.561668+08:00"
+    },
+    {
+      "path": "evidence/fox-block.json",
+      "sha256": "a3b732451ebe43ec519e4be2dff87eac1d08aae5add43b360fdc38507be50c90",
+      "bytes": 6289,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.571666+08:00"
+    },
+    {
+      "path": "evidence/fox-primary-analysis.html",
+      "sha256": "6d2837726e47382408f78a422933e36c8db7a640717860ff4d0d79191371f0bc",
+      "bytes": 60421,
+      "url": "https://yinhui1984.github.io/fox-attack-analysis/",
+      "retrieved_at": "2026-10-21T06:00:15.826590+08:00"
+    },
+    {
+      "path": "evidence/fox-bonds-historical-implementation.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.553209+08:00"
+    },
+    {
+      "path": "evidence/fox-treasury-historical-implementation.json",
+      "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+      "bytes": 78,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:04:49.554216+08:00"
+    },
+    {
+      "path": "evidence/fox-main-pair-runtime.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "bytes": 30000,
+      "url": "https://bsc-dataseed.binance.org",
+      "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+    },
+    {
+      "path": "evidence/decoded-events-and-flows.json",
+      "sha256": "572ce6a8b2074a0c05a30570849555bd262a0d6d65e8500e3de9d37843ea5b59",
+      "bytes": 39760,
+      "kind": "offline_decode_of_archived_receipts_or_trace"
+    },
+    {
+      "path": "evidence/pool-runtime-comparison.json",
+      "sha256": "77e7a6bec92d7d5c20581a5cfab206979233366fc024a316534e099c658a4e74",
+      "bytes": 1336,
+      "kind": "current_pool_runtime_byte_comparison_not_historical_binding"
+    }
+  ],
+  "context_limits": "PancakePair verified source comes from the separately identified PRO pool. Five actual incident pools have byte-identical current runtime, recorded in the batch comparison; no attack-block runtime equivalence is claimed. Circle current proxy implementation is context; its historical slot was not independently reconstructed.",
+  "current_pool_runtime_comparison": "evidence/pool-runtime-comparison.json"
+}

@@ -1,0 +1,17 @@
+[
+ {"url":"https://api.github.com/repos/Jon-Becker/heimdall-rs/releases/latest","path":"screening/heimdall-release.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a?fields=all","path":"screening/moke-actual-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x684d722ebf8980f49492f631f56765dd4fb302a7?fields=all","path":"screening/moke-release-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/1/0x2a7fff44c19f39468064ab5e5c304de01d591675?fields=all","path":"screening/usm-source.json"},
+ {"url":"https://eth.blockscout.com/api/v2/smart-contracts/0x2a7fff44c19f39468064ab5e5c304de01d591675","path":"screening/usm-blockscout-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/1/0x86729873e3b88de2ab85ca292d6d6d69d548edf3?fields=all","path":"screening/fum-source.json"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/raw-trace","path":"screening/usm-trace.json"},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/fox-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"]}},
+ {"url":"https://anomly.rs/?page=1","path":"screening/analysis-index1.html"},
+ {"url":"https://anomly.rs/usm-fum-split-redemption-exploit","path":"screening/usm-analysis.html"},
+ {"url":"https://sigintzero.com/blog/coreum-bridge-200k-xrp-rippling-deposit-forgery","path":"screening/coreum-analysis.html"},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/lula-rental-runtime.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getCode","params":["0x377a015f44c3fdf71060e94648edc9e0316c7f1a","latest"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/moke-release-runtime.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getCode","params":["0x684d722ebf8980f49492f631f56765dd4fb302a7","latest"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/pro-actual-executor-source-runtime.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getCode","params":["0x7fba63d0c45f265c1bea3ed2e49f0691a9d9aa87","latest"]}},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x7fba63d0c45f265c1bea3ed2e49f0691a9d9aa87?fields=all","path":"screening/pro-actual-executor-source.json"}
+]

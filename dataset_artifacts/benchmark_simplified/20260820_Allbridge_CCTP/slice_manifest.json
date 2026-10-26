@@ -1,0 +1,89 @@
+{
+  "case_id": "20260820_Allbridge_CCTP",
+  "path_base": "simplified_case_root",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-router/src/Router_L1_L138.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol",
+      "original_start_line": 1,
+      "original_end_line": 138,
+      "sha256": "7e126930d9dae880e24fc668f60ce73cbaad1f686d590e1057a11b920697621a",
+      "complete_source_sha256": "730230f3e42f3c228b1baa548187be36733d91b41a43cd9c53b710cadaedef9f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-router/src/Router_L226_L291.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol",
+      "original_start_line": 226,
+      "original_end_line": 291,
+      "sha256": "613185342ee0c79f5eb3ce83cdc39d80ce2d915bb8d052ddef6d8c6579caee0d",
+      "complete_source_sha256": "730230f3e42f3c228b1baa548187be36733d91b41a43cd9c53b710cadaedef9f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-router/src/Router_L324_L372.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/Router.sol",
+      "original_start_line": 324,
+      "original_end_line": 372,
+      "sha256": "607785b19bb67be8ce4e58a732f538f9cdc7c24a243925c4fc0403d25575027f",
+      "complete_source_sha256": "730230f3e42f3c228b1baa548187be36733d91b41a43cd9c53b710cadaedef9f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-messenger/src/CCTPTokenMessenger_L1_L77.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/CCTPTokenMessenger.sol",
+      "original_start_line": 1,
+      "original_end_line": 77,
+      "sha256": "72f3fc70f4a15f3954c04a3aea5b75ef1a182621795f40162886e815209b8617",
+      "complete_source_sha256": "1ee080f7eb55edf862ef9d9ad1a1a79f047988afa6a6b579d6a1ea87b912b52b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-messenger/src/CCTPTokenMessenger_L123_L185.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-messenger/src/CCTPTokenMessenger.sol",
+      "original_start_line": 123,
+      "original_end_line": 185,
+      "sha256": "4462880bd58fa82074a174b7692c888313ff41f0658c5eb5d42d3b57fbe43779",
+      "complete_source_sha256": "1ee080f7eb55edf862ef9d9ad1a1a79f047988afa6a6b579d6a1ea87b912b52b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-circle-implementation/src/v2/MessageTransmitterV2_L1_L80.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol",
+      "original_start_line": 1,
+      "original_end_line": 80,
+      "sha256": "adbe011ef9dd805bed5f7cf8cfd8130eb93e2758bc07a89244e6724fa4513cf5",
+      "complete_source_sha256": "b78a554bf191acbc4991ac47ddbd70fc92f11a127b063e051148514f09bd0714",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-circle-implementation/src/v2/MessageTransmitterV2_L135_L322.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/v2/MessageTransmitterV2.sol",
+      "original_start_line": 135,
+      "original_end_line": 322,
+      "sha256": "afee6278a93e22ddaa897584bb52a71823ef32de979760f1ad4987f8666f7f12",
+      "complete_source_sha256": "b78a554bf191acbc4991ac47ddbd70fc92f11a127b063e051148514f09bd0714",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-circle-implementation/src/messages/v2/MessageV2_L1_L177.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-implementation/src/messages/v2/MessageV2.sol",
+      "original_start_line": 1,
+      "original_end_line": 177,
+      "sha256": "eda28ca9d890c26ad32badfdbc1f8569e1ffece0fb8568987d45cf124cccbbae",
+      "complete_source_sha256": "eda28ca9d890c26ad32badfdbc1f8569e1ffece0fb8568987d45cf124cccbbae",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260820_Allbridge_CCTP/slices/allbridge-circle-proxy/src/proxy/AdminUpgradableProxy_L1_L148.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-circle-proxy/src/proxy/AdminUpgradableProxy.sol",
+      "original_start_line": 1,
+      "original_end_line": 148,
+      "sha256": "86128f0fd1f551ddab766a733d7f365a90f7d7f7f30eab161cebdc5b3b86fc33",
+      "complete_source_sha256": "86128f0fd1f551ddab766a733d7f365a90f7d7f7f30eab161cebdc5b3b86fc33",
+      "kind": "original_source_verbatim_slice"
+    }
+  ]
+}

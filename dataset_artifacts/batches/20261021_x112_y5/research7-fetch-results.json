@@ -1,0 +1,159 @@
+[
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x58e2a853bb14e46befd3148bd4280370fea4655a?fields=all",
+    "path": "screening/fox-bonds-source.json",
+    "http_status": 200,
+    "bytes": 422526,
+    "sha256": "6314cda8c518092aa22d4ffafe77774a8756f4003212570ada42be1267f91e40",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:16.076829+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x87614d97808dcdecb069fe8489848fa1c001e04d?fields=all",
+    "path": "screening/fox-treasury-source.json",
+    "http_status": 200,
+    "bytes": 280302,
+    "sha256": "98a9c11aa137f73c9e67d1e5c8cacebac45cc02cecf6336ae8bccbd2fcbe9a4e",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.177042+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0?fields=all",
+    "path": "screening/fox-bonds-proxy-source.json",
+    "http_status": 200,
+    "bytes": 158372,
+    "sha256": "326a2fa184ed6f187eeeff5a1871754273507b08a5259ef03b73b2e913d4f44b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:14.941857+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x361d08ff43761e6a7e8fcabe48048ae9010801cc?fields=all",
+    "path": "screening/fox-treasury-proxy-source.json",
+    "http_status": 200,
+    "bytes": 157220,
+    "sha256": "71e087241bbe368c91b5981ca9a87eca4414cf115d03c47950f500f88b00b95d",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:14.920701+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xdf81d50c6657487d19b66a1b5375e35a804abb93?fields=all",
+    "path": "screening/fox-actual-token-source.json",
+    "http_status": 200,
+    "bytes": 227372,
+    "sha256": "e67897268839dc52acb3ebe08d51261f8fb277d23ee8913d2a03db2f18663c14",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.108626+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/moke-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:13.895115+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/nex-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:14.410491+08:00"
+  },
+  {
+    "url": "https://api.zan.top/bsc-mainnet",
+    "path": "screening/fox-full-trace.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "error": "HTTP Error 429: ",
+    "retrieved_at": "2026-10-21T06:00:15.010998+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 9310,
+    "sha256": "7747bc33583d8fd39b3d9b794f6ea60e5141cb46be02b881b5f645877ad8072f",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:00:15.685452+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 8487,
+    "sha256": "fbf22bbd4791e5958e585d510b926233371220f2ce6f603b2f5e4bf56f44bac8",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:00:15.696905+08:00"
+  },
+  {
+    "url": "https://yinhui1984.github.io/fox-attack-analysis/",
+    "path": "screening/fox-primary-analysis.html",
+    "http_status": 200,
+    "bytes": 60421,
+    "sha256": "6d2837726e47382408f78a422933e36c8db7a640717860ff4d0d79191371f0bc",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:15.826590+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers?index=826&block_number=25716150",
+    "path": "screening/usm-token-transfers-page2.json",
+    "http_status": 200,
+    "bytes": 47678,
+    "sha256": "5aa2c4fa1602f24a3fb76f1925dcc49ae82483b2604201ae8cd9b39d0709f7b8",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:17.002922+08:00"
+  },
+  {
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions?index=50&block_number=25716150&transaction_index=1193&items_count=50",
+    "path": "screening/usm-internal-transactions-page2.json",
+    "http_status": 200,
+    "bytes": 89879,
+    "sha256": "f2d8233f9dae1b671c95812e22f9ca508dd630a4a0a24ca6720218a60d3c543c",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:00:33.591057+08:00"
+  }
+]

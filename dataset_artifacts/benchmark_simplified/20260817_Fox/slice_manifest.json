@@ -1,0 +1,98 @@
+{
+  "case_id": "20260817_Fox",
+  "path_base": "simplified_case_root",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds/project/contracts/FoxLpBondsPool_L1_L205.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/project/contracts/FoxLpBondsPool.sol",
+      "original_start_line": 1,
+      "original_end_line": 205,
+      "sha256": "9d0e492c589860c28112720c37f9101aed84d285d4a371df1e17a4dea84ef99a",
+      "complete_source_sha256": "9d0e492c589860c28112720c37f9101aed84d285d4a371df1e17a4dea84ef99a",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds/project/contracts/FoxPoolBase_L1_L430.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds/project/contracts/FoxPoolBase.sol",
+      "original_start_line": 1,
+      "original_end_line": 430,
+      "sha256": "0f6c1a516c8aec7c4b4c0b61d99592b9a8fc58944f5a5587d59e0fa797867fa7",
+      "complete_source_sha256": "0f6c1a516c8aec7c4b4c0b61d99592b9a8fc58944f5a5587d59e0fa797867fa7",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L1_L98.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/project/contracts/Treasury.sol",
+      "original_start_line": 1,
+      "original_end_line": 98,
+      "sha256": "2ec21ddc2c9705c97d79946b909f2e07ed4baddfb9179d45644bd1ba78b15389",
+      "complete_source_sha256": "6f35c3bc2a5234301dedc13f19cd7b585258d212a5462cbb89eb1089694f91d0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L115_L128.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/project/contracts/Treasury.sol",
+      "original_start_line": 115,
+      "original_end_line": 128,
+      "sha256": "555e8287bf0fb35aa1ee01b3b1e270d89b42c5535c7a4694405a0cdc471b4dc0",
+      "complete_source_sha256": "6f35c3bc2a5234301dedc13f19cd7b585258d212a5462cbb89eb1089694f91d0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-treasury/project/contracts/Treasury_L168_L187.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-treasury/project/contracts/Treasury.sol",
+      "original_start_line": 168,
+      "original_end_line": 187,
+      "sha256": "6779d936ad22c4e7514438f1f945927514551224b171834ed86005516adb076a",
+      "complete_source_sha256": "6f35c3bc2a5234301dedc13f19cd7b585258d212a5462cbb89eb1089694f91d0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-actual-token/project/contracts/Fox_L1_L138.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/project/contracts/Fox.sol",
+      "original_start_line": 1,
+      "original_end_line": 138,
+      "sha256": "6c95831c25394712ad246ccd5b17e2de933423d054cccef8ec7e920f44590bc9",
+      "complete_source_sha256": "6c95831c25394712ad246ccd5b17e2de933423d054cccef8ec7e920f44590bc9",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20_L1_L305.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+      "original_start_line": 1,
+      "original_end_line": 305,
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "complete_source_sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy_L1_L69.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol",
+      "original_start_line": 1,
+      "original_end_line": 69,
+      "sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+      "complete_source_sha256": "fa8aae37b2939371fcbce48b814c0d5c7e57e3e267f348459f29941937746c98",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy_L1_L62.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/fox-bonds-proxy/npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol",
+      "original_start_line": 1,
+      "original_end_line": 62,
+      "sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+      "complete_source_sha256": "41a3040398d53999dea3251ff8906e11ec1a699362a1d8f4a55bfc7709cc00f3",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260817_Fox/slices/pro-pair/PancakePair_L1_L497.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260817_Fox/source-bundles/pro-pair/PancakePair.sol",
+      "original_start_line": 1,
+      "original_end_line": 497,
+      "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "complete_source_sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "kind": "original_source_verbatim_slice"
+    }
+  ]
+}

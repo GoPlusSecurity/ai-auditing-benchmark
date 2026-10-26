@@ -1,0 +1,125 @@
+{
+  "case_id": "20260810_USM_FUM",
+  "path_base": "simplified_case_root",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L1_L85.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+      "original_start_line": 1,
+      "original_end_line": 85,
+      "sha256": "07c0c54f443671657d69a638641b2b61b05c8bc4839722630975b932bda3e34c",
+      "complete_source_sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L115_L154.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+      "original_start_line": 115,
+      "original_end_line": 154,
+      "sha256": "8dd4d753ffba360e62c44312fdb3fe46f7a995cc92d4d0201a398d73c6bebd8d",
+      "complete_source_sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L228_L328.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+      "original_start_line": 228,
+      "original_end_line": 328,
+      "sha256": "d946680b3601678120aa24ef0a7643a3a2a1bdfb20188f48f05078cd1f43bb7b",
+      "complete_source_sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L339_L584.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+      "original_start_line": 339,
+      "original_end_line": 584,
+      "sha256": "03dd6eddfedda0bcd55489888ad0e4d454eb92f2553c672c3bc1e975907cd86f",
+      "complete_source_sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L650_L763.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/USM.sol",
+      "original_start_line": 650,
+      "original_end_line": 763,
+      "sha256": "ca13ed67555ceb41bfcfd9a3e95ecf4b58dc8a6d61694f606b70adda1d877ee6",
+      "complete_source_sha256": "9fad1d9901d0ddfcefffef7e34718abf7ef7b7827489d80fffcda5a877a9761e",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/FUM_L1_L73.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/FUM.sol",
+      "original_start_line": 1,
+      "original_end_line": 73,
+      "sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+      "complete_source_sha256": "9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/IUSM_L1_L161.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/IUSM.sol",
+      "original_start_line": 1,
+      "original_end_line": 161,
+      "sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+      "complete_source_sha256": "8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/IFUM_L1_L21.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/IFUM.sol",
+      "original_start_line": 1,
+      "original_end_line": 21,
+      "sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+      "complete_source_sha256": "b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/WadMath_L1_L498.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/WadMath.sol",
+      "original_start_line": 1,
+      "original_end_line": 498,
+      "sha256": "30422781de176854bb990485d5ec42c13eabd9a2f29608e9fef5bf2bf2f636fd",
+      "complete_source_sha256": "30422781de176854bb990485d5ec42c13eabd9a2f29608e9fef5bf2bf2f636fd",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/Address_L1_L30.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/Address.sol",
+      "original_start_line": 1,
+      "original_end_line": 30,
+      "sha256": "5c7540d431c0fa51fbdeda9b2897ee279d8e617bb64e4bd510fee74a2ec98ba6",
+      "complete_source_sha256": "5c7540d431c0fa51fbdeda9b2897ee279d8e617bb64e4bd510fee74a2ec98ba6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/oracles/Oracle_L1_L9.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/oracles/Oracle.sol",
+      "original_start_line": 1,
+      "original_end_line": 9,
+      "sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+      "complete_source_sha256": "334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/MinOut_L1_L26.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/contracts/MinOut.sol",
+      "original_start_line": 1,
+      "original_end_line": 26,
+      "sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+      "complete_source_sha256": "ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/acc-erc20/contracts/ERC20_L1_L78.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260810_USM_FUM/source-bundles/usm/acc-erc20/contracts/ERC20.sol",
+      "original_start_line": 1,
+      "original_end_line": 78,
+      "sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+      "complete_source_sha256": "38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1",
+      "kind": "original_source_verbatim_slice"
+    }
+  ]
+}

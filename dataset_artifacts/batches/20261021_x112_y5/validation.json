@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-21T06:30:06.800280+08:00",
+  "parameters": {
+    "x": 112,
+    "y": 5
+  },
+  "actual_scan_range": [
+    88,
+    112
+  ],
+  "counts": {
+    "scanned_rows": 25,
+    "qualifying_source_rows": 5,
+    "new_cases": 5,
+    "completed_existing_cases": 0,
+    "reused_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 20
+  },
+  "case_ids": [
+    "20260803_MOKE",
+    "20260804_NEX_AIC",
+    "20260810_USM_FUM",
+    "20260817_Fox",
+    "20260820_Allbridge_CCTP"
+  ],
+  "raw_export_sha256": "dc2c5338c964434d780f49bf215d112ec0bb06ee24cad24a12435bf5453ea794",
+  "checks": {
+    "source_bundles": 21,
+    "original_source_files_compared": 207,
+    "byte_exact_continuous_slices": 54,
+    "evidence_hashes": 44,
+    "semantic_source_literals": 35,
+    "case_links": 93,
+    "unchanged_baseline_files": 3349,
+    "pre_existing_source_files_unchanged": 2481,
+    "changed_baseline_files": [
+      "README.md",
+      "README_cn.md",
+      "ai-auditing-benchmark_cn.csv",
+      "ai-auditing-benchmark_en.csv",
+      "docs/cases/README.md"
+    ],
+    "new_paths_scoped": 796,
+    "csv_events_each": 62,
+    "independent_raw_receipt_or_trace_decoding": "passed",
+    "current_pool_runtime_byte_comparisons": 5,
+    "local_decompilation": "prohibited_not_run"
+  },
+  "whole_archive_layout": {
+    "source_files": 2742,
+    "abi_files": 82,
+    "dataset_files": 2742,
+    "checksum_manifests": 44,
+    "checksum_entries": 1950,
+    "local_markdown_links_checked": 860,
+    "json_file_references_checked": 1907,
+    "source_hash_records_checked": 1693,
+    "original_explorer_source_names_checked": 26,
+    "exact_slices_compared": 316,
+    "preserved_historical_source_hash_differences": [
+      {
+        "document": "dataset_artifacts/benchmark_complete/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_complete/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "a5cf43d6e4de390fb53b5518a6d940eb0f5cd9b9cd40c260a2f0b5789c4d535a"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/context/TradeRouter.recovered.sol",
+        "recorded_sha256": "06596b76ccd9038d937427eb65ee73a2d2a163aa357512b0f018328af0c6e7f6",
+        "current_sha256": "f9740a9757af1210386a112848d2879e8207f433101ce6224c5ab79381620bef"
+      },
+      {
+        "document": "dataset_artifacts/benchmark_simplified/20260619_JB_decompiled/SOURCE.json",
+        "path": "dataset/benchmark_simplified/20260619_JB_decompiled/JBToken.recovered.sol",
+        "recorded_sha256": "230e555ddd9e2cba2107c2b622edc75e7e384b3f0cab72179599835ee1acc738",
+        "current_sha256": "4c75d04c90ca4e642d30dead0ef96cd407650b72702cb48092a9273193af1ac8"
+      }
+    ]
+  },
+  "not_claimed": {
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "complete_pre_attack_state": "not_reconstructed",
+    "fox_historical_proxy_slots": "RPC missing trie node",
+    "complete_internal_traces": "USM only; remaining four cases receipts and public analysis"
+  }
+}

@@ -1,0 +1,407 @@
+[
+  {
+    "row": 101,
+    "case_id": "20260803_MOKE",
+    "label": "moke",
+    "chain_id": "56",
+    "project_cn": "MOKE（释放与 LP 分红模块）",
+    "project_en": "MOKE (release and LP dividend modules)",
+    "vulnerability_cn": "可操纵现货价放大释放量，陈旧 LP 记录重复领取分红",
+    "vulnerability_en": "Manipulable spot-price release combined with stale LP dividend records",
+    "detail_cn": "MokeRelease 以两组即时储备换算已归属的 USDT 额度，攻击时 PriceSettled 为 0.000594140821297791 USDT/MOKE，4 次领取共移出 43,860,308.980417278429035188 MOKE。MokeLPDividend 在同步当前 LP 余额前，先用旧 userLPRecord 结算分红；回执记录 65 个旧 LP 记录清零后仍领款（64 笔同额、1 笔较小），分配 1,664.616180024096154954 BNB。已归档关键原始源码和回执；未取得完整内部跟踪，未重放。源表 8 月 3 日对应交易 8 月 2 日 UTC；美元估值口径不同，金额留空。",
+    "detail_en": "MokeRelease converts vested USDT quotas using two live reserve ratios. PriceSettled was 0.000594140821297791 USDT/MOKE; four claims released 43,860,308.980417278429035188 MOKE. MokeLPDividend accrues against the old userLPRecord before replacing it with current LP ownership. The receipt records 65 stale LP positions (64 equal and one smaller) resetting to zero while claiming dividends from a 1,664.616180024096154954 BNB distribution. Core original source and receipt are archived; full internal traces and replay were not obtained. The sheet date is August 3, versus August 2 UTC on chain. Conflicting USD valuations are left blank.",
+    "tx_hash": "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",
+    "victims": [
+      "0x5ae569d8a0539a6a603e96a26ac8caea7ceba377",
+      "0x684d722ebf8980f49492f631f56765dd4fb302a7",
+      "0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a"
+    ],
+    "bundles": [
+      "moke-token",
+      "moke-actual-token",
+      "moke-release",
+      "moke-x",
+      "moke-tokenx",
+      "pro-pair"
+    ],
+    "context_bundles": [
+      "pro-pair"
+    ],
+    "slices": {
+      "moke-token:project/contracts/MokeLPDividend.sol": [
+        [
+          1,
+          80
+        ],
+        [
+          121,
+          244
+        ],
+        [
+          259,
+          264
+        ]
+      ],
+      "moke-actual-token:project/contracts/MokeToken.sol": [
+        [
+          1,
+          192
+        ],
+        [
+          293,
+          314
+        ],
+        [
+          354,
+          368
+        ],
+        [
+          379,
+          629
+        ]
+      ],
+      "moke-release:project/contracts/MokeRelease.sol": [
+        [
+          1,
+          150
+        ],
+        [
+          318,
+          594
+        ]
+      ],
+      "moke-x:project/contracts/TokenX.sol": "all",
+      "moke-tokenx:project/contracts/MokeAC.sol": "all",
+      "pro-pair:PancakePair.sol": "all",
+      "moke-actual-token:npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol": "all",
+      "moke-actual-token:npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol": "all",
+      "moke-actual-token:npm/@openzeppelin/contracts@5.6.1/utils/Context.sol": "all",
+      "moke-token:npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol": "all",
+      "moke-token:npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol": "all"
+    },
+    "evidence": [
+      "moke-receipt.json",
+      "moke-transaction.json",
+      "moke-block.json",
+      "moke-analysis.html",
+      "moke-blocksec.html",
+      "moke-release-runtime.json",
+      "moke-main-pair-runtime.json",
+      "moke-reserve-pair-runtime.json"
+    ],
+    "core_requirements": [
+      "userLPRecord[user] = currentLP",
+      "userPendingDividend[user] += accumulated - debt",
+      "payable(msg.sender).call{value: pending}",
+      "pendingUsdt * PRECISION / settledMokePrice",
+      "releaseFromPair(msg.sender, mokeAmount)",
+      "msg.sender == releaseContract",
+      "receive() external payable",
+      "unprocessedBNB += msg.value"
+    ],
+    "loss_usd": null,
+    "loss_scope": "Source sheet reports USD 907700; primary disclosure and transaction-based estimates use different prices and gross/net scopes. Exact token amounts are retained; no unified USD valuation is asserted.",
+    "full_internal_trace": false
+  },
+  {
+    "row": 100,
+    "case_id": "20260804_NEX_AIC",
+    "label": "nex",
+    "chain_id": "56",
+    "project_cn": "NEX / AIC",
+    "project_en": "NEX / AIC",
+    "vulnerability_cn": "路由器分支重复扣账使 skim 耗尽 NEX 储备",
+    "vulnerability_en": "Router branch double-debits transfers and corrupts reserves through skim",
+    "detail_cn": "NEX._transfer 在涉及路由器时调用一次父转账后未返回，结尾再次转账。攻击者向 NEX/AIC 池补入带卖出税的 NEX，再 skim 到路由器；回执中连续两笔同额 31,739,425.952813599235352140 NEX 从池子转出，sync 后以少量 NEX 兑换 83,261,448.443378062678937598 AIC。池子净流出 40,279,208.819696511790081586 AIC，WBNB 退出量 32.361267289208020008。已取得两代币原始源码和回执；无完整内部跟踪、未重放。源表日期为 8 月 4 日，交易为 8 月 3 日 UTC；19,000 美元与其他估值不一致，金额留空。",
+    "detail_en": "NEX._transfer calls the parent transfer inside the router branch, then falls through to another parent transfer. After a taxed NEX donation, skim to the router debits the pair twice: the receipt contains consecutive transfers of 31,739,425.952813599235352140 NEX each. After sync, a small NEX input buys 83,261,448.443378062678937598 AIC. Net pair outflow was 40,279,208.819696511790081586 AIC; the WBNB exit was 32.361267289208020008. Original token source and receipt are archived; full internal tracing and replay were not performed. The sheet date is August 4, versus August 3 UTC. The USD 19000 estimate conflicts with other valuations, so loss is blank.",
+    "tx_hash": "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",
+    "victims": [
+      "0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9"
+    ],
+    "bundles": [
+      "nex-token",
+      "aic-token",
+      "pro-pair"
+    ],
+    "context_bundles": [
+      "pro-pair"
+    ],
+    "slices": {
+      "nex-token:contracts/flatten/nexus_nex.sol": [
+        [
+          1,
+          720
+        ],
+        [
+          1097,
+          1754
+        ]
+      ],
+      "aic-token:contracts/flatten/nexus_aic.sol": [
+        [
+          1,
+          720
+        ],
+        [
+          930,
+          1103
+        ]
+      ],
+      "pro-pair:PancakePair.sol": "all"
+    },
+    "evidence": [
+      "nex-receipt.json",
+      "nex-transaction.json",
+      "nex-block.json",
+      "nex-analysis.html",
+      "nex-main-pair-runtime.json",
+      "nex-flash-pair-runtime.json"
+    ],
+    "core_requirements": [
+      "bool isRouter",
+      "super._transfer(from, to, amount)",
+      "automatedMarketMakerPairs[to]",
+      "function skim(address to)",
+      "function sync()"
+    ],
+    "loss_usd": null,
+    "loss_scope": "The sheet reports USD 19000; observed conversion produced 21503.921643594504179252 BSC USDC before conversion to WBNB. No common valuation timestamp or aggregate loss basis was established.",
+    "full_internal_trace": false
+  },
+  {
+    "row": 98,
+    "case_id": "20260810_USM_FUM",
+    "label": "usm",
+    "chain_id": "1",
+    "project_cn": "USM / FUM",
+    "project_en": "USM / FUM",
+    "vulnerability_cn": "赎回近似曲线与逐次状态收缩不满足拆分一致性",
+    "vulnerability_en": "Approximate redemption curve and per-call state contraction violate split invariance",
+    "detail_cn": "USM.ethFromDefund 将开始与估计结束 FUM 卖价取算术平均，并在每次赎回后收缩内部价格和 bidAskAdjustment。历史完整跟踪确认一次 fund 存入 11,579.978354608392803524 ETH 后执行 64 次 defund，合计付出 11,650.809331976090511896 ETH，净流出 70.830977367697708372 ETH。缺陷位于内部定价与连续结算，不能将本交易写成操纵外部 Chainlink 报价。已归档原始源码、完整跟踪并复算资金流，未编译或重放；源表 8 月 10 日对应 8 月 9 日 UTC，美元估值冲突，金额留空。",
+    "detail_en": "USM.ethFromDefund averages the starting and estimated ending FUM sell prices and contracts internal price and bidAskAdjustment after every redemption. The full historical trace shows one fund of 11,579.978354608392803524 ETH followed by 64 defund calls paying 11,650.809331976090511896 ETH, a net outflow of 70.830977367697708372 ETH. The defect concerns internal pricing and sequential settlement; this transaction is not described as manipulating an external Chainlink quote. Original source, full trace and offline flow reconciliation are archived; compilation and replay were not performed. The sheet date is August 10, versus August 9 UTC. Conflicting USD valuations are blank.",
+    "tx_hash": "0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e",
+    "victims": [
+      "0x2a7fff44c19f39468064ab5e5c304de01d591675"
+    ],
+    "bundles": [
+      "usm",
+      "fum"
+    ],
+    "context_bundles": [],
+    "slices": {
+      "usm:contracts/USM.sol": [
+        [
+          1,
+          85
+        ],
+        [
+          115,
+          154
+        ],
+        [
+          228,
+          328
+        ],
+        [
+          339,
+          584
+        ],
+        [
+          650,
+          763
+        ]
+      ],
+      "usm:contracts/FUM.sol": "all",
+      "usm:contracts/IUSM.sol": "all",
+      "usm:contracts/IFUM.sol": "all",
+      "usm:contracts/WadMath.sol": "all",
+      "usm:contracts/Address.sol": "all",
+      "usm:contracts/oracles/Oracle.sol": "all",
+      "usm:contracts/MinOut.sol": "all",
+      "usm:acc-erc20/contracts/ERC20.sol": "all"
+    },
+    "evidence": [
+      "usm-transaction.json",
+      "usm-trace.json",
+      "usm-internal-transactions.json",
+      "usm-internal-transactions-page2.json",
+      "usm-token-transfers.json",
+      "usm-token-transfers-page2.json",
+      "usm-analysis.html",
+      "usm-public-reference-poc.sol",
+      "usm-poc-commit.json"
+    ],
+    "core_requirements": [
+      "uint avgFumSellPrice = fumSellPrice0 + fumSellPrice2",
+      "ethOut = fumIn.wadMulDown(avgFumSellPrice)",
+      "ls.bidAskAdjustment = ls.bidAskAdjustment.wadMulDown(adjShrinkFactor)",
+      "fum.burn(from, fumToBurn)",
+      "to.sendValue(ethOut)",
+      "function fund(address to"
+    ],
+    "loss_usd": null,
+    "loss_scope": "Source-sheet USD 160000 differs from the approximately USD 136124 valuation of the observed 70.830977367697708372 ETH. A common historical USD valuation was not established.",
+    "full_internal_trace": true
+  },
+  {
+    "row": 90,
+    "case_id": "20260817_Fox",
+    "label": "fox",
+    "chain_id": "56",
+    "project_cn": "Fox Market（LP Bonds）",
+    "project_en": "Fox Market (LP Bonds)",
+    "vulnerability_cn": "以交易前现货价记录债券并立即发放过量推荐奖励",
+    "vulnerability_en": "Pre-swap spot valuation overstates LP bonds and immediately pays excess referral rewards",
+    "detail_cn": "FoxLpBondsPool.stake 先按 getAmountsOut 得到现货价计算 stakeAmount，再把一半 USDT 兑换 FOX、加入同一池子；交易改变价格后没有按实际 LP 价值重算。Treasury.lpBonds 信任登记的质押池并据旧 stakeAmount 铸币、支付推荐人 FOX。UserStake 记录 88,659,280.805328378079051095 份额和 2,659,778.424159851342371532 FOX 推荐奖励；真实转账显示 FOX/USDT 池净流出 677,549.050517106599255604 USDT，但攻击主合约净增 112,976.118753142627232237 USDT，不能混为获利。代理和实现原始源码均归档；历史实现槽读取失败，无完整内部跟踪、未重放。源表为 8 月 17 日，交易为 8 月 15 日 UTC，损失列留空。",
+    "detail_en": "FoxLpBondsPool.stake computes stakeAmount from a live getAmountsOut quote before swapping half of the USDT for FOX and adding liquidity to the same pair. It never reprices the bond from the actual LP value after its swap changes reserves. Treasury.lpBonds trusts registered staking pools and mints and pays referral FOX using the stale amount. UserStake records 88,659,280.805328378079051095 bond units and 2,659,778.424159851342371532 referral FOX. Transfer logs show a 677,549.050517106599255604 USDT pair outflow, but only 112,976.118753142627232237 USDT net gain at the main attack contract. Proxy and implementation source is archived; historical implementation-slot reads failed, full internal traces and replay were not obtained. The sheet date is August 17, versus August 15 UTC. Loss is blank because scopes differ.",
+    "tx_hash": "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",
+    "victims": [
+      "0x9fa6d8a13b35e051bfc145918db0111dec13d1a0",
+      "0x58e2a853bb14e46befd3148bd4280370fea4655a",
+      "0x361d08ff43761e6a7e8fcabe48048ae9010801cc",
+      "0x87614d97808dcdecb069fe8489848fa1c001e04d"
+    ],
+    "bundles": [
+      "fox-bonds",
+      "fox-treasury",
+      "fox-bonds-proxy",
+      "fox-treasury-proxy",
+      "fox-actual-token",
+      "pro-pair"
+    ],
+    "context_bundles": [
+      "pro-pair"
+    ],
+    "slices": {
+      "fox-bonds:project/contracts/FoxLpBondsPool.sol": "all",
+      "fox-bonds:project/contracts/FoxPoolBase.sol": "all",
+      "fox-treasury:project/contracts/Treasury.sol": [
+        [
+          1,
+          98
+        ],
+        [
+          115,
+          128
+        ],
+        [
+          168,
+          187
+        ]
+      ],
+      "fox-actual-token:project/contracts/Fox.sol": "all",
+      "fox-actual-token:npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol": "all",
+      "fox-bonds-proxy:npm/@openzeppelin/contracts@5.6.1/proxy/Proxy.sol": "all",
+      "fox-bonds-proxy:npm/@openzeppelin/contracts@5.6.1/proxy/ERC1967/ERC1967Proxy.sol": "all",
+      "pro-pair:PancakePair.sol": "all"
+    },
+    "evidence": [
+      "fox-receipt.json",
+      "fox-transaction.json",
+      "fox-block.json",
+      "fox-primary-analysis.html",
+      "fox-bonds-historical-implementation.json",
+      "fox-treasury-historical-implementation.json",
+      "fox-main-pair-runtime.json"
+    ],
+    "core_requirements": [
+      "uint256 stakeAmount = _usdtAmount * 1e18 / swapPrice",
+      "getAmountsOut(1e18, foxToUsdtPath)",
+      "ITreasury(treasury).lpBonds(liquidity, stakeAmount",
+      "modifier onlyStakingPool()",
+      "IMintableERC20(foxToken).mint(address(this), _stakeAmount + inviterRewardAmount)",
+      "safeTransfer(inviterAddress, inviterRewardAmount)",
+      "require(msg.sender == treasury, \"Unauthorized\")"
+    ],
+    "loss_usd": null,
+    "loss_scope": "Sheet USD 120000, principal-pair gross USDT outflow 677549.050517106599255604, and multi-asset attacker net gains are different scopes. Unlocked and time-locked FOX claims are not added as realized USD loss.",
+    "full_internal_trace": false
+  },
+  {
+    "row": 88,
+    "case_id": "20260820_Allbridge_CCTP",
+    "label": "allbridge",
+    "chain_id": "8453",
+    "project_cn": "Allbridge Core（CCTP 路由）",
+    "project_en": "Allbridge Core (CCTP router)",
+    "vulnerability_cn": "把通用消息签名当作实际入金证明并虚增跨链可付款余额",
+    "vulnerability_en": "Generic attested messages create phantom deposit credits without checking actual funding",
+    "detail_cn": "CCTPTokenMessenger.receiveCctpMessage 只检查消息体中的远端发送人及 destinationCaller，再在通用 MessageTransmitter 接受消息后直接记入 amount-feeExecuted，没有验证真正的 TokenMessenger 头部身份、接收者和 USDC 实际增加。Router.receiveToken 将该虚假额度作为付款依据。回执记录声明 1,000,000 USDC、扣 1,000 USDC 路由费、付款 999,000 USDC；扣除攻击者补入的闪电贷后，Router 净流出 190,155.976393 USDC，最终获利地址净增 189,751.554381 USDC。源码、calldata 和回执已核对；Polygon 制造消息和完整内部跟踪未独立核实，未重放。保留源表约 191,000 美元的事件估计，日期保留 8 月 20 日，实际 Base 交易为 8 月 19 日 UTC。",
+    "detail_en": "CCTPTokenMessenger.receiveCctpMessage checks the body-level remote sender and destinationCaller, then credits amount-feeExecuted after generic MessageTransmitter acceptance, without authenticating the real TokenMessenger header/recipient or an actual USDC balance increase. Router.receiveToken uses that phantom credit to authorize payment. The receipt records a 1,000,000 USDC claim, a 1,000 USDC router fee and a 999,000 USDC payout. After the attacker's flash-loan top-up, Router net outflow is 190,155.976393 USDC; the final profit address gains 189,751.554381 USDC. Source, calldata and receipt were checked; Polygon message creation, full internal tracing and replay were not independently performed. The sheet's approximately USD 191000 incident estimate is retained. The sheet date is August 20, versus August 19 UTC on Base.",
+    "tx_hash": "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8",
+    "victims": [
+      "0xaa119f7442ecc28b9a8f236707ada8362cff24ff",
+      "0xf9b710e427bf4d93598e0f80a84de22c7ad9b577"
+    ],
+    "bundles": [
+      "allbridge-router",
+      "allbridge-messenger",
+      "allbridge-circle-proxy",
+      "allbridge-circle-implementation"
+    ],
+    "context_bundles": [
+      "allbridge-circle-proxy",
+      "allbridge-circle-implementation"
+    ],
+    "slices": {
+      "allbridge-router:src/Router.sol": [
+        [
+          1,
+          138
+        ],
+        [
+          226,
+          291
+        ],
+        [
+          324,
+          372
+        ]
+      ],
+      "allbridge-messenger:src/CCTPTokenMessenger.sol": [
+        [
+          1,
+          77
+        ],
+        [
+          123,
+          185
+        ]
+      ],
+      "allbridge-circle-implementation:src/v2/MessageTransmitterV2.sol": [
+        [
+          1,
+          80
+        ],
+        [
+          135,
+          322
+        ]
+      ],
+      "allbridge-circle-implementation:src/messages/v2/MessageV2.sol": "all",
+      "allbridge-circle-proxy:src/proxy/AdminUpgradableProxy.sol": "all"
+    },
+    "evidence": [
+      "allbridge-receipt.json",
+      "allbridge-transaction.json",
+      "allbridge-block.json",
+      "allbridge-primary-report.html",
+      "allbridge-public-reference-poc.sol",
+      "allbridge-poc-commit.json"
+    ],
+    "core_requirements": [
+      "receivedMessages[messageHash] = receivedAmount",
+      "message[248:280]",
+      "receiveMessage(message, attestation)",
+      "receivedTokenAmount(messageHash)",
+      "safeTransfer(recipientAddr, amountAfterFee)",
+      "function _calculateMessageHash",
+      "function _denormalize",
+      "function sendMessage(",
+      "IMessageHandlerV2(_recipient).handleReceiveFinalizedMessage"
+    ],
+    "loss_usd": "191000",
+    "loss_scope": "Source-sheet approximate reported incident loss, near the pre-payout router exposure of 191155.976393 USDC. This is not the 190155.976393 USDC net router outflow or 189751.554381 USDC final profit; approximate report assumes USDC near USD 1.",
+    "full_internal_trace": false
+  }
+]

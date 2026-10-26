@@ -1,0 +1,161 @@
+{
+  "case_id": "20260803_MOKE",
+  "path_base": "simplified_case_root",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed; verbatim source excerpts can omit wrappers and unrelated declarations",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-token/project/contracts/MokeLPDividend_L1_L80.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/project/contracts/MokeLPDividend.sol",
+      "original_start_line": 1,
+      "original_end_line": 80,
+      "sha256": "c4769ec0264ae52386078ce0125a76de079a29fb76ce35fa41c90312263e6b1e",
+      "complete_source_sha256": "41baca095aa9dd46cf1f375bb14165100e2f03291046fbe161f1058e2db32b36",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-token/project/contracts/MokeLPDividend_L121_L244.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/project/contracts/MokeLPDividend.sol",
+      "original_start_line": 121,
+      "original_end_line": 244,
+      "sha256": "aa951a489d256cfd928a4e2d894e8085597d032b6f81e1189e3ce0ddd2271610",
+      "complete_source_sha256": "41baca095aa9dd46cf1f375bb14165100e2f03291046fbe161f1058e2db32b36",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-token/project/contracts/MokeLPDividend_L259_L264.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/project/contracts/MokeLPDividend.sol",
+      "original_start_line": 259,
+      "original_end_line": 264,
+      "sha256": "05b0c588b657704a23f94128ea737636fe1c93a5a9980d8229fc75aef937db05",
+      "complete_source_sha256": "41baca095aa9dd46cf1f375bb14165100e2f03291046fbe161f1058e2db32b36",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/project/contracts/MokeToken_L1_L192.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/MokeToken.sol",
+      "original_start_line": 1,
+      "original_end_line": 192,
+      "sha256": "4125f45e460b963ba18414d5902a1bf85c0c3fe1572b9af85a0c1a7100f9260c",
+      "complete_source_sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/project/contracts/MokeToken_L293_L314.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/MokeToken.sol",
+      "original_start_line": 293,
+      "original_end_line": 314,
+      "sha256": "9eb60448ffb10f976cf172a306b028cd4042dd61181c9b5036dc7c5848dbaa5b",
+      "complete_source_sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/project/contracts/MokeToken_L354_L368.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/MokeToken.sol",
+      "original_start_line": 354,
+      "original_end_line": 368,
+      "sha256": "c072f3fae77a3e0c1808712039805225bc446c3e5188296ca23bdcc4f5ad3ae0",
+      "complete_source_sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/project/contracts/MokeToken_L379_L629.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/project/contracts/MokeToken.sol",
+      "original_start_line": 379,
+      "original_end_line": 629,
+      "sha256": "dbc450f28c47168654a2b16ac283ca3dbb6662ee866a17bc1f63f226a758d960",
+      "complete_source_sha256": "37a78d193ba9e1aeebaf2d6787564aba58553a34447b5b7172c0f6df5af38a5f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-release/project/contracts/MokeRelease_L1_L150.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/MokeRelease.sol",
+      "original_start_line": 1,
+      "original_end_line": 150,
+      "sha256": "13e507ffde5dc01dcfc61c84b95cdc14b16e5209acb4ddba953940f0c2041c2a",
+      "complete_source_sha256": "17a9402aaf0246a3e09a397c88a7a2968fee712bca06edfb3f6927007f055ce9",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-release/project/contracts/MokeRelease_L318_L594.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-release/project/contracts/MokeRelease.sol",
+      "original_start_line": 318,
+      "original_end_line": 594,
+      "sha256": "6474cc01e626cbdacfc0cbcc2508f9f03e7d07607f4ed15032e56d8b4dd12bca",
+      "complete_source_sha256": "17a9402aaf0246a3e09a397c88a7a2968fee712bca06edfb3f6927007f055ce9",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-x/project/contracts/TokenX_L1_L68.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-x/project/contracts/TokenX.sol",
+      "original_start_line": 1,
+      "original_end_line": 68,
+      "sha256": "19823e0a0156d7d8902aa541ddd4501a2dab13eddf8b99e5947889b4a605295b",
+      "complete_source_sha256": "19823e0a0156d7d8902aa541ddd4501a2dab13eddf8b99e5947889b4a605295b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-tokenx/project/contracts/MokeAC_L1_L83.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-tokenx/project/contracts/MokeAC.sol",
+      "original_start_line": 1,
+      "original_end_line": 83,
+      "sha256": "b1b03162c40f0768da7f48fa02cd46b39d76732b8b0f4556a1af5da19ac5d099",
+      "complete_source_sha256": "b1b03162c40f0768da7f48fa02cd46b39d76732b8b0f4556a1af5da19ac5d099",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/pro-pair/PancakePair_L1_L497.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/pro-pair/PancakePair.sol",
+      "original_start_line": 1,
+      "original_end_line": 497,
+      "sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "complete_source_sha256": "bf08934d8643b2740d73eb7e5cf5765dfb98aeb62bb282147c5a3b521ad893cd",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20_L1_L305.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+      "original_start_line": 1,
+      "original_end_line": 305,
+      "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "complete_source_sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable_L1_L100.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/access/Ownable.sol",
+      "original_start_line": 1,
+      "original_end_line": 100,
+      "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "complete_source_sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context_L1_L28.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-actual-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+      "original_start_line": 1,
+      "original_end_line": 28,
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "complete_source_sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard_L1_L119.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/ReentrancyGuard.sol",
+      "original_start_line": 1,
+      "original_end_line": 119,
+      "sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+      "complete_source_sha256": "94e409e8f6e3184236651a6cc2b1a6a3ea0f0a25eb85b71e524ad5791bb2fbc8",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260803_MOKE/slices/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Pausable_L1_L112.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260803_MOKE/source-bundles/moke-token/npm/@openzeppelin/contracts@5.6.1/utils/Pausable.sol",
+      "original_start_line": 1,
+      "original_end_line": 112,
+      "sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+      "complete_source_sha256": "2c26130748f06552c65ca74d89eaf78c9324a3cbac3ba6fdbadaa8beba0cb0b4",
+      "kind": "original_source_verbatim_slice"
+    }
+  ]
+}

@@ -1,0 +1,1511 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "oracle_",
+        "type": "address",
+        "internalType": "contract Oracle"
+      },
+      {
+        "name": "addressesYouCantSendThisContractsTokensTo",
+        "type": "address[]",
+        "internalType": "address[]"
+      },
+      {
+        "name": "contractsToAskToRejectSendsToThisContractsAddress",
+        "type": "address[]",
+        "internalType": "address[]"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "Approval",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "spender",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "value",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "BidAskAdjustmentChanged",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "adjustment",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "OptOutStatusChanged",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newStatus",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "PriceChanged",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "oraclePrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Transfer",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "from",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "value",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "UnderwaterStatusChanged",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "underwater",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "BID_ASK_ADJUSTMENT_DECAY_PER_SECOND",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "BID_ASK_ADJUSTMENT_ZERO_OUT_PERIOD",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "DOMAIN_SEPARATOR",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "MAX_DEBT_RATIO",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "MIN_FUM_BUY_PRICE_DECAY_PER_SECOND",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "PERMIT_TYPEHASH",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "PREFUND_END_TIMESTAMP",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "PREFUND_FUM_PRICE_IN_ETH",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "WAD",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "adjustedEthUsdPrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "side",
+        "type": "uint8",
+        "internalType": "enum IUSM.Side"
+      },
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjustment",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "allowance",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "spender",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "approve",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "spender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "wad",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "balanceOf",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "guy",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "bidAskAdjustment",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "storedTime",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "storedAdjustment",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "currentTime",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "adjustment",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "bidAskAdjustment",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "adjustment",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "burn",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "internalType": "address payable"
+      },
+      {
+        "name": "usmToBurn",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "minEthOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "checkForFreshOraclePrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "oraclePrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjustment",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "checkIfUnderwater",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "usmActualSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethPool_",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "oldTimeUnderwater",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "currentTime",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "timeSystemWentUnderwater_",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "usmSupplyForFumBuys",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "debtRatio_",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "debtRatio",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethInPool",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "usmSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ratio",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "decimals",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "defund",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "internalType": "address payable"
+      },
+      {
+        "name": "fumToBurn",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "minEthOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "defundFrom",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "from",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "internalType": "address payable"
+      },
+      {
+        "name": "fumToBurn",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "minEthOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "ethBuffer",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethInPool",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "usmSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "roundUp",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "buffer",
+        "type": "int256",
+        "internalType": "int256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "ethFromBurn",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      },
+      {
+        "name": "usmIn",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjGrowthFactor",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "ethFromDefund",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      },
+      {
+        "name": "fumSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fumIn",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjShrinkFactor",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "ethPool",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "pool",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "ethToUsm",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "roundUp",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "usmOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "fum",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IFUM"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "fumFromFund",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      },
+      {
+        "name": "fumSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethIn",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "debtRatio_",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "prefund",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "fumOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjGrowthFactor",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "fumPrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "side",
+        "type": "uint8",
+        "internalType": "enum IUSM.Side"
+      },
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "ethInPool",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "usmEffectiveSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fumSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "prefund",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "fumTotalSupply",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "supply",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "fund",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "minFumOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "fumOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "name": "isDuringPrefund",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "duringPrefund",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "latestPrice",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "loadState",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "mint",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "minUsmOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "usmOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "name": "name",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "nonces",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "optBackIn",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "optOut",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "optedOut",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "oracle",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract Oracle"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "permit",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "spender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "v",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "storedState",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "timeSystemWentUnderwater",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "ethUsdPrice",
+        "type": "uint64",
+        "internalType": "uint64"
+      },
+      {
+        "name": "oracleEthUsdPrice",
+        "type": "uint64",
+        "internalType": "uint64"
+      },
+      {
+        "name": "bidAskAdjustmentTimestamp",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "bidAskAdjustment",
+        "type": "uint64",
+        "internalType": "uint64"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "symbol",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "timeSystemWentUnderwater",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "totalSupply",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "transfer",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "dst",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "wad",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "transferFrom",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "src",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "dst",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "wad",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "usmFromMint",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ls",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "timeSystemWentUnderwater",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "oracleEthUsdPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustmentTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "bidAskAdjustment",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ethPool",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "usmTotalSupply",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct USM.LoadedState"
+      },
+      {
+        "name": "ethIn",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "usmOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "adjShrinkFactor",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "usmPrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "side",
+        "type": "uint8",
+        "internalType": "enum IUSM.Side"
+      },
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "usmToEth",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "ethUsdPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "usmAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "roundUp",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "version",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "receive",
+    "stateMutability": "payable"
+  }
+]

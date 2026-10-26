@@ -1,0 +1,82 @@
+{
+  "decoded_events": [
+    {
+      "log_index": 531,
+      "address": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+      "event": "MessageReceived",
+      "values": {
+        "caller": "0xf9b710e427bf4d93598e0f80a84de22c7ad9b577",
+        "sourceDomain": 7,
+        "nonce": "0xaa0d61b8bacee875d472e742c3f0859822531ca3d06e54fc55ed639c9c156322",
+        "sender": "0x0000000000000000000000002419432344b0b892e592b2601b98eae702ba360e",
+        "finalityThresholdExecuted": 2000,
+        "messageBody": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e8d4a51000000000000000000000000000dac2959b638247ab586f6c3ffcfc9c352d3aae5c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e15a0288fb4a60804a866655fdf08a6d3e51c3ca58f5d400e8620e7069aac52e"
+      }
+    },
+    {
+      "log_index": 532,
+      "address": "0xf9b710e427bf4d93598e0f80a84de22c7ad9b577",
+      "event": "MessageReceived",
+      "values": {
+        "messageHash": "0xe15a0288fb4a60804a866655fdf08a6d3e51c3ca58f5d400e8620e7069aac52e"
+      }
+    },
+    {
+      "log_index": 536,
+      "address": "0xaa119f7442ecc28b9a8f236707ada8362cff24ff",
+      "event": "TokenReceived",
+      "values": {
+        "normalizedAmountIn": 1000000000000000,
+        "fee": 1000000000,
+        "amountOut": 999000000000,
+        "sourceChain": 12345,
+        "destinationChain": 9,
+        "destinationToken": "0x000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "recipient": "0x000000000000000000000000b6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0",
+        "intermediaryToken": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "nonce": 12345,
+        "messageHash": "0xe15a0288fb4a60804a866655fdf08a6d3e51c3ca58f5d400e8620e7069aac52e",
+        "swapAddr": "0x0000000000000000000000000000000000000000",
+        "tokenMessengersAddr": "0xf9b710e427bf4d93598e0f80a84de22c7ad9b577"
+      }
+    }
+  ],
+  "token_transfers": [
+    {
+      "index": 533,
+      "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "from": "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
+      "to": "0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0",
+      "amount": 808844023607
+    },
+    {
+      "index": 534,
+      "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "from": "0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0",
+      "to": "0xaa119f7442ecc28b9a8f236707ada8362cff24ff",
+      "amount": 808844023607
+    },
+    {
+      "index": 535,
+      "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "from": "0xaa119f7442ecc28b9a8f236707ada8362cff24ff",
+      "to": "0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0",
+      "amount": 999000000000
+    },
+    {
+      "index": 539,
+      "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "from": "0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0",
+      "to": "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
+      "amount": 809248445619
+    }
+  ],
+  "delta_decimals": 6,
+  "deltas": {
+    "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+      "0x4e65fe4dba92790696d040ac24aa414708f5c0ab": "404.422012",
+      "0xb6fbdfa5f3cbeb139d4cce86d92f4ac8687b16c0": "189751.554381",
+      "0xaa119f7442ecc28b9a8f236707ada8362cff24ff": "-190155.976393"
+    }
+  }
+}

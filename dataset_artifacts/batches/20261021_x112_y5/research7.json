@@ -1,0 +1,15 @@
+[
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x58e2a853bb14e46befd3148bd4280370fea4655a?fields=all","path":"screening/fox-bonds-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x87614d97808dcdecb069fe8489848fa1c001e04d?fields=all","path":"screening/fox-treasury-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0?fields=all","path":"screening/fox-bonds-proxy-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x361d08ff43761e6a7e8fcabe48048ae9010801cc?fields=all","path":"screening/fox-treasury-proxy-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xdf81d50c6657487d19b66a1b5375e35a804abb93?fields=all","path":"screening/fox-actual-token-source.json"},
+ {"url":"https://api.zan.top/bsc-mainnet","path":"screening/moke-full-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",{"tracer":"callTracer"}]}},
+ {"url":"https://api.zan.top/bsc-mainnet","path":"screening/nex-full-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",{"tracer":"callTracer"}]}},
+ {"url":"https://api.zan.top/bsc-mainnet","path":"screening/fox-full-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",{"tracer":"callTracer"}]}},
+ {"url":"https://mainnet.base.org","path":"screening/allbridge-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"]}},
+ {"url":"https://mainnet.base.org","path":"screening/allbridge-transaction.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"]}},
+ {"url":"https://yinhui1984.github.io/fox-attack-analysis/","path":"screening/fox-primary-analysis.html"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers?index=826&block_number=25716150","path":"screening/usm-token-transfers-page2.json"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions?index=50&block_number=25716150&transaction_index=1193&items_count=50","path":"screening/usm-internal-transactions-page2.json"}
+]

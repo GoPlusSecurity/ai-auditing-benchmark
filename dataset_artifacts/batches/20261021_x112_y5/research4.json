@@ -1,0 +1,17 @@
+[
+ {"url":"https://anomly.rs/pro-token-executor-forced-sell-exploit","path":"screening/pro-analysis.html"},
+ {"url":"https://anomly.rs/lula-recycle-price-manipulation","path":"screening/lula-analysis.html"},
+ {"url":"https://anomly.rs/moke-lp-dividend-stale-record-exploit","path":"screening/moke-analysis.html"},
+ {"url":"https://anomly.rs/nex-aic-pancakeswap-double-transfer-exploit","path":"screening/nex-analysis.html"},
+ {"url":"https://blocksec.com/blog/web3-security-moke-token-lpdfi-exploits","path":"screening/moke-blocksec.html"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x86ac451a0c0bcac5b74116ae90832e89e9c630df?fields=all","path":"screening/pro-executor-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377?fields=all","path":"screening/moke-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9?fields=all","path":"screening/nex-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xc0dc449de632586a00409873521afc251ac5ce74?fields=all","path":"screening/aic-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x974c0078740480ae830d379fdb8d5f441c9ddc75?fields=all","path":"screening/nex-pair-source.json"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/internal-transactions","path":"screening/usm-internal-transactions.json"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e/token-transfers","path":"screening/usm-token-transfers.json"},
+ {"url":"https://eth.blockscout.com/api/v2/smart-contracts/0xCF5E5e28848cFe779f7Fb711C57857Cb3b144A19","path":"screening/garden-htlc-source.json"},
+ {"url":"https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-07","path":"screening/defihacklabs-july.json"},
+ {"url":"https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/contents/src/test/2026-08","path":"screening/defihacklabs-august.json"}
+]

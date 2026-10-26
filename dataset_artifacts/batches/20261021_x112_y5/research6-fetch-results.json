@@ -1,0 +1,147 @@
+[
+  {
+    "url": "https://anomly.rs/usm-fum-fund-defund-splitting-exploit",
+    "path": "screening/usm-analysis.html",
+    "http_status": 200,
+    "bytes": 44477,
+    "sha256": "c4a04cbdf07db90e49b6a5f7ea758202a2b7f09d13baeedb8c4abc02577bb6eb",
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-21T05:58:35.348844+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xce24439f2d9c6a2289f741120fe202248b666666?fields=all",
+    "path": "screening/fox-token-source.json",
+    "http_status": 200,
+    "bytes": 144812,
+    "sha256": "ecee913b9784f7bfc6a69a2d024c5f02a48e3c72318b6fce3d9c574dc8feb865",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:34.921371+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xaab18bcdee287aea288c0560612caadf7c328803?fields=all",
+    "path": "screening/fox-source2.json",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-21T05:58:35.064676+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8",
+    "path": "screening/allbridge-transaction.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:33.497783+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8/raw-trace",
+    "path": "screening/allbridge-trace.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:33.492004+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xaa119f7442ecc28b9a8f236707ada8362cff24ff?fields=all",
+    "path": "screening/allbridge-router-source.json",
+    "http_status": 200,
+    "bytes": 375581,
+    "sha256": "dacb3fc2df7de341244c5a67b5c65c075950783d8d38d4c331b4d22b73810c0f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.225955+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577?fields=all",
+    "path": "screening/allbridge-messenger-source.json",
+    "http_status": 200,
+    "bytes": 254712,
+    "sha256": "f70e0a8fe1d419550ddeb68b55a27f3c4e2372099773629493a279f10ae4ffa2",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.284036+08:00"
+  },
+  {
+    "url": "https://defimon.xyz/blog/allbridge-hack-august-2026",
+    "path": "screening/allbridge-primary-report.html",
+    "http_status": 200,
+    "bytes": 103952,
+    "sha256": "2f0ef0e2a8991127d84b590606b424e3fd6f4f2d7a4b6f1f8df39a7718a68d84",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:34.959152+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9",
+    "path": "screening/sandbox-transaction.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:35.127077+08:00"
+  },
+  {
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace",
+    "path": "screening/sandbox-trace.json",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-21T05:58:35.147092+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/USM_exp.sol&per_page=1",
+    "path": "screening/usm-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3382,
+    "sha256": "36edcf1751907b8d9c0c60e5bcca813df4cecb45811df4541d4862c636839cc5",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.519691+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/AllbridgeCCTP_exp.sol&per_page=1",
+    "path": "screening/allbridge-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3409,
+    "sha256": "58b55d7e6b8410fcf1379c959e134e82d51e5982cef33d7c140379beeabc19b2",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.569691+08:00"
+  },
+  {
+    "url": "https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/SandboxOFT_exp.sol&per_page=1",
+    "path": "screening/sandbox-poc-commit.json",
+    "http_status": 200,
+    "bytes": 3397,
+    "sha256": "748dfb4f15fb1a02f439b554928715758887ae65124a6eb9b1a0c2c8373c0a6f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.612334+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x729bdaf6daa7464ab7432d4b2bc1d6f306c92282?fields=all",
+    "path": "screening/moke-tokenx-source.json",
+    "http_status": 200,
+    "bytes": 256270,
+    "sha256": "b4810d6c82298c949539aa97df7e1daacf3279c27c6311cfc175d54b8f0498e1",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:36.943333+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 7437,
+    "sha256": "c7b3b3754caf8591495b3dca994a493afbb80c3b92958855d86f66dbb70690ce",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.612334+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 11180,
+    "sha256": "a51c7c3461bde04b447493dcc5acfe67d4baa085e19b37b2ab2b0220e80d7c02",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T05:58:35.597692+08:00"
+  }
+]

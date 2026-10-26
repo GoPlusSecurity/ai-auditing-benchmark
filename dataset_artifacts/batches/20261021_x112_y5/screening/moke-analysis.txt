@@ -1,0 +1,303 @@
+Moke LP Dividend Exploit Analysis — anomly.rs
+anomly.rs
+anomly.rs
+Log in
+Moke LP Dividend Exploit Analysis
+bsc
+/
+Published
+0x0776048b1b...a6756a8f
+0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f
+/
+Aug 2, 2026, 8:50 PM
+Report
+PoC
+Source
+Download PoC
+Moke LP Dividend Exploit Analysis
+Date
+: 2026-08-02
+Loss Estimate
+: Net attacker profit was about 1,546.442988 BNB minus 2,989.298505 USDT, or approximately $906,810 using the BNB oracle price observed in the transaction. The gross WBNB outflow from the MOKE/WBNB pool was 1,692.745266 WBNB, about $995,871.
+I. Executive Summary
+Verdict
+: Confirmed Exploit - stale LP accounting plus spot-price-driven MOKE release.
+Root Cause
+:
+MokeLPDividend
+let the same LP position be recorded for many addresses because
+syncUserLP(address)
+records the caller's current LP balance but LP-token transfers do not automatically clear the old holder's
+userLPRecord
+. Later,
+claimDividend()
+credits dividends from the stale
+userLPRecord
+before resetting it to the caller's current LP balance. The attacker first prepared many stale LP records, then used the privileged but unverified release contract
+0x684D...02A7
+to pull about 43.86 million MOKE from the X/MOKE reserve pair, sold that MOKE through the dividend contract into BNB, and claimed the resulting BNB through the stale records.
+II. Vulnerability
+A. Business Logic Context
+MOKE has a main MOKE/WBNB Pancake pair and a separate X/MOKE reserve pair. The verified MOKE token grants one configured
+releaseContract
+the ability to move MOKE directly out of the X/MOKE pair and to increase users'
+releasedMokeBalance
+. The same token also has an LP dividend pool that swaps received MOKE into BNB and distributes BNB pro rata by MOKE/WBNB LP ownership.
+At block 113,652,609, direct calls showed
+MokeToken.releaseContract()
+was
+0x684D722EbF8980f49492f631f56765DD4Fb302A7
+,
+lpDividendPool()
+was
+0x5ae569d8a0539a6A603E96A26ac8CaEA7CEba377
+, and
+xMokePair()
+was
+0x89715A0768E95942071Ed52b37A90c6d53019b5A
+.
+B. The Vulnerability
+The dividend accounting updates stale ownership lazily and rewards the stale record before overwriting it with the current LP balance:
+// project/contracts/MokeLPDividend.sol @ 0x5ae569d8a0539a6A603E96A26ac8CaEA7CEba377
+function
+syncUserLP(
+address
+user)
+external
+override
+{
+    _syncUserLP(user);
+}
+function
+_syncUserLP(
+address
+user)
+internal
+{
+uint256
+currentLP = lpToken.balanceOf(user);
+uint256
+recordedLP = userLPRecord[user];
+if
+(recordedLP >
+0
+) {
+uint256
+accumulated = recordedLP * totalDividendPerLP /
+1e18
+;
+uint256
+debt = userDividendDebt[user];
+if
+(accumulated > debt) {
+            userPendingDividend[user] += accumulated - debt;
+        }
+    }
+
+    userLPRecord[user] = currentLP;
+    userDividendDebt[user] = currentLP * totalDividendPerLP /
+1e18
+;
+}
+function
+claimDividend()
+external
+override
+nonReentrant whenNotPaused {
+    _syncUserLP(
+msg
+.sender);
+uint256
+pending = userPendingDividend[
+msg
+.sender];
+require
+(pending >
+0
+,
+"No dividend"
+);
+    userPendingDividend[
+msg
+.sender] =
+0
+;
+    (
+bool
+sent,) =
+payable
+(
+msg
+.sender).call{value: pending}(
+""
+);
+require
+(sent,
+"Transfer failed"
+);
+}
+The MOKE token made the unverified release contract powerful enough to manufacture the dividend input used in the exploit:
+// project/contracts/MokeToken.sol @ 0x1A35C16cE21903Bc17Fd020c4ED73fEdC70c1b2A
+function
+addReleasedBalance(
+address
+user,
+uint256
+amount)
+external
+override
+{
+require
+(
+msg
+.sender == releaseContract || canManageReleasedBalance[
+msg
+.sender],
+"Not authorized"
+);
+    releasedMokeBalance[user] += amount;
+}
+function
+releaseFromPair(
+address
+to,
+uint256
+amount)
+external
+{
+require
+(
+msg
+.sender == releaseContract,
+"Only release contract"
+);
+require
+(xMokePair !=
+address
+(
+0
+),
+"X/MOKE pair not set"
+);
+super
+._update(xMokePair, to, amount);
+}
+The unverified release contract
+0x684D...02A7
+has no verified source, and
+heimdall
+was not installed in this environment. Its behavior is still visible on-chain:
+claim()
+repeatedly read Pancake reserves, then called
+MokeToken.releaseFromPair(...)
+,
+TokenX.burnFromPair(...)
+, and
+xMokePair.sync()
+.
+C. Why It Was Exploitable
+The attacker could move the same 1,334.183807563777 LP tokens through many helper addresses and call
+syncUserLP
+while each helper temporarily held the LP. After the LP moved on, the dividend contract had no automatic hook to clear the prior holder. In the focal transaction, those helpers had
+lpToken.balanceOf(helper) == 0
+, but state changes show many
+userLPRecord
+entries being reset from
+0x485385102ba50edf5e
+(1,334.183807563777 LP) to zero only during
+claimDividend()
+.
+The second precondition was the release contract. It was configured as the MOKE token's
+releaseContract
+, so a successful
+claim()
+could move reserve MOKE out of
+0x89715A...9b5A
+without ordinary ERC-20 allowance or pool burns. The traces show the attacker manipulated spot reserves, then used this release path to source the MOKE that funded the dividend distribution.
+III. Technical Attack Flow
+Preparation of stale dividend records
+: In
+0xc0f1...6154
+, the attacker account called itself with selector
+0x6d0203f9
+. The trace shows
+syncUserLP
+called for the attacker and helper addresses while each temporarily held 1,334.183807563777 MOKE/WBNB LP tokens, then the LP was transferred to the next helper.
+Initial LP removal
+: In the focal transaction
+0x0776...6a8f
+, the attacker removed 1,334.183807563777 MOKE/WBNB LP through
+MokeLPManager.removeLiquidity
+, receiving 28.129086340979 BNB and burning 63,507.190562122 MOKE.
+Price and liquidity setup
+: The attacker flash-borrowed 403,344.033277 WBNB and 3,169.548893 BTCB, supplied BTCB to Venus, borrowed 230,000 BNB, wrapped it, and swapped 633,344.033277 WBNB into 17,788,339.291766 USDT through the WBNB/USDT pool. This made the release contract's reserve reads use manipulated same-block DEX state.
+Reserve release
+: The attacker called
+0x684D...02A7.settle()
+and then
+claim()
+directly and through helper contracts. The release contract called
+MokeToken.releaseFromPair(...)
+and
+TokenX.burnFromPair(...)
+. Balance changes show the X/MOKE reserve pair
+0x89715A...9b5A
+lost 43,860,308.980417 MOKE and 43,860,308.980417 X.
+Dividend funding
+: The released MOKE was sent to
+MokeLPDividend
+, which executed
+distributeDividend()
+. It swapped 43,860,308.980417 MOKE through the MOKE/WBNB pair and received 1,664.616180024096 BNB. The MOKE/WBNB pair's overall focal-tx balance delta was -1,692.745266365075 WBNB and +43,796,801.789855 MOKE.
+Stale-record claims
+: The attacker then called
+claimDividend()
+directly and via the helper addresses. Each stale LP holder was synced from a nonzero recorded LP balance to a current LP balance of zero, but the code credited the stale record before reset. Trace and internal transfers show repeated ~25.71278 BNB payouts forwarded back to
+0xe454...cf8a
+.
+Unwind and repayment
+: The attacker swapped USDT back to WBNB, repaid Venus and both flash loans, then withdrew the remaining WBNB to native BNB. The attacker's focal-tx balance change was +1,546.442988374597 BNB, -2,989.298505 USDT, and -1,334.183807563777 MOKE/WBNB LP.
+IV. Attacker Timeline
+Preparation
+0xc0f1...6154
+at 2026-08-02 20:48:56 UTC: the same EIP-7702 delegated account cycled the 1,334.183807563777 LP position through the helper address list and called
+syncUserLP
+for each address. This prepared stale
+userLPRecord
+entries.
+Focal Transaction
+0x0776...6a8f
+at 2026-08-02 20:50:11 UTC: the attacker sourced MOKE from the release path, converted it to BNB through the dividend pool, claimed BNB against stale LP records, and repaid the flash loans.
+Exit
+0xc34e...3fd
+at 2026-08-02 20:58:37 UTC: the attacker sent 1,546.537244923633 BNB into Pancake SmartRouter
+0x13f4EA...8Dd4
+, which wrapped and unwrapped WBNB and forwarded 1,546.537244923633 BNB to
+0x6254365dD2E179055AFE9E68e90D0EAb305650ff
+.
+V. Loss Quantification
+Asset / Account
+Amount
+USD (at tx time)
+Attacker net native BNB delta
++1,546.442988 BNB
++$909,799
+Attacker USDT delta
+-2,989.298505 USDT
+-$2,989
+Net attacker profit
+1,546.442988 BNB minus 2,989.298505 USDT
+~$906,810
+MOKE/WBNB pair WBNB delta
+-1,692.745266 WBNB
+-$995,871
+X/MOKE reserve pair MOKE delta
+-43,860,308.980417 MOKE
+Realized through WBNB drain
+X/MOKE reserve pair X delta
+-43,860,308.980417 X
+Internal reserve token
+WBNB/USDT pool slippage/surplus
++146.302051 WBNB and +2,989.298505 USDT
+Explains most gross-vs-net gap
+BNB was valued at $588.317382043484, the BNB price returned by the Venus oracle path during the focal transaction. The observed gross MOKE/WBNB WBNB outflow of 1,692.745266 WBNB reconciles to the attacker's 1,546.442988 BNB net native gain after the WBNB/USDT round-trip slippage, the attacker's 2,989.298505 USDT spend, and transaction gas (6,675,248 gas at 0.05 gwei).

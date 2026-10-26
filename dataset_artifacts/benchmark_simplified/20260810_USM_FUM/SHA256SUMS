@@ -1,0 +1,16 @@
+38e78d34f65558989fadde6254900c67fad696c262d67dd97be9d0704d3e98f1  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/acc-erc20/contracts/ERC20_L1_L78.sol
+5c7540d431c0fa51fbdeda9b2897ee279d8e617bb64e4bd510fee74a2ec98ba6  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/Address_L1_L30.sol
+9d3867686ad6d20ddd90981373c22ddd8baadc96a08063c18f731b5b463d76ce  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/FUM_L1_L73.sol
+b9f92dee165318832683f7d63713d3f40a499de659f49c8ed10dcf60b850c889  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/IFUM_L1_L21.sol
+8debe20e787bb657978381d1ebd95ab1c064b966a9c4c3a96d932540a886c7f8  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/IUSM_L1_L161.sol
+ed2f35aa0f45302655c5ed99c23b51e81f55468d71f80c9caad44d23cb23c1f6  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/MinOut_L1_L26.sol
+8dd4d753ffba360e62c44312fdb3fe46f7a995cc92d4d0201a398d73c6bebd8d  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L115_L154.sol
+07c0c54f443671657d69a638641b2b61b05c8bc4839722630975b932bda3e34c  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L1_L85.sol
+d946680b3601678120aa24ef0a7643a3a2a1bdfb20188f48f05078cd1f43bb7b  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L228_L328.sol
+03dd6eddfedda0bcd55489888ad0e4d454eb92f2553c672c3bc1e975907cd86f  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L339_L584.sol
+ca13ed67555ceb41bfcfd9a3e95ecf4b58dc8a6d61694f606b70adda1d877ee6  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/USM_L650_L763.sol
+30422781de176854bb990485d5ec42c13eabd9a2f29608e9fef5bf2bf2f636fd  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/WadMath_L1_L498.sol
+334cb7097afa0f3296ef298d5f02398e65d95584e2ad1aa33a781d81e0232c8c  ../../../dataset/benchmark_simplified/20260810_USM_FUM/slices/usm/contracts/oracles/Oracle_L1_L9.sol
+4b46ee6c9ffc9c29ee99f513cf899da10487b64811ad150c11e9b01b361f4835  SOURCE.md
+01d007e518eef7bce4a732f50f9110a5a33e9120f4d90307b9e91b69957f1545  case_metadata.json
+6ef637b1d5e72cb7363330caaaa36948a00f59660a529e3cc21a3d267a9a365b  slice_manifest.json

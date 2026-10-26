@@ -43,7 +43,7 @@ dataset_artifacts/
 
 ## 事件索引（CSV）
 
-仓库根目录下的 CSV 列举了 **全部已索引事件**，包含只有配套证据、没有源码的案例，建议作为元数据的权威来源。2026-10-16 批次完成后，两份 CSV 各有 57 条事件记录，两套源码目录各有 56 个案例。最新批次见[案例说明索引](docs/cases/README.md)和[逐行处理结果](dataset_artifacts/batches/20261016_x123_y5/results.json)。JaredFromSubway 只有 runtime 字节码和证据，全部存放在 `dataset_artifacts/` 中。
+仓库根目录下的 CSV 列举了 **全部已索引事件**，包含只有配套证据、没有源码的案例，建议作为元数据的权威来源。2026-10-21 批次完成后，两份 CSV 各有 62 条事件记录，两套源码目录各有 61 个案例。最新批次见[案例说明索引](docs/cases/README.md)和[逐行处理结果](dataset_artifacts/batches/20261021_x112_y5/results.json)。JaredFromSubway 只有 runtime 字节码和证据，全部存放在 `dataset_artifacts/` 中。
 
 - 中文版：[`ai-auditing-benchmark_cn.csv`](ai-auditing-benchmark_cn.csv)
 - 英文版：[`ai-auditing-benchmark_en.csv`](ai-auditing-benchmark_en.csv)

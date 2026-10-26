@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    }
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    }
+  }
+]

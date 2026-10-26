@@ -1,0 +1,165 @@
+[
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c63381",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 5461,
+    "sha256": "1fd97ee32bb5559901d4301b353334fe5afdc38d010d25909f640b36164715b7",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.557667+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6c82e78",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 10430,
+    "sha256": "e99c3e953d8d31daf75f5e0954f665b596556e6aad46b6e67b10c9040cf16f58",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.572667+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x6ec9959",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 6289,
+    "sha256": "a3b732451ebe43ec519e4be2dff87eac1d08aae5add43b360fdc38507be50c90",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.571666+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 687,
+    "sha256": "b60b5cf342ba71a41f0e62becffad1604a552a201c9977c0faf0d63f87947c56",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.561668+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-bonds-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x9fa6d8a13b35e051bfc145918db0111dec13d1a0",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.553209+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-treasury-historical-implementation.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x361d08ff43761e6a7e8fcabe48048ae9010801cc",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x6ec9959"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 78,
+    "sha256": "9d40e719cf3d56ef4cfed35e92d21221da875c527cc9cd5a4cbb577b22c76b1a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:49.554216+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/allbridge-block.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x2fd5721",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 13580,
+    "sha256": "ab895f752dd01c3c63ca55bd08aac5a3c621c88f06c2764e5c4c2b76084d3d79",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:04:50.310263+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/56/0xfd3071ca05757992d5a010eee55743d54a496f48?fields=all",
+    "path": "screening/moke-x-source.json",
+    "http_status": 200,
+    "bytes": 183940,
+    "sha256": "bf2e4535c690222a44bb58aef2823749f9320142d935fd4c8163262ac4dffce3",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:52.095100+08:00"
+  },
+  {
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x81d40f21f12a8f0e3252bccb954d722d4c464b64?fields=all",
+    "path": "screening/allbridge-circle-proxy-source.json",
+    "http_status": 200,
+    "bytes": 104824,
+    "sha256": "97a97cbbafce2a8d9fb12d8e3a396644eea7403e16392eb84048c092a55e877f",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:51.942953+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/d4d26edbf1393537f6166523a21368b1a34499c8/src/test/2026-08/USM_exp.sol",
+    "path": "screening/usm-public-reference-poc.sol",
+    "http_status": 200,
+    "bytes": 5866,
+    "sha256": "c2ba4965fb96afbb92772fdd40e0093d07a1e4b3767b954a0f8a00671d6130ae",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:50.044597+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SunWeb3Sec/DeFiHackLabs/b1f9489318ad9dbf5c9188a88f36e06415d1d91b/src/test/2026-08/AllbridgeCCTP_exp.sol",
+    "path": "screening/allbridge-public-reference-poc.sol",
+    "http_status": 200,
+    "bytes": 15896,
+    "sha256": "345888575909721c513f465caf01e4db4375851b74e98cdd0eba880319af811f",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:04:50.051577+08:00"
+  }
+]

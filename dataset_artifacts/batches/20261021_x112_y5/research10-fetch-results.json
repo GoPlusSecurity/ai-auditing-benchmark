@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-receipt.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 3776,
+    "sha256": "b86841366f9f09c1ab574de8f6880a155d7185ffc4fa6a89d77fab0800fd2298",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:09:11.637980+08:00"
+  },
+  {
+    "url": "https://mainnet.base.org",
+    "path": "screening/base-call-transaction.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xe831f3991132cbaffbb4a3738da7d1e254a6c02f0adce605a333229a61e27ad7"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 9559,
+    "sha256": "8f2cadc3f608d8af50f92027a3b54ae211cf9b1e11a818c6e8728bd97f1e8b79",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-21T06:09:11.661318+08:00"
+  }
+]

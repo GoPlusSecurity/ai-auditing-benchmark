@@ -1,0 +1,23 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.28+commit.7893614a",
+  "compilerSettings": {
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "cancun",
+    "remappings": [
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/",
+      "project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/"
+    ]
+  },
+  "name": "MokeAC",
+  "fullyQualifiedName": "project/contracts/MokeAC.sol:MokeAC"
+}

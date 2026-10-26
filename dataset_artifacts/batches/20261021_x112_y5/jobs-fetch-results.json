@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xba6a49a97cc725b3c39d6c5ea6deffddb64fe6b8",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.097663+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/moke-reserve-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x89715a0768e95942071ed52b37a90c6d53019b5a",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x974c0078740480ae830d379fdb8d5f441c9ddc75",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/nex-flash-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xe89636fb73d04db51e5fbd0ce1379fb8d2b96415",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.127476+08:00"
+  },
+  {
+    "url": "https://bsc-dataseed.binance.org",
+    "path": "screening/fox-main-pair-runtime.json",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xaab18bcdee287aea288c0560612caadf7c328803",
+        "latest"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 30000,
+    "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-21T06:24:38.129857+08:00"
+  }
+]

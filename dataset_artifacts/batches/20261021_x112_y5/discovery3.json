@@ -1,0 +1,18 @@
+[
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x8d65744527f55d0b2338350912d5c99a81ddf0e2?fields=all","path":"screening/pro-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x63844bd4bfad910b1643713302a1cc1ed20d50c3?fields=all","path":"screening/pro-pair-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xf5d7029eb6751d170dcf0bb1c87af6f93d5a2e9a?fields=all","path":"screening/lula-actual-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xf0b36389a12a28be1280c0ec2a4bbc76889d6a96?fields=all","path":"screening/lula-pair-source.json"},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/moke-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/nex-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"]}},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e","path":"screening/usm-transaction.json"},
+ {"url":"https://eth.blockscout.com/api/v2/transactions/0x9d7a961aa340156b7342839e9f6448a26dea9acd38dc7b2638966eb19e29d395","path":"screening/garden-transaction.json"},
+ {"url":"https://api.github.com/repos/Solido-Money/cdp-contracts/commits/ab42ba766ac4634eb6f1efe3dbc3f1624071bec4","path":"screening/solido-audit-commit.json"},
+ {"url":"https://api.github.com/orgs/Solido-Money/repos?per_page=100","path":"screening/solido-official-repos.json"},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/pro-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4",{"tracer":"callTracer"}]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/lula-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c",{"tracer":"callTracer"}]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/swan-trace.json","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4",{"tracer":"callTracer"}]}},
+ {"url":"https://api.routescan.io/v2/network/mainnet/evm/56/etherscan/api?module=contract&action=getsourcecode&address=0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C","path":"screening/swan-buy-routescan.json"},
+ {"url":"https://anomly.rs/?page=2","path":"screening/analysis-index2.html"},
+ {"url":"https://anomly.rs/?page=3","path":"screening/analysis-index3.html"}
+]

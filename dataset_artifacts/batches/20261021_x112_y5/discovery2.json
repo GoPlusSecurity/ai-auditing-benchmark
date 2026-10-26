@@ -1,0 +1,10 @@
+[
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/pro-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x6a50fea9a44cf8c1bd288fb1857da942dd601a1a062aff9598b755f3e7580ff4"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/lula-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xa219ab9d57e520e5235b15a8801f4ebac8cc45551be0430ce4e49caea0411d7c"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/swan-receipt.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xc8c3325ba2c942a674b26de2063d278c144e92dbc91497ca0c766c915d96cbd4"]}},
+ {"url":"https://bscscan.com/address/0x27af47FA5681E4c4EF5FFDcfF47EB0DD3Bac6a8C#code","path":"screening/swan-buy-explorer.html"},
+ {"url":"https://api.github.com/repos/solido-money/cdp-contracts","path":"screening/solido-repo.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x72ad494fda63d2b91b9d7290737e8ef1194a0c47?fields=all","path":"screening/lula-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x377a015f44C3FDf71060e94648EDC9e0316C7f1a?fields=all","path":"screening/lula-rental-source.json"},
+ {"url":"https://solido-money.gitbook.io/solido-money/security/audits","path":"screening/solido-audits.html"}
+]

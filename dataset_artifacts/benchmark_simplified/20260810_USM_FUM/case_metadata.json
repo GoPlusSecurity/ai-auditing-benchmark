@@ -1,0 +1,40 @@
+{
+  "case_id": "20260810_USM_FUM",
+  "project_cn": "USM / FUM",
+  "project_en": "USM / FUM",
+  "vulnerability_cn": "赎回近似曲线与逐次状态收缩不满足拆分一致性",
+  "vulnerability_en": "Approximate redemption curve and per-call state contraction violate split invariance",
+  "detail_cn": "USM.ethFromDefund 将开始与估计结束 FUM 卖价取算术平均，并在每次赎回后收缩内部价格和 bidAskAdjustment。历史完整跟踪确认一次 fund 存入 11,579.978354608392803524 ETH 后执行 64 次 defund，合计付出 11,650.809331976090511896 ETH，净流出 70.830977367697708372 ETH。缺陷位于内部定价与连续结算，不能将本交易写成操纵外部 Chainlink 报价。已归档原始源码、完整跟踪并复算资金流，未编译或重放；源表 8 月 10 日对应 8 月 9 日 UTC，美元估值冲突，金额留空。",
+  "detail_en": "USM.ethFromDefund averages the starting and estimated ending FUM sell prices and contracts internal price and bidAskAdjustment after every redemption. The full historical trace shows one fund of 11,579.978354608392803524 ETH followed by 64 defund calls paying 11,650.809331976090511896 ETH, a net outflow of 70.830977367697708372 ETH. The defect concerns internal pricing and sequential settlement; this transaction is not described as manipulating an external Chainlink quote. Original source, full trace and offline flow reconciliation are archived; compilation and replay were not performed. The sheet date is August 10, versus August 9 UTC. Conflicting USD valuations are blank.",
+  "loss_usd": null,
+  "loss_scope": "Source-sheet USD 160000 differs from the approximately USD 136124 valuation of the observed 70.830977367697708372 ETH. A common historical USD valuation was not established.",
+  "event_date": "2026-08-10",
+  "original_rows": [
+    98
+  ],
+  "tx_urls": [
+    "https://etherscan.io/tx/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x2a7fff44c19f39468064ab5e5c304de01d591675#code"
+  ],
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "source_sheet_snapshot": "../../batches/20261021_x112_y5/snapshot.json",
+  "batch_results": "../../batches/20261021_x112_y5/results.json",
+  "case_document": "../../../docs/cases/20260810_USM_FUM.md",
+  "verification_status": {
+    "original_source": "acquired_hashed_compared_to_provider_response",
+    "historical_call_targets": "complete_trace",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": true,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "local_decompilation": "prohibited_not_run",
+    "online_decompilation": "not_required_for_included_core_logic"
+  },
+  "view": "benchmark_simplified",
+  "source_provenance": "slice_manifest.json"
+}

@@ -1,0 +1,18 @@
+[
+ {"url":"https://anomly.rs/usm-fum-fund-defund-splitting-exploit","path":"screening/usm-analysis.html"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xce24439f2d9c6a2289f741120fe202248b666666?fields=all","path":"screening/fox-token-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0xaab18bcdee287aea288c0560612caadf7c328803?fields=all","path":"screening/fox-source2.json"},
+ {"url":"https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8","path":"screening/allbridge-transaction.json"},
+ {"url":"https://base.blockscout.com/api/v2/transactions/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8/raw-trace","path":"screening/allbridge-trace.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/8453/0xaa119f7442ecc28b9a8f236707ada8362cff24ff?fields=all","path":"screening/allbridge-router-source.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/8453/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577?fields=all","path":"screening/allbridge-messenger-source.json"},
+ {"url":"https://defimon.xyz/blog/allbridge-hack-august-2026","path":"screening/allbridge-primary-report.html"},
+ {"url":"https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9","path":"screening/sandbox-transaction.json"},
+ {"url":"https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace","path":"screening/sandbox-trace.json"},
+ {"url":"https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/USM_exp.sol&per_page=1","path":"screening/usm-poc-commit.json"},
+ {"url":"https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/AllbridgeCCTP_exp.sol&per_page=1","path":"screening/allbridge-poc-commit.json"},
+ {"url":"https://api.github.com/repos/SunWeb3Sec/DeFiHackLabs/commits?path=src/test/2026-08/SandboxOFT_exp.sol&per_page=1","path":"screening/sandbox-poc-commit.json"},
+ {"url":"https://sourcify.dev/server/v2/contract/56/0x729bdaf6daa7464ab7432d4b2bc1d6f306c92282?fields=all","path":"screening/moke-tokenx-source.json"},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/moke-transaction.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"]}},
+ {"url":"https://bsc-dataseed.binance.org","path":"screening/nex-transaction.json","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"]}}
+]

@@ -1,0 +1,263 @@
+Pro Token Executor Exploit Analysis — anomly.rs
+anomly.rs
+anomly.rs
+Log in
+Pro Token Executor Exploit Analysis
+bsc
+/
+Published
+0x4baf136bda...66449a50
+0x4baf136bda10390fb657556c46a19c91b82c2a4c86a058884727c30a66449a50
+/
+Jul 28, 2026, 4:29 PM
+Report
+PoC
+Source
+Download PoC
+Pro Token Executor Exploit Analysis
+Date
+: 2026-07-28
+Loss Estimate
+: 5,719.181038388 Pro forcibly sold for 229,897.259342639833602770 USDT (about $229,897.26). No same-transaction USDT receipt by the attacker EOA or attack contract was observed; the forced outputs went to the executor's configured receivers.
+I. Executive Summary
+Verdict
+: Confirmed Exploit / Forced Executor Drain
+Root Cause
+: The Pro executor proxy at
+0xc44f2acCAc20598A3F2b4D489A970Fcf52a04A3C
+delegated to unverified implementation
+0x7fBA63d0c45f265c1bEa3Ed2e49f0691A9d9AA87
+at the focal block. Its
+exec()
+function sold Pro tokens through PancakeSwap but did not enforce caller authorization, cooldown, or a per-transaction sale cap. The attacker deployed an owner-gated attack contract and looped
+exec()
+116 times, draining the executor's Pro balance into swaps.
+II. Vulnerability
+A. Business Logic Context
+0xc44f...A3C
+is an OpenZeppelin
+TransparentUpgradeableProxy
+; the focal trace read implementation slot
+0x3608...2bbc
+as
+0x7fBA...AA87
+. The implementation was unverified, so the function body below is reconstructed from bytecode/disassembly and the storage trace. The verified Pro token source shows
+decimals() = 9
+and a sell-fee path in
+_update()
+when tokens are transferred to the target pool.
+The executor held Pro tokens and maintained three receivers. Deployer transactions on 2026-03-21 added
+0xD9c854EDC2680D55C4dC7c601510AedC3d7F7252
+,
+0xc3994bfFb5410D79Fd63f7D8761A72204F780369
+, and
+0x4e94c21CD9d262f3D0d0Ef143Fae38b071da38af
+via
+addReceiver(address)
+.
+B. The Vulnerability
+// Proxy: 0xc44f2acCAc20598A3F2b4D489A970Fcf52a04A3C
+// Focal implementation: 0x7fBA63d0c45f265c1bEa3Ed2e49f0691A9d9AA87 (unverified)
+// Reconstructed from focal trace and bytecode offsets around exec() selector 0xc1c0e9c4.
+function
+exec()
+external
+{
+if
+(receivers.length ==
+0
+)
+return
+;
+uint256
+bal = PRO.balanceOf(
+address
+(
+this
+));
+if
+(bal < threshold)
+return
+;
+
+    PRO.approve(router, allowance(PRO,
+address
+(
+this
+), router) + amountToSell);
+address
+receiver = receivers[cursor];
+uint256
+amountIn = min(
+50
+_000_000_000, remainingSaleAmount(bal, receivers.length));
+uint256
+quoted = router.getAmountsOut(amountIn, path)[
+1
+];
+
+    router.swapExactTokensForTokensSupportingFeeOnTransferTokens(
+        amountIn,
+        quoted *
+9500
+/
+10000
+,
+        path,
+        receiver,
+block
+.timestamp
+    );
+
+    cursor = (cursor +
+1
+== receivers.length) ?
+0
+: cursor +
+1
+;
+}
+The missing invariant is that a keeper-style sale should be bounded by caller authorization and cadence. In the focal implementation,
+exec()
+only checked executor balance and receiver state before approving and swapping; the trace shows no caller check before the
+approve
+,
+getAmountsOut
+, and
+swapExactTokensForTokensSupportingFeeOnTransferTokens
+calls.
+C. Why It Was Exploitable
+At the focal block the executor held
+5,719,181,038,388
+raw Pro (
+5,719.181038388
+Pro) while
+threshold()
+returned
+10,000,000,000
+raw Pro (
+10
+Pro). Because
+exec()
+remained callable and repeatable, the attack contract could keep calling it until the balance was depleted. A normal keeper call shortly before the exploit sold one
+50
+Pro chunk; the attack batched 113 full chunks plus three residual chunks in one transaction.
+III. Technical Attack Flow
+The attacker EOA
+0x0Ee5...7168
+deployed four similar contracts at 2026-07-28 16:28:19, 16:28:32, 16:28:43, and 16:28:50 UTC. The last deployment created
+0x6f2f...E25E
+.
+In the focal transaction, the EOA called
+exploit()
+on
+0x6f2f...E25E
+. The attack contract first read
+threshold()
+from the proxy and
+balanceOf(0xc44f...A3C)
+from Pro.
+The attack contract then repeatedly called
+0xc44f...A3C.exec()
+. Each execution approved PancakeSwap router
+0x10ED...024E
+, quoted Pro to USDT, and swapped through pair
+0x6384...0c3
+.
+Pro's verified
+_update()
+sell-fee path sent
+142.979525959
+Pro to fee receiver
+0x5433...0832
+and
+5,576.201512429
+Pro to the Pancake pair.
+The pair paid out
+229,897.259342639833602770
+USDT to the three configured executor receivers. The executor's Pro balance moved from
+5,719.181038388
+Pro to
+0
+.
+IV. Attacker Timeline
+Preparation
+2026-07-05 13:06:29 UTC:
+0x9ea7fc43a808cdd3c9418a08793c25b4a330086bbab22f73cc2a6c4a16112d40
+funded the attacker EOA with
+0.02405
+BNB.
+2026-07-28 16:28:19 UTC:
+0x91190d36df97ab6938bb114e76295aaceb1dc114a820a2ae428549b43000c379
+deployed
+0x1F5164B7B16253A3ebe5D9DDB689e1f9849956b6
+.
+2026-07-28 16:28:32 UTC:
+0x56f9150a3fdae30accdff9bb39cb114f1b1ccdff72debe9c79acbce5e576e42e
+deployed
+0x19400Da819C734f8523AFE1207E0822DC669BE8E
+.
+2026-07-28 16:28:43 UTC:
+0xb49397a8c1ac967349bb7b1bf6a07105568ba803b9557bba562faf9cc707461c
+deployed
+0x1B5d51aC9B936C6892D9B08259b8c3707ecCaBB8
+.
+2026-07-28 16:28:50 UTC:
+0x97558bb767931ba9277bb1c93ac23163adf4d823d30722f4ec4074cbadbe85a6
+deployed the attack contract
+0x6f2f...E25E
+.
+Focal Transaction
+2026-07-28 16:29:17 UTC:
+0x4baf136bda10390fb657556c46a19c91b82c2a4c86a058884727c30a66449a50
+called
+exploit()
+and forced 116
+exec()
+swaps. The attacker EOA paid
+0.00029595935
+BNB in gas.
+Exit
+No same-transaction USDT receipt by the attacker EOA or attack contract was observed. The USDT proceeds were delivered directly from the Pancake pair to the executor's preconfigured receivers. Post-focal token-transfer checks did not show a USDT exit from
+0x0Ee5...7168
+or
+0x6f2f...E25E
+. A later admin transaction,
+0x61a509f194ce7a1994bc19e5df3ceca2061116a65b2f0a34aea2db39b67690f8
+, initialized allowlist storage on the newer implementation, consistent with remediation rather than attacker exit.
+V. Loss Quantification
+Asset
+Amount
+USD (at tx time)
+Pro removed from executor
+5,719.181038388 Pro
+$229,897.26 implied by swap output
+USDT removed from Pancake pair
+229,897.259342639833602770 USDT
+$229,897.26
+Pro sell fee to fee receiver
+142.979525959 Pro
+Included in Pro total
+Recipient USDT deltas from
+get_balance_changes
+and receipt logs:
+Recipient
+USDT Delta
+0xc3994bfFb5410D79Fd63f7D8761A72204F780369
++77,306.702033089946050374 USDT
+0x4e94c21CD9d262f3D0d0Ef143Fae38b071da38af
++77,298.139154396516140265 USDT
+0xD9c854EDC2680D55C4dC7c601510AedC3d7F7252
++75,292.418155153371412131 USDT
+Reconciliation:
+Pro:
+5,719.181038388
+Pro lost by the executor =
+5,576.201512429
+Pro received by the pair +
+142.979525959
+Pro received by the fee receiver.
+USDT:
+229,897.259342639833602770
+USDT lost by the pair = the three receiver gains above.
+Direct attacker profit in the focal transaction: no Pro or USDT balance increase was observed for the attacker EOA or attack contract; this was a forced-execution/griefing exploit rather than a same-tx proceeds theft.

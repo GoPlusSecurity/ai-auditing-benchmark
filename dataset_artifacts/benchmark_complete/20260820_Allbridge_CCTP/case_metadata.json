@@ -1,0 +1,41 @@
+{
+  "case_id": "20260820_Allbridge_CCTP",
+  "project_cn": "Allbridge Core（CCTP 路由）",
+  "project_en": "Allbridge Core (CCTP router)",
+  "vulnerability_cn": "把通用消息签名当作实际入金证明并虚增跨链可付款余额",
+  "vulnerability_en": "Generic attested messages create phantom deposit credits without checking actual funding",
+  "detail_cn": "CCTPTokenMessenger.receiveCctpMessage 只检查消息体中的远端发送人及 destinationCaller，再在通用 MessageTransmitter 接受消息后直接记入 amount-feeExecuted，没有验证真正的 TokenMessenger 头部身份、接收者和 USDC 实际增加。Router.receiveToken 将该虚假额度作为付款依据。回执记录声明 1,000,000 USDC、扣 1,000 USDC 路由费、付款 999,000 USDC；扣除攻击者补入的闪电贷后，Router 净流出 190,155.976393 USDC，最终获利地址净增 189,751.554381 USDC。源码、calldata 和回执已核对；Polygon 制造消息和完整内部跟踪未独立核实，未重放。保留源表约 191,000 美元的事件估计，日期保留 8 月 20 日，实际 Base 交易为 8 月 19 日 UTC。",
+  "detail_en": "CCTPTokenMessenger.receiveCctpMessage checks the body-level remote sender and destinationCaller, then credits amount-feeExecuted after generic MessageTransmitter acceptance, without authenticating the real TokenMessenger header/recipient or an actual USDC balance increase. Router.receiveToken uses that phantom credit to authorize payment. The receipt records a 1,000,000 USDC claim, a 1,000 USDC router fee and a 999,000 USDC payout. After the attacker's flash-loan top-up, Router net outflow is 190,155.976393 USDC; the final profit address gains 189,751.554381 USDC. Source, calldata and receipt were checked; Polygon message creation, full internal tracing and replay were not independently performed. The sheet's approximately USD 191000 incident estimate is retained. The sheet date is August 20, versus August 19 UTC on Base.",
+  "loss_usd": "191000",
+  "loss_scope": "Source-sheet approximate reported incident loss, near the pre-payout router exposure of 191155.976393 USDC. This is not the 190155.976393 USDC net router outflow or 189751.554381 USDC final profit; approximate report assumes USDC near USD 1.",
+  "event_date": "2026-08-20",
+  "original_rows": [
+    88
+  ],
+  "tx_urls": [
+    "https://basescan.org/tx/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+  ],
+  "vulnerable_contract_urls": [
+    "https://basescan.org/address/0xaa119f7442ecc28b9a8f236707ada8362cff24ff#code",
+    "https://basescan.org/address/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577#code"
+  ],
+  "public_original_vulnerable_source": true,
+  "requires_decompilation_for_core_vulnerable_logic": false,
+  "attack_time_deployment_source_equivalence_verified": false,
+  "source_sheet_snapshot": "../../batches/20261021_x112_y5/snapshot.json",
+  "batch_results": "../../batches/20261021_x112_y5/results.json",
+  "case_document": "../../../docs/cases/20260820_Allbridge_CCTP.md",
+  "verification_status": {
+    "original_source": "acquired_hashed_compared_to_provider_response",
+    "historical_call_targets": "receipt_emitters_observed; internal calls not independently traced",
+    "transaction_receipt_or_transfers": "checked",
+    "full_internal_trace": false,
+    "complete_pre_attack_state": "not_independently_reconstructed",
+    "local_compilation": "not_run",
+    "fork_replay": "not_run",
+    "local_decompilation": "prohibited_not_run",
+    "online_decompilation": "not_required_for_included_core_logic"
+  },
+  "view": "benchmark_complete",
+  "source_provenance": "provenance.json"
+}
