@@ -1,0 +1,30 @@
+[
+  {
+    "path": "moonwell/mamo-token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x7300b37dfdfab110d83290a29dfb31b1740219fe?fields=all"
+  },
+  {
+    "path": "moonwell/mmamo-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32?fields=all"
+  },
+  {
+    "path": "moonwell/musdc-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xedc817a28e8b93b03976fbd4a3ddbc9f7d176c22?fields=all"
+  },
+  {
+    "path": "moonwell/mcbBTC-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xf877acafa28c19b96727966690b2f44d35ad5976?fields=all"
+  },
+  {
+    "path": "moonwell/mwsteth-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x627fe393bc6edda28e99ae648fd6ff362514304b?fields=all"
+  },
+  {
+    "path": "moonwell/oracle-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xe9005b078701e2a0948d2eac43010d35870ad9d2?fields=all"
+  },
+  {
+    "path": "moonwell/price-feed-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c?fields=all"
+  }
+]

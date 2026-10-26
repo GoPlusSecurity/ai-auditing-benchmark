@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.6.6+commit.6c089d02",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 999999,
+      "enabled": true
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "PancakeRouter",
+  "fullyQualifiedName": "PancakeRouter.sol:PancakeRouter"
+}

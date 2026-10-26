@@ -1,0 +1,579 @@
+{
+  "case_id": "20260822_TheSandbox",
+  "sheet_row": 92,
+  "case_root": "D:\\code\\vibe-coding\\ai-auditing-benchmark\\ai-auditing-benchmark\\dataset_artifacts\\batches\\20261026_x96_y5\\sandbox",
+  "source_row_path": "sandbox/source_row.json",
+  "qualified": true,
+  "sources": [
+    {
+      "id": "sandbox-oft",
+      "response_path": "sandbox/victim-source.json",
+      "path": "sandbox/victim-source.json",
+      "bundle_dir": "sandbox/source-bundles/sandbox-oft",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "chain_id": "8453",
+      "role": "vulnerable_application",
+      "response_sha256": "27bf101262de31d780b8a10d478e0b5ee73cd60169d292e57c7d9a0a3f1aeb57"
+    },
+    {
+      "id": "layerzero-endpoint",
+      "response_path": "sandbox/endpoint-source.json",
+      "path": "sandbox/endpoint-source.json",
+      "bundle_dir": "sandbox/source-bundles/layerzero-endpoint",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1a44076050125825900e736c501f859c50fe728c?fields=all",
+      "address": "0x1a44076050125825900e736c501f859c50fe728c",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "response_sha256": "2f45d5e3bf2fdfa6396a35582c6da07da3a1ba306a115e65613b3ba6a0edea87"
+    },
+    {
+      "id": "layerzero-receive-library",
+      "response_path": "sandbox/receive-library-source.json",
+      "path": "sandbox/receive-library-source.json",
+      "bundle_dir": "sandbox/source-bundles/layerzero-receive-library",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xc70ab6f32772f59fbfc23889caf4ba3376c84baf?fields=all",
+      "address": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+      "chain_id": "8453",
+      "role": "required_normal_verification_dependency",
+      "response_sha256": "a15007c7d73a6df15e2744861ae87dac10b1b08e58b04dfeeebed0a300c81d21"
+    },
+    {
+      "id": "sandbox-ethereum-adapter",
+      "response_path": "sandbox/ethereum-adapter-source.json",
+      "path": "sandbox/ethereum-adapter-source.json",
+      "bundle_dir": "sandbox/source-bundles/sandbox-ethereum-adapter",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "chain_id": "1",
+      "role": "required_normal_redemption_dependency",
+      "response_sha256": "4d2771183abd0d22e786e065bd898da77848a33bb43c842316fb1989728ac503"
+    },
+    {
+      "id": "sandbox-ethereum-sand",
+      "response_path": "sandbox/ethereum-sand-source.json",
+      "path": "sandbox/ethereum-sand-source.json",
+      "bundle_dir": "sandbox/source-bundles/sandbox-ethereum-sand",
+      "provider": "Sourcify",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x3845badade8e6dff049820680d1f14bd3903a5d0?fields=all",
+      "address": "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+      "chain_id": "1",
+      "role": "required_normal_underlying_token_dependency",
+      "response_sha256": "673a5fee24a4bff57fe1eb1388b1fd38b75747baeeb041cc153248143ac0363f"
+    }
+  ],
+  "slices": {
+    "sandbox-oft": {
+      "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol": [
+        [
+          15,
+          34
+        ],
+        [
+          64,
+          74
+        ],
+        [
+          88,
+          121
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol": [
+        [
+          5,
+          20
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol": [
+        [
+          16,
+          33
+        ],
+        [
+          41,
+          57
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol": [
+        [
+          4,
+          22
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol": [
+        [
+          12,
+          12
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          38,
+          48
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol": [
+        [
+          12,
+          31
+        ],
+        [
+          67,
+          71
+        ],
+        [
+          80,
+          82
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol": [
+        [
+          63,
+          65
+        ],
+        [
+          95,
+          110
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol": [
+        [
+          18,
+          24
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol": [
+        [
+          18,
+          20
+        ],
+        [
+          35,
+          35
+        ],
+        [
+          51,
+          54
+        ],
+        [
+          74,
+          76
+        ],
+        [
+          153,
+          177
+        ],
+        [
+          218,
+          249
+        ],
+        [
+          293,
+          295
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol": [
+        [
+          4,
+          7
+        ],
+        [
+          36,
+          56
+        ],
+        [
+          81,
+          83
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol": [
+        [
+          167,
+          177
+        ],
+        [
+          200,
+          242
+        ]
+      ]
+    },
+    "layerzero-endpoint": {
+      "contracts/EndpointV2.sol": [
+        [
+          37,
+          45
+        ],
+        [
+          151,
+          183
+        ],
+        [
+          327,
+          357
+        ]
+      ],
+      "contracts/MessageLibManager.sol": [
+        [
+          39,
+          42
+        ],
+        [
+          96,
+          135
+        ],
+        [
+          245,
+          273
+        ],
+        [
+          307,
+          311
+        ]
+      ],
+      "contracts/MessagingChannel.sol": [
+        [
+          16,
+          19
+        ],
+        [
+          37,
+          46
+        ],
+        [
+          126,
+          151
+        ]
+      ]
+    },
+    "layerzero-receive-library": {
+      "contracts/uln/uln302/ReceiveUln302.sol": [
+        [
+          16,
+          24
+        ],
+        [
+          33,
+          66
+        ]
+      ],
+      "contracts/uln/UlnBase.sol": [
+        [
+          8,
+          16
+        ],
+        [
+          25,
+          34
+        ],
+        [
+          74,
+          118
+        ],
+        [
+          126,
+          142
+        ],
+        [
+          146,
+          194
+        ]
+      ],
+      "contracts/uln/ReceiveUlnBase.sol": [
+        [
+          9,
+          19
+        ],
+        [
+          43,
+          124
+        ]
+      ],
+      "contracts/MessageLibBase.sol": [
+        [
+          1,
+          21
+        ]
+      ],
+      "contracts/ReceiveLibBaseE2.sol": [
+        [
+          16,
+          27
+        ]
+      ]
+    },
+    "sandbox-ethereum-adapter": {
+      "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol": [
+        [
+          14,
+          38
+        ],
+        [
+          54,
+          64
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol": [
+        [
+          18,
+          40
+        ],
+        [
+          61,
+          89
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol": [
+        [
+          218,
+          249
+        ],
+        [
+          293,
+          295
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol": [
+        [
+          95,
+          110
+        ]
+      ],
+      "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": [
+        [
+          36,
+          46
+        ],
+        [
+          91,
+          100
+        ]
+      ]
+    },
+    "sandbox-ethereum-sand": {
+      "src/Sand.sol": [
+        [
+          7,
+          13
+        ]
+      ],
+      "src/Sand/erc20/ERC20BaseToken.sol": [
+        [
+          39,
+          74
+        ],
+        [
+          156,
+          163
+        ]
+      ]
+    }
+  },
+  "slice_reasons": {
+    "sandbox-oft": {
+      "OFTSand.sol": "证明代币与OApp组合、正常烧币和信用入账铸币，并给出实际_msgSender转接。",
+      "SandBaseToken.sol": "证明公开代调用扩展确实被继承到受害地址。",
+      "ERC20BasicApproveExtension.sol": "完整保留approveAndCall和paidCall的调用者可控target/data与外呼。",
+      "BytesUtil.sol": "完整保留68字节最小长度及首参数相等检查。",
+      "ERC2771Handler.sol": "证明普通直接调用者的_msgSender为其自身，不要求转发权限。",
+      "OAppCore.sol": "绑定Endpoint、peer和本地onlyOwner的delegate入口。",
+      "OAppReceiver.sol": "保留Endpoint来源与peer检查，避免误写为直接任意调用lzReceive。",
+      "OApp.sol": "证明OFTCore继承的收发路径确为该OAppCore/OAppReceiver实现。",
+      "OFTCore.sol": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。",
+      "OFTMsgCodec.sol": "证明消息前32字节接收者和随后8字节共享精度金额的实际解码。",
+      "ERC20BaseToken.sol": "完整保留无余额要求的授权更新、实际铸币和实际烧币的状态变更。"
+    },
+    "layerzero-endpoint": {
+      "EndpointV2.sol": "证明delegate以应用自身msg.sender为索引、delegate可配置、有效消息的检查和交付。",
+      "MessageLibManager.sol": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。",
+      "MessagingChannel.sol": "证明已验证payload写入与执行时nonce/hash检查，不把配置劫持误写成关闭全部验证。"
+    },
+    "layerzero-receive-library": {
+      "ReceiveUln302.sol": "证明只有Endpoint可写配置、DVN verify入口和commit把已验证payload交给Endpoint。",
+      "UlnBase.sol": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。",
+      "ReceiveUlnBase.sol": "保留msg.sender验证记录及required/optional与确认数检查的完整实际实现。",
+      "MessageLibBase.sol": "保留onlyEndpoint和绑定端点的实现。",
+      "ReceiveLibBaseE2.sol": "证明该库绑定本地Endpoint和接收库角色。"
+    },
+    "sandbox-ethereum-adapter": {
+      "OFTAdapterForSand.sol": "证明以太坊的实际部署类型、底层token构造绑定和发送开关。",
+      "OFTAdapter.sol": "完整保留锁定底层已有代币与安全转账支付储备的两条资金路径。",
+      "OFTCore.sol": "证明以太坊也按消息amount调用adapter._credit。",
+      "OAppReceiver.sol": "保留以太坊接收的Endpoint和peer检查，不能把源链受损描述为主网验签被攻破。",
+      "SafeERC20.sol": "证明_credit实际调用ERC20 transfer并检查返回值。"
+    },
+    "sandbox-ethereum-sand": {
+      "Sand.sol": "绑定底层SAND原始代币继承和初始化发行。",
+      "ERC20BaseToken.sol": "保留18位精度、transfer/transferFrom与已有余额扣减，说明主网付款不是凭空增发。"
+    }
+  },
+  "metadata": {
+    "project_cn": "The Sandbox（SAND OFT 跨链桥）",
+    "project_en": "The Sandbox (SAND OFT bridge)",
+    "vulnerability_cn": "公开任意外部调用导致 LayerZero delegate 被接管",
+    "vulnerability_en": "Arbitrary external call enables LayerZero delegate takeover",
+    "detail_cn": "OFTSand继承的approveAndCall/paidCall只检查首参数和长度，却允许普通调用者让代币合约以自身身份调用任意目标。攻击者用68字节setDelegate数据绕过本地onlyOwner入口，把自己设为应用delegate，再修改已注册ReceiveUln302的required DVN为自己，自行verify并commit伪造消息。历史交易证实首铸5000万SAND，首笔出售1496724.864727844728117234 SAND得到14.64553552927302136 WETH。源表约67万美元与官方后续约69.7万美元未能统一，CSV损失字段留空；两种估计及跨链赎回总额仅作背景，不是本批独立汇总。",
+    "detail_en": "OFTSand inherited public approveAndCall/paidCall helpers that checked only payload length and the first argument while allowing arbitrary external calls from the token identity. A 68-byte setDelegate payload let an ordinary caller bypass the local owner-only setter, become the application delegate, change the existing ReceiveUln302 required DVN to itself, submit verification, and commit a fabricated message. Archived transactions verify the first mint of 50,000,000 SAND and the first sale of 1,496,724.864727844728117234 SAND for 14.64553552927302136 WETH. The source-sheet estimate of $670,000 and the later official ~$697,000 remain unreconciled, so both CSV loss fields are blank. These estimates and the aggregate cross-chain redemption amount were not independently summed in this batch.",
+    "loss_usd": null,
+    "loss_cn": "",
+    "loss_en": "",
+    "loss_scope": "Unresolved discrepancy: source sheet estimates USD 670000 while the later official disclosure estimates approximately USD 697000. No unified incident total was independently established; both CN and EN CSV loss fields must remain blank.",
+    "event_date": "2026-08-22",
+    "tx_urls": [
+      "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9",
+      "https://basescan.org/tx/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237"
+    ],
+    "vulnerable_contract_urls": [
+      "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF#code"
+    ],
+    "verification_status": "Authoritative original sources; Base historical runtime bound; takeover/configure/verify/commit/mint/sale verified from historical transactions and successful receipts. Aggregate incident loss and all Ethereum redemptions remain report-sourced."
+  },
+  "roles": [
+    {
+      "chain_id": 8453,
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "role": "vulnerable OFTSand token and OApp",
+      "proxy": false,
+      "implementation": null,
+      "source_bundle": "sandbox-oft"
+    },
+    {
+      "chain_id": 8453,
+      "address": "0x1a44076050125825900e736c501f859c50fe728c",
+      "role": "normal LayerZero endpoint; delegate/configuration authority",
+      "proxy": false,
+      "implementation": null,
+      "source_bundle": "layerzero-endpoint"
+    },
+    {
+      "chain_id": 8453,
+      "address": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+      "role": "normal registered ReceiveUln302; malicious application DVN configuration",
+      "proxy": false,
+      "implementation": null,
+      "source_bundle": "layerzero-receive-library"
+    },
+    {
+      "chain_id": 1,
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "role": "normal Ethereum adapter holding existing SAND collateral",
+      "proxy": false,
+      "implementation": null,
+      "source_bundle": "sandbox-ethereum-adapter"
+    },
+    {
+      "chain_id": 1,
+      "address": "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+      "role": "normal underlying Ethereum SAND token",
+      "proxy": false,
+      "implementation": null,
+      "source_bundle": "sandbox-ethereum-sand"
+    },
+    {
+      "chain_id": 8453,
+      "address": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+      "role": "attacker operating EOA; new delegate and configured required DVN; WETH recipient"
+    },
+    {
+      "chain_id": 8453,
+      "address": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+      "role": "attacker-controlled mint recipient and sale helper; transfer role proven, helper source not needed for root-cause proof"
+    },
+    {
+      "chain_id": 8453,
+      "address": "0xa69cdf524d072c366fd050957880552916d29405",
+      "role": "liquidity pool paying WETH in the first archived sale"
+    }
+  ],
+  "evidence_paths": [
+    "sandbox/decoded_evidence.json",
+    "sandbox/historical_bindings.json",
+    "sandbox/intermediate-txlist.json",
+    "sandbox/takeover-tx.json",
+    "sandbox/takeover-receipt.json",
+    "sandbox/takeover-trace.json",
+    "sandbox/config-receipt.json",
+    "sandbox/dvn-verify-receipt.json",
+    "sandbox/commit-verification-receipt.json",
+    "sandbox/mint-tx.json",
+    "sandbox/mint-receipt.json",
+    "sandbox/mint-trace.json",
+    "sandbox/first-sale-tx.json",
+    "sandbox/first-sale-receipt.json",
+    "sandbox/ethereum-redemption-tx.json",
+    "sandbox/ethereum-redemption-receipt.json",
+    "sandbox/decompilation-provenance.json",
+    "sandbox/sale-helper-source.json",
+    "sandbox/sale-helper-runtime-before-mint.json",
+    "sandbox/sale-helper-runtime-attack.json",
+    "sandbox/sale-helper-ethervm-response.html"
+  ],
+  "draft_path": "sandbox/draft.md",
+  "limits": [
+    "The USD 670000 source-sheet estimate and approximately USD 697000 later official estimate remain unreconciled; CN/EN CSV loss fields are blank (loss_usd=null). No full-campaign loss/profit accounting was performed.",
+    "Ethereum redemption transaction was fetched, but PublicNode receipt returned result:null and the Llama receipt retry timed out after 35 seconds; neither redemption success nor aggregate payouts were independently established.",
+    "No independent historical effective optional-DVN default read; custom zero fields are correctly documented as default inheritance.",
+    "Core Base runtime is historical-bound; Ethereum adapter and underlying token are verified-source context without a separate attack-block runtime comparison.",
+    "Official postmortem direct HTTP download returned 403; web research accessed official page text. X response is not proof of full tweet body.",
+    "No upstream scripts, PoCs, compilation, deployment, replay or transaction submission were executed.",
+    "The unverified first-sale helper is supplemented by public online decompilation of its historical runtime; this reconstructed high-level code is not original source or a formal semantic-equivalence proof."
+  ],
+  "official_report_url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+  "reported_loss_estimates": [
+    {
+      "usd": "670000",
+      "source": "source sheet row 92 lost/lost_u",
+      "status": "unreconciled incident estimate"
+    },
+    {
+      "usd": "697000",
+      "source": "The Sandbox official August 22 Exploit Post-Mortem",
+      "status": "unreconciled later incident estimate"
+    }
+  ],
+  "decompilations": [
+    {
+      "id": "sandbox-sale-helper-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "first_mint_recipient_and_first_sale_execution_helper_supplementary_context",
+      "address": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+      "chain_id": 8453,
+      "source_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper.ethervm.decompiled.sol",
+      "original_file_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper.ethervm.decompiled.sol",
+      "target_path": "decompiled/sale-helper.ethervm.decompiled.sol",
+      "raw_response_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-ethervm-response.html",
+      "request_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-ethervm-request.txt",
+      "runtime_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-runtime-attack.json",
+      "runtime_hex_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-runtime.hex",
+      "historical_block": 50283191,
+      "also_confirmed_at_block": 50283188,
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "The returned page does not report the decompiler engine version; frontend/CDN versions are not substituted.",
+      "sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "runtime_sha256": "75046a49d0e9e0db35338bd0173c52972f0e6928882e2696ec9d5e085fb872cd",
+      "raw_response_sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+      "runtime_bytes": 1701,
+      "decompiled_error_comment_count": 0,
+      "retrieved_at_utc": "2026-10-26T15:08:37.036116+00:00",
+      "bytecode_binding": "Historical code is equal before first mint and at first sale. Exact runtime was POSTed; the returned separate disassembly covers all 1701 bytes without mismatch.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "artifact_only_files": [
+        "raw HTML",
+        "form and POST request body",
+        "runtime hex and RPC raw responses",
+        "Sourcify no-match response",
+        "disassembly",
+        "provenance and hashes"
+      ],
+      "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/decompilation-provenance.json"
+    }
+  ]
+}

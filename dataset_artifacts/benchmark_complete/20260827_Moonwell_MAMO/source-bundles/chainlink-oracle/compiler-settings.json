@@ -1,0 +1,29 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": [
+      ":@forge-std/=lib/forge-std/src/",
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
+      ":@protocol/=src/",
+      ":@test/=test/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/"
+    ]
+  },
+  "name": "ChainlinkOracle",
+  "fullyQualifiedName": "src/core/Oracles/ChainlinkOracle.sol:ChainlinkOracle"
+}

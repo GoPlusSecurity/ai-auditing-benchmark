@@ -1,0 +1,74 @@
+[
+  {
+    "path": "term/sources/voting-token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0?fields=all",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "8d25dd",
+      "wall_time_seconds": 3.4096036,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x5 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/sources/safe-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552?fields=all",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "695b28",
+      "wall_time_seconds": 2.4548059,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-wrapper-transfers.json",
+    "url": "https://eth.blockscout.com/api/v2/tokens/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0/transfers",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "9d9cd8",
+      "wall_time_seconds": 2.5692732,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-wrap-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2/raw-trace",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "b0276a",
+      "wall_time_seconds": 1.5698056999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-execution-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/raw-trace",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "d48a68",
+      "wall_time_seconds": 1.861132,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-execution-transaction.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "cab4e1",
+      "wall_time_seconds": 5.2667064,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

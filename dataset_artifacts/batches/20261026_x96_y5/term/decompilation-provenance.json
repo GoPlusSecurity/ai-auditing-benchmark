@@ -1,0 +1,85 @@
+[
+  {
+    "address": "0x184f2e57b4ce135181fa2a2166ac394339016338",
+    "creation_block": 25772662,
+    "creation_transaction": "0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60",
+    "creation_runtime_source": "blockscout-attacker-strategy-creation-trace.json",
+    "runtime_file": "attacker-strategy-creation-runtime.hex",
+    "runtime_bytes": 2497,
+    "runtime_sha256": "04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9",
+    "current_explorer_runtime_identical": true,
+    "historical_attack_eth_getCode": "PublicNode requires personal archive token; request failed",
+    "kind": "public_online_decompiler_output",
+    "service": "ethervm.io Online Solidity Decompiler",
+    "service_url": "https://ethervm.io/decompile",
+    "method": "POST archived original deployment runtime bytecode",
+    "engine_version": null,
+    "engine_version_status": "Returned page does not report decompiler engine version; frontend library versions are not substituted.",
+    "decompiled_path": "attacker-strategy-ethervm-decompiled.txt",
+    "raw_response_path": "attacker-strategy-ethervm-response.html",
+    "extraction": "Unmodified text of returned high-level code div; HTML tags removed and entities decoded; no manually reconstructed code.",
+    "disassembly_path": "attacker-strategy-ethervm-disassembly.txt",
+    "response_disassembly_bytes_checked": 2497,
+    "response_disassembly_mismatches": [],
+    "response_disassembly_complete_byte_coverage": true,
+    "decompiler_error_comment_count": 0,
+    "public_method_names_caveat": "Service-selected function names and variables are inferred, not original author names. High-level reconstruction may contain Error comments and is not a complete execution proof.",
+    "not_original_source": true,
+    "not_used_to_replace_vulnerable_original_source": true,
+    "artifacts": [
+      {
+        "path": "attacker-strategy-ethervm-response.html",
+        "sha256": "4d5cd72fc873838267834f4e20275e6ca8eef4adc07b41d010a134f979e4d75c",
+        "bytes": 278677
+      },
+      {
+        "path": "attacker-strategy-ethervm-decompiled.txt",
+        "sha256": "d5db55fb22f322d706336cfa1ec0471cbbab3d9c1da02091bee825b13b49e758",
+        "bytes": 28097
+      },
+      {
+        "path": "attacker-strategy-ethervm-disassembly.txt",
+        "sha256": "7e49f2fa6e8311436ed8e1a9440676d93adfee4f7b766bfd9a14023f99105579",
+        "bytes": 88492
+      },
+      {
+        "path": "attacker-strategy-ethervm-request.txt",
+        "sha256": "ca26b9832cb7a5c0a78cb524e483ac2132b4b21c7d2fb7f3b1c7856063f0d2ed",
+        "bytes": 5020
+      }
+    ]
+  },
+  {
+    "address": "0x3e30ddf30172f54c50cb490ff56e10f1a4737cf1",
+    "creation_block": 25772663,
+    "creation_transaction": "0x397cfc3d084045c84025078aea5ecc5543b6b57c5c2eda42756176de3a023ae0",
+    "creation_runtime_source": "blockscout-helper-implementation-creation-trace.json",
+    "runtime_file": "helper-implementation-creation-runtime.hex",
+    "runtime_bytes": 12318,
+    "runtime_sha256": "de4b017824ab9fa591f5590e838ccb35ba7a7ddaecddb36ef0b29ce6e3a54235",
+    "current_explorer_runtime_identical": true,
+    "historical_attack_eth_getCode": "PublicNode requires personal archive token; request failed",
+    "kind": "online_decompilation_failure",
+    "service": "ethervm.io Online Solidity Decompiler",
+    "service_url": "https://ethervm.io/decompile",
+    "engine_version": null,
+    "status": "failed",
+    "reason": "Service returned Decompilation timed out / Disassembly timed out / No output available.",
+    "raw_response_path": "helper-implementation-ethervm-response.html",
+    "request_path": "helper-implementation-ethervm-request.txt",
+    "not_original_source": true,
+    "no_decompiled_output_available": true,
+    "artifacts": [
+      {
+        "path": "helper-implementation-ethervm-response.html",
+        "sha256": "95146ee24d9b7e8d53a025dbfc1ff5a4c3fdaed2ed10b2c04dfbe056548ae530",
+        "bytes": 5372
+      },
+      {
+        "path": "helper-implementation-ethervm-request.txt",
+        "sha256": "ab634ac316066d456041d688939928afc727474da74275da2e76864de82a85f5",
+        "bytes": 24662
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "case_id": "20260822_TheSandbox",
+  "sheet_row": 92,
+  "status": "qualified",
+  "qualified": true,
+  "reason_cn": "有权威平台完整原始漏洞源码；Base受害OFT和必要Endpoint/ReceiveUln源码已按攻击前块运行字节码绑定；连续历史交易及成功回执闭合权限接管、验证配置修改、自验证、commit和5000万SAND首铸，首卖回执证明真实WETH流出。",
+  "checks": {
+    "public_original_solidity_source": true,
+    "not_only_report_poc_or_decompilation": true,
+    "not_only_fixed_version": true,
+    "historical_root_cause_binding": true,
+    "historical_trigger_and_authority_change": true,
+    "historical_verification_configuration": true,
+    "historical_mint": true,
+    "actual_base_asset_outflow": true,
+    "complete_campaign_loss_reconstruction": false,
+    "sale_helper_historical_runtime_and_public_decompilation": true
+  },
+  "source_provider": "Sourcify",
+  "source_bundles": 5,
+  "source_files": 143,
+  "root_cause": "Public token-identity arbitrary external calls bypass the local owner-only delegate setter.",
+  "case_spec_path": "case_spec.json",
+  "draft_path": "draft.md",
+  "limits": [
+    "The USD 670000 source-sheet estimate and approximately USD 697000 later official estimate remain unreconciled; CN/EN CSV loss fields are blank (loss_usd=null). No full-campaign loss/profit accounting was performed.",
+    "Ethereum redemption transaction was fetched, but PublicNode receipt returned result:null and the Llama receipt retry timed out after 35 seconds; neither redemption success nor aggregate payouts were independently established.",
+    "No independent historical effective optional-DVN default read; custom zero fields are correctly documented as default inheritance.",
+    "Core Base runtime is historical-bound; Ethereum adapter and underlying token are verified-source context without a separate attack-block runtime comparison.",
+    "Official postmortem direct HTTP download returned 403; web research accessed official page text. X response is not proof of full tweet body.",
+    "No upstream scripts, PoCs, compilation, deployment, replay or transaction submission were executed.",
+    "The unverified first-sale helper is supplemented by public online decompilation of its historical runtime; this reconstructed high-level code is not original source or a formal semantic-equivalence proof."
+  ],
+  "loss_usd": null,
+  "loss_fields_policy": "CN/EN CSV loss fields remain blank because the 670000 and 697000 incident estimates are unresolved.",
+  "reported_loss_estimates": [
+    {
+      "usd": "670000",
+      "source": "source sheet row 92 lost/lost_u",
+      "status": "unreconciled incident estimate"
+    },
+    {
+      "usd": "697000",
+      "source": "The Sandbox official August 22 Exploit Post-Mortem",
+      "status": "unreconciled later incident estimate"
+    }
+  ],
+  "decompilations": [
+    {
+      "id": "sandbox-sale-helper-ethervm",
+      "original_source": false,
+      "historical_runtime_bound": true,
+      "runtime_bytes": 1701,
+      "provider": "ethervm.io",
+      "provenance_path": "sandbox/decompilation-provenance.json"
+    }
+  ]
+}

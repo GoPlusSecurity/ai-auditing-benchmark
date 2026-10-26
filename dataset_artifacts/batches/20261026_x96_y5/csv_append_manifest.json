@@ -1,0 +1,88 @@
+{
+  "cn": {
+    "path": "ai-auditing-benchmark_cn.csv",
+    "baseline_bytes": 37171,
+    "baseline_sha256": "eac86695bfb71be5a8296d851e71141e152c38d7310bab7d9382b7108baa8bd8",
+    "appended_records": [
+      [
+        "2026.08.22",
+        "The Sandbox（SAND OFT 跨链桥）",
+        "公开任意外部调用导致 LayerZero delegate 被接管",
+        "OFTSand继承的approveAndCall/paidCall只检查首参数和长度，却允许普通调用者让代币合约以自身身份调用任意目标。攻击者用68字节setDelegate数据绕过本地onlyOwner入口，把自己设为应用delegate，再修改已注册ReceiveUln302的required DVN为自己，自行verify并commit伪造消息。历史交易证实首铸5000万SAND，首笔出售1496724.864727844728117234 SAND得到14.64553552927302136 WETH。源表约67万美元与官方后续约69.7万美元未能统一，CSV损失字段留空；两种估计及跨链赎回总额仅作背景，不是本批独立汇总。",
+        "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9\nhttps://basescan.org/tx/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+        "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF#code",
+        ""
+      ],
+      [
+        "2026.08.23",
+        "Term Labs（ETH Meta Vault 治理）",
+        "少量封装 LP 取得多数票权，过宽治理权限允许关闭延时并把金库资金配置给恶意策略",
+        "TokenVoting 以主动封装 LP 的历史供给计算总票权，攻击者用 0.5 ETH 取得并封装 0.485216182805348480 LP，在快照总量 0.535216182805348480 中占约 90.65798%。提案 5 的 17 个动作通过 DAO 已有 Roles 权限将 Delay 冷却期和有效期设为零，并启用 DAO 为模块；随后同笔交易排队并执行四笔普通策略减债及恶意策略注册、放宽债务上限和注资。历史 trace 与日志确认 2841.743535791961701401 WETH 经恶意策略进入攻击钱包。正常 onlyOwner、角色和 Safe 模块检查未被绕过；缺陷是部署中的治理权限和票权范围组合。核心原始源码来自 Sourcify，辅助反编译不替代源码；未重放。美元及全事件 USDC 损失未独立核定，留空。",
+        "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e\nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2\nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8\nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d\nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+        "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code\nhttps://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code\nhttps://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code\nhttps://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code\nhttps://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code\nhttps://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code",
+        ""
+      ],
+      [
+        "2026.08.26",
+        "Falcon Heavy（FH）",
+        "卖出时扣除资金池自己的代币并提前同步储备，导致 USDT 被超额换出",
+        "FHToken._transfer 的卖出分支先从资金池余额销毁净卖出额的80%、向国库转走20%，调用 pair.sync() 后才把卖方净额转入池子。Pancake V2 的手续费代币路径随后按余额减已降低储备计算输入，并按降低后的FH储备报价。构造函数预设的V3 Router买入白名单与公开sweepToken使普通攻击者可以取得FH再卖出。原回执记录25轮买卖；逐轮卖出金额与公开Router算式吻合，池子USDT净流出与攻击者净流入均为19999018106552928530404原始单位（历史decimals=18，即19,999.018106552928530404 USDT）。保留源表约2万美元估计与8月26日日期，实际交易为8月25日UTC。核心原始源码来自Sourcify；未取得完整内部调用跟踪，未重放。",
+        "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+        "https://bscscan.com/address/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37#code",
+        "2"
+      ],
+      [
+        "2026.08.27",
+        "Moonwell（MAMO 抵押市场）",
+        "直接捐赠抬高抵押份额兑换率，并与被推高的预言机价格共同放大借款能力",
+        "mMAMO以实际代币余额计算份额兑换率；直接转入MAMO不经过mintAllowed的供应上限检查，也不增加份额。两次捐赠共53,393,290.310633389294532652 MAMO，历史状态显示份额总量不变、兑换率升至约3.6786倍。Comptroller将份额、兑换率、MAMO报价与50%抵押因子相乘，未限制捐赠造成的抵押增量或按可清算深度折价。实际采用的MAMO价格一度为0.40248571美元。17笔成功交易包含18次借款，流出cbBTC、WETH/ETH、USDC及wstETH；WETH付款经WethUnwrapper解包。原始源码与核心历史运行码已比对；未复核全部价格操纵交易、清算及最终净损益。美元金额因早期报道、借款总额和剩余坏账口径不一留空。",
+        "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f\nhttps://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18\nhttps://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7",
+        "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code\nhttps://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code",
+        ""
+      ]
+    ]
+  },
+  "en": {
+    "path": "ai-auditing-benchmark_en.csv",
+    "baseline_bytes": 40968,
+    "baseline_sha256": "c70156c92a9ecccee71db49c1cda851ad87505d8c96372d8f90fff5c0938a8e7",
+    "appended_records": [
+      [
+        "2026.08.22",
+        "The Sandbox (SAND OFT bridge)",
+        "Arbitrary external call enables LayerZero delegate takeover",
+        "OFTSand inherited public approveAndCall/paidCall helpers that checked only payload length and the first argument while allowing arbitrary external calls from the token identity. A 68-byte setDelegate payload let an ordinary caller bypass the local owner-only setter, become the application delegate, change the existing ReceiveUln302 required DVN to itself, submit verification, and commit a fabricated message. Archived transactions verify the first mint of 50,000,000 SAND and the first sale of 1,496,724.864727844728117234 SAND for 14.64553552927302136 WETH. The source-sheet estimate of $670,000 and the later official ~$697,000 remain unreconciled, so both CSV loss fields are blank. These estimates and the aggregate cross-chain redemption amount were not independently summed in this batch.",
+        "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9\nhttps://basescan.org/tx/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+        "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF#code",
+        ""
+      ],
+      [
+        "2026.08.23",
+        "Term Labs (ETH Meta Vault governance)",
+        "Thin wrapped-LP electorate and overbroad governance authority allow delay removal and allocation to a malicious strategy",
+        "TokenVoting uses the historical supply of voluntarily wrapped LP shares as total voting power. With 0.5 ETH the attacker acquired and wrapped 0.485216182805348480 LP against 0.535216182805348480 total wrapped supply, about 90.65798%. Proposal 5 used 17 DAO actions and existing Roles authority to set Delay cooldown and expiration to zero and enable the DAO as a module, then queued and executed four normal-strategy debt reductions, malicious-strategy registration, a maximum-debt increase and allocation in the same transaction. Historical trace and raw logs confirm 2841.743535791961701401 WETH passed through the malicious strategy to the attacker. Standard onlyOwner, role and Safe-module checks were satisfied; the vulnerability is the deployed composition of voting scope and governance authority. Core original sources come from Sourcify; supplementary decompilation does not replace them. No replay. USD valuation and event-wide USDC loss were not independently established.",
+        "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e\nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2\nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8\nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d\nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+        "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code\nhttps://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code\nhttps://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code\nhttps://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code\nhttps://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code\nhttps://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code",
+        ""
+      ],
+      [
+        "2026.08.26",
+        "Falcon Heavy (FH)",
+        "Sell-side removal of pair-owned tokens and premature reserve sync cause excessive USDT output",
+        "FHToken._transfer burns 80% of the net sell amount from the pair balance, sends the remaining 20% from the pair to treasury, calls pair.sync(), and only then credits the seller net amount. The Pancake V2 fee-on-transfer route measures input as balance minus the reduced reserve and quotes against the depleted FH reserve. A constructor-whitelisted V3 router and its public sweepToken allow an ordinary attacker to acquire FH for the sell path. The receipt records 25 buy/sell cycles; each sell output exactly matches the public router formula. Pool USDT net outflow and attacker net inflow both equal 19999018106552928530404 raw units (19,999.018106552928530404 USDT; historical decimals=18). The sheet estimate of about USD 20000 and August 26 date are retained; the transaction occurred on August 25 UTC. Core original source is from Sourcify. Full internal tracing and replay were not performed.",
+        "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+        "https://bscscan.com/address/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37#code",
+        "20"
+      ],
+      [
+        "2026.08.27",
+        "Moonwell (MAMO collateral market)",
+        "Donation-driven collateral exchange-rate inflation combined with inflated oracle prices",
+        "mMAMO computes its exchange rate from the actual underlying balance. Direct MAMO transfers bypass the mintAllowed supply-cap check and create no shares. Two donations totaled 53,393,290.310633389294532652 MAMO; historical state shows unchanged share supply and an approximately 3.6786-fold exchange-rate increase. Comptroller multiplies shares, exchange rate, the MAMO quote and a 50% collateral factor without capping donation-induced collateral growth or discounting for realizable market depth. The accepted MAMO price reached USD 0.40248571. Seventeen successful transactions contain 18 borrows of cbBTC, WETH/ETH, USDC and wstETH; WETH payouts unwrap through WethUnwrapper. Original sources and core historical runtime code were compared. Full price-manipulation trades, liquidations and final net results were not reconstructed. The USD loss field is blank because early reports, gross borrowing and residual bad debt use different scopes.",
+        "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f\nhttps://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18\nhttps://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7",
+        "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code\nhttps://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code",
+        ""
+      ]
+    ]
+  }
+}

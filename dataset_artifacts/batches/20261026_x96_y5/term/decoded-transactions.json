@@ -1,0 +1,22 @@
+[
+  {
+    "file": "proposal-tx.json",
+    "hash": "0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e",
+    "from": "0xa908b3472d76e7744bab0a5911768a4a6300612b",
+    "to": "0x337685fdab40d39bd02028545a4ffa7d287cc3e2",
+    "value_wei": "500000000000000000",
+    "selector": "0xfa74fd43",
+    "block_number": 25772675,
+    "timestamp_utc": "2026-08-17T05:21:47+00:00"
+  },
+  {
+    "file": "execution-tx.json",
+    "hash": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+    "from": "0xa908b3472d76e7744bab0a5911768a4a6300612b",
+    "to": "0x64e477800051efb06ae4086f4b258b270668b4df",
+    "value_wei": "0",
+    "selector": "0x373058b8",
+    "block_number": 25816049,
+    "timestamp_utc": "2026-08-23T06:25:47+00:00"
+  }
+]

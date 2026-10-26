@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "parameters": {
+    "x": 96,
+    "y": 5,
+    "actual_scan_range": [
+      85,
+      96
+    ],
+    "processing_order": [
+      96,
+      95,
+      94,
+      93,
+      92,
+      91,
+      90,
+      89,
+      88,
+      87,
+      86,
+      85
+    ],
+    "selected_source_rows": [
+      95,
+      92,
+      91,
+      89,
+      85
+    ],
+    "source_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0#gid=0",
+    "export_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/export?format=csv&gid=0",
+    "retrieved_at": "2026-10-26T21:39:27.341237+08:00",
+    "timezone": "Asia/Shanghai",
+    "raw_export_sha256": "d4f5673b949fa3775660cdf9300e7e18adde3045a22d0d433cc1c51a89b9b9bc",
+    "raw_export": "sheet_gid0_raw.csv"
+  },
+  "counts": {
+    "scanned_rows": 12,
+    "qualifying_source_rows": 5,
+    "new_cases": 4,
+    "reused_existing_cases": 1,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 7
+  },
+  "case_ids": [
+    "20260820_Allbridge_CCTP",
+    "20260822_TheSandbox",
+    "20260823_TermLabs",
+    "20260826_FH",
+    "20260827_Moonwell_MAMO"
+  ],
+  "original_source_files_verified": 626,
+  "verbatim_slices_verified": 171,
+  "decompiled_source_files_verified": 3,
+  "checksum_entries_verified": 989,
+  "local_links_and_line_anchors_verified": 250,
+  "dataset_non_source_files": [],
+  "csv_event_counts": {
+    "cn": 66,
+    "en": 66
+  },
+  "csv_baseline_bytes_preserved": true,
+  "scope_baseline_file_count": 4152,
+  "scope_changed_existing_files": [
+    "ai-auditing-benchmark_cn.csv",
+    "ai-auditing-benchmark_en.csv",
+    "dataset_artifacts/benchmark_complete/20260820_Allbridge_CCTP/SHA256SUMS",
+    "dataset_artifacts/benchmark_complete/20260820_Allbridge_CCTP/case_metadata.json",
+    "dataset_artifacts/benchmark_simplified/20260820_Allbridge_CCTP/SHA256SUMS",
+    "dataset_artifacts/benchmark_simplified/20260820_Allbridge_CCTP/case_metadata.json",
+    "docs/cases/20260820_Allbridge_CCTP.md",
+    "docs/cases/README.md"
+  ],
+  "scope_new_paths_count": 1911,
+  "selection_tests": "See selection_tests.txt: 12 pure selector boundary tests",
+  "mermaid_validation": "fenced blocks, flowchart header, bracket balance and edges; not rendered",
+  "not_performed": [
+    "upstream script or PoC execution",
+    "Solidity/Vyper compilation",
+    "deployment",
+    "fork replay",
+    "transactions"
+  ],
+  "semantic_review_files": [
+    "sandbox/validation.json",
+    "term/validation.json",
+    "fh/verification.json",
+    "moonwell/independent_review.json"
+  ],
+  "evidence_boundaries": "Source checks and selected historical evidence do not establish all historical state, full attack replay, or final net economic losses."
+}

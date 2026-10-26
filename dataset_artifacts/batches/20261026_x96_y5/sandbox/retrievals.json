@@ -1,0 +1,604 @@
+[
+  {
+    "path": "sandbox/receive-library-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xc70ab6f32772f59fbfc23889caf4ba3376c84baf?fields=all",
+    "command_result": {
+      "chunk_id": "286d8a",
+      "wall_time_seconds": 2.1702591,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "a15007c7d73a6df15e2744861ae87dac10b1b08e58b04dfeeebed0a300c81d21",
+    "bytes": 351952,
+    "retrieved_at": "2026-10-26T14:29:38.040083+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/intermediate-txlist.json",
+    "url": "https://base.blockscout.com/api?module=account&action=txlist&address=0x67624bfadee937c9281b4f98ce18af1bee01257e&startblock=50283177&endblock=50283189&sort=asc",
+    "command_result": {
+      "chunk_id": "90878b",
+      "wall_time_seconds": 1.6229453999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "c9695638aa4494265136d4c8df780d1e9745e9d454b0350e5d9daade04bb743e",
+    "bytes": 6115,
+    "retrieved_at": "2026-10-26T14:29:37.420991+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/official-postmortem.html",
+    "url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+    "command_result": {
+      "chunk_id": "5bb046",
+      "wall_time_seconds": 2.3142453,
+      "exit_code": 1,
+      "original_token_count": 995,
+      "output": "Warning: truncated output (original token count: 995)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://www.sandbox.game/en/blog/august-22-ex …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '8I.camFm.bLdnpwsr3QuLQY7qMZJZDx7KlQ4gm_Ax1Q-1793024977-1.2.1.1-Sa5fMsMSSxNXkfOzNGdWPzMxVaKW0eq5B_D.frTbYDOQg_7H6S.bXtqkU_LJUvcI',cITimeS: '1793024977',cN: '7kdAUloNI447l46OoD4FcI',cRay: 'a50a277fda9eda81',cTplC:0,cTplO:0,cTplV:5,cType: 'manag…495 tokens truncated…QY3Z.QmblVxij3o037nCcyPGzyqmIswEJM01.kUirw',};var a = document.createElement('script');a.nonce = '7kdAUloNI447l46OoD4FcI';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a277fda9eda81';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/en/blog/august-22-exploit-post-mortem/3526/?__cf_chl_rt_tk=idLPvjpitA4Da1Q_WTtgxTlmtjXA0TIZMwr7cwmMc5w-1793024977-1.0.1.1-.AUKPBADLOA7x8mMsIEd.zze3_Om6tGNkEarmQpmAcI\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    },
+    "batch_log": "additional-fetch-results.json",
+    "attempt_recorded_at": "2026-10-26T14:30:57.680650+00:00"
+  },
+  {
+    "path": "sandbox/mint-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "d4c807",
+      "wall_time_seconds": 2.1577409,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "9a0b59d3d6789dfaad78b2f6b14c77ab873473f49cbcda38ec9371b6348d5e83",
+    "bytes": 1452,
+    "retrieved_at": "2026-10-26T14:29:37.972071+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/mint-trace.json",
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace",
+    "command_result": {
+      "chunk_id": "cb3971",
+      "wall_time_seconds": 3.6936215,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "52b7758a9900a3ea444e7da813c2dba8a97c7d46e75306b86d938acf8f6d983b",
+    "bytes": 1794,
+    "retrieved_at": "2026-10-26T14:29:39.437335+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/takeover-trace.json",
+    "url": "https://base.blockscout.com/api/v2/transactions/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237/raw-trace",
+    "command_result": {
+      "chunk_id": "5189e7",
+      "wall_time_seconds": 4.5933962,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "8bcc056031b798eabf6dc4e3f1cd2f97e707f6b05346923297f6e0bd82991d09",
+    "bytes": 1103,
+    "retrieved_at": "2026-10-26T14:29:40.390551+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/oft-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c615df",
+      "wall_time_seconds": 7.7577045,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "78dec64c6200b0945af6fa8ea6e4b7239d6281034294feecc04ac459022dd0ea",
+    "bytes": 34628,
+    "retrieved_at": "2026-10-26T14:29:43.556350+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/endpoint-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x1a44076050125825900e736c501f859c50fe728c",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "ab9d9e",
+      "wall_time_seconds": 4.6028825,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "8f0ca48b99ee7baedb630492d10c65f05be98e26080c871834de814ca890e2f3",
+    "bytes": 48048,
+    "retrieved_at": "2026-10-26T14:29:48.889500+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/receive-library-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c84773",
+      "wall_time_seconds": 1.9309047000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "07eedc36364923f6a36c95af443af573b1351c3eae3af9e1949c4de8f4e010cb",
+    "bytes": 22058,
+    "retrieved_at": "2026-10-26T14:29:46.430185+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/first-sale-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "314b97",
+      "wall_time_seconds": 1.9909903,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "200ee0e74de51747f354ee10d7fbbb708cddc1ba887a0cafd85979aa9e893ac7",
+    "bytes": 943,
+    "retrieved_at": "2026-10-26T14:29:46.392180+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/first-sale-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "a0fe59",
+      "wall_time_seconds": 3.8160154,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "ae12a03f3e9c4ed0b79cac1ce823baec7ff4e6741ef741ec8361218062ccae93",
+    "bytes": 4678,
+    "retrieved_at": "2026-10-26T14:29:48.146194+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/ethereum-adapter-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+    "command_result": {
+      "chunk_id": "35d04a",
+      "wall_time_seconds": 3.3090004,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "4d2771183abd0d22e786e065bd898da77848a33bb43c842316fb1989728ac503",
+    "bytes": 947884,
+    "retrieved_at": "2026-10-26T14:29:47.661734+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/ethereum-redemption-tx.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "a5a8bc",
+      "wall_time_seconds": 1.6680032,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "c1fb93720c01efcb01788d49dd84897789cc8457b6d91170dd13e087c3b4852d",
+    "bytes": 1580,
+    "retrieved_at": "2026-10-26T14:29:46.203542+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "cfbfba",
+      "wall_time_seconds": 1.7988952,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "bytes": 38,
+    "retrieved_at": "2026-10-26T14:29:46.468774+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+    "content_failure": "JSON-RPC result:null"
+  },
+  {
+    "path": "sandbox/ethereum-sand-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x3845badade8e6dff049820680d1f14bd3903a5d0?fields=all",
+    "command_result": {
+      "chunk_id": "4351cd",
+      "wall_time_seconds": 2.232946,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "673a5fee24a4bff57fe1eb1388b1fd38b75747baeeb041cc153248143ac0363f",
+    "bytes": 295743,
+    "retrieved_at": "2026-10-26T14:29:51.967113+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/original-x-response.html",
+    "url": "https://x.com/TheSandboxGame/status/2091063415649251821",
+    "command_result": {
+      "chunk_id": "4f79a9",
+      "wall_time_seconds": 1.5751634,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional-fetch-results.json",
+    "sha256": "4587a0b87ccd11e168029129082144c50375202a474db9a72ec66719c6c14d66",
+    "bytes": 150993,
+    "retrieved_at": "2026-10-26T14:29:51.317639+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/config-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xb757a126b4cb78fded5ea63c67fcdba6ec8e5c949491b7d944106d2b6cce20c7"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "07b6f7",
+      "wall_time_seconds": 4.3699466000000005,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional2-fetch-results.json",
+    "sha256": "57162ef4bdeb152a0960fb48c85a20e5f7e69d0f30d5faff659ce623cb599cbb",
+    "bytes": 2437,
+    "retrieved_at": "2026-10-26T14:32:00.925469+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/dvn-verify-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xccf27c81e05e4280c21b8605e05d658b5ce4b4108fca629db9a1a3a4c44e9961"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "5b6c47",
+      "wall_time_seconds": 3.4756544,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional2-fetch-results.json",
+    "sha256": "943751c3ccf43e9cf0ab01f200b1c92d43776b0544c473ecd70a8072abd2e3cb",
+    "bytes": 2175,
+    "retrieved_at": "2026-10-26T14:32:00.065161+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/commit-verification-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaf28ebeb649f2234e6e44617ee93318af6300a48155d41fd6c4bd28a070fe076"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "25cdb4",
+      "wall_time_seconds": 2.5869733,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional2-fetch-results.json",
+    "sha256": "e04eb571b5e328504ea51ab348737e7e53a16a689adb0e288883cbbcd96c31cc",
+    "bytes": 1988,
+    "retrieved_at": "2026-10-26T14:31:59.309171+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "4ec4cf",
+      "wall_time_seconds": 10.0098262,
+      "session_id": 64799,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "batch_log": "additional2-fetch-results.json",
+    "attempt_recorded_at": "2026-10-26T14:32:18.331782+00:00"
+  },
+  {
+    "path": "sandbox/victim-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+    "http_status": 200,
+    "bytes": 1165225,
+    "sha256": "27bf101262de31d780b8a10d478e0b5ee73cd60169d292e57c7d9a0a3f1aeb57",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T22:17:16.289430+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json"
+  },
+  {
+    "path": "sandbox/endpoint-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x1a44076050125825900e736c501f859c50fe728c?fields=all",
+    "http_status": 200,
+    "bytes": 817718,
+    "sha256": "2f45d5e3bf2fdfa6396a35582c6da07da3a1ba306a115e65613b3ba6a0edea87",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T22:17:16.803816+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json"
+  },
+  {
+    "path": "sandbox/official-postmortem.html",
+    "url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-26T22:17:16.756627+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json",
+    "attempt_recorded_at": "2026-10-26T14:17:53.085031+00:00"
+  },
+  {
+    "path": "sandbox/takeover-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 1197,
+    "sha256": "d95a59bcdf294cda72f1c9aa16e0b148421267b6f4d7fff1c0f62ffa76ace589",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:15.666275+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json"
+  },
+  {
+    "path": "sandbox/takeover-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 2433,
+    "sha256": "bdb906b27f3b3e76ac19f0ba5aeee694ad6adfa95f022dc9c318c3e81c5e66dc",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:18.059699+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json"
+  },
+  {
+    "path": "sandbox/mint-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+      ]
+    },
+    "error": "The read operation timed out",
+    "retrieved_at": "2026-10-26T22:17:53.080129+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json",
+    "sha256": "9a0b59d3d6789dfaad78b2f6b14c77ab873473f49cbcda38ec9371b6348d5e83",
+    "bytes": 1452
+  },
+  {
+    "path": "sandbox/mint-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 3262,
+    "sha256": "0937a891b88e5e9bd1e6f769e837b7ff7e92059a141ab13c6439b6d99fc5f91c",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:16.647441+08:00",
+    "batch_log": "candidate_jobs-fetch-results.json"
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "success": false,
+    "error": "Request timed out after 35 seconds; no response file was produced.",
+    "attempt_recorded_at": "2026-10-26T14:52:53.278462+00:00",
+    "failure_source": "Parent confirmed final execution result in task message; exec session 64799."
+  },
+  {
+    "path": "sandbox/sale-helper-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e?fields=all",
+    "method": "GET",
+    "http_status": 404,
+    "sha256": "dbb39b17728d13f62bc01159394124d7d35cac653032e9e0af15232321f92247",
+    "bytes": 127,
+    "retrieved_at": "2026-10-26T15:07:48.269203+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+    "failure": "Sourcify returned match=null, creationMatch=null and runtimeMatch=null; exact raw JSON retained."
+  },
+  {
+    "path": "sandbox/sale-helper-runtime-before-mint.json",
+    "url": "https://mainnet.base.org",
+    "method": "POST",
+    "http_status": 200,
+    "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+    "bytes": 3440,
+    "retrieved_at": "2026-10-26T15:08:23.375015+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "0x2ff42b4"
+      ]
+    }
+  },
+  {
+    "path": "sandbox/sale-helper-runtime-attack.json",
+    "url": "https://mainnet.base.org",
+    "method": "POST",
+    "http_status": 200,
+    "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+    "bytes": 3440,
+    "retrieved_at": "2026-10-26T15:07:48.376015+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "0x2ff42b7"
+      ]
+    }
+  },
+  {
+    "path": "sandbox/ethervm-form.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "GET",
+    "http_status": 200,
+    "sha256": "ea82f1a1c6a77c0d11dad18ab6220d5670f701fab8d67e5ac86001337ae03229",
+    "bytes": 6287,
+    "retrieved_at": "2026-10-26T15:08:05.095651+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion."
+  },
+  {
+    "path": "sandbox/sale-helper-ethervm-response.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "POST",
+    "http_status": 200,
+    "sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+    "bytes": 209721,
+    "retrieved_at": "2026-10-26T15:08:37.036116+00:00",
+    "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+    "request": {
+      "request_path": "sandbox/sale-helper-ethervm-request.txt",
+      "content_type": "application/x-www-form-urlencoded"
+    }
+  }
+]

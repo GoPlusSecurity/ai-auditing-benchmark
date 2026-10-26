@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "high_level_sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+  "runtime_sha256": "75046a49d0e9e0db35338bd0173c52972f0e6928882e2696ec9d5e085fb872cd",
+  "raw_html_sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+  "runtime_bytes": 1701,
+  "two_historical_runtimes_equal": true,
+  "request_bytecode_exact": true,
+  "artifact_hashes_checked": 10,
+  "original_source_bundle_count": 5,
+  "decompiled_line_links_valid": 3,
+  "sale_input_amount_matches_two_weth_transfers": true,
+  "loss_fields_still_blank": true,
+  "formal_dataset_write_performed_by_this_subagent": false
+}

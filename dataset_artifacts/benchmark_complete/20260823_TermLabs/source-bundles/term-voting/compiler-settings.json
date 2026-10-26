@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.17+commit.8df45f5f",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 2000,
+      "enabled": true
+    },
+    "evmVersion": "london",
+    "remappings": []
+  },
+  "name": "TokenVoting",
+  "fullyQualifiedName": "src/plugins/governance/majority-voting/token/TokenVoting.sol:TokenVoting"
+}

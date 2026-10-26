@@ -1,0 +1,11 @@
+{
+  "path": "moonwell/weth-borrow-raw-trace.json",
+  "url": "https://base.blockscout.com/api/v2/transactions/0x7043f55bdcf70ea2980c8729299a022e842a9a6b8622e1c5a7ac527051800f02/raw-trace",
+  "command_result": {
+    "chunk_id": "610927",
+    "wall_time_seconds": 7.3794971,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  }
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "path": "term/sources/helper-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1?fields=all",
+    "role": "attacker helper implementation; locator only",
+    "command_result": {
+      "chunk_id": "fe3c98",
+      "wall_time_seconds": 2.004782,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x3 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/vault-code-page.html",
+    "url": "https://etherscan.io/address/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2#code",
+    "command_result": {
+      "chunk_id": "6cef34",
+      "wall_time_seconds": 1.7717701,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/delay-code-page.html",
+    "url": "https://etherscan.io/address/0x35c99cf4a5df2d9bcd822bee32676d9590229e33#code",
+    "command_result": {
+      "chunk_id": "7a1759",
+      "wall_time_seconds": 2.1995906,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/vault-historical-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x26fcb50eec367ddab060ccf5e7394cecd95f7db2",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "7756a9",
+      "wall_time_seconds": 1.8489613,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/delay-historical-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x35c99cf4a5df2d9bcd822bee32676d9590229e33",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "5dd303",
+      "wall_time_seconds": 1.8179609,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/helper-historical-implementation.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x64e477800051efb06ae4086f4b258b270668b4df",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "b4f1b3",
+      "wall_time_seconds": 1.7158315,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/official-repo-tree.json",
+    "url": "https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/git/trees/main?recursive=1",
+    "role": "official repository inventory only",
+    "command_result": {
+      "chunk_id": "980280",
+      "wall_time_seconds": 1.2817914,
+      "exit_code": 1,
+      "original_token_count": 125,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://api.github.com/repos/term-finance/yea …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"message\": \"API rate limit exceeded for 129.227.114.209. (But here\\u0027s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\r\n  \"documentation_url\": \"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/official-repo-commit.json",
+    "url": "https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/commits/main",
+    "role": "pin official repository commit before source downloads",
+    "command_result": {
+      "chunk_id": "bf7c20",
+      "wall_time_seconds": 1.3674431,
+      "exit_code": 1,
+      "original_token_count": 125,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://api.github.com/repos/term-finance/yea …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"message\": \"API rate limit exceeded for 129.227.114.209. (But here\\u0027s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\r\n  \"documentation_url\": \"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "sandbox/config-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xb757a126b4cb78fded5ea63c67fcdba6ec8e5c949491b7d944106d2b6cce20c7"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "07b6f7",
+      "wall_time_seconds": 4.3699466000000005,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/dvn-verify-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xccf27c81e05e4280c21b8605e05d658b5ce4b4108fca629db9a1a3a4c44e9961"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "5b6c47",
+      "wall_time_seconds": 3.4756544,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/commit-verification-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaf28ebeb649f2234e6e44617ee93318af6300a48155d41fd6c4bd28a070fe076"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "25cdb4",
+      "wall_time_seconds": 2.5869733,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "4ec4cf",
+      "wall_time_seconds": 10.0098262,
+      "session_id": 64799,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "fh/receipt-bnb-official.json",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "b08d7f",
+      "wall_time_seconds": 0.9340595,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "fh/secondary-report-retry.html",
+    "url": "https://anomly.rs/falcon-heavy-token-reserve-sync-exploit",
+    "command_result": {
+      "chunk_id": "c36fde",
+      "wall_time_seconds": 10.007998,
+      "session_id": 78394,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "moonwell/chainlink-aggregator-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x6f49f44436a220c8aebd5776ab58b80ecb41622e",
+        "0x302d361"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "ce3b9a",
+      "wall_time_seconds": 2.0252189,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.0+commit.c7dfd78e",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "Delay",
+  "fullyQualifiedName": "contracts/Delay.sol:Delay"
+}

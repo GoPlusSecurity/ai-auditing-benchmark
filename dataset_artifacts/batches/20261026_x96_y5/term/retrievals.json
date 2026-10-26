@@ -1,0 +1,1399 @@
+[
+  {
+    "path": "term/sources/vault-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2?fields=all",
+    "role": "victim vault",
+    "command_result": {
+      "chunk_id": "932f6a",
+      "wall_time_seconds": 3.1048455,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x2 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2\"\r\n}\r\n"
+    },
+    "collection_log": "additional-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/sources/delay-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x35c99cf4a5df2d9bcd822bee32676d9590229e33?fields=all",
+    "role": "delay module",
+    "command_result": {
+      "chunk_id": "63d543",
+      "wall_time_seconds": 3.4412770999999998,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x3 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33\"\r\n}\r\n"
+    },
+    "collection_log": "additional-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/sources/helper-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x64e477800051efb06ae4086f4b258b270668b4df?fields=all",
+    "role": "attacker helper; locator only",
+    "command_result": {
+      "chunk_id": "797741",
+      "wall_time_seconds": 3.1239879,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "37e60f0f82aef1247d67ea2081479fd3312ed70164a66e8972eb037d22354604",
+    "bytes": 74734,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:52.772573+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/attacker-strategy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x184f2e57b4ce135181fa2a2166ac394339016338?fields=all",
+    "role": "attacker strategy; locator only",
+    "command_result": {
+      "chunk_id": "9782fb",
+      "wall_time_seconds": 2.9274779,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x1 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x184f2E57b4cE135181FA2A2166AC394339016338\"\r\n}\r\n"
+    },
+    "collection_log": "additional-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/execution-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "4846c2",
+      "wall_time_seconds": 7.2126142,
+      "exit_code": 1,
+      "original_token_count": 54,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://eth.llamarpc.com' -Method Post -Conte …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | error code: 525\r\n"
+    },
+    "collection_log": "additional-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/execution-trace.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "command_result": {
+      "chunk_id": "cad250",
+      "wall_time_seconds": 1.6278546,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "09a8e5cd25b746dc33bfc370123f1b6f1ccb10cb7a05fe8a0c4eb8cf0b212076",
+    "bytes": 127,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.405801+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "error",
+    "provider_error": {
+      "code": -32601,
+      "message": "the method debug_traceTransaction does not exist/is not available"
+    }
+  },
+  {
+    "path": "term/tx-787669.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "aa0e06",
+      "wall_time_seconds": 1.4036564,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "c6a14974b7928292a26346378980eea066941d1f05b8f2577e4a30b9103bc006",
+    "bytes": 1058,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.181421+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "non_null"
+  },
+  {
+    "path": "term/receipt-787669.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "66c39a",
+      "wall_time_seconds": 1.7291151999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "bytes": 38,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.582806+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "null"
+  },
+  {
+    "path": "term/tx-284fc5.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "8f8338",
+      "wall_time_seconds": 1.6979529,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "814839fc9dbf3f1fbd8b4e0b5f657190fa3cfcbebcb56e6f980f2c2389b84f7f",
+    "bytes": 739,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.503199+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "non_null"
+  },
+  {
+    "path": "term/receipt-284fc5.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "56543f",
+      "wall_time_seconds": 1.7914302,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "bytes": 38,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.712837+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "null"
+  },
+  {
+    "path": "term/tx-6e7353.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c3caed",
+      "wall_time_seconds": 1.76189,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "79eb50d77ea28a91d4171ed777ccbfa22edcd6e42b04564f9eed5de7731ef3e0",
+    "bytes": 738,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.639931+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "non_null"
+  },
+  {
+    "path": "term/receipt-6e7353.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "137825",
+      "wall_time_seconds": 1.6336978,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional-fetch-results.json",
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "bytes": 38,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:29:59.646051+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "rpc_result_status": "null"
+  },
+  {
+    "path": "term/sources/helper-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1?fields=all",
+    "role": "attacker helper implementation; locator only",
+    "command_result": {
+      "chunk_id": "fe3c98",
+      "wall_time_seconds": 2.004782,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x3 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\"\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/vault-code-page.html",
+    "url": "https://etherscan.io/address/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2#code",
+    "command_result": {
+      "chunk_id": "6cef34",
+      "wall_time_seconds": 1.7717701,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "sha256": "8669b37b780cd8bbf0b902bf33feffbba063487442f63dbcbb320ef2d8437204",
+    "bytes": 810975,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:31:54.504505+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/delay-code-page.html",
+    "url": "https://etherscan.io/address/0x35c99cf4a5df2d9bcd822bee32676d9590229e33#code",
+    "command_result": {
+      "chunk_id": "7a1759",
+      "wall_time_seconds": 2.1995906,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "sha256": "5d9b65af841cbe4f87e31831fbb4f7099fd1cd56e2534e5a76b75ceb301678b3",
+    "bytes": 589068,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:31:54.989820+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/vault-historical-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x26fcb50eec367ddab060ccf5e7394cecd95f7db2",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "7756a9",
+      "wall_time_seconds": 1.8489613,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/delay-historical-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x35c99cf4a5df2d9bcd822bee32676d9590229e33",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "5dd303",
+      "wall_time_seconds": 1.8179609,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/helper-historical-implementation.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x64e477800051efb06ae4086f4b258b270668b4df",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x189ebf0"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "b4f1b3",
+      "wall_time_seconds": 1.7158315,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/official-repo-tree.json",
+    "url": "https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/git/trees/main?recursive=1",
+    "role": "official repository inventory only",
+    "command_result": {
+      "chunk_id": "980280",
+      "wall_time_seconds": 1.2817914,
+      "exit_code": 1,
+      "original_token_count": 125,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://api.github.com/repos/term-finance/yea …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"message\": \"API rate limit exceeded for 129.227.114.209. (But here\\u0027s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\r\n  \"documentation_url\": \"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/official-repo-commit.json",
+    "url": "https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/commits/main",
+    "role": "pin official repository commit before source downloads",
+    "command_result": {
+      "chunk_id": "bf7c20",
+      "wall_time_seconds": 1.3674431,
+      "exit_code": 1,
+      "original_token_count": 125,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://api.github.com/repos/term-finance/yea …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"message\": \"API rate limit exceeded for 129.227.114.209. (But here\\u0027s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\r\n  \"documentation_url\": \"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"\r\n}\r\n"
+    },
+    "collection_log": "additional2-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/blockscout-execution-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs",
+    "role": "authoritative explorer historical transaction logs",
+    "command_result": {
+      "chunk_id": "c39fa8",
+      "wall_time_seconds": 10.0086695,
+      "session_id": 5332,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional3-fetch-results.json",
+    "sha256": "3e1424093756f60c1b223dc17892ef86153f006f31949ca4fad0663ae81b7120",
+    "bytes": 95643,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:33:22.960397+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-proposal-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8/logs",
+    "role": "authoritative explorer historical transaction logs",
+    "command_result": {
+      "chunk_id": "59b6c5",
+      "wall_time_seconds": 2.2279728,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional3-fetch-results.json",
+    "sha256": "3b44c5319a97dd9f9dabfcddbf38b6ae793791f8138d4b012f31cb2ae153aa96",
+    "bytes": 30110,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:33:10.085297+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-execution-internal.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions",
+    "role": "authoritative explorer historical internal transactions",
+    "command_result": {
+      "chunk_id": "708938",
+      "wall_time_seconds": 10.0107342,
+      "session_id": 7578,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "additional3-fetch-results.json",
+    "sha256": "af1d0dec4a191b2cd16f3d30ff177e67074555b05993a5e275c989a0d5fc113f",
+    "bytes": 58980,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:33:34.596280+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/research-locator.html",
+    "url": "https://defiprime.com/term-finance-governance-exploit",
+    "http_status": 200,
+    "bytes": 60492,
+    "sha256": "755bff7dbaeae010bb9e64c6400953c1d90655ba36b4560d310599c5206cf277",
+    "content_type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-10-26T22:17:13.515123+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true
+  },
+  {
+    "path": "term/official-governance.html",
+    "url": "https://developers.term.finance/periphery-contracts/curated-vaults/administration/term-vault-governance",
+    "http_status": 200,
+    "bytes": 584422,
+    "sha256": "635b289e7559895b4dc0a1fea5af7f35fd39111ee4de997bae52aeb15db0292b",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-26T22:17:15.453907+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true
+  },
+  {
+    "path": "term/official-recovery.html",
+    "url": "https://www.term.finance/post/term-vault-recovery-distribution-update",
+    "http_status": 200,
+    "bytes": 20771,
+    "sha256": "d71e44ead8b239980194fc6610ea8bee2f5c09ac6a1a8cc7ca388e3ff98aa5c9",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-26T22:17:13.061323+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true
+  },
+  {
+    "path": "term/execution-tx.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 738,
+    "sha256": "a97d6cdb17ff9e791ce80b8d9d0509f9ea45f201e7aefb1535ceb05b7bb0650c",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:18.584516+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true,
+    "rpc_result_status": "non_null"
+  },
+  {
+    "path": "term/execution-receipt.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 38,
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:17.585152+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true,
+    "rpc_result_status": "null"
+  },
+  {
+    "path": "term/proposal-tx.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 4852,
+    "sha256": "72ea8c48d377f4dc2fbb5bbb6d73bb272427339e147a686c19f7fc58ba256f8e",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:17.740813+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true,
+    "rpc_result_status": "non_null"
+  },
+  {
+    "path": "term/proposal-receipt.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 38,
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:17:17.684295+08:00",
+    "collection_log": "candidate_jobs-fetch-results.json",
+    "file_present": true,
+    "rpc_result_status": "null"
+  },
+  {
+    "path": "term/helper-implementation-code-page.html",
+    "url": "https://etherscan.io/address/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1#code",
+    "started_at": "2026-10-26T14:44:34.560Z",
+    "result": {
+      "chunk_id": "797bf3",
+      "wall_time_seconds": 1.5670663,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "797bf3",
+      "wall_time_seconds": 1.5670663,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "a4dfd392e0a12259ea0d38c37f43970dc44eec25a5cc6bad6b50c36ce50ccda0",
+    "bytes": 436929,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:36.684320+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/delay-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd54895B1121A2eE3f37b502F507631FA1331BED6?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "d3253f",
+      "wall_time_seconds": 3.2709747,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "d3253f",
+      "wall_time_seconds": 3.2709747,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "f490a27622b5a737cd7c60d54cf33195e578a296c08b163e65a6f28999cbbccb",
+    "bytes": 514816,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:38.240877+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/vault-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd8063123BBA3B480569244AE66BFE72B6c84b00d?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "e76d68",
+      "wall_time_seconds": 2.6349651,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "e76d68",
+      "wall_time_seconds": 2.6349651,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "5cc51925bdd40a0ac7b99a9a15935251a556b31c3c27817c74d207aa26ca44f5",
+    "bytes": 693649,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:37.822685+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/voting-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "8ed274",
+      "wall_time_seconds": 4.5773581,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "8ed274",
+      "wall_time_seconds": 4.5773581,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "60808a27f66bbda8161c60e07f85804477a0b4c20baa405e6c34d99bec312e88",
+    "bytes": 962752,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:39.582559+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/dao-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x52Af16664155608b845BE18aa29620EbF6eA2D3a?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "8cb501",
+      "wall_time_seconds": 4.0204802,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "8cb501",
+      "wall_time_seconds": 4.0204802,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "ec93c8e5af8cdf8695389ac8ae4e6bb0ba2ff3428afad23036fd0e1e1d7412b0",
+    "bytes": 864843,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:39.052549+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/delay-owner-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "50f77f",
+      "wall_time_seconds": 2.5790456,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "50f77f",
+      "wall_time_seconds": 2.5790456,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "8677824d51d30840f425f6a7d929ab061527d49db3e87a366a633fdab648792f",
+    "bytes": 856496,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:37.791380+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/sources/owner-dependency-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "db879a",
+      "wall_time_seconds": 3.3811347,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "db879a",
+      "wall_time_seconds": 3.3811347,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self1-fetch-results.json",
+    "sha256": "ab536a4bfbf0313e6bad89810d583baf3b6fd57367f736b0b78d7dc5c72a374c",
+    "bytes": 473963,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:38.515170+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/ethervm-form.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured.",
+    "collection_log": "term/self10-fetch-results.json",
+    "sha256": "c9074aac7c2fa59191b8efab74e6f520873d207e5157ac2edbc637ba70f9b75b",
+    "bytes": 6287,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:53:41.747207+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/helper-implementation-ethervm-address-response.html",
+    "url": "https://ethervm.io/decompile?address=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured.",
+    "collection_log": "term/self10-fetch-results.json",
+    "sha256": "9cbd3ef70d343f27dcf09a7db4afd4c8a8ae9a48a72ad400d5b2ac840550270e",
+    "bytes": 6011,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:56:19.785996+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/weth-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2?fields=all",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured.",
+    "collection_log": "term/self10-fetch-results.json",
+    "sha256": "c1565968c9dc78155ad1ddbf274e7c008ec5ddd4d89fffc6fba4884f336979b1",
+    "bytes": 143134,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:56:48.289907+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/blockscout-execution-logs2.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs?index=1182&block_number=25816049&items_count=50",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "4f5a51",
+      "wall_time_seconds": 4.8683778,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self2-fetch-results.json",
+    "sha256": "a7e274dae2f6cf50a66d5b2abfec6bd9c1220b034e167d8198d4e6122d79f4f9",
+    "bytes": 81736,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:00.912016+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-wrap-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2/logs",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "72bbfe",
+      "wall_time_seconds": 1.5189879,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self2-fetch-results.json",
+    "sha256": "f420b78c722b1b1d6ae16e80578858073e76e422705a09f72c79e6ef36619c09",
+    "bytes": 16242,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:57.818935+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-vote-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d/logs",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "e4ba79",
+      "wall_time_seconds": 1.4900660000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self2-fetch-results.json",
+    "sha256": "c09adc8d0b8c4b3cfcfe2cd4c9de4d86ac31bcef0a240e0f4fff47805a8fdb4e",
+    "bytes": 2372,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:44:57.765935+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-execution-internal2.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions?index=50&block_number=25816049&transaction_index=215&items_count=50",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "ad5341",
+      "wall_time_seconds": 10.0017716,
+      "session_id": 21442,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self2-fetch-results.json",
+    "sha256": "a984aa9e0d856f0ea8f04ec670b87a67fc4dcd6b342c7d166e85b795a16b6693",
+    "bytes": 96757,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:27.386162+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/voting-token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0?fields=all",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "8d25dd",
+      "wall_time_seconds": 3.4096036,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x5 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0\"\r\n}\r\n"
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/sources/safe-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552?fields=all",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "695b28",
+      "wall_time_seconds": 2.4548059,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "sha256": "19cadfc9313ae43cfd2bd6d867c596b9a6cc21d77ce8eaa58a0fd0200b65dd97",
+    "bytes": 778189,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:47.850059+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/blockscout-wrapper-transfers.json",
+    "url": "https://eth.blockscout.com/api/v2/tokens/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0/transfers",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "9d9cd8",
+      "wall_time_seconds": 2.5692732,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "sha256": "53649961fc184f241b59552845f57fd6e4167b38fc918d59224d42c70fdb6a0d",
+    "bytes": 12820,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:48.003878+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-wrap-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2/raw-trace",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "b0276a",
+      "wall_time_seconds": 1.5698056999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "sha256": "8bc0efa4947db8b54e43fac5681169faece0be55af9ebd1581f661fb13050137",
+    "bytes": 10259,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:47.034444+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-execution-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/raw-trace",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "d48a68",
+      "wall_time_seconds": 1.861132,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "sha256": "6cc4460162a4c28ddcc8b368d415190aadb1432b5c73cbfd8c38703d63f93a81",
+    "bytes": 279988,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:47.341540+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-execution-transaction.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+    "started_at": "2026-10-26T14:45:45.245Z",
+    "command_result": {
+      "chunk_id": "cab4e1",
+      "wall_time_seconds": 5.2667064,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self3-fetch-results.json",
+    "sha256": "64505d0ae2e32db96105cecc235f97f58c61348c4426dd6f287d1aa34f4e0dd4",
+    "bytes": 25416,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:45:50.679842+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/voting-token-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xcc925a32fa4fa41c42a7d5585d69c980b6fa9342?fields=all",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "4f219a",
+      "wall_time_seconds": 2.3927608,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self4-fetch-results.json",
+    "sha256": "f3a96e42c42b01add4f431ab77744c1b2d7e79dcf764b20f51fe235ae043f4a0",
+    "bytes": 924126,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:46:46.241116+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded",
+    "authoritative_source_response": true
+  },
+  {
+    "path": "term/blockscout-proposal-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8/raw-trace",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "d5d8cf",
+      "wall_time_seconds": 1.3930744,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self4-fetch-results.json",
+    "sha256": "770a8c9c7f147c7a0a65662a0557163a708a82b8d5c526f5fa60928c9b4ff938",
+    "bytes": 37672,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:46:45.290936+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-vote-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d/raw-trace",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "81fb1a",
+      "wall_time_seconds": 1.2107866999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self4-fetch-results.json",
+    "sha256": "1b862d4e8c6616c3a0223572c0bb042366948c13054906797cbc0b480ba467c3",
+    "bytes": 5472,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:46:45.168619+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-deposit-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e/logs",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "61d757",
+      "wall_time_seconds": 7.9813776,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self4-fetch-results.json",
+    "sha256": "53ba16a05cb817f6f20dba267d4921f567d101029b200e7972f78cf7be108025",
+    "bytes": 57724,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:46:51.853544+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/attacker-strategy-code-page.html",
+    "url": "https://etherscan.io/address/0x184f2E57b4cE135181FA2A2166AC394339016338#code",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "8867be",
+      "wall_time_seconds": 1.5491741,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self5-fetch-results.json",
+    "sha256": "db019eae919718b51d1e25bbece8f470ceab7ebd559a3e73c7f703a422cb89e1",
+    "bytes": 414226,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:47:50.224459+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/attacker-strategy-decompiler.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "c85b35",
+      "wall_time_seconds": 1.0142543,
+      "exit_code": 1,
+      "original_token_count": 1021,
+      "output": "Warning: truncated output (original token count: 1021)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://etherscan.io/bytecode-decompiler?a=0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '4IaKYtqPRHRu9cXIb.QxDMjf2X_H5jhr5tI9OezyUKg-1793026069-1.2.1.1-UAQJxIKyK.aS4ITWKgiHO88VWcqrBPb5wo7xcTs107b0wpakbvLAoJQ1tsnQbvEb',cITimeS: '1793026069',cN: 'Voenw9dkOA9t6WW62pDWrw',cRay: 'a50a42288a5cd756',cTplC:0,cTplO:0,cTplV:5,cType: 'non-interactive',cUPMDTk:\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\",cvId: '3',cZone: 'etherscan.io',fa:\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_f_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\",md: '99hbYzcsP6fzdkD7RmWr_2Gj_g8ve1wM0lW4EfQMcWY-1793026069-1.2.1.1-aGORPA29PAVpavG5e5ItxKOH8zpHIe_M_QiAG_SroMu9jyI0uT4syQcgHObZMCJn49WDlBb7k0vvu1EQP4Pe3rib4I4oedwOaESdwDJQEHqrq1OzCXbhuGM_lWdQmWrqFBoQxVUWp4ynIdDNwqrlQFAs_k_U_FY6Nc_urBoXvowkfQGUeAwi7VDlwaW.OJAXZOQ4_e9Xswjps1DOm.Lm6bKaPaA7uZHd3mHgv2dK8KwF.sI00BJ9txP_kwuE3Nk78H.olfZ8sSJsPIYkLaYkkG_h68knVM088hj8jsf2EnXMvbPT2stV_YPhxKiRe816hHmFtBK05DqzzmGoKNAs_Hq0Eex15JjWcqspzr.KzQTmhL6JqrYnaAFHNCd_aDSIQn8jKxL6DgIZVtpruVe6TxTBEtr4h5JP00QdJd1v8awdfZEBekMkSJCN3JqwhfDWGeY02WRDeSkS.dz.OksIgc5nXl.8qzrLPVSV0D8bFOh…21 tokens truncated…G1MA_4.9F92HSbSsuGdKzOv0Tr8Rf4Y6SR_UrhTSg2eK3bI.wA_ManLl.nvXR77jLvLJDSXNWMC.eTh7hZbs9WEEy8jnpV6.SJzMpKhHxVnQCnCI1q30c9pVIsT5KlTK5BXuag2_7r6HM6HsUMHbf7gx_rwydDGoDYafxqKZlfmE9uhjNkdR0LnnJ0dnInz5iIs48F5XTLNgcDGzHIJQ0mByYxhlXuoe9BscoPOWD4AZFyP7ck.xXa0C9wjvOzDD4u3dpu2AzEDu3Rq2nofvFvUSISVCoXF_xEmuGZdOXEsjBra6cp3fcLQ0oj78YJebWatKE6N31N1eNfDaDlSvl5Wr9HRJ7rXLEr_PUJaGrN6ypJhIOxmWNgLe5COVgrQTeu_9JK4HnwaDfH7StW2P_ef..tSj0Kwf_4NRc5nNAnbO928MzFrld_U.LdejoEwvD.ZkzTR_oXXwFcLTRUqoX3D.7gw4wpp8_Sf.TLTwgzoYP9mmpPx5MPB1eU3.TYyM21zYGfUT4RYh9QGjXxFdAHM3doeNllFS7oJI0gSFAIst4jvQ5DbGqIps3H4pND1E0CvSvHQZ82T_VM5zLX5mydzgJZ4RCdKNjRnSsFU9lNUS.dfpYgvwNlJkdcZYvnTKJLzjoiHqDaT4y.FyJtF71DnXTg',mdrd: 'uYJ02OObJp5kTITwqPERgfrvMjvn3eNmR3Kb6j8CYCY-1793026069-1.2.1.1-IQUBxvjgWz6xDsMMDDFdhmkcNvlJF.5Z4dyM3ymuw0K6AsyknuCwSOpTyKdqSls2XB0bmrJHGANjH4yqhpry7KiGJ15qRxE13fZvYhWGy7c5V8Hee3GeTRgp_IuZ7gWdTX9gzE3xIWS.wlhDhW7HC9QCgRm_GFmPKuEtIWW4eBDSi3YzMTQZOHToWjpW.QGDz3D79TQN6qu5Pev2jr0CG4F8lbscUZKG5dYLsK_hfNWu4zf07bEBWDS40IvIYlnYA5dxv7_Y2PPjZDWcsvbR1A',};var a = document.createElement('script');a.nonce = 'Voenw9dkOA9t6WW62pDWrw';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a42288a5cd756';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_rt_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    },
+    "collection_log": "term/self5-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/helper-implementation-decompiler.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "2c63cd",
+      "wall_time_seconds": 1.0751424,
+      "exit_code": 1,
+      "original_token_count": 1021,
+      "output": "Warning: truncated output (original token count: 1021)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://etherscan.io/bytecode-decompiler?a=0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '59eGnHZ7jMEGL6VWrZY7UwQCfw.oM.zzBFb74QRMsAw-1793026069-1.2.1.1-hTiKpteK_YenzGP0VtZYGN6ShCCuWpszVcnhv9lIjrVTuD0OzdKcEZVPV3It5DZp',cITimeS: '1793026069',cN: '5D2xW6TT1689aBEsukNcfe',cRay: 'a50a4228b8ced54a',cTplC:0,cTplO:0,cTplV:5,cType: 'non-interactive',cUPMDTk:\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\",cvId: '3',cZone: 'etherscan.io',fa:\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_f_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\",md: 'tUU7aSQjw8Crz1xixMrRuSOkJnXMGn2.tO7WjFfgizc-1793026069-1.2.1.1-LkX9f4LDE5fLVR3bnNbRtu1Z7rQBNTTUju2CPPJR5b18JIe1Us5V3fXrY4fV4WVnFcx_lsb3K2suHQW6BtLCCuFYSH3l3WsJB2bNMZ_c5.PD54WcB95eimU8C5YdEM3lHFPkkZ2xglZwl0YApONAF2fk7K8rF3HfMHlcj6jBANrRfijAzVNalqu7k0k6IYLXs2rh7dvHku6g5KXNpBmBbcwO.Lygi42fPPpZCE8mc4FFlX0UHxqmFTHTyEPtnHfXT1IA4i36jixL6QDGjkIwvLecUoCE1jeZuNqMXiVJkn9rb3ANOV_GJRaOO.qd2LfN3eZSReorS9.st_IDhKh.szkjs_FQvADYZOC62Y_.Uby0Ouz_m1eG2R3gfWf5y0Gc9tHjTbezgVZSaon4Gudo5bdpVL_SSh5AseQrWgcWZib_Z7SOWhC3AZvLL9wgMnSqUQd7F3eKWMhTfBc0HpE6rWAFWZCqTMiRD8LG.jZRyoE…21 tokens truncated…D6HihSjD6AEzUMirw6Y7kg6EqkW4rQ84QI6lHmVw7kOPH6aT_yY9PrptBuNxmkmJ0HBCQ6Nwx.xaEKWsFG8Ezuro1Gt09gPkiKn6GYACu_VHukqV6nhemWVTZRFfYnTLIhnLf33B9RqJJFeGYP_El9hWWJhcx._obNoi9rbIKJsje.zOvs9F2o1QYDda1hb.jKNYrVr_430t2RDCnLufw_r2X7G1sfH4sl68ZduugRinR5VDRMHVapKlXOyJUPxfwxUDpu7esRLSm3a93No8z7Yb0pLf.kw4bp64soPzv_v.MpvhVY91dgVUzjvfd3gE_EorvVu01kncsq6LS4DeW4RfmfKZHNjyFWq7A1MdEkkHk1wFRySCRT5bEIQGxzDofohcUvCC2g._FmqWqEKCZhUaCb1JkOsjj9GSXASrUbFeWwueDlcPA_vKJ6Zd1Q0Umf8cZLEN0RtAeZ5B3CH.R_9fHCa1VPzpryaKF3mcTwsDoCa.f9dVBUykPQz6YkRwG3OMJemyT.6ohEtQnj9KsajHUB6EliwWKl4Aoy47DKn5bu98p4KzkUC4oK3RhTatAGAgbZ.16gemdRViRVZ.PSHrwkzMDfM.jAmBMNEtyDwfANySRSDBtjhvJ_TA.0pSp.YiXl_sAgv9LI2xX0a1ytiCTg',mdrd: 'DRvGjGA7LV0bpq9XR02lmbDJnKnDaFpQ_Xt0EHT8D8o-1793026069-1.2.1.1-LOqM5_Y_yzTWtVtHqwp6s2dVJ0wJ83UjR_8A3C5URmOvHOUb0ta9yvige6YqAbYQKJ0.BFH7NcsmdEcrTomzdiLxS_ApXISPALvFmxki_4IucXxYxqOB7Aly9p1PA4Cnmh7_q76jeqpt4bahPMgO2Bhpk3TibOIeBtzQ_Eoo4XUlcW3Qm9bd4ab0Tn2DjceLJbA2ueZd5HrL0Cyfxf2sPgfyweL5TU7bELZMKkGOxBKgMI7qnBrKEt2ZbOBZciJXgpyWkQQvem_E50wcTrO3lQ',};var a = document.createElement('script');a.nonce = '5D2xW6TT1689aBEsukNcfe';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a4228b8ced54a';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_rt_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    },
+    "collection_log": "term/self5-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/attacker-strategy-attack-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x184f2E57b4cE135181FA2A2166AC394339016338",
+        "0x189ebf1"
+      ]
+    },
+    "started_at": "2026-10-26T14:47:50.980Z",
+    "command_result": {
+      "chunk_id": "bb6543",
+      "wall_time_seconds": 1.5607661,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    },
+    "collection_log": "term/self5-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/helper-implementation-attack-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+        "0x189ebf1"
+      ]
+    },
+    "started_at": "2026-10-26T14:47:50.980Z",
+    "command_result": {
+      "chunk_id": "b006d6",
+      "wall_time_seconds": 1.6785367,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    },
+    "collection_log": "term/self5-fetch-results.json",
+    "file_present": false
+  },
+  {
+    "path": "term/attacker-strategy-decompiler-failure.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "001803",
+      "wall_time_seconds": 0.8173741,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self6-fetch-results.json",
+    "sha256": "c06d6205f3afeb8a979366af3a94569d9d11ddddb010d0162223c47f5485af5f",
+    "bytes": 5778,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:49:07.717178+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/helper-implementation-decompiler-failure.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "700f82",
+      "wall_time_seconds": 0.8885536,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self6-fetch-results.json",
+    "sha256": "fcfdc469d693e5608a481ec8b89ebfcee83ddee6e5055183b0c0ee81c6b49f74",
+    "bytes": 5778,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:49:07.845686+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-code.json",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "345e20",
+      "wall_time_seconds": 1.9237773,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self6-fetch-results.json",
+    "sha256": "ed6b4dc8a4dbaa2e307a9d239c56e343e385f4a547aa8a48c0a877653f617cfa",
+    "bytes": 10941,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:49:08.964850+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-helper-implementation-code.json",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "375fcb",
+      "wall_time_seconds": 2.2014232,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self6-fetch-results.json",
+    "sha256": "be86e1498b210ea96a65e2ff1d66aef30b38f590d9ed6f9488ad71e7cbdd25f9",
+    "bytes": 49905,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:49:09.207195+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/voting-proxy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x213771693A4411446b4ECce5bce4a405778b2171?fields=all",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "d6def4",
+      "wall_time_seconds": 1.7473461000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self7-fetch-results.json",
+    "sha256": "ee4046a9ad1ed765bffd4ce83febe6b80907ec148abe260ef81fa1652905bb8e",
+    "bytes": 124,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:50:33.087544+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/sources/dao-proxy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6?fields=all",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "49a6d0",
+      "wall_time_seconds": 2.4817856,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self7-fetch-results.json",
+    "sha256": "64235728faeb5054bdf738187d08feba02b86a6517bb6462f8d4a147ef42bf9d",
+    "bytes": 124,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:50:33.887030+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-address.json",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "16d1c1",
+      "wall_time_seconds": 1.6283839,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self7-fetch-results.json",
+    "sha256": "67270461c32bd2bce08c86545bb76f0c377307804c45185920d51b317fe0b096",
+    "bytes": 1099,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:50:33.089773+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-helper-implementation-address.json",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:50:30.932Z",
+    "command_result": {
+      "chunk_id": "01d0d3",
+      "wall_time_seconds": 1.5391408,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self7-fetch-results.json",
+    "sha256": "8c97d0c63549425713c4ef49d49788be2a860d40234dc61e137e4678731b5e68",
+    "bytes": 723,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:50:33.088537+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-creation-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60/raw-trace",
+    "started_at": "2026-10-26T14:51:40.107Z",
+    "command_result": {
+      "chunk_id": "5c84be",
+      "wall_time_seconds": 1.1068428,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self8-fetch-results.json",
+    "sha256": "8da8319051129da8aad869db05d146d8909ba4dd03ce608ba6cb9757ab7a0acd",
+    "bytes": 11068,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:51:41.312116+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-helper-implementation-creation-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x397cfc3d084045c84025078aea5ecc5543b6b57c5c2eda42756176de3a023ae0/raw-trace",
+    "started_at": "2026-10-26T14:51:40.107Z",
+    "command_result": {
+      "chunk_id": "9afdf1",
+      "wall_time_seconds": 1.4311277,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self8-fetch-results.json",
+    "sha256": "db445852d397ccdee3eba4be4c0206f3577c42417cc2c68b7d04ba8d6c9dadae",
+    "bytes": 50034,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:51:41.786127+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-creation-tx.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60",
+    "started_at": "2026-10-26T14:51:40.107Z",
+    "command_result": {
+      "chunk_id": "8ff8e6",
+      "wall_time_seconds": 1.3993566,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self8-fetch-results.json",
+    "sha256": "8ca017cfcc34bff3049cb65d0cbe5573df2114c83240b9229faff78b4a4d1031",
+    "bytes": 7367,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:51:41.703131+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/blockscout-helper-implementation-creation-tx.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x397cfc3d084045c84025078aea5ecc5543b6b57c5c2eda42756176de3a023ae0",
+    "started_at": "2026-10-26T14:51:40.107Z",
+    "command_result": {
+      "chunk_id": "22ff07",
+      "wall_time_seconds": 1.3261058000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self8-fetch-results.json",
+    "sha256": "3e903a5455c352e3e47c2c2ce04543131aae6d6bb3cfc952596ad809043b5533",
+    "bytes": 26648,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:51:41.793487+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/attacker-strategy-ethervm-response.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "POST",
+    "request_path": "term/attacker-strategy-ethervm-request.txt",
+    "started_at": "2026-10-26T14:53:57.605Z",
+    "command_result": {
+      "chunk_id": "2953c7",
+      "wall_time_seconds": 9.5010496,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self9-fetch-results.json",
+    "sha256": "4d5cd72fc873838267834f4e20275e6ca8eef4adc07b41d010a134f979e4d75c",
+    "bytes": 278677,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:54:07.204787+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  },
+  {
+    "path": "term/helper-implementation-ethervm-response.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "POST",
+    "request_path": "term/helper-implementation-ethervm-request.txt",
+    "started_at": "2026-10-26T14:53:57.605Z",
+    "command_result": {
+      "chunk_id": "91abaf",
+      "wall_time_seconds": 3.9504268,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "collection_log": "term/self9-fetch-results.json",
+    "sha256": "95146ee24d9b7e8d53a025dbfc1ff5a4c3fdaed2ed10b2c04dfbe056548ae530",
+    "bytes": 5372,
+    "file_present": true,
+    "retrieved_at": "2026-10-26T14:54:01.620793+00:00",
+    "retrieved_at_basis": "local downloaded file last-write time; exact response timestamp not recorded"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "path": "term/attacker-strategy-code-page.html",
+    "url": "https://etherscan.io/address/0x184f2E57b4cE135181FA2A2166AC394339016338#code",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "8867be",
+      "wall_time_seconds": 1.5491741,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/attacker-strategy-decompiler.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "c85b35",
+      "wall_time_seconds": 1.0142543,
+      "exit_code": 1,
+      "original_token_count": 1021,
+      "output": "Warning: truncated output (original token count: 1021)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://etherscan.io/bytecode-decompiler?a=0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '4IaKYtqPRHRu9cXIb.QxDMjf2X_H5jhr5tI9OezyUKg-1793026069-1.2.1.1-UAQJxIKyK.aS4ITWKgiHO88VWcqrBPb5wo7xcTs107b0wpakbvLAoJQ1tsnQbvEb',cITimeS: '1793026069',cN: 'Voenw9dkOA9t6WW62pDWrw',cRay: 'a50a42288a5cd756',cTplC:0,cTplO:0,cTplV:5,cType: 'non-interactive',cUPMDTk:\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\",cvId: '3',cZone: 'etherscan.io',fa:\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_f_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\",md: '99hbYzcsP6fzdkD7RmWr_2Gj_g8ve1wM0lW4EfQMcWY-1793026069-1.2.1.1-aGORPA29PAVpavG5e5ItxKOH8zpHIe_M_QiAG_SroMu9jyI0uT4syQcgHObZMCJn49WDlBb7k0vvu1EQP4Pe3rib4I4oedwOaESdwDJQEHqrq1OzCXbhuGM_lWdQmWrqFBoQxVUWp4ynIdDNwqrlQFAs_k_U_FY6Nc_urBoXvowkfQGUeAwi7VDlwaW.OJAXZOQ4_e9Xswjps1DOm.Lm6bKaPaA7uZHd3mHgv2dK8KwF.sI00BJ9txP_kwuE3Nk78H.olfZ8sSJsPIYkLaYkkG_h68knVM088hj8jsf2EnXMvbPT2stV_YPhxKiRe816hHmFtBK05DqzzmGoKNAs_Hq0Eex15JjWcqspzr.KzQTmhL6JqrYnaAFHNCd_aDSIQn8jKxL6DgIZVtpruVe6TxTBEtr4h5JP00QdJd1v8awdfZEBekMkSJCN3JqwhfDWGeY02WRDeSkS.dz.OksIgc5nXl.8qzrLPVSV0D8bFOh…21 tokens truncated…G1MA_4.9F92HSbSsuGdKzOv0Tr8Rf4Y6SR_UrhTSg2eK3bI.wA_ManLl.nvXR77jLvLJDSXNWMC.eTh7hZbs9WEEy8jnpV6.SJzMpKhHxVnQCnCI1q30c9pVIsT5KlTK5BXuag2_7r6HM6HsUMHbf7gx_rwydDGoDYafxqKZlfmE9uhjNkdR0LnnJ0dnInz5iIs48F5XTLNgcDGzHIJQ0mByYxhlXuoe9BscoPOWD4AZFyP7ck.xXa0C9wjvOzDD4u3dpu2AzEDu3Rq2nofvFvUSISVCoXF_xEmuGZdOXEsjBra6cp3fcLQ0oj78YJebWatKE6N31N1eNfDaDlSvl5Wr9HRJ7rXLEr_PUJaGrN6ypJhIOxmWNgLe5COVgrQTeu_9JK4HnwaDfH7StW2P_ef..tSj0Kwf_4NRc5nNAnbO928MzFrld_U.LdejoEwvD.ZkzTR_oXXwFcLTRUqoX3D.7gw4wpp8_Sf.TLTwgzoYP9mmpPx5MPB1eU3.TYyM21zYGfUT4RYh9QGjXxFdAHM3doeNllFS7oJI0gSFAIst4jvQ5DbGqIps3H4pND1E0CvSvHQZ82T_VM5zLX5mydzgJZ4RCdKNjRnSsFU9lNUS.dfpYgvwNlJkdcZYvnTKJLzjoiHqDaT4y.FyJtF71DnXTg',mdrd: 'uYJ02OObJp5kTITwqPERgfrvMjvn3eNmR3Kb6j8CYCY-1793026069-1.2.1.1-IQUBxvjgWz6xDsMMDDFdhmkcNvlJF.5Z4dyM3ymuw0K6AsyknuCwSOpTyKdqSls2XB0bmrJHGANjH4yqhpry7KiGJ15qRxE13fZvYhWGy7c5V8Hee3GeTRgp_IuZ7gWdTX9gzE3xIWS.wlhDhW7HC9QCgRm_GFmPKuEtIWW4eBDSi3YzMTQZOHToWjpW.QGDz3D79TQN6qu5Pev2jr0CG4F8lbscUZKG5dYLsK_hfNWu4zf07bEBWDS40IvIYlnYA5dxv7_Y2PPjZDWcsvbR1A',};var a = document.createElement('script');a.nonce = 'Voenw9dkOA9t6WW62pDWrw';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a42288a5cd756';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338\\u0026__cf_chl_rt_tk=xEH_Pidf2gkvu1u54yvWZGcm1qbCX6O5g.XKeuc7ceE-1793026069-1.0.1.1-QYv_fwDj4_cmIoOQObFVLfos3T2PHWoq8RmwsaLlXR4\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    }
+  },
+  {
+    "path": "term/helper-implementation-decompiler.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:47:48.050Z",
+    "command_result": {
+      "chunk_id": "2c63cd",
+      "wall_time_seconds": 1.0751424,
+      "exit_code": 1,
+      "original_token_count": 1021,
+      "output": "Warning: truncated output (original token count: 1021)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://etherscan.io/bytecode-decompiler?a=0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '59eGnHZ7jMEGL6VWrZY7UwQCfw.oM.zzBFb74QRMsAw-1793026069-1.2.1.1-hTiKpteK_YenzGP0VtZYGN6ShCCuWpszVcnhv9lIjrVTuD0OzdKcEZVPV3It5DZp',cITimeS: '1793026069',cN: '5D2xW6TT1689aBEsukNcfe',cRay: 'a50a4228b8ced54a',cTplC:0,cTplO:0,cTplV:5,cType: 'non-interactive',cUPMDTk:\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\",cvId: '3',cZone: 'etherscan.io',fa:\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_f_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\",md: 'tUU7aSQjw8Crz1xixMrRuSOkJnXMGn2.tO7WjFfgizc-1793026069-1.2.1.1-LkX9f4LDE5fLVR3bnNbRtu1Z7rQBNTTUju2CPPJR5b18JIe1Us5V3fXrY4fV4WVnFcx_lsb3K2suHQW6BtLCCuFYSH3l3WsJB2bNMZ_c5.PD54WcB95eimU8C5YdEM3lHFPkkZ2xglZwl0YApONAF2fk7K8rF3HfMHlcj6jBANrRfijAzVNalqu7k0k6IYLXs2rh7dvHku6g5KXNpBmBbcwO.Lygi42fPPpZCE8mc4FFlX0UHxqmFTHTyEPtnHfXT1IA4i36jixL6QDGjkIwvLecUoCE1jeZuNqMXiVJkn9rb3ANOV_GJRaOO.qd2LfN3eZSReorS9.st_IDhKh.szkjs_FQvADYZOC62Y_.Uby0Ouz_m1eG2R3gfWf5y0Gc9tHjTbezgVZSaon4Gudo5bdpVL_SSh5AseQrWgcWZib_Z7SOWhC3AZvLL9wgMnSqUQd7F3eKWMhTfBc0HpE6rWAFWZCqTMiRD8LG.jZRyoE…21 tokens truncated…D6HihSjD6AEzUMirw6Y7kg6EqkW4rQ84QI6lHmVw7kOPH6aT_yY9PrptBuNxmkmJ0HBCQ6Nwx.xaEKWsFG8Ezuro1Gt09gPkiKn6GYACu_VHukqV6nhemWVTZRFfYnTLIhnLf33B9RqJJFeGYP_El9hWWJhcx._obNoi9rbIKJsje.zOvs9F2o1QYDda1hb.jKNYrVr_430t2RDCnLufw_r2X7G1sfH4sl68ZduugRinR5VDRMHVapKlXOyJUPxfwxUDpu7esRLSm3a93No8z7Yb0pLf.kw4bp64soPzv_v.MpvhVY91dgVUzjvfd3gE_EorvVu01kncsq6LS4DeW4RfmfKZHNjyFWq7A1MdEkkHk1wFRySCRT5bEIQGxzDofohcUvCC2g._FmqWqEKCZhUaCb1JkOsjj9GSXASrUbFeWwueDlcPA_vKJ6Zd1Q0Umf8cZLEN0RtAeZ5B3CH.R_9fHCa1VPzpryaKF3mcTwsDoCa.f9dVBUykPQz6YkRwG3OMJemyT.6ohEtQnj9KsajHUB6EliwWKl4Aoy47DKn5bu98p4KzkUC4oK3RhTatAGAgbZ.16gemdRViRVZ.PSHrwkzMDfM.jAmBMNEtyDwfANySRSDBtjhvJ_TA.0pSp.YiXl_sAgv9LI2xX0a1ytiCTg',mdrd: 'DRvGjGA7LV0bpq9XR02lmbDJnKnDaFpQ_Xt0EHT8D8o-1793026069-1.2.1.1-LOqM5_Y_yzTWtVtHqwp6s2dVJ0wJ83UjR_8A3C5URmOvHOUb0ta9yvige6YqAbYQKJ0.BFH7NcsmdEcrTomzdiLxS_ApXISPALvFmxki_4IucXxYxqOB7Aly9p1PA4Cnmh7_q76jeqpt4bahPMgO2Bhpk3TibOIeBtzQ_Eoo4XUlcW3Qm9bd4ab0Tn2DjceLJbA2ueZd5HrL0Cyfxf2sPgfyweL5TU7bELZMKkGOxBKgMI7qnBrKEt2ZbOBZciJXgpyWkQQvem_E50wcTrO3lQ',};var a = document.createElement('script');a.nonce = '5D2xW6TT1689aBEsukNcfe';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a4228b8ced54a';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1\\u0026__cf_chl_rt_tk=eMzf6qDuh0slOt.LIJprUMOAdQIJ03hbnWY9PNjqlUQ-1793026069-1.0.1.1-P8dRJEXVahHZ2Xb14ZqJrRcv4dH0Dd4iA7tfXY6mo50\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    }
+  },
+  {
+    "path": "term/attacker-strategy-attack-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x184f2E57b4cE135181FA2A2166AC394339016338",
+        "0x189ebf1"
+      ]
+    },
+    "started_at": "2026-10-26T14:47:50.980Z",
+    "command_result": {
+      "chunk_id": "bb6543",
+      "wall_time_seconds": 1.5607661,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/helper-implementation-attack-code.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+        "0x189ebf1"
+      ]
+    },
+    "started_at": "2026-10-26T14:47:50.980Z",
+    "command_result": {
+      "chunk_id": "b006d6",
+      "wall_time_seconds": 1.6785367,
+      "exit_code": 1,
+      "original_token_count": 97,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://ethereum-rpc.publicnode.com' -Method  …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"error\": {\r\n    \"code\": -32602,\r\n    \"message\": \"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"\r\n  },\r\n  \"id\": 1\r\n}\r\n"
+    }
+  }
+]

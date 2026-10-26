@@ -1,0 +1,14 @@
+[
+  {
+    "path": "moonwell/market-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x1fadff493529c3fcc7ee04f1f15d19816dda45b7?fields=all"
+  },
+  {
+    "path": "moonwell/comptroller-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x73d8a3bf62aaca6690791e57ebaee4e1d875d8fe?fields=all"
+  },
+  {
+    "path": "moonwell/chainlink-oracle-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xec942be8a8114bfd0396a5052c36027f2ca6a9d0?fields=all"
+  }
+]

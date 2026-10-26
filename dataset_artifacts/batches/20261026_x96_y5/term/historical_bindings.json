@@ -1,0 +1,1049 @@
+{
+  "binding_method": "Historical parity rawtrace call frames, independent of present-day explorer proxy labels. Source verification is the provider assertion; no local recompilation.",
+  "bindings": [
+    {
+      "role": "voting",
+      "proxy": "0x213771693A4411446b4ECce5bce4a405778b2171",
+      "implementation": "0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27",
+      "source_bundle": "term-voting",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "proposal",
+          "transaction": "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-proposal-trace.json",
+          "array_index": 7,
+          "trace_address": [
+            0,
+            2,
+            0
+          ],
+          "input_selector": "0x9cba3021"
+        },
+        {
+          "stage": "vote",
+          "transaction": "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json",
+          "array_index": 3,
+          "trace_address": [
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x17d1b404"
+        },
+        {
+          "stage": "vote",
+          "transaction": "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json",
+          "array_index": 7,
+          "trace_address": [
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0xce6366c4"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 3,
+          "trace_address": [
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xcc63604a"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 5,
+          "trace_address": [
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0xfe0d94c1"
+        }
+      ]
+    },
+    {
+      "role": "wrapper",
+      "proxy": "0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0",
+      "implementation": "0xCC925a32fA4fa41c42a7d5585D69C980b6Fa9342",
+      "source_bundle": "term-voting-token",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 11,
+          "trace_address": [
+            0,
+            4,
+            0
+          ],
+          "input_selector": "0x2f4f21e2"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 17,
+          "trace_address": [
+            0,
+            6,
+            0
+          ],
+          "input_selector": "0x5c19a95c"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 19,
+          "trace_address": [
+            0,
+            7,
+            0
+          ],
+          "input_selector": "0x9ab24eb0"
+        },
+        {
+          "stage": "proposal",
+          "transaction": "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-proposal-trace.json",
+          "array_index": 3,
+          "trace_address": [
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x9ab24eb0"
+        },
+        {
+          "stage": "proposal",
+          "transaction": "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-proposal-trace.json",
+          "array_index": 5,
+          "trace_address": [
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0x3a46b1a8"
+        },
+        {
+          "stage": "proposal",
+          "transaction": "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-proposal-trace.json",
+          "array_index": 9,
+          "trace_address": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x8e539e8c"
+        },
+        {
+          "stage": "vote",
+          "transaction": "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json",
+          "array_index": 5,
+          "trace_address": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x3a46b1a8"
+        },
+        {
+          "stage": "vote",
+          "transaction": "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json",
+          "array_index": 9,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x3a46b1a8"
+        },
+        {
+          "stage": "vote",
+          "transaction": "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-vote-trace.json",
+          "array_index": 11,
+          "trace_address": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0x3a46b1a8"
+        }
+      ]
+    },
+    {
+      "role": "dao",
+      "proxy": "0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6",
+      "implementation": "0x52Af16664155608b845BE18aa29620EbF6eA2D3a",
+      "source_bundle": "term-dao",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 7,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xc71bf324"
+        }
+      ]
+    },
+    {
+      "role": "roles",
+      "proxy": "0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75",
+      "implementation": "0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84",
+      "source_bundle": "term-roles",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 9,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x9518aaac"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 14,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0x9518aaac"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 19,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "input_selector": "0x9518aaac"
+        }
+      ]
+    },
+    {
+      "role": "permission_library",
+      "implementation": "0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb",
+      "source_bundle": "term-permissions",
+      "status": "historical_library_delegatecall_observed",
+      "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+      "observations": [
+        {
+          "array_index": 10,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "call_type": "delegatecall",
+          "caller": "0xd9dde54d99a27f0f0e2b282369bfaa95528e9b75"
+        },
+        {
+          "array_index": 15,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "call_type": "delegatecall",
+          "caller": "0xd9dde54d99a27f0f0e2b282369bfaa95528e9b75"
+        },
+        {
+          "array_index": 20,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "call_type": "delegatecall",
+          "caller": "0xd9dde54d99a27f0f0e2b282369bfaa95528e9b75"
+        }
+      ]
+    },
+    {
+      "role": "delay",
+      "proxy": "0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33",
+      "implementation": "0xd54895B1121A2eE3f37b502F507631FA1331BED6",
+      "source_bundle": "term-delay",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 12,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0xebb2b4a2"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 17,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0x9b56d5be"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 22,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0x610b5925"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 24,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 26,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 95,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 97,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 166,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            7,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 168,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 264,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            9,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 266,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            10,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 357,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 359,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            12,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 366,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 368,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 374,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            15,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 376,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          "input_selector": "0xee072baf"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 386,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "input_selector": "0xdcafac09"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 388,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "input_selector": "0x605df59c"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 390,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            2,
+            0
+          ],
+          "input_selector": "0x2d9ad53d"
+        }
+      ]
+    },
+    {
+      "role": "safe",
+      "proxy": "0x46DA347d1Db6EdCA62BF6Cd5892Dc284fC938613",
+      "implementation": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+      "source_bundle": "term-safe",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 28,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 99,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 170,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 268,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 361,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 370,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 378,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x468721a7"
+        }
+      ]
+    },
+    {
+      "role": "vault",
+      "proxy": "0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2",
+      "implementation": "0xd8063123BBA3B480569244AE66BFE72B6c84b00d",
+      "source_bundle": "term-vault",
+      "status": "historical_delegatecall_observed",
+      "observations": [
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 3,
+          "trace_address": [
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x70a08231"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 5,
+          "trace_address": [
+            0,
+            1,
+            0
+          ],
+          "input_selector": "0xd505accf"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 7,
+          "trace_address": [
+            0,
+            2,
+            0
+          ],
+          "input_selector": "0x23b872dd"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 9,
+          "trace_address": [
+            0,
+            3,
+            0
+          ],
+          "input_selector": "0x095ea7b3"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 13,
+          "trace_address": [
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0x23b872dd"
+        },
+        {
+          "stage": "wrap",
+          "transaction": "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-wrap-trace.json",
+          "array_index": 15,
+          "trace_address": [
+            0,
+            5,
+            0
+          ],
+          "input_selector": "0x095ea7b3"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 30,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xba54971f"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 101,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xba54971f"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 172,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xba54971f"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 270,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xba54971f"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 363,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xc2e73cca"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 372,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xb9ddcd68"
+        },
+        {
+          "stage": "execution",
+          "transaction": "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+          "trace_file": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-execution-trace.json",
+          "array_index": 380,
+          "trace_address": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "input_selector": "0xba54971f"
+        }
+      ]
+    }
+  ],
+  "weth_status": "Historical direct WETH calls/transfers at the verified non-proxy address observed; independent historical eth_getCode unavailable.",
+  "not_reconstructed": "All historical storage/configuration and upgrades outside these calls."
+}

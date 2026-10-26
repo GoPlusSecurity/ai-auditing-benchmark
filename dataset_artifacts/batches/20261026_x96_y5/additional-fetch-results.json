@@ -1,0 +1,448 @@
+[
+  {
+    "path": "sandbox/receive-library-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xc70ab6f32772f59fbfc23889caf4ba3376c84baf?fields=all",
+    "command_result": {
+      "chunk_id": "286d8a",
+      "wall_time_seconds": 2.1702591,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/intermediate-txlist.json",
+    "url": "https://base.blockscout.com/api?module=account&action=txlist&address=0x67624bfadee937c9281b4f98ce18af1bee01257e&startblock=50283177&endblock=50283189&sort=asc",
+    "command_result": {
+      "chunk_id": "90878b",
+      "wall_time_seconds": 1.6229453999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/official-postmortem.html",
+    "url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+    "command_result": {
+      "chunk_id": "5bb046",
+      "wall_time_seconds": 2.3142453,
+      "exit_code": 1,
+      "original_token_count": 995,
+      "output": "Warning: truncated output (original token count: 995)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://www.sandbox.game/en/blog/august-22-ex …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '8I.camFm.bLdnpwsr3QuLQY7qMZJZDx7KlQ4gm_Ax1Q-1793024977-1.2.1.1-Sa5fMsMSSxNXkfOzNGdWPzMxVaKW0eq5B_D.frTbYDOQg_7H6S.bXtqkU_LJUvcI',cITimeS: '1793024977',cN: '7kdAUloNI447l46OoD4FcI',cRay: 'a50a277fda9eda81',cTplC:0,cTplO:0,cTplV:5,cType: 'manag…495 tokens truncated…QY3Z.QmblVxij3o037nCcyPGzyqmIswEJM01.kUirw',};var a = document.createElement('script');a.nonce = '7kdAUloNI447l46OoD4FcI';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a277fda9eda81';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/en/blog/august-22-exploit-post-mortem/3526/?__cf_chl_rt_tk=idLPvjpitA4Da1Q_WTtgxTlmtjXA0TIZMwr7cwmMc5w-1793024977-1.0.1.1-.AUKPBADLOA7x8mMsIEd.zze3_Om6tGNkEarmQpmAcI\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    }
+  },
+  {
+    "path": "sandbox/mint-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "d4c807",
+      "wall_time_seconds": 2.1577409,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/mint-trace.json",
+    "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace",
+    "command_result": {
+      "chunk_id": "cb3971",
+      "wall_time_seconds": 3.6936215,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/takeover-trace.json",
+    "url": "https://base.blockscout.com/api/v2/transactions/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237/raw-trace",
+    "command_result": {
+      "chunk_id": "5189e7",
+      "wall_time_seconds": 4.5933962,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/oft-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c615df",
+      "wall_time_seconds": 7.7577045,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/endpoint-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x1a44076050125825900e736c501f859c50fe728c",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "ab9d9e",
+      "wall_time_seconds": 4.6028825,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/receive-library-pre-attack-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+        "0x2ff42a8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c84773",
+      "wall_time_seconds": 1.9309047000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/first-sale-tx.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "314b97",
+      "wall_time_seconds": 1.9909903,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/first-sale-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "a0fe59",
+      "wall_time_seconds": 3.8160154,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/ethereum-adapter-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+    "command_result": {
+      "chunk_id": "35d04a",
+      "wall_time_seconds": 3.3090004,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/ethereum-redemption-tx.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "a5a8bc",
+      "wall_time_seconds": 1.6680032,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "cfbfba",
+      "wall_time_seconds": 1.7988952,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/ethereum-sand-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x3845badade8e6dff049820680d1f14bd3903a5d0?fields=all",
+    "command_result": {
+      "chunk_id": "4351cd",
+      "wall_time_seconds": 2.232946,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "sandbox/original-x-response.html",
+    "url": "https://x.com/TheSandboxGame/status/2091063415649251821",
+    "command_result": {
+      "chunk_id": "4f79a9",
+      "wall_time_seconds": 1.5751634,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/vault-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2?fields=all",
+    "role": "victim vault",
+    "command_result": {
+      "chunk_id": "932f6a",
+      "wall_time_seconds": 3.1048455,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x2 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/sources/delay-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x35c99cf4a5df2d9bcd822bee32676d9590229e33?fields=all",
+    "role": "delay module",
+    "command_result": {
+      "chunk_id": "63d543",
+      "wall_time_seconds": 3.4412770999999998,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x3 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/sources/helper-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x64e477800051efb06ae4086f4b258b270668b4df?fields=all",
+    "role": "attacker helper; locator only",
+    "command_result": {
+      "chunk_id": "797741",
+      "wall_time_seconds": 3.1239879,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/attacker-strategy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x184f2e57b4ce135181fa2a2166ac394339016338?fields=all",
+    "role": "attacker strategy; locator only",
+    "command_result": {
+      "chunk_id": "9782fb",
+      "wall_time_seconds": 2.9274779,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/1/0x1 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"1\",\r\n  \"address\": \"0x184f2E57b4cE135181FA2A2166AC394339016338\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "term/execution-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "4846c2",
+      "wall_time_seconds": 7.2126142,
+      "exit_code": 1,
+      "original_token_count": 54,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://eth.llamarpc.com' -Method Post -Conte …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | error code: 525\r\n"
+    }
+  },
+  {
+    "path": "term/execution-trace.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "command_result": {
+      "chunk_id": "cad250",
+      "wall_time_seconds": 1.6278546,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/tx-787669.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "aa0e06",
+      "wall_time_seconds": 1.4036564,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/receipt-787669.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "66c39a",
+      "wall_time_seconds": 1.7291151999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/tx-284fc5.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "8f8338",
+      "wall_time_seconds": 1.6979529,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/receipt-284fc5.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "56543f",
+      "wall_time_seconds": 1.7914302,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/tx-6e7353.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "c3caed",
+      "wall_time_seconds": 1.76189,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/receipt-6e7353.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "137825",
+      "wall_time_seconds": 1.6336978,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

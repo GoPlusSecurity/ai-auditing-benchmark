@@ -4,6 +4,24 @@
 
 源码与既有反编译代码位于仓库根目录的 `dataset/`；ABI、配套元数据、来源记录、交易证据和校验清单位于对应的 `dataset_artifacts/`，案例说明位于 `docs/cases/`。两棵目录沿用相同的完整／精简版本和案例层级；只有字节码及证据的 JaredFromSubway 位于资料目录，仍保留在事件索引中。
 
+## 2026-10-26 按 X=96、Y=5 向上筛选
+
+使用本次重新下载并固定的 CSV，从第 96 行逆序检查，到第 85 行找到第五条合格记录，扫描 **85–96，共 12 行**。新增 **4** 例，复用 **1** 例，跳过 **7** 行；第 95 行 Allbridge 已重新取得核心原码并复核。
+
+| 源表行 | 案例 | 处理 |
+| --- | --- | --- |
+| 95 | [Allbridge CCTP](20260820_Allbridge_CCTP.md) | 复用 |
+| 92 | [The Sandbox（SAND OFT 跨链桥）](20260822_TheSandbox.md) | 新增 |
+| 91 | [Term Labs（ETH Meta Vault 治理）](20260823_TermLabs.md) | 新增 |
+| 89 | [Falcon Heavy（FH）](20260826_FH.md) | 新增 |
+| 85 | [Moonwell（MAMO 抵押市场）](20260827_Moonwell_MAMO.md) | 新增 |
+
+源码与标明性质的高层反编译代码仅存 dataset；原始响应、ABI、编译设置、下载失败、历史证据和说明存 dataset_artifacts。Sandbox、Term、Moonwell 的美元金额因口径不能统一留空；FH 保留约 20,000 美元估计，并另列原币净流出。未本地编译或分叉重放。
+
+批次入口：[说明与跳过原因](../../dataset_artifacts/batches/20261026_x96_y5/README.md)、[固定快照](../../dataset_artifacts/batches/20261026_x96_y5/snapshot.json)、[逐行结果](../../dataset_artifacts/batches/20261026_x96_y5/results.json)、[验证报告](../../dataset_artifacts/batches/20261026_x96_y5/validation.json)。
+
+原始导出 SHA-256：`d4f5673b949fa3775660cdf9300e7e18adde3045a22d0d433cc1c51a89b9b9bc`。
+
 ## 2026-10-21 按 X=112、Y=5 向上筛选
 
 本批使用重新导出并固定的 CSV，按解析记录从第 112 行逆序检查，到第 88 行找到第 5 行合格记录即停止。实际扫描 **88–112 行，共 25 行**；新增 **5** 例，跳过 **20** 行；没有旧例补全或重复合并。源表第 1 行说明、第 2 行表头、14 列结构已核对。

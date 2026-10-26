@@ -1,0 +1,52 @@
+{
+  "physical_csv_reader_row": 91,
+  "header_row": 2,
+  "headers": [
+    "timestamp",
+    "target (社媒 or Addr)",
+    "description",
+    "data_source",
+    "original_link",
+    "date",
+    "lost",
+    "lost_u",
+    "malicious_tx",
+    "malicious_address",
+    "malicious_url",
+    "malicious_social_account",
+    "attack_category",
+    "attack_analysis"
+  ],
+  "values": [
+    "3:54 PM · Aug 23, 2026",
+    "@term_labs",
+    "@term_labs was targeted in a governance attack resulting in the loss of ~$8.5M. ",
+    "@CertiKAlert",
+    "https://x.com/certikalert/status/2091433962795106499?s=46",
+    "2026-08-23",
+    "~$8.5M",
+    "8,500,000",
+    "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e  \nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2  \nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8  \nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d   \nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129 \n",
+    "0xa908b3472d76e7744baB0A5911768a4a6300612B\n0x64E477800051EFb06Ae4086f4b258b270668b4dF \n0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "",
+    "",
+    "Exploit",
+    "合约漏洞"
+  ],
+  "fields": {
+    "timestamp": "3:54 PM · Aug 23, 2026",
+    "target (社媒 or Addr)": "@term_labs",
+    "description": "@term_labs was targeted in a governance attack resulting in the loss of ~$8.5M. ",
+    "data_source": "@CertiKAlert",
+    "original_link": "https://x.com/certikalert/status/2091433962795106499?s=46",
+    "date": "2026-08-23",
+    "lost": "~$8.5M",
+    "lost_u": "8,500,000",
+    "malicious_tx": "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e  \nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2  \nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8  \nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d   \nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129 \n",
+    "malicious_address": "0xa908b3472d76e7744baB0A5911768a4a6300612B\n0x64E477800051EFb06Ae4086f4b258b270668b4dF \n0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "malicious_url": "",
+    "malicious_social_account": "",
+    "attack_category": "Exploit",
+    "attack_analysis": "合约漏洞"
+  }
+}

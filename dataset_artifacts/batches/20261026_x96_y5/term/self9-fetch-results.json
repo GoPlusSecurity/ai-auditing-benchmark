@@ -1,0 +1,30 @@
+[
+  {
+    "path": "term/attacker-strategy-ethervm-response.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "POST",
+    "request_path": "term/attacker-strategy-ethervm-request.txt",
+    "started_at": "2026-10-26T14:53:57.605Z",
+    "command_result": {
+      "chunk_id": "2953c7",
+      "wall_time_seconds": 9.5010496,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/helper-implementation-ethervm-response.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "POST",
+    "request_path": "term/helper-implementation-ethervm-request.txt",
+    "started_at": "2026-10-26T14:53:57.605Z",
+    "command_result": {
+      "chunk_id": "91abaf",
+      "wall_time_seconds": 3.9504268,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

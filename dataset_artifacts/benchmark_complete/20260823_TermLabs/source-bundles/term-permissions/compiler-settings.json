@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.6+commit.11564f7e",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "evmVersion": "berlin",
+    "remappings": []
+  },
+  "name": "Permissions",
+  "fullyQualifiedName": "contracts/Permissions.sol:Permissions"
+}

@@ -1,0 +1,58 @@
+{
+  "project_cn": "Term Labs（ETH Meta Vault 治理）",
+  "project_en": "Term Labs (ETH Meta Vault governance)",
+  "vulnerability_cn": "少量封装 LP 取得多数票权，过宽治理权限允许关闭延时并把金库资金配置给恶意策略",
+  "vulnerability_en": "Thin wrapped-LP electorate and overbroad governance authority allow delay removal and allocation to a malicious strategy",
+  "detail_cn": "TokenVoting 以主动封装 LP 的历史供给计算总票权，攻击者用 0.5 ETH 取得并封装 0.485216182805348480 LP，在快照总量 0.535216182805348480 中占约 90.65798%。提案 5 的 17 个动作通过 DAO 已有 Roles 权限将 Delay 冷却期和有效期设为零，并启用 DAO 为模块；随后同笔交易排队并执行四笔普通策略减债及恶意策略注册、放宽债务上限和注资。历史 trace 与日志确认 2841.743535791961701401 WETH 经恶意策略进入攻击钱包。正常 onlyOwner、角色和 Safe 模块检查未被绕过；缺陷是部署中的治理权限和票权范围组合。核心原始源码来自 Sourcify，辅助反编译不替代源码；未重放。美元及全事件 USDC 损失未独立核定，留空。",
+  "detail_en": "TokenVoting uses the historical supply of voluntarily wrapped LP shares as total voting power. With 0.5 ETH the attacker acquired and wrapped 0.485216182805348480 LP against 0.535216182805348480 total wrapped supply, about 90.65798%. Proposal 5 used 17 DAO actions and existing Roles authority to set Delay cooldown and expiration to zero and enable the DAO as a module, then queued and executed four normal-strategy debt reductions, malicious-strategy registration, a maximum-debt increase and allocation in the same transaction. Historical trace and raw logs confirm 2841.743535791961701401 WETH passed through the malicious strategy to the attacker. Standard onlyOwner, role and Safe-module checks were satisfied; the vulnerability is the deployed composition of voting scope and governance authority. Core original sources come from Sourcify; supplementary decompilation does not replace them. No replay. USD valuation and event-wide USDC loss were not independently established.",
+  "loss_usd": null,
+  "loss_scope": "本笔 ETH Meta Vault 毛流出和攻击钱包毛入账均为 2841.743535791961701401 WETH，未扣初始 0.5 ETH、gas 或计追回。源表约 850 万美元覆盖更广事件；官方 USDC 赔付、追回与 RepoToken 口径不同，不能直接相加或替代本笔美元损失。",
+  "event_date": "2026-08-23",
+  "onchain_timestamp_utc": "2026-08-23T06:25:47Z",
+  "chain_id": 1,
+  "tx_urls": [
+    "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e",
+    "https://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+    "https://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+    "https://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+    "https://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code",
+    "https://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code",
+    "https://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code",
+    "https://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code",
+    "https://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code",
+    "https://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code"
+  ],
+  "verification_status": "authoritative_original_source_archived;historical_proxy_delegatecalls_bound;raw_snapshot_votes_and_17_actions_and_WETH_payment_confirmed;strategy_online_decompilation_archived;helper_decompilation_timeout;normal_deep_dependencies_incomplete;no_replay",
+  "sheet_row": 91,
+  "source_disclosure": "https://x.com/certikalert/status/2091433962795106499?s=46",
+  "case_id": "20260823_TermLabs",
+  "original_rows": [
+    91
+  ],
+  "public_original_vulnerable_source": true,
+  "source_sheet_snapshot": "../../batches/20261026_x96_y5/snapshot.json",
+  "batch_results": "../../batches/20261026_x96_y5/results.json",
+  "case_document": "../../../docs/cases/20260823_TermLabs.md",
+  "evidence_gaps": [
+    "完整 JSON-RPC receipt 查询未得到可用结果；使用 Blockscout 原始 topics/data 日志、交易成功状态和完整 rawtrace 交叉核对，不把 null 或错误响应称为成功回执。",
+    "未取得全部历史 Roles 存储与投票参数。历史调用和正常检查源码证明 DAO 的 role 1 实际获准执行三个 Delay 管理动作；不推断该角色是否使用通配目标、具体 selector 白名单或某种参数规则，也不声称完整支持率/参与率配置。",
+    "历史 rawtrace 绑定了本案受害治理代理的实际实现地址；源码匹配等级由 Sourcify 提供，未本地编译或重新做完整部署字节码验证。部分 creationMatch 为 null，不能写成所有合约都是完整创建匹配。",
+    "官方治理文档描述正常七日延时和 LP 否决流程，但该现行页面本身不是攻击前状态快照；此前 cooldown 精确值没有重读。实际三项管理调用、设置为零和同交易执行由历史 trace 证明。",
+    "四个普通子策略及其 Aave/Morpho 深层依赖未形成完整原始源码包；本案不把它们列为漏洞点。原始 trace、WETH 日志和 DebtUpdated 证明这次提款确实发生。获取初始 LP 的路由器源码也未完整归档。",
+    "恶意策略原始源码不可得；高层反编译仅作辅助，原始创建 runtime 与当前 explorer runtime 一致且返回反汇编完整对上输入。未获得攻击区块独立 eth_getCode，不能声称完整证明期间从无变更。",
+    "攻击 helper 实现无已验证原始源码；ethervm 提交 runtime 和按地址查询均超时，无高层输出。保留实际失败页，不用手写伪代码或反汇编冒充高层反编译。历史 wrap/proposal/vote/execute rawtrace 仍展示其实际调用边界。",
+    "本案独立核验 ETH Meta Vault 资金流；未逐笔核验其他 USDC vault 的全部损失、追回与净额，未核定事发时美元价格。loss_usd 留空。",
+    "展示的调用链不需要管理员私钥泄露即可完成；这不是对所有链外事件或密钥安全的全面取证结论。"
+  ],
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_provenance_kind": "original_verified_source_with_separately_labelled_online_decompilation",
+  "view": "benchmark_complete",
+  "source_provenance": "provenance.json"
+}

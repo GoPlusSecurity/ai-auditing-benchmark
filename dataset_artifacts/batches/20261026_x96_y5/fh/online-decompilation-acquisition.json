@@ -1,0 +1,53 @@
+{
+  "dedaub_api": {
+    "url": "https://api.dedaub.com/api/on_demand/decompilation/faf7e6daf260c16b66ed7e58af455cee",
+    "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\attacker-dedaub-api-response.json",
+    "method": "GET",
+    "md5_for_runtime": "faf7e6daf260c16b66ed7e58af455cee",
+    "started_at_utc": "2026-10-26T14:48:27.179Z",
+    "finished_at_utc": "2026-10-26T14:48:29.476Z",
+    "result": {
+      "chunk_id": "1a8ba8",
+      "wall_time_seconds": 1.4479832,
+      "exit_code": 0,
+      "original_token_count": 10,
+      "output": "\r\nStatusCode\r\n----------\r\n       403\r\n\r\n"
+    }
+  },
+  "ethervm_form": {
+    "url": "https://ethervm.io/decompile",
+    "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\ethervm-decompile-page.html",
+    "started_at_utc": "2026-10-26T14:48:49.192Z",
+    "finished_at_utc": "2026-10-26T14:48:51.922Z",
+    "result": {
+      "chunk_id": "f13654",
+      "wall_time_seconds": 1.8460165,
+      "exit_code": 0,
+      "original_token_count": 10,
+      "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+    }
+  },
+  "ethervm_decompilation": {
+    "url": "https://ethervm.io/decompile",
+    "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\attacker-ethervm-response.html",
+    "method": "POST",
+    "request_path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\attacker-ethervm-request.txt",
+    "submitted_runtime_sha256": "9466bf0dd8f8017357fd9a60cffbcc60124884f95cb5dd157ae21d85bbe1b26f",
+    "started_at_utc": "2026-10-26T14:49:24.435Z",
+    "finished_at_utc": "2026-10-26T14:49:35.029Z",
+    "result": {
+      "chunk_id": "52a6a7",
+      "wall_time_seconds": 10.0117774,
+      "session_id": 12290,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  "ethervm_completion": {
+    "observed_exit_code": 0,
+    "observed_http_status": 200,
+    "session_id": 12290,
+    "completion_time_kind": "response file mtime available; process completion observed during polling",
+    "observed_at_utc": "2026-10-26T14:52:51.602Z"
+  }
+}

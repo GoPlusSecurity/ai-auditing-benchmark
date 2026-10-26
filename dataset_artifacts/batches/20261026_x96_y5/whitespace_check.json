@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "command": "git -c core.whitespace=cr-at-eol diff --check",
+  "exit_code": 0,
+  "note": "Plain git diff --check flags the preserved CR in required CRLF CSV and existing checksum files. This per-command setting recognizes CR at EOL; it changes no repository configuration or file bytes.",
+  "scope": "Tracked diff; original downloaded source formatting is preserved."
+}

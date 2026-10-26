@@ -1,0 +1,1871 @@
+{
+  "kind": "public_original_source",
+  "path_base": "sandbox_stage_root",
+  "bundles": [
+    {
+      "id": "sandbox-oft",
+      "provider": "Sourcify",
+      "kind": "public_original_source",
+      "role": "vulnerable_application",
+      "chain_id": "8453",
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+      "response_path": "victim-source.json",
+      "response_sha256": "27bf101262de31d780b8a10d478e0b5ee73cd60169d292e57c7d9a0a3f1aeb57",
+      "verified_at": "2024-08-09T04:00:40Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0xc55651bcf7dc996f8bced152804b12064ee3a0be1cc5d6b37b225860491da39b",
+        "blockNumber": "17735349",
+        "transactionIndex": "69",
+        "deployer": "0xCba49d154b4Bb9a9aD7F5Dad396CB9a0a3a62ABc"
+      },
+      "compilation": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.23+commit.f704f362",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": true
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 2000,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "OFTSand",
+        "fullyQualifiedName": "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol:OFTSand"
+      },
+      "proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "source_files": [
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "b3710b1712637eb8c0df81912da3450da6ff67b0b3ed18146b033ed15b1aa3b9",
+          "bytes": 6262,
+          "lines": 159
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963,
+          "lines": 28
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102,
+          "lines": 100
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/interfaces/IERC20.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/interfaces/IERC20.sol",
+          "sha256": "cb42f0b4d269ba8ef2629c176a7f99bf4fb50837c92f45596b54822b26e3df4b",
+          "bytes": 181,
+          "lines": 6
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "6f2faae462e286e24e091d7718575179644dc60e79936ef0c92e2d1ab3ca3cee",
+          "bytes": 2779,
+          "lines": 79
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+          "sha256": "4aea87243e6de38804bf8737bf86f750443d3b5e63dd0fd0b7ad92f77cdbd3e3",
+          "bytes": 6532,
+          "lines": 161
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "471157c89111d7b9eab456b53ebe9042bc69504a64cb5cc980d38da9103379ae",
+          "bytes": 5770,
+          "lines": 118
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "07ae1ac964ab74dedada999e2dfc642031a6495469cffc0bf715daa4f1e4f904",
+          "bytes": 869,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+          "sha256": "5e20ca835ca9302959b50933f0e88227a43dbe127b75f9465a5728a81d3f3d80",
+          "bytes": 5070,
+          "lines": 126
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+          "sha256": "b0a3e30618f5d4c71732a2048d7c2928be399508d6ec622c9345915c92b3dd0a",
+          "bytes": 3360,
+          "lines": 83
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppSender.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppSender.sol",
+          "sha256": "276f5d551ae7e478fb0c56002acf5476e628748c1f5ba0d63ea051e93813a137",
+          "bytes": 5631,
+          "lines": 124
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+          "sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+          "bytes": 19120,
+          "lines": 356
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+          "sha256": "8d1dd4a6a74c3d9704a078e6404dcf7aab688b750ea64e8331f873e253862bc0",
+          "bytes": 5410,
+          "lines": 122
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+          "sha256": "61d3da38c35b0a6e2667e2e7c6ed0b628aa773baaafabae655c69dc4c491ac81",
+          "bytes": 1752,
+          "lines": 40
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/WithAdmin.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/WithAdmin.sol",
+          "sha256": "7faec540382e464c41486e0c52f1b2d555a6c2afa82dea567d9944aa6461cf89",
+          "bytes": 1173,
+          "lines": 38
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol",
+          "sha256": "5c7365dbcb5f70acb3e81219d10c118368f786209a6fee589a97a87aea52c434",
+          "bytes": 6161,
+          "lines": 149
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "path": "source-bundles/sandbox-oft/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "912509e0e9bf74e0f8a8c92d031b5b26d2d35c6d4abf3f56251be1ea9ca946bf",
+          "bytes": 3803,
+          "lines": 90
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/libs/Packet.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/libs/Packet.sol",
+          "sha256": "b95b1e7f7470306f41da606d0984b9384d2134fc19ee814d7d9f98c613836745",
+          "bytes": 2470,
+          "lines": 61
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "sha256": "e48211bfba874d0ce5c3b1fc4e4aac67450ac9539a75e814807745181d04e7dd",
+          "bytes": 1466,
+          "lines": 41
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/interfaces/IErrors.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/interfaces/IErrors.sol",
+          "sha256": "3fb9b376640baea5c3d147ce08b13b827fec5d6763f9cc0192f84d2cc34512e9",
+          "bytes": 924,
+          "lines": 34
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20Internal.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20Internal.sol",
+          "sha256": "4dbe0455b1d66447e2d7e74964b1856481c8bfe7ee90c45003d8086716197e5d",
+          "bytes": 374,
+          "lines": 10
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol",
+          "sha256": "d0a3b724d1f950cfe0b26a7c69cd222bc9713aee5f4d7bc0eed001f67b07fad8",
+          "bytes": 649,
+          "lines": 21
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "sha256": "816acb88e015f130be9811b4e8efda8d829830ead2f009eb5a9444137af301b5",
+          "bytes": 923,
+          "lines": 36
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol",
+          "sha256": "99c488efc8f31401afb3bae381424bff12e6b7d821891b41cd30636862bf6adf",
+          "bytes": 728,
+          "lines": 22
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OAppSender.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OAppSender.sol",
+          "sha256": "cd06ad7abd2ba35e52e4f65962e7073eb929ea8d3865532f9120fbd7f66c8d90",
+          "bytes": 5820,
+          "lines": 124
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+          "sha256": "c26467ea99ef767a8f5a7341b6caed3304c9cdba2a93623acc58e0f16a751892",
+          "bytes": 9843,
+          "lines": 243
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+          "sha256": "023b0306689932c6a99a8067fb7fd1b81af21f2593438b78bb94b0757b38887f",
+          "bytes": 2346,
+          "lines": 59
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppCore.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppCore.sol",
+          "sha256": "041dd35f0a4a22425614414c05cd5aae6ce7e4b5b86b0350045e57c0ed3cbf1b",
+          "bytes": 1864,
+          "lines": 52
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol",
+          "sha256": "7414ab6a173705ac741772684d2bda00a0ed044c5e9faa3339a2dfe10ec867f3",
+          "bytes": 4898,
+          "lines": 98
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "sha256": "7a5733cf68663e1a924c5237adfdad5522a063e2214a81a7ca932242dc45481b",
+          "bytes": 805,
+          "lines": 26
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol",
+          "sha256": "e73b5e5c53927a21e51dc7adaafd8d6fedf46e46b8ac084ca86f58c8e9697556",
+          "bytes": 2993,
+          "lines": 91
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/WithSuperOperators.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/WithSuperOperators.sol",
+          "sha256": "4a9d43ff116bdfe61f1c0ac7768d67ff1e3727bb523a29eecd5493c3efc5714f",
+          "bytes": 1152,
+          "lines": 27
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppReceiver.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppReceiver.sol",
+          "sha256": "da4aff9322961c648e2221f7df203a44b375a397f2548b74679b3e9d0ae9addd",
+          "bytes": 1076,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IPreCrime.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IPreCrime.sol",
+          "sha256": "25a8f3b9257ed4f65fca276f7631cca3ead87c2f17c837e6eee90c8835433380",
+          "bytes": 1105,
+          "lines": 40
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/interfaces/IERC20Extended.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/interfaces/IERC20Extended.sol",
+          "sha256": "da4fb7a2b3a97f12e7c98fecebc5bc399e779af8c130455b6196a4495c49a804",
+          "bytes": 380,
+          "lines": 13
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+          "sha256": "23c0a3ceb3fb0c2dd0b64ddd486df00277ef6b5f1c1befc9301e750a68ff8cfb",
+          "bytes": 2964,
+          "lines": 84
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/OAppPreCrimeSimulator.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/OAppPreCrimeSimulator.sol",
+          "sha256": "b0fcd1e2da22197e21ff13a350ac9d0a7f7e5e8bb1528c5d9860a3b820f555f9",
+          "bytes": 5355,
+          "lines": 125
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "sha256": "9d0100f7cede83d5a4f6c9e03d6bfd24f861e9331b298ca4c73f99b161c718d5",
+          "bytes": 1541,
+          "lines": 34
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "sha256": "b7f081828b8d0d206833953ebd73101bb28ac62541e7e8365fddc38eb440a92a",
+          "bytes": 239,
+          "lines": 9
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppMsgInspector.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppMsgInspector.sol",
+          "sha256": "5bb1fd1038c648bff4e9c7b88f322c5cde41d355f03090ad1ec46f6712f09c4e",
+          "bytes": 909,
+          "lines": 22
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppOptionsType3.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppOptionsType3.sol",
+          "sha256": "c14d4f013045452583eae3baf14743e0628e24c146c3beea5a10b992b1171756",
+          "bytes": 1442,
+          "lines": 43
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+          "sha256": "24e4add7dd95a72dad23e26c4fadfc1b6ce63148e0c7f4d6ad5dfaeda79db3e7",
+          "bytes": 519,
+          "lines": 19
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "sha256": "ffc33e319ab5e9d1392d16f8716625bcfb1dc34b744551f87dad1c0eb3ad11f1",
+          "bytes": 2755,
+          "lines": 70
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "sha256": "5e7e5a47a477dcf05c034d5135bf6516119af881ea78d586805eee0ad5ab6b12",
+          "bytes": 1026,
+          "lines": 38
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "sha256": "ed105f6e0e1ac7ef92b582e30d0d55d260cdcd6ca63057cd866f4c019c069b44",
+          "bytes": 3666,
+          "lines": 108
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "sha256": "a88fb702b371527c3791d7e5c168c1157d39021ed29b51e627e02973e6a740e0",
+          "bytes": 2593,
+          "lines": 89
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+          "path": "source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+          "sha256": "591f2983f18dce827825c4cf5829bdbc708bba0e98b0193326437acc2da0fef8",
+          "bytes": 2235,
+          "lines": 58
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+          "path": "source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+          "sha256": "2db19c9641e81e5366c268c40506db56ee5434b5c874cffe02fb1e18034a9285",
+          "bytes": 1920,
+          "lines": 55
+        }
+      ],
+      "stored_at_utc": "2026-10-26T14:17:16.288431+00:00",
+      "acquisition_time_note": "Filesystem download completion time; parent batch retrieval_inventory records the acquisition metadata.",
+      "retrieved_at": "2026-10-26T22:17:16.289430+08:00",
+      "retrieved_at_basis": "Collector-recorded retrieval time"
+    },
+    {
+      "id": "layerzero-endpoint",
+      "provider": "Sourcify",
+      "kind": "public_original_source",
+      "role": "required_normal_dependency",
+      "chain_id": "8453",
+      "address": "0x1a44076050125825900e736c501f859c50fe728c",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1a44076050125825900e736c501f859c50fe728c?fields=all",
+      "response_path": "endpoint-source.json",
+      "response_sha256": "2f45d5e3bf2fdfa6396a35582c6da07da3a1ba306a115e65613b3ba6a0edea87",
+      "verified_at": "2024-08-08T15:14:54Z",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": "0xc07f602600b9fab5e794651ca21ed7529f8e42e3f7a9264de88da06f9610725b",
+        "blockNumber": "9756939",
+        "transactionIndex": "2",
+        "deployer": "0x9F403140Bc0574D7d36eA472b82DAa1Bbd4eF327"
+      },
+      "compilation": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.22+commit.4fc1097e",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "EndpointV2",
+        "fullyQualifiedName": "contracts/EndpointV2.sol:EndpointV2"
+      },
+      "proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "source_files": [
+        {
+          "original_source_path": "contracts/libs/GUID.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/libs/GUID.sol",
+          "sha256": "f462f5b95fba0918ab3bf779b09326eedde0eda85092d99bb32c60cf60bb338b",
+          "bytes": 460,
+          "lines": 19
+        },
+        {
+          "original_source_path": "contracts/EndpointV2.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/EndpointV2.sol",
+          "sha256": "9702083ea7e0873510bd562095a6028dab5fad5e9be30e452908e6178bd51b6c",
+          "bytes": 17544,
+          "lines": 369
+        },
+        {
+          "original_source_path": "contracts/libs/Errors.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/libs/Errors.sol",
+          "sha256": "878ad94dd883caa35f6ef6f29ab9e00b0cd3c941f617f24fe7208a6f50983241",
+          "bytes": 1264,
+          "lines": 39
+        },
+        {
+          "original_source_path": "contracts/libs/Transfer.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/libs/Transfer.sol",
+          "sha256": "297edd107f543e14dd7deace1d21c008e5c00d1f46fe5e5eb70db3f242c18322",
+          "bytes": 1121,
+          "lines": 34
+        },
+        {
+          "original_source_path": "contracts/MessagingChannel.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/MessagingChannel.sol",
+          "sha256": "6fe3684e208e92cee9f3694ebef144cee3f6ee010a476cc06e1c64532c80dab2",
+          "bytes": 8583,
+          "lines": 161
+        },
+        {
+          "original_source_path": "contracts/MessagingContext.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/MessagingContext.sol",
+          "sha256": "71d41a22d8b168b5741b60dac123c203c79f2baec193df683781232d45b1d5b6",
+          "bytes": 1480,
+          "lines": 36
+        },
+        {
+          "original_source_path": "contracts/libs/AddressCast.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/libs/AddressCast.sol",
+          "sha256": "e48211bfba874d0ce5c3b1fc4e4aac67450ac9539a75e814807745181d04e7dd",
+          "bytes": 1466,
+          "lines": 41
+        },
+        {
+          "original_source_path": "contracts/MessageLibManager.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/MessageLibManager.sol",
+          "sha256": "aa074a24bd2f7b5e91f7b5cb60d647ae3c8d2ff44c3bf62e925d6ce661cf799b",
+          "bytes": 14804,
+          "lines": 324
+        },
+        {
+          "original_source_path": "contracts/MessagingComposer.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/MessagingComposer.sol",
+          "sha256": "2f6c47938a167e98c981e6a7a901b8063157a36a3fb1423ffb3e11a78122a5d7",
+          "bytes": 3935,
+          "lines": 80
+        },
+        {
+          "original_source_path": "contracts/interfaces/ISendLib.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/ISendLib.sol",
+          "sha256": "816acb88e015f130be9811b4e8efda8d829830ead2f009eb5a9444137af301b5",
+          "bytes": 923,
+          "lines": 36
+        },
+        {
+          "original_source_path": "contracts/interfaces/IMessageLib.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/IMessageLib.sol",
+          "sha256": "7a5733cf68663e1a924c5237adfdad5522a063e2214a81a7ca932242dc45481b",
+          "bytes": 805,
+          "lines": 26
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+          "bytes": 9364,
+          "lines": 244
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962,
+          "lines": 28
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+          "bytes": 2616,
+          "lines": 83
+        },
+        {
+          "original_source_path": "contracts/interfaces/IMessagingChannel.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/IMessagingChannel.sol",
+          "sha256": "9d0100f7cede83d5a4f6c9e03d6bfd24f861e9331b298ca4c73f99b161c718d5",
+          "bytes": 1541,
+          "lines": 34
+        },
+        {
+          "original_source_path": "contracts/interfaces/IMessagingContext.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/IMessagingContext.sol",
+          "sha256": "b7f081828b8d0d206833953ebd73101bb28ac62541e7e8365fddc38eb440a92a",
+          "bytes": 239,
+          "lines": 9
+        },
+        {
+          "original_source_path": "contracts/messagelib/BlockedMessageLib.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/messagelib/BlockedMessageLib.sol",
+          "sha256": "08ff1a98175bcd1657c9957c5b1d74f9e49f5165742795c9a256a3a0841372ee",
+          "bytes": 961,
+          "lines": 30
+        },
+        {
+          "original_source_path": "contracts/interfaces/ILayerZeroComposer.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/ILayerZeroComposer.sol",
+          "sha256": "bf86cba2c100ca69c2e664220d6dd8cb39f0e952dc0d21b92852e1e67e0f682b",
+          "bytes": 892,
+          "lines": 24
+        },
+        {
+          "original_source_path": "contracts/interfaces/ILayerZeroReceiver.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/ILayerZeroReceiver.sol",
+          "sha256": "24e4add7dd95a72dad23e26c4fadfc1b6ce63148e0c7f4d6ad5dfaeda79db3e7",
+          "bytes": 519,
+          "lines": 19
+        },
+        {
+          "original_source_path": "contracts/interfaces/IMessageLibManager.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/IMessageLibManager.sol",
+          "sha256": "c648091e7cb079cb95778becfff1a813e901fdc07124153ba731a7d9daa29b40",
+          "bytes": 2756,
+          "lines": 70
+        },
+        {
+          "original_source_path": "contracts/interfaces/IMessagingComposer.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/IMessagingComposer.sol",
+          "sha256": "5e7e5a47a477dcf05c034d5135bf6516119af881ea78d586805eee0ad5ab6b12",
+          "bytes": 1026,
+          "lines": 38
+        },
+        {
+          "original_source_path": "contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "path": "source-bundles/layerzero-endpoint/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "sha256": "a88fb702b371527c3791d7e5c168c1157d39021ed29b51e627e02973e6a740e0",
+          "bytes": 2593,
+          "lines": 89
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+          "bytes": 2737,
+          "lines": 78
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987,
+          "lines": 29
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+          "bytes": 6936,
+          "lines": 143
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "path": "source-bundles/layerzero-endpoint/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+          "bytes": 3802,
+          "lines": 90
+        }
+      ],
+      "stored_at_utc": "2026-10-26T14:17:16.802810+00:00",
+      "acquisition_time_note": "Filesystem download completion time; parent batch retrieval_inventory records the acquisition metadata.",
+      "retrieved_at": "2026-10-26T22:17:16.803816+08:00",
+      "retrieved_at_basis": "Collector-recorded retrieval time"
+    },
+    {
+      "id": "layerzero-receive-library",
+      "provider": "Sourcify",
+      "kind": "public_original_source",
+      "role": "required_normal_verification_dependency",
+      "chain_id": "8453",
+      "address": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xc70ab6f32772f59fbfc23889caf4ba3376c84baf?fields=all",
+      "response_path": "receive-library-source.json",
+      "response_sha256": "a15007c7d73a6df15e2744861ae87dac10b1b08e58b04dfeeebed0a300c81d21",
+      "verified_at": "2024-08-09T00:50:28Z",
+      "creation_match": "match",
+      "runtime_match": "match",
+      "deployment": {
+        "transactionHash": "0x1e0542b8dbb96d2c8100d88da042d1718e7188597ffe25ee804012504e7d8c2d",
+        "blockNumber": "9756969",
+        "transactionIndex": "1",
+        "deployer": "0x9F403140Bc0574D7d36eA472b82DAa1Bbd4eF327"
+      },
+      "compilation": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.22+commit.4fc1097e",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 20000,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "ReceiveUln302",
+        "fullyQualifiedName": "contracts/uln/uln302/ReceiveUln302.sol:ReceiveUln302"
+      },
+      "proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "source_files": [
+        {
+          "original_source_path": "contracts/uln/UlnBase.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+          "sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+          "bytes": 9845,
+          "lines": 195
+        },
+        {
+          "original_source_path": "contracts/MessageLibBase.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/MessageLibBase.sol",
+          "sha256": "f84d5ebb48cf47096ba21d535bec480a0e0026fd117d2f851ce22f16b6def0e1",
+          "bytes": 528,
+          "lines": 21
+        },
+        {
+          "original_source_path": "contracts/ReceiveLibBaseE2.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/ReceiveLibBaseE2.sol",
+          "sha256": "462a6f82caea234860e4c3583f990fff42612aa3baafcf55350e5c491a5b5a1c",
+          "bytes": 1392,
+          "lines": 28
+        },
+        {
+          "original_source_path": "contracts/uln/ReceiveUlnBase.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/uln/ReceiveUlnBase.sol",
+          "sha256": "4bc3784995bed964996d158bb5aa5b8052a2899b9899733d99b468613f553e58",
+          "bytes": 4962,
+          "lines": 125
+        },
+        {
+          "original_source_path": "contracts/uln/uln302/ReceiveUln302.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/uln/uln302/ReceiveUln302.sol",
+          "sha256": "71f8b9285db7aec38987175fb34cb591e00bfae4423956bd4cdb769daf8f0caa",
+          "bytes": 3822,
+          "lines": 85
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "path": "source-bundles/layerzero-receive-library/@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+          "bytes": 962,
+          "lines": 28
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "path": "source-bundles/layerzero-receive-library/@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+          "bytes": 2616,
+          "lines": 83
+        },
+        {
+          "original_source_path": "contracts/uln/interfaces/IReceiveUlnE2.sol",
+          "path": "source-bundles/layerzero-receive-library/contracts/uln/interfaces/IReceiveUlnE2.sol",
+          "sha256": "0e2f080b25ec8ea14438abb9a7e99efb5a96ed6feb8976407e00fc756195f234",
+          "bytes": 573,
+          "lines": 13
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "path": "source-bundles/layerzero-receive-library/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+          "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+          "bytes": 987,
+          "lines": 29
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "path": "source-bundles/layerzero-receive-library/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+          "bytes": 853,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "sha256": "e48211bfba874d0ce5c3b1fc4e4aac67450ac9539a75e814807745181d04e7dd",
+          "bytes": 1466,
+          "lines": 41
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "sha256": "816acb88e015f130be9811b4e8efda8d829830ead2f009eb5a9444137af301b5",
+          "bytes": 923,
+          "lines": 36
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "sha256": "7a5733cf68663e1a924c5237adfdad5522a063e2214a81a7ca932242dc45481b",
+          "bytes": 805,
+          "lines": 26
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "sha256": "9d0100f7cede83d5a4f6c9e03d6bfd24f861e9331b298ca4c73f99b161c718d5",
+          "bytes": 1541,
+          "lines": 34
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "sha256": "b7f081828b8d0d206833953ebd73101bb28ac62541e7e8365fddc38eb440a92a",
+          "bytes": 239,
+          "lines": 9
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "sha256": "c648091e7cb079cb95778becfff1a813e901fdc07124153ba731a7d9daa29b40",
+          "bytes": 2756,
+          "lines": 70
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "sha256": "5e7e5a47a477dcf05c034d5135bf6516119af881ea78d586805eee0ad5ab6b12",
+          "bytes": 1026,
+          "lines": 38
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "sha256": "ed105f6e0e1ac7ef92b582e30d0d55d260cdcd6ca63057cd866f4c019c069b44",
+          "bytes": 3666,
+          "lines": 108
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "path": "source-bundles/layerzero-receive-library/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "sha256": "a88fb702b371527c3791d7e5c168c1157d39021ed29b51e627e02973e6a740e0",
+          "bytes": 2593,
+          "lines": 89
+        }
+      ],
+      "stored_at_utc": "2026-10-26T14:29:38.040083+00:00",
+      "acquisition_time_note": "Filesystem download completion time; parent batch retrieval_inventory records the acquisition metadata.",
+      "retrieved_at": "2026-10-26T14:29:38.040083+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "id": "sandbox-ethereum-adapter",
+      "provider": "Sourcify",
+      "kind": "public_original_source",
+      "role": "required_normal_redemption_dependency",
+      "chain_id": "1",
+      "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+      "url": "https://sourcify.dev/server/v2/contract/1/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF?fields=all",
+      "response_path": "ethereum-adapter-source.json",
+      "response_sha256": "4d2771183abd0d22e786e065bd898da77848a33bb43c842316fb1989728ac503",
+      "verified_at": "2024-08-08T16:41:26Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x8aad310cced3af2380d233a92530d4a6a46d111b02b79e76474eebbe943bdba1",
+        "blockNumber": "20412464",
+        "transactionIndex": "1",
+        "deployer": "0xCba49d154b4Bb9a9aD7F5Dad396CB9a0a3a62ABc"
+      },
+      "compilation": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.23+commit.f704f362",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "useLiteralContent": true
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 2000,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "OFTAdapterForSand",
+        "fullyQualifiedName": "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol:OFTAdapterForSand"
+      },
+      "proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "source_files": [
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Address.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/utils/Address.sol",
+          "sha256": "b3710b1712637eb8c0df81912da3450da6ff67b0b3ed18146b033ed15b1aa3b9",
+          "bytes": 6262,
+          "lines": 159
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/Context.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/utils/Context.sol",
+          "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+          "bytes": 963,
+          "lines": 28
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/access/Ownable.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/access/Ownable.sol",
+          "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+          "bytes": 3102,
+          "lines": 100
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "sha256": "6f2faae462e286e24e091d7718575179644dc60e79936ef0c92e2d1ab3ca3cee",
+          "bytes": 2779,
+          "lines": 79
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+          "sha256": "471157c89111d7b9eab456b53ebe9042bc69504a64cb5cc980d38da9103379ae",
+          "bytes": 5770,
+          "lines": 118
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+          "sha256": "07ae1ac964ab74dedada999e2dfc642031a6495469cffc0bf715daa4f1e4f904",
+          "bytes": 869,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+          "sha256": "b0a3e30618f5d4c71732a2048d7c2928be399508d6ec622c9345915c92b3dd0a",
+          "bytes": 3360,
+          "lines": 83
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppSender.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppSender.sol",
+          "sha256": "276f5d551ae7e478fb0c56002acf5476e628748c1f5ba0d63ea051e93813a137",
+          "bytes": 5631,
+          "lines": 124
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+          "sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+          "bytes": 19120,
+          "lines": 356
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+          "sha256": "8d1dd4a6a74c3d9704a078e6404dcf7aab688b750ea64e8331f873e253862bc0",
+          "bytes": 5410,
+          "lines": 122
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+          "sha256": "61d3da38c35b0a6e2667e2e7c6ed0b628aa773baaafabae655c69dc4c491ac81",
+          "bytes": 1752,
+          "lines": 40
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+          "sha256": "6c88c4d75396f39281e0b7396eb2a1e5cf5e42010667171d9ba51fbc39b5326c",
+          "bytes": 4923,
+          "lines": 90
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/WithAdmin.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/sand/WithAdmin.sol",
+          "sha256": "7faec540382e464c41486e0c52f1b2d555a6c2afa82dea567d9944aa6461cf89",
+          "bytes": 1173,
+          "lines": 38
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol",
+          "sha256": "5c7365dbcb5f70acb3e81219d10c118368f786209a6fee589a97a87aea52c434",
+          "bytes": 6161,
+          "lines": 149
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+          "sha256": "912509e0e9bf74e0f8a8c92d031b5b26d2d35c6d4abf3f56251be1ea9ca946bf",
+          "bytes": 3803,
+          "lines": 90
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/libs/Packet.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/libs/Packet.sol",
+          "sha256": "b95b1e7f7470306f41da606d0984b9384d2134fc19ee814d7d9f98c613836745",
+          "bytes": 2470,
+          "lines": 61
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+          "sha256": "e48211bfba874d0ce5c3b1fc4e4aac67450ac9539a75e814807745181d04e7dd",
+          "bytes": 1466,
+          "lines": 41
+        },
+        {
+          "original_source_path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+          "sha256": "1d079c20a192a135308e99fa5515c27acfbb071e6cdb0913b13634e630865939",
+          "bytes": 683,
+          "lines": 26
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+          "sha256": "c190e8b555d2bd3da3cec5f7a858f13116f4f53b0507c226760b187963772d3d",
+          "bytes": 2794,
+          "lines": 78
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/interfaces/IErrors.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/interfaces/IErrors.sol",
+          "sha256": "3fb9b376640baea5c3d147ce08b13b827fec5d6763f9cc0192f84d2cc34512e9",
+          "bytes": 924,
+          "lines": 34
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+          "sha256": "816acb88e015f130be9811b4e8efda8d829830ead2f009eb5a9444137af301b5",
+          "bytes": 923,
+          "lines": 36
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OAppSender.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OAppSender.sol",
+          "sha256": "cd06ad7abd2ba35e52e4f65962e7073eb929ea8d3865532f9120fbd7f66c8d90",
+          "bytes": 5820,
+          "lines": 124
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+          "sha256": "023b0306689932c6a99a8067fb7fd1b81af21f2593438b78bb94b0757b38887f",
+          "bytes": 2346,
+          "lines": 59
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppCore.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppCore.sol",
+          "sha256": "041dd35f0a4a22425614414c05cd5aae6ce7e4b5b86b0350045e57c0ed3cbf1b",
+          "bytes": 1864,
+          "lines": 52
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol",
+          "sha256": "7414ab6a173705ac741772684d2bda00a0ed044c5e9faa3339a2dfe10ec867f3",
+          "bytes": 4898,
+          "lines": 98
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+          "sha256": "7a5733cf68663e1a924c5237adfdad5522a063e2214a81a7ca932242dc45481b",
+          "bytes": 805,
+          "lines": 26
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol",
+          "sha256": "e73b5e5c53927a21e51dc7adaafd8d6fedf46e46b8ac084ca86f58c8e9697556",
+          "bytes": 2993,
+          "lines": 91
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppReceiver.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppReceiver.sol",
+          "sha256": "da4aff9322961c648e2221f7df203a44b375a397f2548b74679b3e9d0ae9addd",
+          "bytes": 1076,
+          "lines": 25
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IPreCrime.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IPreCrime.sol",
+          "sha256": "25a8f3b9257ed4f65fca276f7631cca3ead87c2f17c837e6eee90c8835433380",
+          "bytes": 1105,
+          "lines": 40
+        },
+        {
+          "original_source_path": "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+          "sha256": "23c0a3ceb3fb0c2dd0b64ddd486df00277ef6b5f1c1befc9301e750a68ff8cfb",
+          "bytes": 2964,
+          "lines": 84
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/OAppPreCrimeSimulator.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/OAppPreCrimeSimulator.sol",
+          "sha256": "b0fcd1e2da22197e21ff13a350ac9d0a7f7e5e8bb1528c5d9860a3b820f555f9",
+          "bytes": 5355,
+          "lines": 125
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+          "sha256": "9d0100f7cede83d5a4f6c9e03d6bfd24f861e9331b298ca4c73f99b161c718d5",
+          "bytes": 1541,
+          "lines": 34
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+          "sha256": "b7f081828b8d0d206833953ebd73101bb28ac62541e7e8365fddc38eb440a92a",
+          "bytes": 239,
+          "lines": 9
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppMsgInspector.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppMsgInspector.sol",
+          "sha256": "5bb1fd1038c648bff4e9c7b88f322c5cde41d355f03090ad1ec46f6712f09c4e",
+          "bytes": 909,
+          "lines": 22
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppOptionsType3.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppOptionsType3.sol",
+          "sha256": "c14d4f013045452583eae3baf14743e0628e24c146c3beea5a10b992b1171756",
+          "bytes": 1442,
+          "lines": 43
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+          "sha256": "24e4add7dd95a72dad23e26c4fadfc1b6ce63148e0c7f4d6ad5dfaeda79db3e7",
+          "bytes": 519,
+          "lines": 19
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+          "sha256": "ffc33e319ab5e9d1392d16f8716625bcfb1dc34b744551f87dad1c0eb3ad11f1",
+          "bytes": 2755,
+          "lines": 70
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+          "sha256": "5e7e5a47a477dcf05c034d5135bf6516119af881ea78d586805eee0ad5ab6b12",
+          "bytes": 1026,
+          "lines": 38
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+          "sha256": "ed105f6e0e1ac7ef92b582e30d0d55d260cdcd6ca63057cd866f4c019c069b44",
+          "bytes": 3666,
+          "lines": 108
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+          "sha256": "a88fb702b371527c3791d7e5c168c1157d39021ed29b51e627e02973e6a740e0",
+          "bytes": 2593,
+          "lines": 89
+        },
+        {
+          "original_source_path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+          "path": "source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+          "sha256": "2db19c9641e81e5366c268c40506db56ee5434b5c874cffe02fb1e18034a9285",
+          "bytes": 1920,
+          "lines": 55
+        }
+      ],
+      "stored_at_utc": "2026-10-26T14:29:47.661734+00:00",
+      "acquisition_time_note": "Filesystem download completion time; parent batch retrieval_inventory records the acquisition metadata.",
+      "retrieved_at": "2026-10-26T14:29:47.661734+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "id": "sandbox-ethereum-sand",
+      "provider": "Sourcify",
+      "kind": "public_original_source",
+      "role": "required_normal_underlying_token_dependency",
+      "chain_id": "1",
+      "address": "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+      "url": "https://sourcify.dev/server/v2/contract/1/0x3845badade8e6dff049820680d1f14bd3903a5d0?fields=all",
+      "response_path": "ethereum-sand-source.json",
+      "response_sha256": "673a5fee24a4bff57fe1eb1388b1fd38b75747baeeb041cc153248143ac0363f",
+      "verified_at": "2024-08-08T10:48:21Z",
+      "creation_match": "exact_match",
+      "runtime_match": "exact_match",
+      "deployment": {
+        "transactionHash": "0x43feed4eb9d067a4fa2951c08c04e894cef9b126dbab39f6d7b1f3a3d93a5a63",
+        "blockNumber": "8835135",
+        "transactionIndex": "108",
+        "deployer": "0x18dd4e0eb8699eA4FeE238dE41ECfb95e32272f8"
+      },
+      "compilation": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.5.9+commit.e560f70d",
+        "compilerSettings": {
+          "metadata": {
+            "useLiteralContent": true
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 2000,
+            "enabled": true
+          },
+          "evmVersion": "petersburg",
+          "remappings": []
+        },
+        "name": "Sand",
+        "fullyQualifiedName": "src/Sand.sol:Sand"
+      },
+      "proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "source_files": [
+        {
+          "original_source_path": "src/Sand.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/src/Sand.sol",
+          "sha256": "0fd0e82bed1f1f4ff5ecdf88f2c32230ff9bb778a63909d18d46bd1e2beff0eb",
+          "bytes": 833,
+          "lines": 27
+        },
+        {
+          "original_source_path": "src/Sand/erc20/ERC20BaseToken.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/src/Sand/erc20/ERC20BaseToken.sol",
+          "sha256": "58dc46ab7946c54517517f0f372098edcabe043f81707a523cba451b0203492d",
+          "bytes": 7220,
+          "lines": 196
+        },
+        {
+          "original_source_path": "src/Sand/erc20/ERC20ExecuteExtension.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/src/Sand/erc20/ERC20ExecuteExtension.sol",
+          "sha256": "9ef188608f08e7f89d816e9a8c198ea1996baad084b5bb04835a3cb31a35d051",
+          "bytes": 7997,
+          "lines": 171
+        },
+        {
+          "original_source_path": "contracts_common/src/Libraries/BytesUtil.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/contracts_common/src/Libraries/BytesUtil.sol",
+          "sha256": "2f5a0247cb5b9d905c3f6c64edaa67613d12ebe0e646ffe51ecb00e699144578",
+          "bytes": 3564,
+          "lines": 137
+        },
+        {
+          "original_source_path": "src/Sand/erc20/ERC20BasicApproveExtension.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/src/Sand/erc20/ERC20BasicApproveExtension.sol",
+          "sha256": "38239773e1f444dc4119fa34c195c0459831556747e15f769b870a743f7ed453",
+          "bytes": 2109,
+          "lines": 58
+        },
+        {
+          "original_source_path": "contracts_common/src/BaseWithStorage/Admin.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/contracts_common/src/BaseWithStorage/Admin.sol",
+          "sha256": "4abf9abf2145a27629fb8e54bcda3bf0bdb9c2845f5f94e18e192d2aef115ee7",
+          "bytes": 669,
+          "lines": 22
+        },
+        {
+          "original_source_path": "contracts_common/src/Interfaces/ERC20Events.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/contracts_common/src/Interfaces/ERC20Events.sol",
+          "sha256": "7d58efa0dc0a083cf7049309a0f7fa0ef133c29da0a4c09373435903c4c55077",
+          "bytes": 256,
+          "lines": 11
+        },
+        {
+          "original_source_path": "contracts_common/src/BaseWithStorage/SuperOperators.sol",
+          "path": "source-bundles/sandbox-ethereum-sand/contracts_common/src/BaseWithStorage/SuperOperators.sol",
+          "sha256": "307c0411cfc020057e1d38d9ff5a715b088bd074a8351f1cf572fe2b386dfe12",
+          "bytes": 1082,
+          "lines": 29
+        }
+      ],
+      "stored_at_utc": "2026-10-26T14:29:51.967113+00:00",
+      "acquisition_time_note": "Filesystem download completion time; parent batch retrieval_inventory records the acquisition metadata.",
+      "retrieved_at": "2026-10-26T14:29:51.967113+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "intermediate-txlist.json",
+      "url": "https://base.blockscout.com/api?module=account&action=txlist&address=0x67624bfadee937c9281b4f98ce18af1bee01257e&startblock=50283177&endblock=50283189&sort=asc",
+      "command_result": {
+        "chunk_id": "90878b",
+        "wall_time_seconds": 1.6229453999999999,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "c9695638aa4494265136d4c8df780d1e9745e9d454b0350e5d9daade04bb743e",
+      "bytes": 6115,
+      "retrieved_at": "2026-10-26T14:29:37.420991+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "official-postmortem.html",
+      "url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+      "command_result": {
+        "chunk_id": "5bb046",
+        "wall_time_seconds": 2.3142453,
+        "exit_code": 1,
+        "original_token_count": 995,
+        "output": "Warning: truncated output (original token count: 995)\nTotal output lines: 5\n\nInvoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://www.sandbox.game/en/blog/august-22-ex …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: '8I.camFm.bLdnpwsr3QuLQY7qMZJZDx7KlQ4gm_Ax1Q-1793024977-1.2.1.1-Sa5fMsMSSxNXkfOzNGdWPzMxVaKW0eq5B_D.frTbYDOQg_7H6S.bXtqkU_LJUvcI',cITimeS: '1793024977',cN: '7kdAUloNI447l46OoD4FcI',cRay: 'a50a277fda9eda81',cTplC:0,cTplO:0,cTplV:5,cType: 'manag…495 tokens truncated…QY3Z.QmblVxij3o037nCcyPGzyqmIswEJM01.kUirw',};var a = document.createElement('script');a.nonce = '7kdAUloNI447l46OoD4FcI';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a277fda9eda81';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/en/blog/august-22-exploit-post-mortem/3526/?__cf_chl_rt_tk=idLPvjpitA4Da1Q_WTtgxTlmtjXA0TIZMwr7cwmMc5w-1793024977-1.0.1.1-.AUKPBADLOA7x8mMsIEd.zze3_Om6tGNkEarmQpmAcI\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+      },
+      "batch_log": "additional-fetch-results.json",
+      "attempt_recorded_at": "2026-10-26T14:30:57.680650+00:00"
+    },
+    {
+      "path": "mint-tx.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "d4c807",
+        "wall_time_seconds": 2.1577409,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "9a0b59d3d6789dfaad78b2f6b14c77ab873473f49cbcda38ec9371b6348d5e83",
+      "bytes": 1452,
+      "retrieved_at": "2026-10-26T14:29:37.972071+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "mint-trace.json",
+      "url": "https://base.blockscout.com/api/v2/transactions/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9/raw-trace",
+      "command_result": {
+        "chunk_id": "cb3971",
+        "wall_time_seconds": 3.6936215,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "52b7758a9900a3ea444e7da813c2dba8a97c7d46e75306b86d938acf8f6d983b",
+      "bytes": 1794,
+      "retrieved_at": "2026-10-26T14:29:39.437335+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "takeover-trace.json",
+      "url": "https://base.blockscout.com/api/v2/transactions/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237/raw-trace",
+      "command_result": {
+        "chunk_id": "5189e7",
+        "wall_time_seconds": 4.5933962,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "8bcc056031b798eabf6dc4e3f1cd2f97e707f6b05346923297f6e0bd82991d09",
+      "bytes": 1103,
+      "retrieved_at": "2026-10-26T14:29:40.390551+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "oft-pre-attack-code.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+          "0x2ff42a8"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "c615df",
+        "wall_time_seconds": 7.7577045,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "78dec64c6200b0945af6fa8ea6e4b7239d6281034294feecc04ac459022dd0ea",
+      "bytes": 34628,
+      "retrieved_at": "2026-10-26T14:29:43.556350+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "endpoint-pre-attack-code.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x1a44076050125825900e736c501f859c50fe728c",
+          "0x2ff42a8"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "ab9d9e",
+        "wall_time_seconds": 4.6028825,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "8f0ca48b99ee7baedb630492d10c65f05be98e26080c871834de814ca890e2f3",
+      "bytes": 48048,
+      "retrieved_at": "2026-10-26T14:29:48.889500+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "receive-library-pre-attack-code.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+          "0x2ff42a8"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "c84773",
+        "wall_time_seconds": 1.9309047000000001,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "07eedc36364923f6a36c95af443af573b1351c3eae3af9e1949c4de8f4e010cb",
+      "bytes": 22058,
+      "retrieved_at": "2026-10-26T14:29:46.430185+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "first-sale-tx.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "314b97",
+        "wall_time_seconds": 1.9909903,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "200ee0e74de51747f354ee10d7fbbb708cddc1ba887a0cafd85979aa9e893ac7",
+      "bytes": 943,
+      "retrieved_at": "2026-10-26T14:29:46.392180+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "first-sale-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "a0fe59",
+        "wall_time_seconds": 3.8160154,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "ae12a03f3e9c4ed0b79cac1ce823baec7ff4e6741ef741ec8361218062ccae93",
+      "bytes": 4678,
+      "retrieved_at": "2026-10-26T14:29:48.146194+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "ethereum-redemption-tx.json",
+      "url": "https://ethereum-rpc.publicnode.com",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "a5a8bc",
+        "wall_time_seconds": 1.6680032,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "c1fb93720c01efcb01788d49dd84897789cc8457b6d91170dd13e087c3b4852d",
+      "bytes": 1580,
+      "retrieved_at": "2026-10-26T14:29:46.203542+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "ethereum-redemption-receipt.json",
+      "url": "https://ethereum-rpc.publicnode.com",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "cfbfba",
+        "wall_time_seconds": 1.7988952,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+      "bytes": 38,
+      "retrieved_at": "2026-10-26T14:29:46.468774+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+      "content_failure": "JSON-RPC result:null"
+    },
+    {
+      "path": "original-x-response.html",
+      "url": "https://x.com/TheSandboxGame/status/2091063415649251821",
+      "command_result": {
+        "chunk_id": "4f79a9",
+        "wall_time_seconds": 1.5751634,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional-fetch-results.json",
+      "sha256": "4587a0b87ccd11e168029129082144c50375202a474db9a72ec66719c6c14d66",
+      "bytes": 150993,
+      "retrieved_at": "2026-10-26T14:29:51.317639+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "config-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xb757a126b4cb78fded5ea63c67fcdba6ec8e5c949491b7d944106d2b6cce20c7"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "07b6f7",
+        "wall_time_seconds": 4.3699466000000005,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional2-fetch-results.json",
+      "sha256": "57162ef4bdeb152a0960fb48c85a20e5f7e69d0f30d5faff659ce623cb599cbb",
+      "bytes": 2437,
+      "retrieved_at": "2026-10-26T14:32:00.925469+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "dvn-verify-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xccf27c81e05e4280c21b8605e05d658b5ce4b4108fca629db9a1a3a4c44e9961"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "5b6c47",
+        "wall_time_seconds": 3.4756544,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional2-fetch-results.json",
+      "sha256": "943751c3ccf43e9cf0ab01f200b1c92d43776b0544c473ecd70a8072abd2e3cb",
+      "bytes": 2175,
+      "retrieved_at": "2026-10-26T14:32:00.065161+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "commit-verification-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xaf28ebeb649f2234e6e44617ee93318af6300a48155d41fd6c4bd28a070fe076"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "25cdb4",
+        "wall_time_seconds": 2.5869733,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional2-fetch-results.json",
+      "sha256": "e04eb571b5e328504ea51ab348737e7e53a16a689adb0e288883cbbcd96c31cc",
+      "bytes": 1988,
+      "retrieved_at": "2026-10-26T14:31:59.309171+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "ethereum-redemption-receipt-llama.json",
+      "url": "https://eth.llamarpc.com",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "4ec4cf",
+        "wall_time_seconds": 10.0098262,
+        "session_id": 64799,
+        "original_token_count": 0,
+        "output": ""
+      },
+      "batch_log": "additional2-fetch-results.json",
+      "attempt_recorded_at": "2026-10-26T14:32:18.331782+00:00"
+    },
+    {
+      "path": "official-postmortem.html",
+      "url": "https://www.sandbox.game/en/blog/august-22-exploit-post-mortem/3526/",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_at": "2026-10-26T22:17:16.756627+08:00",
+      "batch_log": "candidate_jobs-fetch-results.json",
+      "attempt_recorded_at": "2026-10-26T14:17:53.085031+00:00"
+    },
+    {
+      "path": "takeover-tx.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237"
+        ]
+      },
+      "http_status": 200,
+      "bytes": 1197,
+      "sha256": "d95a59bcdf294cda72f1c9aa16e0b148421267b6f4d7fff1c0f62ffa76ace589",
+      "content_type": "application/json",
+      "retrieved_at": "2026-10-26T22:17:15.666275+08:00",
+      "batch_log": "candidate_jobs-fetch-results.json"
+    },
+    {
+      "path": "takeover-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237"
+        ]
+      },
+      "http_status": 200,
+      "bytes": 2433,
+      "sha256": "bdb906b27f3b3e76ac19f0ba5aeee694ad6adfa95f022dc9c318c3e81c5e66dc",
+      "content_type": "application/json",
+      "retrieved_at": "2026-10-26T22:17:18.059699+08:00",
+      "batch_log": "candidate_jobs-fetch-results.json"
+    },
+    {
+      "path": "mint-tx.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+        ]
+      },
+      "error": "The read operation timed out",
+      "retrieved_at": "2026-10-26T22:17:53.080129+08:00",
+      "batch_log": "candidate_jobs-fetch-results.json",
+      "sha256": "9a0b59d3d6789dfaad78b2f6b14c77ab873473f49cbcda38ec9371b6348d5e83",
+      "bytes": 1452
+    },
+    {
+      "path": "mint-receipt.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+        ]
+      },
+      "http_status": 200,
+      "bytes": 3262,
+      "sha256": "0937a891b88e5e9bd1e6f769e837b7ff7e92059a141ab13c6439b6d99fc5f91c",
+      "content_type": "application/json",
+      "retrieved_at": "2026-10-26T22:17:16.647441+08:00",
+      "batch_log": "candidate_jobs-fetch-results.json"
+    },
+    {
+      "path": "ethereum-redemption-receipt-llama.json",
+      "url": "https://eth.llamarpc.com",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+        ]
+      },
+      "success": false,
+      "error": "Request timed out after 35 seconds; no response file was produced.",
+      "attempt_recorded_at": "2026-10-26T14:52:53.278462+00:00",
+      "failure_source": "Parent confirmed final execution result in task message; exec session 64799."
+    },
+    {
+      "path": "sandbox/sale-helper-source.json",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e?fields=all",
+      "method": "GET",
+      "http_status": 404,
+      "sha256": "dbb39b17728d13f62bc01159394124d7d35cac653032e9e0af15232321f92247",
+      "bytes": 127,
+      "retrieved_at": "2026-10-26T15:07:48.269203+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+      "failure": "Sourcify returned match=null, creationMatch=null and runtimeMatch=null; exact raw JSON retained."
+    },
+    {
+      "path": "sandbox/sale-helper-runtime-before-mint.json",
+      "url": "https://mainnet.base.org",
+      "method": "POST",
+      "http_status": 200,
+      "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+      "bytes": 3440,
+      "retrieved_at": "2026-10-26T15:08:23.375015+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+          "0x2ff42b4"
+        ]
+      }
+    },
+    {
+      "path": "sandbox/sale-helper-runtime-attack.json",
+      "url": "https://mainnet.base.org",
+      "method": "POST",
+      "http_status": 200,
+      "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+      "bytes": 3440,
+      "retrieved_at": "2026-10-26T15:07:48.376015+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+          "0x2ff42b7"
+        ]
+      }
+    },
+    {
+      "path": "sandbox/ethervm-form.html",
+      "url": "https://ethervm.io/decompile",
+      "method": "GET",
+      "http_status": 200,
+      "sha256": "ea82f1a1c6a77c0d11dad18ab6220d5670f701fab8d67e5ac86001337ae03229",
+      "bytes": 6287,
+      "retrieved_at": "2026-10-26T15:08:05.095651+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion."
+    },
+    {
+      "path": "sandbox/sale-helper-ethervm-response.html",
+      "url": "https://ethervm.io/decompile",
+      "method": "POST",
+      "http_status": 200,
+      "sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+      "bytes": 209721,
+      "retrieved_at": "2026-10-26T15:08:37.036116+00:00",
+      "retrieved_at_basis": "Saved raw response file modification time at download completion.",
+      "request": {
+        "request_path": "sandbox/sale-helper-ethervm-request.txt",
+        "content_type": "application/x-www-form-urlencoded"
+      }
+    }
+  ],
+  "derived_evidence": [
+    {
+      "path": "decoded_evidence.json",
+      "sha256": "54ade2cbda22889e14d06d365266a7a84009070453701872ff7b092917e24a7d",
+      "bytes": 9588,
+      "kind": "offline_decode_or_comparison"
+    },
+    {
+      "path": "historical_bindings.json",
+      "sha256": "0feb3d3a803fb8e11266a91ea1b80e89d370d7e950f28defeeb5e39da528b901",
+      "bytes": 1914,
+      "kind": "offline_decode_or_comparison"
+    },
+    {
+      "path": "slice_manifest.json",
+      "sha256": "b266d1dc432ce2952a4a06a6b749768a88b68fdf00c54f29029e14856dccd3c5",
+      "bytes": 24723,
+      "kind": "offline_decode_or_comparison"
+    },
+    {
+      "path": "decompilation-provenance.json",
+      "sha256": "a1493ec1185ab3dcf41550f34ec9fe1545365bdaac196d657c22985229f2f11a",
+      "bytes": 5507,
+      "kind": "historical_runtime_public_decompilation_binding"
+    }
+  ],
+  "context_limits": [
+    "The USD 670000 source-sheet estimate and approximately USD 697000 later official estimate remain unreconciled; CN/EN CSV loss fields are blank (loss_usd=null). No full-campaign loss/profit accounting was performed.",
+    "Ethereum redemption transaction was fetched, but PublicNode receipt returned result:null and the Llama receipt retry timed out after 35 seconds; neither redemption success nor aggregate payouts were independently established.",
+    "No independent historical effective optional-DVN default read; custom zero fields are correctly documented as default inheritance.",
+    "Core Base runtime is historical-bound; Ethereum adapter and underlying token are verified-source context without a separate attack-block runtime comparison.",
+    "Official postmortem direct HTTP download returned 403; web research accessed official page text. X response is not proof of full tweet body.",
+    "No upstream scripts, PoCs, compilation, deployment, replay or transaction submission were executed.",
+    "The unverified first-sale helper is supplemented by public online decompilation of its historical runtime; this reconstructed high-level code is not original source or a formal semantic-equivalence proof."
+  ],
+  "source_policy": "All five original-source bundles come from independently downloaded Sourcify verified original source responses. No report, PoC, third-party reconstruction, decompilation or fixed version is used as original source. The separate decompilations list contains only supplementary high-level public decompiler output for the unverified first-sale helper.",
+  "decompilations": [
+    {
+      "id": "sandbox-sale-helper-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "first_mint_recipient_and_first_sale_execution_helper_supplementary_context",
+      "address": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+      "chain_id": 8453,
+      "source_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper.ethervm.decompiled.sol",
+      "original_file_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper.ethervm.decompiled.sol",
+      "target_path": "decompiled/sale-helper.ethervm.decompiled.sol",
+      "raw_response_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-ethervm-response.html",
+      "request_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-ethervm-request.txt",
+      "runtime_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-runtime-attack.json",
+      "runtime_hex_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/sale-helper-runtime.hex",
+      "historical_block": 50283191,
+      "also_confirmed_at_block": 50283188,
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "The returned page does not report the decompiler engine version; frontend/CDN versions are not substituted.",
+      "sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "runtime_sha256": "75046a49d0e9e0db35338bd0173c52972f0e6928882e2696ec9d5e085fb872cd",
+      "raw_response_sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+      "runtime_bytes": 1701,
+      "decompiled_error_comment_count": 0,
+      "retrieved_at_utc": "2026-10-26T15:08:37.036116+00:00",
+      "bytecode_binding": "Historical code is equal before first mint and at first sale. Exact runtime was POSTed; the returned separate disassembly covers all 1701 bytes without mismatch.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "artifact_only_files": [
+        "raw HTML",
+        "form and POST request body",
+        "runtime hex and RPC raw responses",
+        "Sourcify no-match response",
+        "disassembly",
+        "provenance and hashes"
+      ],
+      "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/sandbox/decompilation-provenance.json"
+    }
+  ]
+}

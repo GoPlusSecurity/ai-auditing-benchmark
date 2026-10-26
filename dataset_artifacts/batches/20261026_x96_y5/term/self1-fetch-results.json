@@ -1,0 +1,135 @@
+[
+  {
+    "path": "term/helper-implementation-code-page.html",
+    "url": "https://etherscan.io/address/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1#code",
+    "started_at": "2026-10-26T14:44:34.560Z",
+    "result": {
+      "chunk_id": "797bf3",
+      "wall_time_seconds": 1.5670663,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "797bf3",
+      "wall_time_seconds": 1.5670663,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/delay-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd54895B1121A2eE3f37b502F507631FA1331BED6?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "d3253f",
+      "wall_time_seconds": 3.2709747,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "d3253f",
+      "wall_time_seconds": 3.2709747,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/vault-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd8063123BBA3B480569244AE66BFE72B6c84b00d?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "e76d68",
+      "wall_time_seconds": 2.6349651,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "e76d68",
+      "wall_time_seconds": 2.6349651,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/voting-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "8ed274",
+      "wall_time_seconds": 4.5773581,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "8ed274",
+      "wall_time_seconds": 4.5773581,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/dao-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x52Af16664155608b845BE18aa29620EbF6eA2D3a?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "8cb501",
+      "wall_time_seconds": 4.0204802,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "8cb501",
+      "wall_time_seconds": 4.0204802,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/delay-owner-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "50f77f",
+      "wall_time_seconds": 2.5790456,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "50f77f",
+      "wall_time_seconds": 2.5790456,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/owner-dependency-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb?fields=all",
+    "started_at": "2026-10-26T14:44:34.581Z",
+    "result": {
+      "chunk_id": "db879a",
+      "wall_time_seconds": 3.3811347,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "command_result": {
+      "chunk_id": "db879a",
+      "wall_time_seconds": 3.3811347,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

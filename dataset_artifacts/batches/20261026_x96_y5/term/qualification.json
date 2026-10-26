@@ -1,0 +1,36 @@
+{
+  "case_id": "20260823_TermLabs",
+  "sheet_row": 91,
+  "qualified": true,
+  "decision": "qualifies_as_deployed_governance_composition_vulnerability_with_public_original_core_source",
+  "reason_cn": "普通参与者取得多数封装票权后，经已有合约权限成功关闭延时并分配金库资产。核心合约原始源码与历史实际调用可以独立证明该路径，不依赖假设管理员凭据被盗，不把正常 onlyOwner 函数单独定性为漏洞。",
+  "source_policy": "All 9 selected original bundles are unmodified source content from saved Sourcify verified responses. Official project documents describe intended operations. Articles/PoCs are locators only. Attacker decompilation is separate supplementary reconstructed code.",
+  "selected_original_bundles": 9,
+  "selected_original_source_files": 158,
+  "historical_scope": "ETH Meta Vault proposal 5, voting snapshot 25772693, execution block 25816049",
+  "root_cause_status": "original_source_plus_historical_trace_and_events",
+  "funds_status": "raw WETH transfer topics/data independently decoded and matched; 2841.743535791961701401 WETH two-hop gross flow",
+  "loss_usd": null,
+  "evidence_gaps": [
+    "完整 JSON-RPC receipt 查询未得到可用结果；使用 Blockscout 原始 topics/data 日志、交易成功状态和完整 rawtrace 交叉核对，不把 null 或错误响应称为成功回执。",
+    "未取得全部历史 Roles 存储与投票参数。历史调用和正常检查源码证明 DAO 的 role 1 实际获准执行三个 Delay 管理动作；不推断该角色是否使用通配目标、具体 selector 白名单或某种参数规则，也不声称完整支持率/参与率配置。",
+    "历史 rawtrace 绑定了本案受害治理代理的实际实现地址；源码匹配等级由 Sourcify 提供，未本地编译或重新做完整部署字节码验证。部分 creationMatch 为 null，不能写成所有合约都是完整创建匹配。",
+    "官方治理文档描述正常七日延时和 LP 否决流程，但该现行页面本身不是攻击前状态快照；此前 cooldown 精确值没有重读。实际三项管理调用、设置为零和同交易执行由历史 trace 证明。",
+    "四个普通子策略及其 Aave/Morpho 深层依赖未形成完整原始源码包；本案不把它们列为漏洞点。原始 trace、WETH 日志和 DebtUpdated 证明这次提款确实发生。获取初始 LP 的路由器源码也未完整归档。",
+    "恶意策略原始源码不可得；高层反编译仅作辅助，原始创建 runtime 与当前 explorer runtime 一致且返回反汇编完整对上输入。未获得攻击区块独立 eth_getCode，不能声称完整证明期间从无变更。",
+    "攻击 helper 实现无已验证原始源码；ethervm 提交 runtime 和按地址查询均超时，无高层输出。保留实际失败页，不用手写伪代码或反汇编冒充高层反编译。历史 wrap/proposal/vote/execute rawtrace 仍展示其实际调用边界。",
+    "本案独立核验 ETH Meta Vault 资金流；未逐笔核验其他 USDC vault 的全部损失、追回与净额，未核定事发时美元价格。loss_usd 留空。",
+    "展示的调用链不需要管理员私钥泄露即可完成；这不是对所有链外事件或密钥安全的全面取证结论。"
+  ],
+  "decompilation_status": {
+    "attacker_strategy": "successful public high-level output, complete input/disassembly binding, engine version unknown",
+    "helper_implementation": "two public service attempts timed out; failure archived"
+  },
+  "artifacts": {
+    "case_spec": "dataset_artifacts/batches/20261026_x96_y5/term/case_spec.json",
+    "draft": "dataset_artifacts/batches/20261026_x96_y5/term/draft.md",
+    "provenance": "dataset_artifacts/batches/20261026_x96_y5/term/provenance.json",
+    "decoded": "dataset_artifacts/batches/20261026_x96_y5/term/decoded_evidence.json",
+    "bindings": "dataset_artifacts/batches/20261026_x96_y5/term/historical_bindings.json"
+  }
+}

@@ -59,7 +59,7 @@ c593662224bb92adc9c3696a6179a3c200b1d7f0a331a4fcf29f43715dcb5d74  ../../../datas
 583a903e2a5e885aaca2bbe24e408781134b56c9e7b5c7062a99ab376d276aa5  ../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/ISwap.sol
 237e5e811202b7e946a120ca985230826477cc19c74201c8d5c86dd0b80caabc  ../../../dataset/benchmark_complete/20260820_Allbridge_CCTP/source-bundles/allbridge-router/src/interfaces/ITokenMessenger.sol
 ffb13f697e41b4d6b3643acd61db330a6f2437c904c4e71b3515ace8a5dfda71  SOURCE.md
-cbc80e150a75e4297157fed6c754bfaf8bd4b017d511cd23e94e38720df75617  case_metadata.json
+b6a8d84f01745210c6b461c30d06c4c7dbf4c99f8d12c7dd618cd281e9329c4d  case_metadata.json
 ab895f752dd01c3c63ca55bd08aac5a3c621c88f06c2764e5c4c2b76084d3d79  evidence/allbridge-block.json
 58b55d7e6b8410fcf1379c959e134e82d51e5982cef33d7c140379beeabc19b2  evidence/allbridge-poc-commit.json
 2f0ef0e2a8991127d84b590606b424e3fd6f4f2d7a4b6f1f8df39a7718a68d84  evidence/allbridge-primary-report.html

@@ -1,0 +1,9 @@
+[
+  {"path":"fh/tx.html","url":"https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"},
+  {"path":"fh/disclosure.html","url":"https://x.com/TenArmorAlert/status/2092427353456812207"},
+  {"path":"fh/secondary-report.html","url":"https://anomly.rs/falcon-heavy-token-reserve-sync-exploit"},
+  {"path":"fh/transaction.json","url":"https://bsc-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"]}},
+  {"path":"fh/receipt.json","url":"https://bsc-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"]}},
+  {"path":"fh/trace.json","url":"https://bsc-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",{"tracer":"callTracer"}]}},
+  {"path":"fh/sheet-malicious-source.json","url":"https://sourcify.dev/server/v2/contract/56/0x7FA3bC0d5667fFd14d7ACD6Ce5f2432AC13a6FDA?fields=all"}
+]

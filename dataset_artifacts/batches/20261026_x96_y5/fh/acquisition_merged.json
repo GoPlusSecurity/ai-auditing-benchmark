@@ -1,0 +1,167 @@
+[
+  {
+    "manifest": "additional2-fetch-results.json",
+    "path": "fh/receipt-bnb-official.json",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+      ]
+    },
+    "command_result": {
+      "chunk_id": "b08d7f",
+      "wall_time_seconds": 0.9340595,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "manifest": "additional2-fetch-results.json",
+    "path": "fh/secondary-report-retry.html",
+    "url": "https://anomly.rs/falcon-heavy-token-reserve-sync-exploit",
+    "command_result": {
+      "chunk_id": "c36fde",
+      "wall_time_seconds": 10.007998,
+      "session_id": 78394,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "manifest": "additional3-fetch-results.json",
+    "path": "fh/token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xdcf0dfe0053677a67610c6d08ea1f5c78df8ca37?fields=all",
+    "command_result": {
+      "chunk_id": "dca6ba",
+      "wall_time_seconds": 3.6036117,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "manifest": "additional3-fetch-results.json",
+    "path": "fh/pair-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x8f2d1a3992856a860304f1b86534b6b129cc4df7?fields=all",
+    "command_result": {
+      "chunk_id": "fc69f6",
+      "wall_time_seconds": 2.017624,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/56/0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"56\",\r\n  \"address\": \"0x8f2d1A3992856a860304f1B86534B6B129Cc4df7\"\r\n}\r\n"
+    }
+  },
+  {
+    "manifest": "additional3-fetch-results.json",
+    "path": "fh/v2-router-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x10ED43C718714eb63d5aA57B78B54704E256024E?fields=all",
+    "command_result": {
+      "chunk_id": "ed802d",
+      "wall_time_seconds": 2.2054632,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "manifest": "additional3-fetch-results.json",
+    "path": "fh/v3-router-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x1b81D678ffb9C0263b24A97847620C99d213eB14?fields=all",
+    "command_result": {
+      "chunk_id": "d6a6dc",
+      "wall_time_seconds": 2.3754569,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/tx.html",
+    "url": "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-26T22:26:48.553576+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/disclosure.html",
+    "url": "https://x.com/TenArmorAlert/status/2092427353456812207",
+    "http_status": 200,
+    "bytes": 107191,
+    "sha256": "475eb36a0afeb48480f93f6b1797b32837bc41c98899b2f3e8eca00df87054d9",
+    "content_type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-10-26T22:26:48.808331+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/secondary-report.html",
+    "url": "https://anomly.rs/falcon-heavy-token-reserve-sync-exploit",
+    "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+    "retrieved_at": "2026-10-26T22:27:23.966028+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/transaction.json",
+    "url": "https://bsc-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 1204,
+    "sha256": "3f1e4db80f4fbb074a6e9f02597869fff231f8adfea1b59fc649324c7c67a180",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:26:49.084121+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/receipt.json",
+    "url": "https://bsc-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+      ]
+    },
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-10-26T22:26:49.470340+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/trace.json",
+    "url": "https://bsc-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "http_status": 200,
+    "bytes": 127,
+    "sha256": "09a8e5cd25b746dc33bfc370123f1b6f1ccb10cb7a05fe8a0c4eb8cf0b212076",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:26:49.248977+08:00"
+  },
+  {
+    "manifest": "pending_jobs-fetch-results.json",
+    "path": "fh/sheet-malicious-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x7FA3bC0d5667fFd14d7ACD6Ce5f2432AC13a6FDA?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T22:26:49.581405+08:00"
+  }
+]

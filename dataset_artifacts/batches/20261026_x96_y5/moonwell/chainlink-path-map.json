@@ -1,0 +1,9 @@
+{
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/AggregatorProxy.sol": "src/v0.6/AggregatorProxy.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/EACAggregatorProxy.sol": "src/v0.6/EACAggregatorProxy.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/Owned.sol": "src/v0.6/Owned.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AccessControllerInterface.sol": "src/v0.6/interfaces/AccessControllerInterface.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorInterface.sol": "src/v0.6/interfaces/AggregatorInterface.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol": "src/v0.6/interfaces/AggregatorV2V3Interface.sol",
+  "/Users/yos/chainlink2/evm-contracts/src/v0.6/interfaces/AggregatorV3Interface.sol": "src/v0.6/interfaces/AggregatorV3Interface.sol"
+}

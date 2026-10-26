@@ -1,0 +1,258 @@
+{
+  "parameters": {
+    "x": 96,
+    "y": 5,
+    "actual_scan_range": [
+      85,
+      96
+    ],
+    "processing_order": [
+      96,
+      95,
+      94,
+      93,
+      92,
+      91,
+      90,
+      89,
+      88,
+      87,
+      86,
+      85
+    ],
+    "selected_source_rows": [
+      95,
+      92,
+      91,
+      89,
+      85
+    ],
+    "source_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/edit?gid=0#gid=0",
+    "export_url": "https://docs.google.com/spreadsheets/d/1ENyVv94OaHW2BesbrSaiIluwjHMjuYrSR1aFk_LxS3Y/export?format=csv&gid=0",
+    "retrieved_at": "2026-10-26T21:39:27.341237+08:00",
+    "timezone": "Asia/Shanghai",
+    "raw_export_sha256": "d4f5673b949fa3775660cdf9300e7e18adde3045a22d0d433cc1c51a89b9b9bc",
+    "raw_export": "sheet_gid0_raw.csv"
+  },
+  "counts": {
+    "scanned_rows": 12,
+    "qualifying_source_rows": 5,
+    "new_cases": 4,
+    "reused_existing_cases": 1,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 7
+  },
+  "rows": [
+    {
+      "row": 96,
+      "sheet_event": "@Maya_Protocol",
+      "references": [
+        "https://x.com/aaluxxmyth/status/2089792721086996703?s=46"
+      ],
+      "event": "Maya Protocol",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "链协议 Trade Account / 盗窃补贴检查事件；当前资料定位节点协议逻辑，未确认属于本批合约代码漏洞。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "source_sheet_classification; prior case-index context"
+    },
+    {
+      "row": 95,
+      "sheet_event": "@Allbridge_io",
+      "references": [
+        "https://x.com/DefimonAlerts/status/2090369928494719263?s=20"
+      ],
+      "event": "Allbridge CCTP",
+      "case_id": "20260820_Allbridge_CCTP",
+      "qualifies": true,
+      "status": "reused_existing",
+      "reason": "本批重新下载并比较核心Messenger/Router原始源码30文件；既有哈希、精简9段与文档复核通过，复用原记录。",
+      "source_qualification": "public_original_vulnerable_source_refreshed",
+      "evidence": "allbridge_requalification.json"
+    },
+    {
+      "row": 94,
+      "sheet_event": "@bouncebit",
+      "references": [
+        "https://x.com/bouncebit/status/2090415943646347558"
+      ],
+      "event": "BounceBit",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "源表及项目公告定位链节点/Cosmos 模块，未确认合约代码漏洞及相应原始源码，不因资产损失将其收为合约案例。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "source_sheet_and_original_project_announcement_link"
+    },
+    {
+      "row": 93,
+      "sheet_event": "0x7Ba7f4773fa7890BaD57879F0a1Faa0eDffB3520",
+      "references": [
+        "https://x.com/realScamSniffer/status/2090951067584581838"
+      ],
+      "event": "地址投毒",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "复制污染转账历史中的错误地址造成损失；没有确认的合约代码缺陷。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "source_sheet_original_disclosure"
+    },
+    {
+      "row": 92,
+      "sheet_event": "@TheSandboxGame",
+      "references": [
+        "https://x.com/TheSandboxGame/status/2091063415649251821"
+      ],
+      "event": "The Sandbox（SAND OFT 跨链桥）",
+      "case_id": "20260822_TheSandbox",
+      "qualifies": true,
+      "status": "new",
+      "reason": "取得与核心缺陷有关的权威公开原始源码，正常依赖、历史绑定、付款与未开源辅助合约边界见案例说明。",
+      "source_qualification": "public_original_vulnerable_source_obtained",
+      "evidence": "sandbox/draft.md"
+    },
+    {
+      "row": 91,
+      "sheet_event": "@term_labs",
+      "references": [
+        "https://x.com/certikalert/status/2091433962795106499?s=46"
+      ],
+      "event": "Term Labs（ETH Meta Vault 治理）",
+      "case_id": "20260823_TermLabs",
+      "qualifies": true,
+      "status": "new",
+      "reason": "取得与核心缺陷有关的权威公开原始源码，正常依赖、历史绑定、付款与未开源辅助合约边界见案例说明。",
+      "source_qualification": "public_original_vulnerable_source_obtained",
+      "evidence": "term/draft.md"
+    },
+    {
+      "row": 90,
+      "sheet_event": "@cosmoslabs_io \n@MANTRA_Chain\n@TacBuild\n@KiiChainio",
+      "references": [
+        "https://x.com/cosmoslabs_io/status/2091935066381582390"
+      ],
+      "event": "Cosmos EVM / MANTRA / TAC / KiiChain",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "Cosmos 官方复盘定位 StateDB 与 SDK bank 余额、staking precompile 和 vesting 账户的节点实现问题，不属于本批智能合约代码。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "official_cosmos_security_postmortem",
+      "official_source": "https://github.com/cosmos/security/blob/main/communications/cosmos_evm_GHSA-7g4w-cg88-2cq2_post_mortem.md",
+      "evidence": "cosmos-official-postmortem.md"
+    },
+    {
+      "row": 89,
+      "sheet_event": "#FH on #BSC",
+      "references": [
+        "https://x.com/TenArmorAlert/status/2092427353456812207"
+      ],
+      "event": "Falcon Heavy（FH）",
+      "case_id": "20260826_FH",
+      "qualifies": true,
+      "status": "new",
+      "reason": "取得与核心缺陷有关的权威公开原始源码，正常依赖、历史绑定、付款与未开源辅助合约边界见案例说明。",
+      "source_qualification": "public_original_vulnerable_source_obtained",
+      "evidence": "fh/draft.md"
+    },
+    {
+      "row": 88,
+      "sheet_event": "@enjin",
+      "references": [
+        "https://x.com/SlowMist_Team/status/2092455321654694355"
+      ],
+      "event": "Enjin CryptoItems",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "关键代理/适配器漏洞原始源码未取得；Etherscan未验证、Sourcify查询404，官方样例仓库不能证明目标槽位冲突版本。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "see_enjin_qualification",
+      "qualification_file": "enjin/qualification.json"
+    },
+    {
+      "row": 87,
+      "sheet_event": "@realio_network",
+      "references": [
+        "https://x.com/realio_network/status/2092288120918044688"
+      ],
+      "event": "Realio",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "源表原始项目披露定位网页应用与平台签名能力被接管；未确立合约权限绕过和对应漏洞原始源码。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "source_sheet_project_disclosure; no_independent_contract_root_cause"
+    },
+    {
+      "row": 86,
+      "sheet_event": "#迪拜和东南亚华人",
+      "references": [
+        "https://comecome.icu/"
+      ],
+      "event": "ComeCome 恶意应用",
+      "case_id": null,
+      "qualifies": false,
+      "status": "skipped",
+      "reason": "现有资料是涉嫌恶意应用盗币，不是已确认合约代码漏洞；本批未执行应用或恶意链接。",
+      "source_qualification": "not_qualified_this_batch",
+      "evidence_status": "source_sheet; allegation_not_independently_validated"
+    },
+    {
+      "row": 85,
+      "sheet_event": "@MoonwellDeFi",
+      "references": [
+        "https://x.com/blockaid_/status/2092912022555902094"
+      ],
+      "event": "Moonwell（MAMO 抵押市场）",
+      "case_id": "20260827_Moonwell_MAMO",
+      "qualifies": true,
+      "status": "new",
+      "reason": "取得与核心缺陷有关的权威公开原始源码，正常依赖、历史绑定、付款与未开源辅助合约边界见案例说明。",
+      "source_qualification": "public_original_vulnerable_source_obtained",
+      "evidence": "moonwell/draft.md"
+    }
+  ],
+  "included_cases": [
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "source_rows": [
+        95
+      ],
+      "status": "reused_existing"
+    },
+    {
+      "case_id": "20260822_TheSandbox",
+      "source_rows": [
+        92
+      ],
+      "status": "new"
+    },
+    {
+      "case_id": "20260823_TermLabs",
+      "source_rows": [
+        91
+      ],
+      "status": "new"
+    },
+    {
+      "case_id": "20260826_FH",
+      "source_rows": [
+        89
+      ],
+      "status": "new"
+    },
+    {
+      "case_id": "20260827_Moonwell_MAMO",
+      "source_rows": [
+        85
+      ],
+      "status": "new"
+    }
+  ],
+  "formal_write_gate": "five independently source-qualified rows reached before dataset/CSV writes",
+  "decompilation_policy": "public online outputs only, explicitly separate from original source; no local execution of contracts or PoCs"
+}

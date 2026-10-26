@@ -1,0 +1,14 @@
+[
+ {"path":"moonwell/repo-tree.json","url":"https://api.github.com/repos/moonwell-fi/moonwell-contracts-v2/git/trees/main?recursive=1"},
+ {"path":"moonwell/donation1-tx.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x056597f42302ab7f9f5e91c7f84856d3ba73827da7f956645d1f26bdde109ce9"]}},
+ {"path":"moonwell/donation1-receipt.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x056597f42302ab7f9f5e91c7f84856d3ba73827da7f956645d1f26bdde109ce9"]}},
+ {"path":"moonwell/donation2-tx.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0xaf284d7f60dd8f2ebb41cba6a080e95a6deceb3a2c93ff58016996de61de3cd9"]}},
+ {"path":"moonwell/donation2-receipt.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xaf284d7f60dd8f2ebb41cba6a080e95a6deceb3a2c93ff58016996de61de3cd9"]}},
+ {"path":"moonwell/borrow-btc-tx.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f"]}},
+ {"path":"moonwell/borrow-btc-receipt.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f"]}},
+ {"path":"moonwell/borrow-usdc-tx.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18"]}},
+ {"path":"moonwell/borrow-usdc-receipt.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18"]}},
+ {"path":"moonwell/borrow-wsteth-tx.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7"]}},
+ {"path":"moonwell/borrow-wsteth-receipt.json","url":"https://mainnet.base.org","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7"]}},
+ {"path":"enjin/erc1155-tree.json","url":"https://api.github.com/repos/enjin/erc-1155/git/trees/master?recursive=1"}
+]

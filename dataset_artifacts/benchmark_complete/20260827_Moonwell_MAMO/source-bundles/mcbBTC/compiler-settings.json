@@ -1,0 +1,41 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 1,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": [
+      ":@forge-std/=lib/forge-std/src/",
+      ":@openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":@openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
+      ":@proposals/=src/proposals/",
+      ":@protocol/=src/",
+      ":@test/=test/",
+      ":@utils/=src/utils/",
+      ":@wormhole/=lib/wormhole/ethereum/contracts/",
+      ":@zelt-src/=lib/zelt/src/",
+      ":@zelt-test/=lib/zelt/test/",
+      ":@zelt/=lib/zelt/",
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      ":openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      ":solmate/=lib/solmate/src/",
+      ":wormhole/=lib/wormhole/",
+      ":zelt/=lib/zelt/src/"
+    ]
+  },
+  "name": "MErc20Delegator",
+  "fullyQualifiedName": "src/MErc20Delegator.sol:MErc20Delegator"
+}

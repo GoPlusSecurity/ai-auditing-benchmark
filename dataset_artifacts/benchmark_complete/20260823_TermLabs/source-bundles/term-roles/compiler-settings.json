@@ -1,0 +1,24 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.6+commit.11564f7e",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {
+      "contracts/Permissions.sol": {
+        "Permissions": "0xe3b694a21d6a633ed8b5ea9cd70fc43fa7d3b6fb"
+      }
+    },
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "evmVersion": "berlin",
+    "remappings": []
+  },
+  "name": "Roles",
+  "fullyQualifiedName": "contracts/Roles.sol:Roles"
+}

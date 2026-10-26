@@ -1,0 +1,50 @@
+[
+  {
+    "path": "term/sources/voting-proxy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x213771693A4411446b4ECce5bce4a405778b2171?fields=all",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "d6def4",
+      "wall_time_seconds": 1.7473461000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/sources/dao-proxy-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6?fields=all",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "49a6d0",
+      "wall_time_seconds": 2.4817856,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-address.json",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:50:30.931Z",
+    "command_result": {
+      "chunk_id": "16d1c1",
+      "wall_time_seconds": 1.6283839,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-helper-implementation-address.json",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:50:30.932Z",
+    "command_result": {
+      "chunk_id": "01d0d3",
+      "wall_time_seconds": 1.5391408,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

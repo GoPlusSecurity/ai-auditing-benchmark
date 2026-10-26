@@ -1,0 +1,29 @@
+[
+  {
+    "path": "moonwell/market-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x1fadff493529c3fcc7ee04f1f15d19816dda45b7?fields=all",
+    "http_status": 200,
+    "bytes": 871801,
+    "sha256": "8a0928d03d2b55ecc0d39f5c680b2f86c128a7290ebb9f69da793bdab87476f5",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:57:13.394540+08:00"
+  },
+  {
+    "path": "moonwell/comptroller-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x73d8a3bf62aaca6690791e57ebaee4e1d875d8fe?fields=all",
+    "http_status": 200,
+    "bytes": 1029974,
+    "sha256": "040e76a5a04346265dccbd585e94e773a0b7a377262f981fe866871debdb275a",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:57:12.496847+08:00"
+  },
+  {
+    "path": "moonwell/chainlink-oracle-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xec942be8a8114bfd0396a5052c36027f2ca6a9d0?fields=all",
+    "http_status": 200,
+    "bytes": 467091,
+    "sha256": "7b24b29674acb63176e6bc2e6467aaa1f18fb4ee7b4dceaf04b8c53094068840",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:57:12.621919+08:00"
+  }
+]

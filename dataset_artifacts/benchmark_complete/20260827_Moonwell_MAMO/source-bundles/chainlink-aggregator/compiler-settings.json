@@ -1,0 +1,22 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 10000,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": [
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/"
+    ]
+  },
+  "name": "AccessControlledOCR2Aggregator",
+  "fullyQualifiedName": "src/AccessControlledOCR2Aggregator.sol:AccessControlledOCR2Aggregator"
+}

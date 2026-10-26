@@ -1,0 +1,51 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "debug": {
+      "revertStrings": "debug"
+    },
+    "viaIR": false,
+    "metadata": {
+      "appendCBOR": true,
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": false
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 1,
+      "details": {},
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": [
+      "@forge-std/=lib/forge-std/src/",
+      "@openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      "@openzeppelin/=lib/openzeppelin-contracts/",
+      "@openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      "@wormhole/=lib/wormhole/ethereum/contracts/",
+      "@protocol/=src/",
+      "@test/=test/",
+      "@proposals/=proposals/",
+      "@utils/=src/utils/",
+      "@zelt/=lib/zelt/",
+      "@deprecated/=deprecated/",
+      "@script/=script/",
+      "@crv-rewards/=crv-rewards/",
+      "@zelt-src/=lib/zelt/src/",
+      "@zelt-test/=lib/zelt/test/",
+      "ds-test/=lib/solmate/lib/ds-test/src/",
+      "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+      "forge-std/=lib/forge-std/src/",
+      "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      "solmate/=lib/solmate/src/",
+      "wormhole/=lib/wormhole/",
+      "zelt/=lib/zelt/src/"
+    ]
+  },
+  "name": "MErc20Delegator",
+  "fullyQualifiedName": "src/MErc20Delegator.sol:MErc20Delegator"
+}

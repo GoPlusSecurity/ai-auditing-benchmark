@@ -1,0 +1,29 @@
+{
+  "language": "Vyper",
+  "compiler": "vyper",
+  "compilerVersion": "0.3.7+commit.6020b8bb",
+  "compilerSettings": {
+    "libraries": {},
+    "search_paths": [
+      "."
+    ],
+    "outputSelection": {
+      "YearnV3Vault.vy": [
+        "abi",
+        "ast",
+        "interface",
+        "ir",
+        "userdoc",
+        "devdoc",
+        "evm.bytecode.object",
+        "evm.bytecode.opcodes",
+        "evm.deployedBytecode.object",
+        "evm.deployedBytecode.opcodes",
+        "evm.deployedBytecode.sourceMap",
+        "evm.methodIdentifiers"
+      ]
+    }
+  },
+  "name": "YearnV3Vault",
+  "fullyQualifiedName": "YearnV3Vault.vy:YearnV3Vault"
+}

@@ -1,0 +1,226 @@
+{
+  "kind": "offline_decode_of_archived_rpc_transactions_and_receipts",
+  "takeover": {
+    "transaction_hash": "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+    "block_number": 50283177,
+    "timestamp_utc": "2026-08-21T23:41:41+00:00",
+    "from": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "to": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+    "status": 1,
+    "native_value_wei": "0",
+    "selector": "0xcae9ca51",
+    "function": "approveAndCall(address,uint256,bytes)",
+    "target": "0x1a44076050125825900e736c501f859c50fe728c",
+    "approval_amount": "0",
+    "inner_data_length_bytes": 68,
+    "inner_selector": "0xca5eb5e1",
+    "inner_function": "setDelegate(address)",
+    "delegate": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "trailing_data_hex": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "first_parameter_matches_direct_caller": true,
+    "delegate_set_event": {
+      "emitter": "0x1a44076050125825900e736c501f859c50fe728c",
+      "oapp": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "delegate": "0x67624bfadee937c9281b4f98ce18af1bee01257e"
+    },
+    "internal_trace": {
+      "source": "takeover-trace.json",
+      "oft_called_endpoint": true,
+      "actual_inner_sender": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
+    }
+  },
+  "first_mint": {
+    "transaction_hash": "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9",
+    "status": 1,
+    "block_number": 50283189,
+    "timestamp_utc": "2026-08-21T23:42:05+00:00",
+    "from": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "to": "0x1a44076050125825900e736c501f859c50fe728c",
+    "token": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+    "mint_from": "0x0000000000000000000000000000000000000000",
+    "mint_recipient": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+    "mint_units": "50000000000000000000000000",
+    "mint_SAND": "50000000",
+    "packet_delivered": {
+      "src_eid": 30101,
+      "sender": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "nonce": 396,
+      "receiver": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf"
+    },
+    "calldata": {
+      "function": "lzReceive((uint32,bytes32,uint64),address,bytes32,bytes,bytes)",
+      "guid": "0xc35039a80a30023b340c2bc1a92e158d2029807b95f64e4c58dc8915ef2fe190",
+      "src_eid": 30101,
+      "sender": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "nonce": 396,
+      "receiver": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "message_hex": "0x00000000000000000000000007bc449e85d9b66899425df8c8ab49cfb44a5f1e00002d79883d2000",
+      "recipient": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+      "amount_sd_units": "50000000000000",
+      "shared_decimals": 6,
+      "local_decimals": 18
+    },
+    "internal_trace": {
+      "source": "mint-trace.json",
+      "endpoint_called_oft": true,
+      "token_selector": "0x13137d65"
+    }
+  },
+  "limits": [
+    "仅离线解码归档交易、回执与浏览器trace，不执行合约或PoC",
+    "首次权限接管、ULN参数修改、攻击者自身verify、commit和首次铸币已由连续nonce历史交易及成功RPC回执逐项核对",
+    "首卖只记录该笔SAND/WETH实际转账，不推作全案净收益",
+    "美元总损失仍为源表/官方报告估计；未独立汇总全案",
+    "未单独查询攻击时有效optionalDVN默认配置，0字段按源码标作继承默认"
+  ],
+  "uln_configuration": {
+    "hash": "0xb757a126b4cb78fded5ea63c67fcdba6ec8e5c949491b7d944106d2b6cce20c7",
+    "from": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "to": "0x1a44076050125825900e736c501f859c50fe728c",
+    "nonce": 2,
+    "block_number": 50283179,
+    "timestamp_utc": "2026-08-21T23:41:45+00:00",
+    "txlist_receipt_status": "1",
+    "function": "setConfig(address,address,(uint32,uint32,bytes)[])",
+    "oapp": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+    "receive_library": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+    "source_eid": 30101,
+    "config_type": 2,
+    "UlnConfig": {
+      "confirmations": 1,
+      "requiredDVNCount": 1,
+      "optionalDVNCount": 0,
+      "optionalDVNThreshold": 0,
+      "requiredDVNs": [
+        "0x67624bfadee937c9281b4f98ce18af1bee01257e"
+      ],
+      "optionalDVNs": []
+    },
+    "zero_semantics": "optionalDVNCount=0 inherits default optional DVNs; it does not directly mean disable optional verification.",
+    "rpc_receipt_status": "0x1",
+    "receipt_path": "config-receipt.json",
+    "log_count": 1
+  },
+  "dvn_verification": {
+    "hash": "0xccf27c81e05e4280c21b8605e05d658b5ce4b4108fca629db9a1a3a4c44e9961",
+    "from": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "to": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+    "nonce": 3,
+    "block_number": 50283182,
+    "timestamp_utc": "2026-08-21T23:41:51+00:00",
+    "txlist_receipt_status": "1",
+    "function": "verify(bytes,bytes32,uint64)",
+    "payload_hash": "0x1000915eb57c01c77ca668c37b97c0480a2e962bf17c9de42b38b5637222dff5",
+    "confirmations": 1,
+    "header": {
+      "version": 1,
+      "nonce": 396,
+      "src_eid": 30101,
+      "sender": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "dst_eid": 30184,
+      "receiver": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+      "byte_length": 81
+    },
+    "caller_is_configured_required_dvn": true,
+    "rpc_receipt_status": "0x1",
+    "receipt_path": "dvn-verify-receipt.json",
+    "log_count": 1
+  },
+  "verification_commit": {
+    "hash": "0xaf28ebeb649f2234e6e44617ee93318af6300a48155d41fd6c4bd28a070fe076",
+    "from": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+    "to": "0xc70ab6f32772f59fbfc23889caf4ba3376c84baf",
+    "nonce": 4,
+    "block_number": 50283186,
+    "timestamp_utc": "2026-08-21T23:41:59+00:00",
+    "txlist_receipt_status": "1",
+    "function": "commitVerification(bytes,bytes32)",
+    "payload_hash": "0x1000915eb57c01c77ca668c37b97c0480a2e962bf17c9de42b38b5637222dff5",
+    "same_header_as_verify": true,
+    "same_payload_hash_as_verify": true,
+    "rpc_receipt_status": "0x1",
+    "receipt_path": "commit-verification-receipt.json",
+    "log_count": 1
+  },
+  "first_sale": {
+    "transaction_hash": "0xf4ea3fb662c23aec4155db32f2c3fdddcebd07adcbc5cb782a8b0388618a7d4b",
+    "status": "0x1",
+    "block_number": 50283191,
+    "timestamp_utc": "2026-08-21T23:42:09+00:00",
+    "transfers": [
+      {
+        "token": "0x4200000000000000000000000000000000000006",
+        "from": "0xa69cdf524d072c366fd050957880552916d29405",
+        "to": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "units": "14645535529273021360",
+        "decimal_amount": "14.64553552927302136",
+        "log_index": 1180
+      },
+      {
+        "token": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+        "from": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "to": "0xa69cdf524d072c366fd050957880552916d29405",
+        "units": "1496724864727844728117234",
+        "decimal_amount": "1496724.864727844728117234",
+        "log_index": 1181
+      },
+      {
+        "token": "0x4200000000000000000000000000000000000006",
+        "from": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "to": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+        "units": "14645535529273021360",
+        "decimal_amount": "14.64553552927302136",
+        "log_index": 1183
+      },
+      {
+        "token": "0xac531eb26ca1d21b85126de8fb87e80e09002dcf",
+        "from": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+        "to": "0x67624bfadee937c9281b4f98ce18af1bee01257e",
+        "units": "48503275135272155271882766",
+        "decimal_amount": "48503275.135272155271882766",
+        "log_index": 1184
+      }
+    ],
+    "sand_sold": "1496724.864727844728117234",
+    "weth_received_by_attacker": "14.64553552927302136",
+    "sand_remainder_transferred_to_attacker": "48503275.135272155271882766",
+    "limits": "This is one sale only; no USD conversion or full-campaign net profit calculation.",
+    "helper_decompilation": {
+      "calldata": {
+        "selector": "0xb704b531",
+        "pool": "0xa69cdf524d072c366fd050957880552916d29405",
+        "amount_specified_signed": "-14645535529273021360",
+        "sqrt_price_limit_x96": "1461446703485210103287273052203988822378723970341"
+      },
+      "decompilation_path": "sandbox/sale-helper.ethervm.decompiled.sol",
+      "source_lookup": "Sourcify returned no verified source",
+      "runtime_equal_at_blocks": [
+        50283188,
+        50283191
+      ],
+      "decompiled_lines": {
+        "dispatcher": [
+          32,
+          55
+        ],
+        "swap_and_sweep": [
+          58,
+          220
+        ],
+        "swap_callback": [
+          222,
+          285
+        ],
+        "argument_decoding": [
+          294,
+          316
+        ]
+      },
+      "limits": [
+        "This is public decompiler reconstruction, not verified original Solidity. It supplements the sale helper only and does not replace the five verified original-source bundles proving the root cause.",
+        "Zero Error comments and complete input-byte/disassembly binding do not establish semantic equivalence of the high-level reconstruction, recover original names, or establish standalone compilability.",
+        "Function names selected by the provider from signature caches are hints; exact selectors, embedded addresses and original receipts are retained as the stronger anchors."
+      ]
+    }
+  }
+}

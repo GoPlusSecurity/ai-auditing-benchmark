@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.7.6+commit.7338295f",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "none"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 1000000,
+      "enabled": true
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "SwapRouter",
+  "fullyQualifiedName": "contracts/SwapRouter.sol:SwapRouter"
+}

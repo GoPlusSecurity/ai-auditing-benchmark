@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.22+commit.4fc1097e",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 20000,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": []
+  },
+  "name": "ReceiveUln302",
+  "fullyQualifiedName": "contracts/uln/uln302/ReceiveUln302.sol:ReceiveUln302"
+}

@@ -1,5 +1,9 @@
 # Allbridge CCTP：消息有真实签名，却没有真正存入 USDC
 
+<!-- 20261026_x96_y5 -->
+
+2026-10-26 批次 X=96、Y=5 重新定位为固定快照第 95 行。已重新下载核心 Messenger 与 Router 权威原始源码，30 个文件与既有版本逐字一致，完整/精简校验及 9 个切片复核通过，因此复用本例和两份 CSV 的原记录，不新增重复事件。旧批次第 88 行仍仅表示原来的快照位置。[本批复核记录](../../dataset_artifacts/batches/20261026_x96_y5/allbridge_requalification.json)。
+
 源表第 **88** 行，目录日期保留 **2026-08-20**。Base [代表交易](https://basescan.org/tx/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8)实际发生于 **2026-08-19 01:47:17 UTC**，北京时间同日 09:47:17。源表与链上日期并非单纯时区转换。原始披露见 [Defimon](https://defimon.xyz/blog/allbridge-hack-august-2026)及[源表披露入口](https://x.com/DefimonAlerts/status/2090369928494719263)。
 
 ## 背景、角色和正常业务

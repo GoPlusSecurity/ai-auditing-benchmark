@@ -37,5 +37,16 @@
     "online_decompilation": "not_required_for_included_core_logic"
   },
   "view": "benchmark_complete",
-  "source_provenance": "provenance.json"
+  "source_provenance": "provenance.json",
+  "batch_appearances": [
+    {
+      "batch": "20261026_x96_y5",
+      "source_rows": [
+        95
+      ],
+      "action": "requalified_and_reused",
+      "snapshot": "../../batches/20261026_x96_y5/snapshot.json",
+      "evidence": "../../batches/20261026_x96_y5/allbridge_requalification.json"
+    }
+  ]
 }

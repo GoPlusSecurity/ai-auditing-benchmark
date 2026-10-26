@@ -1,0 +1,16 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.5.16+commit.9c3226ce",
+  "compilerSettings": {
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "BEP20USDT",
+  "fullyQualifiedName": "BEP20USDT.sol:BEP20USDT"
+}

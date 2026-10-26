@@ -1,0 +1,14 @@
+[
+ {"path":"term/sources/vault-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2?fields=all","role":"victim vault"},
+ {"path":"term/sources/delay-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x35c99cf4a5df2d9bcd822bee32676d9590229e33?fields=all","role":"delay module"},
+ {"path":"term/sources/helper-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x64e477800051efb06ae4086f4b258b270668b4df?fields=all","role":"attacker helper; locator only"},
+ {"path":"term/sources/attacker-strategy-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x184f2e57b4ce135181fa2a2166ac394339016338?fields=all","role":"attacker strategy; locator only"},
+ {"path":"term/execution-receipt-llama.json","url":"https://eth.llamarpc.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"]}},
+ {"path":"term/execution-trace.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"debug_traceTransaction","params":["0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",{"tracer":"callTracer"}]}},
+ {"path":"term/tx-787669.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"]}},
+ {"path":"term/receipt-787669.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2"]}},
+ {"path":"term/tx-284fc5.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"]}},
+ {"path":"term/receipt-284fc5.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8"]}},
+ {"path":"term/tx-6e7353.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionByHash","params":["0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"]}},
+ {"path":"term/receipt-6e7353.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d"]}}
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="//static.ethervm.io/css/fontawesome/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="//static.ethervm.io/css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="//static.ethervm.io/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="//static.ethervm.io/js/site.js" defer></script>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		
+		<title>Online Solidity Decompiler</title>
+		
+		<meta property="og:site_name" content="Online Solidity Decompiler" />
+		<meta property="og:title" content="Online Solidity Decompiler" />
+		<meta property="og:image" content="//static.ethervm.io/img/og_thumb.png" />
+		<meta property="og:url" content="https://ethervm.io/decompile" />
+		<meta property="og:type" content="website" />
+		
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({
+				google_ad_client: "ca-pub-2505358888082587",
+				enable_page_level_ads: true
+			});
+		</script>
+	</head>
+	<body>
+		<div class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-background">
+			<a class="navbar-brand" style="padding-top: 0; padding-bottom: 0" href="/">
+				<div style="width: 1.7em">
+					<div style="text-align: center; height: 100%">
+						<img style="height: 1.5em" src="//static.ethervm.io/img/ethereum.svg" />
+					</div>
+					<div style="font-size: 0.4em; text-align: center; line-height: 1.5; font-family: Roboto; font-weight: 100; letter-spacing: 0.15em">
+						011010
+					</div>
+				</div>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Reference</a></li>
+					<li class="nav-item"><a class="nav-link" href="/decompile">Decompile</a></li>
+				</ul>
+				<ul class="navbar-nav">
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div data-server-rendered="true"><h1>Online Solidity Decompiler</h1>
+	There are many contracts deployed on the Ethereum network with no source or ABI publicly available.<br>
+	This makes verifying their security and understanding their behaviour a difficult task without the right tools, such as a decompiler.<br>
+	This tool decompiles Ethereum contract bytecode into more readable Solidity-like code, allowing for better understanding of such contracts.
+	<br> <div><a name="resources" class="anchor"></a> <h2>Other Resources<a href="#resources" class="link fa fa-link" style="margin-left: 0.4em; font-size: 0.4em"></a></h2></div> <ul><li><a href="https://github.com/Arachnid/evmdis">evmdis disassembler<span class="fa fa-external-link"></span></a></li> <li><a href="https://github.com/trailofbits/pyevmasm">pyevmasm (dis)assembler<span class="fa fa-external-link"></span></a></li> <li><a href="https://github.com/trailofbits/ethersplay">Ethersplay Binary Ninja plugin<span class="fa fa-external-link"></span></a></li> <li><a href="https://www.pnfsoftware.com/blog/ethereum-smart-contract-decompiler/">JEB decompiler<span class="fa fa-external-link"></span></a></li> <li><a href="https://www.4byte.directory/">Function Signature Database<span class="fa fa-external-link"></span></a></li></ul> <div><a name="decompile" class="anchor"></a> <h2>Decompile<a href="#decompile" class="link fa fa-link" style="margin-left: 0.4em; font-size: 0.4em"></a></h2></div> <div><!----> <form action="/decompile" method="GET"><label>Contract address:</label> <input name="address" placeholder="0x12345678..." style="vertical-align: baseline"> <select name="network"><option value>Live network</option> <option value="sepolia">Sepolia testnet</option> <option value="binance">Binance Smart Chain</option> <option value="tron">TRON</option> <option value="shasta">Shasta testnet</option></select> <button class="btn btn-sm btn-primary" style="vertical-align: baseline">Decompile</button></form> <span class="hr-or small" style="margin-top: 0.2em; margin-bottom: 0.2em">or</span> <form method="POST"><textarea name="bytecode" placeholder="60806040..." style="width: 100%; height: 10em"></textarea> <button name="submit" class="btn btn-sm btn-primary" style="margin-top: 0.5em">Decompile</button></form></div></div>
+		</div>
+		
+		<div style="text-align: center; margin-top: 1em; line-height: 1; margin-bottom: 1em">
+			<small>
+				Found this site useful?<br />
+				Donations are greatly appreciated!<br />
+				ETH: <a href="https://etherscan.io/address/0xB3F04f0c276fa1177c1779f6E1E156B2738ea392"><tt>0xB3F04f0c276fa1177c1779f6E1E156B2738ea392</tt></a><br />
+				Contact/hire: <a href="/cdn-cgi/l/email-protection#0461706c61767269446369656d682a676b69"><span class="__cf_email__" data-cfemail="a1c4d5c9c4d3d7cce1c6ccc0c8cd8fc2cecc">[email&#160;protected]</span></a>
+			</small>
+		</div>
+		
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//static.ethervm.io/js/bootstrap/popper.min.js"></script>
+		<script src="//static.ethervm.io/js/bootstrap/bootstrap.min.js"></script>
+		<script src="//static.ethervm.io/js/clipboard/clipboard.min.js"></script>
+		<script>new Clipboard(".copy-button");</script>
+	<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"74e8491942eb4c378cf3b81dbbe60e18","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

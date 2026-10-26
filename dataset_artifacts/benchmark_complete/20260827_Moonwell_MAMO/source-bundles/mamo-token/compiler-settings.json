@@ -1,0 +1,45 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.28+commit.7893614a",
+  "compilerSettings": {
+    "viaIR": true,
+    "metadata": {
+      "appendCBOR": true,
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": false
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "cancun",
+    "remappings": [
+      "@openzeppelin/=lib/openzeppelin-contracts/",
+      "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      "@forge-std/=lib/forge-std/src/",
+      "@addresses/=addresses/",
+      "@contracts/=src/",
+      "@interfaces/=src/interfaces/",
+      "@libraries/=src/libraries/",
+      "@script/=script/",
+      "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      "@surl/=lib/surl/src/",
+      "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+      "forge-std/=lib/forge-std/src/",
+      "halmos-cheatcodes/=lib/openzeppelin-contracts-upgradeable/lib/halmos-cheatcodes/src/",
+      "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      "@test/=test/",
+      "@openzeppelin-foundry-upgrades/=lib/openzeppelin-foundry-upgrades/src/",
+      "ds-test/=lib/surl/lib/forge-std/lib/ds-test/src/",
+      "openzeppelin-foundry-upgrades/=lib/openzeppelin-foundry-upgrades/src/",
+      "solidity-stringutils/=lib/surl/lib/solidity-stringutils/",
+      "surl/=lib/surl/"
+    ]
+  },
+  "name": "MAMO",
+  "fullyQualifiedName": "src/token/Mamo.sol:MAMO"
+}

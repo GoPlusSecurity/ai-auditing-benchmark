@@ -1,0 +1,53 @@
+{
+  "kind": "public_online_decompiler_output",
+  "service": "ethervm.io Online Solidity Decompiler",
+  "service_url": "https://ethervm.io/decompile",
+  "method": "POST of archived historical runtime bytecode",
+  "engine_version": null,
+  "engine_version_status": "The returned page does not report the decompiler engine version. Frontend library/CDN versions are not substituted.",
+  "runtime_block_numbers": [
+    117979401,
+    117979402
+  ],
+  "runtime_bytes": 3577,
+  "runtime_sha256": "9466bf0dd8f8017357fd9a60cffbcc60124884f95cb5dd157ae21d85bbe1b26f",
+  "historical_before_equals_attack": true,
+  "decompiled_path": "attacker-ethervm-decompiled.txt",
+  "raw_response_path": "attacker-ethervm-response.html",
+  "extraction": "Unmodified text content of the service decompilation code div; HTML markup removed and entities decoded. No manually written pseudo-code.",
+  "disassembly_path": "attacker-ethervm-disassembly.txt",
+  "response_disassembly_bytes_checked": 3577,
+  "response_disassembly_mismatches": [],
+  "response_disassembly_complete_byte_coverage": true,
+  "decompiler_error_comment_count": 2,
+  "public_method_names_caveat": "Service names use a 4byte signature cache; names and high-level reconstruction are not authoritative source or a full execution trace.",
+  "not_original_source": true,
+  "not_used_to_replace_vulnerable_original_source": true,
+  "artifacts": [
+    {
+      "path": "attacker-ethervm-response.html",
+      "sha256": "20c8ace904c79f93b3934131afd176994544a5e4dea2bc6aaa555291828e267c",
+      "bytes": 439137
+    },
+    {
+      "path": "attacker-ethervm-decompiled.txt",
+      "sha256": "77fdcee43155e214b1376c1cc7fc43ee93d71e50d7d3e4c4af358fec7c7bc283",
+      "bytes": 44978
+    },
+    {
+      "path": "attacker-ethervm-disassembly.txt",
+      "sha256": "bb2e6b7358ec107aa155171b7865f2f43781ab792859c91760eab250589ef3cd",
+      "bytes": 138562
+    },
+    {
+      "path": "attacker-ethervm-request.txt",
+      "sha256": "f9f56908de6fdf9aba47252b24aa9a7eb0802ae33a164ae1525789b7e52e1306",
+      "bytes": 7180
+    }
+  ],
+  "formal_decompiled_code_path": "attacker.ethervm.decompiled.sol",
+  "formal_decompiled_code_sha256": "77fdcee43155e214b1376c1cc7fc43ee93d71e50d7d3e4c4af358fec7c7bc283",
+  "formal_source_classification": "reconstructed high-level code from a public online decompiler; not original Solidity source and no standalone compilation claimed",
+  "retrieved_at_utc": "2026-10-26T14:49:46.405528+00:00",
+  "timestamp_kind": "download_response_file_write_time"
+}

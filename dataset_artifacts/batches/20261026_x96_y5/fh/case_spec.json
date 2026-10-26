@@ -1,0 +1,260 @@
+{
+  "case_id": "20260826_FH",
+  "qualified": true,
+  "sources": [
+    {
+      "id": "fh-token",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/token-source.json",
+      "role": "vulnerable_contract",
+      "provider": "Sourcify",
+      "address": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37"
+    },
+    {
+      "id": "pancake-v2-router",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/v2-router-source.json",
+      "role": "normal_dependency_fee_on_transfer_swap",
+      "provider": "Sourcify",
+      "address": "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+    },
+    {
+      "id": "pancake-v3-router",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/v3-router-source.json",
+      "role": "normal_dependency_whitelisted_recipient_and_sweep",
+      "provider": "Sourcify",
+      "address": "0x1b81D678ffb9C0263b24A97847620C99d213eB14"
+    },
+    {
+      "id": "pancake-pair-reference",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/pair-reference-source.json",
+      "role": "normal_protocol_reference_source_with_identical_target_historical_runtime",
+      "provider": "Sourcify",
+      "address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+      "target_pool": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+      "binding_status": "Target runtime at blocks 117979401 and 117979402 exactly equals this verified reference address runtime; not direct target source verification or target creation-compilation proof."
+    },
+    {
+      "id": "bsc-usdt",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/usdt-source.json",
+      "role": "normal_payout_token_historical_runtime_bound",
+      "provider": "Sourcify",
+      "address": "0x55d398326f99059fF775485246999027B3197955"
+    }
+  ],
+  "slices": {
+    "fh-token": {
+      "contracts/FHToken.sol": [
+        [
+          1,
+          127
+        ],
+        [
+          139,
+          175
+        ],
+        [
+          186,
+          233
+        ],
+        [
+          241,
+          418
+        ],
+        [
+          420,
+          461
+        ],
+        [
+          522,
+          537
+        ]
+      ]
+    },
+    "pancake-v2-router": {
+      "PancakeRouter.sol": [
+        [
+          1,
+          29
+        ],
+        [
+          279,
+          321
+        ],
+        [
+          704,
+          738
+        ]
+      ]
+    },
+    "pancake-v3-router": {
+      "contracts/SwapRouter.sol": [
+        [
+          1,
+          40
+        ]
+      ],
+      "contracts/base/PeripheryPaymentsWithFee.sol": [
+        [
+          1,
+          13
+        ]
+      ],
+      "contracts/base/PeripheryPayments.sol": [
+        [
+          1,
+          13
+        ],
+        [
+          29,
+          41
+        ]
+      ],
+      "contracts/libraries/TransferHelper.sol": [
+        [
+          24,
+          36
+        ]
+      ]
+    },
+    "pancake-pair-reference": {
+      "PancakePair.sol": [
+        [
+          260,
+          335
+        ],
+        [
+          408,
+          436
+        ],
+        [
+          446,
+          449
+        ]
+      ]
+    },
+    "bsc-usdt": {
+      "BEP20USDT.sol": [
+        [
+          339,
+          414
+        ],
+        [
+          447,
+          451
+        ],
+        [
+          524,
+          531
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "project_cn": "Falcon Heavy（FH）",
+    "project_en": "Falcon Heavy (FH)",
+    "vulnerability_cn": "卖出时扣除资金池自己的代币并提前同步储备，导致 USDT 被超额换出",
+    "vulnerability_en": "Sell-side removal of pair-owned tokens and premature reserve sync cause excessive USDT output",
+    "detail_cn": "FHToken._transfer 的卖出分支先从资金池余额销毁净卖出额的80%、向国库转走20%，调用 pair.sync() 后才把卖方净额转入池子。Pancake V2 的手续费代币路径随后按余额减已降低储备计算输入，并按降低后的FH储备报价。构造函数预设的V3 Router买入白名单与公开sweepToken使普通攻击者可以取得FH再卖出。原回执记录25轮买卖；逐轮卖出金额与公开Router算式吻合，池子USDT净流出与攻击者净流入均为19999018106552928530404原始单位（历史decimals=18，即19,999.018106552928530404 USDT）。保留源表约2万美元估计与8月26日日期，实际交易为8月25日UTC。核心原始源码来自Sourcify；未取得完整内部调用跟踪，未重放。",
+    "detail_en": "FHToken._transfer burns 80% of the net sell amount from the pair balance, sends the remaining 20% from the pair to treasury, calls pair.sync(), and only then credits the seller net amount. The Pancake V2 fee-on-transfer route measures input as balance minus the reduced reserve and quotes against the depleted FH reserve. A constructor-whitelisted V3 router and its public sweepToken allow an ordinary attacker to acquire FH for the sell path. The receipt records 25 buy/sell cycles; each sell output exactly matches the public router formula. Pool USDT net outflow and attacker net inflow both equal 19999018106552928530404 raw units (19,999.018106552928530404 USDT; historical decimals=18). The sheet estimate of about USD 20000 and August 26 date are retained; the transaction occurred on August 25 UTC. Core original source is from Sourcify. Full internal tracing and replay were not performed.",
+    "loss_usd": "20000",
+    "loss_scope": "源表和TenArmor警报的约数；原回执单笔USDT池净流出等于攻击者EOA净收入，按18位为19,999.018106552928530404 USDT，未扣BNB交易成本，不另行给FH记美元价值。",
+    "event_date": "2026-08-26",
+    "onchain_timestamp_utc": "2026-08-25T09:54:52Z",
+    "chain_id": 56,
+    "tx_urls": [
+      "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+    ],
+    "vulnerable_contract_urls": [
+      "https://bscscan.com/address/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37#code"
+    ],
+    "victim_pool_urls": [
+      "https://bscscan.com/address/0x8f2d1A3992856a860304f1B86534B6B129Cc4df7#code"
+    ],
+    "verification_status": "original_sources_and_historical_runtime_confirmed;receipt_and_25_cycles_confirmed;usdt_decimals_18_historically_confirmed;attacker_online_decompilation_archived;full_trace_unavailable;no_replay",
+    "sheet_row": 89,
+    "source_disclosure": "https://x.com/TenArmorAlert/status/2092427353456812207"
+  },
+  "draft_path": "dataset_artifacts/batches/20261026_x96_y5/fh/draft.md",
+  "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/fh/provenance.json",
+  "decoded_evidence_path": "dataset_artifacts/batches/20261026_x96_y5/fh/decoded_evidence.json",
+  "roles": [
+    {
+      "address": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37",
+      "role": "vulnerable FH token; owns balances and sell-time tokenomics"
+    },
+    {
+      "address": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+      "role": "victim FH/USDT AMM pool; funds paid out here"
+    },
+    {
+      "address": "0x727Fb666E3F2531e807E987532C6e2C22ADC45aD",
+      "role": "attacker execution contract; not the vulnerable source"
+    },
+    {
+      "address": "0x7FA3bC0d5667fFd14d7ACD6Ce5f2432AC13a6FDA",
+      "role": "transaction sender and USDT profit recipient; sheet malicious_address"
+    },
+    {
+      "address": "0x8F73b65B4caAf64FBA2aF91cC5D4a2A1318E5D8C",
+      "role": "temporary USDT funding source; equal returned amount in same receipt"
+    }
+  ],
+  "evidence_gaps": [
+    "Full internal call trace unavailable; particular intermediate entry-point calldata is inferred from original source, event sender, online supplementary decompilation, and exact output arithmetic.",
+    "Target pair source lookup returned Sourcify 404 and BscScan 403. Its historical runtime exactly equals the verified reference address runtime, but the reference response is not direct target verification, target creation-transaction proof, or independent local compilation.",
+    "The complete pre-transaction whitelist, dynamic-fee, and totalSupply state was not reconstructed; successful receipt proves the exercised path conditions, not all other state.",
+    "Attacker original source unavailable. Online high-level decompilation is supplementary reconstructed code with two preserved Error comments; the service did not report its engine version. It is not authoritative original source or a full execution trace."
+  ],
+  "not_performed": [
+    "execution of upstream code or PoC",
+    "local Solidity compilation",
+    "deployment",
+    "fork replay",
+    "transactions"
+  ],
+  "runtime_comparison_path": "dataset_artifacts/batches/20261026_x96_y5/fh/runtime-comparison.json",
+  "historical_decimals_evidence": {
+    "response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/usdt-decimals-attack-blast.json",
+    "block_number": 117979402,
+    "value": 18,
+    "source_url": "https://bsc-mainnet.public.blastapi.io"
+  },
+  "decompilations": [
+    {
+      "id": "fh-attacker-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "attacker_execution_contract_supplementary_context",
+      "address": "0x727Fb666E3F2531e807E987532C6e2C22ADC45aD",
+      "chain_id": 56,
+      "source_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker.ethervm.decompiled.sol",
+      "original_file_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker.ethervm.decompiled.sol",
+      "target_path": "decompiled/attacker.ethervm.decompiled.sol",
+      "raw_response_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker-ethervm-response.html",
+      "request_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker-ethervm-request.txt",
+      "runtime_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker-runtime-before-blast.json",
+      "runtime_hex_path": "dataset_artifacts/batches/20261026_x96_y5/fh/attacker-runtime.hex",
+      "historical_block": 117979401,
+      "also_confirmed_at_block": 117979402,
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "engine version not reported by returned page; no frontend or CDN version substituted",
+      "sha256": "77fdcee43155e214b1376c1cc7fc43ee93d71e50d7d3e4c4af358fec7c7bc283",
+      "runtime_sha256": "9466bf0dd8f8017357fd9a60cffbcc60124884f95cb5dd157ae21d85bbe1b26f",
+      "raw_response_sha256": "20c8ace904c79f93b3934131afd176994544a5e4dea2bc6aaa555291828e267c",
+      "runtime_bytes": 3577,
+      "decompiled_error_comment_count": 2,
+      "retrieved_at_utc": "2026-10-26T14:49:46.405528+00:00",
+      "bytecode_binding": "POST request contains the exact historical runtime. The returned separate disassembly was checked against all 3577 input bytes with no mismatches.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "artifact_only_files": [
+        "raw HTML",
+        "request body",
+        "runtime hex/RPC responses",
+        "disassembly",
+        "provenance and hashes"
+      ],
+      "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/fh/decompilation-provenance.json"
+    }
+  ]
+}

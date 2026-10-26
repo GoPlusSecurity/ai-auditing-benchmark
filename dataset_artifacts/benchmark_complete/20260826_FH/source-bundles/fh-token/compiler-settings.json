@@ -1,0 +1,14 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.34+commit.80d5c536",
+  "compilerSettings": {
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "remappings": []
+  },
+  "name": "FHToken",
+  "fullyQualifiedName": "contracts/FHToken.sol:FHToken"
+}

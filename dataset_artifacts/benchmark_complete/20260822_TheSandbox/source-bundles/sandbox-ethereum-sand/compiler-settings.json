@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.5.9+commit.e560f70d",
+  "compilerSettings": {
+    "metadata": {
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 2000,
+      "enabled": true
+    },
+    "evmVersion": "petersburg",
+    "remappings": []
+  },
+  "name": "Sand",
+  "fullyQualifiedName": "src/Sand.sol:Sand"
+}

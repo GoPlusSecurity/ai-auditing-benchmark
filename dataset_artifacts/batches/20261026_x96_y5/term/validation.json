@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "9 original source responses have provider runtime match or exact_match",
+    "158 extracted source files byte-identical to response content",
+    "all requested slice paths and inclusive ranges valid",
+    "8 historical proxy/library bindings observed in actual rawtrace",
+    "proposal and executed raw action arrays identical (17)",
+    "execution rawtrace 395 frames without error; log pages complete with 78 sequential indexes",
+    "snapshot total/votes decoded from actual historical calls",
+    "raw VoteCast Yes option and power match",
+    "deposit amount and LP shares match raw logs and final EOA transfer",
+    "4 normal strategy WETH withdrawals sum exactly to payout",
+    "vault->strategy and strategy->EOA exact equal raw WETH amount",
+    "proposal end to execution interval 12 seconds"
+  ],
+  "selected_bundles": 9,
+  "source_files": 158,
+  "originals_changed": false,
+  "validation_scope": "Static extraction, source range and archived data consistency only. Does not claim local build, replay, complete historical storage or all-event loss verification.",
+  "draft_source_links_checked": 27,
+  "draft_existing_artifact_links_checked": 17,
+  "all_17_action_selectors_and_arguments_checked": true,
+  "authoritative_selector_signatures_checked": 9,
+  "draft_sha256": "d1ecc2aef813282579b9a7918310e930817cd014dab32110a6b97812ad70ad26",
+  "case_spec_sha256": "6b20a8626cf7ae169fbd083369bc4fcdb5758ab9092346ba7d0cffd4fa95bc29"
+}

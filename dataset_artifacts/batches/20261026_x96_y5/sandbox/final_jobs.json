@@ -1,0 +1,50 @@
+[
+  {
+    "path": "sandbox/config-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xb757a126b4cb78fded5ea63c67fcdba6ec8e5c949491b7d944106d2b6cce20c7"
+      ]
+    }
+  },
+  {
+    "path": "sandbox/dvn-verify-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xccf27c81e05e4280c21b8605e05d658b5ce4b4108fca629db9a1a3a4c44e9961"
+      ]
+    }
+  },
+  {
+    "path": "sandbox/commit-verification-receipt.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xaf28ebeb649f2234e6e44617ee93318af6300a48155d41fd6c4bd28a070fe076"
+      ]
+    }
+  },
+  {
+    "path": "sandbox/ethereum-redemption-receipt-llama.json",
+    "url": "https://eth.llamarpc.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x468d7438c58cb28df28f48a548ca479fc56f1493903024d42d5f744409a6f338"
+      ]
+    }
+  }
+]

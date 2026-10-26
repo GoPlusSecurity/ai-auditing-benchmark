@@ -1,0 +1,20 @@
+[
+  {
+    "path": "term/ethervm-form.html",
+    "url": "https://ethervm.io/decompile",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured."
+  },
+  {
+    "path": "term/helper-implementation-ethervm-address-response.html",
+    "url": "https://ethervm.io/decompile?address=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured."
+  },
+  {
+    "path": "term/sources/weth-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2?fields=all",
+    "method": "GET",
+    "collection_note": "Successful saved response; exact HTTP receipt timestamp was not separately captured."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "qualifies": true,
+  "case_id": "20260820_Allbridge_CCTP",
+  "row": 95,
+  "action": "reuse_existing",
+  "refresh": [
+    {
+      "bundle": "allbridge-messenger",
+      "files_compared": 13,
+      "runtime_match": "exact_match",
+      "downloaded_source_response_sha256": "f70e0a8fe1d419550ddeb68b55a27f3c4e2372099773629493a279f10ae4ffa2",
+      "source_url": "https://sourcify.dev/server/v2/contract/8453/0xf9B710E427bf4D93598E0F80A84de22C7Ad9B577?fields=all"
+    },
+    {
+      "bundle": "allbridge-router",
+      "files_compared": 17,
+      "runtime_match": "exact_match",
+      "downloaded_source_response_sha256": "dacb3fc2df7de341244c5a67b5c65c075950783d8d38d4c331b4d22b73810c0f",
+      "source_url": "https://sourcify.dev/server/v2/contract/8453/0xaA119F7442eCC28b9a8F236707ADA8362CFF24fF?fields=all"
+    }
+  ],
+  "all_complete_and_simplified_checksums": "passed",
+  "verbatim_slices_checked": 9,
+  "historical_binding": "unchanged limits in existing document"
+}

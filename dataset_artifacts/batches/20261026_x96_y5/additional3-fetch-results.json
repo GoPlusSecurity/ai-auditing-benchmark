@@ -1,0 +1,82 @@
+[
+  {
+    "path": "fh/token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xdcf0dfe0053677a67610c6d08ea1f5c78df8ca37?fields=all",
+    "command_result": {
+      "chunk_id": "dca6ba",
+      "wall_time_seconds": 3.6036117,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "fh/pair-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x8f2d1a3992856a860304f1b86534b6b129cc4df7?fields=all",
+    "command_result": {
+      "chunk_id": "fc69f6",
+      "wall_time_seconds": 2.017624,
+      "exit_code": 1,
+      "original_token_count": 89,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://sourcify.dev/server/v2/contract/56/0x …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | \r\n{\r\n  \"match\": null,\r\n  \"creationMatch\": null,\r\n  \"runtimeMatch\": null,\r\n  \"chainId\": \"56\",\r\n  \"address\": \"0x8f2d1A3992856a860304f1B86534B6B129Cc4df7\"\r\n}\r\n"
+    }
+  },
+  {
+    "path": "fh/v2-router-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x10ED43C718714eb63d5aA57B78B54704E256024E?fields=all",
+    "command_result": {
+      "chunk_id": "ed802d",
+      "wall_time_seconds": 2.2054632,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "fh/v3-router-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x1b81D678ffb9C0263b24A97847620C99d213eB14?fields=all",
+    "command_result": {
+      "chunk_id": "d6a6dc",
+      "wall_time_seconds": 2.3754569,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-execution-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs",
+    "role": "authoritative explorer historical transaction logs",
+    "command_result": {
+      "chunk_id": "c39fa8",
+      "wall_time_seconds": 10.0086695,
+      "session_id": 5332,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-proposal-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8/logs",
+    "role": "authoritative explorer historical transaction logs",
+    "command_result": {
+      "chunk_id": "59b6c5",
+      "wall_time_seconds": 2.2279728,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-execution-internal.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions",
+    "role": "authoritative explorer historical internal transactions",
+    "command_result": {
+      "chunk_id": "708938",
+      "wall_time_seconds": 10.0107342,
+      "session_id": 7578,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

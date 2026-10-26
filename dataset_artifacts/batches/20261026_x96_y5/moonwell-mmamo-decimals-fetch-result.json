@@ -1,0 +1,23 @@
+{
+  "path": "moonwell/mmamo-decimals.json",
+  "url": "https://mainnet.base.org",
+  "payload": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+        "data": "0x313ce567"
+      },
+      "0x302d361"
+    ]
+  },
+  "command_result": {
+    "chunk_id": "6f20be",
+    "wall_time_seconds": 1.9768077,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case_id": "20260822_TheSandbox",
+      "formal_doc_equals_reviewed_draft": true,
+      "formal_metadata_equals_spec": true
+    },
+    {
+      "case_id": "20260823_TermLabs",
+      "formal_doc_equals_reviewed_draft": true,
+      "formal_metadata_equals_spec": true
+    },
+    {
+      "case_id": "20260826_FH",
+      "formal_doc_equals_reviewed_draft": true,
+      "formal_metadata_equals_spec": true
+    },
+    {
+      "case_id": "20260827_Moonwell_MAMO",
+      "formal_doc_equals_reviewed_draft": true,
+      "formal_metadata_equals_spec": true
+    }
+  ],
+  "repeated_materialization": "four new CSV rows each, no duplicate; original byte prefix preserved"
+}

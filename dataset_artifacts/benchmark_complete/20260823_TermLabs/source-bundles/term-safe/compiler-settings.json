@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.7.6+commit.7338295f",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "GnosisSafe",
+  "fullyQualifiedName": "contracts/GnosisSafe.sol:GnosisSafe"
+}

@@ -1,0 +1,5 @@
+[
+ {"path":"term/blockscout-execution-logs.json","url":"https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs","role":"authoritative explorer historical transaction logs"},
+ {"path":"term/blockscout-proposal-logs.json","url":"https://eth.blockscout.com/api/v2/transactions/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8/logs","role":"authoritative explorer historical transaction logs"},
+ {"path":"term/blockscout-execution-internal.json","url":"https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions","role":"authoritative explorer historical internal transactions"}
+]

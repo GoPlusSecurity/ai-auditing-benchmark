@@ -1,0 +1,74 @@
+{
+  "row": 85,
+  "eligible": true,
+  "qualified": true,
+  "core_original_source": true,
+  "evidence": "Original MToken exchange rate, MErc20 balance, Comptroller cap and credit formulas; archived historical state, receipts and eight code bindings.",
+  "historical_bindings": [
+    {
+      "bundle": "market-implementation",
+      "address": "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "d814b08766a0d887cd75548b671bcf99921ed130f388e768622509068f480355"
+    },
+    {
+      "bundle": "comptroller-implementation",
+      "address": "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "65dd139a6da23088c3983d3a85e83e8f60de49cbbbff3f85ccf562c785c9c0f7"
+    },
+    {
+      "bundle": "chainlink-oracle",
+      "address": "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "e158d05fd646ef5c108a89436366b7622c867256afe0b28a7f624e27a349e7aa"
+    },
+    {
+      "bundle": "mamo-feed",
+      "address": "0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "4f34e9f29fdebb8ab762f7555889b5a21469b75208ca655c9b52ef9a7a45d6eb"
+    },
+    {
+      "bundle": "chainlink-feed-proxy",
+      "address": "0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "53ca1c4d67c7b092f36c66e575874226de7e8eaada554f445f43fe2779743ec1"
+    },
+    {
+      "bundle": "chainlink-aggregator",
+      "address": "0x6F49F44436A220C8aebd5776AB58b80Ecb41622E",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "ff1f27f82be30edc0bd127ba880e5ef5d50692c8251bde1b423aadf64e4db2a1"
+    },
+    {
+      "bundle": "mweth-implementation",
+      "address": "0x599D4a1538d686814eE11b331EACBBa166D7C41a",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "493276c6d313b54874c2d45fda8f4e9033f9b0e468cd9412597448d26f9f00ad"
+    },
+    {
+      "bundle": "weth-router",
+      "address": "0x1382cFf3CeE10D283DccA55A30496187759e4cAf",
+      "block": 50516833,
+      "provider_runtime_match": "exact_match",
+      "historical_runtime_equals_provider_onchain_runtime": true,
+      "historical_runtime_sha256": "518e8e181e846b0d3f9d6d512f045185a0b26a5d1f8722b808dea4e210af9a3b"
+    }
+  ],
+  "decompilation": "No attacker helper needed on selected direct EOA borrow path."
+}

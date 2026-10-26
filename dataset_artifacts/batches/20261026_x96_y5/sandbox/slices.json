@@ -1,0 +1,348 @@
+{
+  "slices": {
+    "sandbox-oft": {
+      "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol": [
+        [
+          15,
+          34
+        ],
+        [
+          64,
+          74
+        ],
+        [
+          88,
+          121
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol": [
+        [
+          5,
+          20
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol": [
+        [
+          16,
+          33
+        ],
+        [
+          41,
+          57
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol": [
+        [
+          4,
+          22
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol": [
+        [
+          12,
+          12
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          38,
+          48
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol": [
+        [
+          12,
+          31
+        ],
+        [
+          67,
+          71
+        ],
+        [
+          80,
+          82
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol": [
+        [
+          63,
+          65
+        ],
+        [
+          95,
+          110
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol": [
+        [
+          18,
+          24
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol": [
+        [
+          18,
+          20
+        ],
+        [
+          35,
+          35
+        ],
+        [
+          51,
+          54
+        ],
+        [
+          74,
+          76
+        ],
+        [
+          153,
+          177
+        ],
+        [
+          218,
+          249
+        ],
+        [
+          293,
+          295
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol": [
+        [
+          4,
+          7
+        ],
+        [
+          36,
+          56
+        ],
+        [
+          81,
+          83
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol": [
+        [
+          167,
+          177
+        ],
+        [
+          200,
+          242
+        ]
+      ]
+    },
+    "layerzero-endpoint": {
+      "contracts/EndpointV2.sol": [
+        [
+          37,
+          45
+        ],
+        [
+          151,
+          183
+        ],
+        [
+          327,
+          357
+        ]
+      ],
+      "contracts/MessageLibManager.sol": [
+        [
+          39,
+          42
+        ],
+        [
+          96,
+          135
+        ],
+        [
+          245,
+          273
+        ],
+        [
+          307,
+          311
+        ]
+      ],
+      "contracts/MessagingChannel.sol": [
+        [
+          16,
+          19
+        ],
+        [
+          37,
+          46
+        ],
+        [
+          126,
+          151
+        ]
+      ]
+    },
+    "layerzero-receive-library": {
+      "contracts/uln/uln302/ReceiveUln302.sol": [
+        [
+          16,
+          24
+        ],
+        [
+          33,
+          66
+        ]
+      ],
+      "contracts/uln/UlnBase.sol": [
+        [
+          8,
+          16
+        ],
+        [
+          25,
+          34
+        ],
+        [
+          74,
+          118
+        ],
+        [
+          126,
+          142
+        ],
+        [
+          146,
+          194
+        ]
+      ],
+      "contracts/uln/ReceiveUlnBase.sol": [
+        [
+          9,
+          19
+        ],
+        [
+          43,
+          124
+        ]
+      ],
+      "contracts/MessageLibBase.sol": [
+        [
+          1,
+          21
+        ]
+      ],
+      "contracts/ReceiveLibBaseE2.sol": [
+        [
+          16,
+          27
+        ]
+      ]
+    },
+    "sandbox-ethereum-adapter": {
+      "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol": [
+        [
+          14,
+          38
+        ],
+        [
+          54,
+          64
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol": [
+        [
+          18,
+          40
+        ],
+        [
+          61,
+          89
+        ]
+      ],
+      "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol": [
+        [
+          218,
+          249
+        ],
+        [
+          293,
+          295
+        ]
+      ],
+      "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol": [
+        [
+          95,
+          110
+        ]
+      ],
+      "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": [
+        [
+          36,
+          46
+        ],
+        [
+          91,
+          100
+        ]
+      ]
+    },
+    "sandbox-ethereum-sand": {
+      "src/Sand.sol": [
+        [
+          7,
+          13
+        ]
+      ],
+      "src/Sand/erc20/ERC20BaseToken.sol": [
+        [
+          39,
+          74
+        ],
+        [
+          156,
+          163
+        ]
+      ]
+    }
+  },
+  "reasons": {
+    "sandbox-oft": {
+      "OFTSand.sol": "证明代币与OApp组合、正常烧币和信用入账铸币，并给出实际_msgSender转接。",
+      "SandBaseToken.sol": "证明公开代调用扩展确实被继承到受害地址。",
+      "ERC20BasicApproveExtension.sol": "完整保留approveAndCall和paidCall的调用者可控target/data与外呼。",
+      "BytesUtil.sol": "完整保留68字节最小长度及首参数相等检查。",
+      "ERC2771Handler.sol": "证明普通直接调用者的_msgSender为其自身，不要求转发权限。",
+      "OAppCore.sol": "绑定Endpoint、peer和本地onlyOwner的delegate入口。",
+      "OAppReceiver.sol": "保留Endpoint来源与peer检查，避免误写为直接任意调用lzReceive。",
+      "OApp.sol": "证明OFTCore继承的收发路径确为该OAppCore/OAppReceiver实现。",
+      "OFTCore.sol": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。",
+      "OFTMsgCodec.sol": "证明消息前32字节接收者和随后8字节共享精度金额的实际解码。",
+      "ERC20BaseToken.sol": "完整保留无余额要求的授权更新、实际铸币和实际烧币的状态变更。"
+    },
+    "layerzero-endpoint": {
+      "EndpointV2.sol": "证明delegate以应用自身msg.sender为索引、delegate可配置、有效消息的检查和交付。",
+      "MessageLibManager.sol": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。",
+      "MessagingChannel.sol": "证明已验证payload写入与执行时nonce/hash检查，不把配置劫持误写成关闭全部验证。"
+    },
+    "layerzero-receive-library": {
+      "ReceiveUln302.sol": "证明只有Endpoint可写配置、DVN verify入口和commit把已验证payload交给Endpoint。",
+      "UlnBase.sol": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。",
+      "ReceiveUlnBase.sol": "保留msg.sender验证记录及required/optional与确认数检查的完整实际实现。",
+      "MessageLibBase.sol": "保留onlyEndpoint和绑定端点的实现。",
+      "ReceiveLibBaseE2.sol": "证明该库绑定本地Endpoint和接收库角色。"
+    },
+    "sandbox-ethereum-adapter": {
+      "OFTAdapterForSand.sol": "证明以太坊的实际部署类型、底层token构造绑定和发送开关。",
+      "OFTAdapter.sol": "完整保留锁定底层已有代币与安全转账支付储备的两条资金路径。",
+      "OFTCore.sol": "证明以太坊也按消息amount调用adapter._credit。",
+      "OAppReceiver.sol": "保留以太坊接收的Endpoint和peer检查，不能把源链受损描述为主网验签被攻破。",
+      "SafeERC20.sol": "证明_credit实际调用ERC20 transfer并检查返回值。"
+    },
+    "sandbox-ethereum-sand": {
+      "Sand.sol": "绑定底层SAND原始代币继承和初始化发行。",
+      "ERC20BaseToken.sol": "保留18位精度、transfer/transferFrom与已有余额扣减，说明主网付款不是凭空增发。"
+    }
+  }
+}

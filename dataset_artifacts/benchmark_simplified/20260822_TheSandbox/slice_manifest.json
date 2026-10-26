@@ -1,0 +1,567 @@
+{
+  "case_id": "20260822_TheSandbox",
+  "path_base": "this artifact directory",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand_L15_L34.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "original_start_line": 15,
+      "original_end_line": 34,
+      "sha256": "e80dbb4aab7d6fec909ec8863b002bca788d00c35be9e649600794e1a76be321",
+      "complete_source_sha256": "5e20ca835ca9302959b50933f0e88227a43dbe127b75f9465a5728a81d3f3d80",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand_L64_L74.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "original_start_line": 64,
+      "original_end_line": 74,
+      "sha256": "173105fe5a9e9b22fffc0f44d1b16d8574ab6affc40cadc530d0227b55932efb",
+      "complete_source_sha256": "5e20ca835ca9302959b50933f0e88227a43dbe127b75f9465a5728a81d3f3d80",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand_L88_L121.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "original_start_line": 88,
+      "original_end_line": 121,
+      "sha256": "9fbab6a1b2598f36d59683f6a840b61d67f7614794cdc32321aab7eb04db1756",
+      "complete_source_sha256": "5e20ca835ca9302959b50933f0e88227a43dbe127b75f9465a5728a81d3f3d80",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken_L5_L20.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol",
+      "original_start_line": 5,
+      "original_end_line": 20,
+      "sha256": "0c17798028819b980d4ac153620299e5b9e2940fa0359e8d3ca12334e47da73c",
+      "complete_source_sha256": "d0a3b724d1f950cfe0b26a7c69cd222bc9713aee5f4d7bc0eed001f67b07fad8",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension_L16_L33.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+      "original_start_line": 16,
+      "original_end_line": 33,
+      "sha256": "c9ad8cb69ede53296db164537b2bafef0d58c1376fd5e754ddd9cb2993bf8a92",
+      "complete_source_sha256": "591f2983f18dce827825c4cf5829bdbc708bba0e98b0193326437acc2da0fef8",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension_L41_L57.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+      "original_start_line": 41,
+      "original_end_line": 57,
+      "sha256": "a28d41196ea192adc48d3b3cf24ea3c8517697562358dfd9a9388a5ed54744fc",
+      "complete_source_sha256": "591f2983f18dce827825c4cf5829bdbc708bba0e98b0193326437acc2da0fef8",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil_L4_L22.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol",
+      "original_start_line": 4,
+      "original_end_line": 22,
+      "sha256": "efd380678716e109935e314d980144ee72850195a3a54631cfa51bdd7844d433",
+      "complete_source_sha256": "99c488efc8f31401afb3bae381424bff12e6b7d821891b41cd30636862bf6adf",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler_L12_L12.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "original_start_line": 12,
+      "original_end_line": 12,
+      "sha256": "fa184e75d4ee6b58f3ede0d537f0df8bd80008b858d5d6791b439d17bb279bc1",
+      "complete_source_sha256": "023b0306689932c6a99a8067fb7fd1b81af21f2593438b78bb94b0757b38887f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler_L26_L28.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "original_start_line": 26,
+      "original_end_line": 28,
+      "sha256": "f7b7c81c16736fffeb0fe4ee02ac3fb227ce44128f0270403dd1a45156eb84bf",
+      "complete_source_sha256": "023b0306689932c6a99a8067fb7fd1b81af21f2593438b78bb94b0757b38887f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler_L38_L48.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "original_start_line": 38,
+      "original_end_line": 48,
+      "sha256": "6a0793c726a7d592b23eafeb4567435bc0db6a662aa0f8f277889ce84eae9840",
+      "complete_source_sha256": "023b0306689932c6a99a8067fb7fd1b81af21f2593438b78bb94b0757b38887f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore_L12_L31.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "original_start_line": 12,
+      "original_end_line": 31,
+      "sha256": "e2ee2b2593578a9bc893691fa776610c726b2206a12b2fc7bcc8b7f9c2fc60ba",
+      "complete_source_sha256": "b0a3e30618f5d4c71732a2048d7c2928be399508d6ec622c9345915c92b3dd0a",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore_L67_L71.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "original_start_line": 67,
+      "original_end_line": 71,
+      "sha256": "d8d611bc35597f90c72d11909c6258910b4dd4b5f12a59f0217ab1d73166bd98",
+      "complete_source_sha256": "b0a3e30618f5d4c71732a2048d7c2928be399508d6ec622c9345915c92b3dd0a",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore_L80_L82.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "original_start_line": 80,
+      "original_end_line": 82,
+      "sha256": "63ad9664ccc8fef61408abb066644a16907a02e4640a989cc947ba438d875cc9",
+      "complete_source_sha256": "b0a3e30618f5d4c71732a2048d7c2928be399508d6ec622c9345915c92b3dd0a",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver_L63_L65.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "original_start_line": 63,
+      "original_end_line": 65,
+      "sha256": "b99c75c14db58d7b43fdc02540f58bdcd72836c57037da7ab1b5f4283d1db837",
+      "complete_source_sha256": "8d1dd4a6a74c3d9704a078e6404dcf7aab688b750ea64e8331f873e253862bc0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver_L95_L110.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "original_start_line": 95,
+      "original_end_line": 110,
+      "sha256": "c62d48bcc206866e769055452630d1a34e8a212d061a7a16a565754066594367",
+      "complete_source_sha256": "8d1dd4a6a74c3d9704a078e6404dcf7aab688b750ea64e8331f873e253862bc0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp_L18_L24.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+      "original_start_line": 18,
+      "original_end_line": 24,
+      "sha256": "4f98866a0aa3db07efc53846a8aae8efc3481f1e021ecdc196fb850df8d61999",
+      "complete_source_sha256": "61d3da38c35b0a6e2667e2e7c6ed0b628aa773baaafabae655c69dc4c491ac81",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L18_L20.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 18,
+      "original_end_line": 20,
+      "sha256": "b03d9330ce31d8033afd32a2460e6450d147310496cca4465d9ec177dbed6649",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L35_L35.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 35,
+      "original_end_line": 35,
+      "sha256": "137a0052408e055b1eb50fce6c9d2f2f1754d308e7c971e544e5c11704828be3",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L51_L54.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 51,
+      "original_end_line": 54,
+      "sha256": "6289a15e1601118da807497a073594fadc1649d0f6bfc73dd4b58eb5e5f86fab",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L74_L76.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 74,
+      "original_end_line": 76,
+      "sha256": "63a127bcc8e6428e1753f9599b903022df5c7e9592bbd3b1a2e800217211b15c",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L153_L177.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 153,
+      "original_end_line": 177,
+      "sha256": "13bc792b540824aedf1a553874ecb2e3edc0bfba83f8fdbe7f1f4c81055bae40",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L218_L249.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 218,
+      "original_end_line": 249,
+      "sha256": "27d991a03eb3fd5ae60e75c71fa71b7ad12b8f30373c55396e621ae48cf4732c",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L293_L295.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 293,
+      "original_end_line": 295,
+      "sha256": "e9651c2e5a83e202e5c0851a63193414bd9f36d7a8f8b2b1960da75b0fe8aa3e",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec_L4_L7.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "original_start_line": 4,
+      "original_end_line": 7,
+      "sha256": "6bb711e9a3e5471f119078bed16e6374e8d4787cc1a2649e51570e47073aefec",
+      "complete_source_sha256": "23c0a3ceb3fb0c2dd0b64ddd486df00277ef6b5f1c1befc9301e750a68ff8cfb",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec_L36_L56.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "original_start_line": 36,
+      "original_end_line": 56,
+      "sha256": "a85a35f077ef69a86e7029247c02ccd1ae72fd081478ada3097c4281ee83faef",
+      "complete_source_sha256": "23c0a3ceb3fb0c2dd0b64ddd486df00277ef6b5f1c1befc9301e750a68ff8cfb",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec_L81_L83.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "original_start_line": 81,
+      "original_end_line": 83,
+      "sha256": "88004b5619c06c835d15994e75f510057069b6f7f5be9684d53ecb2baeeab0b7",
+      "complete_source_sha256": "23c0a3ceb3fb0c2dd0b64ddd486df00277ef6b5f1c1befc9301e750a68ff8cfb",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken_L167_L177.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+      "original_start_line": 167,
+      "original_end_line": 177,
+      "sha256": "67649901eb94a77390ca1c9dffbf0b6016a5ea6d061f8d9a879ed5c1c86d4ebc",
+      "complete_source_sha256": "c26467ea99ef767a8f5a7341b6caed3304c9cdba2a93623acc58e0f16a751892",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken_L200_L242.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-oft/@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+      "original_start_line": 200,
+      "original_end_line": 242,
+      "sha256": "a0cedb1ee0c5f0fda4c359095170625c353a04bf42e5e55d94fedecc7f56a761",
+      "complete_source_sha256": "c26467ea99ef767a8f5a7341b6caed3304c9cdba2a93623acc58e0f16a751892",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/EndpointV2_L37_L45.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/EndpointV2.sol",
+      "original_start_line": 37,
+      "original_end_line": 45,
+      "sha256": "ffc80ff246e6cf95c33fa543d144cba9b0eda74ff7d7116f6fffbb23cf50515a",
+      "complete_source_sha256": "9702083ea7e0873510bd562095a6028dab5fad5e9be30e452908e6178bd51b6c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/EndpointV2_L151_L183.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/EndpointV2.sol",
+      "original_start_line": 151,
+      "original_end_line": 183,
+      "sha256": "6048be11b0ce358e7381e36e1b3f5522d477695840fd0dff205b15698af9ef94",
+      "complete_source_sha256": "9702083ea7e0873510bd562095a6028dab5fad5e9be30e452908e6178bd51b6c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/EndpointV2_L327_L357.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/EndpointV2.sol",
+      "original_start_line": 327,
+      "original_end_line": 357,
+      "sha256": "335d571e32692cd3bc0f7eac4c9a4897ac108cce56c8ca3cbf1d2f80a1cd0bfd",
+      "complete_source_sha256": "9702083ea7e0873510bd562095a6028dab5fad5e9be30e452908e6178bd51b6c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessageLibManager_L39_L42.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessageLibManager.sol",
+      "original_start_line": 39,
+      "original_end_line": 42,
+      "sha256": "60f67bc8c9104f5adf8d72532e51c16f91dde4c9876ad02b699181e560131a46",
+      "complete_source_sha256": "aa074a24bd2f7b5e91f7b5cb60d647ae3c8d2ff44c3bf62e925d6ce661cf799b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessageLibManager_L96_L135.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessageLibManager.sol",
+      "original_start_line": 96,
+      "original_end_line": 135,
+      "sha256": "481e740460cba812c7feb34e041f469c4ab29adbd4a1e4728cf40dabc20401ba",
+      "complete_source_sha256": "aa074a24bd2f7b5e91f7b5cb60d647ae3c8d2ff44c3bf62e925d6ce661cf799b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessageLibManager_L245_L273.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessageLibManager.sol",
+      "original_start_line": 245,
+      "original_end_line": 273,
+      "sha256": "16e38d8d44a3d2fc36ecee2aa1e96e035f1cc0a2bfb903e7c25b4f5ae4434137",
+      "complete_source_sha256": "aa074a24bd2f7b5e91f7b5cb60d647ae3c8d2ff44c3bf62e925d6ce661cf799b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessageLibManager_L307_L311.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessageLibManager.sol",
+      "original_start_line": 307,
+      "original_end_line": 311,
+      "sha256": "8e9ff2f41948fec282e0bd38772791302bb90cc31ddd18f716acf84687fea60c",
+      "complete_source_sha256": "aa074a24bd2f7b5e91f7b5cb60d647ae3c8d2ff44c3bf62e925d6ce661cf799b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessagingChannel_L16_L19.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessagingChannel.sol",
+      "original_start_line": 16,
+      "original_end_line": 19,
+      "sha256": "27bd071bc0eef9ba100d7f0aa5c7c0346ce20e5c81e3515cf9ddcdd404bf751e",
+      "complete_source_sha256": "6fe3684e208e92cee9f3694ebef144cee3f6ee010a476cc06e1c64532c80dab2",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessagingChannel_L37_L46.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessagingChannel.sol",
+      "original_start_line": 37,
+      "original_end_line": 46,
+      "sha256": "1c3031598d9b99f9896a7aa7165a7527bb47d379701254c5cfc92e29f4623b3a",
+      "complete_source_sha256": "6fe3684e208e92cee9f3694ebef144cee3f6ee010a476cc06e1c64532c80dab2",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-endpoint/contracts/MessagingChannel_L126_L151.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-endpoint/contracts/MessagingChannel.sol",
+      "original_start_line": 126,
+      "original_end_line": 151,
+      "sha256": "e2a0b5cee612fe1864151ef17f16d2ead72e34162a0ae27728494bf44170d951",
+      "complete_source_sha256": "6fe3684e208e92cee9f3694ebef144cee3f6ee010a476cc06e1c64532c80dab2",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/uln302/ReceiveUln302_L16_L24.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/uln302/ReceiveUln302.sol",
+      "original_start_line": 16,
+      "original_end_line": 24,
+      "sha256": "b62e1525f38e36d400aa51a2ec99925f8a9a8bf1c643752e00c6ebb2a5802548",
+      "complete_source_sha256": "71f8b9285db7aec38987175fb34cb591e00bfae4423956bd4cdb769daf8f0caa",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/uln302/ReceiveUln302_L33_L66.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/uln302/ReceiveUln302.sol",
+      "original_start_line": 33,
+      "original_end_line": 66,
+      "sha256": "7d620d5c8e8f187badfb70f6eacb5d1ad63bb8fb1144b4d5ffabc82ac264dffc",
+      "complete_source_sha256": "71f8b9285db7aec38987175fb34cb591e00bfae4423956bd4cdb769daf8f0caa",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/UlnBase_L8_L16.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+      "original_start_line": 8,
+      "original_end_line": 16,
+      "sha256": "aad26d1cb6d628fec12c85b8a5f7e6880a8cd6a738d0c5b720a29a7437562a1b",
+      "complete_source_sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/UlnBase_L25_L34.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+      "original_start_line": 25,
+      "original_end_line": 34,
+      "sha256": "f7f1b74593e0ba423421dc3b5832eeb6206bc6ae22088bb658cac909e88adde0",
+      "complete_source_sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/UlnBase_L74_L118.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+      "original_start_line": 74,
+      "original_end_line": 118,
+      "sha256": "c1e0b871f90a0f187f697eda5c93326eff70445d83bf25aca66dbf4ad76128d0",
+      "complete_source_sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/UlnBase_L126_L142.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+      "original_start_line": 126,
+      "original_end_line": 142,
+      "sha256": "3966f68800acac640b7ae143f63d66c0b7459adcbe991c97422d141aa11477f4",
+      "complete_source_sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/UlnBase_L146_L194.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/UlnBase.sol",
+      "original_start_line": 146,
+      "original_end_line": 194,
+      "sha256": "db2c41a81a581287df9e19082f05bc37791ec5a1bbdd86e9213ed9c2789957f9",
+      "complete_source_sha256": "a7d95c8a810ecc06dafd9ed7b26f62898333a10ce8e89e3bd596a53d954be8b6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/ReceiveUlnBase_L9_L19.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/ReceiveUlnBase.sol",
+      "original_start_line": 9,
+      "original_end_line": 19,
+      "sha256": "4ad2a6d2aeaf7567b219105237e95b1a17d70513045a29973385be45c345f688",
+      "complete_source_sha256": "4bc3784995bed964996d158bb5aa5b8052a2899b9899733d99b468613f553e58",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/uln/ReceiveUlnBase_L43_L124.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/uln/ReceiveUlnBase.sol",
+      "original_start_line": 43,
+      "original_end_line": 124,
+      "sha256": "b41dc9b70bc31747042bb8cac8c1198dea93f9cee05417bb354a5157951c60b4",
+      "complete_source_sha256": "4bc3784995bed964996d158bb5aa5b8052a2899b9899733d99b468613f553e58",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/MessageLibBase_L1_L21.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/MessageLibBase.sol",
+      "original_start_line": 1,
+      "original_end_line": 21,
+      "sha256": "f84d5ebb48cf47096ba21d535bec480a0e0026fd117d2f851ce22f16b6def0e1",
+      "complete_source_sha256": "f84d5ebb48cf47096ba21d535bec480a0e0026fd117d2f851ce22f16b6def0e1",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/layerzero-receive-library/contracts/ReceiveLibBaseE2_L16_L27.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/layerzero-receive-library/contracts/ReceiveLibBaseE2.sol",
+      "original_start_line": 16,
+      "original_end_line": 27,
+      "sha256": "caad7ccdf0813fe78f5e7d4c12311065ea669c500fa9edbb384f2d8f1ee1eecd",
+      "complete_source_sha256": "462a6f82caea234860e4c3583f990fff42612aa3baafcf55350e5c491a5b5a1c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand_L14_L38.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+      "original_start_line": 14,
+      "original_end_line": 38,
+      "sha256": "02790d78cb64cbbc76dcc60d85d7525b4ebb0bb74758c02d998ac158c0b74848",
+      "complete_source_sha256": "c190e8b555d2bd3da3cec5f7a858f13116f4f53b0507c226760b187963772d3d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand_L54_L64.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+      "original_start_line": 54,
+      "original_end_line": 64,
+      "sha256": "173105fe5a9e9b22fffc0f44d1b16d8574ab6affc40cadc530d0227b55932efb",
+      "complete_source_sha256": "c190e8b555d2bd3da3cec5f7a858f13116f4f53b0507c226760b187963772d3d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter_L18_L40.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+      "original_start_line": 18,
+      "original_end_line": 40,
+      "sha256": "b5ccab97bd4d8537324aa3d36b19660c23bdfc9fa5ae058354824a0703ac571e",
+      "complete_source_sha256": "6c88c4d75396f39281e0b7396eb2a1e5cf5e42010667171d9ba51fbc39b5326c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter_L61_L89.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+      "original_start_line": 61,
+      "original_end_line": 89,
+      "sha256": "e6ab808778fdbf7b1605433659160b3f105af94ab81f840602fa8b453905ad46",
+      "complete_source_sha256": "6c88c4d75396f39281e0b7396eb2a1e5cf5e42010667171d9ba51fbc39b5326c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L218_L249.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 218,
+      "original_end_line": 249,
+      "sha256": "27d991a03eb3fd5ae60e75c71fa71b7ad12b8f30373c55396e621ae48cf4732c",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore_L293_L295.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "original_start_line": 293,
+      "original_end_line": 295,
+      "sha256": "e9651c2e5a83e202e5c0851a63193414bd9f36d7a8f8b2b1960da75b0fe8aa3e",
+      "complete_source_sha256": "db3254e0131bbb665e22281d6062e3a758ec7d996c032d41e49d82c0f00d68fc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver_L95_L110.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "original_start_line": 95,
+      "original_end_line": 110,
+      "sha256": "c62d48bcc206866e769055452630d1a34e8a212d061a7a16a565754066594367",
+      "complete_source_sha256": "8d1dd4a6a74c3d9704a078e6404dcf7aab688b750ea64e8331f873e253862bc0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/utils/SafeERC20_L36_L46.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "original_start_line": 36,
+      "original_end_line": 46,
+      "sha256": "24fa2833f62bcd92f0adf4b76d1d542ccb5b19de7a6cce7be30ae37beb263438",
+      "complete_source_sha256": "471157c89111d7b9eab456b53ebe9042bc69504a64cb5cc980d38da9103379ae",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/utils/SafeERC20_L91_L100.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-adapter/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "original_start_line": 91,
+      "original_end_line": 100,
+      "sha256": "45c6efa6451432087aec8fe5c71bdb54d79c00767bdc02bc699bd334dd6c88f9",
+      "complete_source_sha256": "471157c89111d7b9eab456b53ebe9042bc69504a64cb5cc980d38da9103379ae",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-sand/src/Sand_L7_L13.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-sand/src/Sand.sol",
+      "original_start_line": 7,
+      "original_end_line": 13,
+      "sha256": "d8961c436e347ab7098347042175772f4a3f64c5f17e5b98d8154fefb3d1f67b",
+      "complete_source_sha256": "0fd0e82bed1f1f4ff5ecdf88f2c32230ff9bb778a63909d18d46bd1e2beff0eb",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-sand/src/Sand/erc20/ERC20BaseToken_L39_L74.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-sand/src/Sand/erc20/ERC20BaseToken.sol",
+      "original_start_line": 39,
+      "original_end_line": 74,
+      "sha256": "3a1daaadeae3eb3c6324031bf56115a65fd82fca3d01985a0fe7969b14a2d20a",
+      "complete_source_sha256": "58dc46ab7946c54517517f0f372098edcabe043f81707a523cba451b0203492d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/slices/sandbox-ethereum-sand/src/Sand/erc20/ERC20BaseToken_L156_L163.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/source-bundles/sandbox-ethereum-sand/src/Sand/erc20/ERC20BaseToken.sol",
+      "original_start_line": 156,
+      "original_end_line": 163,
+      "sha256": "ab1ea7ea50b69dec1c6d5f0f3b3521bb404004805d09e67cc764f8263b0378bb",
+      "complete_source_sha256": "58dc46ab7946c54517517f0f372098edcabe043f81707a523cba451b0203492d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260822_TheSandbox/decompiled/sale-helper.ethervm.decompiled.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260822_TheSandbox/decompiled/sale-helper.ethervm.decompiled.sol",
+      "original_start_line": 1,
+      "original_end_line": 417,
+      "sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "complete_source_sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "kind": "unmodified_decompiler_output_not_original_source",
+      "scope": "whole recovery output; preserve all recovered calls and tool error comments"
+    }
+  ]
+}

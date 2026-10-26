@@ -1,0 +1,10 @@
+[
+ {"path":"term/sources/voting-source.json","url":"https://sourcify.dev/server/v2/contract/1/0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27?fields=all","role":"historically called TokenVoting implementation"},
+ {"path":"term/sources/dao-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x52Af16664155608b845BE18aa29620EbF6eA2D3a?fields=all","role":"historically called DAO implementation"},
+ {"path":"term/sources/delay-owner-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84?fields=all","role":"historically called delay owner implementation"},
+ {"path":"term/sources/owner-dependency-source.json","url":"https://sourcify.dev/server/v2/contract/1/0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb?fields=all","role":"historically called delay owner dependency"},
+ {"path":"term/blockscout-execution-logs2.json","url":"https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs?index=1182&block_number=25816049&items_count=50"},
+ {"path":"term/blockscout-wrap-logs.json","url":"https://eth.blockscout.com/api/v2/transactions/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2/logs"},
+ {"path":"term/blockscout-vote-logs.json","url":"https://eth.blockscout.com/api/v2/transactions/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d/logs"},
+ {"path":"term/blockscout-execution-internal2.json","url":"https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions?index=50&block_number=25816049&transaction_index=215&items_count=50"}
+]

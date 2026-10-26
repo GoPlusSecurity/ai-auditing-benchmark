@@ -1,0 +1,63 @@
+{
+  "case_id": "20260826_FH",
+  "sheet_row": 89,
+  "qualification_status": "qualified_original_source_historical_runtime_receipt",
+  "eligible": true,
+  "reason": "FH精确匹配原始源码直接包含漏洞；历史FH、两Router、USDT及目标池代码与对应Sourcify链上代码逐字一致，原回执与25轮整数算式闭合。目标池使用不同地址验证的参考源码，历史runtime相同但不冒充目标直接验证。",
+  "required_source_providers": [
+    "官方项目网站或官方仓库",
+    "BscScan",
+    "Sourcify"
+  ],
+  "snapshot": {
+    "path": "dataset_artifacts/batches/20261026_x96_y5/sheet_gid0_raw.csv",
+    "sha256": "d4f5673b949fa3775660cdf9300e7e18adde3045a22d0d433cc1c51a89b9b9bc",
+    "row": {
+      "timestamp": "9:42 AM · Aug 26, 2026",
+      "target (社媒 or Addr)": "#FH on #BSC",
+      "description": "a suspicious attack involving #FH on #BSC, resulting in an approximately loss of $20K.",
+      "data_source": "@TenArmorAlert",
+      "original_link": "https://x.com/TenArmorAlert/status/2092427353456812207",
+      "date": "2026-08-26",
+      "lost": "$20K",
+      "lost_u": "20,000",
+      "malicious_tx": "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2 ",
+      "malicious_address": "0x7FA3bC0d5667fFd14d7ACD6Ce5f2432AC13a6FDA",
+      "malicious_url": "",
+      "malicious_social_account": "",
+      "attack_category": "Exploit",
+      "attack_analysis": "合约漏洞"
+    }
+  },
+  "known_secondary_lead": {
+    "url": "https://anomly.rs/falcon-heavy-token-reserve-sync-exploit",
+    "source_path": "dataset_artifacts/batches/20261021_x112_y5/screening/analysis-index1.html",
+    "claimed_project": "Falcon Heavy",
+    "claimed_bug": "sell logic synced Pancake reserves before crediting seller input",
+    "claimed_net_usdt": "about 19999",
+    "use": "仅作定位线索，不作原始源码或历史事实证明"
+  },
+  "collection_status": "原始源码、历史runtime、历史USDT decimals、成功回执及攻击执行合约的公开在线高层反编译均已归档；所有访问失败也保留。",
+  "restrictions": {
+    "executed_poc": false,
+    "compiled_contracts": false,
+    "replayed_transactions": false,
+    "sent_transactions": false
+  },
+  "source_provider_requirement_met": true,
+  "core_source_response": "dataset_artifacts/batches/20261026_x96_y5/fh/token-source.json",
+  "source_match": "exact_match",
+  "victim_token": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37",
+  "victim_pool": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+  "evidence_gaps": [
+    "Full internal call trace unavailable; particular intermediate entry-point calldata is inferred from original source, event sender, online supplementary decompilation, and exact output arithmetic.",
+    "Target pair source lookup returned Sourcify 404 and BscScan 403. Its historical runtime exactly equals the verified reference address runtime, but the reference response is not direct target verification, target creation-transaction proof, or independent local compilation.",
+    "The complete pre-transaction whitelist, dynamic-fee, and totalSupply state was not reconstructed; successful receipt proves the exercised path conditions, not all other state.",
+    "Attacker original source unavailable. Online high-level decompilation is supplementary reconstructed code with two preserved Error comments; the service did not report its engine version. It is not authoritative original source or a full execution trace."
+  ],
+  "source_gate_complete": true,
+  "source_only_root_cause_confirmed": true,
+  "historical_runtime_evidence": "dataset_artifacts/batches/20261026_x96_y5/fh/runtime-comparison.json",
+  "usdt_decimals": 18,
+  "online_decompilation_status": "archived genuine high-level output; supplementary only; engine version unavailable; two Error comments preserved"
+}

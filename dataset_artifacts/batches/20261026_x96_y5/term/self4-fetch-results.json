@@ -1,0 +1,50 @@
+[
+  {
+    "path": "term/sources/voting-token-implementation-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xcc925a32fa4fa41c42a7d5585d69c980b6fa9342?fields=all",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "4f219a",
+      "wall_time_seconds": 2.3927608,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-proposal-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8/raw-trace",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "d5d8cf",
+      "wall_time_seconds": 1.3930744,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-vote-trace.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d/raw-trace",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "81fb1a",
+      "wall_time_seconds": 1.2107866999999999,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-deposit-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e/logs",
+    "started_at": "2026-10-26T14:46:43.782Z",
+    "command_result": {
+      "chunk_id": "61d757",
+      "wall_time_seconds": 7.9813776,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

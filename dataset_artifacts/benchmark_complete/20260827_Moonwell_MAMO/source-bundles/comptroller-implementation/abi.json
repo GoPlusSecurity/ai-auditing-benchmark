@@ -1,0 +1,1500 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "ActionPaused",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "action",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "pauseState",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "ActionPaused",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "action",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "pauseState",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Failure",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "error",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "info",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "detail",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "MarketEntered",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "MarketExited",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "MarketListed",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MToken"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewBorrowCap",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "newBorrowCap",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewBorrowCapGuardian",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldBorrowCapGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "newBorrowCapGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewCloseFactor",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldCloseFactorMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "newCloseFactorMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewCollateralFactor",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "oldCollateralFactorMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "newCollateralFactorMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewLiquidationIncentive",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldLiquidationIncentiveMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "newLiquidationIncentiveMantissa",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewPauseGuardian",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldPauseGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "newPauseGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewPriceOracle",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldPriceOracle",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract PriceOracle"
+      },
+      {
+        "name": "newPriceOracle",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract PriceOracle"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewRewardDistributor",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldRewardDistributor",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MultiRewardDistributor"
+      },
+      {
+        "name": "newRewardDistributor",
+        "type": "address",
+        "indexed": false,
+        "internalType": "contract MultiRewardDistributor"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewSupplyCap",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "newSupplyCap",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "NewSupplyCapGuardian",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "oldSupplyCapGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "newSupplyCapGuardian",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "_become",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "unitroller",
+        "type": "address",
+        "internalType": "contract Unitroller"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_rescueFunds",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_tokenAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setBorrowCapGuardian",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newBorrowCapGuardian",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setBorrowPaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "state",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setCloseFactor",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newCloseFactorMantissa",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setCollateralFactor",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "newCollateralFactorMantissa",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setLiquidationIncentive",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newLiquidationIncentiveMantissa",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setMarketBorrowCaps",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokens",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      },
+      {
+        "name": "newBorrowCaps",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setMarketSupplyCaps",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokens",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      },
+      {
+        "name": "newSupplyCaps",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setMintPaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "contract MToken"
+      },
+      {
+        "name": "state",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setPauseGuardian",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newPauseGuardian",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setPriceOracle",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newOracle",
+        "type": "address",
+        "internalType": "contract PriceOracle"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setRewardDistributor",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newRewardDistributor",
+        "type": "address",
+        "internalType": "contract MultiRewardDistributor"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setSeizePaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "state",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setSupplyCapGuardian",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "newSupplyCapGuardian",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_setTransferPaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "state",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "_supportMarket",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "contract MToken"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "accountAssets",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract MToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "admin",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "allMarkets",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract MToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "borrowAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "borrower",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "borrowAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "borrowCapGuardian",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "borrowCaps",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "borrowGuardianPaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "checkMembership",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "contract MToken"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "claimReward",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "holders",
+        "type": "address[]",
+        "internalType": "address[]"
+      },
+      {
+        "name": "mTokens",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      },
+      {
+        "name": "borrowers",
+        "type": "bool",
+        "internalType": "bool"
+      },
+      {
+        "name": "suppliers",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "claimReward",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "holder",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mTokens",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "claimReward",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "claimReward",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "holder",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "closeFactorMantissa",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "comptrollerImplementation",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "enterMarkets",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokens",
+        "type": "address[]",
+        "internalType": "address[]"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "exitMarket",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "getAccountLiquidity",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getAllMarkets",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getAssetsIn",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address[]",
+        "internalType": "contract MToken[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getBlockTimestamp",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getHypotheticalAccountLiquidity",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mTokenModify",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "redeemTokens",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "borrowAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "isComptroller",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "liquidateBorrowAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokenBorrowed",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mTokenCollateral",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "liquidator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "borrower",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "repayAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "liquidateCalculateSeizeTokens",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokenBorrowed",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mTokenCollateral",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "actualRepayAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "liquidationIncentiveMantissa",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "markets",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "isListed",
+        "type": "bool",
+        "internalType": "bool"
+      },
+      {
+        "name": "collateralFactorMantissa",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "mintAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "minter",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mintAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "mintGuardianPaused",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "oracle",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract PriceOracle"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "pauseGuardian",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "pendingAdmin",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "pendingComptrollerImplementation",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "redeemAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "redeemer",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "redeemTokens",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "redeemVerify",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "redeemer",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "redeemAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "redeemTokens",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "pure"
+  },
+  {
+    "name": "repayBorrowAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "payer",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "borrower",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "repayAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "rewardDistributor",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract MultiRewardDistributor"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "seizeAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mTokenCollateral",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "mTokenBorrowed",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "liquidator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "borrower",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "seizeTokens",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "seizeGuardianPaused",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "supplyCapGuardian",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "supplyCaps",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "transferAllowed",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "mToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "src",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "dst",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "transferTokens",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "transferGuardianPaused",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

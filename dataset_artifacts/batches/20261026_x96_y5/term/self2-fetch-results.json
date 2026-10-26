@@ -1,0 +1,50 @@
+[
+  {
+    "path": "term/blockscout-execution-logs2.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/logs?index=1182&block_number=25816049&items_count=50",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "4f5a51",
+      "wall_time_seconds": 4.8683778,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-wrap-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2/logs",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "72bbfe",
+      "wall_time_seconds": 1.5189879,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-vote-logs.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d/logs",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "e4ba79",
+      "wall_time_seconds": 1.4900660000000001,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-execution-internal2.json",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129/internal-transactions?index=50&block_number=25816049&transaction_index=215&items_count=50",
+    "started_at": "2026-10-26T14:44:56.083Z",
+    "command_result": {
+      "chunk_id": "ad5341",
+      "wall_time_seconds": 10.0017716,
+      "session_id": 21442,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

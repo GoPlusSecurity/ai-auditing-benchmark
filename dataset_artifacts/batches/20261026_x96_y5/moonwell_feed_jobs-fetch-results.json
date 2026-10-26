@@ -1,0 +1,62 @@
+[
+  {
+    "path": "moonwell/chainlink-feed-proxy-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 19180,
+    "sha256": "dff048c295707aa7f21445aeb9f084478d45cb726275c6848b6ad81db5825623",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:12:18.313513+08:00"
+  },
+  {
+    "path": "moonwell/chainlink-aggregator-address.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+          "data": "0x245a7bfc"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "2cbdab72ce8125133c4e2c146f8781ef5a1e195949533b5ae2dfc829ff78030c",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:12:20.691268+08:00"
+  },
+  {
+    "path": "moonwell/chainlink-source-round.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+          "data": "0xfeaf968c"
+        },
+        "0x302d34c"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 358,
+    "sha256": "f524b459a0f468e6cfadf80feaafd418ba9e47e5380a35bfcb99e5640feb1ca0",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T22:12:18.190538+08:00"
+  }
+]

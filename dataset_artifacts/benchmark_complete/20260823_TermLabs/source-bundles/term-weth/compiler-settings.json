@@ -1,0 +1,15 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.4.19+commit.c4cbbb05",
+  "compilerSettings": {
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": false
+    },
+    "remappings": []
+  },
+  "name": "WETH9",
+  "fullyQualifiedName": "WETH9.sol:WETH9"
+}

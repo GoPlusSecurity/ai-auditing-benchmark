@@ -1,0 +1,8 @@
+[
+ {"path":"term/sources/helper-implementation-source.json","url":"https://sourcify.dev/server/v2/contract/1/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1?fields=all","role":"attacker helper implementation; locator only"},
+ {"path":"term/vault-code-page.html","url":"https://etherscan.io/address/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2#code"},
+ {"path":"term/delay-code-page.html","url":"https://etherscan.io/address/0x35c99cf4a5df2d9bcd822bee32676d9590229e33#code"},
+ {"path":"term/vault-historical-code.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getCode","params":["0x26fcb50eec367ddab060ccf5e7394cecd95f7db2","0x189ebf0"]}},
+ {"path":"term/delay-historical-code.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getCode","params":["0x35c99cf4a5df2d9bcd822bee32676d9590229e33","0x189ebf0"]}},
+ {"path":"term/helper-historical-implementation.json","url":"https://ethereum-rpc.publicnode.com","payload":{"jsonrpc":"2.0","id":1,"method":"eth_getStorageAt","params":["0x64e477800051efb06ae4086f4b258b270668b4df","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc","0x189ebf0"]}}
+]

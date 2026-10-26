@@ -1,0 +1,26 @@
+[
+  {
+    "address": "0x184f2e57b4ce135181fa2a2166ac394339016338",
+    "creation_block": 25772662,
+    "creation_transaction": "0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60",
+    "creation_runtime_source": "blockscout-attacker-strategy-creation-trace.json",
+    "runtime_file": "attacker-strategy-creation-runtime.hex",
+    "runtime_bytes": 2497,
+    "runtime_sha256": "04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9",
+    "current_explorer_runtime_identical": true,
+    "historical_attack_eth_getCode": "PublicNode requires personal archive token; request failed",
+    "kind": "bytecode evidence, not decompiled source"
+  },
+  {
+    "address": "0x3e30ddf30172f54c50cb490ff56e10f1a4737cf1",
+    "creation_block": 25772663,
+    "creation_transaction": "0x397cfc3d084045c84025078aea5ecc5543b6b57c5c2eda42756176de3a023ae0",
+    "creation_runtime_source": "blockscout-helper-implementation-creation-trace.json",
+    "runtime_file": "helper-implementation-creation-runtime.hex",
+    "runtime_bytes": 12318,
+    "runtime_sha256": "de4b017824ab9fa591f5590e838ccb35ba7a7ddaecddb36ef0b29ce6e3a54235",
+    "current_explorer_runtime_identical": true,
+    "historical_attack_eth_getCode": "PublicNode requires personal archive token; request failed",
+    "kind": "bytecode evidence, not decompiled source"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/mweth-source.json",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x628ff693426583d9a7fb391e54366292f509d457?fields=all",
+      "command_result": {
+        "chunk_id": "47f117",
+        "wall_time_seconds": 3.4827613,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/weth-router-source.json",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1382cff3cee10d283dcca55a30496187759e4caf?fields=all",
+      "command_result": {
+        "chunk_id": "f013ba",
+        "wall_time_seconds": 2.9625583,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/mweth-historical-implementation.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x628ff693426583d9a7fb391e54366292f509d457",
+            "data": "0x5c60da1b"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "70f6f8",
+        "wall_time_seconds": 2.070656,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/weth-router-historical-code.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x1382cff3cee10d283dcca55a30496187759e4caf",
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "ba3e3b",
+        "wall_time_seconds": 2.1580224,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/cbbtc-decimals.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+            "data": "0x313ce567"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "9b969a",
+        "wall_time_seconds": 2.0012058,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/weth-decimals.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x4200000000000000000000000000000000000006",
+            "data": "0x313ce567"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "29cc06",
+        "wall_time_seconds": 3.3078759,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/usdc-decimals.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "data": "0x313ce567"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "2762c1",
+        "wall_time_seconds": 2.1666679,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/wsteth-decimals.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+            "data": "0x313ce567"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "c78943",
+        "wall_time_seconds": 2.2638911,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "moonwell/mamo-decimals.json",
+      "url": "https://mainnet.base.org",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x7300b37dfdfab110d83290a29dfb31b1740219fe",
+            "data": "0x313ce567"
+          },
+          "0x302d361"
+        ]
+      },
+      "command_result": {
+        "chunk_id": "140146",
+        "wall_time_seconds": 2.1333919,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  }
+]

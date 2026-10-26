@@ -1,0 +1,120 @@
+{
+  "kind": "public_online_decompiler_output",
+  "service": "ethervm.io Online Solidity Decompiler",
+  "service_url": "https://ethervm.io/decompile",
+  "method": "POST of exact archived historical runtime in public form bytecode field",
+  "address": "0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e",
+  "chain_id": 8453,
+  "engine_version": null,
+  "engine_version_status": "The returned page does not report the decompiler engine version; frontend/CDN versions are not substituted.",
+  "runtime_block_numbers": [
+    50283188,
+    50283191
+  ],
+  "runtime_block_tags": [
+    "0x2ff42b4",
+    "0x2ff42b7"
+  ],
+  "runtime_bytes": 1701,
+  "runtime_sha256": "75046a49d0e9e0db35338bd0173c52972f0e6928882e2696ec9d5e085fb872cd",
+  "historical_before_mint_equals_first_sale": true,
+  "source_lookup": {
+    "provider": "Sourcify",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e?fields=all",
+    "http_status": 404,
+    "response_path": "sale-helper-source.json",
+    "match": null,
+    "meaning": "No verified source returned by this provider; this is not a universal claim that source cannot exist anywhere."
+  },
+  "decompiled_path": "sale-helper-ethervm-decompiled.txt",
+  "formal_decompiled_code_path": "sale-helper.ethervm.decompiled.sol",
+  "formal_decompiled_code_sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+  "raw_response_path": "sale-helper-ethervm-response.html",
+  "request_path": "sale-helper-ethervm-request.txt",
+  "disassembly_path": "sale-helper-ethervm-disassembly.txt",
+  "extraction": "Unmodified text content of the provider decompilation div; HTML markup removed and entities decoded. No manual pseudocode was added. Both .txt and .sol contain the same extracted text.",
+  "response_disassembly_bytes_checked": 1701,
+  "response_disassembly_mismatches": [],
+  "response_disassembly_complete_byte_coverage": true,
+  "decompiler_error_comment_count": 0,
+  "decompiled_line_count": 417,
+  "retrieved_at_utc": "2026-10-26T15:08:37.036116+00:00",
+  "timestamp_kind": "raw response download completion file modification time",
+  "first_sale_calldata": {
+    "selector": "0xb704b531",
+    "pool": "0xa69cdf524d072c366fd050957880552916d29405",
+    "amount_specified_signed": "-14645535529273021360",
+    "sqrt_price_limit_x96": "1461446703485210103287273052203988822378723970341"
+  },
+  "not_original_source": true,
+  "not_used_to_replace_vulnerable_original_source": true,
+  "not_executed": true,
+  "not_compiled": true,
+  "limits": [
+    "This is public decompiler reconstruction, not verified original Solidity. It supplements the sale helper only and does not replace the five verified original-source bundles proving the root cause.",
+    "Zero Error comments and complete input-byte/disassembly binding do not establish semantic equivalence of the high-level reconstruction, recover original names, or establish standalone compilability.",
+    "Function names selected by the provider from signature caches are hints; exact selectors, embedded addresses and original receipts are retained as the stronger anchors."
+  ],
+  "artifacts": [
+    {
+      "path": "sale-helper-source.json",
+      "sha256": "dbb39b17728d13f62bc01159394124d7d35cac653032e9e0af15232321f92247",
+      "bytes": 127,
+      "file_mtime_utc": "2026-10-26T15:07:48.269203+00:00"
+    },
+    {
+      "path": "sale-helper-runtime-before-mint.json",
+      "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+      "bytes": 3440,
+      "file_mtime_utc": "2026-10-26T15:08:23.375015+00:00"
+    },
+    {
+      "path": "sale-helper-runtime-attack.json",
+      "sha256": "8730db7937c2ca92a5454353c424456eab8b6590d3a5f8eb039346d1e50e69ef",
+      "bytes": 3440,
+      "file_mtime_utc": "2026-10-26T15:07:48.376015+00:00"
+    },
+    {
+      "path": "sale-helper-runtime.hex",
+      "sha256": "593ffd9d64ff23d092da0fe4e7dfce86251e7f78924dc961f7ef90f0e6206894",
+      "bytes": 3404,
+      "file_mtime_utc": "2026-10-26T15:07:59.309131+00:00"
+    },
+    {
+      "path": "ethervm-form.html",
+      "sha256": "ea82f1a1c6a77c0d11dad18ab6220d5670f701fab8d67e5ac86001337ae03229",
+      "bytes": 6287,
+      "file_mtime_utc": "2026-10-26T15:08:05.095651+00:00"
+    },
+    {
+      "path": "sale-helper-ethervm-request.txt",
+      "sha256": "5351c309d34da8844c6e6821f536ffae4ab50548513b9eb3c94ff8725b387c8b",
+      "bytes": 3419,
+      "file_mtime_utc": "2026-10-26T15:07:59.310131+00:00"
+    },
+    {
+      "path": "sale-helper-ethervm-response.html",
+      "sha256": "23e5d3f1e7703133a58b098b967ea7847ff0f7a4967e3e5df54a078fed0e9985",
+      "bytes": 209721,
+      "file_mtime_utc": "2026-10-26T15:08:37.036116+00:00"
+    },
+    {
+      "path": "sale-helper-ethervm-decompiled.txt",
+      "sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "bytes": 17075,
+      "file_mtime_utc": "2026-10-26T15:08:52.004041+00:00"
+    },
+    {
+      "path": "sale-helper-ethervm-disassembly.txt",
+      "sha256": "a9f9d2b29cb32c3df2c894b308cb77ea8ca67aff3dac0c0ae296b8a98f88848f",
+      "bytes": 66648,
+      "file_mtime_utc": "2026-10-26T15:08:52.005095+00:00"
+    },
+    {
+      "path": "sale-helper.ethervm.decompiled.sol",
+      "sha256": "16909fb26583e8b3a0ddd92540a8faf9feeb2605215825a1175d3437b27a1100",
+      "bytes": 17075,
+      "file_mtime_utc": "2026-10-26T15:08:52.004041+00:00"
+    }
+  ]
+}

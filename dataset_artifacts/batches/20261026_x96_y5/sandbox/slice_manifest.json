@@ -1,0 +1,554 @@
+{
+  "kind": "continuous_original_source_ranges",
+  "slices": [
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "start_line": 15,
+      "end_line": 34,
+      "sha256": "e80dbb4aab7d6fec909ec8863b002bca788d00c35be9e649600794e1a76be321",
+      "bytes": 711,
+      "causal_reason": "证明代币与OApp组合、正常烧币和信用入账铸币，并给出实际_msgSender转接。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "start_line": 64,
+      "end_line": 74,
+      "sha256": "173105fe5a9e9b22fffc0f44d1b16d8574ab6affc40cadc530d0227b55932efb",
+      "bytes": 379,
+      "causal_reason": "证明代币与OApp组合、正常烧币和信用入账铸币，并给出实际_msgSender转接。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/OFTSand.sol",
+      "start_line": 88,
+      "end_line": 121,
+      "sha256": "9fbab6a1b2598f36d59683f6a840b61d67f7614794cdc32321aab7eb04db1756",
+      "bytes": 1410,
+      "causal_reason": "证明代币与OApp组合、正常烧币和信用入账铸币，并给出实际_msgSender转接。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/SandBaseToken.sol",
+      "start_line": 5,
+      "end_line": 20,
+      "sha256": "0c17798028819b980d4ac153620299e5b9e2940fa0359e8d3ca12334e47da73c",
+      "bytes": 589,
+      "causal_reason": "证明公开代调用扩展确实被继承到受害地址。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+      "start_line": 16,
+      "end_line": 33,
+      "sha256": "c9ad8cb69ede53296db164537b2bafef0d58c1376fd5e754ddd9cb2993bf8a92",
+      "bytes": 594,
+      "causal_reason": "完整保留approveAndCall和paidCall的调用者可控target/data与外呼。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BasicApproveExtension.sol",
+      "start_line": 41,
+      "end_line": 57,
+      "sha256": "a28d41196ea192adc48d3b3cf24ea3c8517697562358dfd9a9388a5ed54744fc",
+      "bytes": 609,
+      "causal_reason": "完整保留approveAndCall和paidCall的调用者可控target/data与外呼。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/libraries/BytesUtil.sol",
+      "start_line": 4,
+      "end_line": 22,
+      "sha256": "efd380678716e109935e314d980144ee72850195a3a54631cfa51bdd7844d433",
+      "bytes": 672,
+      "causal_reason": "完整保留68字节最小长度及首参数相等检查。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "start_line": 12,
+      "end_line": 12,
+      "sha256": "fa184e75d4ee6b58f3ede0d537f0df8bd80008b858d5d6791b439d17bb279bc1",
+      "bytes": 40,
+      "causal_reason": "证明普通直接调用者的_msgSender为其自身，不要求转发权限。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "start_line": 26,
+      "end_line": 28,
+      "sha256": "f7b7c81c16736fffeb0fe4ee02ac3fb227ce44128f0270403dd1a45156eb84bf",
+      "bytes": 133,
+      "causal_reason": "证明普通直接调用者的_msgSender为其自身，不要求转发权限。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC2771Handler.sol",
+      "start_line": 38,
+      "end_line": 48,
+      "sha256": "6a0793c726a7d592b23eafeb4567435bc0db6a662aa0f8f277889ce84eae9840",
+      "bytes": 449,
+      "causal_reason": "证明普通直接调用者的_msgSender为其自身，不要求转发权限。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "start_line": 12,
+      "end_line": 31,
+      "sha256": "e2ee2b2593578a9bc893691fa776610c726b2206a12b2fc7bcc8b7f9c2fc60ba",
+      "bytes": 872,
+      "causal_reason": "绑定Endpoint、peer和本地onlyOwner的delegate入口。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "start_line": 67,
+      "end_line": 71,
+      "sha256": "d8d611bc35597f90c72d11909c6258910b4dd4b5f12a59f0217ab1d73166bd98",
+      "bytes": 201,
+      "causal_reason": "绑定Endpoint、peer和本地onlyOwner的delegate入口。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+      "start_line": 80,
+      "end_line": 82,
+      "sha256": "63ad9664ccc8fef61408abb066644a16907a02e4640a989cc947ba438d875cc9",
+      "bytes": 110,
+      "causal_reason": "绑定Endpoint、peer和本地onlyOwner的delegate入口。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "start_line": 63,
+      "end_line": 65,
+      "sha256": "b99c75c14db58d7b43fdc02540f58bdcd72836c57037da7ab1b5f4283d1db837",
+      "bytes": 154,
+      "causal_reason": "保留Endpoint来源与peer检查，避免误写为直接任意调用lzReceive。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "start_line": 95,
+      "end_line": 110,
+      "sha256": "c62d48bcc206866e769055452630d1a34e8a212d061a7a16a565754066594367",
+      "bytes": 713,
+      "causal_reason": "保留Endpoint来源与peer检查，避免误写为直接任意调用lzReceive。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/oapp/OApp.sol",
+      "start_line": 18,
+      "end_line": 24,
+      "sha256": "4f98866a0aa3db07efc53846a8aae8efc3481f1e021ecdc196fb850df8d61999",
+      "bytes": 410,
+      "causal_reason": "证明OFTCore继承的收发路径确为该OAppCore/OAppReceiver实现。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 18,
+      "end_line": 20,
+      "sha256": "b03d9330ce31d8033afd32a2460e6450d147310496cca4465d9ec177dbed6649",
+      "bytes": 151,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 35,
+      "end_line": 35,
+      "sha256": "137a0052408e055b1eb50fce6c9d2f2f1754d308e7c971e544e5c11704828be3",
+      "bytes": 52,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 51,
+      "end_line": 54,
+      "sha256": "6289a15e1601118da807497a073594fadc1649d0f6bfc73dd4b58eb5e5f86fab",
+      "bytes": 264,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 74,
+      "end_line": 76,
+      "sha256": "63a127bcc8e6428e1753f9599b903022df5c7e9592bbd3b1a2e800217211b15c",
+      "bytes": 92,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 153,
+      "end_line": 177,
+      "sha256": "13bc792b540824aedf1a553874ecb2e3edc0bfba83f8fdbe7f1f4c81055bae40",
+      "bytes": 1347,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 218,
+      "end_line": 249,
+      "sha256": "27d991a03eb3fd5ae60e75c71fa71b7ad12b8f30373c55396e621ae48cf4732c",
+      "bytes": 1811,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 293,
+      "end_line": 295,
+      "sha256": "e9651c2e5a83e202e5c0851a63193414bd9f36d7a8f8b2b1960da75b0fe8aa3e",
+      "bytes": 144,
+      "causal_reason": "证明消息接收、金额单位换算和信用入口，以及正常返程先debit后发消息。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "start_line": 4,
+      "end_line": 7,
+      "sha256": "6bb711e9a3e5471f119078bed16e6374e8d4787cc1a2649e51570e47073aefec",
+      "bytes": 188,
+      "causal_reason": "证明消息前32字节接收者和随后8字节共享精度金额的实际解码。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "start_line": 36,
+      "end_line": 56,
+      "sha256": "a85a35f077ef69a86e7029247c02ccd1ae72fd081478ada3097c4281ee83faef",
+      "bytes": 749,
+      "causal_reason": "证明消息前32字节接收者和随后8字节共享精度金额的实际解码。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/libraries/OFTMsgCodec.sol",
+      "start_line": 81,
+      "end_line": 83,
+      "sha256": "88004b5619c06c835d15994e75f510057069b6f7f5be9684d53ecb2baeeab0b7",
+      "bytes": 128,
+      "causal_reason": "证明消息前32字节接收者和随后8字节共享精度金额的实际解码。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+      "start_line": 167,
+      "end_line": 177,
+      "sha256": "67649901eb94a77390ca1c9dffbf0b6016a5ea6d061f8d9a879ed5c1c86d4ebc",
+      "bytes": 392,
+      "causal_reason": "完整保留无余额要求的授权更新、实际铸币和实际烧币的状态变更。"
+    },
+    {
+      "bundle_id": "sandbox-oft",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/sand/ERC20BaseToken.sol",
+      "start_line": 200,
+      "end_line": 242,
+      "sha256": "a0cedb1ee0c5f0fda4c359095170625c353a04bf42e5e55d94fedecc7f56a761",
+      "bytes": 1751,
+      "causal_reason": "完整保留无余额要求的授权更新、实际铸币和实际烧币的状态变更。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/EndpointV2.sol",
+      "start_line": 37,
+      "end_line": 45,
+      "sha256": "ffc80ff246e6cf95c33fa543d144cba9b0eda74ff7d7116f6fffbb23cf50515a",
+      "bytes": 432,
+      "causal_reason": "证明delegate以应用自身msg.sender为索引、delegate可配置、有效消息的检查和交付。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/EndpointV2.sol",
+      "start_line": 151,
+      "end_line": 183,
+      "sha256": "6048be11b0ce358e7381e36e1b3f5522d477695840fd0dff205b15698af9ef94",
+      "bytes": 1957,
+      "causal_reason": "证明delegate以应用自身msg.sender为索引、delegate可配置、有效消息的检查和交付。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/EndpointV2.sol",
+      "start_line": 327,
+      "end_line": 357,
+      "sha256": "335d571e32692cd3bc0f7eac4c9a4897ac108cce56c8ca3cbf1d2f80a1cd0bfd",
+      "bytes": 1335,
+      "causal_reason": "证明delegate以应用自身msg.sender为索引、delegate可配置、有效消息的检查和交付。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessageLibManager.sol",
+      "start_line": 39,
+      "end_line": 42,
+      "sha256": "60f67bc8c9104f5adf8d72532e51c16f91dde4c9876ad02b699181e560131a46",
+      "bytes": 139,
+      "causal_reason": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessageLibManager.sol",
+      "start_line": 96,
+      "end_line": 135,
+      "sha256": "481e740460cba812c7feb34e041f469c4ab29adbd4a1e4728cf40dabc20401ba",
+      "bytes": 1975,
+      "causal_reason": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessageLibManager.sol",
+      "start_line": 245,
+      "end_line": 273,
+      "sha256": "16e38d8d44a3d2fc36ecee2aa1e96e035f1cc0a2bfb903e7c25b4f5ae4434137",
+      "bytes": 1564,
+      "causal_reason": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessageLibManager.sol",
+      "start_line": 307,
+      "end_line": 311,
+      "sha256": "8e9ff2f41948fec282e0bd38772791302bb90cc31ddd18f716acf84687fea60c",
+      "bytes": 213,
+      "causal_reason": "保留注册库要求、接收库验证和经授权的配置转发；权限接管不等于任意注册恶意库。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessagingChannel.sol",
+      "start_line": 16,
+      "end_line": 19,
+      "sha256": "27bd071bc0eef9ba100d7f0aa5c7c0346ce20e5c81e3515cf9ddcdd404bf751e",
+      "bytes": 305,
+      "causal_reason": "证明已验证payload写入与执行时nonce/hash检查，不把配置劫持误写成关闭全部验证。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessagingChannel.sol",
+      "start_line": 37,
+      "end_line": 46,
+      "sha256": "1c3031598d9b99f9896a7aa7165a7527bb47d379701254c5cfc92e29f4623b3a",
+      "bytes": 341,
+      "causal_reason": "证明已验证payload写入与执行时nonce/hash检查，不把配置劫持误写成关闭全部验证。"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "source_file": "contracts/MessagingChannel.sol",
+      "start_line": 126,
+      "end_line": 151,
+      "sha256": "e2a0b5cee612fe1864151ef17f16d2ead72e34162a0ae27728494bf44170d951",
+      "bytes": 1174,
+      "causal_reason": "证明已验证payload写入与执行时nonce/hash检查，不把配置劫持误写成关闭全部验证。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/uln302/ReceiveUln302.sol",
+      "start_line": 16,
+      "end_line": 24,
+      "sha256": "b62e1525f38e36d400aa51a2ec99925f8a9a8bf1c643752e00c6ebb2a5802548",
+      "bytes": 374,
+      "causal_reason": "证明只有Endpoint可写配置、DVN verify入口和commit把已验证payload交给Endpoint。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/uln302/ReceiveUln302.sol",
+      "start_line": 33,
+      "end_line": 66,
+      "sha256": "7d620d5c8e8f187badfb70f6eacb5d1ad63bb8fb1144b4d5ffabc82ac264dffc",
+      "bytes": 1611,
+      "causal_reason": "证明只有Endpoint可写配置、DVN verify入口和commit把已验证payload交给Endpoint。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/UlnBase.sol",
+      "start_line": 8,
+      "end_line": 16,
+      "sha256": "aad26d1cb6d628fec12c85b8a5f7e6880a8cd6a738d0c5b720a29a7437562a1b",
+      "bytes": 663,
+      "causal_reason": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/UlnBase.sol",
+      "start_line": 25,
+      "end_line": 34,
+      "sha256": "f7f1b74593e0ba423421dc3b5832eeb6206bc6ae22088bb658cac909e88adde0",
+      "bytes": 568,
+      "causal_reason": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/UlnBase.sol",
+      "start_line": 74,
+      "end_line": 118,
+      "sha256": "c1e0b871f90a0f187f697eda5c93326eff70445d83bf25aca66dbf4ad76128d0",
+      "bytes": 2254,
+      "causal_reason": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/UlnBase.sol",
+      "start_line": 126,
+      "end_line": 142,
+      "sha256": "3966f68800acac640b7ae143f63d66c0b7459adcbe991c97422d141aa11477f4",
+      "bytes": 837,
+      "causal_reason": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/UlnBase.sol",
+      "start_line": 146,
+      "end_line": 194,
+      "sha256": "db2c41a81a581287df9e19082f05bc37791ec5a1bbdd86e9213ed9c2789957f9",
+      "bytes": 2737,
+      "causal_reason": "保留配置结构、0值继承默认语义、至少一个验证者及数组有效性检查，证明修改required DVN不是关闭所有检查。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/ReceiveUlnBase.sol",
+      "start_line": 9,
+      "end_line": 19,
+      "sha256": "4ad2a6d2aeaf7567b219105237e95b1a17d70513045a29973385be45c345f688",
+      "bytes": 359,
+      "causal_reason": "保留msg.sender验证记录及required/optional与确认数检查的完整实际实现。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/uln/ReceiveUlnBase.sol",
+      "start_line": 43,
+      "end_line": 124,
+      "sha256": "b41dc9b70bc31747042bb8cac8c1198dea93f9cee05417bb354a5157951c60b4",
+      "bytes": 3555,
+      "causal_reason": "保留msg.sender验证记录及required/optional与确认数检查的完整实际实现。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/MessageLibBase.sol",
+      "start_line": 1,
+      "end_line": 21,
+      "sha256": "f84d5ebb48cf47096ba21d535bec480a0e0026fd117d2f851ce22f16b6def0e1",
+      "bytes": 528,
+      "causal_reason": "保留onlyEndpoint和绑定端点的实现。"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "source_file": "contracts/ReceiveLibBaseE2.sol",
+      "start_line": 16,
+      "end_line": 27,
+      "sha256": "caad7ccdf0813fe78f5e7d4c12311065ea669c500fa9edbb384f2d8f1ee1eecd",
+      "bytes": 574,
+      "causal_reason": "证明该库绑定本地Endpoint和接收库角色。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+      "start_line": 14,
+      "end_line": 38,
+      "sha256": "02790d78cb64cbbc76dcc60d85d7525b4ebb0bb74758c02d998ac158c0b74848",
+      "bytes": 959,
+      "causal_reason": "证明以太坊的实际部署类型、底层token构造绑定和发送开关。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol",
+      "start_line": 54,
+      "end_line": 64,
+      "sha256": "173105fe5a9e9b22fffc0f44d1b16d8574ab6affc40cadc530d0227b55932efb",
+      "bytes": 379,
+      "causal_reason": "证明以太坊的实际部署类型、底层token构造绑定和发送开关。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+      "start_line": 18,
+      "end_line": 40,
+      "sha256": "b5ccab97bd4d8537324aa3d36b19660c23bdfc9fa5ae058354824a0703ac571e",
+      "bytes": 933,
+      "causal_reason": "完整保留锁定底层已有代币与安全转账支付储备的两条资金路径。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTAdapter.sol",
+      "start_line": 61,
+      "end_line": 89,
+      "sha256": "e6ab808778fdbf7b1605433659160b3f105af94ab81f840602fa8b453905ad46",
+      "bytes": 1497,
+      "causal_reason": "完整保留锁定底层已有代币与安全转账支付储备的两条资金路径。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 218,
+      "end_line": 249,
+      "sha256": "27d991a03eb3fd5ae60e75c71fa71b7ad12b8f30373c55396e621ae48cf4732c",
+      "bytes": 1811,
+      "causal_reason": "证明以太坊也按消息amount调用adapter._credit。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@sandbox-smart-contracts/oft-sand/contracts/oft/OFTCore.sol",
+      "start_line": 293,
+      "end_line": 295,
+      "sha256": "e9651c2e5a83e202e5c0851a63193414bd9f36d7a8f8b2b1960da75b0fe8aa3e",
+      "bytes": 144,
+      "causal_reason": "证明以太坊也按消息amount调用adapter._credit。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+      "start_line": 95,
+      "end_line": 110,
+      "sha256": "c62d48bcc206866e769055452630d1a34e8a212d061a7a16a565754066594367",
+      "bytes": 713,
+      "causal_reason": "保留以太坊接收的Endpoint和peer检查，不能把源链受损描述为主网验签被攻破。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "start_line": 36,
+      "end_line": 46,
+      "sha256": "24fa2833f62bcd92f0adf4b76d1d542ccb5b19de7a6cce7be30ae37beb263438",
+      "bytes": 592,
+      "causal_reason": "证明_credit实际调用ERC20 transfer并检查返回值。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-adapter",
+      "source_file": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "start_line": 91,
+      "end_line": 100,
+      "sha256": "45c6efa6451432087aec8fe5c71bdb54d79c00767bdc02bc699bd334dd6c88f9",
+      "bytes": 634,
+      "causal_reason": "证明_credit实际调用ERC20 transfer并检查返回值。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-sand",
+      "source_file": "src/Sand.sol",
+      "start_line": 7,
+      "end_line": 13,
+      "sha256": "d8961c436e347ab7098347042175772f4a3f64c5f17e5b98d8154fefb3d1f67b",
+      "bytes": 309,
+      "causal_reason": "绑定底层SAND原始代币继承和初始化发行。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-sand",
+      "source_file": "src/Sand/erc20/ERC20BaseToken.sol",
+      "start_line": 39,
+      "end_line": 74,
+      "sha256": "3a1daaadeae3eb3c6324031bf56115a65fd82fca3d01985a0fe7969b14a2d20a",
+      "bytes": 1412,
+      "causal_reason": "保留18位精度、transfer/transferFrom与已有余额扣减，说明主网付款不是凭空增发。"
+    },
+    {
+      "bundle_id": "sandbox-ethereum-sand",
+      "source_file": "src/Sand/erc20/ERC20BaseToken.sol",
+      "start_line": 156,
+      "end_line": 163,
+      "sha256": "ab1ea7ea50b69dec1c6d5f0f3b3521bb404004805d09e67cc764f8263b0378bb",
+      "bytes": 376,
+      "causal_reason": "保留18位精度、transfer/transferFrom与已有余额扣减，说明主网付款不是凭空增发。"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "offline_historical_runtime_comparison",
+  "bindings": [
+    {
+      "bundle_id": "sandbox-oft",
+      "chain_id": 8453,
+      "historical_block": 50283176,
+      "historical_block_hex": "0x2ff42a8",
+      "relationship": "byte-for-byte equal to Sourcify runtimeBytecode.onchainBytecode",
+      "equal": true,
+      "runtime_bytes": 17295,
+      "runtime_sha256": "5c4f904112dc6ef4e9d74d0e8a7601567040aa6d944d788e79cb49aec97d1567",
+      "evidence_path": "oft-pre-attack-code.json",
+      "response_path": "victim-source.json"
+    },
+    {
+      "bundle_id": "layerzero-endpoint",
+      "chain_id": 8453,
+      "historical_block": 50283176,
+      "historical_block_hex": "0x2ff42a8",
+      "relationship": "byte-for-byte equal to Sourcify runtimeBytecode.onchainBytecode",
+      "equal": true,
+      "runtime_bytes": 24005,
+      "runtime_sha256": "785be5e1e7011c7142c22a4c2094f47c28bb8507edf82472cf1c4f7526364411",
+      "evidence_path": "endpoint-pre-attack-code.json",
+      "response_path": "endpoint-source.json"
+    },
+    {
+      "bundle_id": "layerzero-receive-library",
+      "chain_id": 8453,
+      "historical_block": 50283176,
+      "historical_block_hex": "0x2ff42a8",
+      "relationship": "byte-for-byte equal to Sourcify runtimeBytecode.onchainBytecode",
+      "equal": true,
+      "runtime_bytes": 11010,
+      "runtime_sha256": "80d15f3d9074bf165c945f0c0c137d0fff597810ecbd197b466cee117d7f5ecf",
+      "evidence_path": "receive-library-pre-attack-code.json",
+      "response_path": "receive-library-source.json"
+    }
+  ],
+  "limits": [
+    "Ethereum adapter and original SAND verified-source deployment binding is archived; their historical runtime was not separately fetched in this case.",
+    "Runtime equality proves deployed code identity at the preceding Base block, not every prior storage value or all cross-chain payouts."
+  ]
+}

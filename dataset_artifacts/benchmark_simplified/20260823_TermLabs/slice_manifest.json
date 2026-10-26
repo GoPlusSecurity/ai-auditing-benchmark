@@ -1,0 +1,315 @@
+{
+  "case_id": "20260823_TermLabs",
+  "path_base": "this artifact directory",
+  "no_logic_rewritten": true,
+  "standalone_compilation": "not_claimed",
+  "slices": [
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/plugins/governance/majority-voting/token/TokenVoting_L1_L240.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/token/TokenVoting.sol",
+      "original_start_line": 1,
+      "original_end_line": 240,
+      "sha256": "495e8e8c95bb8b93e4a19007e0c2ca7344e85c33575092362ed14bcadd41a275",
+      "complete_source_sha256": "495e8e8c95bb8b93e4a19007e0c2ca7344e85c33575092362ed14bcadd41a275",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase_L1_L594.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/MajorityVotingBase.sol",
+      "original_start_line": 1,
+      "original_end_line": 594,
+      "sha256": "29666e17ccac3258951440d23a78dd53eaf0581544c0c717a8758ad7f55806ee",
+      "complete_source_sha256": "29666e17ccac3258951440d23a78dd53eaf0581544c0c717a8758ad7f55806ee",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/core/plugin/proposal/ProposalUpgradeable_L1_L84.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/proposal/ProposalUpgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 84,
+      "sha256": "8859405acbcacdea36a8e3d97066d5003b01d28f7b2ca3140e96bea115e01583",
+      "complete_source_sha256": "8859405acbcacdea36a8e3d97066d5003b01d28f7b2ca3140e96bea115e01583",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/plugins/governance/majority-voting/IMajorityVoting_L1_L98.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/governance/majority-voting/IMajorityVoting.sol",
+      "original_start_line": 1,
+      "original_end_line": 98,
+      "sha256": "ee2b42d35740521dac5bebaaaad2fd929d7b32e16fe94fc0b321497ce43df340",
+      "complete_source_sha256": "ee2b42d35740521dac5bebaaaad2fd929d7b32e16fe94fc0b321497ce43df340",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable_L1_L39.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 39,
+      "sha256": "981dca2975756a1b70b9c0d32bdf546a801f6c0a0fb8e3360d531f3be6ac216a",
+      "complete_source_sha256": "981dca2975756a1b70b9c0d32bdf546a801f6c0a0fb8e3360d531f3be6ac216a",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting/src/plugins/utils/Ratio_L1_L30.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting/src/plugins/utils/Ratio.sol",
+      "original_start_line": 1,
+      "original_end_line": 30,
+      "sha256": "b50de65155c817bafb1bdf8eb025f14d93f2264fba73f6dce33e57ab220e908d",
+      "complete_source_sha256": "b50de65155c817bafb1bdf8eb025f14d93f2264fba73f6dce33e57ab220e908d",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20_L1_L126.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/src/token/ERC20/governance/GovernanceWrappedERC20.sol",
+      "original_start_line": 1,
+      "original_end_line": 126,
+      "sha256": "81421386fdb859e4d93652733f71496056ed92045ebbfd2b197756eb739f6ad1",
+      "complete_source_sha256": "81421386fdb859e4d93652733f71496056ed92045ebbfd2b197756eb739f6ad1",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable_L1_L77.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 77,
+      "sha256": "a4ce312be935b8c0f4ae8d96f8f2d3f445b1fa21fd981a273156b43e718382a0",
+      "complete_source_sha256": "a4ce312be935b8c0f4ae8d96f8f2d3f445b1fa21fd981a273156b43e718382a0",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable_L1_L288.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 288,
+      "sha256": "88763a9a0b498ca738c9a1c0c33a56464e0e8a2ad466426fe10b01cd9e01e2ae",
+      "complete_source_sha256": "88763a9a0b498ca738c9a1c0c33a56464e0e8a2ad466426fe10b01cd9e01e2ae",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable_L1_L401.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 401,
+      "sha256": "7307fb68607d3c93995797209010e5048c9cc1777f3b97dc7940f41a7327d080",
+      "complete_source_sha256": "7307fb68607d3c93995797209010e5048c9cc1777f3b97dc7940f41a7327d080",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable_L1_L116.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-voting-token/@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 116,
+      "sha256": "45b47dd617d02875a7e6c896d1842ff9d8362ab15b8180645f3f4b180d4f028f",
+      "complete_source_sha256": "45b47dd617d02875a7e6c896d1842ff9d8362ab15b8180645f3f4b180d4f028f",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-dao/src/core/dao/DAO_L1_L299.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-dao/src/core/dao/DAO.sol",
+      "original_start_line": 1,
+      "original_end_line": 299,
+      "sha256": "e2420b4eaabf8a6b3333ed0f7ac8a5a8171bfc4f05bbcec57080744ffe8d9240",
+      "complete_source_sha256": "b297272542509b9ce11181a8d43099e08831c8e9c73d590bfa4a719803a678df",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-dao/src/core/permission/PermissionManager_L1_L403.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-dao/src/core/permission/PermissionManager.sol",
+      "original_start_line": 1,
+      "original_end_line": 403,
+      "sha256": "fa30649a40de3faef4759493379c568346adef0bedc26cdb436e08a206a2724b",
+      "complete_source_sha256": "fa30649a40de3faef4759493379c568346adef0bedc26cdb436e08a206a2724b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-dao/src/core/dao/IDAO_L1_L138.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-dao/src/core/dao/IDAO.sol",
+      "original_start_line": 1,
+      "original_end_line": 138,
+      "sha256": "64a0238414797c769bc9ce225e426a84d98b4544a1c42630b4e4748806eafffc",
+      "complete_source_sha256": "64a0238414797c769bc9ce225e426a84d98b4544a1c42630b4e4748806eafffc",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-roles/contracts/Roles_L1_L374.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-roles/contracts/Roles.sol",
+      "original_start_line": 1,
+      "original_end_line": 374,
+      "sha256": "d2721bf908bf48411a0471570f1460c4328074e26783d57fd3e9f5c3b99c73c6",
+      "complete_source_sha256": "d2721bf908bf48411a0471570f1460c4328074e26783d57fd3e9f5c3b99c73c6",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-roles/@gnosis.pm/zodiac/contracts/core/Modifier_L1_L134.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-roles/@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+      "original_start_line": 1,
+      "original_end_line": 134,
+      "sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+      "complete_source_sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-permissions/contracts/Permissions_L1_L290.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-permissions/contracts/Permissions.sol",
+      "original_start_line": 1,
+      "original_end_line": 290,
+      "sha256": "80050c02d3a03175ea1296e277e86d750a4b53e3f56961d1027569ee905a76c5",
+      "complete_source_sha256": "29952bcebecfa8d7cdf15c8c9c7871c7540e17cab2dab7f7024fdd7bd512e11b",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-delay/contracts/Delay_L1_L232.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/contracts/Delay.sol",
+      "original_start_line": 1,
+      "original_end_line": 232,
+      "sha256": "6b1136b248646eec8927c4b6f9a5b11d3ce0863adbca7d3d2332f4fa425d26ae",
+      "complete_source_sha256": "6b1136b248646eec8927c4b6f9a5b11d3ce0863adbca7d3d2332f4fa425d26ae",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-delay/@gnosis.pm/zodiac/contracts/core/Module_L1_L116.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Module.sol",
+      "original_start_line": 1,
+      "original_end_line": 116,
+      "sha256": "c557a87f052b7f5f00d88a18ea4a7a6e2b62420ff41d2dd25c323c0b39831c46",
+      "complete_source_sha256": "c557a87f052b7f5f00d88a18ea4a7a6e2b62420ff41d2dd25c323c0b39831c46",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-delay/@gnosis.pm/zodiac/contracts/core/Modifier_L1_L134.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/@gnosis.pm/zodiac/contracts/core/Modifier.sol",
+      "original_start_line": 1,
+      "original_end_line": 134,
+      "sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+      "complete_source_sha256": "a7b393576551c3eeef82bd95cdbe47c8dd22b869426cb86411f11f05a450cb68",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-delay/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable_L1_L78.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-delay/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "original_start_line": 1,
+      "original_end_line": 78,
+      "sha256": "50be14ba1da013afb247752c368784ce5da4b62caac969280f6c6bcef7b07d33",
+      "complete_source_sha256": "50be14ba1da013afb247752c368784ce5da4b62caac969280f6c6bcef7b07d33",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-safe/contracts/base/ModuleManager_L1_L133.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-safe/contracts/base/ModuleManager.sol",
+      "original_start_line": 1,
+      "original_end_line": 133,
+      "sha256": "63ac8b6e0556ab32dee207b168916751982f4dc20efb9544740f5e35ff3ce6a5",
+      "complete_source_sha256": "63ac8b6e0556ab32dee207b168916751982f4dc20efb9544740f5e35ff3ce6a5",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-safe/contracts/base/Executor_L1_L27.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-safe/contracts/base/Executor.sol",
+      "original_start_line": 1,
+      "original_end_line": 27,
+      "sha256": "87c8c6cb45069e68dfb58c2347e69b43ab8b5a31f34adcf5c0705b9f595a7815",
+      "complete_source_sha256": "87c8c6cb45069e68dfb58c2347e69b43ab8b5a31f34adcf5c0705b9f595a7815",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-safe/contracts/common/Enum_L1_L8.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-safe/contracts/common/Enum.sol",
+      "original_start_line": 1,
+      "original_end_line": 8,
+      "sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+      "complete_source_sha256": "9beffe49e2ddcc6548f16883c9333daa607a7d21eda1cc5b7af8cefef034f64c",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L1_L327.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 1,
+      "original_end_line": 327,
+      "sha256": "d5187fd09272952f51730e8627b8bd8e423fabd3eee1163d7740a9050cb5671d",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L486_L510.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 486,
+      "original_end_line": 510,
+      "sha256": "ed6a0dc2609679fa38540de21c1459bbe83eea3970d5565c09ca6147776ae90f",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L667_L712.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 667,
+      "original_end_line": 712,
+      "sha256": "ef836924f1ec8ce8b80da3ee51431fab8a60d26c81a982797e152e6a36d5d362",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L911_L930.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 911,
+      "original_end_line": 930,
+      "sha256": "f309acacc445d9684d2eeefa17d6a5ad605cc61c7f8f263445b22b6674cc1203",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L965_L1112.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 965,
+      "original_end_line": 1112,
+      "sha256": "2dc387b77e1528e13726146a46b678522be0aa8b9b204ce0cb1dfbaea0297305",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L1521_L1526.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 1521,
+      "original_end_line": 1526,
+      "sha256": "a066618752ae65e3905e3fed5cab1d19c32f5320e796fed349b8556eb27c7b2c",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L1698_L1707.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 1698,
+      "original_end_line": 1707,
+      "sha256": "d811cd5d0f5ec936bc3067447b1f2b5097e8a769a0f2063d09081e45f9888bf9",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-vault/YearnV3Vault_L1731_L1762.vy",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-vault/YearnV3Vault.vy",
+      "original_start_line": 1731,
+      "original_end_line": 1762,
+      "sha256": "e70f6cd30d540786e34f8a38a82038da8c7f91e49568b7035e372fb36a0db42d",
+      "complete_source_sha256": "ed081bf1b1dad10ef25d3e92a5f6f7d8fe92139438869affa2a720b5255c2e22",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/slices/term-weth/WETH9_L1_L77.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/source-bundles/term-weth/WETH9.sol",
+      "original_start_line": 1,
+      "original_end_line": 77,
+      "sha256": "a0709e6c8eb8da657db1f24b02ad63582383bde6e258c76e95f78281d170fc68",
+      "complete_source_sha256": "4a4205fff097f9364ebba3c8a32670a63fccffb39baddc0046a6da1ba398c767",
+      "kind": "original_source_verbatim_slice"
+    },
+    {
+      "path": "../../../dataset/benchmark_simplified/20260823_TermLabs/decompiled/attacker-strategy.ethervm.decompiled.sol",
+      "complete_path": "../../../dataset/benchmark_complete/20260823_TermLabs/decompiled/attacker-strategy.ethervm.decompiled.sol",
+      "original_start_line": 1,
+      "original_end_line": 599,
+      "sha256": "d5db55fb22f322d706336cfa1ec0471cbbab3d9c1da02091bee825b13b49e758",
+      "complete_source_sha256": "d5db55fb22f322d706336cfa1ec0471cbbab3d9c1da02091bee825b13b49e758",
+      "kind": "unmodified_decompiler_output_not_original_source",
+      "scope": "whole recovery output; preserve all recovered calls and tool error comments"
+    }
+  ]
+}

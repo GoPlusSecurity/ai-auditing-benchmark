@@ -1,0 +1,5 @@
+[
+ {"path":"term/helper-implementation-code-page.html","url":"https://etherscan.io/address/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1#code","role":"attacker helper implementation; locator only"},
+ {"path":"term/sources/delay-implementation-source.json","url":"https://sourcify.dev/server/v2/contract/1/0xd54895B1121A2eE3f37b502F507631FA1331BED6?fields=all","role":"delay implementation from verified Etherscan proxy link"},
+ {"path":"term/sources/vault-implementation-source.json","url":"https://sourcify.dev/server/v2/contract/1/0xd8063123BBA3B480569244AE66BFE72B6c84b00d?fields=all","role":"vault implementation from verified Etherscan proxy link"}
+]

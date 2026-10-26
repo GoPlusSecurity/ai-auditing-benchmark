@@ -1,0 +1,210 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\token-runtime-attack-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0xdcf0dfe0053677a67610c6d08ea1f5c78df8ca37",
+          "0x708390a"
+        ]
+      },
+      "role": "token",
+      "started_at_utc": "2026-10-26T14:46:10.992Z",
+      "finished_at_utc": "2026-10-26T14:46:16.303Z",
+      "result": {
+        "chunk_id": "49e946",
+        "wall_time_seconds": 4.3255926,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v2_router-runtime-before-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x7083909"
+        ]
+      },
+      "role": "v2_router",
+      "started_at_utc": "2026-10-26T14:46:10.992Z",
+      "finished_at_utc": "2026-10-26T14:46:15.331Z",
+      "result": {
+        "chunk_id": "56b141",
+        "wall_time_seconds": 3.2637881,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v2_router-runtime-attack-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x708390a"
+        ]
+      },
+      "role": "v2_router",
+      "started_at_utc": "2026-10-26T14:46:10.992Z",
+      "finished_at_utc": "2026-10-26T14:46:13.821Z",
+      "result": {
+        "chunk_id": "6d95e5",
+        "wall_time_seconds": 1.9686671,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v3_router-runtime-before-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+          "0x7083909"
+        ]
+      },
+      "role": "v3_router",
+      "started_at_utc": "2026-10-26T14:46:10.993Z",
+      "finished_at_utc": "2026-10-26T14:46:13.810Z",
+      "result": {
+        "chunk_id": "550b92",
+        "wall_time_seconds": 1.8640229000000001,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v3_router-runtime-attack-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+          "0x708390a"
+        ]
+      },
+      "role": "v3_router",
+      "started_at_utc": "2026-10-26T14:46:10.994Z",
+      "finished_at_utc": "2026-10-26T14:46:13.829Z",
+      "result": {
+        "chunk_id": "e29fcb",
+        "wall_time_seconds": 2.0263447,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\pair-runtime-attack-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x8f2d1a3992856a860304f1b86534b6b129cc4df7",
+          "0x708390a"
+        ]
+      },
+      "role": "pair",
+      "started_at_utc": "2026-10-26T14:46:10.994Z",
+      "finished_at_utc": "2026-10-26T14:46:13.824Z",
+      "result": {
+        "chunk_id": "fda5a8",
+        "wall_time_seconds": 1.9226334999999999,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\usdt-runtime-before-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x7083909"
+        ]
+      },
+      "role": "usdt",
+      "started_at_utc": "2026-10-26T14:46:10.994Z",
+      "finished_at_utc": "2026-10-26T14:46:14.749Z",
+      "result": {
+        "chunk_id": "61b64f",
+        "wall_time_seconds": 2.2884201,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\usdt-runtime-attack-blast.json",
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "payload": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x708390a"
+        ]
+      },
+      "role": "usdt",
+      "started_at_utc": "2026-10-26T14:46:10.994Z",
+      "finished_at_utc": "2026-10-26T14:46:13.821Z",
+      "result": {
+        "chunk_id": "143b05",
+        "wall_time_seconds": 1.8473488,
+        "exit_code": 0,
+        "original_token_count": 10,
+        "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+test_duplicate_case_ids_still_count_as_two_qualifying_rows (test_20261002_batch.SelectionRuleTests.test_duplicate_case_ids_still_count_as_two_qualifying_rows) ... ok
+test_embedded_csv_newline_is_one_parsed_sheet_row (test_20261002_batch.SelectionRuleTests.test_embedded_csv_newline_is_one_parsed_sheet_row) ... ok
+test_ineligible_start_and_consecutive_skips_continue_upward (test_20261002_batch.SelectionRuleTests.test_ineligible_start_and_consecutive_skips_continue_upward) ... ok
+test_insufficient_qualifying_rows_raises (test_20261002_batch.SelectionRuleTests.test_insufficient_qualifying_rows_raises) ... ok
+test_last_parsed_row_is_valid_upper_boundary (test_20261002_batch.SelectionRuleTests.test_last_parsed_row_is_valid_upper_boundary) ... ok
+test_missing_or_non_boolean_decision_fails_closed (test_20261002_batch.SelectionRuleTests.test_missing_or_non_boolean_decision_fails_closed) ... ok
+test_non_integer_x_or_y_is_rejected_including_bool (test_20261002_batch.SelectionRuleTests.test_non_integer_x_or_y_is_rejected_including_bool) ... ok
+test_non_positive_y_is_rejected (test_20261002_batch.SelectionRuleTests.test_non_positive_y_is_rejected) ... ok
+test_row_three_is_valid_lower_boundary (test_20261002_batch.SelectionRuleTests.test_row_three_is_valid_lower_boundary) ... ok
+test_x_must_name_an_event_row_inside_the_export (test_20261002_batch.SelectionRuleTests.test_x_must_name_an_event_row_inside_the_export) ... ok
+test_y_cannot_exceed_rows_available_through_x (test_20261002_batch.SelectionRuleTests.test_y_cannot_exceed_rows_available_through_x) ... ok
+test_y_one_selects_starting_row (test_20261002_batch.SelectionRuleTests.test_y_one_selects_starting_row) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK

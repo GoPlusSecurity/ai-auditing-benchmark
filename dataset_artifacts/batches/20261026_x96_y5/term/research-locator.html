@@ -1,0 +1,510 @@
+<!doctype html><html lang=en>
+<head>
+<title>The Term Finance Exploit: $8.5M Approved by Silence</title>
+<link rel=preconnect href=https://gstatic.com crossorigin>
+<link rel=preconnect href=https://google-analytics.com>
+<link rel=preconnect href=https://fonts.googleapis.com crossorigin>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preconnect href=https://googletagmanager.com>
+<link rel=preconnect href=https://telegram.org>
+<link rel=preconnect href=https://cdnjs.cloudflare.com crossorigin>
+<link rel=preconnect href=https://cdn.jsdelivr.net crossorigin>
+<link rel=preload href=/images/vector.png as=image media="(min-width: 601px)">
+<link rel=preload href=/images/logo.svg as=image media="(min-width: 601px)">
+<link rel=preload href=/images/bg-fon.png as=image media="(min-width: 601px)">
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="An attacker queued a vault parameter change on Term Finance, waited six days for nobody to veto it, then took 2,841 ETH and 1.68M USDC.">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel=preload as=style>
+<link rel=stylesheet href=/assets/css/main.css>
+<link rel=canonical href=https://defiprime.com/term-finance-governance-exploit>
+<link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css as=style media=print onload='this.media="all"'>
+<meta property="og:title" content="Term Finance: $8.5M Approved by Silence">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://defiprime.com/term-finance-governance-exploit">
+<meta property="og:description" content="At 06:25:47 UTC on Sunday, August 23, 2026, a single Ethereum transaction executed a governance proposal that had been sitting on-chain, in the open, for six days. The voting window had closed 12 seconds earlier, at 06:25:35, with no vetoes. The transaction pulled 2,841.74 WETH out of Term Financ...">
+<meta property="og:image" content="https://defiprime.com/images/blog/term-finance-governance-exploit-ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-08-23T00:00:00+00:00">
+<meta property="article:author" content="Nick Sawinyh">
+<meta property="article:tag" content="Analysis">
+<meta property="article:tag" content="Yield">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="@defiprime">
+<meta name=twitter:creator content="@defiprime">
+<meta name=twitter:title content="Term Finance: $8.5M Approved by Silence">
+<meta name=twitter:description content="An attacker queued a vault parameter change on Term Finance, waited six days for nobody to veto it, then took 2,841 ETH and 1.68M USDC.">
+<meta name=twitter:image content="https://defiprime.com/images/blog/term-finance-governance-exploit-ogp.png">
+<script defer src=https://use.fontawesome.com/releases/v5.8.1/js/all.js integrity=sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ crossorigin=anonymous></script>
+<script defer src=/assets/js/image-zoom.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138327045-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-138327045-1",{content_group1:"blog"})</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/defiprime.com\/term-finance-governance-exploit"},"headline":"Term Finance: $8.5M Approved by Silence","description":"An attacker queued a vault parameter change on Term Finance, waited six days for nobody to veto it, then took 2,841 ETH and 1.68M USDC.","datePublished":"2026-08-23T00:00:00+00:00","dateModified":"2026-08-23T00:00:00+00:00","author":{"@type":"Person","name":"Nick Sawinyh","url":"https:\/\/sawinyh.com"},"publisher":{"@type":"Organization","name":"DefiPrime","url":"https:\/\/defiprime.com\/","logo":{"@type":"ImageObject","url":"https:\/\/defiprime.com\/images/logo-60w.png","width":60,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/defiprime.com\/images\/blog\/term-finance-governance-exploit-ogp.png","height":630,"width":1200},"articleSection":"blog","keywords":"Analysis, Yield","url":"https:\/\/defiprime.com\/term-finance-governance-exploit"}</script>
+</head>
+<body class=post>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB9GWJD" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+<div id=wrapper>
+<header id=header>
+<div class=inner>
+<div class=header-content>
+<div class=header-content-logo>
+<a href=/ class=logo>
+<img src=/images/logo.svg width=220 height=41 alt>
+</a>
+<aside>
+<img id=hamburger_menu_open width=24 height=24 src=/images/hamburger.svg>
+<img id=hamburger_menu_close width=24 height=24 src=/images/close_hamburger.svg>
+</aside>
+</div>
+<div class=header-content-menu>
+<ul class=menu-list>
+<li class=menu-list-item>
+<a href=/blog/ class=link>
+<span class=text>DeFi Blog</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a href=/#defi_projects class=link>
+<span class=text>Projects</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a class='link' href='/t/stablecoins'>
+<span class=text>Stablecoins</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a class='link' href='/t/payments'>
+<span class=text>Payments</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a class='link' href='/t/yield'>
+<span class=text>Yield</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a href=/events class=link>
+<span class=text>Events</span>
+</a>
+</li>
+<li class=menu-list-item>
+<a href=/about class=link>
+<span class=text>About</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<script>window.addEventListener("load",()=>{$("#hamburger_menu_open").on("click",()=>{$("#header").css("overflow","visible"),$(".header-content-menu").animate({left:"0"},200,()=>{$("#hamburger_menu_close").css("display","block"),$("#hamburger_menu_open").css("display","none")})}),$("#hamburger_menu_close").on("click",()=>{$(".header-content-menu").animate({left:"100%"},200,()=>{$("#hamburger_menu_close").css("display","none"),$("#hamburger_menu_open").css("display","block"),$("#header").css("overflow","hidden")})})})</script>
+<div class=feature style=background-image:url(/images/blog/term-finance-governance-exploit-ogp.png)>
+<div class="container typeset"></div>
+</div>
+<h1>Term Finance: $8.5M Approved by Silence</h1>
+<main class=main>
+<aside id=sidepanel>
+<h3>Contents</h3>
+<hr>
+<ul class=toc-sidepanel></ul>
+</aside>
+<script defer src=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js></script>
+<script>window.onload=()=>{tocbot.init({tocSelector:".toc-sidepanel",contentSelector:".article .container-toc",listItemClass:"toc-item",orderedList:!1,headingSelector:"h1, h2, h3, h4",hasInnerContainers:!0,headingsOffset:10});var t=document.querySelectorAll(".article .container-toc h1")[0]||document.querySelectorAll(".article .container-toc h2")[0]||document.querySelectorAll(".article .container-toc h3")[0],e=$("#sidepanel"),n=$("#coming_soon");$(window).on("scroll",()=>{var i,s=e.offset().top,o=n.offset().top,a=$(t).offset().top;s+120<o&&s>a?$("#sidepanel").stop(!0,!0).animate({opacity:1},200,function(){$(this).css("visibility","visible"),$(this).css("height",`${o-s-40}px`)}):$("#sidepanel").stop(!0,!0).animate({opacity:0},200,function(){$(this).css("visibility","hidden")}),i=$(".is-active-li"),e.animate({scrollTop:i.offset().top-e.offset().top+e.scrollTop()})})}</script>
+<article class="article article--post content typeset">
+<div class="container container-toc">
+<div class=author-block>
+<span class=name><a href=/authors/sawinyh/>Nick Sawinyh</a></span>
+<span class=date>on 23 Aug 2026</span>
+</div>
+<p>At 06:25:47 UTC on Sunday, August 23, 2026, a single <a href=/ethereum>Ethereum</a> transaction executed a governance proposal that had been sitting on-chain, in the open, for six days. The voting window had closed 12 seconds earlier, at 06:25:35, with no vetoes. The transaction pulled 2,841.74 WETH out of Term Finance’s ETH Meta Vault and sent it to a wallet funded with 1 ETH from Tornado Cash. A second transaction at 06:47:47 did the same thing to five USDC vaults for another 1,679,639 USDC.</p>
+<p>There was no leaked key, no lying oracle, no reentrancy and no flash loan. The attacker submitted a parameter change through Term’s own governance module, the module queued it, nobody objected, and the module executed it. The payload’s first instruction was to switch off the seven-day timelock that stood behind the vote.</p>
+<p>This piece reflects what the chain showed on the morning of August 23, roughly four hours after the first transaction. Everything below is read directly from mainnet transactions, event logs, and live contract calls, and the addresses are cited so you can check them. What is not settled is why an unprivileged address was able to queue a curator-grade parameter change at all. Only Term’s own post-mortem can close that, and at the time of writing it does not exist.</p>
+<h2 id=what-term-finance-is>What Term Finance Is</h2>
+<p>Term Finance is a fixed-rate lending protocol. Instead of the floating rates you get on <a href=/aave>Aave</a> or Compound, borrowers and lenders match at a fixed rate for a fixed maturity, which is closer to how credit works everywhere outside <a href=/decentralized-lending>DeFi lending</a>. Term V2 launched in early August 2026 with an intent-based order book, one-click looping, and refinancing of variable-rate debt from other protocols into fixed terms.</p>
+<p>Around that sits a vault layer, and that is what got hit. Term Strategy Vaults follow the curator model that now runs a large share of on-chain yield: depositors put in WETH or USDC, and an external risk curator decides where it goes. <a href=https://www.term.finance/post/vaults>Term’s own vaults announcement</a> names K3, August Digital, MEV, RE7, Shorewoods, and UltraYield as launch curators, and says that “any changes to portfolio constraints initiated by Risk Curators are subject to governance by vault LP token holders, ensuring that proposed changes align with depositor interests.”</p>
+<p>That sentence describes both what happened and what failed.</p>
+<p>On the ETH side the structure is two layers deep. An ETH Meta Vault (<code>tmvETH</code>, <a href=https://etherscan.io/address/0x26fcb50eec367ddab060ccf5e7394cecd95f7db2>0x26fCb50e…7Db2</a>) holds WETH and allocates it across four curated sub-vaults: Shorewoods ETH, August Digital ETH, Parity Prime ETH, and Parity Core ETH. Those in turn run positions on Morpho and Aave. A depositor holds one token; the risk sits three contracts away. If you have read our <a href=/defi-vaults-guide>guide to curated DeFi vaults</a>, this is the standard shape.</p>
+<h2 id=how-terms-vault-governance-actually-works>How Term’s Vault Governance Actually Works</h2>
+<p>Term’s vault governance is not an approval vote. It is a veto vote. When a curator proposes a parameter change, the governor opens a window and asks LP token holders to object. Every legitimate proposal on the ETH Meta Vault’s governor carries the same text, pinned to IPFS:</p>
+<blockquote>
+<p>“Vote YES to VETO the curator’s proposed vault parameter changes. Otherwise, the transaction will become executable when this proposal expires.”</p>
+</blockquote>
+<p>That is proposal 1 from March, proposal 2 from May, proposal 3 from June, proposal 4 from June. Real curator business: toggling a health check, assigning a <code>QUEUE_MANAGER</code> role. All of them boilerplate, all of them opt-out.</p>
+<p>Opt-out governance is a reasonable answer to a real problem. Curated vaults need to change parameters constantly, LP turnout is near zero, and a quorum requirement would freeze the vault solid. Morpho-style vaults typically pair a timelock with a guardian who can veto on depositors’ behalf. Term made inaction mean consent, gave depositors a window to object or exit, and put a seven-day timelock behind the vote in case the vote went wrong.</p>
+<p>Two guards, then, and the failure mode of the first is not subtle. If the set of addresses permitted to queue a proposal is wider than the set of addresses you trust with the vault’s money, the veto window is what stands between an arbitrary person and the treasury, and a veto window only works if someone is watching.</p>
+<p>Nobody was watching. The second guard turned out to be reachable from inside the first, which is the subject of the section after next.</p>
+<h2 id=the-setup>The Setup</h2>
+<p><img alt="Vertical timeline of the Term Finance governance exploit: 1 ETH withdrawn from Tornado Cash on August 17 at 05:01 UTC, 0.5 ETH deposited to the ETH Meta Vault at 05:21, proposal 5 created at 05:25, a second wallet funded on August 18, five USDC vault proposals created on August 21, and the drains on August 23 at 06:25:47 and 06:47:47. Proposal 5 stayed open for six days with zero vetoes cast. Source: Ethereum mainnet block timestamps and governor event logs." data-src=/images/blog/term-finance-governance-exploit-timeline.png class=lazyload></p>
+<p>The chain’s version of events starts on August 17.</p>
+<p>A wallet, <a href=https://etherscan.io/address/0xa908b3472d76e7744bab0a5911768a4a6300612b>0xa908b347…612b</a>, receives 1 ETH from the Tornado Cash 1-ETH pool (<a href=https://etherscan.io/address/0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c2936>0x47CE0C6e…2936</a>) in block 25,772,572. Its first outbound transaction lands 90 blocks later, at 05:19:11 UTC.</p>
+<p>At block 25,772,675 the wallet deposits 0.5 ETH into the ETH Meta Vault and receives 0.4852 tmvETH. The vault’s total supply at that moment is 2,838.48 tmvETH, so the new depositor holds 0.017% of it.</p>
+<p>At 05:25:35 UTC, in block 25,772,694, a contract the attacker deployed (<a href=https://etherscan.io/address/0x64e477800051efb06ae4086f4b258b270668b4df>0x64e47780…b4df</a>) creates proposal 5 on the meta vault’s governor. The description is the same boilerplate as every real curator proposal:</p>
+<blockquote>
+<p><code>{"title":"Veto strategy vault parameter change","summary":"Vote YES to VETO the curator's proposed vault parameter changes. Otherwise, the transaction will become executable when this proposal expires.",...}</code></p>
+</blockquote>
+<p>Every earlier proposal on this governor, going back to March, had been created by <a href=https://etherscan.io/address/0xdb97c377f23a9dc54c3d6f9df7bc0ca4cf7d5a81>0xdb97c377…5a81</a>. Proposal 5 came from a contract that had existed for six minutes, holding a stake bought for 0.5 ETH.</p>
+<p>The proposal carried 17 actions. The address of the attacker’s payout contract, deployed earlier that same morning, appears six times in the payload. It sat there, publicly readable, for six days.</p>
+<p>Only one vote was ever cast on it, the attacker’s own 0.4852 tmvETH, in block 25,772,700. No veto followed.</p>
+<h2 id=the-execution>The Execution</h2>
+<p><img alt="Diagram of the Term Finance attack path: a 0.5 ETH stake buys 0.4852 tmvETH, proposal 5 sits open for six days with zero vetoes, and its first action calls setTxCooldown(0) to delete the Safe's 608,400-second timelock. The vault then recalls four sub-vaults from Aave and Morpho, adds a strategy named Fixed Recipient WETH Exit Strategy with maxDebt set to uint256 max, and forwards 2,841.74 WETH to the attacker in the same transaction. Source: Ethereum mainnet." data-src=/images/blog/term-finance-governance-exploit-attack-path.png class=lazyload></p>
+<p>The voting window closed at 06:25:35 UTC on August 23. At 06:25:47, in block 25,816,049, the attacker called <code>executeProposal()</code> (<a href=https://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129>tx 0xd354a15b…4129</a>).</p>
+<p>Between the vote and the vault sat one more guard. The meta vault is controlled by a Gnosis Safe, and reaching that Safe means going through a Zodiac-style delay modifier at <a href=https://etherscan.io/address/0x35c99cf4a5df2d9bcd822bee32676d9590229e33>0x35c99cf4…9e33</a>. A delay modifier holds every queued transaction for a cooldown period before anyone can run it, which is the window a guardian uses to cancel. Term had that cooldown set to 608,400 seconds, a little over seven days.</p>
+<p>The first three of the proposal’s 17 actions dealt with it. Each one routes through the modifier’s owner and calls the modifier itself:</p>
+<ol>
+<li><code>setTxCooldown(0)</code>, deleting the seven-day wait.</li>
+<li><code>setTxExpiration(0)</code>.</li>
+<li><code>enableModule(0x0ae12af3…c0a6)</code>, wiring in the governance executor that would push the rest through.</li>
+</ol>
+<p>Read <code>txCooldown()</code> at block 25,816,048, one block before the exploit, and it still returns 608,400. Read it at 25,816,049 and it returns 0. The timelock was alive until the transaction that spent it.</p>
+<p>With the wait gone, the remaining 14 actions run as seven queue-and-execute pairs inside the same block:</p>
+<ol>
+<li>Set the debt allocated to Shorewoods ETH to zero, forcing 44.37 WETH back out of Aave and into the meta vault.</li>
+<li>Same for August Digital ETH: 43.88 WETH.</li>
+<li>Same for Parity Prime ETH: 1,445.51 WETH, unwound through Morpho.</li>
+<li>Same for Parity Core ETH: 1,307.98 WETH.</li>
+<li>Add a new strategy to the vault: <a href=https://etherscan.io/address/0x184f2e57b4ce135181fa2a2166ac394339016338>0x184f2e57…6338</a>, which reports its own name as “Fixed Recipient WETH Exit Strategy”.</li>
+<li>Set that strategy’s max debt to <code>type(uint256).max</code>.</li>
+<li>Deposit the vault’s entire WETH balance into it.</li>
+</ol>
+<p>The strategy did the one thing its name promises. It took 2,841.7435 WETH and forwarded it to the attacker’s wallet in the same transaction.</p>
+<p>Term did not forget the timelock. The timelock was reachable from the proposal it was supposed to contain, and <code>setTxCooldown(0)</code> sat in that proposal’s payload, legible to anyone, for six days.</p>
+<p>Four curated sub-vaults, two money markets, one Safe, and a governance module, all doing what they were told.</p>
+<h2 id=the-second-round>The Second Round</h2>
+<p>At 06:47:47 UTC, in block 25,816,159, a second wallet (<a href=https://etherscan.io/address/0x686457a7468b9b31c5dba43b1b16077b48520691>0x686457a7…0691</a>) ran the USDC side (<a href=https://etherscan.io/tx/0x9f273f9a5a20c2fc957b06bbfa45db486390eede4a7f44fbe1a2eb6744c2e8a0>tx 0x9f273f9a…e8a0</a>).</p>
+<p>This one was blunter. Five separate USDC vaults, five separate governors, five proposals executed in a single transaction. The proposals had been created on August 21 with a 49-hour window, and their descriptions were not even filled in. The title field reads, in full:</p>
+<blockquote>
+<p><code>{"title":"...","summary":"","description":"","resources":[]}</code></p>
+</blockquote>
+<p>The governor recorded a vote weight of 0.5036 shares on each of the five proposals. Against Parity High Yield USDC v2, the largest vault it drained, that is 0.0000156% of the 3.23 million shares outstanding. The vaults price their shares near par, so the stake behind a $1.68 million withdrawal was worth roughly what a share is: a dollar, give or take.</p>
+<table>
+<thead>
+<tr>
+<th>Vault drained</th>
+<th>USDC taken</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parity High Yield USDC v2</td>
+<td>848,410.95</td>
+</tr>
+<tr>
+<td>RockawayX Tori USDC</td>
+<td>454,046.26</td>
+</tr>
+<tr>
+<td>Parity High Yield USDC</td>
+<td>348,877.20</td>
+</tr>
+<tr>
+<td>Parity Core USDC</td>
+<td>14,172.39</td>
+</tr>
+<tr>
+<td>Parity Prime USDC</td>
+<td>14,132.49</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>1,679,639.29</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id=the-cashout>The Cashout</h2>
+<p>Both wallets consolidated into <a href=https://etherscan.io/address/0xd5183d8bfc65a50863c62af2538198a8288ffc13>0xd5183d8b…fc13</a>. The USDC was swapped to DAI on the way.</p>
+<p>As of block 25,817,322, that address held 2,843.20 ETH and 1,679,642 DAI, untouched. Both origin wallets were empty apart from gas dust.</p>
+<p>At the ETH price DefiLlama records for 06:25 UTC ($2,387.30), the haul comes to about $8.46 million. <a href=https://x.com/peckshieldalert/status/2091452165932175659>PeckShield put it at $8.5 million</a> and independently flagged the Tornado Cash funding, which the withdrawal logs confirm: 1 ETH to each wallet, from the 1-ETH pool, at 05:01 UTC on August 17 and 03:59 UTC on August 18.</p>
+<h2 id=the-numbers>The Numbers</h2>
+<p>Settled, and readable from the chain:</p>
+<table>
+<thead>
+<tr>
+<th>Figure</th>
+<th>Value</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WETH drained</td>
+<td>2,841.7435</td>
+<td>Transfer logs, tx <code>0xd354a15b…</code></td>
+</tr>
+<tr>
+<td>USDC drained</td>
+<td>1,679,639.29</td>
+<td>Transfer logs, tx <code>0x9f273f9a…</code></td>
+</tr>
+<tr>
+<td>Attacker’s ETH-side stake</td>
+<td>0.4852 tmvETH, 0.017% of supply</td>
+<td>Mint log plus <code>totalSupply</code> at block 25,772,675</td>
+</tr>
+<tr>
+<td>Timelock before the exploit</td>
+<td>608,400 seconds</td>
+<td><code>txCooldown()</code> at block 25,816,048</td>
+</tr>
+<tr>
+<td>Timelock after it</td>
+<td>0</td>
+<td><code>txCooldown()</code> at block 25,816,049</td>
+</tr>
+<tr>
+<td>Vetoes cast</td>
+<td>0</td>
+<td>Governor logs</td>
+</tr>
+</tbody>
+</table>
+<p>Provisional, and worth treating as such:</p>
+<table>
+<thead>
+<tr>
+<th>Figure</th>
+<th>Value</th>
+<th>Why it is not settled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USD value of the haul</td>
+<td>~$8.46M</td>
+<td>Depends on the ETH mark; at DefiLlama’s $2,387.30 for 06:25 UTC. PeckShield says $8.5M</td>
+</tr>
+<tr>
+<td>Attacker’s USDC-side vote weight</td>
+<td>0.5036 shares</td>
+<td>The <code>VoteCast</code> log records the number, but the same weight appears on all five governors and the proposer held no shares in those vaults at the snapshot block</td>
+</tr>
+<tr>
+<td>Total loss</td>
+<td>Unknown</td>
+<td>Term has published no accounting; the vaults hold assets that have not been written down</td>
+</tr>
+</tbody>
+</table>
+<h2 id=the-vault-still-says-the-money-is-there>The Vault Still Says the Money Is There</h2>
+<p>Current depositors can check this one themselves, right now.</p>
+<p>Call <code>totalAssets()</code> on the ETH Meta Vault and it returns 2,926.22 WETH. Call <code>convertToAssets(1e18)</code> and each tmvETH share is still priced at 1.0308 WETH. Then check the vault’s actual WETH balance: zero. Check the balance of the “Fixed Recipient WETH Exit Strategy” it deposited into: also zero.</p>
+<p>The reason is the accounting. Call <code>strategies(0x184f2e57…)</code> on the vault and it reports a <code>currentDebt</code> of 2,841.7435 WETH against a <code>maxDebt</code> of <code>type(uint256).max</code>. As far as the vault’s books are concerned, the money is not gone. It is out on loan to a strategy. That strategy is a contract whose only function was to forward the balance to the attacker.</p>
+<p>Until someone writes that position down, the share price is fiction, and anything reading it, dashboards, integrators, other vaults holding tmvETH, is reading a number backed by nothing.</p>
+<h2 id=the-blast-radius>The Blast Radius</h2>
+<p>The five USDC vaults still hold about $4.36 million between them, most of it in Parity High Yield USDC v2 ($3.26M). This drain took a slice, not the whole thing.</p>
+<p>The contagion is already visible one hop out. The RockawayX Tori USDC vault gave up 454,046 USDC, which means Tori Finance depositors were exposed to a Term governance failure through a curator allocation they never evaluated. The researcher <a href=https://x.com/0xGwoni/status/2091456342326493222>@0xGwoni flagged it within two hours</a>, put the Tori exposure at roughly $480,000, and reported that the team had told them it would cover the loss in full so vault depositors take nothing. Tori had not posted publicly at the time of writing.</p>
+<p>That is the curator model’s shape in one incident. RockawayX curated a vault on Morpho, allocated part of it to Term, and Term’s governance let a stranger vote itself the money. The depositor picked one name and inherited three.</p>
+<p>Term Labs <a href=https://x.com/term_labs/status/2091428394130886740>acknowledged the incident at 07:32 UTC</a>: “We are aware of a governance exploit impacting Term vaults. We will share more details once it has been further investigated.”</p>
+<p>Its own response is now queued behind the same machinery. Under two minutes after the drain, at 06:27:35 UTC, the curator address created proposal 6 on the same governor. At 07:52:59 it created proposal 7, whose description reads “The curator has proposed changing shutdown vault to .” Shutting the vault down is itself a parameter change, so it goes through the same veto window the attacker waited out.</p>
+<p>DefiLlama, meanwhile, still showed TermFinance Vaults at $12.26M on August 23, down about $450,000 from the day before. An $8.5 million drain does not move a number by $450,000. The likely reason is the section above: the meta vault reports 2,926 WETH it does not have, worth close to $7 million, and an adapter that reads <code>totalAssets</code> inherits the same fiction. A TVL chart is not an incident report, and after an incident it can be a copy of the broken accounting.</p>
+<h2 id=the-uncomfortable-questions>The Uncomfortable Questions</h2>
+<p><strong>How did an unprivileged address queue a curator proposal?</strong> Proposals 1 through 4 came from Term’s curator address. Proposal 5 came from a contract deployed minutes earlier by a Tornado-funded wallet, and it executed. Either the governor let anyone with a nonzero share balance submit executable parameter changes, or the attacker acquired a role through a path that is not visible in the governor’s own logs. Everything else in this incident is downstream of that answer, and Term is the only party who can give it.</p>
+<p><strong>Why could a proposal switch off the timelock built to contain it?</strong> Term’s seven-day cooldown was the second line of defence, the one that assumes the vote might go wrong. It was reachable by the same mechanism it guarded, so a single proposal could delete the wait and then use the modifier it had just disarmed, all inside one block. A delay that a passing proposal can set to zero is not a delay, and this is the cheapest thing on the list to fix: keep cooldown changes behind their own cooldown, or out of governance reach entirely.</p>
+<p><strong>Who was supposed to be watching the veto queue?</strong> This is the one that generalizes. The proposal was public for six days with the payout contract’s address written into it six times. The USDC proposals were public for two days with a title of <code>...</code> and no description. Any depositor, any curator, any monitoring bot, any of the six named risk curators could have read them. Nobody did, and the design treats that silence as a yes. Strip the watchers out of an opt-out system and what remains is a delayed-execution queue with a voting UI attached.</p>
+<p><strong>Why was there no economic floor on proposing?</strong> Half an ETH bought a stake worth 0.017% of the meta vault, and that was enough to put a proposal on the ballot against 2,841 ETH. Even without a quorum, a proposal threshold scaled to the vault, plus a bond the proposer forfeits if a veto passes, changes the economics of trying this. Nothing here required a majority. It required a share balance greater than zero and patience.</p>
+<p>That last point is worth stating plainly, because the first alert to circulate, from <a href=https://x.com/DefimonAlerts/status/2091422624249217259>Defimon</a>, described the attacker as having “cheaply acquired a majority of a sparsely-held DAO governance token.” The logs do not show a majority. On the ETH side the attacker held 0.017% of the vault’s shares; on the USDC side, a rounding error. A majority was never needed, and reading the incident as a token-supply problem points at the wrong fix.</p>
+<h2 id=silence-is-not-consent>Silence Is Not Consent</h2>
+<p>Curated vaults have become the default way to earn yield on-chain because they solve a genuine problem: most depositors cannot evaluate a lending market, so they rent someone’s judgment instead. The governance layer on top is what is supposed to keep that rental honest, and this is the third incident we have covered this year where the authorization layer, rather than the math underneath it, turned out to be the attack surface. <a href=/resolv-usr-exploit>Resolv’s USR</a> fell to a single over-powered role in March. <a href=/ostium-exploit>Ostium</a> fell to price-submission authorization in July. Term fell to a proposal queue nobody read.</p>
+<p>Every low-turnout DAO carries a version of this. We have written before about <a href=/how-decentralized-is-decentralized-governance>how decentralized DeFi governance actually is</a> and about <a href=/aave-mess-decentralized-governance>Aave’s own governance mess</a>, and the recurring finding is that participation is thin enough that formal process is mostly theater. Opt-out governance takes that thin participation and makes it load-bearing. It converts apathy directly into authorization, and points the result at the treasury.</p>
+<p>If you have funds in a Term vault right now, the useful things to check are your own, not a dashboard’s: whether your vault’s governor has a live proposal, who created it, and what its payload actually calls. The share price the vault reports is not currently a guide to what backs it.</p>
+<p>More generally, if you hold shares in a curated vault anywhere, the question is not whether the curator is good. It is whether anyone is reading the queue, what happens on-chain when no one objects, and how long you would have to notice. On Term the answers were six days, unopposed execution, and a payload that announced itself the whole time.</p>
+<p>Term’s post-mortem still has to explain how a stranger got proposing rights, and that is the part that looks like a genuine defect. Everything after it was the system working: a veto nobody cast, a timelock the vote was allowed to delete, and $8.5 million leaving through the front door on schedule.</p>
+</div>
+</article>
+<div class=post-tags>
+<a class='post-tag-pill' href='/t/analysis' rel='tag'>Analysis</a>
+<a class='post-tag-pill' href='/t/yield' rel='tag'>Yield</a>
+</div>
+</main>
+<section id=coming_soon>
+<h3>DeFi is coming. Don't get left behind</h3>
+<div class=group-button>
+<a href=https://defiprime.substack.com/ target=_blank>
+<button>
+<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M.5 1.91405V13.4992h21V1.91407L11 9.46093.5 1.91405z" fill="#fff"/><path d="M21.4871.199219H.512906L11 7.73683 21.4871.199219z" fill="#fff"/></svg> Monthly newsletter
+</button>
+</a>
+<a href=https://twitter.com/defiprime target=_blank>
+<button>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 10.0778c-1.1037.522-2.29.8749-3.535 1.0336C33.7356 10.299 34.7117 9.01273 35.1712 7.47992c-1.1894.75229-2.5065 1.29846-3.9085 1.59278C30.14 7.79705 28.5403 7 26.7701 7c-3.399.0-6.1548 2.93878-6.1548 6.5636C20.6153 14.078 20.6697 14.5789 20.7746 15.0595c-5.1152-.2738-9.6504-2.8869-12.68606-6.85819-.52991.9695-.8334 2.09699-.8334 3.29999.0 2.2772 1.08665 4.2862 2.73818 5.4633C8.98429 16.9304 8.03536 16.6351 7.20546 16.1436 7.2049 16.171 7.2049 16.1984 7.2049 16.2262c0 3.1801 2.12169 5.8327 4.9373 6.4361C11.6257 22.8122 11.082 22.8924 10.5206 22.8924 10.124 22.8924 9.73849 22.8513 9.36258 22.7748c.78332 2.6075 3.05622 4.5052 5.74962 4.558-2.1065 1.7605-4.7603 2.81-7.6441 2.81C6.97134 30.1428 6.48148 30.1115 6 30.051 8.72381 31.9133 11.959 33 15.4348 33c11.3211.0 17.5119-10.0016 17.5119-18.6753C32.9467 14.0401 32.9407 13.757 32.9288 13.4755c1.2026-.9254 2.2461-2.0815 3.0712-3.3977z" fill="#FFF"/></svg>
+Daily news on twitter
+</button>
+</a>
+<a href=https://t.me/defiprime target=_blank>
+<button>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M6.47706 19.9863l6.21954 2.4691 2.4122 8.2303C15.2618 31.212 15.8739 31.4034 16.2699 31.0589l3.4653-3.005C20.0952 27.7381 20.6173 27.719 20.9953 28.0156l6.2555 4.8329C27.6829 33.1835 28.2949 32.9347 28.4029 32.3796L32.9843 8.94242C33.1013 8.3395 32.5433 7.83228 32.0032 8.0524L6.46806 18.5317C5.83801 18.79 5.84701 19.7375 6.47706 19.9863zm8.24474 1.158 12.16-7.9623C27.0978 13.0384 27.3228 13.3542 27.1338 13.5361L17.098 23.4603C16.7469 23.8048 16.5219 24.2737 16.4499 24.7809L16.1079 27.4701C16.0629 27.8338 15.5858 27.8625 15.4958 27.518l-1.3141-4.9095C14.0377 22.0535 14.2537 21.4505 14.7218 21.1443z" fill="#FFF"/></svg>
+Telegram channel
+</button>
+</a>
+</div>
+</section>
+<div class=author>
+<div class=author-wrap>
+<div class=author-info>
+<div class=author-img>
+<a href=/authors/sawinyh/><img class=lazyload data-src=/images/sawinyh.jpg alt="Nick Sawinyh"></a>
+<div class="author-social hidden-small">
+<a href=https://sawinyh.com class=social-link rel=me title=Website>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1391 2.00181 15.1397 2.00178 15.1403 2.00176 15.1446 2.00161 15.1523 2.00138C15.164 2.00104 15.1831 2.0006 15.2092 2.00031 15.2614 1.99972 15.3416 1.99975 15.4469 2.00249 15.6578 2.00798 15.9688 2.02433 16.3573 2.06828 17.1353 2.15627 18.2186 2.3543 19.4291 2.79387c2.2087.80214 4.846 2.40904 6.8378 5.64735H15.7733C15.5398 8.41648 15.3026 8.4038 15.0626 8.4038 14.8194 8.4038 14.5792 8.41681 14.3428 8.44218 14.3262 8.44271 14.3079 8.44345 14.288 8.44448 14.1981 8.44911 14.0742 8.45955 13.9217 8.48231 13.6169 8.52784 13.1975 8.62281 12.7102 8.81967 12.6005 8.864 12.4876 8.91337 12.3721 8.96834 10.3021 9.88094 8.77943 11.8143 8.43679 14.1333 7.91764 13.2316 7.33731 12.2212 6.78198 11.2533c-.62563-1.0904-1.21874-2.12558-1.65546-2.88812L4.60425 7.453 4.60027 7.44605C4.69182 7.3093 4.81781 7.13085 4.98001 6.92225c.39891-.51306 1.01469-1.20589 1.8731-1.90958C8.56489 3.6094 11.2491 2.1554 15.1361 2.00193L15.1379 2.00186 15.1386 2.00183 15.1391 2.00181zM6.79417 13.946l1.66454 2.9028C9.26223 19.6888 11.8594 21.7674 14.9384 21.7709 15.8836 21.7709 16.7835 21.5748 17.6 21.2207 17.0724 22.1417 16.4778 23.1772 15.9083 24.168c-.6312 1.0983-1.2309 2.1402-1.6727 2.9076L13.707 27.9934 13.7032 28C13.5384 27.9886 13.3202 27.968 13.0577 27.9308 12.4117 27.8394 11.5007 27.6484 10.4583 27.2503c-2.07887-.7941-4.6905-2.4148-6.77792-5.7441L3.67946 21.5048 3.67914 21.5043 3.67904 21.5041 3.67854 21.5033 3.6782 21.5028 3.67184 21.4925C3.66566 21.4823 3.65568 21.4658 3.6423 21.4431 3.61553 21.3976 3.57522 21.3272 3.5246 21.2334 3.42332 21.0457 3.28109 20.7647 3.12382 20.4018 2.80893 19.6751 2.43594 18.6251 2.20878 17.342c-.41452-2.3414-.34591-5.4639 1.46356-8.842.76165 1.32942 1.98319 3.4601 3.12183 5.446zM20.0254 19.4485l-1.8773 3.1947C17.0002 24.5967 15.7685 26.6926 15 28 18.8386 27.8899 21.5793 26.413 23.3998 24.9059 24.3975 24.08 25.1198 23.2437 25.591 22.6163 25.8264 22.3029 25.9984 22.0427 26.1101 21.8635 26.1659 21.774 26.2066 21.7048 26.2325 21.6595 26.2455 21.6368 26.2548 21.6201 26.2604 21.6099L26.2662 21.5993 26.2665 21.5988 26.2669 21.598 26.267 21.5978 26.2672 21.5973 26.268 21.5959c1.8337-3.4287 1.9232-6.4654 1.5646-8.6382C27.6528 11.8681 27.3596 10.9931 27.1137 10.3945 27.0137 10.1513 26.9218 9.95427 26.8488 9.8075L26.8412 9.80749 25.7793 9.80563C24.8916 9.80417 23.6863 9.80242 22.4162 9.80126 21.2622 9.8002 20.056 9.79963 18.986 9.80018 19.0643 9.8592 19.14 9.9193 19.2131 9.98042 19.8899 10.5459 20.3257 11.1774 20.7048 11.7268L20.7688 11.8195 20.7909 11.8663C21.6175 13.6188 21.6922 15.0781 21.541 16.1206 21.4748 16.5775 21.3659 16.9495 21.2623 17.2268 20.9957 18.0478 20.5718 18.7998 20.0254 19.4485zm-5.2422-9.2151c-2.7541.0-4.98329 2.2329-4.98329 4.9833S12.0328 20.2 14.7832 20.2c2.7542.0 4.9834-2.2329 4.9834-4.9833.0-2.7541-2.2329-4.9833-4.9834-4.9833z" fill="#8B8BB8" class="icon-token-purple"/></svg>
+</a>
+<a href=https://twitter.com/sawinyh class=social-link>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 10.0778c-1.1037.522-2.29.8749-3.535 1.0336C33.7356 10.299 34.7117 9.01273 35.1712 7.47992c-1.1894.75229-2.5065 1.29846-3.9085 1.59278C30.14 7.79705 28.5403 7 26.7701 7c-3.399.0-6.1548 2.93878-6.1548 6.5636C20.6153 14.078 20.6697 14.5789 20.7746 15.0595c-5.1152-.2738-9.6504-2.8869-12.68606-6.85819-.52991.9695-.8334 2.09699-.8334 3.29999.0 2.2772 1.08665 4.2862 2.73818 5.4633C8.98429 16.9304 8.03536 16.6351 7.20546 16.1436 7.2049 16.171 7.2049 16.1984 7.2049 16.2262c0 3.1801 2.12169 5.8327 4.9373 6.4361C11.6257 22.8122 11.082 22.8924 10.5206 22.8924 10.124 22.8924 9.73849 22.8513 9.36258 22.7748c.78332 2.6075 3.05622 4.5052 5.74962 4.558-2.1065 1.7605-4.7603 2.81-7.6441 2.81C6.97134 30.1428 6.48148 30.1115 6 30.051 8.72381 31.9133 11.959 33 15.4348 33c11.3211.0 17.5119-10.0016 17.5119-18.6753C32.9467 14.0401 32.9407 13.757 32.9288 13.4755c1.2026-.9254 2.2461-2.0815 3.0712-3.3977z" fill="#FFF"/></svg>
+</a>
+<a href=https://www.linkedin.com/in/sawinyh/ class=social-link>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12.541 33H7.42623V14.1978H12.541V33zM9.98361 12.0304C8.33666 12.0304 7 10.68 7 9.01519 7 7.35034 8.33666 6 9.98361 6 11.6306 6 12.9672 7.35034 12.9672 9.01519c0 1.66481-1.3349 3.01521-2.98359 3.01521zM33 33H27.8852V23.4211c0-5.7569-6.8196-5.321-6.8196.0V33H15.9508V14.1978h5.1148v3.0169C23.4456 12.7944 33 12.468 33 21.4469V33z" fill="#FFF"/></svg>
+</a>
+</div>
+</div>
+<div class=author-descr>
+<span class=author-about> About the author </span>
+<div class=author-title>
+<div class=author-name><a href=/authors/sawinyh/>Nick Sawinyh</a></div>
+</div>
+<div class="author-social shown-small">
+<a href=https://sawinyh.com class=social-link rel=me title=Website>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1391 2.00181 15.1397 2.00178 15.1403 2.00176 15.1446 2.00161 15.1523 2.00138C15.164 2.00104 15.1831 2.0006 15.2092 2.00031 15.2614 1.99972 15.3416 1.99975 15.4469 2.00249 15.6578 2.00798 15.9688 2.02433 16.3573 2.06828 17.1353 2.15627 18.2186 2.3543 19.4291 2.79387c2.2087.80214 4.846 2.40904 6.8378 5.64735H15.7733C15.5398 8.41648 15.3026 8.4038 15.0626 8.4038 14.8194 8.4038 14.5792 8.41681 14.3428 8.44218 14.3262 8.44271 14.3079 8.44345 14.288 8.44448 14.1981 8.44911 14.0742 8.45955 13.9217 8.48231 13.6169 8.52784 13.1975 8.62281 12.7102 8.81967 12.6005 8.864 12.4876 8.91337 12.3721 8.96834 10.3021 9.88094 8.77943 11.8143 8.43679 14.1333 7.91764 13.2316 7.33731 12.2212 6.78198 11.2533c-.62563-1.0904-1.21874-2.12558-1.65546-2.88812L4.60425 7.453 4.60027 7.44605C4.69182 7.3093 4.81781 7.13085 4.98001 6.92225c.39891-.51306 1.01469-1.20589 1.8731-1.90958C8.56489 3.6094 11.2491 2.1554 15.1361 2.00193L15.1379 2.00186 15.1386 2.00183 15.1391 2.00181zM6.79417 13.946l1.66454 2.9028C9.26223 19.6888 11.8594 21.7674 14.9384 21.7709 15.8836 21.7709 16.7835 21.5748 17.6 21.2207 17.0724 22.1417 16.4778 23.1772 15.9083 24.168c-.6312 1.0983-1.2309 2.1402-1.6727 2.9076L13.707 27.9934 13.7032 28C13.5384 27.9886 13.3202 27.968 13.0577 27.9308 12.4117 27.8394 11.5007 27.6484 10.4583 27.2503c-2.07887-.7941-4.6905-2.4148-6.77792-5.7441L3.67946 21.5048 3.67914 21.5043 3.67904 21.5041 3.67854 21.5033 3.6782 21.5028 3.67184 21.4925C3.66566 21.4823 3.65568 21.4658 3.6423 21.4431 3.61553 21.3976 3.57522 21.3272 3.5246 21.2334 3.42332 21.0457 3.28109 20.7647 3.12382 20.4018 2.80893 19.6751 2.43594 18.6251 2.20878 17.342c-.41452-2.3414-.34591-5.4639 1.46356-8.842.76165 1.32942 1.98319 3.4601 3.12183 5.446zM20.0254 19.4485l-1.8773 3.1947C17.0002 24.5967 15.7685 26.6926 15 28 18.8386 27.8899 21.5793 26.413 23.3998 24.9059 24.3975 24.08 25.1198 23.2437 25.591 22.6163 25.8264 22.3029 25.9984 22.0427 26.1101 21.8635 26.1659 21.774 26.2066 21.7048 26.2325 21.6595 26.2455 21.6368 26.2548 21.6201 26.2604 21.6099L26.2662 21.5993 26.2665 21.5988 26.2669 21.598 26.267 21.5978 26.2672 21.5973 26.268 21.5959c1.8337-3.4287 1.9232-6.4654 1.5646-8.6382C27.6528 11.8681 27.3596 10.9931 27.1137 10.3945 27.0137 10.1513 26.9218 9.95427 26.8488 9.8075L26.8412 9.80749 25.7793 9.80563C24.8916 9.80417 23.6863 9.80242 22.4162 9.80126 21.2622 9.8002 20.056 9.79963 18.986 9.80018 19.0643 9.8592 19.14 9.9193 19.2131 9.98042 19.8899 10.5459 20.3257 11.1774 20.7048 11.7268L20.7688 11.8195 20.7909 11.8663C21.6175 13.6188 21.6922 15.0781 21.541 16.1206 21.4748 16.5775 21.3659 16.9495 21.2623 17.2268 20.9957 18.0478 20.5718 18.7998 20.0254 19.4485zm-5.2422-9.2151c-2.7541.0-4.98329 2.2329-4.98329 4.9833S12.0328 20.2 14.7832 20.2c2.7542.0 4.9834-2.2329 4.9834-4.9833.0-2.7541-2.2329-4.9833-4.9834-4.9833z" fill="#8B8BB8" class="icon-token-purple"/></svg>
+</a>
+<a href=https://twitter.com/sawinyh class=social-link>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 10.0778c-1.1037.522-2.29.8749-3.535 1.0336C33.7356 10.299 34.7117 9.01273 35.1712 7.47992c-1.1894.75229-2.5065 1.29846-3.9085 1.59278C30.14 7.79705 28.5403 7 26.7701 7c-3.399.0-6.1548 2.93878-6.1548 6.5636C20.6153 14.078 20.6697 14.5789 20.7746 15.0595c-5.1152-.2738-9.6504-2.8869-12.68606-6.85819-.52991.9695-.8334 2.09699-.8334 3.29999.0 2.2772 1.08665 4.2862 2.73818 5.4633C8.98429 16.9304 8.03536 16.6351 7.20546 16.1436 7.2049 16.171 7.2049 16.1984 7.2049 16.2262c0 3.1801 2.12169 5.8327 4.9373 6.4361C11.6257 22.8122 11.082 22.8924 10.5206 22.8924 10.124 22.8924 9.73849 22.8513 9.36258 22.7748c.78332 2.6075 3.05622 4.5052 5.74962 4.558-2.1065 1.7605-4.7603 2.81-7.6441 2.81C6.97134 30.1428 6.48148 30.1115 6 30.051 8.72381 31.9133 11.959 33 15.4348 33c11.3211.0 17.5119-10.0016 17.5119-18.6753C32.9467 14.0401 32.9407 13.757 32.9288 13.4755c1.2026-.9254 2.2461-2.0815 3.0712-3.3977z" fill="#FFF"/></svg>
+</a>
+<a href=https://www.linkedin.com/in/sawinyh/ class=social-link>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12.541 33H7.42623V14.1978H12.541V33zM9.98361 12.0304C8.33666 12.0304 7 10.68 7 9.01519 7 7.35034 8.33666 6 9.98361 6 11.6306 6 12.9672 7.35034 12.9672 9.01519c0 1.66481-1.3349 3.01521-2.98359 3.01521zM33 33H27.8852V23.4211c0-5.7569-6.8196-5.321-6.8196.0V33H15.9508V14.1978h5.1148v3.0169C23.4456 12.7944 33 12.468 33 21.4469V33z" fill="#FFF"/></svg>
+</a>
+</div>
+<div class=author-skills> Nick Sawinyh founded DeFiprime in 2019 and has edited it ever since. His current editorial focus is stablecoin infrastructure, real-world assets on-chain, DeFi yield and risk, and crypto regulation. Based on the East Coast, US. He holds small positions across a range of crypto assets; nothing he publishes is investment advice. </div>
+</div>
+</div>
+</div>
+</div>
+<div class=latest-section>
+<h3 class=section-heading>More from the <span>blog</span></h3>
+<section class=latest-grid>
+<article class=blog-card>
+<a href=https://defiprime.com/sfc-chinaamc-tokenised-funds-secondary-trading>
+<div class="blog-card-inner border-orange">
+<span class="tag-pill tag-orange">News</span>
+<h3>ChinaAMC tokenised funds begin around-the-clock secondary trading</h3>
+<p>ChinaAMC’s HKD and USD digital money-market funds began around-the-clock secondary trading under Hong Kong’s SFC framework.</p>
+</div>
+</a>
+</article>
+<article class=blog-card>
+<a href=https://defiprime.com/aviva-sterling-tokenised-share-class-xrpl>
+<div class="blog-card-inner border-cyan">
+<span class="tag-pill tag-cyan">News</span>
+<h3>Aviva launches sterling tokenised share class with £50m</h3>
+<p>Aviva Investors added a sterling tokenised share class on XRPL with £50m from Aviva and an unchanged underlying money market...</p>
+</div>
+</a>
+</article>
+<article class=blog-card>
+<a href=https://defiprime.com/electrum-fee-bump-server-attack>
+<div class="blog-card-inner border-violet">
+<span class="tag-pill tag-violet">News</span>
+<h3>Electrum patches server attack that turns fee bumps into theft</h3>
+<p>Electrum released a fix after a user reported losing money by raising the fee on a transaction a malicious server...</p>
+</div>
+</a>
+</article>
+<article class=blog-card>
+<a href=https://defiprime.com/ether-fi-zeal-wallet-migration>
+<div class="blog-card-inner border-orange">
+<span class="tag-pill tag-orange">News</span>
+<h3>Ether.fi opens Zeal migration as wallet and card services wind down</h3>
+<p>Ether.fi has acquired selected Zeal assets and opened an optional migration as Zeal winds down its wallet and card services.</p>
+</div>
+</a>
+</article>
+</section>
+</div>
+<footer id=footer>
+<div class=inner>
+<div class=footer-row>
+<div class=footer-col>
+<div class="social-links shown-small">
+<a href=https://twitter.com/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 10.0778c-1.1037.522-2.29.8749-3.535 1.0336C33.7356 10.299 34.7117 9.01273 35.1712 7.47992c-1.1894.75229-2.5065 1.29846-3.9085 1.59278C30.14 7.79705 28.5403 7 26.7701 7c-3.399.0-6.1548 2.93878-6.1548 6.5636C20.6153 14.078 20.6697 14.5789 20.7746 15.0595c-5.1152-.2738-9.6504-2.8869-12.68606-6.85819-.52991.9695-.8334 2.09699-.8334 3.29999.0 2.2772 1.08665 4.2862 2.73818 5.4633C8.98429 16.9304 8.03536 16.6351 7.20546 16.1436 7.2049 16.171 7.2049 16.1984 7.2049 16.2262c0 3.1801 2.12169 5.8327 4.9373 6.4361C11.6257 22.8122 11.082 22.8924 10.5206 22.8924 10.124 22.8924 9.73849 22.8513 9.36258 22.7748c.78332 2.6075 3.05622 4.5052 5.74962 4.558-2.1065 1.7605-4.7603 2.81-7.6441 2.81C6.97134 30.1428 6.48148 30.1115 6 30.051 8.72381 31.9133 11.959 33 15.4348 33c11.3211.0 17.5119-10.0016 17.5119-18.6753C32.9467 14.0401 32.9407 13.757 32.9288 13.4755c1.2026-.9254 2.2461-2.0815 3.0712-3.3977z" fill="#FFF"/></svg>
+<span class=label>Twitter</span>
+</a>
+<a href=https://t.me/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M6.47706 19.9863l6.21954 2.4691 2.4122 8.2303C15.2618 31.212 15.8739 31.4034 16.2699 31.0589l3.4653-3.005C20.0952 27.7381 20.6173 27.719 20.9953 28.0156l6.2555 4.8329C27.6829 33.1835 28.2949 32.9347 28.4029 32.3796L32.9843 8.94242C33.1013 8.3395 32.5433 7.83228 32.0032 8.0524L6.46806 18.5317C5.83801 18.79 5.84701 19.7375 6.47706 19.9863zm8.24474 1.158 12.16-7.9623C27.0978 13.0384 27.3228 13.3542 27.1338 13.5361L17.098 23.4603C16.7469 23.8048 16.5219 24.2737 16.4499 24.7809L16.1079 27.4701C16.0629 27.8338 15.5858 27.8625 15.4958 27.518l-1.3141-4.9095C14.0377 22.0535 14.2537 21.4505 14.7218 21.1443z" fill="#FFF"/></svg>
+<span class=label>Telegram</span>
+</a>
+<a href=https://github.com/defiprime/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 6c2.5426.0 4.8874.61976 7.0344 1.85984 2.1469 1.24008 3.8471 2.92306 5.0999 5.04786C33.3871 15.0325 34.0138 17.3534 34.0138 19.8697 34.0138 22.8916 33.1226 25.6096 31.3406 28.0231c-1.7826 2.4141-4.0843 4.0847-6.9061 5.0112C24.1055 33.0947 23.8627 33.0529 23.7041 32.9083 23.6277 32.8409 23.5669 32.7575 23.526 32.6639 23.485 32.5703 23.4649 32.4688 23.467 32.3665L23.476 30.9852C23.4821 30.0999 23.4849 29.2903 23.4849 28.5559c0-1.1678-.316099999999999-2.0226-.9484-2.5643C23.2299 25.9192 23.8532 25.8108 24.4065 25.6667 24.9603 25.5221 25.5321 25.287 26.1218 24.9622 26.712 24.6373 27.2048 24.2368 27.6 23.7611 27.9952 23.286 28.3175 22.6538 28.5669 21.8651 28.8164 21.0764 28.9414 20.1702 28.9414 19.1477c0-1.4333-.481000000000002-2.6734-1.4418-3.7208C27.9498 14.3308 27.901 13.1032 27.3539 11.7433 27.0131 11.6343 26.5203 11.701 25.8757 11.9411 25.2311 12.1823 24.6711 12.4473 24.1968 12.736L23.5034 13.1693c-1.1416-.3142-2.32-.4719-3.5034-.4689C18.8165 12.6974 17.6381 12.8551 16.4965 13.1693 16.2427 12.9995 15.9841 12.8369 15.7212 12.6817 15.3984 12.4897 14.8905 12.258 14.1971 11.9868 13.5037 11.7157 12.9869 11.6343 12.6466 11.7428 12.0989 13.1032 12.0502 14.3314 12.5009 15.4269 11.5395 16.4743 11.0585 17.7149 11.0585 19.1471c0 1.0231.1251 1.9265.374499999999999 2.709C11.6824 22.6385 12.0014 23.2707 12.391 23.7521 12.78 24.234 13.2699 24.6373 13.8596 24.9622 14.4499 25.287 15.0217 25.5221 15.5749 25.6667 16.1288 25.8108 16.7521 25.9192 17.4455 25.9916 16.9707 26.4249 16.6731 27.0452 16.5514 27.852 16.2892 27.9745 16.0136 28.0653 15.7302 28.1226 15.4382 28.183 15.0912 28.213 14.6898 28.213 14.2885 28.213 13.8899 28.083 13.4947 27.8248 13.0995 27.5655 12.7621 27.1893 12.4824 26.6961 12.2602 26.3205 11.9576 25.9997 11.5967 25.7571 11.2379 25.5159 10.9369 25.3718 10.6942 25.3232L10.3287 25.269C10.0737 25.269 9.89708 25.2961 9.79954 25.3503 9.70256 25.4046 9.67229 25.4741 9.70873 25.5582 9.74517 25.643 9.79954 25.7266 9.87297 25.8108 9.94585 25.8955 10.0243 25.9673 10.1101 26.0277L10.2379 26.1181C10.5053 26.2384 10.7704 26.4672 11.0316 26.8045 11.2929 27.1412 11.4846 27.4486 11.6062 27.7254L11.789 28.1406C11.947 28.5983 12.215 28.9683 12.5917 29.2513 12.9689 29.5338 13.3764 29.7146 13.8137 29.7931 14.252 29.8711 14.6747 29.9135 15.0822 29.9197 15.4897 29.9253 15.8278 29.9044 16.0951 29.8564L16.515 29.7841C16.515 30.2417 16.5178 30.7745 16.524 31.3824L16.5329 32.3665C16.5329 32.5835 16.4539 32.7637 16.2958 32.9083 16.1377 33.0529 15.8945 33.0947 15.566 33.0349 12.7436 32.1078 10.4414 30.4372 8.65937 28.0237c-1.78256-2.4152-2.67329-5.1326-2.67329-8.154.0-2.5163.6267-4.8372 1.87955-6.962 1.25284-2.1248 2.95297-3.80778 5.09997-5.04786C15.1125 6.61976 17.4573 6 20 6zM11.2962 25.9192C11.3327 25.8351 11.2901 25.7627 11.1684 25.7029 11.0468 25.6667 10.9677 25.6786 10.9313 25.739 10.8949 25.8232 10.9369 25.8955 11.0585 25.9554 11.1684 26.0277 11.2475 26.0158 11.2962 25.9192zM11.8618 26.5333C11.947 26.4735 11.9347 26.3769 11.8254 26.2446 11.7037 26.1362 11.6062 26.1181 11.5333 26.1904 11.4481 26.2503 11.4605 26.3469 11.5698 26.4791 11.6914 26.5994 11.7884 26.6175 11.8613 26.5333H11.8618zM12.4089 27.3463C12.5188 27.2616 12.5188 27.1475 12.4089 27.0028 12.3119 26.8463 12.2082 26.8107 12.0989 26.8944 11.9896 26.9548 11.9896 27.0633 12.0989 27.2198 12.2082 27.3763 12.3119 27.4181 12.4089 27.3463zM13.1758 28.1045C13.2727 28.0084 13.2486 27.8938 13.1029 27.7616 12.9566 27.6169 12.8349 27.5989 12.7374 27.7073 12.6281 27.8034 12.6522 27.9181 12.8103 28.0503 12.956 28.1949 13.0782 28.213 13.1758 28.1045zM14.2156 28.5565C14.252 28.4237 14.173 28.3271 13.9785 28.2672 13.7957 28.2192 13.6803 28.2615 13.6315 28.3937 13.5833 28.5259 13.6623 28.6163 13.8692 28.6644 14.0514 28.7367 14.1668 28.7005 14.2156 28.5559V28.5565zM15.3647 28.6468C15.3647 28.4898 15.2616 28.4237 15.0547 28.4474 14.8602 28.4474 14.7633 28.5141 14.7633 28.6463 14.7633 28.8028 14.8664 28.8689 15.0732 28.8451 15.2678 28.8451 15.3647 28.7785 15.3647 28.6463V28.6468zM16.4236 28.4661C16.399 28.3333 16.2896 28.2796 16.0951 28.3034 15.9006 28.3395 15.8149 28.4293 15.8395 28.5745 15.8642 28.7186 15.9735 28.7666 16.168 28.7186 16.3625 28.6706 16.4483 28.5864 16.4236 28.4655V28.4661z" fill="#FFF"/></svg>
+<span class=label>GitHub</span>
+</a>
+</div>
+<div class=info>
+<a href=/solana class=link>Solana DeFi ecosystem</a>
+<a href=/ethereum class=link>Ethereum DeFi ecosystem</a>
+<a href=/base class=link>Base DeFi ecosystem</a>
+<a href=/bitcoin class=link>Bitcoin DeFi ecosystem</a>
+<a href=/polygon class=link>Polygon DeFi ecosystem</a>
+<a href=/arbitrum class=link>Arbitrum DeFi ecosystem</a>
+<a href=/optimism class=link>Optimism DeFi ecosystem</a>
+<a href=/bsc class=link>BNB Chain DeFi ecosystem</a>
+<a href=/avalanche class=link>Avalanche DeFi ecosystem</a>
+</div>
+</div>
+<div class=footer-col>
+<div class=info>
+<a href=/tokenlist>DeFi tokens tokenlist</a>
+<a href=https://defiprime.substack.com/ class=link>Defiprime newsletter</a>
+<a href=/about class=link>About</a>
+<a href=/about#product-listing-101-definition-of-the-best-defi-product class=link>Product Listing</a>
+<a href=https://forms.fillout.com/t/ehASQ5qMzxus class=link>Advertising</a>
+</div>
+</div>
+<div class=footer-col>
+<div class="social-links hidden-small">
+<a href=https://twitter.com/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 10.0778c-1.1037.522-2.29.8749-3.535 1.0336C33.7356 10.299 34.7117 9.01273 35.1712 7.47992c-1.1894.75229-2.5065 1.29846-3.9085 1.59278C30.14 7.79705 28.5403 7 26.7701 7c-3.399.0-6.1548 2.93878-6.1548 6.5636C20.6153 14.078 20.6697 14.5789 20.7746 15.0595c-5.1152-.2738-9.6504-2.8869-12.68606-6.85819-.52991.9695-.8334 2.09699-.8334 3.29999.0 2.2772 1.08665 4.2862 2.73818 5.4633C8.98429 16.9304 8.03536 16.6351 7.20546 16.1436 7.2049 16.171 7.2049 16.1984 7.2049 16.2262c0 3.1801 2.12169 5.8327 4.9373 6.4361C11.6257 22.8122 11.082 22.8924 10.5206 22.8924 10.124 22.8924 9.73849 22.8513 9.36258 22.7748c.78332 2.6075 3.05622 4.5052 5.74962 4.558-2.1065 1.7605-4.7603 2.81-7.6441 2.81C6.97134 30.1428 6.48148 30.1115 6 30.051 8.72381 31.9133 11.959 33 15.4348 33c11.3211.0 17.5119-10.0016 17.5119-18.6753C32.9467 14.0401 32.9407 13.757 32.9288 13.4755c1.2026-.9254 2.2461-2.0815 3.0712-3.3977z" fill="#FFF"/></svg>
+<span class=label>Twitter</span>
+</a>
+<a href=https://t.me/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M6.47706 19.9863l6.21954 2.4691 2.4122 8.2303C15.2618 31.212 15.8739 31.4034 16.2699 31.0589l3.4653-3.005C20.0952 27.7381 20.6173 27.719 20.9953 28.0156l6.2555 4.8329C27.6829 33.1835 28.2949 32.9347 28.4029 32.3796L32.9843 8.94242C33.1013 8.3395 32.5433 7.83228 32.0032 8.0524L6.46806 18.5317C5.83801 18.79 5.84701 19.7375 6.47706 19.9863zm8.24474 1.158 12.16-7.9623C27.0978 13.0384 27.3228 13.3542 27.1338 13.5361L17.098 23.4603C16.7469 23.8048 16.5219 24.2737 16.4499 24.7809L16.1079 27.4701C16.0629 27.8338 15.5858 27.8625 15.4958 27.518l-1.3141-4.9095C14.0377 22.0535 14.2537 21.4505 14.7218 21.1443z" fill="#FFF"/></svg>
+<span class=label>Telegram</span>
+</a>
+<a href=https://github.com/defiprime/defiprime class=icon rel=me>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 6c2.5426.0 4.8874.61976 7.0344 1.85984 2.1469 1.24008 3.8471 2.92306 5.0999 5.04786C33.3871 15.0325 34.0138 17.3534 34.0138 19.8697 34.0138 22.8916 33.1226 25.6096 31.3406 28.0231c-1.7826 2.4141-4.0843 4.0847-6.9061 5.0112C24.1055 33.0947 23.8627 33.0529 23.7041 32.9083 23.6277 32.8409 23.5669 32.7575 23.526 32.6639 23.485 32.5703 23.4649 32.4688 23.467 32.3665L23.476 30.9852C23.4821 30.0999 23.4849 29.2903 23.4849 28.5559c0-1.1678-.316099999999999-2.0226-.9484-2.5643C23.2299 25.9192 23.8532 25.8108 24.4065 25.6667 24.9603 25.5221 25.5321 25.287 26.1218 24.9622 26.712 24.6373 27.2048 24.2368 27.6 23.7611 27.9952 23.286 28.3175 22.6538 28.5669 21.8651 28.8164 21.0764 28.9414 20.1702 28.9414 19.1477c0-1.4333-.481000000000002-2.6734-1.4418-3.7208C27.9498 14.3308 27.901 13.1032 27.3539 11.7433 27.0131 11.6343 26.5203 11.701 25.8757 11.9411 25.2311 12.1823 24.6711 12.4473 24.1968 12.736L23.5034 13.1693c-1.1416-.3142-2.32-.4719-3.5034-.4689C18.8165 12.6974 17.6381 12.8551 16.4965 13.1693 16.2427 12.9995 15.9841 12.8369 15.7212 12.6817 15.3984 12.4897 14.8905 12.258 14.1971 11.9868 13.5037 11.7157 12.9869 11.6343 12.6466 11.7428 12.0989 13.1032 12.0502 14.3314 12.5009 15.4269 11.5395 16.4743 11.0585 17.7149 11.0585 19.1471c0 1.0231.1251 1.9265.374499999999999 2.709C11.6824 22.6385 12.0014 23.2707 12.391 23.7521 12.78 24.234 13.2699 24.6373 13.8596 24.9622 14.4499 25.287 15.0217 25.5221 15.5749 25.6667 16.1288 25.8108 16.7521 25.9192 17.4455 25.9916 16.9707 26.4249 16.6731 27.0452 16.5514 27.852 16.2892 27.9745 16.0136 28.0653 15.7302 28.1226 15.4382 28.183 15.0912 28.213 14.6898 28.213 14.2885 28.213 13.8899 28.083 13.4947 27.8248 13.0995 27.5655 12.7621 27.1893 12.4824 26.6961 12.2602 26.3205 11.9576 25.9997 11.5967 25.7571 11.2379 25.5159 10.9369 25.3718 10.6942 25.3232L10.3287 25.269C10.0737 25.269 9.89708 25.2961 9.79954 25.3503 9.70256 25.4046 9.67229 25.4741 9.70873 25.5582 9.74517 25.643 9.79954 25.7266 9.87297 25.8108 9.94585 25.8955 10.0243 25.9673 10.1101 26.0277L10.2379 26.1181C10.5053 26.2384 10.7704 26.4672 11.0316 26.8045 11.2929 27.1412 11.4846 27.4486 11.6062 27.7254L11.789 28.1406C11.947 28.5983 12.215 28.9683 12.5917 29.2513 12.9689 29.5338 13.3764 29.7146 13.8137 29.7931 14.252 29.8711 14.6747 29.9135 15.0822 29.9197 15.4897 29.9253 15.8278 29.9044 16.0951 29.8564L16.515 29.7841C16.515 30.2417 16.5178 30.7745 16.524 31.3824L16.5329 32.3665C16.5329 32.5835 16.4539 32.7637 16.2958 32.9083 16.1377 33.0529 15.8945 33.0947 15.566 33.0349 12.7436 32.1078 10.4414 30.4372 8.65937 28.0237c-1.78256-2.4152-2.67329-5.1326-2.67329-8.154.0-2.5163.6267-4.8372 1.87955-6.962 1.25284-2.1248 2.95297-3.80778 5.09997-5.04786C15.1125 6.61976 17.4573 6 20 6zM11.2962 25.9192C11.3327 25.8351 11.2901 25.7627 11.1684 25.7029 11.0468 25.6667 10.9677 25.6786 10.9313 25.739 10.8949 25.8232 10.9369 25.8955 11.0585 25.9554 11.1684 26.0277 11.2475 26.0158 11.2962 25.9192zM11.8618 26.5333C11.947 26.4735 11.9347 26.3769 11.8254 26.2446 11.7037 26.1362 11.6062 26.1181 11.5333 26.1904 11.4481 26.2503 11.4605 26.3469 11.5698 26.4791 11.6914 26.5994 11.7884 26.6175 11.8613 26.5333H11.8618zM12.4089 27.3463C12.5188 27.2616 12.5188 27.1475 12.4089 27.0028 12.3119 26.8463 12.2082 26.8107 12.0989 26.8944 11.9896 26.9548 11.9896 27.0633 12.0989 27.2198 12.2082 27.3763 12.3119 27.4181 12.4089 27.3463zM13.1758 28.1045C13.2727 28.0084 13.2486 27.8938 13.1029 27.7616 12.9566 27.6169 12.8349 27.5989 12.7374 27.7073 12.6281 27.8034 12.6522 27.9181 12.8103 28.0503 12.956 28.1949 13.0782 28.213 13.1758 28.1045zM14.2156 28.5565C14.252 28.4237 14.173 28.3271 13.9785 28.2672 13.7957 28.2192 13.6803 28.2615 13.6315 28.3937 13.5833 28.5259 13.6623 28.6163 13.8692 28.6644 14.0514 28.7367 14.1668 28.7005 14.2156 28.5559V28.5565zM15.3647 28.6468C15.3647 28.4898 15.2616 28.4237 15.0547 28.4474 14.8602 28.4474 14.7633 28.5141 14.7633 28.6463 14.7633 28.8028 14.8664 28.8689 15.0732 28.8451 15.2678 28.8451 15.3647 28.7785 15.3647 28.6463V28.6468zM16.4236 28.4661C16.399 28.3333 16.2896 28.2796 16.0951 28.3034 15.9006 28.3395 15.8149 28.4293 15.8395 28.5745 15.8642 28.7186 15.9735 28.7666 16.168 28.7186 16.3625 28.6706 16.4483 28.5864 16.4236 28.4655V28.4661z" fill="#FFF"/></svg>
+<span class=label>GitHub</span>
+</a>
+</div>
+<div class=footer-col-bottom>
+<p>TipJar:</p>
+<p class=hash><span>ETH: </span><span class=value>0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1</span></p>
+<p><span>ENS: </span>defiprime.eth</p>
+</div>
+</div>
+</div>
+<div class=footer-row>
+<div class=text-made><span>Made with ❤️ In LA.</span> <a href='/sitemap-html'>🗺️</a></div>
+<div class=disclaimer>
+<span>Disclosures and footnotes:</span> Our Website is a financial data and news portal, discussion forum,
+and content aggregator, so cannot substitute for professional advice and independent verification. Our
+Content is intended to be used and should be used for informational purposes only. It is crucial to do your
+own research before making any investment. You should take independent financial advice from a professional
+or independently research and verify, any information that you find on our Website and wish to rely upon,
+whether to make an investment decision or otherwise. Nothing contained on our Site constitutes a
+solicitation, recommendation, endorsement, or offer by defiprime or any third party service provider to buy
+or sell any securities or other financial instruments. Keep in mind that we may receive commissions when you
+click on some links on our site. However, this does not impact our reviews and comparisons. We try our best
+to keep things fair and balanced, in order to help you make informed decision.
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script defer src=/assets/js/jquery.min.js></script>
+<script defer src=/assets/js/lazysizes.min.js></script>
+<script defer src=/assets/js/tooltipster/tooltipster.bundle.min.js></script>
+<script defer src=/assets/js/skel.min.js></script>
+<script defer src=/assets/js/util.js></script>
+<script defer src=/assets/js/main.js></script>
+<script src=//instant.page/5.1.0 type=module integrity=sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[
+ {"path":"term/official-repo-tree.json","url":"https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/git/trees/main?recursive=1","role":"official repository inventory only"},
+ {"path":"term/official-repo-commit.json","url":"https://api.github.com/repos/term-finance/yearn-v3-term-vault-contracts/commits/main","role":"pin official repository commit before source downloads"}
+]

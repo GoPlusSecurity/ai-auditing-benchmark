@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.6.6+commit.6c089d02",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 1000000,
+      "enabled": true
+    },
+    "evmVersion": "istanbul",
+    "remappings": []
+  },
+  "name": "EACAggregatorProxy",
+  "fullyQualifiedName": "/Users/yos/chainlink2/evm-contracts/src/v0.6/EACAggregatorProxy.sol:EACAggregatorProxy"
+}

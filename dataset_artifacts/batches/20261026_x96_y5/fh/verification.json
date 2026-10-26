@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-26T14:54:42.617906+00:00",
+  "scope": "offline source/archived historical RPC/receipt/decompiler-response checks only",
+  "checks": {
+    "source_bundles": 5,
+    "source_files_equal_provider_content_utf8": 54,
+    "valid_original_line_slice_ranges": 20,
+    "successful_receipt": true,
+    "buy_sell_cycles": 25,
+    "all_sell_input_matches_actual_transfer": true,
+    "all_sell_output_matches_verified_router_integer_formula": true,
+    "usdt_raw_pool_net_equals_negative_eoa_net": true,
+    "historical_usdt_decimals": 18,
+    "historical_runtime_comparisons": 5,
+    "all_historical_runtime_comparisons_match": true,
+    "online_high_level_decompiled_output_preserved": true,
+    "decompiler_disassembly_input_byte_coverage": 3577,
+    "decompiler_disassembly_mismatches": 0
+  },
+  "limits": [
+    "Full internal call trace unavailable; particular intermediate entry-point calldata is inferred from original source, event sender, online supplementary decompilation, and exact output arithmetic.",
+    "Target pair source lookup returned Sourcify 404 and BscScan 403. Its historical runtime exactly equals the verified reference address runtime, but the reference response is not direct target verification, target creation-transaction proof, or independent local compilation.",
+    "The complete pre-transaction whitelist, dynamic-fee, and totalSupply state was not reconstructed; successful receipt proves the exercised path conditions, not all other state.",
+    "Attacker original source unavailable. Online high-level decompilation is supplementary reconstructed code with two preserved Error comments; the service did not report its engine version. It is not authoritative original source or a full execution trace."
+  ],
+  "not_performed": [
+    "Solidity compilation",
+    "PoC execution",
+    "fork replay",
+    "deployment",
+    "transaction submission"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "sources": {
+    "src/router/IWETH.sol": {
+      "content": "/**\n *Submitted for verification at Etherscan.io on 2017-12-12\n*/\n\n// Copyright (C) 2015, 2016, 2017 Dapphub\n\n// This program is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n\n// This program is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n\n// You should have received a copy of the GNU General Public License\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\n\npragma solidity 0.8.19;\n\ninterface WETH9 {\n    function balanceOf(address guy) external view returns (uint);\n    function allowance(address, address) external view returns (uint);\n\n    function deposit() external payable;\n\n    function withdraw(uint wad) external;\n\n    function totalSupply() external view returns (uint);\n\n    function approve(address guy, uint wad) external returns (bool);\n\n    function transfer(address dst, uint wad) external returns (bool);\n\n    function transferFrom(address src, address dst, uint wad)\n        external\n        returns (bool);\n}\n"
+    },
+    "src/WethUnwrapper.sol": {
+      "content": "// SPDX-License-Identifier: BSD-3-Clause\npragma solidity 0.8.19;\n\nimport {WETH9} from \"@protocol/router/IWETH.sol\";\n\ncontract WethUnwrapper {\n    /// @notice the mToken address\n    address public immutable mToken;\n\n    /// @notice reference to the WETH contract\n    address public immutable weth;\n\n    /// @notice construct a new WethUnwrapper\n    /// @param _weth the WETH contract address\n    constructor(address _mToken, address _weth) {\n        mToken = _mToken;\n        weth = _weth;\n    }\n\n    /// @notice transfer ETH underlying to the recipient\n    /// first unwrap the WETH into raw ETH, then transfer\n    /// @param to the recipient address\n    /// @param amount the amount of ETH to transfer\n    function send(address payable to, uint256 amount) external {\n        require(msg.sender == mToken, \"only mToken can call send\");\n\n        WETH9(weth).withdraw(amount);\n        (bool success, bytes memory returndata) = to.call{value: amount}(\"\");\n\n        if (!success) {\n            if (returndata.length == 0) revert();\n            assembly {\n                revert(add(32, returndata), mload(returndata))\n            }\n        }\n    }\n\n    receive() external payable {\n        require(msg.sender == weth, \"not accepting eth\");\n    }\n}\n"
+    }
+  },
+  "language": "Solidity",
+  "settings": {
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": [
+      ":@forge-std/=lib/forge-std/src/",
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
+      ":@protocol/=src/",
+      ":@test/=test/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+      ":solmate/=lib/solmate/src/"
+    ]
+  }
+}

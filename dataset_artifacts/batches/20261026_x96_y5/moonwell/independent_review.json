@@ -1,0 +1,143 @@
+{
+  "status": "passed_after_three_slice_repairs",
+  "reviewed_at": "2026-10-26T14:59:26.963564+00:00",
+  "scope": "Offline review only; no network, compile or contract execution. Only case_spec.slices and this review file were edited.",
+  "metadata_unchanged_by_reviewer": true,
+  "slice_repairs": [
+    {
+      "bundle": "market-implementation",
+      "file": "src/core/MToken.sol",
+      "before": [
+        272,
+        310
+      ],
+      "after": [
+        272,
+        313
+      ],
+      "reason": "borrowBalanceStoredInternal originally truncated before its end."
+    },
+    {
+      "bundle": "mamo-feed",
+      "file": "src/oracles/ChainlinkOEVWrapper.sol",
+      "before": [
+        520,
+        528
+      ],
+      "after": [
+        520,
+        529
+      ],
+      "reason": "_validateRoundData missing closing brace."
+    },
+    {
+      "bundle": "mmamo",
+      "before_file": "src/core/MErc20Delegator.sol",
+      "after_file": "src/MErc20Delegator.sol",
+      "range": "all",
+      "reason": "Use the actual original filename in the verified source response; the old key does not exist."
+    }
+  ],
+  "slice_checks": {
+    "selected_files": 32,
+    "numeric_ranges": 17,
+    "overlapping_callables_checked": 39,
+    "remaining_partial_callables": []
+  },
+  "independent_checks": {
+    "borrow_events": 18,
+    "borrow_transactions": 17,
+    "gross_borrowed": {
+      "cbBTC": "71.35549505",
+      "USDC": "2560000",
+      "wstETH": "368",
+      "WETH": "623.600287604679454542"
+    },
+    "weth_withdrawal_event_matches": 2,
+    "native_560_ETH_payout_verified": true,
+    "mweth_delegatecall_to_distinct_implementation_verified": true,
+    "historical_implementations": {
+      "mmamo": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "mcbBTC": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "musdc": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "mwsteth": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "mweth": "0x599d4a1538d686814ee11b331eacbba166d7c41a"
+    },
+    "historical_runtime_bindings": [
+      {
+        "id": "market-implementation",
+        "equal": true,
+        "runtime_sha256": "d814b08766a0d887cd75548b671bcf99921ed130f388e768622509068f480355"
+      },
+      {
+        "id": "comptroller-implementation",
+        "equal": true,
+        "runtime_sha256": "65dd139a6da23088c3983d3a85e83e8f60de49cbbbff3f85ccf562c785c9c0f7"
+      },
+      {
+        "id": "chainlink-oracle",
+        "equal": true,
+        "runtime_sha256": "e158d05fd646ef5c108a89436366b7622c867256afe0b28a7f624e27a349e7aa"
+      },
+      {
+        "id": "mamo-feed",
+        "equal": true,
+        "runtime_sha256": "4f34e9f29fdebb8ab762f7555889b5a21469b75208ca655c9b52ef9a7a45d6eb"
+      },
+      {
+        "id": "chainlink-feed-proxy",
+        "equal": true,
+        "runtime_sha256": "53ca1c4d67c7b092f36c66e575874226de7e8eaada554f445f43fe2779743ec1"
+      },
+      {
+        "id": "chainlink-aggregator",
+        "equal": true,
+        "runtime_sha256": "ff1f27f82be30edc0bd127ba880e5ef5d50692c8251bde1b423aadf64e4db2a1"
+      },
+      {
+        "id": "mweth-implementation",
+        "equal": true,
+        "runtime_sha256": "493276c6d313b54874c2d45fda8f4e9033f9b0e468cd9412597448d26f9f00ad"
+      },
+      {
+        "id": "weth-router",
+        "equal": true,
+        "runtime_sha256": "518e8e181e846b0d3f9d6d512f045185a0b26a5d1f8722b808dea4e210af9a3b"
+      }
+    ],
+    "mamo_decimals": 18,
+    "mmamo_decimals": 8,
+    "exchange_rate_human_denominator": "1e28",
+    "underlying_claim_from_raw_denominator": "1e36",
+    "historical_prices_usd": {
+      "before-rise": "0.01054105",
+      "peak-price": "0.40248571",
+      "final-borrow": "0.39844045"
+    },
+    "peak_wrapper_and_source_round_equal": true,
+    "donations_total_MAMO": "53393290.310633389294532652",
+    "first_donation_exact_cash_delta": true,
+    "second_interval_other_cash_delta_MAMO": "104.053224118141044604",
+    "USD_loss_is_null": true
+  },
+  "non_blocking_findings": [
+    {
+      "id": "cross_block_nominal_capacity",
+      "severity": "documentation_limit",
+      "finding": "nominal_capacity_usd_at_peak combines snapshot/price from block 50516812 with collateral factor queried at 50516833, 21 blocks later. It is a nominal gross collateral estimate, excludes existing debts and exact Solidity intermediate rounding, and is not exact historical remaining borrowing capacity.",
+      "recommended_wording": "按已观察到的50%抵押因子估算的毛抵押额度；非同一时点精确剩余可借额度。"
+    },
+    {
+      "id": "second_donation_interval_cash_delta",
+      "severity": "documentation_limit",
+      "finding": "The second interval cash change exceeds the second donation by 104.053224118141044604 MAMO. The 3.6786 exchange-rate multiplier is an observed block-end ratio, not an exact calculation caused only by the two donations.",
+      "recommended_wording": "兑换率约3.6786倍为历史端点观测；不要把区间全部现金变化归给捐赠。"
+    },
+    {
+      "id": "payout_scope",
+      "severity": "retained_limit",
+      "finding": "Two WETH borrows match transfers to the unwrapper and Withdrawal logs. The 560 ETH onward payment has a direct internal trace; the other 63.600287604679454542 ETH onward leg uses source-and-successful-receipt reasoning, not an independently obtained trace."
+    }
+  ],
+  "blocking_findings": []
+}

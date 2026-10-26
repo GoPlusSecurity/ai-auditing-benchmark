@@ -1,0 +1,50 @@
+[
+  {
+    "path": "term/attacker-strategy-decompiler-failure.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "001803",
+      "wall_time_seconds": 0.8173741,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/helper-implementation-decompiler-failure.html",
+    "url": "https://etherscan.io/bytecode-decompiler?a=0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "700f82",
+      "wall_time_seconds": 0.8885536,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-attacker-strategy-code.json",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x184f2E57b4cE135181FA2A2166AC394339016338",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "345e20",
+      "wall_time_seconds": 1.9237773,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  {
+    "path": "term/blockscout-helper-implementation-code.json",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x3e30DDF30172F54C50cB490fF56E10f1a4737cF1",
+    "started_at": "2026-10-26T14:49:06.796Z",
+    "command_result": {
+      "chunk_id": "375fcb",
+      "wall_time_seconds": 2.2014232,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+]

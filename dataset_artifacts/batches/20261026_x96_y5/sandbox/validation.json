@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "source_bundles": 5,
+  "original_source_files_byte_equal": 143,
+  "continuous_slices_valid": 61,
+  "source_line_links_valid": 25,
+  "successful_base_receipts": 6,
+  "historical_runtime_equalities": 3,
+  "csv_row_reader_check": 92,
+  "base_sand_flow_conservation": true,
+  "takeover_trace_token_identity_verified": true,
+  "mint_trace_endpoint_identity_verified": true,
+  "mermaid_diagrams": 1,
+  "executed_contracts_or_pocs": false,
+  "limitations": [
+    "The USD 670000 source-sheet estimate and approximately USD 697000 later official estimate remain unreconciled; CN/EN CSV loss fields are blank (loss_usd=null). No full-campaign loss/profit accounting was performed.",
+    "Ethereum redemption transaction was fetched, but PublicNode receipt returned result:null and the Llama receipt retry timed out after 35 seconds; neither redemption success nor aggregate payouts were independently established.",
+    "No independent historical effective optional-DVN default read; custom zero fields are correctly documented as default inheritance.",
+    "Core Base runtime is historical-bound; Ethereum adapter and underlying token are verified-source context without a separate attack-block runtime comparison.",
+    "Official postmortem direct HTTP download returned 403; web research accessed official page text. X response is not proof of full tweet body.",
+    "No upstream scripts, PoCs, compilation, deployment, replay or transaction submission were executed."
+  ],
+  "loss_policy_check": {
+    "loss_usd_null": true,
+    "cn_loss_blank": true,
+    "en_loss_blank": true,
+    "two_reported_estimates_preserved": true,
+    "llama_timeout_recorded": true
+  },
+  "sale_helper_decompilation": {
+    "status": "passed",
+    "runtime_equal_at_blocks": [
+      50283188,
+      50283191
+    ],
+    "input_bytes_checked": 1701,
+    "input_disassembly_complete_match": true,
+    "high_level_lines": 417,
+    "error_comments": 0,
+    "original_source": false,
+    "standalone_compilation_claimed": false,
+    "loss_fields_unchanged": true
+  }
+}

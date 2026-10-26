@@ -1,0 +1,65 @@
+[
+  {
+    "path": "moonwell/mamo-token-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x7300b37dfdfab110d83290a29dfb31b1740219fe?fields=all",
+    "http_status": 200,
+    "bytes": 703678,
+    "sha256": "4664961b1c4d70038e60ecf89f70f6ca4fa118703e3779a22ab535f9156346e7",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:47.115535+08:00"
+  },
+  {
+    "path": "moonwell/mmamo-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32?fields=all",
+    "http_status": 200,
+    "bytes": 482984,
+    "sha256": "0d6f04d29c7d4d445b57b1f6375bcf13f344dd6ecae900c4b336d1fab3509f2c",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:46.771848+08:00"
+  },
+  {
+    "path": "moonwell/musdc-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xedc817a28e8b93b03976fbd4a3ddbc9f7d176c22?fields=all",
+    "http_status": 200,
+    "bytes": 419118,
+    "sha256": "f9ec1de2b92d05bee44d94332f5e7804a87d79d078bbd78eca26a95da295e7cf",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:47.258494+08:00"
+  },
+  {
+    "path": "moonwell/mcbBTC-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xf877acafa28c19b96727966690b2f44d35ad5976?fields=all",
+    "http_status": 200,
+    "bytes": 423120,
+    "sha256": "0f924875e16c0c06c78d9d34200df212e22f300e1ce8e812c9d15b2f94c8f362",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:46.381340+08:00"
+  },
+  {
+    "path": "moonwell/mwsteth-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x627fe393bc6edda28e99ae648fd6ff362514304b?fields=all",
+    "http_status": 200,
+    "bytes": 419367,
+    "sha256": "43b802775a79f7fa7d85a45f789ec15e79f2d50d75cd3c61adb68313b0fef605",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:47.365659+08:00"
+  },
+  {
+    "path": "moonwell/oracle-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xe9005b078701e2a0948d2eac43010d35870ad9d2?fields=all",
+    "http_status": 200,
+    "bytes": 155411,
+    "sha256": "bb403d23cd17a3db6cb62b1008e305d500b3ac5f4c8e8091b3a2364cb869161b",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:46.334266+08:00"
+  },
+  {
+    "path": "moonwell/price-feed-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c?fields=all",
+    "http_status": 200,
+    "bytes": 620747,
+    "sha256": "3444967a7799ce457dfde3f38fae313c3482380503908e21e810892dcfcc6605",
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:53:50.109496+08:00"
+  }
+]

@@ -1,0 +1,385 @@
+{
+  "case_id": "20260827_Moonwell_MAMO",
+  "sheet_row": 85,
+  "qualified": true,
+  "sources": [
+    {
+      "id": "mmamo",
+      "response_path": "moonwell/mmamo-source.json",
+      "provider": "Sourcify",
+      "address": "0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32?fields=all"
+    },
+    {
+      "id": "musdc",
+      "response_path": "moonwell/musdc-source.json",
+      "provider": "Sourcify",
+      "address": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22?fields=all"
+    },
+    {
+      "id": "mcbBTC",
+      "response_path": "moonwell/mcbBTC-source.json",
+      "provider": "Sourcify",
+      "address": "0xF877ACaFA28c19b96727966690b2f44d35aD5976",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xF877ACaFA28c19b96727966690b2f44d35aD5976?fields=all"
+    },
+    {
+      "id": "mwsteth",
+      "response_path": "moonwell/mwsteth-source.json",
+      "provider": "Sourcify",
+      "address": "0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b?fields=all"
+    },
+    {
+      "id": "mweth",
+      "response_path": "moonwell/mweth-source.json",
+      "provider": "Sourcify",
+      "address": "0x628ff693426583D9a7FB391E54366292F509D457",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x628ff693426583D9a7FB391E54366292F509D457?fields=all"
+    },
+    {
+      "id": "mamo-token",
+      "response_path": "moonwell/mamo-token-source.json",
+      "provider": "Sourcify",
+      "address": "0x7300B37DfdfAb110d83290A29DfB31B1740219fE",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x7300B37DfdfAb110d83290A29DfB31B1740219fE?fields=all"
+    },
+    {
+      "id": "unitroller-proxy",
+      "response_path": "moonwell/price-feed-source.json",
+      "provider": "Sourcify",
+      "address": "0xfBb21d0380beE3312B33c4353c8936a0F13EF26C",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xfBb21d0380beE3312B33c4353c8936a0F13EF26C?fields=all"
+    },
+    {
+      "id": "market-implementation",
+      "response_path": "moonwell/market-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7?fields=all"
+    },
+    {
+      "id": "comptroller-implementation",
+      "response_path": "moonwell/comptroller-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+      "chain_id": "8453",
+      "role": "vulnerable_collateral_accounting",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe?fields=all"
+    },
+    {
+      "id": "chainlink-oracle",
+      "response_path": "moonwell/chainlink-oracle-source.json",
+      "provider": "Sourcify",
+      "address": "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0?fields=all"
+    },
+    {
+      "id": "mamo-feed",
+      "response_path": "moonwell/mamo-feed-source.json",
+      "provider": "Sourcify",
+      "address": "0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6?fields=all"
+    },
+    {
+      "id": "chainlink-feed-proxy",
+      "response_path": "moonwell/chainlink-feed-proxy-source.json",
+      "provider": "Sourcify",
+      "address": "0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94?fields=all"
+    },
+    {
+      "id": "chainlink-aggregator",
+      "response_path": "moonwell/chainlink-aggregator-source.json",
+      "provider": "Sourcify",
+      "address": "0x6F49F44436A220C8aebd5776AB58b80Ecb41622E",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x6F49F44436A220C8aebd5776AB58b80Ecb41622E?fields=all"
+    },
+    {
+      "id": "mweth-implementation",
+      "response_path": "moonwell/mweth-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0x599D4a1538d686814eE11b331EACBBa166D7C41a",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x599D4a1538d686814eE11b331EACBBa166D7C41a?fields=all"
+    },
+    {
+      "id": "weth-router",
+      "response_path": "moonwell/weth-router-source.json",
+      "provider": "Sourcify",
+      "address": "0x1382cFf3CeE10D283DccA55A30496187759e4cAf",
+      "chain_id": "8453",
+      "role": "required_normal_dependency",
+      "url": "https://sourcify.dev/server/v2/contract/8453/0x1382cFf3CeE10D283DccA55A30496187759e4cAf?fields=all"
+    }
+  ],
+  "slices": {
+    "market-implementation": {
+      "src/core/MErc20.sol": "all",
+      "src/core/MErc20Delegate.sol": "all",
+      "src/core/MTokenInterfaces.sol": "all",
+      "src/core/CarefulMath.sol": "all",
+      "src/core/Exponential.sol": "all",
+      "src/core/ExponentialNoError.sol": "all",
+      "src/core/ErrorReporter.sol": "all",
+      "src/core/ComptrollerInterface.sol": "all",
+      "src/core/MToken.sol": [
+        [
+          1,
+          59
+        ],
+        [
+          204,
+          230
+        ],
+        [
+          272,
+          313
+        ],
+        [
+          329,
+          464
+        ],
+        [
+          471,
+          563
+        ],
+        [
+          728,
+          814
+        ],
+        [
+          1493,
+          1520
+        ]
+      ]
+    },
+    "comptroller-implementation": {
+      "src/core/ComptrollerStorage.sol": "all",
+      "src/core/Comptroller.sol": [
+        [
+          1,
+          145
+        ],
+        [
+          215,
+          242
+        ],
+        [
+          310,
+          356
+        ],
+        [
+          497,
+          619
+        ],
+        [
+          978,
+          993
+        ]
+      ],
+      "src/core/Unitroller.sol": "all"
+    },
+    "mmamo": {
+      "src/MErc20Delegator.sol": "all"
+    },
+    "chainlink-oracle": {
+      "src/core/Oracles/ChainlinkOracle.sol": "all",
+      "src/core/Oracles/PriceOracle.sol": "all",
+      "src/core/Oracles/AggregatorV3Interface.sol": "all",
+      "src/core/SafeMath.sol": "all"
+    },
+    "mamo-feed": {
+      "src/oracles/ChainlinkOEVWrapper.sol": [
+        [
+          1,
+          258
+        ],
+        [
+          278,
+          315
+        ],
+        [
+          520,
+          529
+        ]
+      ],
+      "lib/openzeppelin-contracts/contracts/access/Ownable.sol": "all"
+    },
+    "chainlink-feed-proxy": {
+      "/Users/yos/chainlink2/evm-contracts/src/v0.6/AggregatorProxy.sol": "all",
+      "/Users/yos/chainlink2/evm-contracts/src/v0.6/EACAggregatorProxy.sol": "all",
+      "/Users/yos/chainlink2/evm-contracts/src/v0.6/Owned.sol": "all"
+    },
+    "chainlink-aggregator": {
+      "src/AccessControlledOCR2Aggregator.sol": "all",
+      "src/OCR2Aggregator.sol": "all",
+      "src/SimpleReadAccessController.sol": "all",
+      "src/SimpleWriteAccessController.sol": "all"
+    },
+    "mweth-implementation": {
+      "src/MWethDelegate.sol": "all",
+      "src/MToken.sol": [
+        [
+          728,
+          736
+        ],
+        [
+          750,
+          814
+        ]
+      ]
+    },
+    "weth-router": {
+      "src/WethUnwrapper.sol": "all",
+      "src/router/IWETH.sol": "all"
+    },
+    "mamo-token": {
+      "src/token/Mamo.sol": "all",
+      "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": "all"
+    }
+  },
+  "metadata": {
+    "project_cn": "Moonwell（MAMO 抵押市场）",
+    "project_en": "Moonwell (MAMO collateral market)",
+    "vulnerability_cn": "直接捐赠抬高抵押份额兑换率，并与被推高的预言机价格共同放大借款能力",
+    "vulnerability_en": "Donation-driven collateral exchange-rate inflation combined with inflated oracle prices",
+    "detail_cn": "mMAMO以实际代币余额计算份额兑换率；直接转入MAMO不经过mintAllowed的供应上限检查，也不增加份额。两次捐赠共53,393,290.310633389294532652 MAMO，历史状态显示份额总量不变、兑换率升至约3.6786倍。Comptroller将份额、兑换率、MAMO报价与50%抵押因子相乘，未限制捐赠造成的抵押增量或按可清算深度折价。实际采用的MAMO价格一度为0.40248571美元。17笔成功交易包含18次借款，流出cbBTC、WETH/ETH、USDC及wstETH；WETH付款经WethUnwrapper解包。原始源码与核心历史运行码已比对；未复核全部价格操纵交易、清算及最终净损益。美元金额因早期报道、借款总额和剩余坏账口径不一留空。",
+    "detail_en": "mMAMO computes its exchange rate from the actual underlying balance. Direct MAMO transfers bypass the mintAllowed supply-cap check and create no shares. Two donations totaled 53,393,290.310633389294532652 MAMO; historical state shows unchanged share supply and an approximately 3.6786-fold exchange-rate increase. Comptroller multiplies shares, exchange rate, the MAMO quote and a 50% collateral factor without capping donation-induced collateral growth or discounting for realizable market depth. The accepted MAMO price reached USD 0.40248571. Seventeen successful transactions contain 18 borrows of cbBTC, WETH/ETH, USDC and wstETH; WETH payouts unwrap through WethUnwrapper. Original sources and core historical runtime code were compared. Full price-manipulation trades, liquidations and final net results were not reconstructed. The USD loss field is blank because early reports, gross borrowing and residual bad debt use different scopes.",
+    "loss_usd": null,
+    "loss_scope": "源表约800万美元、官方论坛借款总额约1102.8万美元、剩余债务约913.1万美元和估计净收益约678.4万美元口径不同；本批只独立汇总原币借款，不换算全案净损失。",
+    "event_date": "2026-08-27",
+    "chain_id": 8453,
+    "sheet_row": 85,
+    "tx_urls": [
+      "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f",
+      "https://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18",
+      "https://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7"
+    ],
+    "vulnerable_contract_urls": [
+      "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code",
+      "https://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code"
+    ],
+    "verification_status": {
+      "source": "Sourcify original verified code",
+      "historical_code": "eight core implementation/feed/unwrapper runtimes match provider onchain bytecode at block 50516833",
+      "historical_state": "specific block-end exchange rates, supply, cash, prices, caps, collateral factor and proxy implementations checked",
+      "receipts": "17 transactions,18 Borrow events and matching asset transfer/withdrawal logs",
+      "trace": "first 560 ETH final payout independently traced; not every transaction traced",
+      "compilation": "not_run",
+      "fork_replay": "not_run",
+      "decompilation": "not_needed_for_direct_EOA_core_path"
+    }
+  },
+  "draft_path": "moonwell/draft.md",
+  "decoded_evidence_path": "moonwell/decoded_evidence.json",
+  "roles": [
+    {
+      "address": "0x2F90Bb22eB3979f5FfAd31EA6C3F0792ca66dA32",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "mmamo"
+    },
+    {
+      "address": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
+      "role": "required_normal_dependency",
+      "bundle": "musdc"
+    },
+    {
+      "address": "0xF877ACaFA28c19b96727966690b2f44d35aD5976",
+      "role": "required_normal_dependency",
+      "bundle": "mcbBTC"
+    },
+    {
+      "address": "0x627Fe393Bc6EdDA28e99AE648fD6fF362514304b",
+      "role": "required_normal_dependency",
+      "bundle": "mwsteth"
+    },
+    {
+      "address": "0x628ff693426583D9a7FB391E54366292F509D457",
+      "role": "required_normal_dependency",
+      "bundle": "mweth"
+    },
+    {
+      "address": "0x7300B37DfdfAb110d83290A29DfB31B1740219fE",
+      "role": "required_normal_dependency",
+      "bundle": "mamo-token"
+    },
+    {
+      "address": "0xfBb21d0380beE3312B33c4353c8936a0F13EF26C",
+      "role": "required_normal_dependency",
+      "bundle": "unitroller-proxy"
+    },
+    {
+      "address": "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "market-implementation"
+    },
+    {
+      "address": "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+      "role": "vulnerable_collateral_accounting",
+      "bundle": "comptroller-implementation"
+    },
+    {
+      "address": "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-oracle"
+    },
+    {
+      "address": "0xDBD37C274A70A8A3f92A227c843a6a8d3203afe6",
+      "role": "required_normal_dependency",
+      "bundle": "mamo-feed"
+    },
+    {
+      "address": "0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-feed-proxy"
+    },
+    {
+      "address": "0x6F49F44436A220C8aebd5776AB58b80Ecb41622E",
+      "role": "required_normal_dependency",
+      "bundle": "chainlink-aggregator"
+    },
+    {
+      "address": "0x599D4a1538d686814eE11b331EACBBa166D7C41a",
+      "role": "required_normal_dependency",
+      "bundle": "mweth-implementation"
+    },
+    {
+      "address": "0x1382cFf3CeE10D283DccA55A30496187759e4cAf",
+      "role": "required_normal_dependency",
+      "bundle": "weth-router"
+    }
+  ],
+  "evidence_gaps": [
+    "Historical calls are block-end state, not intra-transaction state snapshots.",
+    "Only selected funding, donation, borrow and bridge receipts were obtained; full swaps, liquidations, all liabilities and final profit were not independently reconstructed.",
+    "Source verification is reported by Sourcify; no local compilation or fork replay was run."
+  ],
+  "path_mapping": "Absolute original Chainlink compiler paths are mapped by dropping /Users/yos/chainlink2/evm-contracts/; original names and bytes preserved in provenance."
+}

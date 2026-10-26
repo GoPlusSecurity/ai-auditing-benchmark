@@ -1,0 +1,296 @@
+{
+  "case_id": "20260823_TermLabs",
+  "sheet_row": 91,
+  "qualified": true,
+  "sources": [
+    {
+      "id": "term-voting",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/voting-source.json",
+      "provider": "Sourcify",
+      "address": "0xd4bfb6C688b2982A3b432F2Fc6C35117532A2C27",
+      "role": "vulnerable_governance_composition_snapshot_and_action_executor"
+    },
+    {
+      "id": "term-voting-token",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/voting-token-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0xCC925a32fA4fa41c42a7d5585D69C980b6Fa9342",
+      "role": "vulnerable_governance_composition_opt_in_wrapped_electorate"
+    },
+    {
+      "id": "term-dao",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/dao-source.json",
+      "provider": "Sourcify",
+      "address": "0x52Af16664155608b845BE18aa29620EbF6eA2D3a",
+      "role": "normal_permissioned_arbitrary_action_executor_in_vulnerable_composition"
+    },
+    {
+      "id": "term-roles",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/delay-owner-source.json",
+      "provider": "Sourcify",
+      "address": "0x52BcB5C9408ffC5C7D7510e16F75A54c56D3Bc84",
+      "role": "normal_roles_owner_route_with_overbroad_deployment_permissions"
+    },
+    {
+      "id": "term-permissions",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/owner-dependency-source.json",
+      "provider": "Sourcify",
+      "address": "0xe3b694a21d6a633eD8b5Ea9cd70fC43Fa7D3B6Fb",
+      "role": "normal_linked_role_permission_library"
+    },
+    {
+      "id": "term-delay",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/delay-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0xd54895B1121A2eE3f37b502F507631FA1331BED6",
+      "role": "normal_owner_controlled_delay_in_vulnerable_composition"
+    },
+    {
+      "id": "term-safe",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/safe-source.json",
+      "provider": "Sourcify",
+      "address": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+      "role": "normal_enabled_module_execution_dependency"
+    },
+    {
+      "id": "term-vault",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/vault-implementation-source.json",
+      "provider": "Sourcify",
+      "address": "0xd8063123BBA3B480569244AE66BFE72B6c84b00d",
+      "role": "victim_vault_authorized_strategy_and_debt_allocation"
+    },
+    {
+      "id": "term-weth",
+      "response_path": "dataset_artifacts/batches/20261026_x96_y5/term/sources/weth-source.json",
+      "provider": "Sourcify",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "role": "normal_payout_asset"
+    }
+  ],
+  "slices": {
+    "term-voting": {
+      "src/plugins/governance/majority-voting/token/TokenVoting.sol": "all",
+      "src/plugins/governance/majority-voting/MajorityVotingBase.sol": "all",
+      "src/core/plugin/proposal/ProposalUpgradeable.sol": "all",
+      "src/plugins/governance/majority-voting/IMajorityVoting.sol": "all",
+      "src/core/plugin/dao-authorizable/DaoAuthorizableUpgradeable.sol": "all",
+      "src/plugins/utils/Ratio.sol": "all"
+    },
+    "term-voting-token": {
+      "src/token/ERC20/governance/GovernanceWrappedERC20.sol": "all",
+      "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20WrapperUpgradeable.sol": "all",
+      "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol": "all",
+      "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": "all",
+      "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol": "all"
+    },
+    "term-dao": {
+      "src/core/dao/DAO.sol": [
+        [
+          1,
+          299
+        ]
+      ],
+      "src/core/permission/PermissionManager.sol": "all",
+      "src/core/dao/IDAO.sol": "all"
+    },
+    "term-roles": {
+      "contracts/Roles.sol": "all",
+      "@gnosis.pm/zodiac/contracts/core/Modifier.sol": "all"
+    },
+    "term-permissions": {
+      "contracts/Permissions.sol": [
+        [
+          1,
+          290
+        ]
+      ]
+    },
+    "term-delay": {
+      "contracts/Delay.sol": "all",
+      "@gnosis.pm/zodiac/contracts/core/Module.sol": "all",
+      "@gnosis.pm/zodiac/contracts/core/Modifier.sol": "all",
+      "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": "all"
+    },
+    "term-safe": {
+      "contracts/base/ModuleManager.sol": "all",
+      "contracts/base/Executor.sol": "all",
+      "contracts/common/Enum.sol": "all"
+    },
+    "term-vault": {
+      "YearnV3Vault.vy": [
+        [
+          1,
+          327
+        ],
+        [
+          486,
+          510
+        ],
+        [
+          667,
+          712
+        ],
+        [
+          911,
+          930
+        ],
+        [
+          965,
+          1112
+        ],
+        [
+          1521,
+          1526
+        ],
+        [
+          1698,
+          1707
+        ],
+        [
+          1731,
+          1762
+        ]
+      ]
+    },
+    "term-weth": {
+      "WETH9.sol": [
+        [
+          1,
+          77
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "project_cn": "Term Labs（ETH Meta Vault 治理）",
+    "project_en": "Term Labs (ETH Meta Vault governance)",
+    "vulnerability_cn": "少量封装 LP 取得多数票权，过宽治理权限允许关闭延时并把金库资金配置给恶意策略",
+    "vulnerability_en": "Thin wrapped-LP electorate and overbroad governance authority allow delay removal and allocation to a malicious strategy",
+    "detail_cn": "TokenVoting 以主动封装 LP 的历史供给计算总票权，攻击者用 0.5 ETH 取得并封装 0.485216182805348480 LP，在快照总量 0.535216182805348480 中占约 90.65798%。提案 5 的 17 个动作通过 DAO 已有 Roles 权限将 Delay 冷却期和有效期设为零，并启用 DAO 为模块；随后同笔交易排队并执行四笔普通策略减债及恶意策略注册、放宽债务上限和注资。历史 trace 与日志确认 2841.743535791961701401 WETH 经恶意策略进入攻击钱包。正常 onlyOwner、角色和 Safe 模块检查未被绕过；缺陷是部署中的治理权限和票权范围组合。核心原始源码来自 Sourcify，辅助反编译不替代源码；未重放。美元及全事件 USDC 损失未独立核定，留空。",
+    "detail_en": "TokenVoting uses the historical supply of voluntarily wrapped LP shares as total voting power. With 0.5 ETH the attacker acquired and wrapped 0.485216182805348480 LP against 0.535216182805348480 total wrapped supply, about 90.65798%. Proposal 5 used 17 DAO actions and existing Roles authority to set Delay cooldown and expiration to zero and enable the DAO as a module, then queued and executed four normal-strategy debt reductions, malicious-strategy registration, a maximum-debt increase and allocation in the same transaction. Historical trace and raw logs confirm 2841.743535791961701401 WETH passed through the malicious strategy to the attacker. Standard onlyOwner, role and Safe-module checks were satisfied; the vulnerability is the deployed composition of voting scope and governance authority. Core original sources come from Sourcify; supplementary decompilation does not replace them. No replay. USD valuation and event-wide USDC loss were not independently established.",
+    "loss_usd": null,
+    "loss_scope": "本笔 ETH Meta Vault 毛流出和攻击钱包毛入账均为 2841.743535791961701401 WETH，未扣初始 0.5 ETH、gas 或计追回。源表约 850 万美元覆盖更广事件；官方 USDC 赔付、追回与 RepoToken 口径不同，不能直接相加或替代本笔美元损失。",
+    "event_date": "2026-08-23",
+    "onchain_timestamp_utc": "2026-08-23T06:25:47Z",
+    "chain_id": 1,
+    "tx_urls": [
+      "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e",
+      "https://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+      "https://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+      "https://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+      "https://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+    ],
+    "vulnerable_contract_urls": [
+      "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code",
+      "https://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code",
+      "https://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code",
+      "https://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code",
+      "https://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code",
+      "https://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code"
+    ],
+    "verification_status": "authoritative_original_source_archived;historical_proxy_delegatecalls_bound;raw_snapshot_votes_and_17_actions_and_WETH_payment_confirmed;strategy_online_decompilation_archived;helper_decompilation_timeout;normal_deep_dependencies_incomplete;no_replay",
+    "sheet_row": 91,
+    "source_disclosure": "https://x.com/certikalert/status/2091433962795106499?s=46"
+  },
+  "draft_path": "dataset_artifacts/batches/20261026_x96_y5/term/draft.md",
+  "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/term/provenance.json",
+  "decoded_evidence_path": "dataset_artifacts/batches/20261026_x96_y5/term/decoded_evidence.json",
+  "historical_bindings_path": "dataset_artifacts/batches/20261026_x96_y5/term/historical_bindings.json",
+  "roles": [
+    {
+      "address": "0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2",
+      "role": "受害 ETH Meta Vault，持有 WETH 并向策略分配债务；Vyper Yearn V3 实现"
+    },
+    {
+      "address": "0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0",
+      "role": "LP 封装投票代币，只统计已经主动封装的 LP"
+    },
+    {
+      "address": "0x213771693A4411446b4ECce5bce4a405778b2171",
+      "role": "TokenVoting 提案/快照投票插件"
+    },
+    {
+      "address": "0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6",
+      "role": "执行通过提案的任意动作，具有 Roles 模块身份与 role 1"
+    },
+    {
+      "address": "0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75",
+      "role": "Delay owner；通过成员/目标权限检查后直接调用 Delay"
+    },
+    {
+      "address": "0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33",
+      "role": "模块队列与冷却时间；本次先被 owner 调整，再允许 DAO 排队"
+    },
+    {
+      "address": "0x46DA347d1Db6EdCA62BF6Cd5892Dc284fC938613",
+      "role": "金库管理 Safe，已启用 Delay 模块；无需另外提供 owner 签名即可走模块入口"
+    },
+    {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "role": "普通结算资产，已验证原始源码"
+    },
+    {
+      "address": "0x64E477800051EFb06Ae4086f4b258b270668b4dF",
+      "role": "攻击者代理辅助合约，包装/提案/投票/执行；实现未开源且反编译超时"
+    },
+    {
+      "address": "0x184f2E57b4cE135181FA2A2166AC394339016338",
+      "role": "恶意策略，接收金库授权后拉走并转发 WETH；仅补充反编译"
+    },
+    {
+      "address": "0xa908b3472d76e7744baB0A5911768a4a6300612B",
+      "role": "攻击交易发起人和最终 WETH 收款 EOA"
+    }
+  ],
+  "evidence_gaps": [
+    "完整 JSON-RPC receipt 查询未得到可用结果；使用 Blockscout 原始 topics/data 日志、交易成功状态和完整 rawtrace 交叉核对，不把 null 或错误响应称为成功回执。",
+    "未取得全部历史 Roles 存储与投票参数。历史调用和正常检查源码证明 DAO 的 role 1 实际获准执行三个 Delay 管理动作；不推断该角色是否使用通配目标、具体 selector 白名单或某种参数规则，也不声称完整支持率/参与率配置。",
+    "历史 rawtrace 绑定了本案受害治理代理的实际实现地址；源码匹配等级由 Sourcify 提供，未本地编译或重新做完整部署字节码验证。部分 creationMatch 为 null，不能写成所有合约都是完整创建匹配。",
+    "官方治理文档描述正常七日延时和 LP 否决流程，但该现行页面本身不是攻击前状态快照；此前 cooldown 精确值没有重读。实际三项管理调用、设置为零和同交易执行由历史 trace 证明。",
+    "四个普通子策略及其 Aave/Morpho 深层依赖未形成完整原始源码包；本案不把它们列为漏洞点。原始 trace、WETH 日志和 DebtUpdated 证明这次提款确实发生。获取初始 LP 的路由器源码也未完整归档。",
+    "恶意策略原始源码不可得；高层反编译仅作辅助，原始创建 runtime 与当前 explorer runtime 一致且返回反汇编完整对上输入。未获得攻击区块独立 eth_getCode，不能声称完整证明期间从无变更。",
+    "攻击 helper 实现无已验证原始源码；ethervm 提交 runtime 和按地址查询均超时，无高层输出。保留实际失败页，不用手写伪代码或反汇编冒充高层反编译。历史 wrap/proposal/vote/execute rawtrace 仍展示其实际调用边界。",
+    "本案独立核验 ETH Meta Vault 资金流；未逐笔核验其他 USDC vault 的全部损失、追回与净额，未核定事发时美元价格。loss_usd 留空。",
+    "展示的调用链不需要管理员私钥泄露即可完成；这不是对所有链外事件或密钥安全的全面取证结论。"
+  ],
+  "decompilations": [
+    {
+      "id": "term-attacker-strategy-ethervm",
+      "kind": "public_online_high_level_decompiler_output",
+      "role": "attacker_strategy_supplementary_context",
+      "address": "0x184f2E57b4cE135181FA2A2166AC394339016338",
+      "chain_id": 1,
+      "source_path": "dataset_artifacts/batches/20261026_x96_y5/term/attacker-strategy.ethervm.decompiled.sol",
+      "original_file_path": "dataset_artifacts/batches/20261026_x96_y5/term/attacker-strategy.ethervm.decompiled.sol",
+      "target_path": "decompiled/attacker-strategy.ethervm.decompiled.sol",
+      "raw_response_path": "dataset_artifacts/batches/20261026_x96_y5/term/attacker-strategy-ethervm-response.html",
+      "request_path": "dataset_artifacts/batches/20261026_x96_y5/term/attacker-strategy-ethervm-request.txt",
+      "runtime_path": "dataset_artifacts/batches/20261026_x96_y5/term/blockscout-attacker-strategy-creation-trace.json",
+      "runtime_hex_path": "dataset_artifacts/batches/20261026_x96_y5/term/attacker-strategy-creation-runtime.hex",
+      "historical_block": 25772662,
+      "creation_transaction": "0x595fe9559f6a14fade1b9521a95825030379406ec892b8fae9f09da18a343c60",
+      "tool": "ethervm.io Online Solidity Decompiler",
+      "tool_url": "https://ethervm.io/decompile",
+      "tool_version": null,
+      "tool_version_status": "Returned page does not report decompiler engine version; frontend library versions are not substituted.",
+      "sha256": "d5db55fb22f322d706336cfa1ec0471cbbab3d9c1da02091bee825b13b49e758",
+      "runtime_sha256": "04a1ffff8d99b6391661cbdd1f67c03aecd04c18dbebc9dc2516208c3fc18ce9",
+      "raw_response_sha256": "4d5cd72fc873838267834f4e20275e6ca8eef4adc07b41d010a134f979e4d75c",
+      "runtime_bytes": 2497,
+      "decompiled_error_comment_count": 0,
+      "retrieved_at_utc": "2026-10-26T14:54:07.204787+00:00",
+      "retrieved_at_basis": "local downloaded response file last-write time",
+      "bytecode_binding": "Submitted original creation runtime matches current explorer runtime; all 2497 returned disassembly bytes match submitted runtime. Archive eth_getCode at attack block unavailable; this is not an independent attack-block code dump.",
+      "not_original_source": true,
+      "not_used_to_replace_core_original_source": true,
+      "provenance_path": "dataset_artifacts/batches/20261026_x96_y5/term/decompilation-provenance.json"
+    }
+  ],
+  "not_performed": [
+    "execution of upstream scripts or PoC",
+    "Solidity/Vyper compilation",
+    "deployment",
+    "fork replay",
+    "transactions"
+  ]
+}

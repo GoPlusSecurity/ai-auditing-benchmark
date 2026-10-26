@@ -1,0 +1,187 @@
+Term Vault Governance | Term Finance v1 Developer Documentation
+🖥️
+Term Finance v1 Developer Documentation
+⌘
+Ctrl
+k
+🖥️
+Term Finance v1 Developer Documentation
+Overview
+Term Finance Protocol
+Access Controls
+Deployed Contracts
+Protocol Security
+Solidity API - latest
+Solidity API - 0.5.31
+Solidity API - 0.5.32
+Solidity API - 0.6.0
+Solidity API - 0.9.0
+Solidity API - 2.1.0
+Solidity API - 2.1.1
+DeFiSafety - detailed report
+Github Repo
+Periphery Contracts
+Blue Sheets
+Github Repo
+Term Strategy Vaults
+Core Architecture
+Core Functionality
+Administration
+Yearn Roles & Governance
+Term Vault Governance
+Configuration Guide
+Deployed Contracts
+Solidity API - latest
+Github Repo
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Periphery Contracts
+Term Strategy Vaults
+Administration
+Term Vault Governance
+The governance infrastructure of Term Strategy Vaults is built on a foundation of clearly defined roles and permissions. This structure ensures secure and transparent management while allowing for operational flexibility and depositor protection.
+Role Architecture
+The governance system defines two primary roles in
+Strategy.sol
+:
+MANAGER
+and
+GOVERNOR_ROLE
+, each with distinct responsibilities and permissions.
+Role
+Responsibilities
+MANAGER
+Executes auction-related operations and manages auction offers.
+GOVERNOR_ROLE
+Oversees governance actions, risk parameter configuration, and emergency controls.
+MANAGER Role
+:
+Responsibilities
+:
+Submitting auction offers.
+Managing and canceling existing auction offers.
+Permissioned Functions
+:
+Copy
+submitAuctionOffer
+()
+// Submit auction offers.
+deleteAuctionOffers
+()
+// Cancel or remove auction offers.
+GOVERNOR_ROLE
+:
+Responsibilities
+:
+Configuring protocol risk parameters.
+Managing governance and integration updates.
+Executing emergency controls.
+Permissioned Functions
+:
+Copy
+// Pause Controls
+pauseDeposit
+()
+unpauseDeposit
+()
+pauseStrategy
+()
+unpauseStrategy
+()
+// Governance
+setPendingGovernor
+()
+// Initiate governor transfer.
+setTermController
+()
+// Update TERM protocol version.
+setDiscountRateAdapter
+()
+// Update price oracle.
+// Risk Parameters
+setTimeToMaturityThreshold
+()
+// Set max duration risk.
+setRequiredReserveRatio
+()
+// Set minimum liquidity ratio.
+setRepoTokenConcentrationLimit
+()
+// Set position size limits.
+setDiscountRateMarkup
+()
+// Set pricing premium.
+setCollateralTokenParams
+()
+// Define collateral requirements.
+setRepoTokenBlacklist
+()
+// Blacklist specific tokens.
+Governance System Overview
+The governance system integrates vault LPs as DAO members, providing them with direct oversight and the ability to veto proposals during the timelock period. This layered framework balances operational efficiency with depositor protection.
+Governor Implementation
+:
+Gnosis Safe with a 7-day timelock via the Zodiac Delay Module.
+Actions are initiated through a Proposer Safe for review before execution.
+Proposal Flow
+:
+Flow
+: Proposer Safe → Delay Module (7-day timelock) → Governor Safe → Vault.
+Review Period
+: Proposals are reviewed and discussed during the timelock.
+Veto Mechanism
+:
+Vault LPs, as DAO members, can veto proposals by voting to skip the transaction.
+If the DAO vote passes, it triggers a call to
+setTxNonce
+on the Delay Module, invalidating the transaction.
+Governance Flow Example
+Proposal Initiation
+: Proposer Safe submits a governance action (e.g., parameter change).
+Timelock Period
+:
+Proposal enters the 7-day timelock in the Delay Module.
+Vault LPs, as DAO members, review and discuss the proposal.
+Veto Option
+:
+If the community opposes the proposal, the DAO votes to skip the transaction.
+If passed,
+setTxNonce
+is called, invalidating the transaction.
+Execution
+:
+If no veto occurs, the proposal executes after the timelock.
+This system empowers vault LPs by giving them direct control over governance decisions, ensuring their interests are safeguarded.
+Event Monitoring
+Key governance actions trigger the following events to ensure transparency:
+Event
+Description
+TimeToMaturityThresholdUpdated
+Logs updates to duration caps.
+RequiredReserveRatioUpdated
+Logs changes to reserve ratios.
+RepoTokenConcentrationLimitUpdated
+Tracks updates to position size limits.
+DiscountRateMarkupUpdated
+Tracks changes to rate premiums.
+DepositPaused
+,
+DepositUnpaused
+Indicates deposit state changes.
+NewGovernor(address)
+Records governor role transfers.
+RepoTokenBlacklistUpdated
+Tracks updates to repoToken blacklisting.
+Summary
+Starting with a clear
+Role Architecture
+and integrating vault LPs as DAO members, this governance system ensures secure, transparent, and efficient management. With defined roles, multi-layered protections, and direct community oversight, it balances operational flexibility with depositor protection.
+Last updated
+1 year ago

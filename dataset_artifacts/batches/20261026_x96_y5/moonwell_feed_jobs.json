@@ -1,0 +1,47 @@
+[
+  {
+    "path": "moonwell/chainlink-feed-proxy-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/chainlink-aggregator-address.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+          "data": "0x245a7bfc"
+        },
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/chainlink-source-round.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xef7541b388a77c1709a3d44bfbfc5c1ed3f0ac94",
+          "data": "0xfeaf968c"
+        },
+        "0x302d34c"
+      ]
+    }
+  }
+]

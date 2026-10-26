@@ -1,0 +1,19 @@
+{
+  "sheet_row": 92,
+  "fields": {
+    "timestamp": "3:22 PM · Aug 22, 2026",
+    "target (社媒 or Addr)": "@TheSandboxGame",
+    "description": "8 月 21 日 23:42 UTC 起，攻击者劫持了@TheSandboxGame 部署在 Base 上的 SAND OFT(LayerZero Omnichain Fungible Token）合约的 delegate 权限，并伪造跨链消息无限铸造无背书 SAND。攻击持续了数小时，铸造了数百万亿枚 $SAND，因流动性和储备金限制，最终损失约 67 万美元。",
+    "data_source": "@TheSandboxGame",
+    "original_link": "https://x.com/TheSandboxGame/status/2091063415649251821",
+    "date": "2026-08-22",
+    "lost": "～$670K",
+    "lost_u": "670,000",
+    "malicious_tx": "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9 ",
+    "malicious_address": "0x67624bfadee937c9281b4f98ce18af1bee01257e\n0x07bc449e85d9b66899425df8c8ab49cfb44a5f1e\n0xAbE09907D2038181FC5Fb0ff0c961C147CdA4D22\n0x638Ccb18370eE228378a565c1d4D0F9620d7F296\n0x53eda2e80E46B804C5a47260cE04642e82d004cA\n0xac76b04397c9296dfc00e25c96d8e51b4edfaf29",
+    "malicious_url": "",
+    "malicious_social_account": "",
+    "attack_category": "Exploit",
+    "attack_analysis": "跨链桥攻击"
+  }
+}

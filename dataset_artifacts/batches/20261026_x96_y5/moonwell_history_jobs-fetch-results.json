@@ -1,0 +1,333 @@
+[
+  {
+    "path": "moonwell/mmamo-historical-implementation.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x5c60da1b"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "18ba2055ef9c37acd097f2423ece3ee2f053d23e957a63061f233f937ae348bb",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:09.719164+08:00"
+  },
+  {
+    "path": "moonwell/musdc-historical-implementation.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xedc817a28e8b93b03976fbd4a3ddbc9f7d176c22",
+          "data": "0x5c60da1b"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "18ba2055ef9c37acd097f2423ece3ee2f053d23e957a63061f233f937ae348bb",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:05.537193+08:00"
+  },
+  {
+    "path": "moonwell/mcbBTC-historical-implementation.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xf877acafa28c19b96727966690b2f44d35ad5976",
+          "data": "0x5c60da1b"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "18ba2055ef9c37acd097f2423ece3ee2f053d23e957a63061f233f937ae348bb",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:05.381229+08:00"
+  },
+  {
+    "path": "moonwell/mwsteth-historical-implementation.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x627fe393bc6edda28e99ae648fd6ff362514304b",
+          "data": "0x5c60da1b"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "18ba2055ef9c37acd097f2423ece3ee2f053d23e957a63061f233f937ae348bb",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:05.443783+08:00"
+  },
+  {
+    "path": "moonwell/comptroller-historical-implementation.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+          "data": "0xbb82aa5e"
+        },
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "68968a53c18c59fab214cf08a2cc7eb7a3556f7ce1993d631e24f53ea05fe8fd",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:06.649363+08:00"
+  },
+  {
+    "path": "moonwell/comptroller-oracle-slot4.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+        "0x4",
+        "0x302d361"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "a7dfdbb0ec641ddfca3761b1640d81899916ea5f14512307e107f604c9cc266e",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:05.305776+08:00"
+  },
+  {
+    "path": "moonwell/pre-donation-totalSupply.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x18160ddd"
+        },
+        "0x302d22d"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "81115b4cca735cde3a849c91556b5a714f927ac98c8de231ce1caafe8cc4856f",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:07.391090+08:00"
+  },
+  {
+    "path": "moonwell/pre-donation-getCash.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x3b1d21a2"
+        },
+        "0x302d22d"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "25fdcfc8c02cf8d9c20611cf3c2593108b2dcb711732f8d6d5b4b76caa6cc2a8",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:06.609575+08:00"
+  },
+  {
+    "path": "moonwell/pre-donation-exchangeRateStored.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x182df0f5"
+        },
+        "0x302d22d"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "aa8521213deb2cd8e71f85f156067db8ae3b2bd3c1b73524c716bf93bc20b595",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:06.617801+08:00"
+  },
+  {
+    "path": "moonwell/post-donation1-totalSupply.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x18160ddd"
+        },
+        "0x302d22e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "81115b4cca735cde3a849c91556b5a714f927ac98c8de231ce1caafe8cc4856f",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:11.975639+08:00"
+  },
+  {
+    "path": "moonwell/post-donation1-getCash.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x3b1d21a2"
+        },
+        "0x302d22e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "440bbda8bf0fb0578dbaa16a89866cc8588895bb214b0524125f4fdef63b046b",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:07.963678+08:00"
+  },
+  {
+    "path": "moonwell/post-donation1-exchangeRateStored.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x182df0f5"
+        },
+        "0x302d22e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "e7f83158c68869af7de10aa2290b1c3062fff030483ff14ac91969af302ab90a",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:07.631033+08:00"
+  },
+  {
+    "path": "moonwell/post-donation2-totalSupply.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x18160ddd"
+        },
+        "0x302d251"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "81115b4cca735cde3a849c91556b5a714f927ac98c8de231ce1caafe8cc4856f",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:07.817899+08:00"
+  },
+  {
+    "path": "moonwell/post-donation2-getCash.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x3b1d21a2"
+        },
+        "0x302d251"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "1c8e9283a5cfb3ba1983c9013a1e9aa55dabc2d337701256c61fd6dfba76f922",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:08.516247+08:00"
+  },
+  {
+    "path": "moonwell/post-donation2-exchangeRateStored.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0x182df0f5"
+        },
+        "0x302d251"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 102,
+    "sha256": "fbf3c1e0da3ec1f86759bff031732fa4e9016414cb1e974924c4de2fc75ffdc1",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:08.786594+08:00"
+  },
+  {
+    "path": "moonwell/borrow-block.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0x302d361",
+        false
+      ]
+    },
+    "http_status": 200,
+    "bytes": 49531,
+    "sha256": "5998ccdc9538642d6615c5c3ff0b079d72c7a9c80e4b0b43b87245a0fe8f08ac",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:56:09.531077+08:00"
+  }
+]

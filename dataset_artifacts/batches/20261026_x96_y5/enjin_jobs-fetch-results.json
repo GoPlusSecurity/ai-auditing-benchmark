@@ -1,0 +1,119 @@
+[
+  {
+    "path": "enjin/nft-template-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x13fA4b9a6C2F2604C919f96F456e3b50E968b157?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:06.050307+08:00"
+  },
+  {
+    "path": "enjin/ft-template-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x268c039a3127d3107c014f0dc6c390a53e6db27f?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:05.738571+08:00"
+  },
+  {
+    "path": "enjin/nft-wrapper-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x24591e792A404e5BD48AC0F694339D807b02CfD2?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:06.062865+08:00"
+  },
+  {
+    "path": "enjin/ft-wrapper-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x75512f843d8d22593d7256708ef80a22b97baf5e?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:06.570902+08:00"
+  },
+  {
+    "path": "enjin/router-manager-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x04866013862349a6A19A04C8a1590ea2cF026134?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:05.738571+08:00"
+  },
+  {
+    "path": "enjin/adapters-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x68ee930ea6ad962205f1e29ae79bcc3dfa07c837?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:05.738571+08:00"
+  },
+  {
+    "path": "enjin/users-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x1b73f45892d528379397922e8bf160b8710ee997?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:06.758818+08:00"
+  },
+  {
+    "path": "enjin/storage-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0x4E643a25a64952895f553f20252861258727174e?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:07.633675+08:00"
+  },
+  {
+    "path": "enjin/platform-source.json",
+    "url": "https://sourcify.dev/server/v2/contract/1/0xfaaFDc07907ff5120a76b34b731b278c38d6043C?fields=all",
+    "error": "HTTP Error 404: Not Found",
+    "retrieved_at": "2026-10-26T21:46:07.689787+08:00"
+  },
+  {
+    "path": "enjin/analysis.html",
+    "url": "https://yinhui1984.github.io/enjin-cryptoitems-attack-analysis/",
+    "http_status": 200,
+    "bytes": 113728,
+    "sha256": "fbd4a01a54273192c572b2394c0f96955a524c8e0dc484916adcc2bc98ecf568",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-10-26T21:46:06.659502+08:00"
+  },
+  {
+    "path": "enjin/transaction.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xd4a382da03c99ce3084661b913b50b525a4b283f66f510bcf1040152830b2a7e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 13994,
+    "sha256": "fb95c2d592fbb0ffb69d2a70fc5516b3c2a74eff8a45007fa0745c684b7b6651",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:46:06.761320+08:00"
+  },
+  {
+    "path": "enjin/receipt.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd4a382da03c99ce3084661b913b50b525a4b283f66f510bcf1040152830b2a7e"
+      ]
+    },
+    "http_status": 200,
+    "bytes": 38,
+    "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:46:07.282162+08:00"
+  },
+  {
+    "path": "enjin/trace.json",
+    "url": "https://ethereum-rpc.publicnode.com",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xd4a382da03c99ce3084661b913b50b525a4b283f66f510bcf1040152830b2a7e",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    },
+    "http_status": 200,
+    "bytes": 127,
+    "sha256": "09a8e5cd25b746dc33bfc370123f1b6f1ccb10cb7a05fe8a0c4eb8cf0b212076",
+    "content_type": "application/json",
+    "retrieved_at": "2026-10-26T21:46:07.545673+08:00"
+  }
+]

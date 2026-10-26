@@ -1,0 +1,483 @@
+[
+  {
+    "role": "token",
+    "source_response": "token-source.json",
+    "source_verified_address": "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37",
+    "historical_reads": [
+      {
+        "file": "token-runtime-before-blast.json",
+        "block": 117979401
+      },
+      {
+        "file": "token-runtime-attack-blast.json",
+        "block": 117979402
+      }
+    ],
+    "before_equals_attack": true,
+    "before_equals_source_onchain": true,
+    "attack_equals_source_onchain": true,
+    "before_equals_recompiled": true,
+    "provider_recompiled_plus_reported_transforms_equals_historical": true,
+    "runtime_bytes": 16671,
+    "runtime_sha256": "9fcdb86e71d345f48cdb29928fae1eabac1105d19dbaf16ec6046e58d83cd8d0",
+    "source_match": "exact_match",
+    "applied_provider_transformations": [],
+    "local_compilation_performed": false
+  },
+  {
+    "role": "v2_router",
+    "source_response": "v2-router-source.json",
+    "source_verified_address": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "historical_reads": [
+      {
+        "file": "v2_router-runtime-before-blast.json",
+        "block": 117979401
+      },
+      {
+        "file": "v2_router-runtime-attack-blast.json",
+        "block": 117979402
+      }
+    ],
+    "before_equals_attack": true,
+    "before_equals_source_onchain": true,
+    "attack_equals_source_onchain": true,
+    "before_equals_recompiled": false,
+    "provider_recompiled_plus_reported_transforms_equals_historical": true,
+    "runtime_bytes": 21936,
+    "runtime_sha256": "4271c7697da84568c79ed22a5376d2b79cd2c37589170ef4d12dd284d5afa22e",
+    "source_match": "match",
+    "applied_provider_transformations": [
+      {
+        "reason": "immutable",
+        "offset": 4295,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 4549,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 4971,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 5028,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 5455,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 6116,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 6324,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 6817,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 8799,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9216,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9641,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10908,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 11743,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 12401,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 12442,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 12490,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 12967,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 13398,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 14381,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 14795,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 17481,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 17548,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 18412,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 18893,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 20296,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 20521,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 20649,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 428,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 3677,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 3736,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 4053,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 4760,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 5874,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 6358,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 7710,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 8098,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 8306,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 8569,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9004,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9153,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9843,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10010,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10223,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10484,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10716,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 10845,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 12524,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 13346,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 13432,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 13484,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 13613,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 14151,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 14583,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 14732,
+        "length": 32
+      },
+      {
+        "reason": "cborAuxdata",
+        "offset": 21883,
+        "length": 53
+      }
+    ],
+    "local_compilation_performed": false
+  },
+  {
+    "role": "v3_router",
+    "source_response": "v3-router-source.json",
+    "source_verified_address": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+    "historical_reads": [
+      {
+        "file": "v3_router-runtime-before-blast.json",
+        "block": 117979401
+      },
+      {
+        "file": "v3_router-runtime-attack-blast.json",
+        "block": 117979402
+      }
+    ],
+    "before_equals_attack": true,
+    "before_equals_source_onchain": true,
+    "attack_equals_source_onchain": true,
+    "before_equals_recompiled": false,
+    "provider_recompiled_plus_reported_transforms_equals_historical": true,
+    "runtime_bytes": 12154,
+    "runtime_sha256": "4697892c533f4b891875765d28fc24cfccf579834f41644c139e7a4986a08566",
+    "source_match": "match",
+    "applied_provider_transformations": [
+      {
+        "reason": "immutable",
+        "offset": 962,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 3937,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 9435,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 3901,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 330,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 1786,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 2084,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 2238,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 2302,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 2600,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 5890,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 5986,
+        "length": 32
+      },
+      {
+        "reason": "immutable",
+        "offset": 6115,
+        "length": 32
+      }
+    ],
+    "local_compilation_performed": false
+  },
+  {
+    "role": "pair",
+    "source_response": "pair-reference-source.json",
+    "source_verified_address": "0x63844BD4BFad910B1643713302a1cC1ed20d50c3",
+    "historical_reads": [
+      {
+        "file": "pair-runtime-before-blast.json",
+        "block": 117979401
+      },
+      {
+        "file": "pair-runtime-attack-blast.json",
+        "block": 117979402
+      }
+    ],
+    "before_equals_attack": true,
+    "before_equals_source_onchain": true,
+    "attack_equals_source_onchain": true,
+    "before_equals_recompiled": false,
+    "provider_recompiled_plus_reported_transforms_equals_historical": true,
+    "runtime_bytes": 14981,
+    "runtime_sha256": "ab89a0244c7e5a86aa8e1673b4c5b825db93bc406c7934e923ebb0a7c4548ac7",
+    "source_match": "match",
+    "applied_provider_transformations": [
+      {
+        "reason": "cborAuxdata",
+        "offset": 14929,
+        "length": 52
+      }
+    ],
+    "local_compilation_performed": false,
+    "target_address": "0x8f2d1A3992856a860304f1B86534B6B129Cc4df7",
+    "binding_limit": "Historical target runtime is identical to the verified reference address runtime. This does not turn the reference source response into a direct target verification, target creation-transaction proof, or independent local compilation."
+  },
+  {
+    "role": "usdt",
+    "source_response": "usdt-source.json",
+    "source_verified_address": "0x55d398326f99059fF775485246999027B3197955",
+    "historical_reads": [
+      {
+        "file": "usdt-runtime-before-blast.json",
+        "block": 117979401
+      },
+      {
+        "file": "usdt-runtime-attack-blast.json",
+        "block": 117979402
+      }
+    ],
+    "before_equals_attack": true,
+    "before_equals_source_onchain": true,
+    "attack_equals_source_onchain": true,
+    "before_equals_recompiled": false,
+    "provider_recompiled_plus_reported_transforms_equals_historical": true,
+    "runtime_bytes": 4413,
+    "runtime_sha256": "a5a6d887c581c25cba4104e4281a530044ba59d718e62cdaa80ef89900299d50",
+    "source_match": "match",
+    "applied_provider_transformations": [
+      {
+        "reason": "cborAuxdata",
+        "offset": 4361,
+        "length": 52
+      }
+    ],
+    "local_compilation_performed": false
+  }
+]

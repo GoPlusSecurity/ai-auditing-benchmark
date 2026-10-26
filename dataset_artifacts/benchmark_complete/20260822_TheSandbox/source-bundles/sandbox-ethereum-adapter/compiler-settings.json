@@ -1,0 +1,20 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.23+commit.f704f362",
+  "compilerSettings": {
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": true
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 2000,
+      "enabled": true
+    },
+    "evmVersion": "paris",
+    "remappings": []
+  },
+  "name": "OFTAdapterForSand",
+  "fullyQualifiedName": "@sandbox-smart-contracts/oft-sand/contracts/OFTAdapterForSand.sol:OFTAdapterForSand"
+}

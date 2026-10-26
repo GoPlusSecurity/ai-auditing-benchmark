@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "scanned_rows": 12,
+    "qualifying_source_rows": 5,
+    "new_cases": 4,
+    "reused_existing_cases": 1,
+    "completed_existing_cases": 0,
+    "duplicate_rows_merged": 0,
+    "skipped_rows": 7
+  },
+  "source_files": 566,
+  "slice_files_including_decompiled": 162,
+  "decompiled_files": 3,
+  "csv_new_rows_each": 4,
+  "case_ids": [
+    "20260820_Allbridge_CCTP",
+    "20260822_TheSandbox",
+    "20260823_TermLabs",
+    "20260826_FH",
+    "20260827_Moonwell_MAMO"
+  ]
+}

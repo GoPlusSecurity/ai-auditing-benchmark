@@ -1,0 +1,266 @@
+{
+  "first_bscscan_attempt": {
+    "current_time": "2026-10-26 14:44:36 UTC",
+    "result": {
+      "chunk_id": "c5c74d",
+      "wall_time_seconds": 0.9888896,
+      "exit_code": 1,
+      "original_token_count": 1001,
+      "output": "Invoke-WebRequest: \r\nLine |\r\n   2 |  Invoke-WebRequest -Uri 'https://bscscan.com/address/0x8f2d1A3992856a8 …\r\n     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Just a moment...*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'SqtuI15e3f4LIDsW.2Gp0KeaNpaJzfgjsSFcwSFc9WA-1793025877-1.2.1.1-QhGUq4qHyR3084tkvSwo8wCDYdoPQlg05FjLdAOaPj2l0DcLt9HO13eQmTnBZGyR',cITimeS: '1793025877',cN: 'xi2uVtOCvqSEGvHisQ1i9Z',cRay: 'a50a3d75a9f6269d',cTplC:0,cTplO:0,cTplV:5,cType: 'non-interactive',cUPMDTk:\"/address/0x8f2d1A3992856a860304f1B86534B6B129Cc4df7?__cf_chl_tk=VM2XkaCHO8buFmHgg3kMIYUWzVD98OJm1saRSvVDrJk-1793025877-1.0.1.1-JhfOAgk0DMcyllPoiJ3t70AgYJyYkjSrXOICnbQnYqM\",cvId: '3',cZone: 'bscscan.com',fa:\"/address/0x8f2d1A3992856a860304f1B86534B6B129Cc4df7?__cf_chl_f_tk=VM2XkaCHO8buFmHgg3kMIYUWzVD98OJm1saRSvVDrJk-1793025877-1.0.1.1-JhfOAgk0DMcyllPoiJ3t70AgYJyYkjSrXOICnbQnYqM\",md: 'fnUKuetRek8FaCuwCjNYnpQhqJqbu1hT27ZTdq7NzUA-1793025877-1.2.1.1-Qldpy2QqcroAcgw43a3rvMnQ0SfWfflrUJ8WAXQNWgdqnsDrMQiz0cQT9Y05eQvx4k.s9VkHUHZ1Wt_zT9ibX.NEz4QYYwNOfXNvPBzFRSteqSaGW8F0EgTHmnWFjmKEQOyNRJxqJxR5V9GDhZoi0f5zQLdk7XiXWdTcq14yzN42o74hUdPDOKpVfNFA96XKs5xQL4bWq8NGSiIQ1M8glw8l2woWpnIpP8d0phytkfHZItYYV4.TtvILDt4C4trjEAD6pVXVDd1RqGk2pDZ95kQ0gUJYxib_._IOv9Ahr.c44eUMeZtYt3jb6DErsnfHMryOooduXiuGYgLdCxq9b8t3YrT.s68iYNunid2PpQ62O7zfpDT9QNPpC68kcJrBYmVewEwqb6nG0O5Y19AMLAr_F_0CZ0NiSJy9n7.FnbMOsLHq4E82KCg0LjEi2ToQTcFs08uQlrksWyoh3XG5LptHkYpDtB9lKdqt9ynNkdaFKTKP3gxTMWZvhXb9VmjtJclWkmKTRwkoIUPcojdKGkLjg14CJ.ltus8R8oxbMgQQNtxNF8x21lzchK51tk.s5s7trPq9M8XFB4odkt2i_0rfwKcMB_bKurot8qUjaezt.K74jvfk6mhAJV01XaY0nTxzEj8kqn0yYafcaENdx9r4y0F3mHv8XwKCtWCYe2xCzOyAe7yaUL0.UXpNS7Po1KsD4hOQbfzUTRlPfTMQTOgxzXV_KdaotH3JkZ4CSI7p2WUJ1OFPuQwTHGwni1I1Ntgl4Ioeo.FNx6Gfbo1OlazfwOo_NUaQMqNU.g1Wbta3xlz9kgKjaN7wjZUvDU9KK0NYtQDVVD19lXvMOYaisUJ7QaB773VF4mwhwJOxwwmM3worn7hB0xBkmnT6EDM0mnvvWQgS.3ZUcrdXMA5aiAlBsdg9.rdnimAoxH83uTi9rdFtR7vTEU7W57WmTG0l7f5DGpWzFrY._EU8oFwMXCQKNdP3CpDJbHKu78oBwjXQBB40V9j6ZyOH6bYykadWnBDPVS170jJFUhFddyxBgVph.PzeP6Opw.vBvqcIqjer41UyAHDtK6AZbDTh7drQKtwPGu8TcbAbwTlSd8RwtIsZ7Qv2H0ZU3ma7Kd6Mt7TEkEThdhIM5Z0WWB6izS0r4cgZ26eKqMEd6Q8zeKU0gfsO26aPdpZyKH00v2rgsrZ0vFJkQqokU.5SJfYKLhBE',mdrd: 'EDhu5Q44Owit.WuSywQaeEvYvieLpHfNJpr5aO5t6E0-1793025877-1.2.1.1-jdZNrSd8vO9MfkuUkOVBLebmZV3bjjIdaM5wn0Tzsrkcs_6kDhgkJ38MjV3hCmwydORFNPSISUlxpTjDmQRCouSTdZnmvLe4Xnk6rgg1c.Xtich260Zd3dviQrnj47vNfXNNnNGebRRY79BCF9oAQlRtgKXrsPLo2cxaBTmE8y5AagcgoQ1T4p_b6RaUvMVWdYg7_qgK_ST29LPgnovBAhKiYlY2e_pZAismPLDr.CEtHYjwhfJUKzxWuHZu_P2RQhJnEpdPkBJ886tNOdzueA',};var a = document.createElement('script');a.nonce = 'xi2uVtOCvqSEGvHisQ1i9Z';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a50a3d75a9f6269d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/address/0x8f2d1A3992856a860304f1B86534B6B129Cc4df7?__cf_chl_rt_tk=VM2XkaCHO8buFmHgg3kMIYUWzVD98OJm1saRSvVDrJk-1793025877-1.0.1.1-JhfOAgk0DMcyllPoiJ3t70AgYJyYkjSrXOICnbQnYqM\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());\r\n"
+    }
+  },
+  "requests": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\token-runtime-before.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0xdcf0dfe0053677a67610c6d08ea1f5c78df8ca37",
+            "0x7083909"
+          ]
+        },
+        "role": "token",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.036Z",
+        "result": {
+          "chunk_id": "adfe16",
+          "wall_time_seconds": 1.2839506,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\token-runtime-attack.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0xdcf0dfe0053677a67610c6d08ea1f5c78df8ca37",
+            "0x708390a"
+          ]
+        },
+        "role": "token",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.625Z",
+        "result": {
+          "chunk_id": "106401",
+          "wall_time_seconds": 1.4456961,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v2_router-runtime-before.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+            "0x7083909"
+          ]
+        },
+        "role": "v2_router",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.037Z",
+        "result": {
+          "chunk_id": "f8b94e",
+          "wall_time_seconds": 1.3246758,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v2_router-runtime-attack.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+            "0x708390a"
+          ]
+        },
+        "role": "v2_router",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.626Z",
+        "result": {
+          "chunk_id": "c51b36",
+          "wall_time_seconds": 1.6325351000000001,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v3_router-runtime-before.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+            "0x7083909"
+          ]
+        },
+        "role": "v3_router",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.628Z",
+        "result": {
+          "chunk_id": "767d8a",
+          "wall_time_seconds": 1.6324041999999999,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\v3_router-runtime-attack.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+            "0x708390a"
+          ]
+        },
+        "role": "v3_router",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.631Z",
+        "result": {
+          "chunk_id": "4eeb1c",
+          "wall_time_seconds": 1.6324258,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\pair-runtime-before.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x8f2d1a3992856a860304f1b86534b6b129cc4df7",
+            "0x7083909"
+          ]
+        },
+        "role": "pair",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.634Z",
+        "result": {
+          "chunk_id": "bbc245",
+          "wall_time_seconds": 1.632346,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\pair-runtime-attack.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x8f2d1a3992856a860304f1b86534b6b129cc4df7",
+            "0x708390a"
+          ]
+        },
+        "role": "pair",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.645Z",
+        "result": {
+          "chunk_id": "99d791",
+          "wall_time_seconds": 1.6759754999999998,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\usdt-decimals-attack.json",
+        "url": "https://bsc-dataseed.bnbchain.org",
+        "payload": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x55d398326f99059ff775485246999027b3197955",
+              "data": "0x313ce567"
+            },
+            "0x708390a"
+          ]
+        },
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.642Z",
+        "result": {
+          "chunk_id": "9ab206",
+          "wall_time_seconds": 1.5621795,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       200\r\n\r\n"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "path": "dataset_artifacts\\batches\\20261026_x96_y5\\fh\\pair-bscscan-code.html",
+        "url": "https://bscscan.com/address/0x8f2d1A3992856a860304f1B86534B6B129Cc4df7#code",
+        "started_at_utc": "2026-10-26T14:45:00.909Z",
+        "finished_at_utc": "2026-10-26T14:45:03.638Z",
+        "result": {
+          "chunk_id": "437419",
+          "wall_time_seconds": 1.5079415,
+          "exit_code": 0,
+          "original_token_count": 10,
+          "output": "\r\nStatusCode\r\n----------\r\n       403\r\n\r\n"
+        }
+      }
+    }
+  ]
+}

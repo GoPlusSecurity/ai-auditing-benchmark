@@ -1,0 +1,153 @@
+[
+  {
+    "path": "moonwell/market-implementation-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x1FADFF493529C3Fcc7EE04F1f15D19816ddA45B7",
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/comptroller-implementation-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x73D8A3bF62aACa6690791E57EBaEE4e1d875d8Fe",
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/chainlink-oracle-historical-code.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xEC942bE8A8114bFD0396A5052c36027f2cA6a9d0",
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/before-rise-mamo-price.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xec942be8a8114bfd0396a5052c36027f2ca6a9d0",
+          "data": "0xfc57d4df0000000000000000000000002f90bb22eb3979f5ffad31ea6c3f0792ca66da32"
+        },
+        "0x302d090"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/peak-price-mamo-price.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xec942be8a8114bfd0396a5052c36027f2ca6a9d0",
+          "data": "0xfc57d4df0000000000000000000000002f90bb22eb3979f5ffad31ea6c3f0792ca66da32"
+        },
+        "0x302d34c"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/final-borrow-mamo-price.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xec942be8a8114bfd0396a5052c36027f2ca6a9d0",
+          "data": "0xfc57d4df0000000000000000000000002f90bb22eb3979f5ffad31ea6c3f0792ca66da32"
+        },
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/mamo-feed-address.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xec942be8a8114bfd0396a5052c36027f2ca6a9d0",
+          "data": "0x3b39a51c000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000044d414d4f00000000000000000000000000000000000000000000000000000000"
+        },
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/mamo-historical-market.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+          "data": "0x8e8f294b0000000000000000000000002f90bb22eb3979f5ffad31ea6c3f0792ca66da32"
+        },
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/mamo-historical-supply-cap.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+          "data": "0x02c3bcbb0000000000000000000000002f90bb22eb3979f5ffad31ea6c3f0792ca66da32"
+        },
+        "0x302d361"
+      ]
+    }
+  },
+  {
+    "path": "moonwell/mamo-borrower-snapshot.json",
+    "url": "https://mainnet.base.org",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "data": "0xc37f68e2000000000000000000000000719eae70d4a83f35bf82a2740699f5db84be919d"
+        },
+        "0x302d34c"
+      ]
+    }
+  }
+]

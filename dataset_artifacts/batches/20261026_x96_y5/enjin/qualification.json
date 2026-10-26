@@ -1,0 +1,11 @@
+{
+  "row": 88,
+  "event": "Enjin CryptoItems",
+  "qualifies": false,
+  "case_id": null,
+  "status": "skipped",
+  "source_qualification": "public_original_vulnerable_source_not_obtained",
+  "reason": "关键 NFT 模板和 initialize 实现的 Etherscan 页面均要求 Verify and Publish；九个相关地址的 Sourcify 查询均404。官方 enjin/contracts 只含代币/众筹源码，enjin/erc-1155 是样例实现，未取得对应槽位冲突与接管路径的公开原始源码。分析文中的重建代码、反编译片段和PoC不能代替资格证明，因此本批跳过。",
+  "evidence": ["nft-template.html", "nft-wrapper.html", "official-repository-tree.json", "official-org-repositories.json", "erc1155-tree.json", "../enjin_jobs-fetch-results.json"],
+  "limits": "404仅表示此次服务未提供，不证明源码永远不存在。未执行分析文章中的PoC，未把反编译或样例代码收入正式数据集。"
+}
