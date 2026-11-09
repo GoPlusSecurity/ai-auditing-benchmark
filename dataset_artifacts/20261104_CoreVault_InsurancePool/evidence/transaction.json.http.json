@@ -1,0 +1,21 @@
+{
+  "id": "corevault-transaction",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:30:44.772311+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "e245697259f7e0efd88cd102bb7477b325dca08ead1db5b0ade6feb9d527f18f",
+  "bytes": 9804
+}

@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "schema_source": "dataset/20261101_PremiaV3/pool-core/contracts/pool/IPoolEvents.sol",
+  "cases": {
+    "corevault": {
+      "receipt_sha256": "9ab3060c316aa5cbadcd28f0b3ef6649397aca0b531122c5f45910c71f198537",
+      "derivative_sha256": "d781bc903a6d2e5006d37b428f8687b303413394692f960eca71f0918244b5c1",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 93
+    },
+    "premia1": {
+      "receipt_sha256": "38068758da7330c93aeb6d8baebf672d93915f98ab45d804e79745cf7df814d7",
+      "derivative_sha256": "dff058b4554071b550e0485b06000e9121445cdc77dd599eb3d7bce0a3ba8bf9",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 386
+    },
+    "premia2": {
+      "receipt_sha256": "87fbb629f3f7d2824b47ed67cf49a017b051a9861ab95cf562454dd37df988e3",
+      "derivative_sha256": "6fe5e5c6faa818cdd34f3828dfea5bd8044448466b1b854b49168c37bc22f0a0",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 393
+    },
+    "premia-setup": {
+      "receipt_sha256": "56b10d07313b5c0b2dd379f834f159abb0f9715b7f60b72de5b0a3605cb9ce0a",
+      "derivative_sha256": "748ef74712b9c9fcb5e793e9014a65105d808623fbce4769998f18d396f85e64",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 178
+    },
+    "x100": {
+      "receipt_sha256": "f1617897470bd1515c1e4d40c01bd26a1939d3f29374dfb43f593c90c24e5eed",
+      "derivative_sha256": "8adcd125e14da1bfcbd06e3506a808484588fea6fb9222a9c9fcdb5bcc806616",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 55
+    },
+    "nem": {
+      "receipt_sha256": "955ef7c0e8a9a1591b3485ea07c2f3c55b458589129572c344ef6be2c132397c",
+      "derivative_sha256": "63b13cb81e3067974f511a743a2222a3489a9a77336c9e3c3053b08900035cf1",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 1608
+    },
+    "alpscon": {
+      "receipt_sha256": "d29fa4333e21b520e127677ea998a57d270cc2d95553f6d659c038e07a1beece",
+      "derivative_sha256": "fe38eca17db2847c0255f744e7efe416dc56cbfb7a71801d9c82afc9832ac2e4",
+      "identical_after_delivered_schema_rerun": true,
+      "logs": 56
+    }
+  },
+  "rechecked_after_directory_relocation": true
+}

@@ -1,0 +1,14 @@
+{
+  "id": "row30-blockscout-trace",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795/raw-trace",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:47:39.156065+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795/raw-trace",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "9c4d09360751122e030eb4a8328a735cd2dfb9fc183dd56425994439d019f104",
+  "bytes": 435637
+}

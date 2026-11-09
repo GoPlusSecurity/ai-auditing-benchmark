@@ -1,0 +1,14 @@
+{
+  "id": "premia-source-0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:49:54.837867+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"9a1c0-MwQI+1AM+GHc01iNUmjemoCrOJg\"",
+  "last_modified": null,
+  "sha256": "8c8496a6c8880c8275d8375e28fa50e798ff03ff0b699af963ac475cd5350cbc",
+  "bytes": 631232
+}

@@ -1,0 +1,18 @@
+{
+  "id": "premia-attack2-receipt",
+  "url": "https://arbitrum-one-rpc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:33:52.023203+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 403: Forbidden",
+  "exception": "HTTPError",
+  "status": 403,
+  "error_body_sha256": "9a9c4cad7278f824736e3f2579d619b818ecf0c17cab024fb739e1cb63fe82e8"
+}

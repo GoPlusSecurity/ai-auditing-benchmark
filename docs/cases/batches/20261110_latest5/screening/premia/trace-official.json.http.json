@@ -1,0 +1,24 @@
+{
+  "id": "premia-trace-official",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:35:23.246464+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "d136bfda1c2a1903d51ab0231dc7570735c4972511a688dde8ec43533d0111ba",
+  "bytes": 127
+}

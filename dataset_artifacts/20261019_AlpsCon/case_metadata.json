@@ -1,0 +1,65 @@
+{
+  "case_id": "20261019_AlpsCon",
+  "sheet_row": 29,
+  "chain_id": 56,
+  "project_cn": "AlpsCon AI Trade Hub",
+  "project_en": "AlpsCon AI Trade Hub",
+  "vulnerability_cn": "跨版本余额纳入奖励时未初始化收益起点，并信任公开测试账户",
+  "vulnerability_en": "Legacy-aware reward balances lack an entry baseline and trust a public test account",
+  "detail_cn": "V9的_getUserLockedAmount把未迁移用户在旧版本中的锁仓加入当前余额，但新账户entryProfitPerShare仍为零；_calculateUserEarningByShares按该余额乘以累计profitPerShare与零起点之差。_updateUserProfitCheckpoint先记入错误收益再推进起点，claimServiceResults据此付款。攻击者通过已被信任的Hardhat默认地址执行EIP-7702委托代码，借入1027990 USDC，在仍开放的V6买入并迁移为锁仓，再领取新版本历史奖励。回执证实V9净支付312915.556577704966668487 USDC，V7/V8另有付款，返还1028503.995 USDC本金及费用后攻击者收到152295.362485928986021436 USDC。V6至V9及付款依赖原始源码已取得；无完整内部跟踪，历史白名单、指数槽和全部版本调用顺序未独立核实，CSV损失留空。",
+  "detail_en": "V9's _getUserLockedAmount includes legacy locked balances for an unmigrated user, while a fresh account's entryProfitPerShare remains zero. _calculateUserEarningByShares multiplies that balance by the accumulated profitPerShare minus the zero baseline. _updateUserProfitCheckpoint records the false earnings before advancing the baseline; claimServiceResults then pays them. The attacker executed EIP-7702-delegated code through a trusted Hardhat default account, borrowed 1027990 USDC, bought into the still-open V6, migrated the stake to locked balance and claimed historical rewards in newer versions. The receipt confirms a V9 net payment of 312915.556577704966668487 USDC and separate V7/V8 payments. After 1028503.995 USDC of principal and fees was returned, the attacker received 152295.362485928986021436 USDC. Original V6-V9 and payment-dependency sources were acquired. Full internal traces, historical whitelist/index slots and every version's call order were not independently verified; the CSV loss field is blank.",
+  "loss_usd": null,
+  "loss_scope": "源表约152000美元、攻击者净收152295.362485928986021436 USDC与各资金模块净流出不是同一口径；未把全部奖励总额当成损失。",
+  "victims": [
+    "0x74f091a719fdd47a95f378c7fb5c3d18a4582405",
+    "0x047284b1e752e39ae7a721d361ec0b0a554ef014",
+    "0xa58fbe390210460b7b07e52a29d4eb84308472e1",
+    "0x9b210da482217afc24074e57f6f8337fe07f0124"
+  ],
+  "evidence_gaps": [
+    "No full internal trace; V7 and V8 receipt transfers are not asserted to be internal subcalls of V9.",
+    "Historical whitelist membership and profit-index/storage values were not independently recovered. The public test-account role is supported by original researcher disclosure and successful transaction behaviour.",
+    "The EIP-7702 authorization list is archived but its signatures were not independently recovered.",
+    "Historical deployed runtime binding, compilation and fork replay were not completed."
+  ],
+  "event_date": "2026-10-19",
+  "original_rows": [
+    29
+  ],
+  "source_sheet_snapshot": "../../docs/cases/batches/20261110_latest5/snapshot.json",
+  "batch_results": "../../docs/cases/batches/20261110_latest5/results.json",
+  "source_qualification_scope": "../../docs/cases/batches/20261110_latest5/scope-confirmation.json",
+  "necessary_code_coverage": "../../docs/cases/batches/20261110_latest5/source-coverage.md",
+  "case_document": "../../docs/cases/20261019_AlpsCon.md",
+  "code_root": "../../dataset/20261019_AlpsCon",
+  "source_status": "original_verified_source",
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json",
+  "public_original_vulnerable_source": true,
+  "tx_urls": [
+    "https://bscscan.com/tx/0x824b83f94bdc2e69b81f1cb2dfdf9d4aeed066114e3de29e3af59bd2d9355fc2"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x74f091a719fdd47a95f378c7fb5c3d18a4582405#code",
+    "https://bscscan.com/address/0x047284b1e752e39ae7a721d361ec0b0a554ef014#code",
+    "https://bscscan.com/address/0xa58fbe390210460b7b07e52a29d4eb84308472e1#code",
+    "https://bscscan.com/address/0x9b210da482217afc24074e57f6f8337fe07f0124#code"
+  ],
+  "verification_status": {
+    "source": "original source, provider-reported runtime/creation matches; no local recompile",
+    "historical_code": "not independently established; see evidence_gaps",
+    "historical_state": "only specific archived observations; no complete pre-attack state reconstruction",
+    "receipts": "successful archived transaction receipts and decoded asset movements/events",
+    "trace": "no full internal trace; archived receipts and source-based interpretation only",
+    "compilation": "not_run",
+    "deployment": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_used; official online output unavailable where essential, those candidates skipped"
+  },
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_file_count": 91
+}

@@ -1,0 +1,21 @@
+{
+  "id": "row28-transaction",
+  "url": "https://mainnet.base.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0x02b039a6345348d984e4a0b70dd233127772206e61ce82c390c4709c0b8d790a"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:40:19.736616+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://mainnet.base.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "e84b4d32defa39c80be9e32d6f51a5e3cfcff7f268b5e7182839298f757c44bb",
+  "bytes": 10535
+}

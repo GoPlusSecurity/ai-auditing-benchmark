@@ -1,0 +1,14 @@
+{
+  "id": "tendril-original",
+  "url": "https://sourcify.dev/server/v2/contract/56/0xb1afdfd850da168f2cc9f742e11cdda5273973d2?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:10.492526+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/56/0xb1afdfd850da168f2cc9f742e11cdda5273973d2?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"430d8-6HX3srtmJ3H+eg7H/7ZiBVbw9h8\"",
+  "last_modified": null,
+  "sha256": "e25dbb477025c6e3f66eccc0016bcd2c87518ce11d9f25547f5574fba161d653",
+  "bytes": 274648
+}

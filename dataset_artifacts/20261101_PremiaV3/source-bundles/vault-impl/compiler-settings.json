@@ -1,0 +1,19 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "viaIR": false,
+    "libraries": {
+      "contracts/libraries/OptionMathExternal.sol": {
+        "OptionMathExternal": "0xfbf570d0278ec25b0bd406907fa848c5b9e78209"
+      }
+    },
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    }
+  },
+  "name": "UnderwriterVault",
+  "fullyQualifiedName": "contracts/vault/strategies/underwriter/UnderwriterVault.sol:UnderwriterVault"
+}

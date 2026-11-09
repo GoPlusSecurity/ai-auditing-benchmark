@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "same_snapshot_repeat_appended_nothing": true,
+  "csv_sha256_before": {
+    "ai-auditing-benchmark_cn.csv": "d35fe2c977e2f009b4a6914e43c1237ceea85f8d59bb646b004638bd7f629b92",
+    "ai-auditing-benchmark_en.csv": "ffc9cd234fcf99b6922da24837d98f966b8cea766166e07662d21702f13d1156"
+  },
+  "csv_sha256_after": {
+    "ai-auditing-benchmark_cn.csv": "d35fe2c977e2f009b4a6914e43c1237ceea85f8d59bb646b004638bd7f629b92",
+    "ai-auditing-benchmark_en.csv": "ffc9cd234fcf99b6922da24837d98f966b8cea766166e07662d21702f13d1156"
+  }
+}

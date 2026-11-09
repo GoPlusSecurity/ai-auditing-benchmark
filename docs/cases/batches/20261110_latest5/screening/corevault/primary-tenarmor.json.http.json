@@ -1,0 +1,14 @@
+{
+  "id": "corevault-primary-tenarmor",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2117794176079376390&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:48:47.604178+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2117794176079376390&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"a33-Jphnk2YxqMPWhrTiVKWT8E7ezwA\"",
+  "last_modified": null,
+  "sha256": "7950e30d3a6733d8efbe9dc8eb13cbb8a5cc402d4e7924c65db959710a8a084d",
+  "bytes": 2611
+}

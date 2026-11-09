@@ -1,0 +1,167 @@
+[
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/b14g/proxy-source.json",
+    "root": ".cache/latest5/b14g/ProxyAdmin_3f8967",
+    "files": 1
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae.json",
+    "root": ".cache/latest5/corevault/PancakePair_eb0daE",
+    "files": 1
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674.json",
+    "root": ".cache/latest5/corevault/CoreVault_F5D674",
+    "files": 35
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0x81215684ef11f6e8050bc6b34448e71de264dc74.json",
+    "root": ".cache/latest5/corevault/BNIX_64dc74",
+    "files": 22
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c.json",
+    "root": ".cache/latest5/corevault/ERC1967Proxy_8E5D8C",
+    "files": 8
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0xc9882def23bc42d53895b8361d0b1edc7570bc6a.json",
+    "root": ".cache/latest5/corevault/FistStandard_70Bc6A",
+    "files": 1
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0xf40e0d525003fb6c6a9a7d79734a87a465053df1.json",
+    "root": ".cache/latest5/corevault/InsurancePool_053Df1",
+    "files": 19
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/corevault/sources/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5.json",
+    "root": ".cache/latest5/corevault/Treasury_159Ef5",
+    "files": 22
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/facet-source-deposit.json",
+    "root": ".cache/latest5/premia/PoolDepositWithdraw_9Ba5FD",
+    "files": 90
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/facet-source-withdraw.json",
+    "root": ".cache/latest5/premia/PoolDepositWithdraw_9Ba5FD",
+    "files": 90
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/facet-source-write.json",
+    "root": ".cache/latest5/premia/PoolCore_F296bc",
+    "files": 90
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/implementation-source.json",
+    "root": ".cache/latest5/premia/UnderwriterVault_093d21",
+    "files": 119
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/source-0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d.json",
+    "root": ".cache/latest5/premia/PoolProxy_dcD77d",
+    "files": 63
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/source-0xbae43c546dfadc69576ae73c68e0694a54f08e1b.json",
+    "root": ".cache/latest5/premia/UnderwriterVaultProxy_F08e1B",
+    "files": 64
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/premia/vault-source.json",
+    "root": ".cache/latest5/premia/UnderwriterVaultProxy_aea531",
+    "files": 64
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row22/source-0x79f35a33fe2813414851c4ae8daeacd14d822a46.json",
+    "root": ".cache/latest5/row22/Freezer_822A46",
+    "files": 22
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row22/source-0xcd5762ac6013fa762782ac1797ab09152c1028e8.json",
+    "root": ".cache/latest5/row22/DexModule_1028e8",
+    "files": 13
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row22/token-source.json",
+    "root": ".cache/latest5/row22/X_43A100",
+    "files": 21
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row26/source-0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777.json",
+    "root": ".cache/latest5/row26/NemTokenV2_777777",
+    "files": 1
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row28/source-0x61bcd1ed11fc03c958a847a6687b1875f5eacaaf.json",
+    "root": ".cache/latest5/row28/ERC1967Proxy_eAcaaf",
+    "files": 15
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x047284b1e752e39ae7a721d361ec0b0a554ef014.json",
+    "root": ".cache/latest5/row29/AiTradeHubContract_4Ef014",
+    "files": 9
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x5870357dfa6a11d3fe45d775c21ed9ae60ac4bef.json",
+    "root": ".cache/latest5/row29/Token_Ac4BeF",
+    "files": 10
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x7227d229be754fa49f416d48e8eaa121184b1721.json",
+    "root": ".cache/latest5/row29/SwapContract_4b1721",
+    "files": 8
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x74f091a719fdd47a95f378c7fb5c3d18a4582405.json",
+    "root": ".cache/latest5/row29/AiTradeHubContract_582405",
+    "files": 9
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x7e84f721d8082639d8dba7ed357b34523ffffa0b.json",
+    "root": ".cache/latest5/row29/VaultContract_ffFa0B",
+    "files": 19
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0x9b210da482217afc24074e57f6f8337fe07f0124.json",
+    "root": ".cache/latest5/row29/AiTradeHubContract_7F0124",
+    "files": 26
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row29/source-0xa58fbe390210460b7b07e52a29d4eb84308472e1.json",
+    "root": ".cache/latest5/row29/AiTradeHubContract_8472E1",
+    "files": 10
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row31/source-0x0c69199c1562233640e0db5ce2c399a88eb507c7.json",
+    "root": ".cache/latest5/row31/CYS_B507C7",
+    "files": 18
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row31/source-0x1ab77f94a46782c203b427b0aa5e6801870239fa.json",
+    "root": ".cache/latest5/row31/ERC1967Proxy_0239fA",
+    "files": 8
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row31/source-0x28c2ef1e0e52d926a9305cb9660fb386a3a4a166.json",
+    "root": ".cache/latest5/row31/SideBridge_a4A166",
+    "files": 21
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row33/source-0x36d75b5a8c724b692fba78ac2dd8ce933c0e1f4e.json",
+    "root": ".cache/latest5/row33/TIPToken_0e1F4E",
+    "files": 8
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/row33/source-0x570a5d26f7765ecb712c0924e4de545b89fd43df.json",
+    "root": ".cache/latest5/row33/BEP20UpgradeableProxy_fD43dF",
+    "files": 1
+  },
+  {
+    "response": "docs/cases/batches/20261110_latest5/screening/tendril/token-source.json",
+    "root": ".cache/latest5/tendril/TENDRIL_3973d2",
+    "files": 1
+  }
+]

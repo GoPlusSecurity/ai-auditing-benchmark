@@ -1,0 +1,58 @@
+[
+  {
+    "id": "premia-correct-history-0xb539ff8563974d407fd6d717ff2f930e99093d21",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/correct-historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xb539ff8563974d407fd6d717ff2f930e99093d21",
+        "0x1f011c4f"
+      ]
+    }
+  },
+  {
+    "id": "premia-correct-history-0x386dd942d3b058543f0dfa19034a0284a49ba5fd",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/correct-historical-code-0x386dd942d3b058543f0dfa19034a0284a49ba5fd.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x386dd942d3b058543f0dfa19034a0284a49ba5fd",
+        "0x1f011c4f"
+      ]
+    }
+  },
+  {
+    "id": "premia-correct-history-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/correct-historical-code-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+        "0x1f011c4f"
+      ]
+    }
+  },
+  {
+    "id": "nem-current-pair-code",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/row26/current-pair-code.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x840e19dcca541ee0b55a3c67e900a39d523b12b8",
+        "latest"
+      ]
+    }
+  }
+]

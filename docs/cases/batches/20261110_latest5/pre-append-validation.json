@@ -1,0 +1,141 @@
+{
+  "status": "pre_append_passed",
+  "fixed_target": 5,
+  "latest_event_date": "2026-11-07",
+  "raw_sha256": "791709330cd5aff1de37b8907ec8739052bc7e80ba3fb4d5670e5bd5b5dfe65c",
+  "scan_order": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    26,
+    27,
+    25,
+    28,
+    29
+  ],
+  "scanned": 27,
+  "new_cases": [
+    "20261104_CoreVault_InsurancePool",
+    "20261101_PremiaV3",
+    "20261024_X100",
+    "20261022_NEM",
+    "20261019_AlpsCon"
+  ],
+  "new_case_count": 5,
+  "source_file_count": 675,
+  "skipped": 21,
+  "existing_duplicates": 1,
+  "pending_dates": 11,
+  "csv": {
+    "cn": {
+      "baseline": 67,
+      "current": 67,
+      "new": 0
+    },
+    "en": {
+      "baseline": 67,
+      "current": 67,
+      "new": 0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "20261104_CoreVault_InsurancePool",
+      "sheet_rows": [
+        5
+      ],
+      "source_files": 100,
+      "local_links": 9,
+      "mermaid_diagrams": 1,
+      "mermaid_check": "flowchart syntax, defined nodes and complete edge references; not visually rendered",
+      "source_readme_local_links": 6
+    },
+    {
+      "case_id": "20261101_PremiaV3",
+      "sheet_rows": [
+        10
+      ],
+      "source_files": 426,
+      "local_links": 13,
+      "mermaid_diagrams": 1,
+      "mermaid_check": "flowchart syntax, defined nodes and complete edge references; not visually rendered",
+      "source_readme_local_links": 6
+    },
+    {
+      "case_id": "20261024_X100",
+      "sheet_rows": [
+        22
+      ],
+      "source_files": 56,
+      "local_links": 14,
+      "mermaid_diagrams": 1,
+      "mermaid_check": "flowchart syntax, defined nodes and complete edge references; not visually rendered",
+      "source_readme_local_links": 6
+    },
+    {
+      "case_id": "20261022_NEM",
+      "sheet_rows": [
+        26
+      ],
+      "source_files": 2,
+      "local_links": 9,
+      "mermaid_diagrams": 1,
+      "mermaid_check": "flowchart syntax, defined nodes and complete edge references; not visually rendered",
+      "source_readme_local_links": 6
+    },
+    {
+      "case_id": "20261019_AlpsCon",
+      "sheet_rows": [
+        29
+      ],
+      "source_files": 91,
+      "local_links": 9,
+      "mermaid_diagrams": 1,
+      "mermaid_check": "flowchart syntax, defined nodes and complete edge references; not visually rendered",
+      "source_readme_local_links": 6
+    }
+  ],
+  "x100_historical_runtime_checks": {
+    "freezer": {
+      "matches": true,
+      "bytes": 22972
+    },
+    "dex-module": {
+      "matches": true,
+      "bytes": 13884
+    },
+    "x-token": {
+      "matches": true,
+      "bytes": 3739
+    }
+  },
+  "nem_pair_runtime_check": "CURRENT runtime exact equality; attack-time binding not established",
+  "unrelated_tracked_files_unchanged": 5261,
+  "new_file_scope_checked": true,
+  "report_and_new_index_local_links": 24,
+  "compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "decompilation": "not_used; local prohibited, no official online output archived",
+  "trace_coverage": "three X100 complete call trees; other four cases have receipts but no complete call trace",
+  "limits": "Offline structural/hash/arithmetic checks do not constitute attack replay, local compilation or complete historical-state verification."
+}

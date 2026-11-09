@@ -1,0 +1,21 @@
+{
+  "id": "row33-transaction",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0xa7b879b5d4252fa5b518db1f81be8a5cc670c5b978c7626fa287c0a1f37895a3"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:40:20.914498+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "77435d57760648bd41635e2949999adbdd0c9c8c340877f6bec0505c3f9161af",
+  "bytes": 25452
+}

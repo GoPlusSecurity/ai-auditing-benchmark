@@ -1,0 +1,84 @@
+[
+  {
+    "case_id": "20261104_CoreVault_InsurancePool", "sheet_row": 5, "chain_id": 56,
+    "group": "corevault", "project_cn": "CoreVault / InsurancePool", "project_en": "CoreVault / InsurancePool",
+    "vulnerability_cn": "可操纵的现货逆价格进入赎回均价，放大 BNB 付款",
+    "vulnerability_en": "Manipulable inverse spot-price samples inflate BNB redemption payouts",
+    "detail_cn": "CoreVault赎回先刷新OracleLib的小样本价格窗口，再按redeemableUsd×wbnbPerUsd/1e18计算BNB；采样值来自可在同笔交易中改变储备的WBNB/USDT池。Treasury只校验调用者和余额，不重新验证报价，余额不足时从InsurancePool补款。回执显示先卖入195000 WBNB，后ReserveWithdrawn和TreasuryPayout均为260.218939088949896316 BNB，再反向兑换。取得关键合约及库的公开原始源码；未取得完整内部跟踪、攻击前窗口和手工覆盖状态，也未独立核实最终净收益。源表112300美元与付款、储备净流出及获利口径不同，金额留空。",
+    "detail_en": "CoreVault refreshes OracleLib's small price-sample window before computing BNB as redeemableUsd*wbnbPerUsd/1e18. Samples come from a WBNB/USDT pool whose reserves can be moved within the same transaction. Treasury checks the caller and available funds but does not independently validate the price; it pulls any deficit from InsurancePool. The receipt shows a 195000 WBNB sale, matching ReserveWithdrawn and TreasuryPayout events of 260.218939088949896316 BNB, then a reverse swap. Public original source for the critical contracts and library was acquired. Full internal traces, pre-attack sample/override state and final net profit were not independently verified. The USD field is blank because the sheet's USD112300 and gross payout, reserve net outflow and profit use different scopes.",
+    "loss_usd": null,
+    "loss_scope": "源表/初始披露约112300美元更接近攻击者收益；本批证实260.218939088949896316 BNB付款事件，未将该总额或闪电贷本金当成净损失。",
+    "victims": ["0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674", "0xf40e0d525003fb6c6a9a7d79734a87a465053df1"],
+    "explorer": "https://bscscan.com",
+    "sources": [
+      ["corevault", "screening/corevault/sources/0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674.json"],
+      ["treasury", "screening/corevault/sources/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5.json"],
+      ["insurance", "screening/corevault/sources/0xf40e0d525003fb6c6a9a7d79734a87a465053df1.json"],
+      ["bnix", "screening/corevault/sources/0x81215684ef11f6e8050bc6b34448e71de264dc74.json"],
+      ["fist", "screening/corevault/sources/0xc9882def23bc42d53895b8361d0b1edc7570bc6a.json"],
+      ["pancake-pair", "screening/corevault/sources/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae.json"]
+    ],
+    "evidence": ["screening/corevault/receipt.json", "screening/corevault/transaction.json", "screening/corevault/block.json", "screening/corevault-decoded.json", "screening/corevault/certik-alert.json", "screening/corevault/primary-tenarmor.json"],
+    "evidence_gaps": ["No full internal trace; native payouts are corroborated by victim payment events, not reconstructed native-transfer traces.", "Pre-attack oracle samples, manual overrides and order eligibility slots were not read successfully.", "Ownership and forwarding code of recipient 0xd9c2e4f19746b4617ad658152adaa306c47ef86b were not established; no claims about its internal logic are made.", "No independent historical runtime binding for the core/facet/library deployment; source-provider verification is separate from attack-block verification."]
+  },
+  {
+    "case_id": "20261101_PremiaV3", "sheet_row": 10, "chain_id": 42161,
+    "group": "premia", "project_cn": "Premia V3", "project_en": "Premia V3",
+    "vulnerability_cn": "LP头寸拆分未维护边界计数，删除重建边界后虚增手续费权益",
+    "vulnerability_en": "LP-position splits omit tick counters, allowing boundary recreation to create phantom fees",
+    "detail_cn": "PoolInternal._transferPosition拆分头寸没有更新边界tick.counter，而每个新持有人完全withdraw时都会减计数。攻击者预先拆分微量头寸，等待60秒，再建立共享边界的大额区间头寸并做小额交易累积globalFeeRate；依次退出微量头寸使仍被大头寸使用、净delta为零的共享边界被删除。重新deposit将其externalFeeRate设为当前全局值，_rangeFeeRate和_claim把历史费率误计给区间并从池中实际余额付款。WBTC池日志显示费率跳变0.024与liquidityPerTick=187.1产生4.4904 WBTC的ClaimFees，动用了vault写入的抵押品。关键原始源码与三笔准备/攻击回执已归档；历史代理路由、完整内部跟踪和全案美元损失未核实，金额留空。",
+    "detail_en": "PoolInternal._transferPosition does not update boundary tick.counter when splitting positions, while each new holder's full withdrawal decrements it. The attacker split tiny positions in advance, waited 60 seconds, added large ranges sharing a boundary and generated globalFeeRate through small trades. Withdrawing the tiny positions removed a zero-net-delta shared boundary still used by large positions. A new deposit initialized its externalFeeRate to the current global value; _rangeFeeRate and _claim then credited phantom historical fees and paid from the pool's actual balance. WBTC-pool logs show a 0.024 rate change times liquidityPerTick of 187.1 yielding a 4.4904 WBTC ClaimFees payment funded partly by vault collateral. Critical original source and three setup/exploit receipts were archived. Historical proxy routing, full internal traces and incident-wide USD loss remain unverified, so the USD field is blank.",
+    "loss_usd": null,
+    "loss_scope": "源表约400000美元为进行中的初始估计，其他披露约464600美元；归档原币净流，不将闪电贷或池子单笔总付款直接作为损失。",
+    "victims": ["0x45df5ea836a15b561937ae8373ab9ee984aea531", "0xbae43c546dfadc69576ae73c68e0694a54f08e1b", "0x6a1fc0e1c60ba6564cde4910a425f1f1a1d18c1f", "0xdc631d88dbb5eb39f5c4bf8b4e5298d098912fff", "0xd46993f25d298ebbcd31e941156c66f7e628a52a", "0xbe3e229319f86f5ee96ee1dc0b6d55e8b68a439e"],
+    "explorer": "https://arbiscan.io",
+    "sources": [
+      ["vault-proxy", "screening/premia/vault-source.json"],
+      ["vault-impl", "screening/premia/implementation-source.json"],
+      ["pool-proxy", "screening/premia/source-0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d.json"],
+      ["pool-deposit", "screening/premia/facet-source-deposit.json"],
+      ["pool-core", "screening/premia/facet-source-write.json"]
+    ],
+    "evidence": ["screening/premia/setup-receipt-official.json", "screening/premia/attack1-receipt-alt.json", "screening/premia/attack2-receipt-alt.json", "screening/premia/block.json", "screening/premia-setup-decoded.json", "screening/premia1-decoded.json", "screening/premia2-decoded.json", "screening/premia/facet-deposit.json", "screening/premia/facet-withdraw.json", "screening/premia/facet-write.json", "screening/premia/implementation-official.json", "screening/premia/commit.json", "screening/premia/primary-2117191582361555366.json", "screening/premia/primary-2116745378674463229.json"],
+    "evidence_gaps": ["Facet and vault implementations were resolved at current state; attack-time routing was not independently recovered.", "No full internal trace. Position split, tick updates, trades, fee claims and token movements are directly observed in receipts; unobserved calls are labelled as source-based inference.", "Original source for attacker orchestration and helper owners was not acquired; their internal programs are not relied on to establish the tick-counter defect.", "Full incident-wide liquidation, bridging and final realized profit were not reconstructed."]
+  },
+  {
+    "case_id": "20261024_X100", "sheet_row": 22, "chain_id": 1, "group": "row22",
+    "project_cn": "X100 Senate", "project_en": "X100 Senate",
+    "vulnerability_cn": "即时质押排名决定治理席位，多数票可在同一交易立即执行国库兑换",
+    "vulnerability_en": "Live stake rankings grant Senate seats and permit same-transaction treasury execution",
+    "detail_cn": "Senate按当前冻结余额排席位，不使用历史快照或最短任职时间；propose自动投赞成票，第二席vote后execute只要求当前赞成票超过三席一半，没有执行等待期。首笔跟踪显示两个辅助地址各冻结19000.000001 X并登记，提案7以2/3票立即通过；onlySenate仅要求合约自调用，因此execute的address(this).call能够进入DexTreasury.v3Swap并delegatecall固定DexModule，卖出400000 X到攻击者新建薄池，仅换回35.675313 USDT，再由攻击者在深池卖出取得资产。三笔回执与跟踪已归档，核心三份历史运行码与提供方代码相符；未复现。源表金额为攻击者收益口径，CSV损失留空。",
+    "detail_en": "Senate ranks seats by current frozen balances without a historical snapshot or minimum tenure. propose casts the proposer's vote automatically; after a second seat votes, execute needs only a live majority of the three seats and has no execution delay. The first trace shows two helper addresses each freezing 19000.000001 X and registering, then passing proposal 7 with 2/3 votes. onlySenate requires self-calls, so execute's address(this).call legitimately reaches DexTreasury.v3Swap and delegatecalls the fixed DexModule. It sells 400000 treasury X into an attacker-created thin pool for only 35.675313 USDT, after which the attacker sells into the deep pool. Three receipts and traces were archived; historical runtimes of the three core source packages match the provider's code. No replay was run. The sheet reports attacker profit, so the CSV loss field is blank.",
+    "loss_usd": null, "loss_scope": "源表4848017美元对应攻击者所得，不等于主池净流出或国库被处置X的价值；原币收支分列，不混用。",
+    "victims": ["0x79f35a33fe2813414851c4ae8daeacd14d822a46"], "explorer": "https://etherscan.io",
+    "sources": [["freezer", "screening/row22/source-0x79f35a33fe2813414851c4ae8daeacd14d822a46.json"], ["dex-module", "screening/row22/source-0xcd5762ac6013fa762782ac1797ab09152c1028e8.json"], ["x-token", "screening/row22/token-source.json"]],
+    "evidence": ["screening/row22/transaction.json", "screening/row22/receipt-official.json", "screening/row22/trace-official.json", "screening/row22/second-receipt.json", "screening/row22/second-trace.json", "screening/row22/third-receipt.json", "screening/row22/third-trace.json", "screening/row22/block.json", "screening/x100-decoded.json", "screening/row22/historical-code-0x79f35a33fe2813414851c4ae8daeacd14d822a46.json", "screening/row22/historical-code-0xcd5762ac6013fa762782ac1797ab09152c1028e8.json", "screening/row22/historical-code-0x100a2c7f45fd48e217fdce72e658dc78fd43a100.json", "screening/row22/primary-2114007082055700836.json"],
+    "evidence_gaps": ["Historical runtime comparison is against Sourcify's archived onchain bytecode, not a fresh local recompilation.", "No fork replay or exhaustive pre-attack ranking/state reconstruction.", "Orchestration-contract internals are not described beyond archived call traces; future control and final liquidation of residual X were not rechecked."]
+  },
+  {
+    "case_id": "20261022_NEM", "sheet_row": 26, "chain_id": 56, "group": "row26",
+    "project_cn": "NEM（NemTokenV2）", "project_en": "NEM (NemTokenV2)",
+    "vulnerability_cn": "未结算的转账被累计为卖出量，skim取回代币后仍可烧毁池子储备",
+    "vulnerability_en": "Unsettled pair transfers accrue sell credit that survives skim and burns pool reserves",
+    "detail_cn": "NemTokenV2在转入pair的_transfer分支中扣税并把净转入量累计到pendingLpSellRecycle，未等待swap结算。攻击者可用pair.skim取回超过储备的代币，累计值却不撤销；公开flushLpSellRecycle按pending×lpSellDestroyRateBps/10000计算、受单次池余额上限约束后，从pair搬走NEM至dead并sync。回执有42次LpSellRecycleFlushed及对应SellRecycled，随后兑换使USDT从主池净流出821920.437218535429773209，攻击者EOA收到726307.101124801946565030 USDT；借贷费用及其他收款不能计为其收益。原始完整代币源码已取得，普通pair当前运行码与归档PancakePair一致；未独立完成攻击区块代码和状态比对、完整跟踪或复现。CSV保留源表约820000美元的报道估值。",
+    "detail_en": "NemTokenV2 taxes transfers into its pair and adds the net amount to pendingLpSellRecycle before any swap settlement. pair.skim can return excess tokens while the credit survives. Public flushLpSellRecycle computes pending*lpSellDestroyRateBps/10000, caps the result by the pool balance, transfers NEM from the pair to dead and calls sync. The receipt contains 42 LpSellRecycleFlushed events with matching SellRecycled events. Subsequent swaps produce a net main-pool outflow of 821920.437218535429773209 USDT; the attacker EOA receives 726307.101124801946565030 USDT. Lending fees and other recipients are separate from attacker profit. Full original token source was acquired, and the normal pair's current runtime matches the archived PancakePair. Attack-block code/state comparison, a full trace and replay were not completed. The CSV retains the sheet's approximately USD820000 reported estimate.",
+    "loss_usd": "820000", "loss_scope": "源表及TenArmor约820000美元报道估值；与独立汇总的821920.437218535429773209 USDT池净流出及726307.101124801946565030 USDT攻击者收款分列。",
+    "victims": ["0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777", "0x840e19dcca541ee0b55a3c67e900a39d523b12b8"], "explorer": "https://bscscan.com",
+    "sources": [["token", "screening/row26/source-0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777.json"], ["pancake-pair", "screening/corevault/sources/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae.json"]],
+    "evidence": ["screening/row26/receipt.json", "screening/row26/transaction.json", "screening/row26/block.json", "screening/nem-decoded.json", "screening/row26/current-pair-code.json", "screening/row26/primary-2113189949147435321.json"],
+    "evidence_gaps": ["The public provider did not return a source package at the affected pair address. The ordinary PancakePair source is bound by exact CURRENT runtime equality to another verified pair; historical equality was not established.", "No full internal trace; 42 burn/flush iterations are counted from events, and skim's internal calls are a source-based interpretation unless independently reported.", "Pre-attack token permissions, configured destroy rate and pool state were not independently read.", "No local compilation or replay."]
+  },
+  {
+    "case_id": "20261019_AlpsCon", "sheet_row": 29, "chain_id": 56, "group": "row29",
+    "project_cn": "AlpsCon AI Trade Hub", "project_en": "AlpsCon AI Trade Hub",
+    "vulnerability_cn": "跨版本余额纳入奖励时未初始化收益起点，并信任公开测试账户",
+    "vulnerability_en": "Legacy-aware reward balances lack an entry baseline and trust a public test account",
+    "detail_cn": "V9的_getUserLockedAmount把未迁移用户在旧版本中的锁仓加入当前余额，但新账户entryProfitPerShare仍为零；_calculateUserEarningByShares按该余额乘以累计profitPerShare与零起点之差。_updateUserProfitCheckpoint先记入错误收益再推进起点，claimServiceResults据此付款。攻击者通过已被信任的Hardhat默认地址执行EIP-7702委托代码，借入1027990 USDC，在仍开放的V6买入并迁移为锁仓，再领取新版本历史奖励。回执证实V9净支付312915.556577704966668487 USDC，V7/V8另有付款，返还1028503.995 USDC本金及费用后攻击者收到152295.362485928986021436 USDC。V6至V9及付款依赖原始源码已取得；无完整内部跟踪，历史白名单、指数槽和全部版本调用顺序未独立核实，CSV损失留空。",
+    "detail_en": "V9's _getUserLockedAmount includes legacy locked balances for an unmigrated user, while a fresh account's entryProfitPerShare remains zero. _calculateUserEarningByShares multiplies that balance by the accumulated profitPerShare minus the zero baseline. _updateUserProfitCheckpoint records the false earnings before advancing the baseline; claimServiceResults then pays them. The attacker executed EIP-7702-delegated code through a trusted Hardhat default account, borrowed 1027990 USDC, bought into the still-open V6, migrated the stake to locked balance and claimed historical rewards in newer versions. The receipt confirms a V9 net payment of 312915.556577704966668487 USDC and separate V7/V8 payments. After 1028503.995 USDC of principal and fees was returned, the attacker received 152295.362485928986021436 USDC. Original V6-V9 and payment-dependency sources were acquired. Full internal traces, historical whitelist/index slots and every version's call order were not independently verified; the CSV loss field is blank.",
+    "loss_usd": null, "loss_scope": "源表约152000美元、攻击者净收152295.362485928986021436 USDC与各资金模块净流出不是同一口径；未把全部奖励总额当成损失。",
+    "victims": ["0x74f091a719fdd47a95f378c7fb5c3d18a4582405", "0x047284b1e752e39ae7a721d361ec0b0a554ef014", "0xa58fbe390210460b7b07e52a29d4eb84308472e1", "0x9b210da482217afc24074e57f6f8337fe07f0124"], "explorer": "https://bscscan.com",
+    "sources": [["v6", "screening/row29/source-0x74f091a719fdd47a95f378c7fb5c3d18a4582405.json"], ["v7", "screening/row29/source-0x047284b1e752e39ae7a721d361ec0b0a554ef014.json"], ["v8", "screening/row29/source-0xa58fbe390210460b7b07e52a29d4eb84308472e1.json"], ["v9", "screening/row29/source-0x9b210da482217afc24074e57f6f8337fe07f0124.json"], ["vault", "screening/row29/source-0x7e84f721d8082639d8dba7ed357b34523ffffa0b.json"], ["swap", "screening/row29/source-0x7227d229be754fa49f416d48e8eaa121184b1721.json"], ["token", "screening/row29/source-0x5870357dfa6a11d3fe45d775c21ed9ae60ac4bef.json"]],
+    "evidence": ["screening/row29/receipt.json", "screening/row29/transaction.json", "screening/row29/block.json", "screening/alpscon-decoded.json", "screening/row29/primary-2112102178026308045.json", "screening/row29/primary-verichains.json"],
+    "evidence_gaps": ["No full internal trace; V7 and V8 receipt transfers are not asserted to be internal subcalls of V9.", "Historical whitelist membership and profit-index/storage values were not independently recovered. The public test-account role is supported by original researcher disclosure and successful transaction behaviour.", "The EIP-7702 authorization list is archived but its signatures were not independently recovered.", "Historical deployed runtime binding, compilation and fork replay were not completed."]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "row28-receipt",
+  "url": "https://mainnet.base.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x02b039a6345348d984e4a0b70dd233127772206e61ce82c390c4709c0b8d790a"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:38:59.487245+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://mainnet.base.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "99f1e82749e379579d5f216865791fd11dbe26126e58215f6312e3306701c6ff",
+  "bytes": 217256
+}

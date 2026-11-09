@@ -1,0 +1,14 @@
+{
+  "id": "premia-repo",
+  "url": "https://api.github.com/repos/Premian-Labs/v3-contracts",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:11.386112+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.github.com/repos/Premian-Labs/v3-contracts",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"337a00e366ab8d7e89423a82f751477c27eb490fb6f64338e20a421cbb130587\"",
+  "last_modified": "Mon, 25 Aug 2025 17:14:45 GMT",
+  "sha256": "337a00e366ab8d7e89423a82f751477c27eb490fb6f64338e20a421cbb130587",
+  "bytes": 6706
+}

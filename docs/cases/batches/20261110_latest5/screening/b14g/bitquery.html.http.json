@@ -1,0 +1,14 @@
+{
+  "id": "b14g-primary-investigation",
+  "url": "https://www.bitquery.io/investigations/b14g-hack",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:11.537507+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://www.bitquery.io/investigations/b14g-hack",
+  "content_type": "text/html; charset=utf-8",
+  "etag": "\"qkgw03wq6p4bfb\"",
+  "last_modified": null,
+  "sha256": "3b8c0105bf9ccafa707f0316c4883e79fc57607ef59a4f0617f45d1ae71e98b3",
+  "bytes": 201490
+}

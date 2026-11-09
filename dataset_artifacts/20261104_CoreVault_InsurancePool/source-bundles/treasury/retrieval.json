@@ -1,0 +1,14 @@
+{
+  "id": "corevault-source-0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5",
+  "url": "https://sourcify.dev/server/v2/contract/56/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:30:47.210222+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/56/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"c97da-d6zY7fb8c5jGLSKXMDLfVumb5Eo\"",
+  "last_modified": null,
+  "sha256": "1913cab56f06a79f7bef227b5896420d86ff860a4fa5e94aee50692dbf5b3ce2",
+  "bytes": 825306
+}

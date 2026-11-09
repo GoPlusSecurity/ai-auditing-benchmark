@@ -1,0 +1,22 @@
+{
+  "id": "tendril-poolcontrol-attack",
+  "url": "https://bsc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xb1afdfd850da168f2cc9f742e11cdda5273973d2",
+        "data": "0x04553730"
+      },
+      "0x7d8df33"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:33:50.975088+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 403: Forbidden",
+  "exception": "HTTPError",
+  "status": 403,
+  "error_body_sha256": "9a9c4cad7278f824736e3f2579d619b818ecf0c17cab024fb739e1cb63fe82e8"
+}

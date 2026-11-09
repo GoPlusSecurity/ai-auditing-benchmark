@@ -1,0 +1,14 @@
+{
+  "id": "row29-primary-2112102178026308045",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2112102178026308045&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:53:35.631026+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2112102178026308045&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"a8e-1w8cqMKcxRMcjCD1zz5qRuLM8wQ\"",
+  "last_modified": null,
+  "sha256": "ea9aeb94cd8d59c43071e9588b86b9d7debbf812df6e0a0f2b559b21cff56fff",
+  "bytes": 2702
+}

@@ -1,0 +1,24 @@
+{
+  "id": "premia-setup-trace",
+  "url": "https://arbitrum-one-rpc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:33:51.633832+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arbitrum-one-rpc.publicnode.com",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "09a8e5cd25b746dc33bfc370123f1b6f1ccb10cb7a05fe8a0c4eb8cf0b212076",
+  "bytes": 127
+}

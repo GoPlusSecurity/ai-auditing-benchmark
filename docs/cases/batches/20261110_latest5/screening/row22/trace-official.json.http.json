@@ -1,0 +1,24 @@
+{
+  "id": "row22-trace-official",
+  "url": "https://eth.drpc.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:47:38.982625+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://eth.drpc.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "657850196d75d00d7665573037b16030bb6f7f06eb124ef0ec80e3633cbb956a",
+  "bytes": 212069
+}

@@ -1,0 +1,21 @@
+{
+  "id": "row22-receipt-official",
+  "url": "https://eth.drpc.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:47:38.365967+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://eth.drpc.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "f1617897470bd1515c1e4d40c01bd26a1939d3f29374dfb43f593c90c24e5eed",
+  "bytes": 39133
+}

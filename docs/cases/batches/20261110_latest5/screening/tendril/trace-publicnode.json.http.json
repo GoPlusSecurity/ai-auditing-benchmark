@@ -1,0 +1,24 @@
+{
+  "id": "tendril-trace-publicnode",
+  "url": "https://bsc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:33:50.175883+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc.publicnode.com",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "09a8e5cd25b746dc33bfc370123f1b6f1ccb10cb7a05fe8a0c4eb8cf0b212076",
+  "bytes": 127
+}

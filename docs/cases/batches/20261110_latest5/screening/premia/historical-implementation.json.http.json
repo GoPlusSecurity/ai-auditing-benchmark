@@ -1,0 +1,25 @@
+{
+  "id": "premia-historical-implementation",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0x45dF5EA836A15B561937Ae8373ab9eE984aea531",
+        "data": "0xaaf10f42"
+      },
+      "0x1f011c4f"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:44:39.032047+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "71927684f0a81e51b4b3d8ae8d7ef9be4993bfd7fc3ce22cd36edfc40689c31a",
+  "bytes": 253
+}

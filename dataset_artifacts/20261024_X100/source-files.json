@@ -1,0 +1,450 @@
+[
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+    "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+    "bytes": 4454,
+    "lines": 86,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+    "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+    "bytes": 193,
+    "lines": 6,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+    "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+    "bytes": 182,
+    "lines": 6,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+    "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+    "bytes": 684,
+    "lines": 26,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+    "bytes": 2781,
+    "lines": 79,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+    "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+    "bytes": 13314,
+    "lines": 280,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/token/ERC721/IERC721Receiver.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC721/IERC721Receiver.sol",
+    "sha256": "eafee3ffdc7cb2fba4bf6bd16fb28f8e5b4679742e81c2ad42a1b1df5c179feb",
+    "bytes": 997,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+    "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "bytes": 963,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+    "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+    "bytes": 871,
+    "lines": 25,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "sha256": "5779bc848bde39f1ad7bc02b4f708a0040888e0083b1a33f119cd94639350134",
+    "bytes": 34940,
+    "lines": 1162,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/DexBase.sol",
+    "original_path": "project/contracts/DexBase.sol",
+    "sha256": "f432f2c25a3ac98c0e82b468b7b7bdfadbf4dc18fe392594205e0dfc2ac873f7",
+    "bytes": 3690,
+    "lines": 135,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/DexModule.sol",
+    "original_path": "project/contracts/DexModule.sol",
+    "sha256": "72af363dbdcb405216536c1197e8e041310946c9fd561376863313bff5d86f68",
+    "bytes": 18807,
+    "lines": 505,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/DexTreasury.sol",
+    "original_path": "project/contracts/DexTreasury.sol",
+    "sha256": "688d6f8077e0161e82c0567f9a70b4370a4a260fc96c7da19e4dffd54d7d256f",
+    "bytes": 4214,
+    "lines": 154,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/Freezer.sol",
+    "original_path": "project/contracts/Freezer.sol",
+    "sha256": "e146ae2c5369a74a02ebaa95a3fed6a5de449c5a3d57ff805a9dd6827771d08b",
+    "bytes": 21115,
+    "lines": 640,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/dex/INonfungiblePositionManager.sol",
+    "original_path": "project/contracts/interfaces/dex/INonfungiblePositionManager.sol",
+    "sha256": "559a1a9fb41413ec8dab84dc0267b64f28c00b10034dd816c600226bf81a7c2a",
+    "bytes": 3927,
+    "lines": 126,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/dex/IPoolManager.sol",
+    "original_path": "project/contracts/interfaces/dex/IPoolManager.sol",
+    "sha256": "7a3ff7932008ae37509d7c6da05e34279e4544295cb05df27a563aa0fe270979",
+    "bytes": 2907,
+    "lines": 89,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/dex/IUniswapV3Factory.sol",
+    "original_path": "project/contracts/interfaces/dex/IUniswapV3Factory.sol",
+    "sha256": "7aad30046864966f67e27b225926a4d88f0d716bea104ed999d6f616cb3f4bba",
+    "bytes": 379,
+    "lines": 12,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/dex/IV3SwapRouter.sol",
+    "original_path": "project/contracts/interfaces/dex/IV3SwapRouter.sol",
+    "sha256": "4675b0081e067dde7592906a8291827314ee3f8bd1b83babe277fa9b52073b39",
+    "bytes": 968,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/IFreezeHook.sol",
+    "original_path": "project/contracts/interfaces/IFreezeHook.sol",
+    "sha256": "76a72b26ffb0a2734210db1ca30e4c1a744dfae43851c92d7bfddbff3a59a9fc",
+    "bytes": 509,
+    "lines": 14,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/interfaces/ITokenSource.sol",
+    "original_path": "project/contracts/interfaces/ITokenSource.sol",
+    "sha256": "859164feb68d97cfaba74cc66de100ead4aa0fcd5f0c1010aef07ef0accd130f",
+    "bytes": 382,
+    "lines": 14,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/OperatorLockable.sol",
+    "original_path": "project/contracts/OperatorLockable.sol",
+    "sha256": "6e21cf17ad8dbbcda468002ca9263a5f7c83f61978e7a397f0dfa5095d147c0f",
+    "bytes": 4938,
+    "lines": 159,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/freezer/project/contracts/Senate.sol",
+    "original_path": "project/contracts/Senate.sol",
+    "sha256": "f2583c2d872a070689e45471beb5395aa19857c9120e8379b0cfd7cc000e7beb",
+    "bytes": 13909,
+    "lines": 448,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC1363.sol",
+    "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+    "bytes": 4454,
+    "lines": 86,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC165.sol",
+    "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+    "bytes": 193,
+    "lines": 6,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC20.sol",
+    "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+    "bytes": 182,
+    "lines": 6,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+    "bytes": 2781,
+    "lines": 79,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/utils/SafeERC20.sol",
+    "sha256": "c2394cb2a327f234711da34884947f4aa0f6dd2791d1d6303a0c7acfaf81bca3",
+    "bytes": 13314,
+    "lines": 280,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/introspection/IERC165.sol",
+    "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+    "bytes": 871,
+    "lines": 25,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "sha256": "5779bc848bde39f1ad7bc02b4f708a0040888e0083b1a33f119cd94639350134",
+    "bytes": 34940,
+    "lines": 1162,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/DexBase.sol",
+    "original_path": "project/contracts/DexBase.sol",
+    "sha256": "f432f2c25a3ac98c0e82b468b7b7bdfadbf4dc18fe392594205e0dfc2ac873f7",
+    "bytes": 3690,
+    "lines": 135,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/DexModule.sol",
+    "original_path": "project/contracts/DexModule.sol",
+    "sha256": "72af363dbdcb405216536c1197e8e041310946c9fd561376863313bff5d86f68",
+    "bytes": 18807,
+    "lines": 505,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/interfaces/dex/INonfungiblePositionManager.sol",
+    "original_path": "project/contracts/interfaces/dex/INonfungiblePositionManager.sol",
+    "sha256": "559a1a9fb41413ec8dab84dc0267b64f28c00b10034dd816c600226bf81a7c2a",
+    "bytes": 3927,
+    "lines": 126,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/interfaces/dex/IPoolManager.sol",
+    "original_path": "project/contracts/interfaces/dex/IPoolManager.sol",
+    "sha256": "7a3ff7932008ae37509d7c6da05e34279e4544295cb05df27a563aa0fe270979",
+    "bytes": 2907,
+    "lines": 89,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/interfaces/dex/IUniswapV3Factory.sol",
+    "original_path": "project/contracts/interfaces/dex/IUniswapV3Factory.sol",
+    "sha256": "7aad30046864966f67e27b225926a4d88f0d716bea104ed999d6f616cb3f4bba",
+    "bytes": 379,
+    "lines": 12,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/dex-module/project/contracts/interfaces/dex/IV3SwapRouter.sol",
+    "original_path": "project/contracts/interfaces/dex/IV3SwapRouter.sol",
+    "sha256": "4675b0081e067dde7592906a8291827314ee3f8bd1b83babe277fa9b52073b39",
+    "bytes": 968,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/draft-IERC6093.sol",
+    "sha256": "fa7068f56bc180571a6095be6eaef06d51dbe81e30cb128397d993c9599ecc30",
+    "bytes": 6540,
+    "lines": 162,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/interfaces/IERC5267.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/interfaces/IERC5267.sol",
+    "sha256": "f89772d2d4fafcbef8b73bb10ee9a3373edec2eedb2f1b302320915b351dc3d1",
+    "bytes": 740,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
+    "sha256": "50f34ae16a067a41c2c1091445d11d63788e54c717677cb6d6b0e4cdea2ad21d",
+    "bytes": 10800,
+    "lines": 305,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/ERC20Permit.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/ERC20Permit.sol",
+    "sha256": "53584e84cd4851447b3149219f8c1b41397f7c753f85da07eda7f17ac6846e47",
+    "bytes": 2721,
+    "lines": 77,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
+    "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+    "bytes": 684,
+    "lines": 26,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Permit.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Permit.sol",
+    "sha256": "c302edfbf7f396e1130be81278c5c994543868f0f5bf0c0fb3f557e166d8d3f2",
+    "bytes": 3808,
+    "lines": 90,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
+    "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+    "bytes": 2781,
+    "lines": 79,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/Bytes.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Bytes.sol",
+    "sha256": "3ce9120a27934c75a074cb785d3a88868069ef6529dbe4dc6b845af0836f3c70",
+    "bytes": 14737,
+    "lines": 332,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Context.sol",
+    "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "bytes": 963,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/cryptography/ECDSA.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/cryptography/ECDSA.sol",
+    "sha256": "ba7c2d314fcd61c9783e0b3f0c664d004b76b408fda6a84edc8267d17c5012d6",
+    "bytes": 12152,
+    "lines": 284,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/cryptography/EIP712.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/cryptography/EIP712.sol",
+    "sha256": "2845caaaf70757b6cce612ae4ffbec2c382cb3d1cb9765c98fa649c0f5f1c794",
+    "bytes": 6695,
+    "lines": 160,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/cryptography/MessageHashUtils.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/cryptography/MessageHashUtils.sol",
+    "sha256": "538a0d7c4f0ec5a8562f58561890f7b49d14580674ecf58bc5f505b45c73df65",
+    "bytes": 8631,
+    "lines": 228,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/math/Math.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/math/Math.sol",
+    "sha256": "bdfdbe133991c0c78042957ff5cd97167926fcaf6d15664f3835a076cb066457",
+    "bytes": 32664,
+    "lines": 763,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/math/SafeCast.sol",
+    "sha256": "5779bc848bde39f1ad7bc02b4f708a0040888e0083b1a33f119cd94639350134",
+    "bytes": 34940,
+    "lines": 1162,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/math/SignedMath.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/math/SignedMath.sol",
+    "sha256": "1ed50b1056af886752f0fb48a0165d381e69bb4a4b18b893b066dc144a7e08d7",
+    "bytes": 2613,
+    "lines": 68,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/Nonces.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Nonces.sol",
+    "sha256": "9b4cbb85d1f5053c744e83302538eb643a713ffd14bc37665b224f1c66529339",
+    "bytes": 1490,
+    "lines": 46,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/Panic.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Panic.sol",
+    "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+    "bytes": 1973,
+    "lines": 57,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/ShortStrings.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/ShortStrings.sol",
+    "sha256": "1cfa08d3c551e9ec0b9cd249b09987f04e7e90f352e1a5e3b0d6a3bc426b3de7",
+    "bytes": 4310,
+    "lines": 122,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/StorageSlot.sol",
+    "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+    "bytes": 4182,
+    "lines": 143,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/npm/@openzeppelin/contracts@5.6.1/utils/Strings.sol",
+    "original_path": "npm/@openzeppelin/contracts@5.6.1/utils/Strings.sol",
+    "sha256": "e318709bbe73a7831d64c1351e8bdc43780b245f25191234e361e6ab9b98c67b",
+    "bytes": 21538,
+    "lines": 532,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261024_X100/x-token/project/contracts/X.sol",
+    "original_path": "project/contracts/X.sol",
+    "sha256": "5ea2f2d3bb7609fd08b6b1e79b7c42e7345946c559c0e005746b4456403398d1",
+    "bytes": 537,
+    "lines": 20,
+    "kind": "public_original_source"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "case_id": "20261022_NEM",
+  "sheet_row": 26,
+  "chain_id": 56,
+  "project_cn": "NEM（NemTokenV2）",
+  "project_en": "NEM (NemTokenV2)",
+  "vulnerability_cn": "未结算的转账被累计为卖出量，skim取回代币后仍可烧毁池子储备",
+  "vulnerability_en": "Unsettled pair transfers accrue sell credit that survives skim and burns pool reserves",
+  "detail_cn": "NemTokenV2在转入pair的_transfer分支中扣税并把净转入量累计到pendingLpSellRecycle，未等待swap结算。攻击者可用pair.skim取回超过储备的代币，累计值却不撤销；公开flushLpSellRecycle按pending×lpSellDestroyRateBps/10000计算、受单次池余额上限约束后，从pair搬走NEM至dead并sync。回执有42次LpSellRecycleFlushed及对应SellRecycled，随后兑换使USDT从主池净流出821920.437218535429773209，攻击者EOA收到726307.101124801946565030 USDT；借贷费用及其他收款不能计为其收益。原始完整代币源码已取得，普通pair当前运行码与归档PancakePair一致；未独立完成攻击区块代码和状态比对、完整跟踪或复现。CSV保留源表约820000美元的报道估值。",
+  "detail_en": "NemTokenV2 taxes transfers into its pair and adds the net amount to pendingLpSellRecycle before any swap settlement. pair.skim can return excess tokens while the credit survives. Public flushLpSellRecycle computes pending*lpSellDestroyRateBps/10000, caps the result by the pool balance, transfers NEM from the pair to dead and calls sync. The receipt contains 42 LpSellRecycleFlushed events with matching SellRecycled events. Subsequent swaps produce a net main-pool outflow of 821920.437218535429773209 USDT; the attacker EOA receives 726307.101124801946565030 USDT. Lending fees and other recipients are separate from attacker profit. Full original token source was acquired, and the normal pair's current runtime matches the archived PancakePair. Attack-block code/state comparison, a full trace and replay were not completed. The CSV retains the sheet's approximately USD820000 reported estimate.",
+  "loss_usd": "820000",
+  "loss_scope": "源表及TenArmor约820000美元报道估值；与独立汇总的821920.437218535429773209 USDT池净流出及726307.101124801946565030 USDT攻击者收款分列。",
+  "victims": [
+    "0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777",
+    "0x840e19dcca541ee0b55a3c67e900a39d523b12b8"
+  ],
+  "evidence_gaps": [
+    "The public provider did not return a source package at the affected pair address. The ordinary PancakePair source is bound by exact CURRENT runtime equality to another verified pair; historical equality was not established.",
+    "No full internal trace; 42 burn/flush iterations are counted from events, and skim's internal calls are a source-based interpretation unless independently reported.",
+    "Pre-attack token permissions, configured destroy rate and pool state were not independently read.",
+    "No local compilation or replay."
+  ],
+  "event_date": "2026-10-22",
+  "original_rows": [
+    26
+  ],
+  "source_sheet_snapshot": "../../docs/cases/batches/20261110_latest5/snapshot.json",
+  "batch_results": "../../docs/cases/batches/20261110_latest5/results.json",
+  "source_qualification_scope": "../../docs/cases/batches/20261110_latest5/scope-confirmation.json",
+  "necessary_code_coverage": "../../docs/cases/batches/20261110_latest5/source-coverage.md",
+  "case_document": "../../docs/cases/20261022_NEM.md",
+  "code_root": "../../dataset/20261022_NEM",
+  "source_status": "original_verified_source",
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json",
+  "public_original_vulnerable_source": true,
+  "tx_urls": [
+    "https://bscscan.com/tx/0xfb093c96c0094cbcca10801f97ed2e5ed3d96550ce64b544df5a349545723f91"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777#code",
+    "https://bscscan.com/address/0x840e19dcca541ee0b55a3c67e900a39d523b12b8#code"
+  ],
+  "verification_status": {
+    "source": "original source, provider-reported runtime/creation matches; no local recompile",
+    "historical_code": "not independently established; see evidence_gaps",
+    "historical_state": "only specific archived observations; no complete pre-attack state reconstruction",
+    "receipts": "successful archived transaction receipts and decoded asset movements/events",
+    "trace": "no full internal trace; archived receipts and source-based interpretation only",
+    "compilation": "not_run",
+    "deployment": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_used; official online output unavailable where essential, those candidates skipped"
+  },
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_file_count": 2
+}

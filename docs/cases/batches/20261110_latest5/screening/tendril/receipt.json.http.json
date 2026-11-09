@@ -1,0 +1,21 @@
+{
+  "id": "tendril-receipt",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:29:10.873330+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "a8f4f0d8ec0c24e682abfc46980395c478b566429a6af2875b2428c8b3278cb7",
+  "bytes": 26931
+}

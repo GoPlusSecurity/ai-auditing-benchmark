@@ -1,0 +1,21 @@
+{
+  "id": "premia-receipt-official",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:35:22.998307+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "38068758da7330c93aeb6d8baebf672d93915f98ab45d804e79745cf7df814d7",
+  "bytes": 314772
+}

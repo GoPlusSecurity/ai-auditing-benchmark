@@ -1,0 +1,21 @@
+{
+  "id": "tendril-transaction",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:30:44.767315+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "562dcef5d97f22a0beb5c9d1a915e8099d305424425f1b42a5e697dec327d07b",
+  "bytes": 777
+}

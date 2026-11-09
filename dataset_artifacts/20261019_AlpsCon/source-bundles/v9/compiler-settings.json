@@ -1,0 +1,14 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.20+commit.a1b79de6",
+  "compilerSettings": {
+    "optimizer": {
+      "runs": 185,
+      "enabled": true
+    },
+    "evmVersion": "paris"
+  },
+  "name": "AiTradeHubContract",
+  "fullyQualifiedName": "contracts/AITradeHub/AITradeHubContract.sol:AiTradeHubContract"
+}

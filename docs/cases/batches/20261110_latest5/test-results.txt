@@ -1,0 +1,21 @@
+test_large_raw_amount_is_not_rounded_through_float (__main__.EvidenceDecodingTests.test_large_raw_amount_is_not_rounded_through_float) ... ok
+test_pool_event_schemas_work_without_investigation_cache (__main__.EvidenceDecodingTests.test_pool_event_schemas_work_without_investigation_cache) ... ok
+test_static_tuple_does_not_shift_later_event_amounts (__main__.EvidenceDecodingTests.test_static_tuple_does_not_shift_later_event_amounts) ... ok
+test_unconfirmed_or_missing_scope_blocks_official_writes (__main__.QualificationGateTests.test_unconfirmed_or_missing_scope_blocks_official_writes) ... ok
+test_csv_append_preserves_prefix_newlines_and_is_idempotent (__main__.ScreeningTests.test_csv_append_preserves_prefix_newlines_and_is_idempotent) ... ok
+test_distinct_same_name_same_date_event_is_not_dropped_on_append (__main__.ScreeningTests.test_distinct_same_name_same_date_event_is_not_dropped_on_append) ... ok
+test_insufficient_batch_and_bad_structure_write_nothing (__main__.ScreeningTests.test_insufficient_batch_and_bad_structure_write_nothing) ... ok
+test_invalid_and_missing_dates_are_pending_and_not_selected (__main__.ScreeningTests.test_invalid_and_missing_dates_are_pending_and_not_selected) ... ok
+test_multiline_cells_do_not_change_sheet_row_numbers (__main__.ScreeningTests.test_multiline_cells_do_not_change_sheet_row_numbers) ... ok
+test_newest_skips_and_existing_events_do_not_fill_five_places (__main__.ScreeningTests.test_newest_skips_and_existing_events_do_not_fill_five_places) ... ok
+test_same_transaction_under_different_names_is_one_event (__main__.ScreeningTests.test_same_transaction_under_different_names_is_one_event) ... ok
+test_same_victim_date_chain_is_duplicate_but_name_alone_is_not (__main__.ScreeningTests.test_same_victim_date_chain_is_duplicate_but_name_alone_is_not) ... ok
+test_source_only_decompiled_or_postfix_cannot_qualify (__main__.ScreeningTests.test_source_only_decompiled_or_postfix_cannot_qualify) ... ok
+test_uninvestigated_row_blocks_later_acceptance (__main__.ScreeningTests.test_uninvestigated_row_blocks_later_acceptance) ... ok
+test_unsorted_dates_and_same_day_use_date_then_original_row (__main__.ScreeningTests.test_unsorted_dates_and_same_day_use_date_then_original_row) ... ok
+test_wrong_header_or_missing_note_rejected_before_selection (__main__.ScreeningTests.test_wrong_header_or_missing_note_rejected_before_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.075s
+
+OK

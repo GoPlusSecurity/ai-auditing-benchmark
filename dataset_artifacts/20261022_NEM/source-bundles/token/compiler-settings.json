@@ -1,0 +1,14 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.20+commit.a1b79de6",
+  "compilerSettings": {
+    "viaIR": true,
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    }
+  },
+  "name": "NemTokenV2",
+  "fullyQualifiedName": "NemTokenV2.sol:NemTokenV2"
+}

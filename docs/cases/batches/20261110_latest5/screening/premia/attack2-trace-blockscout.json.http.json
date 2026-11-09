@@ -1,0 +1,11 @@
+{
+  "id": "premia-attack2-trace-blockscout",
+  "url": "https://arbitrum.blockscout.com/api/v2/transactions/0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff/raw-trace",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:53:36.116719+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 403: Forbidden",
+  "exception": "HTTPError",
+  "status": 403,
+  "error_body_sha256": "decd5580657aa09b4ed6512bd7be7778a494cbf9ef4d4f32703f0bc3d765d14f"
+}

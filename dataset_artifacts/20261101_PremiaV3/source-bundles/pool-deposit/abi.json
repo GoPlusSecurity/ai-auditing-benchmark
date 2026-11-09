@@ -1,0 +1,1952 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "factory",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "router",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "wrappedNativeToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "feeReceiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "referral",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "settings",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "vaultRegistry",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "vxPremia",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "AddressUtils__NotContract",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "DoublyLinkedList__InvalidInput",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "DoublyLinkedList__NonExistentEntry",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__ArrayLengthMismatch",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__BalanceQueryZeroAddress",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__BurnExceedsBalance",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__BurnFromZeroAddress",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__ERC1155ReceiverNotImplemented",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__ERC1155ReceiverRejected",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__MintToZeroAddress",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__NotOwnerOrApproved",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__SelfApproval",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__TransferExceedsBalance",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC1155Base__TransferToZeroAddress",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "PRBMath_MulDiv18_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "y",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "PRBMath_MulDiv_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "y",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "denominator",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "PRBMath_SD59x18_Abs_MinSD59x18",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "PRBMath_SD59x18_IntoUD60x18_Underflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "int256",
+        "internalType": "SD59x18"
+      }
+    ]
+  },
+  {
+    "name": "PRBMath_SD59x18_Mul_InputTooSmall",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "PRBMath_SD59x18_Mul_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "int256",
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "y",
+        "type": "int256",
+        "internalType": "SD59x18"
+      }
+    ]
+  },
+  {
+    "name": "PRBMath_UD60x18_IntoSD59x18_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__AboveMaxSlippage",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "value",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "minimum",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "maximum",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__AboveQuoteSize",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "quoteSize",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__ActionNotAuthorized",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "action",
+        "type": "uint8",
+        "internalType": "enum IUserSettings.Action"
+      }
+    ]
+  },
+  {
+    "name": "Pool__CostExceedsPayout",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "cost",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "payout",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__CostNotAuthorized",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "costInWrappedNative",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "authorizedCostInWrappedNative",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__DifferenceOfSizeAndContractDeltaTooLarge",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "diff",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__FlashLoanCallbackFailed",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__FlashLoanNotRepayed",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InsufficientAskLiquidity",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InsufficientBidLiquidity",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InsufficientFunds",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InsufficientLiquidity",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InvalidAssetUpdate",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "deltaLongs",
+        "type": "int256",
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "deltaShorts",
+        "type": "int256",
+        "internalType": "SD59x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidBelowPrice",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "priceBelow",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidMonth",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "month",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidPositionState",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "balance",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "lastDeposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidQuoteOBSignature",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InvalidQuoteOBTaker",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InvalidRange",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidReconciliation",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "crossings",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidSize",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "depositSize",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__InvalidTickPrice",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InvalidTickUpdate",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__InvalidTransfer",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__NotEnoughTokens",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "balance",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__NotPoolToken",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "Pool__NotWrappedNativeTokenPool",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__OperatorNotAuthorized",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "name": "Pool__OptionExpired",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__OptionNotExpired",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__OutOfBoundsPrice",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__PositionCantHoldLongAndShort",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "longs",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "shorts",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__PositionDoesNotExist",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__QuoteOBCancelled",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__QuoteOBExpired",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__QuoteOBOverfilled",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "filledAmount",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "quoteOBSize",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__SettlementFailed",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__SettlementPriceAlreadyCached",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pool__TickDeltaNotZero",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "tickDelta",
+        "type": "int256",
+        "internalType": "SD59x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__TickNotFound",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__TickOutOfRange",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__TickWidthInvalid",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "price",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pool__WithdrawalDelayNotElapsed",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "unlockTime",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "Pool__ZeroSize",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Position__InvalidOrderType",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Position__InvalidPositionUpdate",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "currentBalance",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "amount",
+        "type": "int256",
+        "internalType": "SD59x18"
+      }
+    ]
+  },
+  {
+    "name": "Position__LowerGreaterOrEqualUpper",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pricing__PriceCannotBeComputedWithinTickRange",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Pricing__PriceOutOfRange",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "marketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Pricing__UpperNotGreaterThanLower",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "ReentrancyGuard__ReentrantCall",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SD49x28_IntoUD50x28_Underflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "int256",
+        "internalType": "SD49x28"
+      }
+    ]
+  },
+  {
+    "name": "SafeERC20__OperationFailed",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "UD50x28_IntoSD49x28_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "UD50x28"
+      }
+    ]
+  },
+  {
+    "name": "UD60x18_IntoUD50x28_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "name": "Annihilate",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "ApprovalForAll",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "approved",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "CancelQuoteOB",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "provider",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "quoteOBHash",
+        "type": "bytes32",
+        "indexed": false,
+        "internalType": "bytes32"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "ClaimFees",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "feesClaimed",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "lastFeeRate",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "ClaimProtocolFees",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "feeReceiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "feesClaimed",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Deposit",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "collateral",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "longs",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "shorts",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "lastFeeRate",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "claimableFees",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "marketPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "liquidityRate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "currentTick",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Exercise",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "holder",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "exerciseValue",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "settlementPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "operatorCost",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "FillQuoteOB",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "quoteOBHash",
+        "type": "bytes32",
+        "indexed": true,
+        "internalType": "bytes32"
+      },
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "provider",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "deltaMaker",
+        "type": "tuple",
+        "indexed": false,
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      },
+      {
+        "name": "deltaTaker",
+        "type": "tuple",
+        "indexed": false,
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      },
+      {
+        "name": "premium",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "protocolFee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "totalReferralRebate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "isBuy",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "FlashLoan",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "initiator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Settle",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "holder",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "exerciseValue",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "settlementPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "operatorCost",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "SettlePosition",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "collateral",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "exerciseValue",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "feesClaimed",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "settlementPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "operatorCost",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "SettlementPriceCached",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "settlementPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Trade",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "delta",
+        "type": "tuple",
+        "indexed": false,
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      },
+      {
+        "name": "premium",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "takerFee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "protocolFee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "marketPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "liquidityRate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "currentTick",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "totalReferralRebate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "isBuy",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "TransferBatch",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "from",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "ids",
+        "type": "uint256[]",
+        "indexed": false,
+        "internalType": "uint256[]"
+      },
+      {
+        "name": "values",
+        "type": "uint256[]",
+        "indexed": false,
+        "internalType": "uint256[]"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "TransferPosition",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "srcTokenId",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "destTokenId",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "TransferSingle",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "operator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "from",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "value",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "UpdateTick",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "tick",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "prev",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "next",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "delta",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "externalFeeRate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "longDelta",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "shortDelta",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "counter",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "Withdrawal",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "collateral",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "longs",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "shorts",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "lastFeeRate",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "SD59x18"
+      },
+      {
+        "name": "claimableFees",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "marketPrice",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "liquidityRate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "currentTick",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "WriteFrom",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "underwriter",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "longReceiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "taker",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "contractSize",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "collateral",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "protocolFee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "UD60x18"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "deposit",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "p",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "owner",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "operator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "lower",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "upper",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "orderType",
+            "type": "uint8",
+            "internalType": "enum Position.OrderType"
+          }
+        ],
+        "internalType": "struct Position.Key"
+      },
+      {
+        "name": "belowLower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "belowUpper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "minMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "maxMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "delta",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "deposit",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "p",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "owner",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "operator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "lower",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "upper",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "orderType",
+            "type": "uint8",
+            "internalType": "enum Position.OrderType"
+          }
+        ],
+        "internalType": "struct Position.Key"
+      },
+      {
+        "name": "belowLower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "belowUpper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "minMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "maxMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "isBidIfStrandedMarketPrice",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "delta",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "getNearestTicksBelow",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "lower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "upper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "nearestBelowLower",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "nearestBelowUpper",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "withdraw",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "p",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "owner",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "operator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "lower",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "upper",
+            "type": "uint256",
+            "internalType": "UD60x18"
+          },
+          {
+            "name": "orderType",
+            "type": "uint8",
+            "internalType": "enum Position.OrderType"
+          }
+        ],
+        "internalType": "struct Position.Key"
+      },
+      {
+        "name": "size",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "minMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "maxMarketPrice",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "delta",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "collateral",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "longs",
+            "type": "int256",
+            "internalType": "SD59x18"
+          },
+          {
+            "name": "shorts",
+            "type": "int256",
+            "internalType": "SD59x18"
+          }
+        ],
+        "internalType": "struct Position.Delta"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  }
+]

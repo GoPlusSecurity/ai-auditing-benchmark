@@ -1,0 +1,21 @@
+{
+  "id": "tranche-transaction",
+  "url": "https://api.avax.network/ext/bc/C/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0x3f6b23292a2e9c2956c7ac56d0b1f79b0271b49edec2156d2675ddf1de058c77"
+    ]
+  },
+  "retrieved_at": "2026-11-10T02:03:50.198970+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.avax.network/ext/bc/C/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "b3516bf6e6277db68091c12ed1985fd04d149a87c54139280b89798aaacece41",
+  "bytes": 2545
+}

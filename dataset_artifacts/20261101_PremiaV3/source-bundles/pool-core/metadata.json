@@ -1,0 +1,3243 @@
+{
+  "compiler": {
+    "version": "0.8.19+commit.7dd6d404"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "wrappedNativeToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "feeReceiver",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "settings",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vaultRegistry",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vxPremia",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "AddressUtils__NotContract",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "DoublyLinkedList__NonExistentEntry",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__ArrayLengthMismatch",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__BalanceQueryZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__BurnExceedsBalance",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__BurnFromZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__ERC1155ReceiverNotImplemented",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__ERC1155ReceiverRejected",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__MintToZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__NotOwnerOrApproved",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__SelfApproval",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__TransferExceedsBalance",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ERC1155Base__TransferToZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "x",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "y",
+            "type": "uint256"
+          }
+        ],
+        "name": "PRBMath_MulDiv18_Overflow",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "x",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "y",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "denominator",
+            "type": "uint256"
+          }
+        ],
+        "name": "PRBMath_MulDiv_Overflow",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maximum",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__AboveMaxSlippage",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "quoteSize",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__AboveQuoteSize",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IUserSettings.Action",
+            "name": "action",
+            "type": "uint8"
+          }
+        ],
+        "name": "Pool__ActionNotAuthorized",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "cost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "payout",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__CostExceedsPayout",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "costInWrappedNative",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "authorizedCostInWrappedNative",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__CostNotAuthorized",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "diff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__DifferenceOfSizeAndContractDeltaTooLarge",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__FlashLoanCallbackFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__FlashLoanNotRepayed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InsufficientAskLiquidity",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InsufficientBidLiquidity",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InsufficientFunds",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InsufficientLiquidity",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "SD59x18",
+            "name": "deltaLongs",
+            "type": "int256"
+          },
+          {
+            "internalType": "SD59x18",
+            "name": "deltaShorts",
+            "type": "int256"
+          }
+        ],
+        "name": "Pool__InvalidAssetUpdate",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "priceBelow",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidBelowPrice",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "month",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidMonth",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastDeposit",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidPositionState",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InvalidQuoteOBSignature",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InvalidQuoteOBTaker",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidRange",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "crossings",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidReconciliation",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "depositSize",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__InvalidSize",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InvalidTickPrice",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InvalidTickUpdate",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__InvalidTransfer",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__NotEnoughTokens",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          }
+        ],
+        "name": "Pool__NotPoolToken",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__NotWrappedNativeTokenPool",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          }
+        ],
+        "name": "Pool__OperatorNotAuthorized",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__OptionExpired",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__OptionNotExpired",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "price",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__OutOfBoundsPrice",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "longs",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "shorts",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__PositionCantHoldLongAndShort",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__PositionDoesNotExist",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__QuoteOBCancelled",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__QuoteOBExpired",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "filledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "quoteOBSize",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__QuoteOBOverfilled",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__SettlementFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__SettlementPriceAlreadyCached",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "SD59x18",
+            "name": "tickDelta",
+            "type": "int256"
+          }
+        ],
+        "name": "Pool__TickDeltaNotZero",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "price",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__TickNotFound",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "price",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__TickOutOfRange",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "price",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__TickWidthInvalid",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pool__WithdrawalDelayNotElapsed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pool__ZeroSize",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Position__InvalidOrderType",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "currentBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "SD59x18",
+            "name": "amount",
+            "type": "int256"
+          }
+        ],
+        "name": "Position__InvalidPositionUpdate",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          }
+        ],
+        "name": "Position__LowerGreaterOrEqualUpper",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Pricing__PriceCannotBeComputedWithinTickRange",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "marketPrice",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pricing__PriceOutOfRange",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          }
+        ],
+        "name": "Pricing__UpperNotGreaterThanLower",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ReentrancyGuard__ReentrantCall",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "SD49x28",
+            "name": "x",
+            "type": "int256"
+          }
+        ],
+        "name": "SD49x28_IntoUD50x28_Underflow",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "SafeERC20__OperationFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD50x28",
+            "name": "x",
+            "type": "uint256"
+          }
+        ],
+        "name": "UD50x28_IntoSD49x28_Overflow",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "x",
+            "type": "uint256"
+          }
+        ],
+        "name": "UD60x18_IntoUD50x28_Overflow",
+        "type": "error"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          }
+        ],
+        "name": "Annihilate",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "approved",
+            "type": "bool"
+          }
+        ],
+        "name": "ApprovalForAll",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "provider",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "quoteOBHash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "CancelQuoteOB",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "feesClaimed",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "lastFeeRate",
+            "type": "int256"
+          }
+        ],
+        "name": "ClaimFees",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "feeReceiver",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "feesClaimed",
+            "type": "uint256"
+          }
+        ],
+        "name": "ClaimProtocolFees",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "collateral",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "longs",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "shorts",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "lastFeeRate",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "claimableFees",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "marketPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "liquidityRate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "currentTick",
+            "type": "uint256"
+          }
+        ],
+        "name": "Deposit",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "holder",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "exerciseValue",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "settlementPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "operatorCost",
+            "type": "uint256"
+          }
+        ],
+        "name": "Exercise",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "bytes32",
+            "name": "quoteOBHash",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "provider",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "SD59x18",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "longs",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "shorts",
+                "type": "int256"
+              }
+            ],
+            "indexed": false,
+            "internalType": "struct Position.Delta",
+            "name": "deltaMaker",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "SD59x18",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "longs",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "shorts",
+                "type": "int256"
+              }
+            ],
+            "indexed": false,
+            "internalType": "struct Position.Delta",
+            "name": "deltaTaker",
+            "type": "tuple"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "protocolFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "totalReferralRebate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "isBuy",
+            "type": "bool"
+          }
+        ],
+        "name": "FillQuoteOB",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "initiator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "fee",
+            "type": "uint256"
+          }
+        ],
+        "name": "FlashLoan",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "holder",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "exerciseValue",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "settlementPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "operatorCost",
+            "type": "uint256"
+          }
+        ],
+        "name": "Settle",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "collateral",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "exerciseValue",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "feesClaimed",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "settlementPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "operatorCost",
+            "type": "uint256"
+          }
+        ],
+        "name": "SettlePosition",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "settlementPrice",
+            "type": "uint256"
+          }
+        ],
+        "name": "SettlementPriceCached",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "SD59x18",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "longs",
+                "type": "int256"
+              },
+              {
+                "internalType": "SD59x18",
+                "name": "shorts",
+                "type": "int256"
+              }
+            ],
+            "indexed": false,
+            "internalType": "struct Position.Delta",
+            "name": "delta",
+            "type": "tuple"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "takerFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "protocolFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "marketPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "liquidityRate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "currentTick",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "totalReferralRebate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "isBuy",
+            "type": "bool"
+          }
+        ],
+        "name": "Trade",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256[]",
+            "name": "ids",
+            "type": "uint256[]"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256[]",
+            "name": "values",
+            "type": "uint256[]"
+          }
+        ],
+        "name": "TransferBatch",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "srcTokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "destTokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferPosition",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferSingle",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "UD60x18",
+            "name": "tick",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "UD60x18",
+            "name": "prev",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "UD60x18",
+            "name": "next",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "delta",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "externalFeeRate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "longDelta",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "shortDelta",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "counter",
+            "type": "uint256"
+          }
+        ],
+        "name": "UpdateTick",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "collateral",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "longs",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "shorts",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "SD59x18",
+            "name": "lastFeeRate",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "claimableFees",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "marketPrice",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "liquidityRate",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "currentTick",
+            "type": "uint256"
+          }
+        ],
+        "name": "Withdrawal",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "underwriter",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "longReceiver",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "contractSize",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "collateral",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "UD60x18",
+            "name": "protocolFee",
+            "type": "uint256"
+          }
+        ],
+        "name": "WriteFrom",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isPremiumNormalized",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOrderbook",
+            "type": "bool"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "strike",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCallPool",
+            "type": "bool"
+          }
+        ],
+        "name": "_takerFeeLowLevel",
+        "outputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          }
+        ],
+        "name": "annihilate",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          }
+        ],
+        "name": "annihilateFor",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "lower",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "upper",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum Position.OrderType",
+                "name": "orderType",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct Position.Key",
+            "name": "p",
+            "type": "tuple"
+          }
+        ],
+        "name": "claim",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "exercise",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "exerciseValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "exerciseFee",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "holders",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "costPerHolder",
+            "type": "uint256"
+          }
+        ],
+        "name": "exerciseFor",
+        "outputs": [
+          {
+            "internalType": "uint256[]",
+            "name": "exerciseValues",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "exerciseFees",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "lower",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "upper",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum Position.OrderType",
+                "name": "orderType",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct Position.Key",
+            "name": "p",
+            "type": "tuple"
+          }
+        ],
+        "name": "getClaimableFees",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getPoolSettings",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "base",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "quote",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "oracleAdapter",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "strike",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCallPool",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getSettlementPrice",
+        "outputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getStrandedArea",
+        "outputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "lower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "upper",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getTokenIds",
+        "outputs": [
+          {
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "marketPrice",
+        "outputs": [
+          {
+            "internalType": "UD60x18",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "settle",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "collateral",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "holders",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "costPerHolder",
+            "type": "uint256"
+          }
+        ],
+        "name": "settleFor",
+        "outputs": [
+          {
+            "internalType": "uint256[]",
+            "name": "collateral",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "lower",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "upper",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum Position.OrderType",
+                "name": "orderType",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct Position.Key",
+            "name": "p",
+            "type": "tuple"
+          }
+        ],
+        "name": "settlePosition",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "collateral",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "lower",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "upper",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum Position.OrderType",
+                "name": "orderType",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct Position.Key[]",
+            "name": "p",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "costPerHolder",
+            "type": "uint256"
+          }
+        ],
+        "name": "settlePositionFor",
+        "outputs": [
+          {
+            "internalType": "uint256[]",
+            "name": "collateral",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isPremiumNormalized",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOrderbook",
+            "type": "bool"
+          }
+        ],
+        "name": "takerFee",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "ticks",
+        "outputs": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "SD49x28",
+                    "name": "delta",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "UD50x28",
+                    "name": "externalFeeRate",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "SD49x28",
+                    "name": "longDelta",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "SD49x28",
+                    "name": "shortDelta",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "counter",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct IPoolInternal.Tick",
+                "name": "tick",
+                "type": "tuple"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "price",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD50x28",
+                "name": "longRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD50x28",
+                "name": "shortRate",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IPoolInternal.TickWithRates[]",
+            "name": "",
+            "type": "tuple[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "lower",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UD60x18",
+                "name": "upper",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum Position.OrderType",
+                "name": "orderType",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct Position.Key",
+            "name": "srcP",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "newOperator",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          }
+        ],
+        "name": "transferPosition",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "tryCacheSettlementPrice",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "underwriter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "longReceiver",
+            "type": "address"
+          },
+          {
+            "internalType": "UD60x18",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "referrer",
+            "type": "address"
+          }
+        ],
+        "name": "writeFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "_takerFeeLowLevel(address,uint256,uint256,bool,bool,uint256,bool)": {
+          "details": "WARNING: It is recommended to use `takerFee` instead of this function. This function is a lower level      function here to be used when a pool has not yet be deployed, by calling it from the diamond contract      directly rather than a pool proxy. If using it from the pool, you should pass the same value as the pool      for `strike` and `isCallPool` in order to get the accurate takerFee",
+          "params": {
+            "isCallPool": "Whether the pool is a call pool or not",
+            "isOrderbook": "Whether the fee is for the `fillQuoteOB` function or not",
+            "isPremiumNormalized": "Whether the premium given is already normalized by strike or not (Ex: For a strike of        1500, and a premium of 750, the normalized premium would be 0.5)",
+            "premium": "The total cost of option(s) for a purchase (18 decimals)",
+            "size": "The size of a trade (number of contracts) (18 decimals)",
+            "strike": "The strike of the option (18 decimals)",
+            "taker": "The taker of a trade"
+          },
+          "returns": {
+            "_0": "The taker fee for an option trade denormalized. (18 decimals)"
+          }
+        },
+        "annihilate(uint256)": {
+          "details": "This function can be called post or prior to expiration.",
+          "params": {
+            "size": "The size to annihilate (18 decimals)"
+          }
+        },
+        "annihilateFor(address,uint256)": {
+          "details": "This function can be called post or prior to expiration.",
+          "params": {
+            "owner": "The owner of the shorts/longs to annihilate",
+            "size": "The size to annihilate (18 decimals)"
+          }
+        },
+        "claim((address,address,uint256,uint256,uint8))": {
+          "params": {
+            "p": "The position key"
+          },
+          "returns": {
+            "_0": "The amount of claimed fees (poolToken decimals)"
+          }
+        },
+        "exercise()": {
+          "returns": {
+            "exerciseFee": "The fee paid to protocol (poolToken decimals)",
+            "exerciseValue": "The exercise value as amount of collateral paid out to long holder (poolToken decimals)"
+          }
+        },
+        "exerciseFor(address[],uint256)": {
+          "params": {
+            "costPerHolder": "The cost charged by the authorized operator, per option holder (poolToken decimals)",
+            "holders": "The holders of the contracts"
+          },
+          "returns": {
+            "exerciseFees": "The fees paid to protocol (poolToken decimals)",
+            "exerciseValues": "The exercise value as amount of collateral paid out per holder, ignoring costs applied during automatic         exercise, but excluding protocol fees from amount (poolToken decimals)"
+          }
+        },
+        "getClaimableFees((address,address,uint256,uint256,uint8))": {
+          "params": {
+            "p": "The position key"
+          },
+          "returns": {
+            "_0": "The total claimable fees for the position (poolToken decimals)"
+          }
+        },
+        "getPoolSettings()": {
+          "returns": {
+            "base": "Address of base token",
+            "isCallPool": "Whether the pool is for call or put options",
+            "maturity": "The maturity timestamp of the option",
+            "oracleAdapter": "Address of oracle adapter",
+            "quote": "Address of quote token",
+            "strike": "The strike of the option (18 decimals)"
+          }
+        },
+        "getSettlementPrice()": {
+          "returns": {
+            "_0": "The settlement price of the option (18 decimals). Returns 0 if option is not settled yet."
+          }
+        },
+        "getStrandedArea()": {
+          "returns": {
+            "lower": "Lower bound of the stranded market price area (Default : PoolStorage.MAX_TICK_PRICE + ONE = 2e18) (18 decimals)",
+            "upper": "Upper bound of the stranded market price area (Default : PoolStorage.MAX_TICK_PRICE + ONE = 2e18) (18 decimals)"
+          }
+        },
+        "getTokenIds()": {
+          "returns": {
+            "_0": "tokenIds The list of existing tokenIds"
+          }
+        },
+        "marketPrice()": {
+          "returns": {
+            "_0": "The current market price as normalized price"
+          }
+        },
+        "settle()": {
+          "returns": {
+            "collateral": "The amount of collateral left after settlement (poolToken decimals)"
+          }
+        },
+        "settleFor(address[],uint256)": {
+          "params": {
+            "costPerHolder": "The cost charged by the authorized operator, per option holder (poolToken decimals)",
+            "holders": "The holders of the contracts"
+          },
+          "returns": {
+            "collateral": "The amount of collateral left after settlement per holder, ignoring costs applied during automatic         settlement (poolToken decimals)"
+          }
+        },
+        "settlePosition((address,address,uint256,uint256,uint8))": {
+          "params": {
+            "p": "The position key"
+          },
+          "returns": {
+            "collateral": "The amount of collateral left after settlement (poolToken decimals)"
+          }
+        },
+        "settlePositionFor((address,address,uint256,uint256,uint8)[],uint256)": {
+          "params": {
+            "costPerHolder": "The cost charged by the authorized operator, per position holder (poolToken decimals)",
+            "p": "The position keys"
+          },
+          "returns": {
+            "collateral": "The amount of collateral left after settlement per holder, ignoring costs applied during automatic         settlement (poolToken decimals)"
+          }
+        },
+        "takerFee(address,uint256,uint256,bool,bool)": {
+          "params": {
+            "isOrderbook": "Whether the fee is for the `fillQuoteOB` function or not",
+            "isPremiumNormalized": "Whether the premium given is already normalized by strike or not (Ex: For a strike of 1500, and a premium of 750, the normalized premium would be 0.5)",
+            "premium": "The total cost of option(s) for a purchase (poolToken decimals)",
+            "size": "The size of a trade (number of contracts) (18 decimals)",
+            "taker": "The taker of a trade"
+          },
+          "returns": {
+            "_0": "The taker fee for an option trade denormalized (poolToken decimals)"
+          }
+        },
+        "ticks()": {
+          "returns": {
+            "_0": "ticks All pool ticks with the liquidityNet (18 decimals) of each tick"
+          }
+        },
+        "transferPosition((address,address,uint256,uint256,uint8),address,address,uint256)": {
+          "params": {
+            "newOperator": "The new operator",
+            "newOwner": "The new owner",
+            "size": "The size to transfer (18 decimals)",
+            "srcP": "The position key"
+          }
+        },
+        "writeFrom(address,address,uint256,address)": {
+          "params": {
+            "longReceiver": "The address which will receive the long token",
+            "referrer": "The referrer of the user doing the trade",
+            "size": "The number of contracts being underwritten (18 decimals)",
+            "underwriter": "The underwriter of the option (Collateral will be taken from this address, and it will        receive the short token)"
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "errors": {
+        "DoublyLinkedList__NonExistentEntry()": [
+          {
+            "notice": "indicate that a non-existent value was used as a reference for insertion or lookup"
+          }
+        ],
+        "PRBMath_MulDiv18_Overflow(uint256,uint256)": [
+          {
+            "notice": "Thrown when the resultant value in {mulDiv18} overflows uint256."
+          }
+        ],
+        "PRBMath_MulDiv_Overflow(uint256,uint256,uint256)": [
+          {
+            "notice": "Thrown when the resultant value in {mulDiv} overflows uint256."
+          }
+        ]
+      },
+      "kind": "user",
+      "methods": {
+        "_takerFeeLowLevel(address,uint256,uint256,bool,bool,uint256,bool)": {
+          "notice": "Calculates the fee for a trade based on the `size` and `premiumNormalized` of the trade."
+        },
+        "annihilate(uint256)": {
+          "notice": "Annihilate a pair of long + short option contracts to unlock the stored collateral."
+        },
+        "annihilateFor(address,uint256)": {
+          "notice": "Annihilate a pair of long + short option contracts to unlock the stored collateral on behalf of another account.         msg.sender must be approved through `UserSettings.setAuthorizedAddress` by the owner of the long/short contracts."
+        },
+        "claim((address,address,uint256,uint256,uint8))": {
+          "notice": "Updates the claimable fees of a position and transfers the claimed         fees to the operator of the position. Then resets the claimable fees to         zero."
+        },
+        "exercise()": {
+          "notice": "Exercises all long options held by caller"
+        },
+        "exerciseFor(address[],uint256)": {
+          "notice": "Batch exercises all long options held by each `holder`, caller is reimbursed with the cost deducted from         the proceeds of the exercised options. Only authorized agents may execute this function on behalf of the         option holder."
+        },
+        "getClaimableFees((address,address,uint256,uint256,uint8))": {
+          "notice": "Returns total claimable fees for the position"
+        },
+        "getPoolSettings()": {
+          "notice": "Returns all pool parameters used for deployment"
+        },
+        "getSettlementPrice()": {
+          "notice": "Returns the settlement price of the option."
+        },
+        "getStrandedArea()": {
+          "notice": "Gets the lower and upper bound of the stranded market area when it exists. In case the stranded market         area does not exist it will return the stranded market area the maximum tick price for both the lower         and the upper, in which case the market price is not stranded given any range order info order."
+        },
+        "getTokenIds()": {
+          "notice": "Returns the list of existing tokenIds with non zero balance"
+        },
+        "marketPrice()": {
+          "notice": "Get the current market price as normalized price"
+        },
+        "settle()": {
+          "notice": "Settles all short options held by caller"
+        },
+        "settleFor(address[],uint256)": {
+          "notice": "Batch settles all short options held by each `holder`, caller is reimbursed with the cost deducted from         the proceeds of the settled options. Only authorized operators may execute this function on behalf of the         option holder."
+        },
+        "settlePosition((address,address,uint256,uint256,uint8))": {
+          "notice": "Reconciles a user's `position` to account for settlement payouts post-expiration."
+        },
+        "settlePositionFor((address,address,uint256,uint256,uint8)[],uint256)": {
+          "notice": "Batch reconciles each `position` to account for settlement payouts post-expiration. Caller is reimbursed         with the cost deducted from the proceeds of the settled position. Only authorized operators may execute         this function on behalf of the option holder."
+        },
+        "takerFee(address,uint256,uint256,bool,bool)": {
+          "notice": "Calculates the fee for a trade based on the `size` and `premium` of the trade"
+        },
+        "ticks()": {
+          "notice": "Returns all ticks in the pool, including net liquidity for each tick"
+        },
+        "transferPosition((address,address,uint256,uint256,uint8),address,address,uint256)": {
+          "notice": "Transfer a LP position to a new owner/operator"
+        },
+        "tryCacheSettlementPrice()": {
+          "notice": "Attempts to cache the settlement price of the option after expiration. Reverts if a price has already been cached"
+        },
+        "writeFrom(address,address,uint256,address)": {
+          "notice": "Underwrite an option by depositing collateral. By default the taker fee and referral are applied to the         underwriter, if the caller is a registered vault the longReceiver is used instead."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "contracts/pool/PoolCore.sol": "PoolCore"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "contracts/adapter/IOracleAdapter.sol": {
+      "keccak256": "0x9a82cf30496373cbf47985e51484a8275f787e46a1558036b55fe9c738bf6bb2",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://b1a975b128aed84a2d211a29e4c7796b39bf89b4524e58ec3e904d7e1d528e7c",
+        "dweb:/ipfs/QmYCHGUsgR9nfMtZop5eAf5G373YUnjunJCMXgmhsLuVRb"
+      ]
+    },
+    "contracts/layerZero/token/oft/IOFT.sol": {
+      "keccak256": "0x267a5464471394e35ee407436fef0a29e19f14ec629f36d9c5486251ad1c581e",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c40668560b3d040b6ac05341e71ac75ab87e42c738c2d1b32d0771a800165769",
+        "dweb:/ipfs/QmXscJ2xfkGgoMReacYvUXckVtYbKAEpmzLKASb7PVPpMZ"
+      ]
+    },
+    "contracts/layerZero/token/oft/IOFTCore.sol": {
+      "keccak256": "0xaa609663d81caafc2409d4b867adc5afc8ccf8d9bffded296b1423c9d322d392",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://ea7b88578a093a3fdad23435db6f5db7b5ce26e2e417ba24eb4a6a9ce5c6074c",
+        "dweb:/ipfs/QmNUqxGK8nKCKGZDzJL8tqZWdYyMxuPdR2m5LzXnMm8MW1"
+      ]
+    },
+    "contracts/libraries/Constants.sol": {
+      "keccak256": "0xae6023ee8b2c2e0a1e01ee0b749f647c59281109d1808bedea76274445436fa0",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://d81adc95d6ff29b5b6299ff88103143818763acc0c775733ba93119291fbd912",
+        "dweb:/ipfs/QmaAnnYwsVsRix72p6Ag48CRyBML5fZdgb2Ee4mSb8JEE5"
+      ]
+    },
+    "contracts/libraries/DoublyLinkedListUD60x18.sol": {
+      "keccak256": "0xc9a5dd8aa7a2c5da9c81945e779f72453da3dba2cba89d98abdbdf2de4870149",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://c0571d7172f899cde03caf109d74f3c51f4d75775849e6a07d0855bff7d6c048",
+        "dweb:/ipfs/QmPDQu54em2179kuFj6sPLs7QtXHo8UUT67asQxSiSLpx7"
+      ]
+    },
+    "contracts/libraries/IPosition.sol": {
+      "keccak256": "0x2352c0b3c5d1508558754090bc5220fe1a85ec4b560b820bdef49d31755c5204",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://2319d6e788c4c90bb4b4cd822b493e4a4642787cd3d6cdc7d7e06264b01a818f",
+        "dweb:/ipfs/QmaWEk4aWeWL8HgsuYUg5dDAdJZ1tHPLy9CtPPNz3RzTN5"
+      ]
+    },
+    "contracts/libraries/IPricing.sol": {
+      "keccak256": "0x52da51070c54c45c150db0543d0a91964d4b980bb517b4fbc9f403e8dcbf69ae",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://afd2c555f48d5b46e308ea0a50d50d825ba10312ee5403b4fd3ddfc2dee2c8f2",
+        "dweb:/ipfs/QmTU8Hop26LMSXarCb3ErfuwN1CinYLBX3DvXSy7vQyn4F"
+      ]
+    },
+    "contracts/libraries/OptionMath.sol": {
+      "keccak256": "0x803ea6f524b69d42d8052f2df30f743a75d4aa93c788517c611dac7ace8277ce",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://191675bc8157faf58aa9f07bf190865d65034c830278dfb3e750deca92851a5a",
+        "dweb:/ipfs/QmdMF4giSsqFU7HTSgtVKrN9MSvXTXqHXW8WeX51ecskC2"
+      ]
+    },
+    "contracts/libraries/PRBMathExtra.sol": {
+      "keccak256": "0xa302010c650f26c7e1df23764bdfa037a5d0c7fefe53d37940c6d0c31f03f971",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://08c45bde3e463cf8bf570b893f876e488011f36cc2657911ac3cd42f9e2d65ef",
+        "dweb:/ipfs/Qmb52WebXneJZ7xWyFUpkSDqYtd4oie2WJ7bRnVYDUsDan"
+      ]
+    },
+    "contracts/libraries/Position.sol": {
+      "keccak256": "0x39047e6fba0f01007884ac3eeebacda3074f03c898bb9960df2104fd377ccfea",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://b94612feb7da37e89ac285c233afccbb253cdea61e3884b49e2dbc132c8d14b0",
+        "dweb:/ipfs/QmYRL4NhDJfetMmiMLbHiyvvM5B6RJN14tJqMWpbCbA6V7"
+      ]
+    },
+    "contracts/libraries/Pricing.sol": {
+      "keccak256": "0x64ca8d3ddf215b5e807177ba10bfa00fd09214f5c2c9b603a1d920f6be1c104a",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://5f5f1fba07ab72c2287e3a01c2b8b57bce952e5fee0d8c9e56e1956ec7aae541",
+        "dweb:/ipfs/QmT1XX6pRHEm9o6tEiDNLHE1Ddcz3GwdMp4Dvcep4Vgvvp"
+      ]
+    },
+    "contracts/libraries/SD49x28.sol": {
+      "keccak256": "0xccb156e800558f60cfa545c01c1ca2f2d649a92db8ba10d5a75e0c3b950762fa",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://48b04ca12bcf0a414a722ce08b3572d01cd96f2c4ea386333fb4fb43bc8dfcc4",
+        "dweb:/ipfs/QmPm1ujB6YsgxR6negzDGWyBbShtNXgV6KQoXfg3p4KypL"
+      ]
+    },
+    "contracts/libraries/UD50x28.sol": {
+      "keccak256": "0x27c452a2201563cdedd7c9e707a037f5034a765c4ba99977f89afd812454d1eb",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://d659edac0c62a27e8066e93f5d12432cdb10c6e9504f25e88cebdfc69a727df6",
+        "dweb:/ipfs/QmagHjkTw7J9iMdFTnz7ZAHWNtetVm7TqNNFw8XhmBU3SG"
+      ]
+    },
+    "contracts/pool/IPoolCore.sol": {
+      "keccak256": "0x2373997954f45acebc4ba840aa08fdeb48d0fced80ae7110426b4bb90a9cd83c",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://d7d7d0cc126251fbd8da5a169c4700c87d9b25d7be6cf5a25179654d35e09498",
+        "dweb:/ipfs/QmNbmS7Q9n7WDUpjR4akEG5JFvBdy4kRkQpbVTxrLq8A48"
+      ]
+    },
+    "contracts/pool/IPoolEvents.sol": {
+      "keccak256": "0x5e5531f4691facbc351d6187cf834483d780dfed16d6f3a632b5d02a04e2f588",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://f771ccc61a01537001b85c9263530aaf316e616852cd79785461c565918a318e",
+        "dweb:/ipfs/QmYnxWoU3NMB7RSpvKxhEXfbQcXyscj6aUYVzkPNQWaQok"
+      ]
+    },
+    "contracts/pool/IPoolInternal.sol": {
+      "keccak256": "0x6e25c0e294f5f9673474414bf60a12cbdd4a4b7cc208aba6a0a0f4903dcbb456",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://078266b25481eb6948bfccfa16fb6766a00c2dfb01819809e1e7a53ca6247106",
+        "dweb:/ipfs/QmXTzdUfJXeAWvDjHu7oZC4DZqtEDKXPdvn7AczeWJLc2g"
+      ]
+    },
+    "contracts/pool/PoolCore.sol": {
+      "keccak256": "0x17c9aa3c668573c9feeb686a2862fb314835b2696920bfb5f14a3bc4433aed0e",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://e7d3798325a924b32ed103858de3637a29d05598748a43a3f102c4d869549c59",
+        "dweb:/ipfs/QmYoGEkjFT72sXyE3xuVchkcxv4BZCBtUCh7PbVHMasB85"
+      ]
+    },
+    "contracts/pool/PoolInternal.sol": {
+      "keccak256": "0xc0332e7196a888af8ae9c7a3289832ab3e83342b0f5a1268b59246145fd32d2f",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://5dcb5c91fb1dec8836decc5067aa5136f5a0c3169ec025ec60f3a864ff62de54",
+        "dweb:/ipfs/Qmeg77rZxcbtszCWZhZ9NkbfsZuMW8R6p5q2oS1YnQJ1n5"
+      ]
+    },
+    "contracts/pool/PoolStorage.sol": {
+      "keccak256": "0x2342585705e72225fcd2a1415d89a69b2ee8da1f9b97983f9d81217e69aeaa7f",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://c9e144e135827521b7a4ad38efa6a0b6915da91f1a1ebbc8e9e55deb94b2d144",
+        "dweb:/ipfs/QmX924ZNJbMoNL4iSQHJWZoVdDP9fXkNHS7os5SDY1pZuv"
+      ]
+    },
+    "contracts/referral/IReferral.sol": {
+      "keccak256": "0x10e6cd3627ebb72c636284504cbf59d4683ebd3d1c250a88045a999bec85e535",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://8417f9c293dad1ae267dabed29ec6a7cdc0ecda5e56b072dff0cae04093dcbb0",
+        "dweb:/ipfs/QmZSH6sReyPAUWaUofXtwL6qFh1qU2PuJpDmnNkj9CLKSc"
+      ]
+    },
+    "contracts/router/IERC20Router.sol": {
+      "keccak256": "0x747b866922978d42213bd8f56735bc8e72b6ea275ec1906c6326bc62f708ff37",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://4ebe16fb76d2dd45ff706c760e1e5716909b9285be86ff60bb2f2a0927ed8de3",
+        "dweb:/ipfs/Qmd1fdUG1BWxMcLSAuZiKajDM2L3Ck8qGw71Svzv49SS25"
+      ]
+    },
+    "contracts/settings/IUserSettings.sol": {
+      "keccak256": "0xfc988789699709ddc8bf63287187be76cbc3fe6f3804cce80ebcb9a159f66061",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://a193af767d97f6cad23828f7b01200cd27edfe4a18ff5d1b161192f8eb49c9da",
+        "dweb:/ipfs/QmPEtJEh3QMWnM9zrJUzVT1TDmaVtiEhGKNkVCCQyiappJ"
+      ]
+    },
+    "contracts/staking/IPremiaStaking.sol": {
+      "keccak256": "0x31f57f188390841fd56fae02ecf7bca8966f2da152f55894ac8a0d17e59d386d",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://03db338ac43ef2520a7be63f16f5093a90ec3bb00262db34ba7ac5fbd00faeb3",
+        "dweb:/ipfs/Qma1ttGUKQorvJfH3NPidtcnVyNS21dZgZgbZzYpHsRMoy"
+      ]
+    },
+    "contracts/staking/IVxPremia.sol": {
+      "keccak256": "0x7afd388d36af574c88532cd1934d1f80d5c4399a288190b272f2372afb5f4819",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://168162d34639809b4062f604dab65ede8bc9f5fd9371c045368cd3b42bc114b9",
+        "dweb:/ipfs/QmezCspz7y1jCoUYLnzrHX1toA6gU6fXhRhCdasBd61QsM"
+      ]
+    },
+    "contracts/staking/PremiaStakingStorage.sol": {
+      "keccak256": "0x47453485185df8884efdaca08fbab38f6a402c2b2597fa2dcde4c14f70fd3659",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://1c9300bedb39142381cf69ddcb5087242ab180e87b51d4be5d9423c2ac082ff5",
+        "dweb:/ipfs/QmdMUoqLWWWsSspQaMdb3LUJN42dhxB1Bf3Gn1SkGbGwNd"
+      ]
+    },
+    "contracts/staking/VxPremiaStorage.sol": {
+      "keccak256": "0x5a3df1de8c3b049a25fbe7a37212414d433882956443e4689776a5e49af13753",
+      "license": "LicenseRef-P3-DUAL",
+      "urls": [
+        "bzz-raw://c7185354d01ee26c711b5df45d88d0c733b92ce7b4b2596ce87997e2aca3d9b0",
+        "dweb:/ipfs/QmcPCZGeXy1ben87SGYHF4pZhGPY956SVHi78rSGCfGzxi"
+      ]
+    },
+    "contracts/vault/IVaultRegistry.sol": {
+      "keccak256": "0x14c63b983789d207b5eb2c0d40b5372c61a5d8a120fdb4f6d4aafd04d66b17df",
+      "license": "LGPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://f4a847342c31974322b5dc3cc07c6f9817e5c4517219a48bda2871aead53f5c2",
+        "dweb:/ipfs/QmUzZaa7kinJ4AumZbBYQqTDoNjRZmvfYePgkTyjLMdtXx"
+      ]
+    },
+    "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol": {
+      "keccak256": "0xd8dd2fb707fdd435f8335add9d1891eb2c9d7f501672ff4ee82b2f152cdfeeeb",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://f374b9806f048ff28712624c0be02b29a0b72368ff76085f025e5aca6d19c38e",
+        "dweb:/ipfs/QmPTjZD7sT4BbsjT3JsWokmhrrpVMURGCt9pfEABYunuDo"
+      ]
+    },
+    "lib/prb-math/src/Common.sol": {
+      "keccak256": "0x7a4ade019d2a929b19e18cc156784888995c8263f212672e2e37c66efba9e2ca",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://df932438b2fe7f23bf2dde62d547cb2c04b306bdcc296dbc093711cc9ae568d6",
+        "dweb:/ipfs/QmXYGwefYGiTEdXFPk9xERuQkDuMyLT5yAVzLmNDtvHZvd"
+      ]
+    },
+    "lib/prb-math/src/SD59x18.sol": {
+      "keccak256": "0xff25fe75f8e77d4c839fbe69198d273039575fa72f31ce9725bcacb80db65461",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7ed7bc89a4efa33fc9392de8104c8af609fd3372b323d7824a6a3ae888bad3be",
+        "dweb:/ipfs/QmfCbW4geVSm7uJW4KUoXrejR2SywcRJrXwMBzUBWYiXJa"
+      ]
+    },
+    "lib/prb-math/src/UD60x18.sol": {
+      "keccak256": "0xb98c6f74275914d279e8af6c502c2b1f50d5f6e1ed418d3b0153f5a193206c48",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a750edde2955f160806a51083a12185fb04e20efca0e3a7ebd127dc1acc049a9",
+        "dweb:/ipfs/QmeAre3mThopoQPB9mSXZq6jck59QZ7JbDFR83urd2SLvp"
+      ]
+    },
+    "lib/prb-math/src/sd1x18/Casting.sol": {
+      "keccak256": "0x9e49e2b37c1bb845861740805edaaef3fe951a7b96eef16ce84fbf76e8278670",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://d3f65f257f9f516f2b40ca30b1c999819777111bd59a92376df6c5823453165a",
+        "dweb:/ipfs/QmVQRKMS6ibv6x9qWXLJp2KZw9qs6Yz1sYZQWoSBQM8Pkz"
+      ]
+    },
+    "lib/prb-math/src/sd1x18/Constants.sol": {
+      "keccak256": "0xb51aab4a2ea76f530dccbf3b7d4af24c8f3ceef67f3c574b58650466ea924a3f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b9fccf58b2b69179a311f996f772d9bf255fd1d0de9ba69ab89b45ef81008770",
+        "dweb:/ipfs/QmTYE7xmFqUzQ2o8SmCpMu2GxkBJLjTtSWngoe7JXzsv2D"
+      ]
+    },
+    "lib/prb-math/src/sd1x18/Errors.sol": {
+      "keccak256": "0x836cb42ba619ca369fd4765bc47fefc3c3621369c5861882af14660aca5057ee",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://58873bcebf7398f63c6d3f234073fb6739fe4fae87428010cd0bc1aa68f53499",
+        "dweb:/ipfs/QmZSZ9z4ZQUGRc1TRiL2F9AL7ysnGRXwRtocMa2zhxHFDp"
+      ]
+    },
+    "lib/prb-math/src/sd1x18/ValueType.sol": {
+      "keccak256": "0x2f86f1aa9fca42f40808b51a879b406ac51817647bdb9642f8a79dd8fdb754a7",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://31559dfc012ebe40fcdb38c45e7edfa16406f11c6ea219e8676749f20dbbb5dd",
+        "dweb:/ipfs/QmXeYzF9hYQphVExJRp41Vkebrs51k7xgr3jXfKgdD87XC"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Casting.sol": {
+      "keccak256": "0x3b21b60ec2998c3ae32f647412da51d3683b3f183a807198cc8d157499484f99",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://08a49ba7ebf592a89e1a81e5987351e7810e371f4c3d2356d9b5a9b58462c809",
+        "dweb:/ipfs/QmcvyHaUzd74eYjcZWQgUDFJfYrU8kFohiB1H5cs8HgUDp"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Constants.sol": {
+      "keccak256": "0xe0a1ca1a7b5b2d637cff83a8caa3d2e67a6a34f7ee9df58a9ca5d5fa268c474a",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://3e9a6980e97a68f9148c350439bc0b3ca4126a4428752b151744097da3f650c8",
+        "dweb:/ipfs/QmVRJqG378u46dnvjgYkcLjnvHW8yNv5ijLoUWPMGQscuC"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Conversions.sol": {
+      "keccak256": "0x9876a288dcbb2583c5361a3e60b5b30c7d4c89c8d2aa35364f2f521656d8db80",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c76a858b3462070671babff2d079f9368bc022017f34921092c93ee5751b99a5",
+        "dweb:/ipfs/QmYQqUodEny8uqQeqXwYU5GDsHPMEUz5HvGF2ChjbmDWbL"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Errors.sol": {
+      "keccak256": "0x83ee24e41d235bc05cb641d2c5c16c67b17fa00e4593661a8d14350435d4df04",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://40cedd66b7ba40126b2668c2fbe8ccd6ae88bd5853c205ac54f643e49acd31c1",
+        "dweb:/ipfs/QmWZz7bsQceUUzJiURQE5XtfzNW2Ammiz2WSNsZGxCYT7a"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Helpers.sol": {
+      "keccak256": "0x208570f1657cf730cb6c3d81aa14030e0d45cf906cdedea5059369d7df4bb716",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://4c78ca900edafa9338d4e3649a55ab0c84f76468d8a22fb945ba6d01e70f8fed",
+        "dweb:/ipfs/QmeP4hQYfNxcATd1FsasdD4ebyu2vrC9K1N68swxUJzzZD"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/Math.sol": {
+      "keccak256": "0x1984efb1ef92d73cc9290a72ea1d6a5dd52ac00435884ab3e8b3dc440766c203",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://9fdaa828e86d3708a6aea6423a82295f1af64cc313471eaabcd9ed7acf654c76",
+        "dweb:/ipfs/Qme1cYxTC4jVSLhxzLVSMGJBrqDVRmhyS2f43Q3SNB6ue4"
+      ]
+    },
+    "lib/prb-math/src/sd59x18/ValueType.sol": {
+      "keccak256": "0xe03112d145dcd5863aff24e5f381debaae29d446acd5666f3d640e3d9af738d7",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://abacb7cba4bd732c961cfe7d66c5eec924c7a9ffe0bf07fafc95b65a887071f6",
+        "dweb:/ipfs/QmSBefftoSJDMdmp5CFAVvJjPHJXHhd11x1FzkcHQxLjoT"
+      ]
+    },
+    "lib/prb-math/src/ud2x18/Casting.sol": {
+      "keccak256": "0x07ec9a8adddfe6bf37f0d9ce7702c5620a6215340889701da0525ed190ccc099",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://3500550c9ed259e5a876d14510d7e4a2226fac41e04535dddffaf9e3e6dc67e5",
+        "dweb:/ipfs/QmbA5y7zdqsFELeNPj1WgkP28GXBcnfYajj3E6nangJo2F"
+      ]
+    },
+    "lib/prb-math/src/ud2x18/Constants.sol": {
+      "keccak256": "0xbd11da8ad79ffc8b7b8244c82632b0ca31970e190a8877ba1a69b4b8065dcea5",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://f0d3d5cb4711d83e0fe654b8338b6685b6e9d9f234c645813533129ae48fa14b",
+        "dweb:/ipfs/QmZW47VmyizEwAxuv6tdeJmrMM58KvsiaRjidcBgqKg4CP"
+      ]
+    },
+    "lib/prb-math/src/ud2x18/Errors.sol": {
+      "keccak256": "0xdf1e22f0b4c8032bcc8b7f63fe3984e1387f3dc7b2e9ab381822249f75376d33",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://975f9beb25a1ebff9b29dd5555e1f4f14a4fbf178d15ebd3add5ed5f5985fdec",
+        "dweb:/ipfs/QmbvTvdtSrZi7J4sJuv6zUsymT5UctJnx4DkGezXW25r59"
+      ]
+    },
+    "lib/prb-math/src/ud2x18/ValueType.sol": {
+      "keccak256": "0x2802edc9869db116a0b5c490cc5f8554742f747183fa30ac5e9c80bb967e61a1",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://e9657724f5032559c953cba61db0fbca71f6b50f51edb53a08f840cb74a36c95",
+        "dweb:/ipfs/QmX2KF8v7ng13NaavyogM3SGR4jCMLUuqKkxFhtxvc7D7m"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Casting.sol": {
+      "keccak256": "0x5bb532da36921cbdac64d1f16de5d366ef1f664502e3b7c07d0ad06917551f85",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://f0819da49f6a86a1fc2ece8e8a4292f8d102dc1043a1d0a545c26d020d1f36fe",
+        "dweb:/ipfs/QmdzLoo99EBJv2GGiZZAAY8Bfr4ivFykzeSbpF48aJxFZ9"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Constants.sol": {
+      "keccak256": "0x2b80d26153d3fdcfb3a9ca772d9309d31ed1275f5b8b54c3ffb54d3652b37d90",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7e3a6673a156f635db94dc176baaa7274db8f9bec4461cd1152596253550ee3b",
+        "dweb:/ipfs/Qmc9zT4kNSbMYaXcnbxNVqmb3P3m46ieaQxkwxqLwsvRA5"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Conversions.sol": {
+      "keccak256": "0x9cc0f7866989da02e89bec7c8a090d9a73cf4f0aa25bd489da13a2981715b9ed",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://f0490aaba88ae28222726769ddf8d0d669ae292a12fd4d01776eabe87c908a48",
+        "dweb:/ipfs/QmePApDGGHycV94eTAMuQ8ixko5e4vgnw8VfR9uv1TWUoZ"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Errors.sol": {
+      "keccak256": "0xa8c60d4066248df22c49c882873efbc017344107edabc48c52209abbc39cb1e3",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://8fb7e1103309b4f99e95bb638850c0321272d57bd3e6b0a6331d699ff103cbaf",
+        "dweb:/ipfs/QmfLFHjVJv4ibEvMmh46qC5nCbeCYSfXgCTDWQqfW3jnyB"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Helpers.sol": {
+      "keccak256": "0xf5faff881391d2c060029499a666cc5f0bea90a213150bb476fae8f02a5df268",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://76105fa22bb1b5f1fa99abf9c4fbc9577a02c7bc204f271754c407f0d75489f5",
+        "dweb:/ipfs/QmVNGZSTniDuZus5DdbFubqJXCLtTaZit7YPm4ntjr5Lgr"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/Math.sol": {
+      "keccak256": "0x95865b5f2a9d6f81c7c21043b7f09d75be039f1faf993cd26eb2561bebef1367",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c9682e8400f8052a4695024eaff9395783bdbf3a8de46182d810a9e9c3993fd7",
+        "dweb:/ipfs/QmfHDmjCy3tuJaBBr2F4qDfoUNdDbXkohTeJYfeFX45dKG"
+      ]
+    },
+    "lib/prb-math/src/ud60x18/ValueType.sol": {
+      "keccak256": "0xdd873b5124180d9b71498b3a7fe93b1c08c368bec741f7d5f8e17f78a0b70f31",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7df6700f747dd01b2520a900a8d6b5a4d239b8063c31384f40921afe22295c29",
+        "dweb:/ipfs/QmSPSPQJKNSzGJu2ri5EfWjcLfA2xDHfUehyBp4FpUu2qZ"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/cryptography/ECDSA.sol": {
+      "keccak256": "0x6c0d5a71c8b91a811b5b4e1cfafffd0ba4e6b54c5b9852bedb49a1b29e69e3ad",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://bcfc0b3d59a5de3210eb218f05df05e053c1cb89cc08e4afce1f46c22afb10e9",
+        "dweb:/ipfs/QmbVEQJkJnA2NSBVhUF6W97adH8di56FvkHDrbv4Z7nMWX"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/cryptography/EIP712.sol": {
+      "keccak256": "0x7cd84083cc67ab6b51956b59a017cbeaf0d94de34242d2cfb6068ef9dc1f4ac6",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://2230d89de9d70831b3c493a5d7507d1a3f0782e570ca796e774257fdb41e51b6",
+        "dweb:/ipfs/QmbZaDUNBBEAnLDLw99CZkhyVvFTDHQkmna6uBjVLmAUXA"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol": {
+      "keccak256": "0x6811a20b3b2856edc19eb0ce6d5b449148d03532cdf9ef727ad86369adb5bf15",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://64615e4e20a3edb82f4ec4bc40614adba37c16db806842523cc8f6b575d12303",
+        "dweb:/ipfs/QmZDuXvQ3qfUcVNXydCQowfN1cnLQ3MH1c2kMkWm3nrYsG"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/data/EnumerableSet.sol": {
+      "keccak256": "0xbbaaeb805b3e1e704ceba33c9093285220254b1ff6b4b7f577e515b118e116f6",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7229641733255170ea5a327a85b5e5f4812f7d51ac0494b4b85afcc6ddf05da3",
+        "dweb:/ipfs/QmWAdKkfqBDDC2sz7qwuySKF8baUq2vtHPV6eDYNDH4wAi"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol": {
+      "keccak256": "0xe6a748757a6598745e089546b8cfa3574e6da7785a6b57b95eaffe6f172db3d3",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://e5fa924fcbb884d25f0ab5960ec59fbd4379bfb454614203646e5715aa303039",
+        "dweb:/ipfs/QmWW8iJ1iafTRzV6JrQF7ondiomRTbYQ9EAzLP4aXm5UkK"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol": {
+      "keccak256": "0x8688f1b897b4ddde7ebd48ee5ce1063f56d8af8ea3aa80aa1df12ff669d133a4",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://83d98ed9b5f8c1f5dc275f35e0aa92a5809fd2101820f6938497597ba9e588e1",
+        "dweb:/ipfs/QmcNh4wcv2hNdmdPkXWLPDTmMaZUuowM2Yto3W9ss9qx8m"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC165.sol": {
+      "keccak256": "0xc250e493770feaa0da8e5a55d241712c1c6526caa7d8df2455c3e5fa25124c0b",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://768e47d9ddeb15daeab0c8c1109ae43a4c2a0633bd9e4bf141488dfc9252f7ba",
+        "dweb:/ipfs/QmWMTTRTncar9LptrxU7WK7WG5hHp8KsYnBGfm3cYowuP8"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol": {
+      "keccak256": "0xf4d4708a60ed04887849509a258db49d4eb686f33214cb9c9643325cd8dae89d",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://66e7ade64c12edf7adbc0f20c1195b3c635ea2df67b836215441a4fe22ae17da",
+        "dweb:/ipfs/QmUAbU31ZYg3FrKzXCk8CE1FbCg6LNoB5HpR4pU2QwZc7p"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC20.sol": {
+      "keccak256": "0xc4554dc5c7fdc1a333511876ea1ab7a932bfdcdf092e658bf66049956c0f8aca",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7faa38e1943c2417f14049970a7a40a3e9bf2097a6d431b37862f4d2b63ca2f2",
+        "dweb:/ipfs/QmbGumAcT5EDCmG7btsGrBUQ2zK7M16TcHbMtkTYXs2FEQ"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol": {
+      "keccak256": "0x5dc63954123c58280a48da71f91c435dd7373f56bd472867c80177359c885e53",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://13af2862e67594093fce8a06db08b755e877c052dfaf34c6d46cd50bc2e3df6b",
+        "dweb:/ipfs/QmTp5qgwFNNKk8T7whiZ8LTFMhYL8ztCKhNFfsRr7FS2H8"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol": {
+      "keccak256": "0x12aa4d02076bd2b3ee0d926dbc2bef8d9a14c7973e90eac363fb86d702ba20bb",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://184d2db4e790421a6df6905eb94bf0f403fc9a4ef23f6dbd770fac73c9b7571c",
+        "dweb:/ipfs/QmYm461tWZQcDKx3yaPmPzD9XyoikU5n6cvfDiJ7SpPZgt"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol": {
+      "keccak256": "0xfdfecce8f126d63e0462a112d0a1bc59acef6f8fa69dae607ba5891fcff4607a",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://039d5d4ac9a12f3c458a5b2d06654e9a43fa757fae92b05eb3f55f2f9fa21d12",
+        "dweb:/ipfs/QmU1ea2Hh3vWLzQ1SaJQShX3vGmskDkSXfwbkkDTJgurVr"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol": {
+      "keccak256": "0x053868fae9badd6d7895ffa02b29e3e0205c5e546c17e9de56cdec69f5f02c29",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://705488b1434023ce6a3f92b6aee76edf40259367fa28b1e9f200199816a46be5",
+        "dweb:/ipfs/QmPLjwykYN8yVs9bZYqwFSkj38tMEFfspi6dtesojfiWKu"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseInternal.sol": {
+      "keccak256": "0x347e1d1bbff3001b09b0ac140f8d0ff8d526d34e310610c7fe31cdbf418059ed",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://cae18bda95eb7f047203f1ac9562b50f07f213a54306df2efc53bcc78a90f86b",
+        "dweb:/ipfs/QmeetumKVBDswCtHekipskx3nb2c5R9kNvnMZf6Ynd1B3g"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseStorage.sol": {
+      "keccak256": "0x5bc1fde9bab7b338312099733e21c7bbbc44597fd25970bd68187eb65e622ef1",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6c29f21cd4b1225a48b4ad8647d65f5787e3117fdbf7df2ee4040b3566903892",
+        "dweb:/ipfs/QmYLmrkDErz9Nufh1vFrCjSyFH8cHhcXw5Cqy9EhmE8Ai4"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol": {
+      "keccak256": "0xece161d9a4ab29e5b539b8b0f808660fcdd6b8c35bb1920dd99acdb5c576efbc",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://91ceb4a8eae29ab4dfd2bdc2ece95e57851d75b422c55bd62b7a649d15874209",
+        "dweb:/ipfs/QmeLWZM4i5ytNEhds1kfFx8ik53YT125qQEMwWxxdsc3zo"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155Enumerable.sol": {
+      "keccak256": "0x452201121747be0d0af28279da9e824d1e99a261a6cd34abd156c432b97f0338",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://5c25764fcd60f23b1585759cda8a7152c39923d34ec730fa959a378c8c04c49e",
+        "dweb:/ipfs/QmWXe8yd2UU9Nwreib4d8yhx4zRuds3L1qF4r34WGBwAyj"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableInternal.sol": {
+      "keccak256": "0xa60052b304f895a1893378f757223a3081f9d53044776ddc4bc283a51fd62388",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a1a76436f1f9578e58a28b0c12c2d1dbe30f4af6b5ccea01470d131319db66cf",
+        "dweb:/ipfs/QmUq5PYiGwNetQEadtkWHaB5ctJEPdRkwRVcsS9bH1ozn1"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableStorage.sol": {
+      "keccak256": "0x89e73d6d5c7f19d54927dcbeb8b3bf782c8a9f51ad2f12e67b6491b3681a1549",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://774d9b894d3a2ac9ca59c17caadf70e679dec88e5ce09512ba6c92ad230505cc",
+        "dweb:/ipfs/QmRRer196rxGkvxgpWTsMpUp77Zdz3xT2KgpijDg4arbub"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol": {
+      "keccak256": "0x2e31e7a736871d52e5d24b0f0917a63bbdc25503bdc70ba6d8d001888aa0049f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b93d27bccea4ec5a757ca119cc42b680187731f92fa0983dd6f434186b50c2a2",
+        "dweb:/ipfs/Qmf9pfXQNyVZ8NFZE7QJL8MWDt6tUFaVcQJSyRsjFub8QL"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol": {
+      "keccak256": "0x4800d771e5606f791a7c2662802718a727c361aaf547df8e6e849165ef91e9df",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a470452a22d4e680b6c1bc50df9ff39ca8de006a475990d907cfd47ebef39f39",
+        "dweb:/ipfs/QmS2c5s5zQcJ2yoGsNLDJNc1Ysf7wvw2eqrkzzE7G3zmQ2"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol": {
+      "keccak256": "0x83fcb688381ff4fba9bc068d490d3f0fd83abd5e5ee46f24cfb18ae1906e071e",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://7ae77357bd78adac42bf63a71f212ff6c2357c11880544ad9014fbc70f2969c9",
+        "dweb:/ipfs/QmPfaceGNUFZkioeQnrKp4PWQeNnNCGtaojsfLfX2b4GeW"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol": {
+      "keccak256": "0xa9c47a0ad2ab7f043a283ff148a8e4cf61d98f05fbed8d9ce35f6a0a403cc17f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://90e5ca8a15f674bd8835b12428e21d6f4f85937a8c38c7df0f768f893ce77fa5",
+        "dweb:/ipfs/QmYJmSst4DEXZoYPjuFTG5S7FpnCEXCDxDpQXwuz9dkMBE"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol": {
+      "keccak256": "0x2eaa3907a62acc5b79fcbc90773c458ed4fcb6885b92aea56598b62af51fbd9c",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://1b0ac9aa52df0c430022151211d0da41341663517d56eba42df9984cccb862b1",
+        "dweb:/ipfs/QmVipnZ51o3tDCEudurBaSXusWU4gCQ4qS7muvpBJuoYt5"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol": {
+      "keccak256": "0x6fa7ab02fbac8389c99d4854ff7f6bf0de08459c167e5bbab15138b177b55de4",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://808e16888d4b7ec51f19cf9bee6e957f229c20170ce5a4b79fd847a1f13cb38d",
+        "dweb:/ipfs/QmdMzqqY2bxQMdooz1K4ueg7kBVD6GqUVcKYDFffk7ASJX"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol": {
+      "keccak256": "0x22eefd0dbd7637f41c8bfc3662a4b1ae6f084f27f26e34cc9bf124e0aee10a01",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://ac459354c7e3ad54842b23ea469c0bd3464a95aa293f7fc09b34c590a356b1a6",
+        "dweb:/ipfs/QmYvXnJq7pVrU3e18PbfahK9AwpSc1Yu2rHvsSJMXwKGZ1"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol": {
+      "keccak256": "0x32464590a972a9325d20c7125d157594df9473b6496ce6a66df617c41c4039ec",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://60159ad57e36fb414e79b3b9aa41ff0cdafa56585d104d67128d56e935635e01",
+        "dweb:/ipfs/QmbBe4dh2zttkvqWyHn4QPj6yVpR14SWNTr4KiwSu37jk6"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol": {
+      "keccak256": "0x4b906e3eab76bf0e4e3b96987f989f9e2350f70f775b2773ae84ffcf40816f0c",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://97a30f1be8cf8d85fb23ca9e2f83a79d7499b0549afa74832801afb42e8d9f87",
+        "dweb:/ipfs/QmR5Tu1fY75HAFTuoJ2AFvs7TpcupoEguJLKhMGmrSRjKK"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol": {
+      "keccak256": "0x4f6e12f9e07cc66ca9ee57a25c40d9d2f55d3e800a3d6577c9d883068423eb22",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://e8d626e9f9527fda26f30d811007fd087a4fd520ca56ab3f7821d22298981faf",
+        "dweb:/ipfs/QmZCouA4wmAJP9bFvTjF9gnJiEAn7wYTr7GypkP2i6HsXL"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol": {
+      "keccak256": "0x449c45997514a8ebf30c7cd7a27778ce6fd6f7dac27c9505fd8a4f093f396e92",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://1ad30720570447afbaa87e2b40158884fa859162f779022ff01a90bd61eadae7",
+        "dweb:/ipfs/Qmc2PZQQsEuWwMz9WXXAnexDaxAf5jWJj5irGgrEEuNM1P"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol": {
+      "keccak256": "0xdca4b94537ab13936677c889a29267e506f2f23da6f5f541f73a95e2db5b4db9",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b59db5b753c269d10c4d71e375384c8612f477679715afe8b35ba6e4d4f67f1d",
+        "dweb:/ipfs/QmUk4McXaQeFVZ3b4XsLJsWEdoKdxTLGSFQDi2Qe54oy6z"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/AddressUtils.sol": {
+      "keccak256": "0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929",
+        "dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/IMulticall.sol": {
+      "keccak256": "0x39e630bc189607ae119c1208a632009fe418cc4eb2687b28e7fdbe78af7b79b0",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://5afde99ff69a2e02fb24b6895b629de612547643dc119d01bf9937cad5452e0b",
+        "dweb:/ipfs/QmR9WDSqAeNxRnju4XBUsRmN6TdgoATp9hcoC1kSDnVuZX"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/Math.sol": {
+      "keccak256": "0x741d42bb2da6f6404511fe94ab7baba9f6be6efdcfe966973542ad2fb0005c12",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://ef298de5d2d221227cf2f9f4efcc81431510e2af7bb95493d4b31a8d4f939fab",
+        "dweb:/ipfs/QmWhaiKvQUv45HV9tJXgoTK4yuReuwMFdYRgW4zRRK2oZj"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/SafeCast.sol": {
+      "keccak256": "0x1fa13a7179aaac19f7d0a574814832ee20b62cddee8eb1fc96464eb77e73ec55",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://1458aea98f62e1731053f27a4d776cc84702007ddc993a2c205d86f18865a820",
+        "dweb:/ipfs/Qmbup8hr3XrbLKrPnEjYdR5Cke7cyVU7TPZhGKUZ2ZgGBY"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/SafeERC20.sol": {
+      "keccak256": "0xd1d6d797898b4cfd575c8c9aca1194e9de7bb88fe6c8fb2afaf2b100e5992826",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://431f2daa6c8e02789f8f71b097bdb46dadd9f0e3ae1ba5ae59659f01f144abb2",
+        "dweb:/ipfs/Qmb4eho6ixurhLtZpnG9B2nGA8kuBfnuZ6jypdAr8sjBjq"
+      ]
+    },
+    "lib/solidstate-solidity/contracts/utils/UintUtils.sol": {
+      "keccak256": "0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2",
+        "dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza"
+      ]
+    }
+  },
+  "version": 1
+}

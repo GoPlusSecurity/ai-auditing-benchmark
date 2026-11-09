@@ -1,0 +1,22 @@
+{
+  "id": "premia-historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getCode",
+    "params": [
+      "0xb539ff8563974d407fd6d717ff2f930e99093d21",
+      "0x1f012c4f"
+    ]
+  },
+  "retrieved_at": "2026-11-10T02:03:51.065778+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "49f2f58f628629966dc67e14336b0e7a48a15823099579ee5c645a6b071f5226",
+  "bytes": 253
+}

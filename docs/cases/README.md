@@ -4,7 +4,27 @@
 
 源码与既有反编译代码位于仓库根目录的 `dataset/`；ABI、配套元数据、来源记录、交易证据和校验清单位于对应的 `dataset_artifacts/`，案例说明位于 `docs/cases/`。只有字节码及证据的 JaredFromSubway 位于资料目录，仍保留在事件索引中。
 
-当前索引共 **66 条事件**，源码 **65 例**，配套资料 **58 例**。本次迁移记录见 [合并与离线验收](../../dataset_artifacts/batches/20261027_amos_tz_merge/README.md)。
+当前两份 CSV 各 **72 条事件**，源码 **71 例**，配套资料 **63 例**。2026-10-27 的迁移记录见 [合并与离线验收](../../dataset_artifacts/batches/20261027_amos_tz_merge/README.md)；下方旧批次数字保留其执行时的口径。
+
+## 2026-11-10 从最新日期筛选 5 个未收录事件
+
+重新读取并固定源表，最新事件日期为 **2026-11-07**。按 `date` 从新到旧、同日原始行号从小到大裁决，到原始第 29 条取得第 5 个合格新事件；实际裁决 **27 条**，新增 **5** 例、已有重复 **1** 条、跳过 **21** 条。源码位于本批新建的 `dataset/<case_id>/`，原有案例目录不搬迁。
+
+| 源表行 | 新增案例 | 核心原因 |
+| --- | --- | --- |
+| 5 | [CoreVault / InsurancePool](20261104_CoreVault_InsurancePool.md) | 可操纵的逆价格采样放大 BNB 赎回，保险储备补款 |
+| 10 | [Premia V3](20261101_PremiaV3.md) | 拆分 LP 未维护边界计数，边界重建后记出虚假手续费 |
+| 22 | [X100 Senate](20261024_X100.md) | 刚取得的冻结持仓立即成为治理多数，并同交易执行不利国库兑换 |
+| 26 | [NEM / NemTokenV2](20261022_NEM.md) | 未成交的转账被累计为卖出，skim 后额度仍可烧毁池内储备 |
+| 29 | [AlpsCon](20261019_AlpsCon.md) | 旧版本新余额在新版本以零起点领取历史奖励 |
+
+共归档 **675 个原始源码文件**，源码未修补。X100 核对了三份核心攻击区块运行码；其他历史代码、路由、状态和完整跟踪缺口逐例说明。NEM 金额保留源表约 820000 美元报道估值，其他四例两份 CSV 金额同时留空。未编译、部署或分叉复现。
+
+未开源的关键逻辑仅允许官方线上反编译补充；浏览器安全验证或登录要求导致无法取得输出的候选按用户决定继续跳过。本批未运行本地反编译。
+
+用户随后明确确认：只要求漏洞、权限和付款因果链的必要代码完整；纯编排/收款合约的未知内部逻辑不作源码事实。见[范围确认](batches/20261110_latest5/scope-confirmation.json)、[必要代码覆盖](batches/20261110_latest5/source-coverage.md)与[独立复核处理](batches/20261110_latest5/review-resolution.md)。
+
+批次入口：[说明与逐行理由](batches/20261110_latest5/README.md)、[原始 CSV](batches/20261110_latest5/sheet_gid0_raw.csv)、[固定快照](batches/20261110_latest5/snapshot.json)、[既有事件清单](batches/20261110_latest5/existing_events.json)、[验证报告](batches/20261110_latest5/validation.json)。导出 SHA-256：`791709330cd5aff1de37b8907ec8739052bc7e80ba3fb4d5670e5bd5b5dfe65c`。
 
 ## 2026-10-26 按 X=96、Y=5 向上筛选
 

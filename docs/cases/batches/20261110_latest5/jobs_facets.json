@@ -1,0 +1,86 @@
+[
+  {
+    "id": "premia-facet-deposit",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/facet-deposit.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+          "data": "0xcdffacc6631187b900000000000000000000000000000000000000000000000000000000"
+        },
+        "latest"
+      ]
+    }
+  },
+  {
+    "id": "premia-facet-withdraw",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/facet-withdraw.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+          "data": "0xcdffacc66101023400000000000000000000000000000000000000000000000000000000"
+        },
+        "latest"
+      ]
+    }
+  },
+  {
+    "id": "premia-facet-claimFees",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/facet-claimFees.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+          "data": "0xcdffacc64f08c4c500000000000000000000000000000000000000000000000000000000"
+        },
+        "latest"
+      ]
+    }
+  },
+  {
+    "id": "premia-facet-write",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/facet-write.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+          "data": "0xcdffacc6b0706b0100000000000000000000000000000000000000000000000000000000"
+        },
+        "latest"
+      ]
+    }
+  },
+  {
+    "id": "corevault-trace-drpc-retry",
+    "url": "https://bsc.drpc.org",
+    "path": "screening/corevault/trace-drpc-retry.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  }
+]

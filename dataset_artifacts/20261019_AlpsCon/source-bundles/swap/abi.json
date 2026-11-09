@@ -1,0 +1,417 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "baseToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "usdToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "exchangeTokenAddress",
+        "type": "address[]",
+        "internalType": "address[]"
+      },
+      {
+        "name": "exchangeTokenChainLinkAddress",
+        "type": "address[]",
+        "internalType": "address[]"
+      },
+      {
+        "name": "rate",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "swapFee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "aiTradeHubContractAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "vaultContractAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "SwapAmountInvalidError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapInsufficientFundsError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapNotContainListedTokenError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapNotContainMainTokenError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapPermissionDenied",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapTokenAddressNotInWhiteListError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapTokenGetPriceError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapTokenInvalidError",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "SwapEvent",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "token1",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "token2",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "rate",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "DECIMAL_PRECISION",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "TARGET_RATE_DIGITS",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "addAddressToWhiteList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "walletAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "addExchangeToken",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "tokenAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "chainLinkTokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "config",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "baseToken",
+        "type": "address",
+        "internalType": "contract IERC20"
+      },
+      {
+        "name": "usdToken",
+        "type": "address",
+        "internalType": "contract IERC20"
+      },
+      {
+        "name": "exchangeUSDTRate",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "swapFee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "aiTradeHubContract",
+        "type": "address",
+        "internalType": "contract IAITradeHubContract"
+      },
+      {
+        "name": "vaultContract",
+        "type": "address",
+        "internalType": "contract IVaultContract"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "estimateSwapAmount",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getSwapRate",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "getUSDPrice",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "tokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "isInWhiteList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "removeAddressInWhiteList",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "walletAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "removeExchangeToken",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "tokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "setAITradeHubContractAddress",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "aiTradeHubContractAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "setExchangeUSDTRate",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "rate",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "setSwapFee",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "supportTokens",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address[]",
+        "internalType": "address[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "swap",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

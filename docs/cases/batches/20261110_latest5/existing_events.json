@@ -1,0 +1,3267 @@
+{
+  "recorded_at": "2026-11-10T01:29:15.008582+08:00",
+  "csv_count_cn": 67,
+  "csv_count_en": 67,
+  "source_case_count": 66,
+  "events": [
+    {
+      "case_id": "20250528_Corkprotocol",
+      "identity": {
+        "event_date": "2025-05-28",
+        "chain_id": null,
+        "transactions": [
+          "0xfd89cdd0be468a564dd525b222b728386d7c6780cf7b2f90d2b54493be09f64d"
+        ],
+        "victims": [
+          "0x5287e8915445aee78e10190559d8dd21e0e9ea88",
+          "0xf0da8927df8d759d5ba6d3d714b1452135d99cfc"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 2,
+          "cn": [
+            "2025.05.28",
+            "@Corkprotocol",
+            "权限漏洞 + 逻辑检查漏洞",
+            "攻击者利用参数检查的缺失，建立了一个虚假市场，并且其 AMM 扩展（CorkHook）的访问权限相对开放，导致衍生代币 weETH8DS-2 在两个市场上被重复计算",
+            "https://etherscan.io/tx/0xfd89cdd0be468a564dd525b222b728386d7c6780cf7b2f90d2b54493be09f64d",
+            "https://etherscan.io/address/0xf0da8927df8d759d5ba6d3d714b1452135d99cfc\nhttps://etherscan.io/address/0x5287e8915445aee78e10190559d8dd21e0e9ea88",
+            "120"
+          ],
+          "en": [
+            "2025.05.28",
+            "@Corkprotocol",
+            "Permission Vulnerability + Logic Check Vulnerability",
+            "Exploiting a lack of parameter validation, an attacker established a fraudulent market; furthermore, the relatively open access permissions of its AMM extension (CorkHook) resulted in the derivative token weETH8DS-2 being double-counted across both markets.",
+            "https://etherscan.io/tx/0xfd89cdd0be468a564dd525b222b728386d7c6780cf7b2f90d2b54493be09f64d",
+            "https://etherscan.io/address/0xf0da8927df8d759d5ba6d3d714b1452135d99cfc\nhttps://etherscan.io/address/0x5287e8915445aee78e10190559d8dd21e0e9ea88",
+            "1,200"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20250617_meta_pool",
+      "identity": {
+        "event_date": "2025-06-17",
+        "chain_id": null,
+        "transactions": [
+          "0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9"
+        ],
+        "victims": [
+          "0x3747484567119592ff6841df399cf679955a111a"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 3,
+          "cn": [
+            "2025.06.17",
+            "@meta_pool",
+            "权限漏洞 + 业务逻辑漏洞",
+            "`mint()` 缺少访问控制，业务上没有存入 ETH",
+            "https://etherscan.io/tx/0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9",
+            "https://etherscan.io/address/0x3747484567119592ff6841df399cf679955a111a",
+            "10~20"
+          ],
+          "en": [
+            "2025.06.17",
+            "@meta_pool",
+            "Permission Vulnerability + Business Logic Vulnerability",
+            "`mint()` lacks access control; operationally, no ETH is deposited.",
+            "https://etherscan.io/tx/0x4f43fc6d674e85f7d306debb4a3d48e7688c2fe5a6332dd9ad57558a15c86ef9",
+            "https://etherscan.io/address/0x3747484567119592ff6841df399cf679955a111a",
+            "100~200"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20250709_GMX_IO",
+      "identity": {
+        "event_date": "2025-07-09",
+        "chain_id": null,
+        "transactions": [
+          "0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef"
+        ],
+        "victims": [
+          "0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+          "0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 4,
+          "cn": [
+            "2025.07.09",
+            "@GMX_IO",
+            "重入漏洞 + 操纵价格",
+            "业务层面上跨合约重入攻击，绕过状态检查",
+            "https://arbiscan.io/tx/0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef",
+            "https://arbiscan.io/address/0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c\nhttps://arbiscan.io/address/0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+            "420"
+          ],
+          "en": [
+            "2025.07.09",
+            "@GMX_IO",
+            "Reentrancy Vulnerability + Price Manipulation",
+            "Cross-contract Reentrancy Attack at the Business Logic Layer: Bypassing State Checks",
+            "https://arbiscan.io/tx/0x03182d3f0956a91c4e4c8f225bbc7975f9434fab042228c7acdc5ec9a32626ef",
+            "https://arbiscan.io/address/0x75e42e6f01baf1d6022bea862a28774a9f8a4a0c\nhttps://arbiscan.io/address/0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+            "4,200"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20250715_ArcadiaFi",
+      "identity": {
+        "event_date": "2025-07-15",
+        "chain_id": null,
+        "transactions": [
+          "0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150"
+        ],
+        "victims": [
+          "0xbea2b6d45acaf62385877d835970a0788719cae1",
+          "0xc729213b9b72694f202feb9cf40fe8ba5f5a4509"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 5,
+          "cn": [
+            "2025.07.15",
+            "@ArcadiaFi",
+            "权限漏洞 + 参数检查漏洞",
+            "`rebalance()` 可以被任意调用，而且参数 `swapdata` 可以是任意的",
+            "https://basescan.org/tx/0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150",
+            "https://basescan.org/address/0xc729213b9b72694f202feb9cf40fe8ba5f5a4509\nhttps://basescan.org/address/0xbea2b6d45acaf62385877d835970a0788719cae1",
+            "250 ~ 350"
+          ],
+          "en": [
+            "2025.07.15",
+            "@ArcadiaFi",
+            "Permission Vulnerability + Parameter Validation Vulnerability",
+            "`rebalance()` can be called arbitrarily, and the `swapdata` parameter can be of any value.",
+            "https://basescan.org/tx/0x06ce76eae6c12073df4aaf0b4231f951e4153a67f3abc1c1a547eb57d1218150",
+            "https://basescan.org/address/0xc729213b9b72694f202feb9cf40fe8ba5f5a4509\nhttps://basescan.org/address/0xbea2b6d45acaf62385877d835970a0788719cae1",
+            "2,500 ~ 3,500"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20250728_SuperRare",
+      "identity": {
+        "event_date": "2025-07-28",
+        "chain_id": null,
+        "transactions": [
+          "0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1"
+        ],
+        "victims": [
+          "0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 6,
+          "cn": [
+            "2025.07.28",
+            "@SuperRare",
+            "权限漏洞",
+            "`updateMerkleRoot()` 权限检查代码逻辑错误",
+            "https://etherscan.io/tx/0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1",
+            "https://etherscan.io/address/0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec",
+            "73"
+          ],
+          "en": [
+            "2025.07.28",
+            "@SuperRare",
+            "Permission Vulnerability",
+            "Logical error in the permission check code for `updateMerkleRoot()`.",
+            "https://etherscan.io/tx/0xd813751bfb98a51912b8394b5856ae4515be6a9c6e5583e06b41d9255ba6e3c1",
+            "https://etherscan.io/address/0xffb512b9176d527c5d32189c3e310ed4ab2bb9ec",
+            "730"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20250826_BetterBank_io",
+      "identity": {
+        "event_date": "2025-08-26",
+        "chain_id": null,
+        "transactions": [
+          "0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a"
+        ],
+        "victims": [
+          "0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 7,
+          "cn": [
+            "2025.08.26",
+            "@BetterBank_io",
+            "业务逻辑漏洞",
+            "swap没有价值的token也会奖励有价值的token",
+            "https://pulsescan.finvesta.io/#/tx/0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a",
+            "https://pulsescan.finvesta.io/#/address/0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c",
+            "500"
+          ],
+          "en": [
+            "2025.08.26",
+            "@BetterBank_io",
+            "Business Logic Vulnerability",
+            "Swapping tokens with no intrinsic value will also yield rewards in the form of valuable tokens.",
+            "https://pulsescan.finvesta.io/#/tx/0x9c7237a00fa276c5f10ca1c61d6821869a7fdcd1ade8059729cdc35c9ff7689a",
+            "https://pulsescan.finvesta.io/#/address/0x30dcC4E72dcD2702449190Ce8B88d21F2178cD9c",
+            "5,000"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20251004_MIM_Spell",
+      "identity": {
+        "event_date": "2025-10-04",
+        "chain_id": null,
+        "transactions": [
+          "0x842aae91c89a9e5043e64af34f53dc66daf0f033ad8afbf35ef0c93f99a9e5e6"
+        ],
+        "victims": [
+          "0x5e70f7acb8ec0231c00220d11c74dc2b23187103"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 8,
+          "cn": [
+            "2025.10.04",
+            "@MIM_Spell",
+            "业务逻辑漏洞",
+            "`cook()` 逻辑错误，绕过检查",
+            "https://etherscan.io/tx/0x842aae91c89a9e5043e64af34f53dc66daf0f033ad8afbf35ef0c93f99a9e5e6",
+            "https://etherscan.io/address/0x5e70f7acb8ec0231c00220d11c74dc2b23187103",
+            "177"
+          ],
+          "en": [
+            "2025.10.04",
+            "@MIM_Spell",
+            "Business Logic Vulnerability",
+            "`cook()` contains a logical error, bypassing the check.",
+            "https://etherscan.io/tx/0x842aae91c89a9e5043e64af34f53dc66daf0f033ad8afbf35ef0c93f99a9e5e6",
+            "https://etherscan.io/address/0x5e70f7acb8ec0231c00220d11c74dc2b23187103",
+            "1,770"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20251103_Balancer",
+      "identity": {
+        "event_date": "2025-11-03",
+        "chain_id": null,
+        "transactions": [
+          "0x6ed07db1a9fe5c0794d44cd36081d6a6df103fab868cdd75d581e3bd23bc9742"
+        ],
+        "victims": [
+          "0xdacf5fa19b1f720111609043ac67a9818262850c"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 9,
+          "cn": [
+            "2025.11.03",
+            "@Balancer",
+            "计算漏洞",
+            "循环放大精度损失",
+            "https://etherscan.io/tx/0x6ed07db1a9fe5c0794d44cd36081d6a6df103fab868cdd75d581e3bd23bc9742",
+            "https://etherscan.io/address/0xdacf5fa19b1f720111609043ac67a9818262850c",
+            "12800"
+          ],
+          "en": [
+            "2025.11.03",
+            "@Balancer",
+            "Calculation Vulnerability",
+            "Precision Loss in Iterative Amplification",
+            "https://etherscan.io/tx/0x6ed07db1a9fe5c0794d44cd36081d6a6df103fab868cdd75d581e3bd23bc9742",
+            "https://etherscan.io/address/0xdacf5fa19b1f720111609043ac67a9818262850c",
+            "128,000"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260101_PRXVTai",
+      "identity": {
+        "event_date": "2026-01-01",
+        "chain_id": null,
+        "transactions": [
+          "0x88610208c00f5d5ca234e45205a01199c87cb859f881e8b35297cba8325a5494"
+        ],
+        "victims": [
+          "0xdac30a5e2612206e2756836ed6764ec5817e6fff"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 10,
+          "cn": [
+            "2026.01.01",
+            "@PRXVTai",
+            "业务逻辑漏洞",
+            "`earned()` 根据钱包当前质押的 $PRXVT 余额计算奖励",
+            "https://basescan.org/tx/0x88610208c00f5d5ca234e45205a01199c87cb859f881e8b35297cba8325a5494",
+            "https://basescan.org/address/0xdac30a5e2612206e2756836ed6764ec5817e6fff",
+            "9.7"
+          ],
+          "en": [
+            "2026.01.01",
+            "@PRXVTai",
+            "Business Logic Vulnerability",
+            "`earned()` calculates rewards based on the wallet's current staked $PRXVT balance.",
+            "https://basescan.org/tx/0x88610208c00f5d5ca234e45205a01199c87cb859f881e8b35297cba8325a5494",
+            "https://basescan.org/address/0xdac30a5e2612206e2756836ed6764ec5817e6fff",
+            "97"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260103_valinitydefi",
+      "identity": {
+        "event_date": "2026-01-03",
+        "chain_id": null,
+        "transactions": [
+          "0x7f1406435172b8d8675dec95a7f6aa89d10b7ca008150de8742f7fa824e3395c"
+        ],
+        "victims": [
+          "0x75b44b74950851583bdddcd26528e74fdd1211a6"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 11,
+          "cn": [
+            "2026.01.03",
+            "@valinitydefi",
+            "业务逻辑漏洞",
+            "操纵价格后 `acquireByLTVDisparity()` 向小额资金池中投入了 $VY",
+            "https://etherscan.io/tx/0x7f1406435172b8d8675dec95a7f6aa89d10b7ca008150de8742f7fa824e3395c",
+            "https://etherscan.io/address/0x75b44b74950851583bdddcd26528e74fdd1211a6",
+            "6.6"
+          ],
+          "en": [
+            "2026.01.03",
+            "@valinitydefi",
+            "Business Logic Vulnerability",
+            "Following the price manipulation, `acquireByLTVDisparity()` injected $VY into the small liquidity pool.",
+            "https://etherscan.io/tx/0x7f1406435172b8d8675dec95a7f6aa89d10b7ca008150de8742f7fa824e3395c",
+            "https://etherscan.io/address/0x75b44b74950851583bdddcd26528e74fdd1211a6",
+            "66"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260128_XPlayer_Media",
+      "identity": {
+        "event_date": "2026-01-28",
+        "chain_id": null,
+        "transactions": [
+          "0x9779341b2b80ba679c83423c93ecfc2ebcec82f9f94c02624f83d8a647ee2e49"
+        ],
+        "victims": [
+          "0x15b1879ff6acc145300f7a204809473a9e158917",
+          "0xc2c4ccde8948c693d0b04f8bad461e35a12f20b8"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 12,
+          "cn": [
+            "2026.01.28",
+            "@XPlayer_Media",
+            "操纵价格",
+            "`DynamicBurnPool()` 接销毁了 XPL/USDT 交易池中几乎全部的$XPL，抬高了$XPL的价格",
+            "https://bscscan.com/tx/0x9779341b2b80ba679c83423c93ecfc2ebcec82f9f94c02624f83d8a647ee2e49",
+            "https://bscscan.com/address/0x15b1879ff6acc145300f7a204809473a9e158917\nhttps://bscscan.com/address/0xc2c4ccde8948c693d0b04f8bad461e35a12f20b8",
+            "72"
+          ],
+          "en": [
+            "2026.01.28",
+            "@XPlayer_Media",
+            "Price Manipulation",
+            "DynamicBurnPool() proceeded to burn nearly the entire supply of $XPL within the XPL/USDT trading pool, thereby driving up the price of $XPL.",
+            "https://bscscan.com/tx/0x9779341b2b80ba679c83423c93ecfc2ebcec82f9f94c02624f83d8a647ee2e49",
+            "https://bscscan.com/address/0x15b1879ff6acc145300f7a204809473a9e158917\nhttps://bscscan.com/address/0xc2c4ccde8948c693d0b04f8bad461e35a12f20b8",
+            "720"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260201_crosscurvefi",
+      "identity": {
+        "event_date": "2026-02-01",
+        "chain_id": null,
+        "transactions": [
+          "0x37d9b911ef710be851a2e08e1cfc61c2544db0f208faeade29ee98cc7506ccc2"
+        ],
+        "victims": [
+          "0xB2185950F5A0A46687ac331916508aadA202e063"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 13,
+          "cn": [
+            "2026.02.01",
+            "@crosscurvefi",
+            "业务逻辑漏洞",
+            "`expressExecute()` 中没有调用 `gateway.validateContractCall()` 进行检查，`expressExecuteWithToken()` 中没有调用 `gateway.validateContractCallAndMint()` 进行检查",
+            "https://etherscan.io/tx/0x37d9b911ef710be851a2e08e1cfc61c2544db0f208faeade29ee98cc7506ccc2",
+            "https://etherscan.io/address/0xB2185950F5A0A46687ac331916508aadA202e063",
+            "300"
+          ],
+          "en": [
+            "2026.02.01",
+            "@crosscurvefi",
+            "Business Logic Vulnerability",
+            "`gateway.validateContractCall()` is not invoked for validation within `expressExecute()`; similarly, `gateway.validateContractCallAndMint()` is not invoked for validation within `expressExecuteWithToken()`.",
+            "https://etherscan.io/tx/0x37d9b911ef710be851a2e08e1cfc61c2544db0f208faeade29ee98cc7506ccc2",
+            "https://etherscan.io/address/0xB2185950F5A0A46687ac331916508aadA202e063",
+            "3,000"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260306_SolvProtocol",
+      "identity": {
+        "event_date": "2026-03-06",
+        "chain_id": null,
+        "transactions": [
+          "0x44e637c7d85190d376a52d89ca75f2d208089bb02b7c4708ad2aaae3a97a958d"
+        ],
+        "victims": [
+          "0x15f7c1ac69f0c102e4f390e45306bd917f21cfcf",
+          "0x88552269817d23e2d62247287aa9f9913ac3b2f8"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 14,
+          "cn": [
+            "2026.03.06",
+            "@SolvProtocol",
+            "重入漏洞",
+            "`transferFrom()` 最后会调用 `onERC721Received()`，`onERC721Received()` 中再次调用 `transferFrom()`，引发重入攻击",
+            "https://etherscan.io/tx/0x44e637c7d85190d376a52d89ca75f2d208089bb02b7c4708ad2aaae3a97a958d",
+            "https://etherscan.io/address/0x15f7c1ac69f0c102e4f390e45306bd917f21cfcf\nhttps://etherscan.io/address/0x88552269817d23e2d62247287aa9f9913ac3b2f8",
+            "280"
+          ],
+          "en": [
+            "2026.03.06",
+            "@SolvProtocol",
+            "Reentrancy Vulnerability",
+            "`transferFrom()` ultimately calls `onERC721Received()`, which in turn calls `transferFrom()` again, triggering a reentrancy attack.",
+            "https://etherscan.io/tx/0x44e637c7d85190d376a52d89ca75f2d208089bb02b7c4708ad2aaae3a97a958d",
+            "https://etherscan.io/address/0x15f7c1ac69f0c102e4f390e45306bd917f21cfcf\nhttps://etherscan.io/address/0x88552269817d23e2d62247287aa9f9913ac3b2f8",
+            "2,800"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260309_gondixyz",
+      "identity": {
+        "event_date": "2026-03-09",
+        "chain_id": null,
+        "transactions": [
+          "0x83bac5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06"
+        ],
+        "victims": [
+          "0xc10472ac1bf9f2e58ff2c83596b4535334c90814"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 15,
+          "cn": [
+            "2026.03.09",
+            "@gondixyz",
+            "权限漏洞",
+            "`executeSell()` 可以将批准给该合约的 NFT 转移走",
+            "https://etherscan.io/tx/0x83bac5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06",
+            "https://etherscan.io/address/0xc10472ac1bf9f2e58ff2c83596b4535334c90814",
+            "23"
+          ],
+          "en": [
+            "2026.03.09",
+            "@gondixyz",
+            "Permission Vulnerability",
+            "`executeSell()` can transfer the NFT approved to this contract.",
+            "https://etherscan.io/tx/0x83bac5d4b222b97f9734637c072589da648941b8a884ce1a61324dc0449e6a06",
+            "https://etherscan.io/address/0xc10472ac1bf9f2e58ff2c83596b4535334c90814",
+            "230"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260311_AlkemiNetwork",
+      "identity": {
+        "event_date": "2026-03-11",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260311_planet_finance",
+      "identity": {
+        "event_date": "2026-03-11",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260312_DBXen_crypto",
+      "identity": {
+        "event_date": "2026-03-12",
+        "chain_id": null,
+        "transactions": [
+          "0x914a5af790e55b8ea140a79da931fc037cb4c4457704d184ad21f54fb808bc37"
+        ],
+        "victims": [
+          "0xf5c80c305803280b587f8cabbccdc4d9bf522abd"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 18,
+          "cn": [
+            "2026.03.12",
+            "@DBXen_crypto",
+            "业务逻辑漏洞",
+            "`burnBatch()` 经 ERC-2771 forwarder 调用时，`gasWrapper` 把销毁批次记在 `_msgSender()`，`xen.burn()` 却按 `msg.sender` 销毁，回调 `onTokenBurned()` 只更新 forwarder 的 `lastActiveCycle`。攻击者地址的周期记录停在 0，随后 `updateStats()` 按未结算的历史周期计算奖励和手续费。",
+            "https://etherscan.io/tx/0x914a5af790e55b8ea140a79da931fc037cb4c4457704d184ad21f54fb808bc37",
+            "https://etherscan.io/address/0xf5c80c305803280b587f8cabbccdc4d9bf522abd#code",
+            "15"
+          ],
+          "en": [
+            "2026.03.12",
+            "@DBXen_crypto",
+            "Business Logic Vulnerability",
+            "When `burnBatch()` runs through the ERC-2771 forwarder, `gasWrapper` credits burned batches to `_msgSender()` while `xen.burn()` burns from `msg.sender`, so `onTokenBurned()` updates `lastActiveCycle` only for the forwarder. The attacker's cycle records stay at 0, and `updateStats()` then settles rewards and fees against that stale history.",
+            "https://etherscan.io/tx/0x914a5af790e55b8ea140a79da931fc037cb4c4457704d184ad21f54fb808bc37",
+            "https://etherscan.io/address/0xf5c80c305803280b587f8cabbccdc4d9bf522abd#code",
+            "150"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260323_Cyrus_finance",
+      "identity": {
+        "event_date": "2026-03-23",
+        "chain_id": null,
+        "transactions": [
+          "0x2b7efdac5f052ee9a8f6de8f966b948027b76f7cc183e4868c98c7afc2d69524"
+        ],
+        "victims": [
+          "0xb042ea7b35826e6e537a63bb9fc9fb06b50ae10b"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 19,
+          "cn": [
+            "2026.03.23",
+            "@Cyrus_finance",
+            "业务逻辑漏洞 + 价格操纵",
+            "`withdrawUSDTFromAny()` 存在业务逻辑漏洞；移除的流动性数量是根据资金池的当前现货价格计算的",
+            "https://bscscan.com/tx/0x2b7efdac5f052ee9a8f6de8f966b948027b76f7cc183e4868c98c7afc2d69524",
+            "https://bscscan.com/address/0xb042ea7b35826e6e537a63bb9fc9fb06b50ae10b#code",
+            "50"
+          ],
+          "en": [
+            "2026.03.23",
+            "@Cyrus_finance",
+            "Business Logic Vulnerability + Price Manipulation",
+            "`withdrawUSDTFromAny()` contains a business logic vulnerability; the amount of removed liquidity is calculated based on the pool's current spot price.",
+            "https://bscscan.com/tx/0x2b7efdac5f052ee9a8f6de8f966b948027b76f7cc183e4868c98c7afc2d69524",
+            "https://bscscan.com/address/0xb042ea7b35826e6e537a63bb9fc9fb06b50ae10b#code",
+            "500"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260407_Squid",
+      "identity": {
+        "event_date": "2026-04-07",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260407_TGAI",
+      "identity": {
+        "event_date": "2026-04-07",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260412_SubQueryNetwork",
+      "identity": {
+        "event_date": "2026-04-12",
+        "chain_id": null,
+        "transactions": [
+          "0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d"
+        ],
+        "victims": [
+          "0xf282737992da4217bf5f8b6ae621181e84d7d3b9"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 22,
+          "cn": [
+            "2026.04.12",
+            "@SubQueryNetwork",
+            "权限漏洞",
+            "`setContractAddress()` 和 `setBatchAddress()` 缺少访问控制",
+            "https://basescan.org/tx/0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d",
+            "https://basescan.org/address/0xf282737992da4217bf5f8b6ae621181e84d7d3b9",
+            "12.8"
+          ],
+          "en": [
+            "2026.04.12",
+            "@SubQueryNetwork",
+            "Permission Vulnerability",
+            "setContractAddress() and setBatchAddress() lack access control.",
+            "https://basescan.org/tx/0xd063b3848a6b8c67f46990ab166665d454147855819acb60c083c0aea0180b2d",
+            "https://basescan.org/address/0xf282737992da4217bf5f8b6ae621181e84d7d3b9",
+            "128"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260413_hyperbridge",
+      "identity": {
+        "event_date": "2026-04-13",
+        "chain_id": null,
+        "transactions": [
+          "0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109"
+        ],
+        "victims": [
+          "0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 23,
+          "cn": [
+            "2026.04.13",
+            "@hyperbridge",
+            "逻辑检查漏洞",
+            "ISMP 流程中状态证明验证不足，伪造的证明通过了 `HandlerV1.handlePostRequests()`  验证",
+            "https://etherscan.io/tx/0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109",
+            "https://etherscan.io/address/0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64",
+            "23.7"
+          ],
+          "en": [
+            "2026.04.13",
+            "@hyperbridge",
+            "Logic Check Vulnerability",
+            "The ISMP process suffers from insufficient state proof verification, allowing forged proofs to pass the validation performed by `HandlerV1.handlePostRequests()`.",
+            "https://etherscan.io/tx/0x240aeb9a8b2aabf64ed8e1e480d3e7be140cf530dc1e5606cb16671029401109",
+            "https://etherscan.io/address/0x6c84edd2a018b1fe2fc93a56066b5c60da4e6d64",
+            "237"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260426_ZetaChain",
+      "identity": {
+        "event_date": "2026-04-26",
+        "chain_id": null,
+        "transactions": [
+          "0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1",
+          "0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa"
+        ],
+        "victims": [
+          "0x1fff55ccf855212f6b5530c468b44f9a5246572e",
+          "0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 24,
+          "cn": [
+            "2026.04.26",
+            "@ZetaChain",
+            "权限漏洞 + 参数检查漏洞",
+            "`call()` 函数缺少访问控制和对参数message的检查, `execute()` 函数缺少对参数data的检查",
+            "https://zetascan.com/tx/0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1\nhttps://etherscan.io/tx/0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa",
+            "https://zetascan.com/address/0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202\nhttps://etherscan.io/address/0x1fff55ccf855212f6b5530c468b44f9a5246572e",
+            "30"
+          ],
+          "en": [
+            "2026.04.26",
+            "@ZetaChain",
+            "Permission Vulnerability + Parameter Validation Vulnerability",
+            "The `call()` function lacks access control and validation of the `message` parameter, while the `execute()` function lacks validation of the `data` parameter.",
+            "https://zetascan.com/tx/0x202581baf7ccc53746dc2a2547fd497b4bba0c9e38caf3650cbace750c315ba1\nhttps://etherscan.io/tx/0x40bcbd603595c3f27a58b44bbc32bd9cc416c83d94af9c67e537f5a75b789caa",
+            "https://zetascan.com/address/0xEf195bf421658EA31dbA4Cbf598aF7f9D8791202\nhttps://etherscan.io/address/0x1fff55ccf855212f6b5530c468b44f9a5246572e",
+            "300"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260507_WhiteEagle",
+      "identity": {
+        "event_date": "2026-05-07",
+        "chain_id": null,
+        "transactions": [
+          "0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d"
+        ],
+        "victims": [
+          "0x0079517e4157f95cefda99d295fd74fc9b9896eb"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 25,
+          "cn": [
+            "2026.05.07",
+            "WhiteEagle",
+            "操纵价格",
+            "White Eagle 提款合约因其提款路径中的现货价格操纵逻辑缺陷而被利用",
+            "https://bscscan.com/tx/0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d",
+            "https://bscscan.com/address/0x0079517e4157f95cefda99d295fd74fc9b9896eb",
+            "6.56"
+          ],
+          "en": [
+            "2026.05.07",
+            "WhiteEagle",
+            "Price Manipulation",
+            "The White Eagle withdrawal contract on #BNB was exploited through a spot-price manipulation logic flaw in its withdrawal path.",
+            "https://bscscan.com/tx/0x538c8964c841369bee9fd52d3ad87de9202fd182caaa32acf58095d02f6b359d",
+            "https://bscscan.com/address/0x0079517e4157f95cefda99d295fd74fc9b9896eb",
+            "65.6"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260511_humafinance",
+      "identity": {
+        "event_date": "2026-05-11",
+        "chain_id": null,
+        "transactions": [
+          "0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359"
+        ],
+        "victims": [
+          "0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 26,
+          "cn": [
+            "2026.05.11",
+            "@humafinance",
+            "权限漏洞 + 业务逻辑漏洞",
+            "`requestCredit()` 无需许可；`refreshAccount()` 也无需许可，并且它会无条件地提升账户状态。",
+            "https://polygonscan.com/tx/0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359",
+            "https://polygonscan.com/address/0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c",
+            "10.1"
+          ],
+          "en": [
+            "2026.05.11",
+            "@humafinance",
+            "Permission Vulnerability + Business Logic Vulnerability",
+            "`requestCredit()` is permissionless; `refreshAccount()` is permissionless and it unconditionally promotes state",
+            "https://polygonscan.com/tx/0x7b8d641d76affcc029fd0e0f06ab81ad675b1da21ef79b82e1343016040ba359",
+            "https://polygonscan.com/address/0x57107d02c2b70e09ad77240dbde7ad77fe91ea1c",
+            "101"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260512_BoostHook",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260512_SQToken",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260512_eonx_ai",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260525_WUSD.fi",
+      "identity": {
+        "event_date": "2026-05-25",
+        "chain_id": null,
+        "transactions": [
+          "0x2051c1f8d43730c41cc353b5dffd8cc59f96cb1ca56fdce4b28fb127bdb37712"
+        ],
+        "victims": [
+          "0x068E3563b1c19590F822c0e13445c4FA1b9EEFa5"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 30,
+          "cn": [
+            "2026.05.25",
+            "WUSD.fi",
+            "业务逻辑漏洞",
+            "每个新创建的 `msg.sender` 合约，只要包装了至少 100 个 $WUSD，且持有的 $GLOVE 少于 2 个，就可以通过 `Glove.mintCreditless` 函数获得最多 2 个 $GLOVE，且没有任何女巫攻击防御机制",
+            "https://etherscan.io/tx/0x2051c1f8d43730c41cc353b5dffd8cc59f96cb1ca56fdce4b28fb127bdb37712",
+            "https://etherscan.io/address/0x068E3563b1c19590F822c0e13445c4FA1b9EEFa5",
+            "20"
+          ],
+          "en": [
+            "2026.05.25",
+            "WUSD.fi",
+            "Business Logic Vulnerability",
+            "Each fresh `msg.sender` wrapping at least 100 $WUSD while holding fewer than 2 $GLOVE could receive up to 2 $GLOVE via `Glove.mintCreditless`, with no sybil resistance.",
+            "https://etherscan.io/tx/0x2051c1f8d43730c41cc353b5dffd8cc59f96cb1ca56fdce4b28fb127bdb37712",
+            "https://etherscan.io/address/0x068E3563b1c19590F822c0e13445c4FA1b9EEFa5",
+            "200"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260528_JoeAgentToken",
+      "identity": {
+        "event_date": "2026-05-28",
+        "chain_id": null,
+        "transactions": [
+          "0x33602f2943e8ea9ae2a4dfd78a347848ed84c9fc901409bdab13ec057f0e883f"
+        ],
+        "victims": [
+          "0xB12Ce0a21f67a9fc3c8AD1C7DBC4B017B7E67319"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 31,
+          "cn": [
+            "2026.05.28",
+            "JoeAgentToken",
+            "重入漏洞",
+            "`removeLiquidityViaContract()` 函数在 BNB 转账之后更新状态。",
+            "https://bscscan.com/tx/0x33602f2943e8ea9ae2a4dfd78a347848ed84c9fc901409bdab13ec057f0e883f",
+            "https://bscscan.com/address/0xB12Ce0a21f67a9fc3c8AD1C7DBC4B017B7E67319",
+            "23"
+          ],
+          "en": [
+            "2026.05.28",
+            "JoeAgentToken",
+            "Reentrancy Vulnerability",
+            "The `removeLiquidityViaContract()` function updates the state after the BNB transfer.",
+            "https://bscscan.com/tx/0x33602f2943e8ea9ae2a4dfd78a347848ed84c9fc901409bdab13ec057f0e883f",
+            "https://bscscan.com/address/0xB12Ce0a21f67a9fc3c8AD1C7DBC4B017B7E67319",
+            "230"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260604_ATMToken",
+      "identity": {
+        "event_date": "2026-06-04",
+        "chain_id": null,
+        "transactions": [
+          "0x37b90a337075cd2feea93b12780abe9f953dad476e1c1418a02447aaa6dcfd86"
+        ],
+        "victims": [
+          "0x986058ec93756E57b4e55b406dD0BeE24bcD95e3"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 32,
+          "cn": [
+            "2026.06.04",
+            "ATMToken",
+            "业务逻辑漏洞",
+            "`transferFrom()` 函数中存在隐藏的兑换逻辑漏洞，但兑换前后的代币都会转移给`to`地址。",
+            "https://bscscan.com/tx/0x37b90a337075cd2feea93b12780abe9f953dad476e1c1418a02447aaa6dcfd86",
+            "https://bscscan.com/address/0x986058ec93756E57b4e55b406dD0BeE24bcD95e3",
+            "24.3"
+          ],
+          "en": [
+            "2026.06.04",
+            "ATMToken",
+            "Business Logic Vulnerability",
+            "There is a hidden vulnerability in the exchange logic within the `transferFrom()` function, yet the tokens involved—both before and after the exchange—are transferred to the `to` address.",
+            "https://bscscan.com/tx/0x37b90a337075cd2feea93b12780abe9f953dad476e1c1418a02447aaa6dcfd86",
+            "https://bscscan.com/address/0x986058ec93756E57b4e55b406dD0BeE24bcD95e3",
+            "243"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260609_TOP",
+      "identity": {
+        "event_date": "2026-06-09",
+        "chain_id": null,
+        "transactions": [
+          "0x967aa34c69b7775c718545c7f94d92e965eb5fc553c0f27f6f1a9c65c93ac156"
+        ],
+        "victims": [
+          "0xb935C3D80229d5D92f3761b17Cd81dC2610e3a45",
+          "0xde3a93028f2283cc28756b3674bd657eafb992f4"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 33,
+          "cn": [
+            "2026.06.09",
+            "Token of Power (TOP)",
+            "业务逻辑漏洞",
+            "DAO 配置错误: 执行脚本的提交、投票和执行之间没有加时间锁；投票是否通过是由 $TOP 的用户余额和总供应量比例决定的。",
+            "https://etherscan.io/tx/0x967aa34c69b7775c718545c7f94d92e965eb5fc553c0f27f6f1a9c65c93ac156",
+            "https://etherscan.io/address/0xde3a93028f2283cc28756b3674bd657eafb992f4\nhttps://etherscan.io/address/0xb935C3D80229d5D92f3761b17Cd81dC2610e3a45",
+            "150"
+          ],
+          "en": [
+            "2026.06.09",
+            "Token of Power (TOP)",
+            "Business Logic Vulnerability",
+            "DAO Configuration Error: There is no timelock between the submission, voting, and execution of scripts; the outcome of the vote is determined by the ratio of a user's $TOP balance to the total supply.",
+            "https://etherscan.io/tx/0x967aa34c69b7775c718545c7f94d92e965eb5fc553c0f27f6f1a9c65c93ac156",
+            "https://etherscan.io/address/0xde3a93028f2283cc28756b3674bd657eafb992f4\nhttps://etherscan.io/address/0xb935C3D80229d5D92f3761b17Cd81dC2610e3a45",
+            "1,500"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260614_aztecnetwork",
+      "identity": {
+        "event_date": "2026-06-14",
+        "chain_id": null,
+        "transactions": [
+          "0x074ec9317d8336db37e8c348fbdd7515573ff4088239c77ab429f522509aeeb1"
+        ],
+        "victims": [
+          "0x7d657ddcf7e2a5fd118dc8a6ddc3dc308adc2728"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 34,
+          "cn": [
+            "2026.06.14",
+            "@aztecnetwork",
+            "逻辑检查漏洞",
+            "`_numTxs` 参数与实际的 `_proofData` 字节数组中包含的交易数量不一致，这导致在内部循环和外部处理中产生了“数量差”，绕过了关键的校验和状态更新。",
+            "https://etherscan.io/tx/0x074ec9317d8336db37e8c348fbdd7515573ff4088239c77ab429f522509aeeb1",
+            "https://etherscan.io/address/0x7d657ddcf7e2a5fd118dc8a6ddc3dc308adc2728",
+            "219"
+          ],
+          "en": [
+            "2026.06.14",
+            "@aztecnetwork",
+            "Logic Check Vulnerability",
+            "The `_numTxs` parameter is inconsistent with the actual number of transactions contained in the `_proofData` byte array, resulting in a \"count discrepancy\" during internal loops and external processing that bypasses critical validation and state updates.",
+            "https://etherscan.io/tx/0x074ec9317d8336db37e8c348fbdd7515573ff4088239c77ab429f522509aeeb1",
+            "https://etherscan.io/address/0x7d657ddcf7e2a5fd118dc8a6ddc3dc308adc2728",
+            "2,190"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260615_ThetanutsFi_decompiled",
+      "identity": {
+        "event_date": "2026-06-15",
+        "chain_id": null,
+        "transactions": [
+          "0xbba9f138fe39503bfd1aa62932dbd6ab35d37d23d48e4b7bf2988a9d5dc39fec"
+        ],
+        "victims": [
+          "0xc2c3ae0a7b405058558c9b4a63b373486cb86ac7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 35,
+          "cn": [
+            "2026.06.15",
+            "@ThetanutsFi [Decompiled]",
+            "业务逻辑漏洞 + 整数舍入漏洞",
+            "【反编译样本；非已验证原始源码】旧版 TN-IDX-USDC-PUT 在 `claim()` 后底层篮子资产及份额供应量处于极低状态，`mint(uint256)` 按篮子记账余额与总供应量比例计算所需资产时向下取整，却仍允许铸造非零份额。攻击者重复铸造，而对应篮子代币的 `transferFrom()` 金额均为零，随后用新份额归还闪电贷并保留赎回资产。所收录代码为 Panoramix 反编译伪代码。",
+            "https://etherscan.io/tx/0xbba9f138fe39503bfd1aa62932dbd6ab35d37d23d48e4b7bf2988a9d5dc39fec",
+            "https://etherscan.io/address/0xc2c3ae0a7b405058558c9b4a63b373486cb86ac7",
+            "10.5"
+          ],
+          "en": [
+            "2026.06.15",
+            "@ThetanutsFi [Decompiled]",
+            "Business Logic Vulnerability + Integer Rounding Vulnerability",
+            "[Decompiled sample; not verified original source] After `claim()` left the legacy TN-IDX-USDC-PUT basket backing and share supply at very low levels, proportional component requirements in `mint(uint256)` rounded down while non-zero shares could still be issued. Repeated mints requested zero-valued basket-token `transferFrom()` calls. The attacker repaid the flash loan with the reminted shares and retained the redemption proceeds. The included code is Panoramix decompiled pseudocode.",
+            "https://etherscan.io/tx/0xbba9f138fe39503bfd1aa62932dbd6ab35d37d23d48e4b7bf2988a9d5dc39fec",
+            "https://etherscan.io/address/0xc2c3ae0a7b405058558c9b4a63b373486cb86ac7",
+            "105"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260617_DIP",
+      "identity": {
+        "event_date": "2026-06-17",
+        "chain_id": null,
+        "transactions": [
+          "0x1c09395848a87069c9d6ddbe5adc6249510aba7a2a83479a74b4280cafb5fb29"
+        ],
+        "victims": [
+          "0x6c60bf5db0670ae94489d3dde2c60f271625db50"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 36,
+          "cn": [
+            "2026.06.17",
+            "DIP",
+            "业务逻辑漏洞 + 操纵价格",
+            "`DIP._transfer()` 在转账任一端为路由器时先执行一次 `super._transfer()`，随后仍落入函数末尾的同一转账调用，导致同一笔金额被重复转移。攻击者利用交易对的 `skim(router)` 消耗已记账储备，再通过 `sync()` 和兑换操纵价格并获利。",
+            "https://bscscan.com/tx/0x1c09395848a87069c9d6ddbe5adc6249510aba7a2a83479a74b4280cafb5fb29",
+            "https://bscscan.com/address/0x6c60bf5db0670ae94489d3dde2c60f271625db50",
+            "11.11"
+          ],
+          "en": [
+            "2026.06.17",
+            "DIP",
+            "Business Logic Vulnerability + Price Manipulation",
+            "When either endpoint is the router, `DIP._transfer()` calls `super._transfer()` in the router branch and then falls through to the same transfer at the end of the function. The amount is moved twice. The attacker used the pair's `skim(router)` to consume accounted reserves, then `sync()` and swaps to manipulate the price and extract value.",
+            "https://bscscan.com/tx/0x1c09395848a87069c9d6ddbe5adc6249510aba7a2a83479a74b4280cafb5fb29",
+            "https://bscscan.com/address/0x6c60bf5db0670ae94489d3dde2c60f271625db50",
+            "111.1"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "20260618_LittleBoyPlus",
+      "identity": {
+        "event_date": "2026-06-18",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260618_aztecnetwork",
+      "identity": {
+        "event_date": "2026-06-18",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260619_Axelar_Secret",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260619_Axelar_Secret/case_metadata.json",
+          "sha256": "eef0a8cf0164daccb935a3cac969e36c60221f9e6ed83a22a8f32c91ec814432"
+        }
+      ]
+    },
+    {
+      "case_id": "20260619_JB_decompiled",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "20260619_mySwap",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260619_mySwap/case_metadata.json",
+          "sha256": "300d4da78cfc1ccb87de9fe985838c9e89cd32a44481a2e278af4e968fb84532"
+        }
+      ]
+    },
+    {
+      "case_id": "20260620_BnbLabubu",
+      "identity": {
+        "event_date": "2026-06-20",
+        "chain_id": null,
+        "transactions": [
+          "0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260620_BnbLabubu/case_metadata.json",
+          "sha256": "add8f45d8aae6cf0b13c26ccc54a966bab862ea15aef787ddbb14eb757d45adb"
+        }
+      ]
+    },
+    {
+      "case_id": "20260620_Namada",
+      "identity": {
+        "event_date": "2026-06-20",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260620_Namada/case_metadata.json",
+          "sha256": "3eb22006d78573b480af5d2c726f0d3716240038307ca25e3dccd669107a05de"
+        }
+      ]
+    },
+    {
+      "case_id": "20260621_JaredFromSubway",
+      "identity": {
+        "event_date": "2026-06-21",
+        "chain_id": null,
+        "transactions": [
+          "0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65"
+        ],
+        "victims": [
+          "0x1f2f10d1c40777ae1da742455c65828ff36df387"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 44,
+          "cn": [
+            "2026.06.21",
+            "#JaredFromSubway [运行时字节码]",
+            "不可信包装合约授权未消耗或撤销",
+            "公开报告称，攻击者通过假包装代币和交易池诱使 MEV 机器人向不可信 wrapper 授权真实 WETH、USDC、USDT；wrapper 在特定状态下不消耗授权，机器人也未撤销剩余额度，攻击者随后调用 transferFrom 扣走资金。受害机器人为 0x1f2f10d1c40777ae1da742455c65828ff36df387，原表恶意地址不是受害合约。本条保留约750万美元口径；另有约1500万美元报道尚未逐笔对齐。已保存受害机器人在攻击区块及前一区块的运行时字节码，共 13,835 字节，历史查询结果一致；原始 Solidity 和反编译代码尚未取得，未独立重放。",
+            "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+            "https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387",
+            "750"
+          ],
+          "en": [
+            "2026.06.21",
+            "#JaredFromSubway [Runtime bytecode]",
+            "Unconsumed and unrevoked approvals to untrusted wrappers",
+            "Primary reports describe fake wrappers and pools inducing the MEV bot to approve real WETH, USDC and USDT. Malicious wrappers could leave approvals unspent, and the bot did not revoke the remaining allowances; the attacker later used transferFrom to drain funds. The victim bot is 0x1f2f10d1c40777ae1da742455c65828ff36df387, not the sheet's malicious addresses. This entry retains the approximately USD 7.5M scope; a separate approximately USD 15M report has not been reconciled transaction by transaction. The victim runtime bytecode is archived at the attack block and its preceding block: 13,835 identical bytes. Original Solidity and decompilation remain unavailable; no independent replay.",
+            "https://etherscan.io/tx/0x2be8704f5a59b69e0b71f64aefdb99eb0e8ae9fb3926147c581910d71bcf3e65",
+            "https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387",
+            "7500"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260621_JaredFromSubway/case_metadata.json",
+          "sha256": "7e16bad8ea92f14abaf3cd7c5ffa76403f2456e6fcd29fa4b4cf3b806ecbe6e7"
+        }
+      ]
+    },
+    {
+      "case_id": "20260622_ATM",
+      "identity": {
+        "event_date": "2026-06-22",
+        "chain_id": null,
+        "transactions": [
+          "0x4e9f3dc3ce3c0a6aa19dae0f1384ff46e801b433b7e3bc4c780de486db6c950a",
+          "0x939fc92996c9205eac83b86817abe2ef5f7f1eeadfb43557e2cfb3123720b3f1"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "docs/cases/sources/20260622_ATM/case_metadata.json",
+          "sha256": "a3d38740c87fc3d72eb17edd1f010fbaa8b078bf822dbe3c450f414e6c4176b7"
+        }
+      ]
+    },
+    {
+      "case_id": "20260622_Taiko",
+      "identity": {
+        "event_date": "2026-06-22",
+        "chain_id": null,
+        "transactions": [
+          "0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee",
+          "0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260",
+          "0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260622_Taiko/case_metadata.json",
+          "sha256": "27a3fb633e49191ecb3f04a943c1612dd9fdd3ca10ab52fb24e5a54c4a00b457"
+        }
+      ]
+    },
+    {
+      "case_id": "20260623_SecondFi",
+      "identity": {
+        "event_date": "2026-06-23",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "docs/cases/sources/20260623_SecondFi/case_metadata.json",
+          "sha256": "bc57e88325b091834b3105ebbb7b4a933a074c76d7920872ac6144461efda1a9"
+        }
+      ]
+    },
+    {
+      "case_id": "20260624_Royalties",
+      "identity": {
+        "event_date": "2026-06-24",
+        "chain_id": null,
+        "transactions": [
+          "0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e"
+        ],
+        "victims": [
+          "0x7c885c4bfd179fb59f1056fbea319d579a278075",
+          "0xfe16ee78828672e86cf8e42d8a5119ab79877ec7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 46,
+          "cn": [
+            "2026.06.24",
+            "#Royalties on #Polygon",
+            "零数量 ERC1155 批量转账虚增版税权益",
+            "源码与事件指向：Royal1155LDA 忽略实际转账数量，按批量 ID 条目增加档位权益；回填未完成且发送方档位余额为0时可跳过扣减。交易含100个零数量条目，随后领取新存款100倍。已保存两份实现共45个Solidity文件、编译设置及代理源码，并解码浏览器原始事件。辅助地址本笔USDC.e净流入261162.926278，源表261200美元保留。历史代理槽、回填标志及供应量未独立读取，未编译或分叉重放。",
+            "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e",
+            "https://polygonscan.com/address/0x7c885c4bfd179fb59f1056fbea319d579a278075#code\nhttps://polygonscan.com/address/0xfe16ee78828672e86cf8e42d8a5119ab79877ec7#code",
+            "26.12"
+          ],
+          "en": [
+            "2026.06.24",
+            "#Royalties on #Polygon",
+            "Zero-amount ERC1155 batch transfers inflate royalty entitlement",
+            "Source and events indicate that Royal1155LDA ignores transfer quantities and increments tier entitlement per ID; incomplete backfill with a zero sender tier balance permits skipping the debit. Events contain 100 zero-amount items followed by a claim of 100 times the new deposit. Both implementation bundles (45 Solidity files), compiler settings and proxy sources are archived; raw explorer events were decoded. Helper USDC.e net inflow is 261162.926278; sheet loss remains USD 261200. Historical proxy slots, backfill flag and supply were not independently read; no compilation or fork replay.",
+            "https://polygonscan.com/tx/0x7a92106f145045b7a2bdce60a22109739f9b0cd0185bf16ff83fd1fac98cb42e",
+            "https://polygonscan.com/address/0x7c885c4bfd179fb59f1056fbea319d579a278075#code\nhttps://polygonscan.com/address/0xfe16ee78828672e86cf8e42d8a5119ab79877ec7#code",
+            "261.2"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260624_Royalties/case_metadata.json",
+          "sha256": "419c6840b02e64f7171e62d2df7e146289ccfc0f7b97e80b0a1a2d6251365f2a"
+        }
+      ]
+    },
+    {
+      "case_id": "20260625_DLMC",
+      "identity": {
+        "event_date": "2026-06-25",
+        "chain_id": null,
+        "transactions": [
+          "0x151025d3f0a782340a74d30ef33a5fad044b838e74437a803f0652e70c231306"
+        ],
+        "victims": [
+          "0xf2ca2a3572b26ae7c479dc7ae36d922113b1bdf2"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 47,
+          "cn": [
+            "2026.06.25",
+            "DLMC",
+            "即时储备定价与推荐奖励组合导致价格操纵",
+            "DLMC 的 buy 将临时投入的 USDT 立即记为投资额，并把大部分新铸 DLMC 留在合约；推荐人按更新前价格收到可立即出售的奖励。_updatePrice 使用合约 USDT 储备，且在条件成立时扣除合约自持 DLMC，导致两次买入后价格大幅提高。攻击者以42万USDT建立168万USDT卖出额度，再由下级投入100万USDT获得推荐奖励，卖出其中65908.6853 DLMC取得1646119.1189 USDT，偿还闪电资金后收款地址净入222560.2217 USDT。独立成功回执与exact-match源码支持金额及可达路径，未取得完整trace；源表日期6月25日、损失222600美元保持不变，链上交易在6月24日，受害合约本笔USDT净流出226119.1189，与获利分开。",
+            "https://bscscan.com/tx/0x151025d3f0a782340a74d30ef33a5fad044b838e74437a803f0652e70c231306",
+            "https://bscscan.com/address/0xf2ca2a3572b26ae7c479dc7ae36d922113b1bdf2#code",
+            "22.26"
+          ],
+          "en": [
+            "2026.06.25",
+            "DLMC",
+            "Reserve-derived livePrice manipulation through flash-funded referral rewards",
+            "buy immediately credits temporary USDT as investment while minting most DLMC to the contract; the referrer receives immediately sellable rewards at the pre-update price. _updatePrice trusts current USDT reserves and conditionally excludes contract-held DLMC from supply. A first 420000 USDT buy established a 1680000 USDT sell cap; a downstream 1000000 USDT buy rewarded the attacker and inflated livePrice. Selling 65908.6853 DLMC redeemed 1646119.1189 USDT; after flash repayment the recipient received 222560.2217 USDT. Independently fetched receipt and exact-match source support amounts and reachable mechanism; no complete trace was available. Preserve sheet date June 25 and USD 222600; transaction date is June 24 and victim net token outflow was 226119.1189 USDT, a different scope.",
+            "https://bscscan.com/tx/0x151025d3f0a782340a74d30ef33a5fad044b838e74437a803f0652e70c231306",
+            "https://bscscan.com/address/0xf2ca2a3572b26ae7c479dc7ae36d922113b1bdf2#code",
+            "222.6"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260625_DLMC/case_metadata.json",
+          "sha256": "72464df0c440e441b0128533c8067a6cf4d7d586d2f9c9bcc56b00459d707cd7"
+        }
+      ]
+    },
+    {
+      "case_id": "20260701_EdelFinance_decompiled",
+      "identity": {
+        "event_date": "2026-07-01",
+        "chain_id": null,
+        "transactions": [
+          "0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612"
+        ],
+        "victims": [
+          "0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 48,
+          "cn": [
+            "2026.07.01",
+            "Edel Finance / xStock [Decompiled]",
+            "把可捐赠操纵的 ERC-4626 convertToAssets 直接用于抵押品价格",
+            "Edel 的 AaveOracle 调用价格适配器；Etherscan Palkeoramix 反编译显示适配器把 Data Streams 的 getPrice 结果与 wGOOGLx.convertToAssets(1e18) 相乘。ERC-4626 的 totalAssets 读取包装合约持有的 GOOGLx 余额，攻击者直接捐入 8.489334153345952365 GOOGLx 而不铸造份额，把 1 wGOOGLx 的换算值从约 6.0 抬到 78.8636700873，随后借走 USDC 及五种包装股票。攻击者地址净收 204215.572188 USDC，公开损失另有 204,200、305,000、403,000 美元口径，未能统一，所以损失栏留空。适配器反编译伪代码不是已验证原始源码；攻击区块 runtime 与 Etherscan 输入逐字节一致，但没有编译或分叉重放。",
+            "https://etherscan.io/tx/0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612",
+            "https://etherscan.io/address/0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2#code",
+            ""
+          ],
+          "en": [
+            "2026.07.01",
+            "Edel Finance / xStock [Decompiled]",
+            "Donation-manipulable ERC-4626 convertToAssets used directly in collateral pricing",
+            "Edel's AaveOracle called a price adapter. Etherscan Palkeoramix decompiled pseudocode shows the adapter multiplying a Data Streams getPrice result by wGOOGLx.convertToAssets(1e18). ERC-4626 totalAssets reads the wrapper's GOOGLx balance, so a direct donation of 8.489334153345952365 GOOGLx without minting shares raised the value of one wGOOGLx from about 6.0 to 78.8636700873. The attacker then borrowed USDC and five wrapped equities. The attacker address received net 204215.572188 USDC, while public loss scopes of USD 204,200, 305,000 and 403,000 remain unreconciled, so the loss field is blank. The adapter output is decompiled pseudocode, not verified original source; its Etherscan input matches the attack-block runtime byte-for-byte, but no compilation or fork replay was run.",
+            "https://etherscan.io/tx/0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612",
+            "https://etherscan.io/address/0x4C2C9Df4559d80E0a7aa3c7F281704a7992F4CE2#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260701_EdelFinance_decompiled/case_metadata.json",
+          "sha256": "341b8443078c69e270fe67d6d8b169e36b3121746ef106eeb3b4bbfe90668caf"
+        }
+      ]
+    },
+    {
+      "case_id": "20260709_BFB",
+      "identity": {
+        "event_date": "2026-07-09",
+        "chain_id": null,
+        "transactions": [
+          "0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520"
+        ],
+        "victims": [
+          "0x719699762fFCC7AadBdCec4E7cf03569E5e99999"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 49,
+          "cn": [
+            "2026.07.09",
+            "#BFB on #BSC",
+            "零数量转账触发交易池销毁与储备重写",
+            "BFB 的 transferFrom 允许 amount=0 继续进入 _transfer，之后无条件调用 _priceDeflPool。攻击者在小额卖出压低价格后，用零数量 EOA 转账反复从 BFB/WBNB 池销毁 BFB 并 sync，再用很少 BFB 换出 WBNB。交易回执显示池子净流出 350.616633079707222431 WBNB；源表保留 220,000 美元口径，技术报告按交易内价格约为 197,817 美元。Sourcify 显示 creation/runtime match，未本地编译或分叉重放。",
+            "https://bscscan.com/tx/0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520",
+            "https://bscscan.com/address/0x719699762fFCC7AadBdCec4E7cf03569E5e99999#code",
+            "22"
+          ],
+          "en": [
+            "2026.07.09",
+            "#BFB on #BSC",
+            "Zero-value transfer triggers pair burn and reserve rewrite",
+            "BFB transferFrom accepts amount=0, still enters _transfer, and unconditionally reaches _priceDeflPool. After small sells lowered the price, repeated zero-value EOA transfers burned BFB directly from the BFB/WBNB pair and called sync, allowing tiny BFB sells to withdraw WBNB. Receipt transfers show 350.616633079707222431 WBNB left the pair; the sheet USD scope remains 220,000 while the technical report values it near USD 197,817. Sourcify reports creation/runtime match; no local compilation or fork replay was run.",
+            "https://bscscan.com/tx/0xabcf5c5c846595b2d0849f2579b67465ed8d06f3b469cee5e3a57c1f7aed3520",
+            "https://bscscan.com/address/0x719699762fFCC7AadBdCec4E7cf03569E5e99999#code",
+            "220"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260709_BFB/case_metadata.json",
+          "sha256": "4917fcb5bef34aa6252928f46f1035454edc6035e41cdc9ed41ee0b9c2159a60"
+        }
+      ]
+    },
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "identity": {
+        "event_date": "2026-07-11",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 50,
+          "cn": [
+            "2026.07.11",
+            "Bonzo Finance / Supra",
+            "BLS 零点校验缺失导致预言机伪签名通过",
+            "Supra 验证器的 requireHashVerified_V2 直接把签名和委员会公钥交给 pairing 预编译合约，没有先拒绝零点/无穷远点和非法子群输入。零签名与零公钥让 pairing 方程平凡成立，伪造的 SAUCE 高价因此写入价格存储；Bonzo 按设计读取该价格并放出约 905 万美元本金。攻击交易 actions 证明代理 0.0.4323006 delegatecall 到 0.0.10414935，并观察到 0.0.8 返回 true。XDCScan 保存了同一缺陷路径的 Supra 原始 Solidity；XDC 与 Hedera runtime 不同，所以未声称攻击时字节码与源码完全等价。",
+            "https://hashscan.io/mainnet/transaction/1783731093.686041919",
+            "https://hashscan.io/mainnet/contract/0.0.4323006",
+            "905"
+          ],
+          "en": [
+            "2026.07.11",
+            "Bonzo Finance / Supra",
+            "Missing BLS identity-point checks accept a forged oracle update",
+            "Supra requireHashVerified_V2 passed the signature and committee public key to the pairing precompile without first rejecting zero/identity or invalid-subgroup inputs. A zero signature and zero key made the pairing equation trivially true, so the forged SAUCE price entered storage and Bonzo, operating as designed, released about USD 9.05 million of principal. Hedera actions bind proxy 0.0.4323006 to implementation 0.0.10414935 and show precompile 0.0.8 returning true. XDCScan provides original Supra Solidity with the same defective path, but the XDC and Hedera runtimes differ; exact attack-time source equivalence is not claimed.",
+            "https://hashscan.io/mainnet/transaction/1783731093.686041919",
+            "https://hashscan.io/mainnet/contract/0.0.4323006",
+            "9050"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260711_Bonzo_Supra/case_metadata.json",
+          "sha256": "1461903f30685314db7e26acbf20b0feb11200c8f9d129de064e0363f44c8ae9"
+        }
+      ]
+    },
+    {
+      "case_id": "20260713_Lumi_Sodium",
+      "identity": {
+        "event_date": "2026-07-13",
+        "chain_id": null,
+        "transactions": [
+          "0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260713_Lumi_Sodium/case_metadata.json",
+          "sha256": "d924e4028a8167b79c94324a62ce29b64a9621d71b19fed2853a64fde47ec78a"
+        }
+      ]
+    },
+    {
+      "case_id": "20260713_PHX",
+      "identity": {
+        "event_date": "2026-07-13",
+        "chain_id": null,
+        "transactions": [
+          "0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260713_PHX/case_metadata.json",
+          "sha256": "f71f86b68329aac2fc69449a4f86796a299d7bb6a4d4465798dcf8247220a745"
+        }
+      ]
+    },
+    {
+      "case_id": "20260714_VECAndETH",
+      "identity": {
+        "event_date": "2026-07-14",
+        "chain_id": null,
+        "transactions": [
+          "0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72"
+        ],
+        "victims": [
+          "0x3e505942bfa3ed145935223f9e3d1e2103cd47a1"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 53,
+          "cn": [
+            "2026.07.14",
+            "#VECAndETH on #BSC",
+            "用可操纵的即时池价换算奖励",
+            "VECAndETH 先用时间和 rewardRate 算出 USDT 计价的应领额，再在 calculateUSDTToETH 中直接调用 PancakeRouter.getAmountsOut(USDT→ETH)。这是当前池子的即时价，不是抗操纵预言机。攻击者借入大量 Binance-Peg ETH，短时间改变 ETH/USDT 储备，让同一笔 USDT 奖励被换算成过多 ETH；getReward 按该结果从合约付款，攻击者再恢复交易并归还借款。回执可见受害合约向攻击者付 68.498286303203816978 ETH，向 fundAddress 付 7.610920700355979664 ETH；公开分析称净收益约 61.2 ETH，源表损失为 109,600 美元。",
+            "https://bscscan.com/tx/0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72",
+            "https://bscscan.com/address/0x3e505942bfa3ed145935223f9e3d1e2103cd47a1#code",
+            "10.96"
+          ],
+          "en": [
+            "2026.07.14",
+            "#VECAndETH on #BSC",
+            "Manipulable spot-pool quote used to convert accrued rewards",
+            "VECAndETH first calculates a USDT-denominated accrual from time and rewardRate, then calculateUSDTToETH directly calls PancakeRouter.getAmountsOut on the current USDT-to-ETH pool. This is a manipulable spot quote, not a manipulation-resistant oracle. The attacker borrowed large amounts of Binance-Peg ETH, distorted ETH/USDT reserves, made the same USDT reward convert to too much ETH, received payment through getReward, restored the trades and repaid temporary liquidity. The receipt shows 68.498286303203816978 ETH paid to the attacker and 7.610920700355979664 ETH to fundAddress; public analysis reports about 61.2 ETH net and the sheet loss is USD 109,600.",
+            "https://bscscan.com/tx/0xe1f1e3e0706aa995b47a8ba1d310526e14f4db6ad78277853fa10932236eeb72",
+            "https://bscscan.com/address/0x3e505942bfa3ed145935223f9e3d1e2103cd47a1#code",
+            "109.6"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260714_VECAndETH/case_metadata.json",
+          "sha256": "b42f5a77002b8208cd0a487fdd4f465d3cf225e09f35b761f7525844199a37cc"
+        }
+      ]
+    },
+    {
+      "case_id": "20260715_Drips",
+      "identity": {
+        "event_date": "2026-07-15",
+        "chain_id": null,
+        "transactions": [
+          "0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260715_Drips/case_metadata.json",
+          "sha256": "4f4ef7a447c3bcf3ffb333fad8d94969eda417d4f391cb2bcd11e89dc6855a71"
+        }
+      ]
+    },
+    {
+      "case_id": "20260715_Ostium",
+      "identity": {
+        "event_date": "2026-07-15",
+        "chain_id": null,
+        "transactions": [
+          "0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c"
+        ],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260715_Ostium/case_metadata.json",
+          "sha256": "39f9c2ff02cee56d831e6b2588d2826578e1ab54f05998180f92d962bdbeae62"
+        }
+      ]
+    },
+    {
+      "case_id": "20260717_CrowdRingCircle",
+      "identity": {
+        "event_date": "2026-07-17",
+        "chain_id": null,
+        "transactions": [
+          "0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834"
+        ],
+        "victims": [
+          "0x8581433150f2c48ff2efe5a22b17c7d405054509"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 56,
+          "cn": [
+            "2026.07.17",
+            "众环 CRC（CrowdRingCircle）",
+            "卖出时销毁池内代币并过早同步储备",
+            "CRC 的卖出分支先收手续费，再烧毁 pair 已有 CRC 并 sync，最后才记入卖方转来的净额。历史回执显示 40,629.6 CRC 被烧毁，同步时池内仅余 0.0000000001 CRC，随后入账的本金使真实余额高于缓存储备，支持大额 USDT 输出。实际原始交易复算 pair 净流出 209,061.632267871026055744 USDT，EOA 净流入 201,359.472267252045095696 USDT；源表约 201,400 美元单列。未把第三方复现数字当成原始交易，未取得完整内部跟踪或独立复现。源表为 7 月 17 日，交易为 7 月 16 日 UTC。",
+            "https://bscscan.com/tx/0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834",
+            "https://bscscan.com/address/0x8581433150f2c48ff2efe5a22b17c7d405054509#code",
+            "20.14"
+          ],
+          "en": [
+            "2026.07.17",
+            "CrowdRingCircle (CRC)",
+            "Pair-balance burn and premature reserve synchronization during a sell",
+            "CRC takes a sell fee, burns CRC already held by the pair and calls sync before crediting the seller's net principal. The historical receipt records a 40,629.6 CRC burn leaving 0.0000000001 CRC during synchronization; the later principal credit creates a gap between real balance and cached reserve that enables excessive USDT output. The actual receipt reconciles to 209,061.632267871026055744 USDT net pair outflow and 201,359.472267252045095696 USDT net EOA inflow; the sheet's approximate USD 201,400 is kept separately. Third-party reproduction figures are not treated as historical transaction data. Full internal traces and an independent replay were not obtained. The sheet date is July 17 and the transaction date is July 16 UTC.",
+            "https://bscscan.com/tx/0xeaef22325e02ac65a8e1f2e1a3a43f7b7ac8d2323ce6f698a90813e77017c834",
+            "https://bscscan.com/address/0x8581433150f2c48ff2efe5a22b17c7d405054509#code",
+            "201.4"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260717_CrowdRingCircle/case_metadata.json",
+          "sha256": "af0b2ff8884e5b06f8e436038b5933712a89dbfcd0f86b948d658b23e43cafe8"
+        }
+      ]
+    },
+    {
+      "case_id": "20260723_Verus",
+      "identity": {
+        "event_date": "2026-07-23",
+        "chain_id": null,
+        "transactions": [
+          "0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099"
+        ],
+        "victims": [
+          "0x54e03a1682fd0bb065b669f6296f97028dcfd4ce",
+          "0x71518580f36feceffe0721f06ba4703218cd7f63",
+          "0x95b8005c4d9fe80f0aee5b7adce53766080600fb"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 57,
+          "cn": [
+            "2026.07.23",
+            "Verus Ethereum Bridge（7 月重复根覆盖）",
+            "跨链重复键解析差异与导入金额约束不足",
+            "同一组带签名的公证字节，在 Verus 的 map.insert 中保留首个 systemID 根，在 Ethereum 反序列化循环中由后续同 ID 根覆盖。受污染的可信根让伪造导入证明通过，SubmitImports 随后委托 TokenManager 释放真实 ETH 和代币。已归档两笔历史公证调用及主攻击完整跟踪，并对应公开原始模块源码；源链各笔公证字节未独立从 Verus RPC 重读，源码和历史状态等价性未全面核实，未重放。源表约 760 万美元与其他披露估值不统一，金额留空，逐币数量另记。",
+            "https://etherscan.io/tx/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099",
+            "https://etherscan.io/address/0x71518580f36feceffe0721f06ba4703218cd7f63#code\nhttps://etherscan.io/address/0x95b8005c4d9fe80f0aee5b7adce53766080600fb#code\nhttps://etherscan.io/address/0x54e03a1682fd0bb065b669f6296f97028dcfd4ce#code",
+            ""
+          ],
+          "en": [
+            "2026.07.23",
+            "Verus Ethereum Bridge (July duplicate-root overwrite)",
+            "Duplicate-key interpretation mismatch and insufficient import-value constraints",
+            "The same signed notarization bytes preserve the first systemID root through Verus map.insert, but later entries overwrite the root in Ethereum's deserialization loop. The poisoned trusted root lets a fabricated import proof pass, after which SubmitImports delegates real ETH/token payouts to TokenManager. Two historical notarization calls and the focal attack's complete traces are archived and tied to public original module sources. Source-chain notarization bytes were not independently re-read from Verus RPC; full source/historical-state equivalence and replay remain unverified. Aggregate USD loss is blank because the sheet's approximate USD 7.6M and other disclosure valuations differ; per-asset quantities are recorded separately.",
+            "https://etherscan.io/tx/0xa1f1e65c1cea4dba4ae439cd4dcdba6cc2dbda0ed1228e61f29ae9c9324eb099",
+            "https://etherscan.io/address/0x71518580f36feceffe0721f06ba4703218cd7f63#code\nhttps://etherscan.io/address/0x95b8005c4d9fe80f0aee5b7adce53766080600fb#code\nhttps://etherscan.io/address/0x54e03a1682fd0bb065b669f6296f97028dcfd4ce#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260723_Verus/case_metadata.json",
+          "sha256": "8accfb5f90d1479a41901502603890967fee4449e3a22fe78ef0f4d0c75f2ba9"
+        }
+      ]
+    },
+    {
+      "case_id": "20260724_LienFinance",
+      "identity": {
+        "event_date": "2026-07-24",
+        "chain_id": null,
+        "transactions": [
+          "0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7"
+        ],
+        "victims": [
+          "0x656e5e976d523a427f05b0c212a22a89ccd9ef18",
+          "0x843225cf6e663e4454732d6b551a737ac7b47de0",
+          "0xda6fc5625e617bb92f5359921d43321cebc6bef0"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 58,
+          "cn": [
+            "2026.07.24",
+            "Lien Finance（债券等价兑换）",
+            "例外债券总数检查不能保证逐项匹配",
+            "exchangeEquivalentBonds 对例外债券只累计匹配次数，不能保证每个 bondID 在输入、输出各出现正确次数。攻击交易在两套独立 BondMaker 部署登记输出组，重复列出属于例外列表的 bondID；例外列表本身没有重复。合约跳过输入销毁却铸造新债券，再通过三个 OTC 付款端点卖出。完整跟踪和转账复算显示，持有 USDC 的已授权流动性提供者钱包共向攻击合约支付 532,070.026484、74.602120、10,000 USDC，攻击者最终收到 542,144.628604 USDC。两套 BondMaker 不是代理与实现关系；未重放。CSV 保留源表约 542,000 美元口径。",
+            "https://etherscan.io/tx/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7",
+            "https://etherscan.io/address/0xda6fc5625e617bb92f5359921d43321cebc6bef0#code\nhttps://etherscan.io/address/0x843225cf6e663e4454732d6b551a737ac7b47de0#code\nhttps://etherscan.io/address/0x656e5e976d523a427f05b0c212a22a89ccd9ef18#code",
+            "54.2"
+          ],
+          "en": [
+            "2026.07.24",
+            "Lien Finance (equivalent-bond exchange)",
+            "Aggregate exception counts fail to enforce per-bond multiplicity",
+            "exchangeEquivalentBonds balances aggregate exception-match counts without enforcing each bondID's correct input/output multiplicity. On two independent BondMaker deployments, the transaction registered output groups that repeat bondIDs from the exception list; the exception list itself has no duplicates. It minted bonds through the skipped-burn path and sold them through three OTC payment endpoints. Complete traces and transfer reconciliation show an approved USDC liquidity-provider wallet paid the attack contract 532,070.026484, 74.602120 and 10,000 USDC; the attacker received 542,144.628604 USDC. The two BondMakers are separate deployments, not a proxy/implementation pair. No replay was run. CSV loss retains the sheet's approximate USD 542,000 scope.",
+            "https://etherscan.io/tx/0xb96d572b557a12f5ef193e88cca86123a6ae1b6e98b0eeee265870c85848e0e7",
+            "https://etherscan.io/address/0xda6fc5625e617bb92f5359921d43321cebc6bef0#code\nhttps://etherscan.io/address/0x843225cf6e663e4454732d6b551a737ac7b47de0#code\nhttps://etherscan.io/address/0x656e5e976d523a427f05b0c212a22a89ccd9ef18#code",
+            "542"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260724_LienFinance/case_metadata.json",
+          "sha256": "5c9413ccf4e38b8118fbaa1be64bcb4aab1b9f94d416c930f8c19bf901bba81d"
+        }
+      ]
+    },
+    {
+      "case_id": "20260803_MOKE",
+      "identity": {
+        "event_date": "2026-08-03",
+        "chain_id": null,
+        "transactions": [
+          "0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f"
+        ],
+        "victims": [
+          "0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a",
+          "0x5ae569d8a0539a6a603e96a26ac8caea7ceba377",
+          "0x684d722ebf8980f49492f631f56765dd4fb302a7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 59,
+          "cn": [
+            "2026.08.03",
+            "MOKE（释放与 LP 分红模块）",
+            "可操纵现货价放大释放量，陈旧 LP 记录重复领取分红",
+            "MokeRelease 以两组即时储备换算已归属的 USDT 额度，攻击时 PriceSettled 为 0.000594140821297791 USDT/MOKE，4 次领取共移出 43,860,308.980417278429035188 MOKE。MokeLPDividend 在同步当前 LP 余额前，先用旧 userLPRecord 结算分红；回执记录 65 个旧 LP 记录清零后仍领款（64 笔同额、1 笔较小），分配 1,664.616180024096154954 BNB。已归档关键原始源码和回执；未取得完整内部跟踪，未重放。源表 8 月 3 日对应交易 8 月 2 日 UTC；美元估值口径不同，金额留空。",
+            "https://bscscan.com/tx/0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",
+            "https://bscscan.com/address/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377#code\nhttps://bscscan.com/address/0x684d722ebf8980f49492f631f56765dd4fb302a7#code\nhttps://bscscan.com/address/0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a#code",
+            ""
+          ],
+          "en": [
+            "2026.08.03",
+            "MOKE (release and LP dividend modules)",
+            "Manipulable spot-price release combined with stale LP dividend records",
+            "MokeRelease converts vested USDT quotas using two live reserve ratios. PriceSettled was 0.000594140821297791 USDT/MOKE; four claims released 43,860,308.980417278429035188 MOKE. MokeLPDividend accrues against the old userLPRecord before replacing it with current LP ownership. The receipt records 65 stale LP positions (64 equal and one smaller) resetting to zero while claiming dividends from a 1,664.616180024096154954 BNB distribution. Core original source and receipt are archived; full internal traces and replay were not obtained. The sheet date is August 3, versus August 2 UTC on chain. Conflicting USD valuations are left blank.",
+            "https://bscscan.com/tx/0x0776048b1b58064fb31b6513721811e7b44d6bdbe7bf5833158b241ca6756a8f",
+            "https://bscscan.com/address/0x5ae569d8a0539a6a603e96a26ac8caea7ceba377#code\nhttps://bscscan.com/address/0x684d722ebf8980f49492f631f56765dd4fb302a7#code\nhttps://bscscan.com/address/0x1a35c16ce21903bc17fd020c4ed73fedc70c1b2a#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260803_MOKE/case_metadata.json",
+          "sha256": "6bc6da4b98acb2922ab0b9d5477403ef29a1bc1c46033db7a8228df75a661fa6"
+        }
+      ]
+    },
+    {
+      "case_id": "20260804_NEX_AIC",
+      "identity": {
+        "event_date": "2026-08-04",
+        "chain_id": null,
+        "transactions": [
+          "0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87"
+        ],
+        "victims": [
+          "0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 60,
+          "cn": [
+            "2026.08.04",
+            "NEX / AIC",
+            "路由器分支重复扣账使 skim 耗尽 NEX 储备",
+            "NEX._transfer 在涉及路由器时调用一次父转账后未返回，结尾再次转账。攻击者向 NEX/AIC 池补入带卖出税的 NEX，再 skim 到路由器；回执中连续两笔同额 31,739,425.952813599235352140 NEX 从池子转出，sync 后以少量 NEX 兑换 83,261,448.443378062678937598 AIC。池子净流出 40,279,208.819696511790081586 AIC，WBNB 退出量 32.361267289208020008。已取得两代币原始源码和回执；无完整内部跟踪、未重放。源表日期为 8 月 4 日，交易为 8 月 3 日 UTC；19,000 美元与其他估值不一致，金额留空。",
+            "https://bscscan.com/tx/0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",
+            "https://bscscan.com/address/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9#code",
+            ""
+          ],
+          "en": [
+            "2026.08.04",
+            "NEX / AIC",
+            "Router branch double-debits transfers and corrupts reserves through skim",
+            "NEX._transfer calls the parent transfer inside the router branch, then falls through to another parent transfer. After a taxed NEX donation, skim to the router debits the pair twice: the receipt contains consecutive transfers of 31,739,425.952813599235352140 NEX each. After sync, a small NEX input buys 83,261,448.443378062678937598 AIC. Net pair outflow was 40,279,208.819696511790081586 AIC; the WBNB exit was 32.361267289208020008. Original token source and receipt are archived; full internal tracing and replay were not performed. The sheet date is August 4, versus August 3 UTC. The USD 19000 estimate conflicts with other valuations, so loss is blank.",
+            "https://bscscan.com/tx/0x905cc861bcc525d3a8e699583943831b97500bbac11c92dc20ed6edbddd69f87",
+            "https://bscscan.com/address/0xae04ae29bdb7ab7eb249d3afa7bc3d37564e8cf9#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260804_NEX_AIC/case_metadata.json",
+          "sha256": "e99b622f75977019886f26ff7f42e246d0290fa477b77355161057fd5ad47e5c"
+        }
+      ]
+    },
+    {
+      "case_id": "20260810_USM_FUM",
+      "identity": {
+        "event_date": "2026-08-10",
+        "chain_id": null,
+        "transactions": [
+          "0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e"
+        ],
+        "victims": [
+          "0x2a7fff44c19f39468064ab5e5c304de01d591675"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 61,
+          "cn": [
+            "2026.08.10",
+            "USM / FUM",
+            "赎回近似曲线与逐次状态收缩不满足拆分一致性",
+            "USM.ethFromDefund 将开始与估计结束 FUM 卖价取算术平均，并在每次赎回后收缩内部价格和 bidAskAdjustment。历史完整跟踪确认一次 fund 存入 11,579.978354608392803524 ETH 后执行 64 次 defund，合计付出 11,650.809331976090511896 ETH，净流出 70.830977367697708372 ETH。缺陷位于内部定价与连续结算，不能将本交易写成操纵外部 Chainlink 报价。已归档原始源码、完整跟踪并复算资金流，未编译或重放；源表 8 月 10 日对应 8 月 9 日 UTC，美元估值冲突，金额留空。",
+            "https://etherscan.io/tx/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e",
+            "https://etherscan.io/address/0x2a7fff44c19f39468064ab5e5c304de01d591675#code",
+            ""
+          ],
+          "en": [
+            "2026.08.10",
+            "USM / FUM",
+            "Approximate redemption curve and per-call state contraction violate split invariance",
+            "USM.ethFromDefund averages the starting and estimated ending FUM sell prices and contracts internal price and bidAskAdjustment after every redemption. The full historical trace shows one fund of 11,579.978354608392803524 ETH followed by 64 defund calls paying 11,650.809331976090511896 ETH, a net outflow of 70.830977367697708372 ETH. The defect concerns internal pricing and sequential settlement; this transaction is not described as manipulating an external Chainlink quote. Original source, full trace and offline flow reconciliation are archived; compilation and replay were not performed. The sheet date is August 10, versus August 9 UTC. Conflicting USD valuations are blank.",
+            "https://etherscan.io/tx/0xfae5e751b8ce01457cbb6b529839f24a0cff50faaabcbd0fd02ca0cf559b050e",
+            "https://etherscan.io/address/0x2a7fff44c19f39468064ab5e5c304de01d591675#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260810_USM_FUM/case_metadata.json",
+          "sha256": "3465ea48ff1b1457d4b78dbbb52a857824cece311ab67e94e301e49db5e1463b"
+        }
+      ]
+    },
+    {
+      "case_id": "20260817_Fox",
+      "identity": {
+        "event_date": "2026-08-17",
+        "chain_id": null,
+        "transactions": [
+          "0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514"
+        ],
+        "victims": [
+          "0x361d08ff43761e6a7e8fcabe48048ae9010801cc",
+          "0x58e2a853bb14e46befd3148bd4280370fea4655a",
+          "0x87614d97808dcdecb069fe8489848fa1c001e04d",
+          "0x9fa6d8a13b35e051bfc145918db0111dec13d1a0"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 62,
+          "cn": [
+            "2026.08.17",
+            "Fox Market（LP Bonds）",
+            "以交易前现货价记录债券并立即发放过量推荐奖励",
+            "FoxLpBondsPool.stake 先按 getAmountsOut 得到现货价计算 stakeAmount，再把一半 USDT 兑换 FOX、加入同一池子；交易改变价格后没有按实际 LP 价值重算。Treasury.lpBonds 信任登记的质押池并据旧 stakeAmount 铸币、支付推荐人 FOX。UserStake 记录 88,659,280.805328378079051095 份额和 2,659,778.424159851342371532 FOX 推荐奖励；真实转账显示 FOX/USDT 池净流出 677,549.050517106599255604 USDT，但攻击主合约净增 112,976.118753142627232237 USDT，不能混为获利。代理和实现原始源码均归档；历史实现槽读取失败，无完整内部跟踪、未重放。源表为 8 月 17 日，交易为 8 月 15 日 UTC，损失列留空。",
+            "https://bscscan.com/tx/0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",
+            "https://bscscan.com/address/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0#code\nhttps://bscscan.com/address/0x58e2a853bb14e46befd3148bd4280370fea4655a#code\nhttps://bscscan.com/address/0x361d08ff43761e6a7e8fcabe48048ae9010801cc#code\nhttps://bscscan.com/address/0x87614d97808dcdecb069fe8489848fa1c001e04d#code",
+            ""
+          ],
+          "en": [
+            "2026.08.17",
+            "Fox Market (LP Bonds)",
+            "Pre-swap spot valuation overstates LP bonds and immediately pays excess referral rewards",
+            "FoxLpBondsPool.stake computes stakeAmount from a live getAmountsOut quote before swapping half of the USDT for FOX and adding liquidity to the same pair. It never reprices the bond from the actual LP value after its swap changes reserves. Treasury.lpBonds trusts registered staking pools and mints and pays referral FOX using the stale amount. UserStake records 88,659,280.805328378079051095 bond units and 2,659,778.424159851342371532 referral FOX. Transfer logs show a 677,549.050517106599255604 USDT pair outflow, but only 112,976.118753142627232237 USDT net gain at the main attack contract. Proxy and implementation source is archived; historical implementation-slot reads failed, full internal traces and replay were not obtained. The sheet date is August 17, versus August 15 UTC. Loss is blank because scopes differ.",
+            "https://bscscan.com/tx/0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514",
+            "https://bscscan.com/address/0x9fa6d8a13b35e051bfc145918db0111dec13d1a0#code\nhttps://bscscan.com/address/0x58e2a853bb14e46befd3148bd4280370fea4655a#code\nhttps://bscscan.com/address/0x361d08ff43761e6a7e8fcabe48048ae9010801cc#code\nhttps://bscscan.com/address/0x87614d97808dcdecb069fe8489848fa1c001e04d#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260817_Fox/case_metadata.json",
+          "sha256": "1464441e51387fd400000ab79230eff87de4c9cbcfd1695ec75886acb33e04a3"
+        }
+      ]
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "identity": {
+        "event_date": "2026-08-20",
+        "chain_id": null,
+        "transactions": [
+          "0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8"
+        ],
+        "victims": [
+          "0xaa119f7442ecc28b9a8f236707ada8362cff24ff",
+          "0xf9b710e427bf4d93598e0f80a84de22c7ad9b577"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 63,
+          "cn": [
+            "2026.08.20",
+            "Allbridge Core（CCTP 路由）",
+            "把通用消息签名当作实际入金证明并虚增跨链可付款余额",
+            "CCTPTokenMessenger.receiveCctpMessage 只检查消息体中的远端发送人及 destinationCaller，再在通用 MessageTransmitter 接受消息后直接记入 amount-feeExecuted，没有验证真正的 TokenMessenger 头部身份、接收者和 USDC 实际增加。Router.receiveToken 将该虚假额度作为付款依据。回执记录声明 1,000,000 USDC、扣 1,000 USDC 路由费、付款 999,000 USDC；扣除攻击者补入的闪电贷后，Router 净流出 190,155.976393 USDC，最终获利地址净增 189,751.554381 USDC。源码、calldata 和回执已核对；Polygon 制造消息和完整内部跟踪未独立核实，未重放。保留源表约 191,000 美元的事件估计，日期保留 8 月 20 日，实际 Base 交易为 8 月 19 日 UTC。",
+            "https://basescan.org/tx/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8",
+            "https://basescan.org/address/0xaa119f7442ecc28b9a8f236707ada8362cff24ff#code\nhttps://basescan.org/address/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577#code",
+            "19.1"
+          ],
+          "en": [
+            "2026.08.20",
+            "Allbridge Core (CCTP router)",
+            "Generic attested messages create phantom deposit credits without checking actual funding",
+            "CCTPTokenMessenger.receiveCctpMessage checks the body-level remote sender and destinationCaller, then credits amount-feeExecuted after generic MessageTransmitter acceptance, without authenticating the real TokenMessenger header/recipient or an actual USDC balance increase. Router.receiveToken uses that phantom credit to authorize payment. The receipt records a 1,000,000 USDC claim, a 1,000 USDC router fee and a 999,000 USDC payout. After the attacker's flash-loan top-up, Router net outflow is 190,155.976393 USDC; the final profit address gains 189,751.554381 USDC. Source, calldata and receipt were checked; Polygon message creation, full internal tracing and replay were not independently performed. The sheet's approximately USD 191000 incident estimate is retained. The sheet date is August 20, versus August 19 UTC on Base.",
+            "https://basescan.org/tx/0x9f906fcd8fceaa6745e8d1c004861dcfa9b5e6a893fe1e8c5d0013a4e982e6a8",
+            "https://basescan.org/address/0xaa119f7442ecc28b9a8f236707ada8362cff24ff#code\nhttps://basescan.org/address/0xf9b710e427bf4d93598e0f80a84de22c7ad9b577#code",
+            "191"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260820_Allbridge_CCTP/case_metadata.json",
+          "sha256": "09f5aca5e488536afb5c965291e2f69d99cc976f3e539525ab51ee1e8bdbfd11"
+        }
+      ]
+    },
+    {
+      "case_id": "20260822_TheSandbox",
+      "identity": {
+        "event_date": "2026-08-22",
+        "chain_id": null,
+        "transactions": [
+          "0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+          "0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9"
+        ],
+        "victims": [
+          "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 64,
+          "cn": [
+            "2026.08.22",
+            "The Sandbox（SAND OFT 跨链桥）",
+            "公开任意外部调用导致 LayerZero delegate 被接管",
+            "OFTSand继承的approveAndCall/paidCall只检查首参数和长度，却允许普通调用者让代币合约以自身身份调用任意目标。攻击者用68字节setDelegate数据绕过本地onlyOwner入口，把自己设为应用delegate，再修改已注册ReceiveUln302的required DVN为自己，自行verify并commit伪造消息。历史交易证实首铸5000万SAND，首笔出售1496724.864727844728117234 SAND得到14.64553552927302136 WETH。源表约67万美元与官方后续约69.7万美元未能统一，CSV损失字段留空；两种估计及跨链赎回总额仅作背景，不是本批独立汇总。",
+            "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9\nhttps://basescan.org/tx/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+            "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF#code",
+            ""
+          ],
+          "en": [
+            "2026.08.22",
+            "The Sandbox (SAND OFT bridge)",
+            "Arbitrary external call enables LayerZero delegate takeover",
+            "OFTSand inherited public approveAndCall/paidCall helpers that checked only payload length and the first argument while allowing arbitrary external calls from the token identity. A 68-byte setDelegate payload let an ordinary caller bypass the local owner-only setter, become the application delegate, change the existing ReceiveUln302 required DVN to itself, submit verification, and commit a fabricated message. Archived transactions verify the first mint of 50,000,000 SAND and the first sale of 1,496,724.864727844728117234 SAND for 14.64553552927302136 WETH. The source-sheet estimate of $670,000 and the later official ~$697,000 remain unreconciled, so both CSV loss fields are blank. These estimates and the aggregate cross-chain redemption amount were not independently summed in this batch.",
+            "https://basescan.org/tx/0xbddb102a5dbc9324a84390aaa5a9767b89c2bac8955d486fe1cf697e2e9a8fa9\nhttps://basescan.org/tx/0x149eb0eec5f1c793b094b46889059b510281a7eff3c1597bb262777a5cfaa237",
+            "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260822_TheSandbox/case_metadata.json",
+          "sha256": "6b6cd8e7cb395635a7fdd74d18e82471878110f3b2e7a78657bab8956e81391b"
+        }
+      ]
+    },
+    {
+      "case_id": "20260823_TermLabs",
+      "identity": {
+        "event_date": "2026-08-23",
+        "chain_id": 1,
+        "transactions": [
+          "0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8",
+          "0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d",
+          "0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e",
+          "0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2",
+          "0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129"
+        ],
+        "victims": [
+          "0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6",
+          "0x213771693A4411446b4ECce5bce4a405778b2171",
+          "0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2",
+          "0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33",
+          "0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0",
+          "0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 65,
+          "cn": [
+            "2026.08.23",
+            "Term Labs（ETH Meta Vault 治理）",
+            "少量封装 LP 取得多数票权，过宽治理权限允许关闭延时并把金库资金配置给恶意策略",
+            "TokenVoting 以主动封装 LP 的历史供给计算总票权，攻击者用 0.5 ETH 取得并封装 0.485216182805348480 LP，在快照总量 0.535216182805348480 中占约 90.65798%。提案 5 的 17 个动作通过 DAO 已有 Roles 权限将 Delay 冷却期和有效期设为零，并启用 DAO 为模块；随后同笔交易排队并执行四笔普通策略减债及恶意策略注册、放宽债务上限和注资。历史 trace 与日志确认 2841.743535791961701401 WETH 经恶意策略进入攻击钱包。正常 onlyOwner、角色和 Safe 模块检查未被绕过；缺陷是部署中的治理权限和票权范围组合。核心原始源码来自 Sourcify，辅助反编译不替代源码；未重放。美元及全事件 USDC 损失未独立核定，留空。",
+            "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e\nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2\nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8\nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d\nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+            "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code\nhttps://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code\nhttps://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code\nhttps://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code\nhttps://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code\nhttps://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code",
+            ""
+          ],
+          "en": [
+            "2026.08.23",
+            "Term Labs (ETH Meta Vault governance)",
+            "Thin wrapped-LP electorate and overbroad governance authority allow delay removal and allocation to a malicious strategy",
+            "TokenVoting uses the historical supply of voluntarily wrapped LP shares as total voting power. With 0.5 ETH the attacker acquired and wrapped 0.485216182805348480 LP against 0.535216182805348480 total wrapped supply, about 90.65798%. Proposal 5 used 17 DAO actions and existing Roles authority to set Delay cooldown and expiration to zero and enable the DAO as a module, then queued and executed four normal-strategy debt reductions, malicious-strategy registration, a maximum-debt increase and allocation in the same transaction. Historical trace and raw logs confirm 2841.743535791961701401 WETH passed through the malicious strategy to the attacker. Standard onlyOwner, role and Safe-module checks were satisfied; the vulnerability is the deployed composition of voting scope and governance authority. Core original sources come from Sourcify; supplementary decompilation does not replace them. No replay. USD valuation and event-wide USDC loss were not independently established.",
+            "https://etherscan.io/tx/0x724e377f0523898061b9e2f504ab7792e06846c3cb728a6d5b19a2fa58d2ca0e\nhttps://etherscan.io/tx/0x7876693645d08038b7072bfd206f8c1aeb7d0a445b87a8b27b78786ed2ae8cc2\nhttps://etherscan.io/tx/0x284fc544f39c21388e17ca9669970dda9fe0f31921c38676f56073573f73a8b8\nhttps://etherscan.io/tx/0x6e73533304c28686928bf274ec89e8baedbccaed6e8b9211ef54ca90a54e2a8d\nhttps://etherscan.io/tx/0xd354a15b15cb73d30908f411aee3f795ec86737a4d080e9a818ac4d6d3014129",
+            "https://etherscan.io/address/0x26fCb50eEC367ddAB060ccf5E7394Cecd95F7Db2#code\nhttps://etherscan.io/address/0x5b96c5bBdcB361E1E9944bAa071b237E27829Be0#code\nhttps://etherscan.io/address/0x213771693A4411446b4ECce5bce4a405778b2171#code\nhttps://etherscan.io/address/0x0ae12AF3878a2d896f5C4DCE3Be7250FB187c0a6#code\nhttps://etherscan.io/address/0xD9DdE54D99a27F0f0E2b282369BFaa95528e9B75#code\nhttps://etherscan.io/address/0x35C99CF4a5DF2D9bCd822BeE32676D9590229e33#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260823_TermLabs/case_metadata.json",
+          "sha256": "727380e72c729545cba82bb5f735979d9211e182db0fcaba50c163414d06e249"
+        }
+      ]
+    },
+    {
+      "case_id": "20260826_FH",
+      "identity": {
+        "event_date": "2026-08-26",
+        "chain_id": 56,
+        "transactions": [
+          "0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2"
+        ],
+        "victims": [
+          "0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 66,
+          "cn": [
+            "2026.08.26",
+            "Falcon Heavy（FH）",
+            "卖出时扣除资金池自己的代币并提前同步储备，导致 USDT 被超额换出",
+            "FHToken._transfer 的卖出分支先从资金池余额销毁净卖出额的80%、向国库转走20%，调用 pair.sync() 后才把卖方净额转入池子。Pancake V2 的手续费代币路径随后按余额减已降低储备计算输入，并按降低后的FH储备报价。构造函数预设的V3 Router买入白名单与公开sweepToken使普通攻击者可以取得FH再卖出。原回执记录25轮买卖；逐轮卖出金额与公开Router算式吻合，池子USDT净流出与攻击者净流入均为19999018106552928530404原始单位（历史decimals=18，即19,999.018106552928530404 USDT）。保留源表约2万美元估计与8月26日日期，实际交易为8月25日UTC。核心原始源码来自Sourcify；未取得完整内部调用跟踪，未重放。",
+            "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+            "https://bscscan.com/address/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37#code",
+            "2"
+          ],
+          "en": [
+            "2026.08.26",
+            "Falcon Heavy (FH)",
+            "Sell-side removal of pair-owned tokens and premature reserve sync cause excessive USDT output",
+            "FHToken._transfer burns 80% of the net sell amount from the pair balance, sends the remaining 20% from the pair to treasury, calls pair.sync(), and only then credits the seller net amount. The Pancake V2 fee-on-transfer route measures input as balance minus the reduced reserve and quotes against the depleted FH reserve. A constructor-whitelisted V3 router and its public sweepToken allow an ordinary attacker to acquire FH for the sell path. The receipt records 25 buy/sell cycles; each sell output exactly matches the public router formula. Pool USDT net outflow and attacker net inflow both equal 19999018106552928530404 raw units (19,999.018106552928530404 USDT; historical decimals=18). The sheet estimate of about USD 20000 and August 26 date are retained; the transaction occurred on August 25 UTC. Core original source is from Sourcify. Full internal tracing and replay were not performed.",
+            "https://bscscan.com/tx/0x7a3cadc2f33e000b0091307df62db2f5cc79ab8e0b022fd84de9e1c2c0745bd2",
+            "https://bscscan.com/address/0xdCf0DFe0053677A67610c6d08EA1f5c78DF8cA37#code",
+            "20"
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260826_FH/case_metadata.json",
+          "sha256": "55074eb66ca676def6d1e1587e23ce3d99cd33b174c2c765730c71989d0754da"
+        }
+      ]
+    },
+    {
+      "case_id": "20260827_Moonwell_MAMO",
+      "identity": {
+        "event_date": "2026-08-27",
+        "chain_id": 8453,
+        "transactions": [
+          "0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7",
+          "0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f",
+          "0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18"
+        ],
+        "victims": [
+          "0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32",
+          "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 67,
+          "cn": [
+            "2026.08.27",
+            "Moonwell（MAMO 抵押市场）",
+            "直接捐赠抬高抵押份额兑换率，并与被推高的预言机价格共同放大借款能力",
+            "mMAMO以实际代币余额计算份额兑换率；直接转入MAMO不经过mintAllowed的供应上限检查，也不增加份额。两次捐赠共53,393,290.310633389294532652 MAMO，历史状态显示份额总量不变、兑换率升至约3.6786倍。Comptroller将份额、兑换率、MAMO报价与50%抵押因子相乘，未限制捐赠造成的抵押增量或按可清算深度折价。实际采用的MAMO价格一度为0.40248571美元。17笔成功交易包含18次借款，流出cbBTC、WETH/ETH、USDC及wstETH；WETH付款经WethUnwrapper解包。原始源码与核心历史运行码已比对；未复核全部价格操纵交易、清算及最终净损益。美元金额因早期报道、借款总额和剩余坏账口径不一留空。",
+            "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f\nhttps://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18\nhttps://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7",
+            "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code\nhttps://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code",
+            ""
+          ],
+          "en": [
+            "2026.08.27",
+            "Moonwell (MAMO collateral market)",
+            "Donation-driven collateral exchange-rate inflation combined with inflated oracle prices",
+            "mMAMO computes its exchange rate from the actual underlying balance. Direct MAMO transfers bypass the mintAllowed supply-cap check and create no shares. Two donations totaled 53,393,290.310633389294532652 MAMO; historical state shows unchanged share supply and an approximately 3.6786-fold exchange-rate increase. Comptroller multiplies shares, exchange rate, the MAMO quote and a 50% collateral factor without capping donation-induced collateral growth or discounting for realizable market depth. The accepted MAMO price reached USD 0.40248571. Seventeen successful transactions contain 18 borrows of cbBTC, WETH/ETH, USDC and wstETH; WETH payouts unwrap through WethUnwrapper. Original sources and core historical runtime code were compared. Full price-manipulation trades, liquidations and final net results were not reconstructed. The USD loss field is blank because early reports, gross borrowing and residual bad debt use different scopes.",
+            "https://basescan.org/tx/0xafb6f0fa257b115a5c813bf787b4c1535e63888b1d0dbeb1f3788f557f51798f\nhttps://basescan.org/tx/0xee2b75648c288e0e57678a177d54aec2e8ecb8920842c72e8784186c18c88b18\nhttps://basescan.org/tx/0x2d1c356e8e77f9b5df9589381a1ff6f63153148710a113ccd8da1174870b23d7",
+            "https://basescan.org/address/0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32#code\nhttps://basescan.org/address/0xfbb21d0380bee3312b33c4353c8936a0f13ef26c#code",
+            ""
+          ]
+        },
+        {
+          "kind": "case_metadata",
+          "path": "dataset_artifacts/20260827_Moonwell_MAMO/case_metadata.json",
+          "sha256": "ff50b86b809b0976dd846906984757fc310498b28177fb6511ce9429a8cd45a1"
+        }
+      ]
+    },
+    {
+      "case_id": "20261029_zkLink_Nova",
+      "identity": {
+        "event_date": "2026-10-29",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": []
+    },
+    {
+      "case_id": "csv_record_16",
+      "identity": {
+        "event_date": "2026-03-11",
+        "chain_id": null,
+        "transactions": [
+          "0xa17001eb39f867b8bed850de9107018a2d2503f95f15e4dceb7d68fff5ef6d9d"
+        ],
+        "victims": [
+          "0x85a948fd70b2b415bda93324581fb5fff1293df7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 16,
+          "cn": [
+            "2026.03.11",
+            "@AlkemiNetwork",
+            "业务逻辑漏洞",
+            "`liquidateBorrow()` 存在一个漏洞，允许自行清算，并且不强制执行破产程序",
+            "https://etherscan.io/tx/0xa17001eb39f867b8bed850de9107018a2d2503f95f15e4dceb7d68fff5ef6d9d",
+            "https://etherscan.io/address/0x85a948fd70b2b415bda93324581fb5fff1293df7",
+            "11"
+          ],
+          "en": [
+            "2026.03.11",
+            "@AlkemiNetwork",
+            "Business Logic Vulnerability",
+            "The `liquidateBorrow()` function contains a vulnerability that allows for self-liquidation and fails to enforce insolvency procedures.",
+            "https://etherscan.io/tx/0xa17001eb39f867b8bed850de9107018a2d2503f95f15e4dceb7d68fff5ef6d9d",
+            "https://etherscan.io/address/0x85a948fd70b2b415bda93324581fb5fff1293df7",
+            "110"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_17",
+      "identity": {
+        "event_date": "2026-03-11",
+        "chain_id": null,
+        "transactions": [
+          "0xe0835bb761805689bf3ee510c5b0950ead03977f3d99ddc1a59c6d23151c0f1f"
+        ],
+        "victims": [
+          "0x2f64203ed5606466783b61e8691784f07c25f0ed",
+          "0x4c9ed6a7c0ff31bf7302c73a2f76701e56bdf467"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 17,
+          "cn": [
+            "2026.03.11",
+            "@planet_finance",
+            "业务逻辑漏洞",
+            "`changeUserBorrowDiscount()` 函数在计算借款人折扣时，错误地将新借款视为应计利息",
+            "https://bscscan.com/tx/0xe0835bb761805689bf3ee510c5b0950ead03977f3d99ddc1a59c6d23151c0f1f",
+            "https://bscscan.com/address/0x2f64203ed5606466783b61e8691784f07c25f0ed\nhttps://bscscan.com/address/0x4c9ed6a7c0ff31bf7302c73a2f76701e56bdf467",
+            "9.3"
+          ],
+          "en": [
+            "2026.03.11",
+            "@planet_finance",
+            "Business Logic Vulnerability",
+            "The `changeUserBorrowDiscount()` function incorrectly treats new borrowings as accrued interest when calculating the borrower's discount.",
+            "https://bscscan.com/tx/0xe0835bb761805689bf3ee510c5b0950ead03977f3d99ddc1a59c6d23151c0f1f",
+            "https://bscscan.com/address/0x2f64203ed5606466783b61e8691784f07c25f0ed\nhttps://bscscan.com/address/0x4c9ed6a7c0ff31bf7302c73a2f76701e56bdf467",
+            "93"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_20",
+      "identity": {
+        "event_date": "2026-04-07",
+        "chain_id": null,
+        "transactions": [
+          "0x6031c73c264874c1eaf6e36f4806907e7cc6c6343b6fe5aa3e0aada805eff621"
+        ],
+        "victims": [
+          "0x4e52d6e7d7d60aef9d5c7558a0509862228b8a09"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 20,
+          "cn": [
+            "2026.04.07",
+            "#TGAI",
+            "业务逻辑漏洞 + 权限漏洞",
+            "滥用 `sync()` 将约 1.75 万 USDT 推入 LP 交易对，之后调用 `swapTGToUSDT()` 获利",
+            "https://bscscan.com/tx/0x6031c73c264874c1eaf6e36f4806907e7cc6c6343b6fe5aa3e0aada805eff621",
+            "https://bscscan.com/address/0x4e52d6e7d7d60aef9d5c7558a0509862228b8a09",
+            "1.194"
+          ],
+          "en": [
+            "2026.04.07",
+            "#TGAI",
+            "Permission Vulnerability + Business Logic Vulnerability",
+            "Misuse of `sync()` injected approximately 17,500 USDT into the LP trading pair, followed by a call to `swapTGToUSDT` to extract profits.",
+            "https://bscscan.com/tx/0x6031c73c264874c1eaf6e36f4806907e7cc6c6343b6fe5aa3e0aada805eff621",
+            "https://bscscan.com/address/0x4e52d6e7d7d60aef9d5c7558a0509862228b8a09",
+            "11.94"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_21",
+      "identity": {
+        "event_date": "2026-04-07",
+        "chain_id": null,
+        "transactions": [
+          "0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1"
+        ],
+        "victims": [
+          "0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 21,
+          "cn": [
+            "2026.04.07",
+            "Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98)",
+            "权限漏洞",
+            "`run()` 可以将批准的代币转移给攻击者",
+            "https://bscscan.com/tx/0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1",
+            "https://bscscan.com/address/0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4",
+            "51.7"
+          ],
+          "en": [
+            "2026.04.07",
+            "Squid(0xaCc0c1f672B03B9a5fED4535f840f09B85f40E98)",
+            "Permission Vulnerability",
+            "`run()` can transfer approved tokens to the attacker.",
+            "https://bscscan.com/tx/0x09eca081bee7c2c6078612b05daf0b01f4fdd658ec7210c01843c5ce8df27ea1",
+            "https://bscscan.com/address/0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4",
+            "517"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_27",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [
+          "0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811"
+        ],
+        "victims": [
+          "0x3db1ebb71c735980d12422f153987d89f4d7eacc"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 27,
+          "cn": [
+            "2026.05.12",
+            "BoostHook",
+            "操纵价格 + 逻辑检查漏洞",
+            "攻击者利用 120 个 WETH 的 Morpho 闪电贷操纵了 ETH/PERP Uniswap v4 资金池的价格，然后通过 `BoostHook.openLong()` 以虚高的价格开立了九个杠杆仓位。`BoostHook` 在记录这些仓位时没有执行严格的开仓后偿付能力检查，在攻击者将 PERP 抛回资金池后，由于 `MAX_LIQS_PER_BLOCK = 5` 的限制，`BoostHook.afterSwap()` 仅清算了五个仓位，导致四个有毒仓位仍然未平仓。",
+            "https://etherscan.io/tx/0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811",
+            "https://etherscan.io/address/0x3db1ebb71c735980d12422f153987d89f4d7eacc",
+            "4.76"
+          ],
+          "en": [
+            "2026.05.12",
+            "BoostHook",
+            "Price Manipulation + Logic Check Vulnerability",
+            "The attacker used a 120 WETH Morpho flash loan to manipulate the ETH/PERP Uniswap v4 pool price, then opened nine leveraged positions through `BoostHook.openLong()` at inflated pricing. `BoostHook` recorded the positions without enforcing a strong post-open solvency check, and after the attacker dumped PERP back into the pool, `BoostHook.afterSwap()` liquidated only five positions due to `MAX_LIQS_PER_BLOCK = 5`, leaving four toxic positions open.",
+            "https://etherscan.io/tx/0xb45cc4d9c13c2c24b4bbf71db9e6f52ed24d174ad23ed2622a290289cebd3811",
+            "https://etherscan.io/address/0x3db1ebb71c735980d12422f153987d89f4d7eacc",
+            "47.6"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_28",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [
+          "0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8"
+        ],
+        "victims": [
+          "0x404404a845fff0201f3a4d419b4839fc419c99f7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 28,
+          "cn": [
+            "2026.05.12",
+            "SQToken",
+            "业务逻辑漏洞",
+            "硬编码地址篡改owner",
+            "https://bscscan.com/tx/0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8",
+            "https://bscscan.com/address/0x404404a845fff0201f3a4d419b4839fc419c99f7",
+            "34.6"
+          ],
+          "en": [
+            "2026.05.12",
+            "SQToken",
+            "Business Logic Vulnerability",
+            "Hardcoded Address Tampering with the Owner",
+            "https://bscscan.com/tx/0x1bae633eda9b3d98999ea116bc403712eaa07093ec32bd6d559085cc4607f5b8",
+            "https://bscscan.com/address/0x404404a845fff0201f3a4d419b4839fc419c99f7",
+            "346"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_29",
+      "identity": {
+        "event_date": "2026-05-12",
+        "chain_id": null,
+        "transactions": [
+          "0x11a5740c5fff435e92cc3aef57d5b0526cca9ae3c96f299d7b0442c938ace132"
+        ],
+        "victims": [
+          "0x575f30b2e7b7711be16d49a50786c8edabd755f1"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 29,
+          "cn": [
+            "2026.05.12",
+            "@eonx_ai",
+            "操纵价格",
+            "存款和奖励以 USDT 为单位进行追踪，但提现时却使用 Pancake 的实时现货价格函数通过 `getAmountsOut([USDT,IEX])` 将该值转换为 IEX",
+            "https://bscscan.com/tx/0x11a5740c5fff435e92cc3aef57d5b0526cca9ae3c96f299d7b0442c938ace132",
+            "https://bscscan.com/address/0x575f30b2e7b7711be16d49a50786c8edabd755f1",
+            "4.7"
+          ],
+          "en": [
+            "2026.05.12",
+            "@eonx_ai",
+            "Price Manipulation",
+            "deposits and rewards are tracked in USDT-sized units, but withdrawals convert that value to IEX using live Pancake spot through getAmountsOut([USDT,IEX]).",
+            "https://bscscan.com/tx/0x11a5740c5fff435e92cc3aef57d5b0526cca9ae3c96f299d7b0442c938ace132",
+            "https://bscscan.com/address/0x575f30b2e7b7711be16d49a50786c8edabd755f1",
+            "47"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_37",
+      "identity": {
+        "event_date": "2026-06-18",
+        "chain_id": null,
+        "transactions": [
+          "0x5c196c37a109d74c9797254287a0331f30e0daa637af241bd28fdc43774705c3",
+          "0x9e1d6ab7c20ae235409d7dd3a9cd47c04f07293585b3498b8beed82d6f6b03ca",
+          "0xab306cd2184d23b6ba3e151b10b3b9a0b81f211cc16f4f3b0c79f0b17a59c2b5"
+        ],
+        "victims": [
+          "0x48cb7ba00d087541dc8e2b3738f80fdd1fee8ce8",
+          "0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 37,
+          "cn": [
+            "2026.06.18",
+            "@aztecnetwork",
+            "证明校验漏洞 + 业务逻辑漏洞",
+            "据事后披露，旧版 Private Rollup Bridge 的 claim proof 未正确绑定用户应得的最终输出，攻击者可替换输出归属。攻击者经 `escapeHatch()` 提交被验证器接受的证明后，`processDepositsAndWithdrawals()` 按证明中的 `publicOutput` 和 `outputOwner` 执行提款。该事件属于旧版 `RollupProcessor`，与 2026.06.14 收录的 `RollupProcessorV3` 交易数量校验事件不同。",
+            "https://etherscan.io/tx/0xab306cd2184d23b6ba3e151b10b3b9a0b81f211cc16f4f3b0c79f0b17a59c2b5\nhttps://etherscan.io/tx/0x5c196c37a109d74c9797254287a0331f30e0daa637af241bd28fdc43774705c3\nhttps://etherscan.io/tx/0x9e1d6ab7c20ae235409d7dd3a9cd47c04f07293585b3498b8beed82d6f6b03ca",
+            "https://etherscan.io/address/0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba\nhttps://etherscan.io/address/0x48cb7ba00d087541dc8e2b3738f80fdd1fee8ce8",
+            "217"
+          ],
+          "en": [
+            "2026.06.18",
+            "@aztecnetwork",
+            "Proof Verification Vulnerability + Business Logic Vulnerability",
+            "According to the post-incident disclosure, the legacy Private Rollup Bridge's claim proof did not correctly bind the user's final output, allowing its recipient to be substituted. After an attacker submitted an accepted proof through `escapeHatch()`, `processDepositsAndWithdrawals()` paid the encoded `publicOutput` to `outputOwner`. This legacy `RollupProcessor` case is distinct from the `RollupProcessorV3` transaction-count validation case indexed on 2026.06.14.",
+            "https://etherscan.io/tx/0xab306cd2184d23b6ba3e151b10b3b9a0b81f211cc16f4f3b0c79f0b17a59c2b5\nhttps://etherscan.io/tx/0x5c196c37a109d74c9797254287a0331f30e0daa637af241bd28fdc43774705c3\nhttps://etherscan.io/tx/0x9e1d6ab7c20ae235409d7dd3a9cd47c04f07293585b3498b8beed82d6f6b03ca",
+            "https://etherscan.io/address/0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba\nhttps://etherscan.io/address/0x48cb7ba00d087541dc8e2b3738f80fdd1fee8ce8",
+            "2,170"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_38",
+      "identity": {
+        "event_date": "2026-06-18",
+        "chain_id": null,
+        "transactions": [
+          "0x55856d9fda4c5be5193561c7d775e823c3d6e499da44aab9da963daf61c50b0c"
+        ],
+        "victims": [
+          "0x5e3cbc82d020be91a989eb747934104e9ab585fe",
+          "0x88886f0fd371dff856291badced45922bc888888"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 38,
+          "cn": [
+            "2026.06.18",
+            "@LittleBoyPlus",
+            "业务逻辑漏洞 + 操纵价格",
+            "`LBPHashrate.notifyCredit()` 以 `2 * lpDelta * currentRUsdt / currentTotalLp` 计算算力，直接信任 LP 结算时可在同一交易内操纵的池子储备。攻击者利用临时流动性放大算力，并通过奖励结算触发 `LBP.mintReward()`，再卖出增发的 LBP 提取 USDT；`transferFrom(pair, DEAD, 0)` 可经 `_update()` 触发交易对的 `_harvest()`，也是奖励结算路径的一部分。",
+            "https://bscscan.com/tx/0x55856d9fda4c5be5193561c7d775e823c3d6e499da44aab9da963daf61c50b0c",
+            "https://bscscan.com/address/0x5e3cbc82d020be91a989eb747934104e9ab585fe\nhttps://bscscan.com/address/0x88886f0fd371dff856291badced45922bc888888",
+            "37.7642"
+          ],
+          "en": [
+            "2026.06.18",
+            "@LittleBoyPlus",
+            "Business Logic Vulnerability + Price Manipulation",
+            "`LBPHashrate.notifyCredit()` prices hashrate as `2 * lpDelta * currentRUsdt / currentTotalLp`, trusting pair reserves that can be manipulated within the same LP-settlement transaction. The attacker inflated hashrate with temporary liquidity, triggered `LBP.mintReward()` through reward settlement, and sold the emitted LBP for USDT. A zero-value `transferFrom(pair, DEAD, 0)` can reach the pair's `_harvest()` through `_update()` and forms part of the reward-settlement path.",
+            "https://bscscan.com/tx/0x55856d9fda4c5be5193561c7d775e823c3d6e499da44aab9da963daf61c50b0c",
+            "https://bscscan.com/address/0x5e3cbc82d020be91a989eb747934104e9ab585fe\nhttps://bscscan.com/address/0x88886f0fd371dff856291badced45922bc888888",
+            "377.642"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_39",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [
+          "0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25"
+        ],
+        "victims": [
+          "0x1b5732eb98911c25acf7bdfaffb9409782cae6d7",
+          "0xcf92e7ef4a63d52dc15f45a24f4f815f00f299a7"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 39,
+          "cn": [
+            "2026.06.19",
+            "$JB [Decompiled]",
+            "业务逻辑漏洞 + 操纵价格",
+            "【反编译恢复样本；非已验证原始源码】JB 代币的路由器专用入口 `0xb1faeac6(uint256)` 直接销毁交易对持有的 JB，并调用 `sync()` 更新储备。攻击者经官方交易路由器反复卖出 JB，每轮卖出后触发该入口，压低交易对的 JB 储备并重新锚定价格，持续提取 USDT。恢复函数名以选择器表示；主代币恢复置信度为中等，路由器和控制器上下文较低。",
+            "https://bscscan.com/tx/0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25",
+            "https://bscscan.com/address/0xcf92e7ef4a63d52dc15f45a24f4f815f00f299a7\nhttps://bscscan.com/address/0x1b5732eb98911c25acf7bdfaffb9409782cae6d7",
+            "5"
+          ],
+          "en": [
+            "2026.06.19",
+            "$JB [Decompiled]",
+            "Business Logic Vulnerability + Price Manipulation",
+            "[Decompiled recovery; not verified original source] The router-only JB token entry `0xb1faeac6(uint256)` burns JB directly from the pair and calls `sync()` to update reserves. The attacker repeatedly sold JB through the official trade router, which reached this entry after each sell, reducing the pair's JB reserve and resetting the price to extract USDT. The recovered name retains the selector; confidence is medium for the token and low for the router/controller context.",
+            "https://bscscan.com/tx/0x54e120b8d62a9d7cef94bf51f1f5b8aa13565d76d8797a79afeeb25ed0e1dc25",
+            "https://bscscan.com/address/0xcf92e7ef4a63d52dc15f45a24f4f815f00f299a7\nhttps://bscscan.com/address/0x1b5732eb98911c25acf7bdfaffb9409782cae6d7",
+            "50"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_40",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 40,
+          "cn": [
+            "2026.06.19",
+            "@axelar（Secret 侧桥）",
+            "来源通道验证缺失 + 无抵押铸币",
+            "Secret 侧 ics20-for-axelar 的 do_ibc_packet_receive() 只按 denom 查允许列表，未将来源通道绑定到真正的 Axelar。攻击者从自建链发送伪造存款消息，铸出 saTokens，再通过真实通道赎回 Axelar 托管资产。源码为官方披露对应的 Rust 提交 b206182；实际攻击发生于 2026-06-10，索引日期沿用源表。",
+            "https://www.mintscan.io/secret/tx/01526FA5A35AB071ABF66F8F3F3F390EA62356EA2CF8B54B219F5DE974532DE6\nhttps://www.mintscan.io/axelar/tx/C03B1FE0EEF40EB3765A6FD93F26FF1CCAF10B569C18B15A0D57B4324D8C2EC3",
+            "https://www.mintscan.io/secret/address/secret1yxjmepvyl2c25vnt53cr2dpn8amknwausxee83",
+            "467"
+          ],
+          "en": [
+            "2026.06.19",
+            "@axelar (Secret-side bridge)",
+            "Missing Source-Channel Validation + Unbacked Minting",
+            "The Secret-side ics20-for-axelar do_ibc_packet_receive() checks the denom allow-list without binding the source channel to genuine Axelar. Forged deposits from an attacker-controlled chain mint unbacked saTokens, which are redeemed through the genuine channel for escrowed assets. Rust source is pinned to the officially identified b206182 revision. The attack occurred on 2026-06-10; the index retains the sheet date.",
+            "https://www.mintscan.io/secret/tx/01526FA5A35AB071ABF66F8F3F3F390EA62356EA2CF8B54B219F5DE974532DE6\nhttps://www.mintscan.io/axelar/tx/C03B1FE0EEF40EB3765A6FD93F26FF1CCAF10B569C18B15A0D57B4324D8C2EC3",
+            "https://www.mintscan.io/secret/address/secret1yxjmepvyl2c25vnt53cr2dpn8amknwausxee83",
+            "4670"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_41",
+      "identity": {
+        "event_date": "2026-06-19",
+        "chain_id": null,
+        "transactions": [],
+        "victims": [
+          "0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf70"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 41,
+          "cn": [
+            "2026.06.19",
+            "mySwap CL（Starknet；Sierra 反编译）",
+            "价格初始化前可建立流动性头寸，初始化后结算出真实资产",
+            "已取得攻击时执行的链上 Sierra 类并校验类哈希，保存完整反编译。mint 的池检查只要求 PoolParams.fee 非零，价格仍为零时也能建立头寸；initialize_pool_price 随后允许写入初始价格，burn、collect 把头寸变为真实资产应收。原始 RPC 跟踪核对了 12 轮真实资产存入均为 0，随后实际转出 ETH、STRK、USDC.e、USDT。反编译保留原始指令编号，不是已验证的原始 Cairo 源码；305000 美元沿用源表估值。",
+            "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+            "https://voyager.online/contract/0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+            "30.5"
+          ],
+          "en": [
+            "2026.06.19",
+            "mySwap CL (Starknet; Sierra decompiled)",
+            "Liquidity positions accepted before price initialization can settle into real assets afterward",
+            "The historically executed on-chain Sierra class was recovered and its class hash verified. Complete decompilation is included. The mint pool check only requires a nonzero PoolParams.fee, allowing positions while the price is still zero. initialize_pool_price then sets the initial price, after which burn and collect produce real-asset claims. Raw RPC traces verify zero real-asset deposits and actual ETH, STRK, USDC.e and USDT transfers across all 12 rounds. Original instruction IDs are retained; this is decompiled code, not verified original Cairo source. USD 305000 preserves the sheet estimate.",
+            "https://voyager.online/tx/0x1c15c4064cb3d72df27a35dfcd2da17c108abfb8e671428cb9d457f698f588",
+            "https://voyager.online/contract/0x01114c7103e12c2b2ecbd3a2472ba9c48ddcbf702b1c242dd570057e26212111",
+            "305"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_42",
+      "identity": {
+        "event_date": "2026-06-20",
+        "chain_id": null,
+        "transactions": [
+          "0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764"
+        ],
+        "victims": [
+          "0x58815CDF9955121a6274680ab396a36FC9e00000"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 42,
+          "cn": [
+            "2026.06.20",
+            "@BnbLabubu（OLPCToken）",
+            "销毁倍数配置缺少上限，导致交易池储备操纵",
+            "OLPCToken._update 在交易池向非免税地址转出代币时，从池子扣除 value × decimalsValue 并转入销毁地址，再将接收方到账金额设为0；onlyOwner 的 setDecimalsValue 没有上限。攻击者通过少量转入、skim 和 sync 反复放大池内 OLPC 扣款，使储备失衡，再输入 OLPC 换出 LABUBU 并经 WBNB 换成 USDT。已核对源码与成功交易回执；不是重入。源表损失保留1115000美元；该交易攻击者USDT净流入为1115903.663412131721557252，未扣启动资金和gas。",
+            "https://bscscan.com/tx/0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764",
+            "https://bscscan.com/address/0x58815CDF9955121a6274680ab396a36FC9e00000#code",
+            "111.5"
+          ],
+          "en": [
+            "2026.06.20",
+            "@BnbLabubu (OLPCToken)",
+            "Unbounded burn multiplier enabling AMM reserve manipulation",
+            "OLPCToken._update debits value × decimalsValue from the AMM pair to the dead address on pair-originated transfers to non-exempt recipients, then sets the delivered amount to zero. The onlyOwner setter has no upper bound. The attacker repeatedly donated dust and used skim/sync to deplete OLPC reserves, then swapped OLPC for LABUBU and sold it via WBNB into USDT. Verified source and the successful receipt support reserve manipulation, not reentrancy. The sheet loss remains USD 1115000; the transaction's attacker USDT net inflow is 1115903.663412131721557252 before startup funds and gas.",
+            "https://bscscan.com/tx/0x8dabb60a94e5124462e5f494a25c14bcd52f6f4d1f7c665a249496f4c6c24764",
+            "https://bscscan.com/address/0x58815CDF9955121a6274680ab396a36FC9e00000#code",
+            "1115"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_43",
+      "identity": {
+        "event_date": "2026-06-20",
+        "chain_id": null,
+        "transactions": [],
+        "victims": []
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 43,
+          "cn": [
+            "2026.06.20",
+            "@namada（历史交易待核实）",
+            "零知识证明验证结果检查错误（事件关联待补）",
+            "官方事发前代码依赖 masp_proofs 3.0.9，其 BatchValidator.validate() 对 Result<bool, SynthesisError> 只检查 is_err()，因此代表证明无效的 Ok(false) 未被拒绝。官方 MASP PR #114 和 Namada masp-drain-fix PR #5026 提供修复与假证明回归测试。原表未提供攻击交易；此源码缺陷与本次约 60 万美元流出的逐笔对应尚未完成，不能把 IBC 转出路径直接当成已确认根因。",
+            "",
+            "",
+            "60"
+          ],
+          "en": [
+            "2026.06.20",
+            "@namada (historical transaction unverified)",
+            "Incorrect ZK-Proof Result Check (Incident Correlation Incomplete)",
+            "Pre-incident upstream code pins masp_proofs 3.0.9. BatchValidator.validate() checks only is_err() on Result<bool, SynthesisError>, so Ok(false) for an invalid proof is not rejected. MASP PR #114 and Namada masp-drain-fix PR #5026 provide the fix and fake-proof regression test. The sheet supplies no attack transaction; transaction-level correlation with this approximately $600K drain remains incomplete. IBC outflow alone does not establish the root cause.",
+            "",
+            "",
+            "600"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_45",
+      "identity": {
+        "event_date": "2026-06-22",
+        "chain_id": null,
+        "transactions": [
+          "0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee",
+          "0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260",
+          "0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13"
+        ],
+        "victims": [
+          "0x08568df252ecf37d6c3efd24f6ca3688118697f1",
+          "0x6f21c543a4af5189ebdb0723827577e1ef57ef1f",
+          "0xa1018ba2e22139076f91da2a856b2cab22d968f6"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 45,
+          "cn": [
+            "2026.06.22",
+            "@taikoxyz（SGX 证明路径与跨链提款）",
+            "未拒绝调试模式证明者，伪造状态与提案年龄绕过白名单",
+            "官方复盘确认公开的enclave签名密钥与未拒绝DEBUG模式的认证检查共同使伪造证明被接受；攻击者伪造提案年龄满足超过五天的开放证明条件，写入假L2检查点，再通过Bridge/ERC20Vault提款。已保存官方事发前合约树、两份Etherscan验证的SGX实现及交易事件，SGX主文件与官方快照逐字节一致；其他组件未核实攻击时代理实现或完整部署字节码。源表两笔分别为USDC重试付款与130ETH处理；本轮解码首笔649761.236201 USDC。源表170万美元保留，官方后续约175万美元另列；未分叉重放。",
+            "https://etherscan.io/tx/0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee\nhttps://etherscan.io/tx/0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13\nhttps://etherscan.io/tx/0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260",
+            "https://etherscan.io/address/0x08568df252ecf37d6c3efd24f6ca3688118697f1#code\nhttps://etherscan.io/address/0xa1018ba2e22139076f91da2a856b2cab22d968f6#code\nhttps://etherscan.io/address/0x6f21c543a4af5189ebdb0723827577e1ef57ef1f#code",
+            "170"
+          ],
+          "en": [
+            "2026.06.22",
+            "@taikoxyz (SGX proving path and bridge withdrawals)",
+            "Unchecked debug-mode attestation enables forged state and proposal-age whitelist bypass",
+            "The official postmortem identifies an exposed enclave signing key plus attestation that did not reject DEBUG mode. Forged proofs also falsified proposal age to satisfy the greater-than-five-day permissionless path, writing fake L2 checkpoints used for Bridge/ERC20Vault withdrawals. The pre-incident official contract tree, verified explorer SGX bundles and transaction events are archived; the SGX main source is byte-identical to the pinned snapshot. Historical proxy implementations and the complete deployed build were not verified for other components. The sheet transactions are a USDC retry payout and a 130 ETH process call; the former emitted a 649761.236201 USDC transfer. Retain sheet USD 1.7M; later official approximately USD 1.75M is separate. No fork replay.",
+            "https://etherscan.io/tx/0x017292a7de5fef52a3274e37dda5ace4c4d0cdafe91b7b4ac9c700f02fae35ee\nhttps://etherscan.io/tx/0xb8befb015a67de8f40890b1f8667c597c3b66a52b388ec1c6cd28637fd65dd13\nhttps://etherscan.io/tx/0x2f44dc1b883522a88f9b0cbbdfabf9ec33884b69dd4326600c3fab7fb2277260",
+            "https://etherscan.io/address/0x08568df252ecf37d6c3efd24f6ca3688118697f1#code\nhttps://etherscan.io/address/0xa1018ba2e22139076f91da2a856b2cab22d968f6#code\nhttps://etherscan.io/address/0x6f21c543a4af5189ebdb0723827577e1ef57ef1f#code",
+            "1700"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_51",
+      "identity": {
+        "event_date": "2026-07-13",
+        "chain_id": null,
+        "transactions": [
+          "0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90"
+        ],
+        "victims": [
+          "0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 51,
+          "cn": [
+            "2026.07.13",
+            "Lumi Finance / Sodium",
+            "ERC-1271 会话授权绕过与验证阶段恶意授权",
+            "Sodium 的 0x01 签名格式允许 UserOperation 自己填 signer，攻击者用会回传 ERC-1271 magic value 的恶意合约通过签名检查，再让同一地址出现在待建立 sessionKey 中。在未设 safe session 时，代码直接把 isSafe 置真。validateUserOp 随后把攻击者控制的 paymasterAndData 解析成 token 和 spender，调用 approve 给予最大额度。执行阶段被设为零 gas 并失败，但外层 handleOps 成功完成，验证阶段的授权因此保留；后续 transferFrom 取走账户代币。Sourcify 对 Sodium 实现给出 creation/runtime exact match。",
+            "https://arbiscan.io/tx/0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90",
+            "https://arbiscan.io/address/0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b#code",
+            "27"
+          ],
+          "en": [
+            "2026.07.13",
+            "Lumi Finance / Sodium",
+            "ERC-1271 session bypass plus validation-phase token approval",
+            "Sodium's type-0x01 signature lets the UserOperation choose its signer. A malicious ERC-1271 contract returned the magic value, while the same attacker-controlled address was supplied as the proposed session key; with no safe session configured, isSafe was true. validateUserOp then parsed attacker-controlled paymasterAndData into a token and spender and approved the maximum allowance. Account execution used zero gas and failed, but handleOps completed, leaving the validation-phase allowance persistent for a later transferFrom drain. Sourcify reports exact creation/runtime match for the Sodium implementation.",
+            "https://arbiscan.io/tx/0x020995ec0b5daafe8fab481e33b1b52fdbd6423578060a1f73fd2a9b9fb0ea90",
+            "https://arbiscan.io/address/0xb5BC46dF04dEe31D219E7664122e29EEd9506b8b#code",
+            "270"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_52",
+      "identity": {
+        "event_date": "2026-07-13",
+        "chain_id": null,
+        "transactions": [
+          "0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe"
+        ],
+        "victims": [
+          "0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 52,
+          "cn": [
+            "2026.07.13",
+            "#PHX on #BSC",
+            "卖出费用路径销毁池子代币并重写储备",
+            "PHX 在 _takeSellFee 中不仅从卖家收费，还根据卖出额直接 _burn(pair, pairBurnAmount) 并立即 sync。攻击者先买走池中绝大部分 PHX，再用一笔卖出触发销毁；在卖家净 PHX 到达前，sync 把 PHX 储备压到几乎为零。净转入随后被 AMM 当作相对巨大的输入，可换出几乎全部 WBNB。回执显示最终执行合约向攻击者转出 156.205683366923083775 WBNB；源表保留 89,600 美元，技术报告估值约 89,532 美元。源表日期为 7 月 13 日，链上 UTC 时间为 7 月 12 日。",
+            "https://bscscan.com/tx/0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe",
+            "https://bscscan.com/address/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481#code",
+            "8.96"
+          ],
+          "en": [
+            "2026.07.13",
+            "#PHX on #BSC",
+            "Sell-fee path burns pair tokens and rewrites AMM reserves",
+            "PHX _takeSellFee not only charges the seller; it calls _burn(pair, pairBurnAmount) and immediately syncs. The attacker first bought almost all PHX from the pair, then triggered the sell path. Before the seller's net PHX arrived, sync reduced the PHX reserve to nearly zero, so that net transfer became an outsized AMM input and withdrew almost all WBNB. The receipt shows 156.205683366923083775 WBNB reaching the attacker; the sheet keeps USD 89,600 while the technical report estimates about USD 89,532. The sheet date is July 13 while the on-chain UTC time is July 12.",
+            "https://bscscan.com/tx/0xb5a64c9c43da7b817b2450149b55cb542697d9a676b2f8a89ec748b37f821ebe",
+            "https://bscscan.com/address/0x2540CDc3317Aa614178c29e2a1C7d5cDcEBBa481#code",
+            "89.6"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_54",
+      "identity": {
+        "event_date": "2026-07-15",
+        "chain_id": null,
+        "transactions": [
+          "0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130"
+        ],
+        "victims": [
+          "0x73043143e0a6418cc45d82d4505b096b802fd365",
+          "0x8d321e80487356c846f34456d31ce761776ef697",
+          "0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 54,
+          "cn": [
+            "2026.07.15",
+            "Drips Network（旧版 DaiDripsHub）",
+            "整数类型转换错误导致付款方向反转",
+            "give 将用户给出的 uint128 金额直接转成 int128 再取负数。历史调用传入 2^128-B，使 _transfer 收到正数 B，走储备提款而非用户入金分支；储备、Hub、攻击合约、攻击者之间的三笔 DAI 转账均为 24,882.995421947667857715 DAI。源码与历史 delegatecall 目标已对应；未独立重建攻击前全部状态，未重放。源表日期为 7 月 15 日，Ethereum 交易时间为 7 月 14 日 UTC；Polygon 参考交易尚未独立核查。",
+            "https://etherscan.io/tx/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130",
+            "https://etherscan.io/address/0x73043143e0a6418cc45d82d4505b096b802fd365#code\nhttps://etherscan.io/address/0x8d321e80487356c846f34456d31ce761776ef697#code\nhttps://etherscan.io/address/0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a#code",
+            "2.4883"
+          ],
+          "en": [
+            "2026.07.15",
+            "Drips Network (legacy DaiDripsHub)",
+            "Unsafe unsigned-to-signed conversion reverses payment direction",
+            "give casts the caller-controlled uint128 amount to int128 and negates it without a range check. Historical calldata used 2^128-B, so _transfer received positive B and withdrew from the reserve instead of collecting a deposit. Three DAI transfers link reserve, Hub, attack contract and attacker for 24,882.995421947667857715 DAI. Public source is tied to the historical delegatecall target; complete pre-attack state and replay remain unverified. The sheet date is July 15, while the Ethereum transaction is July 14 UTC; the Polygon reference transaction was not independently checked.",
+            "https://etherscan.io/tx/0xc38a6e2259a85ced94238a0b0a49697992f2a6b8140c28f3fd2343d3d8434130",
+            "https://etherscan.io/address/0x73043143e0a6418cc45d82d4505b096b802fd365#code\nhttps://etherscan.io/address/0x8d321e80487356c846f34456d31ce761776ef697#code\nhttps://etherscan.io/address/0xf9bbb2df44cfe46e501cf91c99b2f8fef9d9d44a#code",
+            "24.883"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_55",
+      "identity": {
+        "event_date": "2026-07-15",
+        "chain_id": null,
+        "transactions": [
+          "0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c"
+        ],
+        "victims": [
+          "0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb",
+          "0x20d419a8e12c45f88fda7c5760bb6923cee27f98",
+          "0xb71ec9ebd8145dacacf6724363143cb5667a3d36"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 55,
+          "cn": [
+            "2026.07.15",
+            "Ostium（未来时间戳报价路径）",
+            "报价时间上界缺失与受信签名路径组合",
+            "performUpkeep 检查订单年龄和报价不得早于订单，却不拒绝未来报价。代表交易批量提交同一时间戳 2000000000 的 5,000 和 60,000 报价，制造平仓收益；回执复算 oLP 净流出 1,078,403.5804 USDC、交易者净流入 1,078,319.4804 USDC。利用仍需要有效受信签名和已授权 forwarder，普通调用者不能任意伪造报价。源码已取得，但完整内部跟踪、历史权限映射及全部代理实现未独立核实；未重放。源表整体损失与描述、披露口径不一，金额留空。",
+            "https://arbiscan.io/tx/0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c",
+            "https://arbiscan.io/address/0xb71ec9ebd8145dacacf6724363143cb5667a3d36#code\nhttps://arbiscan.io/address/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb#code\nhttps://arbiscan.io/address/0x20d419a8e12c45f88fda7c5760bb6923cee27f98#code",
+            ""
+          ],
+          "en": [
+            "2026.07.15",
+            "Ostium (future-dated price-report path)",
+            "Missing upper timestamp bound combined with a trusted signer path",
+            "performUpkeep checks order age and rejects reports older than the order, but has no upper timestamp bound. The focal batch submitted prices 5,000 and 60,000 with timestamp 2000000000 and settled artificial profit. Receipt reconciliation gives a 1,078,403.5804 USDC net oLP outflow and 1,078,319.4804 USDC net trader inflow. Exploitation still requires a valid trusted signature and an authorized forwarder; arbitrary callers cannot forge prices. Original source was acquired, while full internal traces, historical authorization mappings and all proxy implementations remain independently unverified; no replay. The aggregate USD loss is blank because sheet descriptions and disclosures conflict.",
+            "https://arbiscan.io/tx/0xfaf6d3d4d7f1a75bfc11fb4d36d0525791546267fda1cdd371703ce03ae8ba8c",
+            "https://arbiscan.io/address/0xb71ec9ebd8145dacacf6724363143cb5667a3d36#code\nhttps://arbiscan.io/address/0x0aebc4094b60ea4e21e937e80dafdd58c07c5ebb#code\nhttps://arbiscan.io/address/0x20d419a8e12c45f88fda7c5760bb6923cee27f98#code",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "csv_record_68",
+      "identity": {
+        "event_date": "2026-10-28",
+        "chain_id": null,
+        "transactions": [
+          "0x4f3c23e75b9134e8cae5a462550daad42fbbc19242567fcc34c0a035e297462c"
+        ],
+        "victims": [
+          "0x1ee09a2caa0813a5183f90f5a6d0e4871f4c6002",
+          "0x7a0bb4805ecb7fd3c8dabbe4afa0e91cb1761e34"
+        ]
+      },
+      "entries": [
+        {
+          "kind": "csv",
+          "record": 68,
+          "cn": [
+            "2026.10.28",
+            "zkLink Nova",
+            "瞬时存储校验未消耗 + 任意可信外部调用",
+            "Arbitrator.claimMessage() 按调用方提供的目标与 calldata 以 Arbitrator 身份任意外呼，网关侧 onlyArbitrator 无条件信任该身份；真实性校验依赖 EIP-1153 瞬时槽 finalizeMessageHash，校验后未清零，同笔交易内一次真实 claim 写入的 latch 可被后续伪造 claim 复用。白名单中的 SyncL2TxHashRelayer 可被任意调用。攻击者先中继一条真实 Linea→L1 消息写入 latch，再伪造 claim 经 EthereumGateway.sendMessage 走私进 ZkLink.syncBatchRoot，写入自选 batch 116409 根，随后用自构 Merkle 证明调用无许可的 finalizeEthWithdrawal / finalizeWithdrawal，抽空 Ethereum 托管的 22.43 ETH 及 11 种 ERC-20。已归档 Arbitrator 代理与实现源码；公开口径 SlowMist 约 783,100 美元，Parapet 按攻击时 Chainlink 计价约 743,000 美元。CSV 保留 SlowMist 约 783,100 美元。次日出现对 Optimism、Base、Blast、Mantle 的仿制抽干，另记。",
+            "https://etherscan.io/tx/0x4f3c23e75b9134e8cae5a462550daad42fbbc19242567fcc34c0a035e297462c",
+            "https://etherscan.io/address/0x1ee09a2caa0813a5183f90f5a6d0e4871f4c6002#code\nhttps://etherscan.io/address/0x7a0bb4805ecb7fd3c8dabbe4afa0e91cb1761e34#code",
+            "78.31"
+          ],
+          "en": [
+            "2026.10.28",
+            "zkLink Nova",
+            "Uncleared transient-storage latch + arbitrary trusted external call",
+            "Arbitrator.claimMessage() performs a caller-supplied external call under the Arbitrator identity that every gateway trusts via onlyArbitrator. Authenticity is checked against an EIP-1153 transient finalizeMessageHash that is never cleared after the check, so one genuine claim in the same transaction arms a latch that later forged claims can reuse. The whitelisted SyncL2TxHashRelayer is callable by anyone. The attacker first relayed a real Linea→L1 message to seed the latch, then forged a claim that smuggled EthereumGateway.sendMessage into ZkLink.syncBatchRoot, writing an attacker-chosen root for batch 116409, and drained the Ethereum escrows through permissionless finalizeEthWithdrawal / finalizeWithdrawal with self-crafted Merkle proofs (22.43 ETH plus 11 ERC-20 tokens). The archived sources are the Arbitrator proxy and implementation. Public loss scopes include SlowMist approximately USD 783,100 and Parapet approximately USD 743,000 at exploit-time Chainlink prices; CSV retains SlowMist approximately USD 783,100. A copycat second wave on Optimism, Base, Blast, and Mantle the next day is recorded separately.",
+            "https://etherscan.io/tx/0x4f3c23e75b9134e8cae5a462550daad42fbbc19242567fcc34c0a035e297462c",
+            "https://etherscan.io/address/0x1ee09a2caa0813a5183f90f5a6d0e4871f4c6002#code\nhttps://etherscan.io/address/0x7a0bb4805ecb7fd3c8dabbe4afa0e91cb1761e34#code",
+            "783.1"
+          ]
+        }
+      ]
+    }
+  ],
+  "prior_batch_result_files": [
+    {
+      "path": "dataset_artifacts/batches/20261016_x123_y5/results.json",
+      "sha256": "8adb3b0904ec8f0bb6658b5774effb658bd0c9a3be886454f964d9bc83645243"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261016_x123_y5/test_results.json",
+      "sha256": "459c4bd47cd2d822cceb723fc844cf03f49a4256393115ffd9299d319bb53e37"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/discovery-fetch-results.json",
+      "sha256": "286d71bc820b9c1ff37f2c8d1bc742f93a138c3328c8712607c2d92805ef7236"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/discovery2-fetch-results.json",
+      "sha256": "09d0e1fc881de30ff4c059a252ec6894d7b5f9b3fcfb6b0928d8012d67f88496"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/discovery3-fetch-results.json",
+      "sha256": "5a71b863e807b95137cd8cced6e747568e1859a8edc26e814ba60c1c9d7e0882"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/jobs-fetch-results.json",
+      "sha256": "9df3b49072f2064fe5b48dd00fac0b095e462f6e221f029d20983092ab745c38"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research10-fetch-results.json",
+      "sha256": "8e2cb78666d1dbb2c102d3998dcc1b38eb1d90ab841312a53cfdc47e29faf940"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research11-fetch-results.json",
+      "sha256": "217bf831649f87618d55700b88daeb54fe06f16b365e96ce4fa8d39044ebf1f5"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research12-fetch-results.json",
+      "sha256": "8ce8b3e178a36ecaabb7e534a31c21822c062703ed6bb7df0ae872bb43c1263c"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research4-fetch-results.json",
+      "sha256": "bef13a5710baa6c6861f003ab344ec168f5e0311ef436e40ba27451a4d1d28e5"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research5-fetch-results.json",
+      "sha256": "ae9d9819668a2fadf371b28366d89291ad2af69943e590ba327d0b5f8bbd515a"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research6-fetch-results.json",
+      "sha256": "041e446ac14711e9eb4d534835bfc427a290ec69f37df9be08a5b7e02edf5473"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research7-fetch-results.json",
+      "sha256": "81458d282adbe7b634259a5f12fa92f9a3272bd57539c87352319f8fbd467bde"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research8-fetch-results.json",
+      "sha256": "d77e09b4493dbbae4383d720383da1c0d1a732d0ee0dd8ab2ab8f3625a044f8e"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/research9-fetch-results.json",
+      "sha256": "e5be53bdc22279f89d9a8520469d7a2f83041a83f1060041da1be2f68c402528"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/results.json",
+      "sha256": "c331baf6d851ed19d00f5f3dd439e842d913cbc1d56dfb399cc3a227465945bc"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261021_x112_y5/test_results.json",
+      "sha256": "f4f2a6658e06c3116aff10ba182df7afa7c01c94f810c91b4516008d853c8d0f"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/additional-fetch-results.json",
+      "sha256": "8fef0f3bfedef0cd666721ccd3a300156ca58b0dde6e6a6cb2fb01666a95f6d2"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/additional2-fetch-results.json",
+      "sha256": "6591a7300985dd93990f935f1d78314fbdcf23081057230bc9380642915418c3"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/additional3-fetch-results.json",
+      "sha256": "45d29c9c72d9f4cb295b1bd136b05c73b2246b58baa50e29fa9935ef566aceb0"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/candidate_jobs-fetch-results.json",
+      "sha256": "c55cef458ecd468aba87942b42d4a6f0fbbc3a2f87440a84d349b303f79be1df"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/enjin_jobs-fetch-results.json",
+      "sha256": "ea1171b76830994f12c60189d6be85de29dd5e9fc0b925b1ffd18265c874a443"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell-extra-fetch-results.json",
+      "sha256": "74813264aa04ecf9a932adadf3750b6e3b4c516103fe9ea8d40570bf76001774"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell-weth-fetch-results.json",
+      "sha256": "bacbd5468e069b66d5795874ff8ac343a18a316f09325ab6a96a8bded104d766"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_binding_jobs-fetch-results.json",
+      "sha256": "f19a57733188c0c9cbec3f0f825cc76a90295ff64c53a0c956f92b22fd9cc925"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_feed_jobs-fetch-results.json",
+      "sha256": "f81c968b6489d23b4dc48c1ba0a46a2459db76aef43f9b68be150648e7fb47fb"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_history_jobs-fetch-results.json",
+      "sha256": "35eda74a8fd2b8cd1221668c949bac97f8e0b36e8d073e3c097a647a1a33b94a"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_implementations_jobs-fetch-results.json",
+      "sha256": "1b93e895b978b52fccbb70507272d537db4e7ee4cb11d182a26bb8621be88467"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_jobs-fetch-results.json",
+      "sha256": "7785a3395ec41e23a55d87a99ff01c04478f66432beaa5dc7840ed88902dcfc8"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_sequence_jobs-fetch-results.json",
+      "sha256": "4d9d106ca26aeccf9c828916f1e8be6bc40eaf1eeafacaa1a19907da1e8f3bc4"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/moonwell_sources_jobs-fetch-results.json",
+      "sha256": "8d5731f45c8c4c49babe8a5addaa6ae406fe73f6b0a17682e7f874bc3f573375"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/pending_jobs-fetch-results.json",
+      "sha256": "20a83cc9b481a2ce80768ce496b9d19c7256a343c1e11cd61be0cae1c2320a7f"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/results.json",
+      "sha256": "f398fedb98c5caa95a4e1939fc877f56adeaaf2a6d8d74235802ab507220f7b1"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self1-fetch-results.json",
+      "sha256": "c92677c7a2c780ef0b32fa7770da9680b710b5ccf7123ca45f6e566a5ebb7f13"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self10-fetch-results.json",
+      "sha256": "8124cd3413837de69be3c2a150f78a53175c65d99df7dc05f623802ba1b02173"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self2-fetch-results.json",
+      "sha256": "23ea7d86052b530f2d8ea6da6d30f3e061f254cee8e78b6f3571345c8015e416"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self3-fetch-results.json",
+      "sha256": "89091255e36e77dd412de6fe80783e31678d89e7a5b33249190bd612ccaeb482"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self4-fetch-results.json",
+      "sha256": "953b4afbbb7644ea6a74e9560e26e635c9693f05c8fc37215660051e9876fc28"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self5-fetch-results.json",
+      "sha256": "8fd79df7e8bfaf77046427096a2d3905c7055905f4ea2363ec4434899d91dda4"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self6-fetch-results.json",
+      "sha256": "3f6a1d14eecb25eb835068b24715d036ef04e39ec075eedcfad0299dde45fbad"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self7-fetch-results.json",
+      "sha256": "0eef18f0b75e3c276cc8ccbf174695a1a1065fee5d20e4c2b681a6e6f23373e6"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self8-fetch-results.json",
+      "sha256": "c950f4166720d13c74632d9caf8f818b26a3ae5a606d9fbf0cd2be236c811bff"
+    },
+    {
+      "path": "dataset_artifacts/batches/20261026_x96_y5/term/self9-fetch-results.json",
+      "sha256": "a5cc4c52cb15a034fcc383bdbc8b25646ef141c183ad6d4eb07d8341781d8529"
+    },
+    {
+      "path": "docs/cases/sources/20261001_sheet_rows_114_118_results.json",
+      "sha256": "8c55207726c2b4df4ecdf390a29e24d6761c115bf83969ffd0176d4126a75df1"
+    },
+    {
+      "path": "docs/cases/sources/20261002_sheet_rows_106_116_results.json",
+      "sha256": "7bf44a2545330fcef6dbb371ecc1ee61f3d6a805e8a2ea7df244e91f35f46bb9"
+    }
+  ],
+  "note": "Union of existing source directories, bilingual CSV records and case documents; prior formal batch results are separately hashed for cross-check. Names alone do not establish identity.",
+  "prior_formal_records_checked": [
+    {
+      "case_id": "20260715_Drips",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260715_Ostium",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260717_CrowdRingCircle",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260723_Verus",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260724_LienFinance",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260715_Drips",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260715_Ostium",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260717_CrowdRingCircle",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260723_Verus",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260724_LienFinance",
+      "batch_results": "dataset_artifacts/batches/20261016_x123_y5/results.json"
+    },
+    {
+      "case_id": "20260803_MOKE",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260804_NEX_AIC",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260810_USM_FUM",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260817_Fox",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260803_MOKE",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260804_NEX_AIC",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260810_USM_FUM",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260817_Fox",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "batch_results": "dataset_artifacts/batches/20261021_x112_y5/results.json"
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260822_TheSandbox",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260823_TermLabs",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260826_FH",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260827_Moonwell_MAMO",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260820_Allbridge_CCTP",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260822_TheSandbox",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260823_TermLabs",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260826_FH",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260827_Moonwell_MAMO",
+      "batch_results": "dataset_artifacts/batches/20261026_x96_y5/results.json"
+    },
+    {
+      "case_id": "20260701_EdelFinance_decompiled",
+      "batch_results": "docs/cases/sources/20261001_sheet_rows_114_118_results.json"
+    },
+    {
+      "case_id": "20260709_BFB",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260713_PHX",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260713_Lumi_Sodium",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260714_VECAndETH",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260709_BFB",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260711_Bonzo_Supra",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260713_PHX",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260713_Lumi_Sodium",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    },
+    {
+      "case_id": "20260714_VECAndETH",
+      "batch_results": "docs/cases/sources/20261002_sheet_rows_106_116_results.json"
+    }
+  ]
+}

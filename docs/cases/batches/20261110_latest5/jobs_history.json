@@ -1,0 +1,112 @@
+[
+  {
+    "id": "tranche-transaction",
+    "url": "https://api.avax.network/ext/bc/C/rpc",
+    "path": "screening/tranche/transaction.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x3f6b23292a2e9c2956c7ac56d0b1f79b0271b49edec2156d2675ddf1de058c77"
+      ]
+    }
+  },
+  {
+    "id": "tranche-receipt",
+    "url": "https://api.avax.network/ext/bc/C/rpc",
+    "path": "screening/tranche/receipt.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x3f6b23292a2e9c2956c7ac56d0b1f79b0271b49edec2156d2675ddf1de058c77"
+      ]
+    }
+  },
+  {
+    "id": "row22-historical-code-0x79f35a33fe2813414851c4ae8daeacd14d822a46",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row22/historical-code-0x79f35a33fe2813414851c4ae8daeacd14d822a46.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x79f35a33fe2813414851c4ae8daeacd14d822a46",
+        "0x190bdee"
+      ]
+    }
+  },
+  {
+    "id": "row22-historical-code-0xcd5762ac6013fa762782ac1797ab09152c1028e8",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row22/historical-code-0xcd5762ac6013fa762782ac1797ab09152c1028e8.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xcd5762ac6013fa762782ac1797ab09152c1028e8",
+        "0x190bdee"
+      ]
+    }
+  },
+  {
+    "id": "row22-historical-code-0x100a2c7f45fd48e217fdce72e658dc78fd43a100",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row22/historical-code-0x100a2c7f45fd48e217fdce72e658dc78fd43a100.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x100a2c7f45fd48e217fdce72e658dc78fd43a100",
+        "0x190bdee"
+      ]
+    }
+  },
+  {
+    "id": "premia-historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xb539ff8563974d407fd6d717ff2f930e99093d21",
+        "0x1f012c4f"
+      ]
+    }
+  },
+  {
+    "id": "premia-historical-code-0x386dd942d3b058543f0dfa19034a0284a49ba5fd",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/historical-code-0x386dd942d3b058543f0dfa19034a0284a49ba5fd.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x386dd942d3b058543f0dfa19034a0284a49ba5fd",
+        "0x1f012c4f"
+      ]
+    }
+  },
+  {
+    "id": "premia-historical-code-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/historical-code-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+        "0x1f012c4f"
+      ]
+    }
+  }
+]

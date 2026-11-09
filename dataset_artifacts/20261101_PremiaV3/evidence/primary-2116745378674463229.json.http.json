@@ -1,0 +1,14 @@
+{
+  "id": "premia-primary-2116745378674463229",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2116745378674463229&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:53:34.658128+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2116745378674463229&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"499-zC9Hy5vaBenf8ofyPKBq/UUS+ng\"",
+  "last_modified": null,
+  "sha256": "2f05b1f7f93c1b16fffeef8a98d15936f3cde73633deff5c818a7fe80f4eaedc",
+  "bytes": 1177
+}

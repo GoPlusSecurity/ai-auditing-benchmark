@@ -1,0 +1,21 @@
+{
+  "id": "corevault-receipt",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:29:10.895809+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "9ab3060c316aa5cbadcd28f0b3ef6649397aca0b531122c5f45910c71f198537",
+  "bytes": 59007
+}

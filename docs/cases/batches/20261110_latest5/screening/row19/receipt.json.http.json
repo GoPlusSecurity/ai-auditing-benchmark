@@ -1,0 +1,21 @@
+{
+  "id": "row19-receipt",
+  "url": "https://ethereum-rpc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x891e4187e40dfccfcfb0618c43e76f43f4f2a304dddca556aaa6f3c182557cb9"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:38:58.517153+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://ethereum-rpc.publicnode.com",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "1b9f3e593e73354720f2329c7bc53c56abf4ef1c4ce38ecc7d6aa26c211b9685",
+  "bytes": 38
+}

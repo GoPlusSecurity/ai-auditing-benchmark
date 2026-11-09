@@ -1,0 +1,14 @@
+{
+  "id": "wax-official-repos",
+  "url": "https://api.github.com/orgs/worldwide-asset-exchange/repos?per_page=100",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:48:45.782798+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.github.com/orgs/worldwide-asset-exchange/repos?per_page=100",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"a7733224710a5854c63f154fc14ab4f82d99d156a5b2e8b288e826af3efebf77\"",
+  "last_modified": null,
+  "sha256": "a7733224710a5854c63f154fc14ab4f82d99d156a5b2e8b288e826af3efebf77",
+  "bytes": 361614
+}

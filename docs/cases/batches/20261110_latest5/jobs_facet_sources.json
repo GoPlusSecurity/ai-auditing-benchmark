@@ -1,0 +1,17 @@
+[
+  {
+    "id": "premia-facet-source-deposit",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0x386dd942d3b058543f0dfa19034a0284a49ba5fd?fields=all",
+    "path": "screening/premia/facet-source-deposit.json"
+  },
+  {
+    "id": "premia-facet-source-withdraw",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0x386dd942d3b058543f0dfa19034a0284a49ba5fd?fields=all",
+    "path": "screening/premia/facet-source-withdraw.json"
+  },
+  {
+    "id": "premia-facet-source-write",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc?fields=all",
+    "path": "screening/premia/facet-source-write.json"
+  }
+]

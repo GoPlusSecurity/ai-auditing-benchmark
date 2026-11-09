@@ -1,0 +1,14 @@
+{
+  "id": "dedaub-official-documentation",
+  "url": "https://docs.dedaub.com/docs/decompiler/",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:44:39.032047+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://docs.dedaub.com/docs/decompiler/",
+  "content_type": "text/html",
+  "etag": null,
+  "last_modified": "Sat, 31 Oct 2026 18:16:29 GMT",
+  "sha256": "f6175311fd39ecb9a13f773395c4b70504b61d4a50074157c3e61fca9ad39226",
+  "bytes": 18263
+}

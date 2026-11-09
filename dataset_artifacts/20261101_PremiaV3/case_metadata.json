@@ -1,0 +1,71 @@
+{
+  "case_id": "20261101_PremiaV3",
+  "sheet_row": 10,
+  "chain_id": 42161,
+  "project_cn": "Premia V3",
+  "project_en": "Premia V3",
+  "vulnerability_cn": "LP头寸拆分未维护边界计数，删除重建边界后虚增手续费权益",
+  "vulnerability_en": "LP-position splits omit tick counters, allowing boundary recreation to create phantom fees",
+  "detail_cn": "PoolInternal._transferPosition拆分头寸没有更新边界tick.counter，而每个新持有人完全withdraw时都会减计数。攻击者预先拆分微量头寸，等待60秒，再建立共享边界的大额区间头寸并做小额交易累积globalFeeRate；依次退出微量头寸使仍被大头寸使用、净delta为零的共享边界被删除。重新deposit将其externalFeeRate设为当前全局值，_rangeFeeRate和_claim把历史费率误计给区间并从池中实际余额付款。WBTC池日志显示费率跳变0.024与liquidityPerTick=187.1产生4.4904 WBTC的ClaimFees，动用了vault写入的抵押品。关键原始源码与三笔准备/攻击回执已归档；历史代理路由、完整内部跟踪和全案美元损失未核实，金额留空。",
+  "detail_en": "PoolInternal._transferPosition does not update boundary tick.counter when splitting positions, while each new holder's full withdrawal decrements it. The attacker split tiny positions in advance, waited 60 seconds, added large ranges sharing a boundary and generated globalFeeRate through small trades. Withdrawing the tiny positions removed a zero-net-delta shared boundary still used by large positions. A new deposit initialized its externalFeeRate to the current global value; _rangeFeeRate and _claim then credited phantom historical fees and paid from the pool's actual balance. WBTC-pool logs show a 0.024 rate change times liquidityPerTick of 187.1 yielding a 4.4904 WBTC ClaimFees payment funded partly by vault collateral. Critical original source and three setup/exploit receipts were archived. Historical proxy routing, full internal traces and incident-wide USD loss remain unverified, so the USD field is blank.",
+  "loss_usd": null,
+  "loss_scope": "源表约400000美元为进行中的初始估计，其他披露约464600美元；归档原币净流，不将闪电贷或池子单笔总付款直接作为损失。",
+  "victims": [
+    "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+    "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+    "0x6a1fc0e1c60ba6564cde4910a425f1f1a1d18c1f",
+    "0xdc631d88dbb5eb39f5c4bf8b4e5298d098912fff",
+    "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+    "0xbe3e229319f86f5ee96ee1dc0b6d55e8b68a439e"
+  ],
+  "evidence_gaps": [
+    "Facet and vault implementations were resolved at current state; attack-time routing was not independently recovered.",
+    "No full internal trace. Position split, tick updates, trades, fee claims and token movements are directly observed in receipts; unobserved calls are labelled as source-based inference.",
+    "Original source for attacker orchestration and helper owners was not acquired; their internal programs are not relied on to establish the tick-counter defect.",
+    "Full incident-wide liquidation, bridging and final realized profit were not reconstructed."
+  ],
+  "event_date": "2026-11-01",
+  "original_rows": [
+    10
+  ],
+  "source_sheet_snapshot": "../../docs/cases/batches/20261110_latest5/snapshot.json",
+  "batch_results": "../../docs/cases/batches/20261110_latest5/results.json",
+  "source_qualification_scope": "../../docs/cases/batches/20261110_latest5/scope-confirmation.json",
+  "necessary_code_coverage": "../../docs/cases/batches/20261110_latest5/source-coverage.md",
+  "case_document": "../../docs/cases/20261101_PremiaV3.md",
+  "code_root": "../../dataset/20261101_PremiaV3",
+  "source_status": "original_verified_source",
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json",
+  "public_original_vulnerable_source": true,
+  "tx_urls": [
+    "https://arbiscan.io/tx/0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5",
+    "https://arbiscan.io/tx/0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+    "https://arbiscan.io/tx/0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff"
+  ],
+  "vulnerable_contract_urls": [
+    "https://arbiscan.io/address/0x45df5ea836a15b561937ae8373ab9ee984aea531#code",
+    "https://arbiscan.io/address/0xbae43c546dfadc69576ae73c68e0694a54f08e1b#code",
+    "https://arbiscan.io/address/0x6a1fc0e1c60ba6564cde4910a425f1f1a1d18c1f#code",
+    "https://arbiscan.io/address/0xdc631d88dbb5eb39f5c4bf8b4e5298d098912fff#code",
+    "https://arbiscan.io/address/0xd46993f25d298ebbcd31e941156c66f7e628a52a#code",
+    "https://arbiscan.io/address/0xbe3e229319f86f5ee96ee1dc0b6d55e8b68a439e#code"
+  ],
+  "verification_status": {
+    "source": "original source, provider-reported runtime/creation matches; no local recompile",
+    "historical_code": "not independently established; see evidence_gaps",
+    "historical_state": "only specific archived observations; no complete pre-attack state reconstruction",
+    "receipts": "successful archived transaction receipts and decoded asset movements/events",
+    "trace": "no full internal trace; archived receipts and source-based interpretation only",
+    "compilation": "not_run",
+    "deployment": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_used; official online output unavailable where essential, those candidates skipped"
+  },
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_file_count": 426
+}

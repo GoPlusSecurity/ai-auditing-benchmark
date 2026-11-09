@@ -1,0 +1,21 @@
+{
+  "id": "row22-transaction",
+  "url": "https://ethereum-rpc.publicnode.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:38:59.300432+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://ethereum-rpc.publicnode.com",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "96f9e519223f7933d249f18fd063436556f5c5a2da1aaa4a7142ce5ec617c7fa",
+  "bytes": 21830
+}

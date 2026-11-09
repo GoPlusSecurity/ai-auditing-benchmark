@@ -1,0 +1,14 @@
+{
+  "id": "premia-commit-check",
+  "url": "https://api.github.com/repos/Premian-Labs/v3-contracts/commits/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:33:51.154007+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.github.com/repos/Premian-Labs/v3-contracts/commits/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"1e4793875b6af6ea290b88ac431b91fb0b2460b6d9ac975f94764b761947fbf5\"",
+  "last_modified": "Tue, 23 Jul 2024 11:48:28 GMT",
+  "sha256": "1e4793875b6af6ea290b88ac431b91fb0b2460b6d9ac975f94764b761947fbf5",
+  "bytes": 4038
+}

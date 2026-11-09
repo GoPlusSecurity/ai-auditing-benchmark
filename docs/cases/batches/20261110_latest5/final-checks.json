@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "python_files_syntax_checked": [
+    "analyze.py",
+    "batch.py",
+    "build.py",
+    "collect.py",
+    "extract.py",
+    "initialize.py",
+    "report.py",
+    "seal.py",
+    "test_batch.py",
+    "validate.py"
+  ],
+  "git_whitespace_command": "git -c core.whitespace=cr-at-eol diff --check",
+  "directory_relocation_verified": true,
+  "active_references_use_dataset_root": true,
+  "csv_bytes_unchanged": true
+}

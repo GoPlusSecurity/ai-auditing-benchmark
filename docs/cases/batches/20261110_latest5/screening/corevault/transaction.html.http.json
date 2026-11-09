@@ -1,0 +1,11 @@
+{
+  "id": "corevault-transaction",
+  "url": "https://bscscan.com/tx/0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:10.492526+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 403: Forbidden",
+  "exception": "HTTPError",
+  "status": 403,
+  "error_body_sha256": "2f7a4858388febd7ae6d569e92aa38f9954ede0aecf6460151e37947b2167290"
+}

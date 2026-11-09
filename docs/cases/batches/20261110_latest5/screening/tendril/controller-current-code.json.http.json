@@ -1,0 +1,22 @@
+{
+  "id": "tendril-controller-current-code",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getCode",
+    "params": [
+      "0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+      "latest"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:44:39.032047+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "262d97d80ac39a09198c38a3db3d4518ef73d695a266309331716652e9107b97",
+  "bytes": 35748
+}

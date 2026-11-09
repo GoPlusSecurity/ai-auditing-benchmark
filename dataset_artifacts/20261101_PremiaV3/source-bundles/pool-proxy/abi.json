@@ -1,0 +1,78 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "diamond",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "base",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "quote",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "oracleAdapter",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "strike",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      },
+      {
+        "name": "maturity",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "isCallPool",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "DoublyLinkedList__InvalidInput",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "DoublyLinkedList__NonExistentEntry",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "ERC165Base__InvalidInterfaceId",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "Proxy__ImplementationIsNotContract",
+    "type": "error",
+    "inputs": []
+  },
+  {
+    "name": "UD60x18_IntoUD50x28_Overflow",
+    "type": "error",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "uint256",
+        "internalType": "UD60x18"
+      }
+    ]
+  },
+  {
+    "type": "fallback",
+    "stateMutability": "payable"
+  }
+]

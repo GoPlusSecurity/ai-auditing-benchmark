@@ -1,0 +1,14 @@
+{
+  "id": "premia-vault-source",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x45dF5EA836A15B561937Ae8373ab9eE984aea531?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:31:40.506850+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0x45dF5EA836A15B561937Ae8373ab9eE984aea531?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"94356-QGsU/q6dUeCKAegzfThuzUqSyH8\"",
+  "last_modified": null,
+  "sha256": "39bbdaf2ffb8f9ffdb617c82eefba6392d6719050f7c39f3ae4babc611b81a12",
+  "bytes": 607062
+}

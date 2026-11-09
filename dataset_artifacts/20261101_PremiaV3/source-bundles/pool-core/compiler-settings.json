@@ -1,0 +1,15 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.19+commit.7dd6d404",
+  "compilerSettings": {
+    "viaIR": false,
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    }
+  },
+  "name": "PoolCore",
+  "fullyQualifiedName": "contracts/pool/PoolCore.sol:PoolCore"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "row18-receipt",
+  "url": "https://api.avax.network/ext/bc/C/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xf1f87d370290afe269ae8eb30fe8e5e4694ad153914a2de6d980641f4a331289"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:38:58.516173+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.avax.network/ext/bc/C/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "a9eb1cf3e1b5dff5788b5ff282ff78579d8c9d2dc1842f5ee49f5ffbcfe0cb2c",
+  "bytes": 1031
+}

@@ -1,0 +1,21 @@
+{
+  "id": "premia-attack2-receipt-alt",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:53:36.399860+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "87fbb629f3f7d2824b47ed67cf49a017b051a9861ab95cf562454dd37df988e3",
+  "bytes": 320117
+}

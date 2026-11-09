@@ -1,0 +1,1672 @@
+{
+  "compiler": {
+    "version": "0.8.24+commit.e11b9ed9"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_aToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_wbnb",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_insurancePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_bPool",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "Auth_ZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          }
+        ],
+        "name": "OwnableInvalidOwner",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "name": "OwnableUnauthorizedAccount",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ReentrancyTransient",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          }
+        ],
+        "name": "SafeERC20FailedOperation",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_AProtected",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "bp",
+            "type": "uint256"
+          }
+        ],
+        "name": "Treasury_BadSlippage",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "expected",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "actual",
+            "type": "uint256"
+          }
+        ],
+        "name": "Treasury_InsufficientTransfer",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_PathNotConfigured",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "required",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          }
+        ],
+        "name": "Treasury_ReserveInsufficient",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_TransferFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_Unauthorized",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_ValueMismatch",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_WithdrawFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_WrapFailed",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_ZeroAddress",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "Treasury_ZeroAmount",
+        "type": "error"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "bnbAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "DepositAllocated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "DepositExcessForwarded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "EmergencyWithdrawn",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "EthWithdrawn",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistdaoBurned",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistDepositAllocated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oskSpent",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistInjected",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistInjectedToStakingPool",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistReserveForwarded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistdaoAmount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "bnbSpent",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistdaoBurned",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistdaoAmount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistSpent",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistdaoBurnedWithFist",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistdaoSpent",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistGot",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oskGot",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "FistdaoTaxConverted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "InsuranceFundsPulled",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oskAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "OskFistLpAdded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint64",
+            "name": "blockNumber",
+            "type": "uint64"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "ratio",
+            "type": "uint256"
+          }
+        ],
+        "name": "RatioSnapshotUpdated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "RewardPaid",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistSpent",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oskGot",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "StakeFistFeeLpAdded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "oskSpent",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fistGot",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "StakeOskFeeLpAdded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          }
+        ],
+        "name": "SyncFailed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "bnbAmount",
+            "type": "uint256"
+          }
+        ],
+        "name": "TreasuryPayout",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "costWbnb",
+            "type": "uint256"
+          }
+        ],
+        "name": "TreasuryRefilled",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "MAX_REFILL_IMPACT_BP",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "REFILL_COOLDOWN",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "TREASURY_TARGET",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "aPair",
+        "outputs": [
+          {
+            "internalType": "contract IPancakePair",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "aStaking",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "aToken",
+        "outputs": [
+          {
+            "internalType": "contract IAToken",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bnbAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "allocateDeposit",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fistAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "allocateFistDeposit",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "bPool",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "bToken",
+        "outputs": [
+          {
+            "internalType": "contract IBToken",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "bni",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "convertFistdaoFeeToOskLp",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "emergencyWithdraw",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "farmVault",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "fist",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "fistStakingPool",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "fistUsdtPair",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "fistdao",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getAPerQuote",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getRatioInfo",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "spotRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "avgRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deviationBp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "effectiveRatio",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "fistAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "injectFistToOskLp",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "oskAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "injectOskToOskFistLp",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lpAmt",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "insurancePool",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "lastRefillTime",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "oskFistPair",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bnbAmount",
+            "type": "uint256"
+          }
+        ],
+        "name": "payoutBnb",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "aAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "payoutReward",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "paid",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "pullFromInsurancePool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "refillTreasury",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "router",
+        "outputs": [
+          {
+            "internalType": "contract IPancakeRouter",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_s",
+            "type": "address"
+          }
+        ],
+        "name": "setAStaking",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_p",
+            "type": "address"
+          }
+        ],
+        "name": "setBPool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_b",
+            "type": "address"
+          }
+        ],
+        "name": "setBni",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_v",
+            "type": "address"
+          }
+        ],
+        "name": "setFarmVault",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_f",
+            "type": "address"
+          }
+        ],
+        "name": "setFist",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_p",
+            "type": "address"
+          }
+        ],
+        "name": "setFistStakingPool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_p",
+            "type": "address"
+          }
+        ],
+        "name": "setFistUsdtPair",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_f",
+            "type": "address"
+          }
+        ],
+        "name": "setFistdao",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_p",
+            "type": "address"
+          }
+        ],
+        "name": "setInsurancePool",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_p",
+            "type": "address"
+          }
+        ],
+        "name": "setOskFistPair",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_pair",
+            "type": "address"
+          }
+        ],
+        "name": "setPair",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_u",
+            "type": "address"
+          }
+        ],
+        "name": "setUsdt",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "oskAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBp",
+            "type": "uint256"
+          }
+        ],
+        "name": "swapOskToFistAndInject",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "fistInjected",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "updateRatioSnapshot",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "usdt",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "wbnb",
+        "outputs": [
+          {
+            "internalType": "contract IERC20",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "withdrawEth",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "stateMutability": "payable",
+        "type": "receive"
+      }
+    ],
+    "devdoc": {
+      "errors": {
+        "OwnableInvalidOwner(address)": [
+          {
+            "details": "The owner is not a valid owner account. (eg. `address(0)`)"
+          }
+        ],
+        "OwnableUnauthorizedAccount(address)": [
+          {
+            "details": "The caller account is not authorized to perform an operation."
+          }
+        ],
+        "SafeERC20FailedOperation(address)": [
+          {
+            "details": "An operation with an ERC-20 token failed."
+          }
+        ]
+      },
+      "kind": "dev",
+      "methods": {
+        "allocateFistDeposit(address,uint256,uint256)": {
+          "details": "Requirement 2.0 section 2:   |- 10% FIST = FIST->USDT->WBNB->BNI->FISTDAO then burned directly after buying   |- 20% FIST = insurance pool multisig address (FIST reserve, redemption reserve + automatic market-making)   |- 70% FIST = split in half: 35% FIST->OSK (direct on the OSK/FIST pair), 35% FIST retained                -> OSK + FIST automatically add LP, LP sent to the insurance pool address Design intent: the caller (CoreVault) first safeTransfers the FIST into this contract, then calls this function;           everything is measured by the \"actual received balance delta\", never trusting the router's quote array. Pitfall: reverts when not wired (any of usdt/fist/fistdao/bni/oskFistPair is 0),       never silently trading on a wrong path -- a fund-allocation error costs far more than a failed trade. Pitfall: callable only by FarmVault, preventing any address from bypassing CoreVault's position and referral logic."
+        },
+        "convertFistdaoFeeToOskLp(uint256)": {
+          "details": "Full path (the 5 hops of `_burnFistdaoWithFist` **in reverse order**, with identical pair dependencies):        FISTDAO -> BNI -> WBNB -> USDT -> FIST      then reuse `_fistHalfToOskLp`: FIST split in half -> half buys OSK via OSK/FIST -> form LP -> insurance pool.      Caller: **anyone can call it directly** (keeper-driven) -- the funding source is the tax passively transferred in on FISTDAO transfers      (FISTDAO.oskPool wired to this contract), with no trigger fee; isomorphic to NodePoolDistributor. Pitfall (severe): **this contract** must be added to the whitelist on the FISTDAO side -- otherwise when this contract transfers FISTDAO   into the pair it triggers FISTDAO's 3% sell tax (the router internally does transferFrom -> not whitelisted -> taxed),   making the deposited amount differ from expectations. Pitfall: the amount comes from \"this contract's FISTDAO balance\" rather than an argument -- the tax accumulates passively, so the caller need not compute the amount,   and it also avoids a lingering remainder. Pitfall: reverts when not wired (fistdao/bni/usdt/fist/oskFistPair), never silently trading on a wrong path. Pitfall: this function carries transientNonReentrant -- so it must **not** be called internally from other guarded functions of this contract (it would self-lock).   The caller must be an **external call chain** (a keeper script / operational multisig)."
+        },
+        "injectFistToOskLp(uint256,uint256)": {
+          "details": "**The landing point after the client change on 2026-09-26**: the 2% fuel fee for FIST staking is now charged in **FIST itself**,      so this function becomes that fuel fee's landing path (the original `injectOskToOskFistLp` direction is thereby disabled).      Caller: `CoreVault` (`stakeB` in `Contracts/CoreVaultStaking.sol` = FIST staking). Design intent: the fuel fee is first transferred into this contract, which completes the swap + addLiquidity; LP goes to the insurance pool,           so CoreVault need not hold a router dependency. Pitfall: measure OSK by the \"actual received delta\", never trusting the router's quote array -- a token with a transfer tax makes the quote exceed the actual receipt. Pitfall: reverts when not wired (fist/oskFistPair), never silently trading on a wrong path."
+        },
+        "injectOskToOskFistLp(uint256,uint256)": {
+          "details": "WARNING: **no longer on the requirements path**: on 2026-09-26 the client changed the FIST staking fuel fee from \"opposite OSK\"      to \"same-token FIST\", with the landing point moved to `injectFistToOskLp`; so \"OSK fuel fee -> form LP\" has no caller.      Reason for keeping: ABI alignment with deployed instances + historical traceability; it must **not** be wired to any requirements path. Pitfall: measure FIST by the \"actual received delta\", never trusting the router's quote array. Pitfall: reverts when not wired (fist/oskFistPair), never silently trading on a wrong path. Pitfall: direct on the OSK/FIST pair (user statement: OSK has only the OSK/FIST pair)."
+        },
+        "owner()": {
+          "details": "Returns the address of the current owner."
+        },
+        "payoutBnb(address,uint256)": {
+          "details": "When the treasury's BNB is insufficient, automatically pull the difference from the insurance pool; callable only by farmVaultUser's explicit requirement: when the recipient cannot receive BNB it **must revert the whole call**, no pending/deferred claim allowed.        So the atomic semantics are kept here -- a failed transfer reverts, rolled back together by `redeemPrincipal`."
+        },
+        "payoutReward(address,uint256)": {
+          "details": "Pitfall: this function **silently truncates** on insufficient balance (pays the full balance instead of reverting) -- this is so a user's claim   is not blocked by a short-term treasury shortage; but the caller **must** use the return value to detect underpayment, otherwise an underpaid entitlement is unobservable.",
+          "returns": {
+            "paid": "the amount actually paid (may be **less than** aAmt due to insufficient treasury balance -- the caller must reconcile against it)"
+          }
+        },
+        "pullFromInsurancePool(address,uint256)": {
+          "details": "Pulled directly via InsurancePool.withdrawReserve, with no approve needed",
+          "params": {
+            "amount": "amount to pull",
+            "token": "token address (ERC20, or address(0) for native BNB)"
+          }
+        },
+        "renounceOwnership()": {
+          "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+        },
+        "setFistUsdtPair(address)": {
+          "details": "Wire the FIST/USDT pair (FstSwap); validate the direction (one of USDT/FIST) -- a direction mismatch is an unrecoverable misallocation."
+        },
+        "swapOskToFistAndInject(uint256,uint256)": {
+          "details": "Path: OSK -> FIST **direct two hops** (the OSK/FIST pair already exists, no need to route via USDT).      Caller: CoreVault (the 2.5% withdrawal tax drawn at farming claim time). Pitfall: must be direct rather than OSK->USDT->FIST -- going via USDT pays an extra fee and introduces extra slippage;       and Requirement 2.0 L144 states OSK has only the OSK/FIST pair, no USDT/OSK pair exists,       so the original three-hop path would revert directly on the real chain due to the missing pair. Pitfall: measure FIST by the \"actual received delta\", never trusting the router's quote array -- if FIST has a transfer tax,       the quote would exceed the actual receipt, and transferring based on it would revert for insufficient balance. Pitfall: OSK always completes the swap while staying in the Treasury, never held by an intermediate contract, so assets are not lost on failure. Pitfall: reverts when not wired (oskFistPair/fist/fistStakingPool), never silently trading on a wrong path."
+        },
+        "transferOwnership(address)": {
+          "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+        }
+      },
+      "stateVariables": {
+        "MAX_REFILL_IMPACT_BP": {
+          "details": "The **upper bound** on the A-coin drawn from the pair per refill (BP, 1e4 precision). Design rationale (user-specified): restored to **5%** -- i.e. `aR / 20`, consistent with the original implementation.   Measured on the mainnet test build: each claim draws 5.996e24 OSK (exactly 5.00% of the reserves). Pitfall (known side effect, not a defect): a single 5% draw pushes the OSK relative price up by about 5%,   making `aPerB`/`aPerUsd` jump -> the tier hit drifts accordingly (measured effective tR 252 -> 74 -> 78).   That side effect has been largely mitigated by the \"three-source median\" oracle (OracleLib._selectPrice3):   the median filters out single-point outlier prices, so the tier no longer destabilizes from a single refill. Pitfall: the bound must be based on the **reserve proportion** rather than an absolute amount -- an absolute amount becomes too large an impact once the reserves shrink."
+        },
+        "aPair": {
+          "details": "Requirement 2.0 L144: the A-side pair = OSK/FIST (OSK has only this pair).      Used for refill (_refillFromPair) and the ratio window; the quote side = FIST, no longer WBNB."
+        },
+        "fistUsdtPair": {
+          "details": "FIST/USDT pair -- **this pair is not registered with the Pancake factory** (it is actually deployed on FstSwap on mainnet),      so `PancakeRouter.getAmountsOut`/`swap` cannot route it (the router only knows its own factory's pairs).      Every swap crossing USDT<->FIST must go through `_pairHop` directly on this pair. Pitfall: validate the direction when wiring (token0/token1 = one of USDT/FIST) -- a direction mismatch would reverse the swap arguments,      an unrecoverable fund misallocation."
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "allocateFistDeposit(address,uint256,uint256)": {
+          "notice": "Fund allocation for a FIST deposit (isomorphic to the BNB channel, differing only in the settlement token and swap path)"
+        },
+        "convertFistdaoFeeToOskLp(uint256)": {
+          "notice": "Convert the FISTDAO buy/sell tax accumulated in the Treasury into OSK/FIST LP and send it to the insurance pool"
+        },
+        "injectFistToOskLp(uint256,uint256)": {
+          "notice": "Split FIST in half: 1% swapped to OSK + 1% FIST retained -> form OSK/FIST LP sent to the insurance pool"
+        },
+        "injectOskToOskFistLp(uint256,uint256)": {
+          "notice": "(WARNING: **no caller** as of 2026-09-26) Split OSK in half: 1% swapped to FIST + 1% OSK retained -> form OSK/FIST LP"
+        },
+        "payoutBnb(address,uint256)": {
+          "notice": "Pay out redemption principal in BNB (replacing the original payoutFromTreasury USDT path, which was cleaned up)"
+        },
+        "pullFromInsurancePool(address,uint256)": {
+          "notice": "Pull the specified asset from the insurance pool to the Treasury (generic function, supports ERC20 + native BNB)"
+        },
+        "swapOskToFistAndInject(uint256,uint256)": {
+          "notice": "Swap oskAmt OSK held by the treasury into FIST, and inject the FIST into the FIST staking pool"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/core/Treasury.sol": "Treasury"
+    },
+    "evmVersion": "cancun",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/contracts/=lib/openzeppelin-contracts/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "lib/openzeppelin-contracts/access/Ownable.sol": {
+      "keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
+        "dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
+      ]
+    },
+    "lib/openzeppelin-contracts/interfaces/IERC1363.sol": {
+      "keccak256": "0x9b6b3e7803bc5f2f8cd7ad57db8ac1def61a9930a5a3107df4882e028a9605d7",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://da62d6be1f5c6edf577f0cb45666a8aa9c2086a4bac87d95d65f02e2f4c36a4b",
+        "dweb:/ipfs/QmNkpvBpoCMvX8JwAFNSc5XxJ2q5BXJpL5L1txb4QkqVFF"
+      ]
+    },
+    "lib/openzeppelin-contracts/interfaces/IERC165.sol": {
+      "keccak256": "0xde7e9fd9aee8d4f40772f96bb3b58836cbc6dfc0227014a061947f8821ea9724",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a",
+        "dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS"
+      ]
+    },
+    "lib/openzeppelin-contracts/interfaces/IERC20.sol": {
+      "keccak256": "0xce41876e78d1badc0512229b4d14e4daf83bc1003d7f83978d18e0e56f965b9c",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a2608291cb038b388d80b79a06b6118a42f7894ff67b7da10ec0dbbf5b2973ba",
+        "dweb:/ipfs/QmWohqcBLbcxmA4eGPhZDXe5RYMMEEpFq22nfkaUMvTfw1"
+      ]
+    },
+    "lib/openzeppelin-contracts/token/ERC20/IERC20.sol": {
+      "keccak256": "0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db",
+        "dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9"
+      ]
+    },
+    "lib/openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol": {
+      "keccak256": "0xca2ae13e0610f6a99238dd00b97bd786bc92732dae6d6b9d61f573ec51018310",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://75f8c71ce0c91c40dd5f249ace0b7d8270f8f1767231bcf71490f7157d6ba862",
+        "dweb:/ipfs/QmYXgxeDyFHvz3JsXxLEYN6GNUR44ThHeFj5XkpkgMoG4w"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/Address.sol": {
+      "keccak256": "0x9d8da059267bac779a2dbbb9a26c2acf00ca83085e105d62d5d4ef96054a47f5",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c78e2aa4313323cecd1ef12a8d6265b96beee1a199923abf55d9a2a9e291ad23",
+        "dweb:/ipfs/QmUTs2KStXucZezzFo3EYeqYu47utu56qrF7jj1Gue65vb"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/Context.sol": {
+      "keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+        "dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/Errors.sol": {
+      "keccak256": "0x6afa713bfd42cf0f7656efa91201007ac465e42049d7de1d50753a373648c123",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://ba1d02f4847670a1b83dec9f7d37f0b0418d6043447b69f3a29a5f9efc547fcf",
+        "dweb:/ipfs/QmQ7iH2keLNUKgq2xSWcRmuBE5eZ3F5whYAkAGzCNNoEWB"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/Panic.sol": {
+      "keccak256": "0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a",
+        "dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/introspection/IERC165.sol": {
+      "keccak256": "0x79796192ec90263f21b464d5bc90b777a525971d3de8232be80d9c4f9fb353b8",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://f6fda447a62815e8064f47eff0dd1cf58d9207ad69b5d32280f8d7ed1d1e4621",
+        "dweb:/ipfs/QmfDRc7pxfaXB2Dh9np5Uf29Na3pQ7tafRS684wd3GLjVL"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/math/Math.sol": {
+      "keccak256": "0xa00be322d7db5786750ce0ac7e2f5b633ac30a5ed5fa1ced1e74acfc19acecea",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6c84e822f87cbdc4082533b626667b6928715bb2b1e8e7eb96954cebb9e38c8d",
+        "dweb:/ipfs/QmZmy9dgxLTerBAQDuuHqbL6EpgRxddqgv5KmwpXYVbKz1"
+      ]
+    },
+    "lib/openzeppelin-contracts/utils/math/SafeCast.sol": {
+      "keccak256": "0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8",
+        "dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy"
+      ]
+    },
+    "src/access/Auth.sol": {
+      "keccak256": "0x89149e2fe8e5fd79708ab0511cb8e67d1d38ae4299a5207088a54b3558b3580f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://06236894f0d2b4ce7de8cf2a867cd82681c436b2aa8fda5e657fc92467f26344",
+        "dweb:/ipfs/QmVUGzYf67ZxM3Xpm85gsz1ymkEMwaeLAuJZo2ks5jZxQK"
+      ]
+    },
+    "src/access/TransientReentrancyGuard.sol": {
+      "keccak256": "0x38727435a24e9b3455d5273b50ff4913ad26e1c3cbc6fd566e42ae99698c131a",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://4221b80a62f9b3b4a5d75cce8ff8377ae9893dc16546c6a36a32a542178acd08",
+        "dweb:/ipfs/Qmf3TSQL14Wqxyh2N28M4zc2hSUP9tc3sZebhsxHGJHWAj"
+      ]
+    },
+    "src/core/Treasury.sol": {
+      "keccak256": "0x54662b687f4972301b3fa33bb0271051a07b09286252467dd8c3617c56ea3d64",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://c181eb395734522990d1c6e7ea1e9209c7b102d2c0489f9bc9887ff9ed9e6bcd",
+        "dweb:/ipfs/QmTq2SDwmstDFL9xXJoKzvAU17obN35hSCn6pmg8SVAFMw"
+      ]
+    },
+    "src/interfaces/IAToken.sol": {
+      "keccak256": "0xc7133857e115f6b47f0f3c4c2ea497a655c4e8df3c8b03c70994cf07bcae16eb",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://472762e3b1937ca64b151f6db80330785558f23e2af5d7293cd5066b67b43d1f",
+        "dweb:/ipfs/QmRjB8UitfFWDQbsQBsYbbqQiofkyyjFoUczfT47fmS2NL"
+      ]
+    },
+    "src/interfaces/IBToken.sol": {
+      "keccak256": "0xad13a6492b4eba2a2b58dbc6c46a4e7d4b19e001863a54adcd2088c0f966c9a7",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b9765e7bfd077faedd81c086e60639ca8031113e3f16885f8343087ada8abe03",
+        "dweb:/ipfs/QmNhJVQnghNgxCN1qsQCayN5gg5ocvS1gsHaYfSqKa2GeB"
+      ]
+    },
+    "src/interfaces/IFISTDAO.sol": {
+      "keccak256": "0xbf835964f14a0d70f733a4fd13cea32a8e61fbf95784a9430d41ba16af71dc91",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://fd2fd54e4db1f0158c65ca78a4388c42afe883a364fb804aed6c7d5a8617c82d",
+        "dweb:/ipfs/QmU1biWfWZKnufCvS4r2bppSm6L7TDHJT1GTgx2e33jgDk"
+      ]
+    },
+    "src/interfaces/IInsurancePool.sol": {
+      "keccak256": "0xf27bd7719ed020444e9230108fb2e283da72d83cb9f19e9f9eed1f963d2d9653",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://4e77c0ebbb2b96d5fec27515469c3fcdc36e5f690d13f8d33fd2a0d6c954d80b",
+        "dweb:/ipfs/QmcAmELEmDQbMBkJYRJ7BT8wEqfGq4K2vnAQzGbJb6Synb"
+      ]
+    },
+    "src/interfaces/IPancake.sol": {
+      "keccak256": "0x77634f429848ebc806bb501915427c87153628e672dd2265d88d6d1760db01b8",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://af9c74e5d9bd1ede8ad560c61ac4a1102b86442a8ee1b3e15e3c6f8a4c748ae2",
+        "dweb:/ipfs/QmNWbzscRvyNCf4m48vimBonRcJvnVXomCZcwPUb8caciv"
+      ]
+    },
+    "src/lib/DexSwapper.sol": {
+      "keccak256": "0x95a27fa149d824c0d2cb098f454982a2cf15fb577855046179b987a0cbb31027",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://5e5029fad48e36d750d9687636a6f83bbe8ea906b8a0dd771506e091d593d9e5",
+        "dweb:/ipfs/QmSU5PbAAu26C78xEe2qnWxUupx6suDFCU956suuP9uYm5"
+      ]
+    }
+  },
+  "version": 1
+}

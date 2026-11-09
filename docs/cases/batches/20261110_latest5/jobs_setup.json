@@ -1,0 +1,15 @@
+[
+  {
+    "id": "premia-setup-receipt-official",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/setup-receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5"
+      ]
+    }
+  }
+]

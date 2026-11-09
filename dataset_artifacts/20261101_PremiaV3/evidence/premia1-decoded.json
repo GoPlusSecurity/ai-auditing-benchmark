@@ -1,0 +1,4803 @@
+{
+  "available": true,
+  "transaction_hash": "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+  "status": "0x1",
+  "block_number": 520166479,
+  "log_count": 386,
+  "decoded_events": [
+    {
+      "log_index": 0,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 1,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 2,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 3,
+      "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 5,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 6,
+      "address": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 8,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913117925317"
+      }
+    },
+    {
+      "log_index": 9,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "376125000"
+      }
+    },
+    {
+      "log_index": 11,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "0"
+      }
+    },
+    {
+      "log_index": 12,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "id": "0",
+        "value": "3750000000000000000"
+      }
+    },
+    {
+      "log_index": 13,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "3750000000000000000"
+      }
+    },
+    {
+      "log_index": 14,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "WriteFrom",
+      "values": {
+        "underwriter": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+        "longReceiver": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "taker": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "3750000000000000000",
+        "collateral": "3750000000000000000",
+        "protocolFee": "11250000000000000"
+      }
+    },
+    {
+      "log_index": 15,
+      "address": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "pool": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "contractSize": "3750000000000000000",
+        "isBuy": true,
+        "premium": "117146180000000000",
+        "takerFee": "11250000000000000",
+        "makerRebate": "0",
+        "vaultFee": "0"
+      }
+    },
+    {
+      "log_index": 16,
+      "address": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 18,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913101574935"
+      }
+    },
+    {
+      "log_index": 19,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "value": "187100000000000000000"
+      }
+    },
+    {
+      "log_index": 20,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-187100040000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-187100040000000000000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 21,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "5000000000000000",
+        "delta": "187100030000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "187100030000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 22,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "contractSize": "187100000000000000000",
+        "collateral": "280650000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 24,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054799935"
+      }
+    },
+    {
+      "log_index": 25,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "value": "187100000000000000000"
+      }
+    },
+    {
+      "log_index": 26,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "30000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "30000000000000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 27,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "3000000000000000",
+        "prev": "2000000000000000",
+        "next": "5000000000000000",
+        "delta": "187100000000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "187100000000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 28,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "contractSize": "187100000000000000000",
+        "collateral": "467750000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 30,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 31,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 32,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 34,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054798920"
+      }
+    },
+    {
+      "log_index": 35,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 36,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 37,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 39,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 40,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 41,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 43,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054797905"
+      }
+    },
+    {
+      "log_index": 44,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 45,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 46,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 48,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 49,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 50,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 52,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054796890"
+      }
+    },
+    {
+      "log_index": 53,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 54,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 55,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 57,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 58,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 59,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 61,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054795875"
+      }
+    },
+    {
+      "log_index": 62,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 63,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 64,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 66,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 67,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 68,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 70,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054794860"
+      }
+    },
+    {
+      "log_index": 71,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 72,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 73,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 75,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 76,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 77,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 79,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054793845"
+      }
+    },
+    {
+      "log_index": 80,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 81,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 82,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 84,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 85,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 86,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 88,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054792830"
+      }
+    },
+    {
+      "log_index": 89,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 90,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 91,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 93,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 94,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 95,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "9550000000000",
+          "longs": "-100000000000000",
+          "shorts": "0"
+        },
+        "premium": "9550000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 97,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913054791815"
+      }
+    },
+    {
+      "log_index": 98,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 99,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "100000000000000"
+      }
+    },
+    {
+      "log_index": 100,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "100000000000000",
+        "delta": {
+          "collateral": "-10150000000000",
+          "longs": "100000000000000",
+          "shorts": "0"
+        },
+        "premium": "10150000000000",
+        "takerFee": "300000000000",
+        "protocolFee": "150000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 101,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 102,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "10000000000000"
+      }
+    },
+    {
+      "log_index": 104,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-187100030000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-187100030000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 105,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "20000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "20000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 106,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "10000000000000",
+        "collateral": "15000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 107,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 108,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "from": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "value": "10000000000000"
+      }
+    },
+    {
+      "log_index": 110,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-187100020000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-187100020000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 111,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "10000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "10000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 112,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "contractSize": "10000000000000",
+        "collateral": "15000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 113,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 114,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "from": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "value": "10000000000000"
+      }
+    },
+    {
+      "log_index": 116,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-187100010000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-187100010000000000000",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 117,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "0",
+        "externalFeeRate": "0",
+        "longDelta": "0",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 118,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "contractSize": "10000000000000",
+        "collateral": "15000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 120,
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "event": "Approval",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129638933"
+      }
+    },
+    {
+      "log_index": 121,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "10000000000000"
+      }
+    },
+    {
+      "log_index": 122,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-187100020000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-187100020000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 123,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "10000000000000",
+        "externalFeeRate": "24000000000000000",
+        "longDelta": "10000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 124,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "10000000000000",
+        "collateral": "15000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "24000000000000000",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "100000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 126,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "ClaimProtocolFees",
+      "values": {
+        "feeReceiver": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+        "feesClaimed": "11252400000000000"
+      }
+    },
+    {
+      "log_index": 128,
+      "address": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "feesClaimed": "4490400000000000000",
+        "lastFeeRate": "24000000000000000"
+      }
+    },
+    {
+      "log_index": 130,
+      "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "event": "FlashLoan",
+      "values": {
+        "initiator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "receiver": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+        "amount": "90000000",
+        "fee": "0"
+      }
+    },
+    {
+      "log_index": 132,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 133,
+      "address": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 135,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "value": "115792089237316195423570985008687907853269984665640564039455921553590444807920"
+      }
+    },
+    {
+      "log_index": 136,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "45135000000000000000"
+      }
+    },
+    {
+      "log_index": 138,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "0"
+      }
+    },
+    {
+      "log_index": 139,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "id": "0",
+        "value": "45000000000000000000"
+      }
+    },
+    {
+      "log_index": 140,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "45000000000000000000"
+      }
+    },
+    {
+      "log_index": 141,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "WriteFrom",
+      "values": {
+        "underwriter": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+        "longReceiver": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "taker": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "45000000000000000000",
+        "collateral": "45000000000000000000",
+        "protocolFee": "135000000000000000"
+      }
+    },
+    {
+      "log_index": 142,
+      "address": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "pool": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "contractSize": "45000000000000000000",
+        "isBuy": true,
+        "premium": "1662454322684832015",
+        "takerFee": "135000000000000000",
+        "makerRebate": "0",
+        "vaultFee": "0"
+      }
+    },
+    {
+      "log_index": 143,
+      "address": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 145,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039454216507913129639935"
+      }
+    },
+    {
+      "log_index": 146,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "value": "2245000000000000000000"
+      }
+    },
+    {
+      "log_index": 147,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-2245000000000000004000",
+        "externalFeeRate": "0",
+        "longDelta": "-2245000000000000004000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 148,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "5000000000000000",
+        "delta": "2245000000000000003000",
+        "externalFeeRate": "0",
+        "longDelta": "2245000000000000003000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 149,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "contractSize": "2245000000000000000000",
+        "collateral": "3367500000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 151,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448604007913129639935"
+      }
+    },
+    {
+      "log_index": 152,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "value": "2245000000000000000000"
+      }
+    },
+    {
+      "log_index": 153,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "3000",
+        "externalFeeRate": "0",
+        "longDelta": "3000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 154,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "3000000000000000",
+        "prev": "2000000000000000",
+        "next": "5000000000000000",
+        "delta": "2245000000000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "2245000000000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 155,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "contractSize": "2245000000000000000000",
+        "collateral": "5612500000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 157,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 158,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 159,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 161,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603906413129639935"
+      }
+    },
+    {
+      "log_index": 162,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 163,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 164,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 166,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 167,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 168,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 170,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603804913129639935"
+      }
+    },
+    {
+      "log_index": 171,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 172,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 173,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 175,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 176,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 177,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 179,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603703413129639935"
+      }
+    },
+    {
+      "log_index": 180,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 181,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 182,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 184,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 185,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 186,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 188,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603601913129639935"
+      }
+    },
+    {
+      "log_index": 189,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 190,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 191,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 193,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 194,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 195,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 197,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603500413129639935"
+      }
+    },
+    {
+      "log_index": 198,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 199,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 200,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 202,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 203,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 204,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 206,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603398913129639935"
+      }
+    },
+    {
+      "log_index": 207,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 208,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 209,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 211,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 212,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 213,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 215,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603297413129639935"
+      }
+    },
+    {
+      "log_index": 216,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 217,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 218,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 220,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 221,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 222,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "95500000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "95500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 224,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039448603195913129639935"
+      }
+    },
+    {
+      "log_index": 225,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 226,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 227,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-101500000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "101500000000000",
+        "takerFee": "3000000000000",
+        "protocolFee": "1500000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 228,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 229,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "1000"
+      }
+    },
+    {
+      "log_index": 231,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-2245000000000000003000",
+        "externalFeeRate": "0",
+        "longDelta": "-2245000000000000003000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 232,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "2000",
+        "externalFeeRate": "0",
+        "longDelta": "2000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 233,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "1000",
+        "collateral": "1",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 234,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 235,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "from": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "value": "1000"
+      }
+    },
+    {
+      "log_index": 237,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-2245000000000000002000",
+        "externalFeeRate": "0",
+        "longDelta": "-2245000000000000002000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 238,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "1000",
+        "externalFeeRate": "0",
+        "longDelta": "1000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 239,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "contractSize": "1000",
+        "collateral": "1",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 240,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 241,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "from": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "value": "1000"
+      }
+    },
+    {
+      "log_index": 243,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-2245000000000000001000",
+        "externalFeeRate": "0",
+        "longDelta": "-2245000000000000001000",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 244,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "0",
+        "externalFeeRate": "0",
+        "longDelta": "0",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 245,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "contractSize": "1000",
+        "collateral": "1",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 247,
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "event": "Approval",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457583909413129639918"
+      }
+    },
+    {
+      "log_index": 248,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "1000"
+      }
+    },
+    {
+      "log_index": 249,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-2245000000000000002000",
+        "externalFeeRate": "0",
+        "longDelta": "-2245000000000000002000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 250,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "1000",
+        "externalFeeRate": "24000000000000000",
+        "longDelta": "1000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 251,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "1000",
+        "collateral": "1",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "24000000000000000",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 253,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "ClaimProtocolFees",
+      "values": {
+        "feeReceiver": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+        "feesClaimed": "135024000000000000"
+      }
+    },
+    {
+      "log_index": 255,
+      "address": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "feesClaimed": "53880000000000000000",
+        "lastFeeRate": "24000000000000000"
+      }
+    },
+    {
+      "log_index": 257,
+      "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "event": "FlashLoan",
+      "values": {
+        "initiator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "receiver": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+        "amount": "11000000000000000000",
+        "fee": "0"
+      }
+    },
+    {
+      "log_index": 259,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    },
+    {
+      "log_index": 260,
+      "address": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 262,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007912397253761"
+      }
+    },
+    {
+      "log_index": 263,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "22066000000"
+      }
+    },
+    {
+      "log_index": 265,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "0"
+      }
+    },
+    {
+      "log_index": 266,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "id": "0",
+        "value": "10000000000000000000"
+      }
+    },
+    {
+      "log_index": 267,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "10000000000000000000"
+      }
+    },
+    {
+      "log_index": 268,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "WriteFrom",
+      "values": {
+        "underwriter": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+        "longReceiver": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "taker": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "10000000000000000000",
+        "collateral": "22000000000000000000000",
+        "protocolFee": "66000000000000000000"
+      }
+    },
+    {
+      "log_index": 269,
+      "address": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "pool": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "contractSize": "10000000000000000000",
+        "isBuy": true,
+        "premium": "732386174000000000000",
+        "takerFee": "66000000000000000000",
+        "makerRebate": "0",
+        "vaultFee": "0"
+      }
+    },
+    {
+      "log_index": 270,
+      "address": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+      "event": "UpdateQuotes",
+      "values": {}
+    },
+    {
+      "log_index": 272,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007911482939935"
+      }
+    },
+    {
+      "log_index": 273,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "value": "499000000000000000000"
+      }
+    },
+    {
+      "log_index": 274,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-499000004000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-499000004000000000000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 275,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "5000000000000000",
+        "delta": "499000003000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "499000003000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 276,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "contractSize": "499000000000000000000",
+        "collateral": "1646700000000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 278,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908738439935"
+      }
+    },
+    {
+      "log_index": 279,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "value": "499000000000000000000"
+      }
+    },
+    {
+      "log_index": 280,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "3000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "3000000000000",
+        "shortDelta": "0",
+        "counter": "3"
+      }
+    },
+    {
+      "log_index": 281,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "3000000000000000",
+        "prev": "2000000000000000",
+        "next": "5000000000000000",
+        "delta": "499000000000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "499000000000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 282,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153371650",
+        "contractSize": "499000000000000000000",
+        "collateral": "2744500000000000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 284,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 285,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 286,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 288,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908738216635"
+      }
+    },
+    {
+      "log_index": 289,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 290,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 291,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 293,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 294,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 295,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 297,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908737993335"
+      }
+    },
+    {
+      "log_index": 298,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 299,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 300,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 302,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 303,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 304,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 306,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908737770035"
+      }
+    },
+    {
+      "log_index": 307,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 308,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 309,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 311,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 312,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 313,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 315,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908737546735"
+      }
+    },
+    {
+      "log_index": 316,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 317,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 318,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 320,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 321,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 322,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 324,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908737323435"
+      }
+    },
+    {
+      "log_index": 325,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 326,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 327,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 329,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 330,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 331,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 333,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908737100135"
+      }
+    },
+    {
+      "log_index": 334,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 335,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 336,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 338,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 339,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 340,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 342,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908736876835"
+      }
+    },
+    {
+      "log_index": 343,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 344,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 345,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 347,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 348,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 349,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "210100000000000000",
+          "longs": "-1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "210100000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "98000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": false
+      }
+    },
+    {
+      "log_index": 351,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007908736653535"
+      }
+    },
+    {
+      "log_index": 352,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 353,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "1",
+        "value": "1000000000000000"
+      }
+    },
+    {
+      "log_index": 354,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Trade",
+      "values": {
+        "user": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "contractSize": "1000000000000000",
+        "delta": {
+          "collateral": "-223300000000000000",
+          "longs": "1000000000000000",
+          "shorts": "0"
+        },
+        "premium": "223300000000000000",
+        "takerFee": "6600000000000000",
+        "protocolFee": "3300000000000000",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000",
+        "totalReferralRebate": "0",
+        "isBuy": true
+      }
+    },
+    {
+      "log_index": 355,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 356,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "1000000000000"
+      }
+    },
+    {
+      "log_index": 358,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-499000003000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-499000003000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 359,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "2000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "2000000000000",
+        "shortDelta": "0",
+        "counter": "2"
+      }
+    },
+    {
+      "log_index": 360,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "1000000000000",
+        "collateral": "3300000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 361,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 362,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "from": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "value": "1000000000000"
+      }
+    },
+    {
+      "log_index": 364,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-499000002000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-499000002000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 365,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "1000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "1000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 366,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+        "tokenId": "7237005577332262213977675210821126464542546452743211338299319416634587744257",
+        "contractSize": "1000000000000",
+        "collateral": "3300000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 367,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "feesClaimed": "0",
+        "lastFeeRate": "0"
+      }
+    },
+    {
+      "log_index": 368,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "from": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "to": "0x0000000000000000000000000000000000000000",
+        "id": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "value": "1000000000000"
+      }
+    },
+    {
+      "log_index": 370,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-499000001000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-499000001000000000000",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 371,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "0",
+        "externalFeeRate": "0",
+        "longDelta": "0",
+        "shortDelta": "0",
+        "counter": "0"
+      }
+    },
+    {
+      "log_index": 372,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Withdrawal",
+      "values": {
+        "owner": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+        "tokenId": "7237005577332262213976495869705573488339444141870522172903830148720720087041",
+        "contractSize": "1000000000000",
+        "collateral": "3300000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "0",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 374,
+      "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "event": "Approval",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "spender": "0xdefbbac44f2088a70b648e1231b2ca9683774c48",
+        "value": "115792089237316195423570985008687907853269984665640564039457584007913128506995"
+      }
+    },
+    {
+      "log_index": 375,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "TransferSingle",
+      "values": {
+        "operator": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "id": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "value": "1000000000000"
+      }
+    },
+    {
+      "log_index": 376,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "1000000000000000",
+        "prev": "0",
+        "next": "2000000000000000",
+        "delta": "-499000002000000000000",
+        "externalFeeRate": "0",
+        "longDelta": "-499000002000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 377,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "UpdateTick",
+      "values": {
+        "tick": "2000000000000000",
+        "prev": "1000000000000000",
+        "next": "3000000000000000",
+        "delta": "1000000000000",
+        "externalFeeRate": "52800000000000000000",
+        "longDelta": "1000000000000",
+        "shortDelta": "0",
+        "counter": "1"
+      }
+    },
+    {
+      "log_index": 378,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "Deposit",
+      "values": {
+        "owner": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+        "tokenId": "7237005577332262213976598360116654731014335650559875349426927136253161768961",
+        "contractSize": "1000000000000",
+        "collateral": "3300000000000",
+        "longs": "0",
+        "shorts": "0",
+        "lastFeeRate": "52800000000000000000",
+        "claimableFees": "0",
+        "marketPrice": "99000000000000000",
+        "liquidityRate": "1000000000000000",
+        "currentTick": "98000000000000000"
+      }
+    },
+    {
+      "log_index": 380,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "ClaimProtocolFees",
+      "values": {
+        "feeReceiver": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+        "feesClaimed": "66052800000000000000"
+      }
+    },
+    {
+      "log_index": 382,
+      "address": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "event": "ClaimFees",
+      "values": {
+        "owner": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "tokenId": "7237005577332262213976775015122552818008770780583122973728415175188153370625",
+        "feesClaimed": "26347200000000000000000",
+        "lastFeeRate": "52800000000000000000"
+      }
+    },
+    {
+      "log_index": 384,
+      "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "event": "FlashLoan",
+      "values": {
+        "initiator": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+        "receiver": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+        "amount": "6000000000",
+        "fee": "0"
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "log_index": 4,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "90000000"
+    },
+    {
+      "log_index": 7,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+      "raw_amount": "11714618"
+    },
+    {
+      "log_index": 10,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x45df5ea836a15b561937ae8373ab9ee984aea531",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "376125000"
+    },
+    {
+      "log_index": 17,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "28065000"
+    },
+    {
+      "log_index": 23,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "46775000"
+    },
+    {
+      "log_index": 29,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 33,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 38,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 42,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 47,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 51,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 56,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 60,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 65,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 69,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 74,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 78,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 83,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 87,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 92,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "955"
+    },
+    {
+      "log_index": 96,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1015"
+    },
+    {
+      "log_index": 103,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 109,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 115,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 119,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "to": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 125,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+      "raw_amount": "1125240"
+    },
+    {
+      "log_index": 127,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "449040000"
+    },
+    {
+      "log_index": 129,
+      "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "raw_amount": "90000000"
+    },
+    {
+      "log_index": 131,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "11000000000000000000"
+    },
+    {
+      "log_index": 134,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+      "raw_amount": "1662454322684832015"
+    },
+    {
+      "log_index": 137,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "45135000000000000000"
+    },
+    {
+      "log_index": 144,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "3367500000000000000"
+    },
+    {
+      "log_index": 150,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "5612500000000000000"
+    },
+    {
+      "log_index": 156,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 160,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 165,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 169,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 174,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 178,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 183,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 187,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 192,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 196,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 201,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 205,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 210,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 214,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 219,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "95500000000000"
+    },
+    {
+      "log_index": 223,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "101500000000000"
+    },
+    {
+      "log_index": 230,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 236,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 242,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 246,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "to": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "raw_amount": "1"
+    },
+    {
+      "log_index": 252,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+      "raw_amount": "135024000000000000"
+    },
+    {
+      "log_index": 254,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "53880000000000000000"
+    },
+    {
+      "log_index": 256,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "raw_amount": "11000000000000000000"
+    },
+    {
+      "log_index": 258,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "6000000000"
+    },
+    {
+      "log_index": 261,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+      "raw_amount": "732386174"
+    },
+    {
+      "log_index": 264,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xd46993f25d298ebbcd31e941156c66f7e628a52a",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "22066000000"
+    },
+    {
+      "log_index": 271,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "1646700000"
+    },
+    {
+      "log_index": 277,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "2744500000"
+    },
+    {
+      "log_index": 283,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 287,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 292,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 296,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 301,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 305,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 310,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 314,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 319,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 323,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 328,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 332,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 337,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 341,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 346,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "210100"
+    },
+    {
+      "log_index": 350,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "223300"
+    },
+    {
+      "log_index": 357,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "raw_amount": "3"
+    },
+    {
+      "log_index": 363,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0",
+      "raw_amount": "3"
+    },
+    {
+      "log_index": 369,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x28cff810811e68291ea5715ebbd6cbb489195f88",
+      "raw_amount": "3"
+    },
+    {
+      "log_index": 373,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x39eee49fd11335c30d8d7081d06b122f61da803a",
+      "to": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "raw_amount": "3"
+    },
+    {
+      "log_index": 379,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x7bf2392bd078c8353069cffeacc67c094079be23",
+      "raw_amount": "66052800"
+    },
+    {
+      "log_index": 381,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0xb97235483bbe8086ed5f054800023aedab76000a",
+      "to": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "raw_amount": "26347200000"
+    },
+    {
+      "log_index": 383,
+      "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "raw_amount": "6000000000"
+    },
+    {
+      "log_index": 385,
+      "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "from": "0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+      "to": "0x0000000000000000000000000000000000000000",
+      "raw_amount": "43238497677315167985"
+    }
+  ],
+  "token_net_raw": {
+    "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f": {
+      "0xba12222222228d8ba445958a75a0704d566bf2c8": "0",
+      "0x577168c8c6fa937495c3d6961f1d7d734b2d785f": "362484902",
+      "0x45df5ea836a15b561937ae8373ab9ee984aea531": "-364410382",
+      "0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d": "800238",
+      "0x39eee49fd11335c30d8d7081d06b122f61da803a": "0",
+      "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0": "1",
+      "0x28cff810811e68291ea5715ebbd6cbb489195f88": "1",
+      "0x7bf2392bd078c8353069cffeacc67c094079be23": "1125240"
+    },
+    "0x82af49447d8a07e3bd95bd0d56f35241523fbab1": {
+      "0xba12222222228d8ba445958a75a0704d566bf2c8": "0",
+      "0x577168c8c6fa937495c3d6961f1d7d734b2d785f": "-1000000000000000",
+      "0xbae43c546dfadc69576ae73c68e0694a54f08e1b": "-43472545677315167985",
+      "0xaf0dda38064f4fa44577eba22f8f9e2cbcb038ac": "100023999999999998",
+      "0x39eee49fd11335c30d8d7081d06b122f61da803a": "0",
+      "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0": "1",
+      "0x28cff810811e68291ea5715ebbd6cbb489195f88": "1",
+      "0x7bf2392bd078c8353069cffeacc67c094079be23": "135024000000000000",
+      "0x0000000000000000000000000000000000000000": "43238497677315167985"
+    },
+    "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": {
+      "0xba12222222228d8ba445958a75a0704d566bf2c8": "0",
+      "0x577168c8c6fa937495c3d6961f1d7d734b2d785f": "21223508226",
+      "0xd46993f25d298ebbcd31e941156c66f7e628a52a": "-21333613826",
+      "0xb97235483bbe8086ed5f054800023aedab76000a": "44052794",
+      "0x39eee49fd11335c30d8d7081d06b122f61da803a": "0",
+      "0xedd1970cc88b3cef9d8b7987c63ed8df5d83f1c0": "3",
+      "0x28cff810811e68291ea5715ebbd6cbb489195f88": "3",
+      "0x7bf2392bd078c8353069cffeacc67c094079be23": "66052800"
+    }
+  },
+  "unknown_events": [],
+  "limits": "Receipt events and token deltas only; native transfers and internal calls are not inferred from ERC20 logs."
+}

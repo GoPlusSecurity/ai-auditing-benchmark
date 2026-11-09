@@ -1,0 +1,25 @@
+{
+  "id": "premia-facet-write",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+        "data": "0xcdffacc6b0706b0100000000000000000000000000000000000000000000000000000000"
+      },
+      "latest"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:57:45.060535+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "bb3aedd0a32ea4dd531df6b7bbf67ce5855d11086eaeb20fb6b70b33d69d4b5d",
+  "bytes": 103
+}

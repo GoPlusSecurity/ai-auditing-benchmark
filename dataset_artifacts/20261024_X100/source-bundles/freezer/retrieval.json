@@ -1,0 +1,14 @@
+{
+  "id": "row22-source-0x79f35a33fe2813414851c4ae8daeacd14d822a46",
+  "url": "https://sourcify.dev/server/v2/contract/1/0x79f35a33fe2813414851c4ae8daeacd14d822a46?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:48:41.456931+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/1/0x79f35a33fe2813414851c4ae8daeacd14d822a46?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"e8d94-Z/aM/3S8ASUNXI+gdfDjJz1cAtw\"",
+  "last_modified": null,
+  "sha256": "7f211ede6cceecd09b621f4f445213bb17a61a59d6ba0e265ea56d3b2f7370b6",
+  "bytes": 953748
+}

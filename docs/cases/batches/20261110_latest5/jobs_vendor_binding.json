@@ -1,0 +1,57 @@
+[
+  {
+    "id": "tendril-controller-historical-code",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/tendril/controller-historical-code.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+        "0x7d8df33"
+      ]
+    }
+  },
+  {
+    "id": "tendril-controller-current-code",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/tendril/controller-current-code.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+        "latest"
+      ]
+    }
+  },
+  {
+    "id": "premia-historical-implementation",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/historical-implementation.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x45dF5EA836A15B561937Ae8373ab9eE984aea531",
+          "data": "0xaaf10f42"
+        },
+        "0x1f011c4f"
+      ]
+    }
+  },
+  {
+    "id": "dedaub-official-documentation",
+    "url": "https://docs.dedaub.com/docs/decompiler/",
+    "path": "tools/dedaub-official-docs.html"
+  },
+  {
+    "id": "dedaub-official-product",
+    "url": "https://dedaub.com/product/decompiler/",
+    "path": "tools/dedaub-official-product.html"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "b14g-historical-slot",
+  "url": "https://rpc.coredao.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getStorageAt",
+    "params": [
+      "0x04ea61c431f7934d51fed2acb2c5f942213f8967",
+      "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+      "0x263004c"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:31:39.620119+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://rpc.coredao.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "c75cdeffe5fe5d1f88199af0dfd00335fafe126073dbd4b152fe3d82b2896e27",
+  "bytes": 253
+}

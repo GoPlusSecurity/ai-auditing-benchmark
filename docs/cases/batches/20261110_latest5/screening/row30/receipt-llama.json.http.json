@@ -1,0 +1,16 @@
+{
+  "id": "row30-receipt-llama",
+  "url": "https://eth.llamarpc.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:41:24.714235+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "<urlopen error _ssl.c:989: The handshake operation timed out>",
+  "exception": "URLError"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "row33-receipt",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0xa7b879b5d4252fa5b518db1f81be8a5cc670c5b978c7626fa287c0a1f37895a3"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:40:20.795237+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "3eda1096bb36dfa7720705e77251305fb2da2f1984a70476d6b4463167b1b7cc",
+  "bytes": 102148
+}

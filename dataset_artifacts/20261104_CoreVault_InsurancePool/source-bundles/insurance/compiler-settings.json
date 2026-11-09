@@ -1,0 +1,26 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.24+commit.e11b9ed9",
+  "compilerSettings": {
+    "viaIR": true,
+    "metadata": {
+      "appendCBOR": true,
+      "bytecodeHash": "ipfs",
+      "useLiteralContent": false
+    },
+    "libraries": {},
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "cancun",
+    "remappings": [
+      "@openzeppelin/contracts/=lib/openzeppelin-contracts/",
+      "forge-std/=lib/forge-std/src/",
+      "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "name": "InsurancePool",
+  "fullyQualifiedName": "src/core/InsurancePool.sol:InsurancePool"
+}

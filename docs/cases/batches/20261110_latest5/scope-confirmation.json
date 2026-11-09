@@ -1,0 +1,20 @@
+{
+  "status": "explicitly_confirmed_by_user",
+  "user_reply": "只要求漏洞、权限和付款因果链的必要代码完整",
+  "question_context": "原计划要求链路合约未开源且无法取得官方线上反编译时跳过整例。本批5例的漏洞计算、权限和付款代码已有原始源码，但部分攻击编排或收款合约没有源码。询问是否也必须补齐这些编排和收款合约。",
+  "source": "User reply in this task after the independent final review identified an unapproved scope exception",
+  "applies_to": "This fixed-snapshot five-case batch",
+  "required": [
+    "Public original vulnerable source must establish the defect.",
+    "Necessary input, checks, permissions, state updates, calculations and final payment code must be complete.",
+    "If necessary code is unavailable, only block-explorer or vendor official ONLINE decompilation may supplement it; absent qualifying output the event must be skipped."
+  ],
+  "orchestration_and_recipient_boundary": "Pure attack orchestration or recipient code may be unavailable. Its internals are not asserted from missing source; observed receipt/trace behaviour and source-based inference remain distinguished.",
+  "unchanged_constraints": [
+    "No local decompiler",
+    "No entire-event admission based solely on decompilation, bytecode, patched code, or reporting",
+    "No treating current implementation/provider verification as complete attack-time deployment or state evidence",
+    "Five distinct previously uncollected events in the fixed snapshot's required chronological prefix"
+  ],
+  "source_coverage": "source-coverage.md"
+}

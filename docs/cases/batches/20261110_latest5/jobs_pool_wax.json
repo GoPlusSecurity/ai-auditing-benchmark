@@ -1,0 +1,22 @@
+[
+  {
+    "id": "wax-official-tree",
+    "url": "https://api.github.com/repos/worldwide-asset-exchange/defi/git/trees/main?recursive=1",
+    "path": "screening/wax/defi-tree.json"
+  },
+  {
+    "id": "premia-source-0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d?fields=all",
+    "path": "screening/premia/source-0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d.json"
+  },
+  {
+    "id": "premia-source-0xbae43c546dfadc69576ae73c68e0694a54f08e1b",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0xbae43c546dfadc69576ae73c68e0694a54f08e1b?fields=all",
+    "path": "screening/premia/source-0xbae43c546dfadc69576ae73c68e0694a54f08e1b.json"
+  },
+  {
+    "id": "premia-source-0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0x577168c8c6fa937495c3d6961f1d7d734b2d785f?fields=all",
+    "path": "screening/premia/source-0x577168c8c6fa937495c3d6961f1d7d734b2d785f.json"
+  }
+]

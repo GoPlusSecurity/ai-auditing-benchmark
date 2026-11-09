@@ -1,0 +1,163 @@
+[
+  {
+    "id": "row28-implementation-source",
+    "url": "https://sourcify.dev/server/v2/contract/8453/0x1f08a189BE9b14aBcF2aD18b7d46aF2562E6e7A5?fields=all",
+    "path": "screening/row28/implementation-source.json"
+  },
+  {
+    "id": "row19-blockscout-tx",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x891e4187e40dfccfcfb0618c43e76f43f4f2a304dddca556aaa6f3c182557cb9",
+    "path": "screening/row19/blockscout-tx.json"
+  },
+  {
+    "id": "row19-blockscout-trace",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x891e4187e40dfccfcfb0618c43e76f43f4f2a304dddca556aaa6f3c182557cb9/raw-trace",
+    "path": "screening/row19/blockscout-trace.json"
+  },
+  {
+    "id": "row19-receipt-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row19/receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x891e4187e40dfccfcfb0618c43e76f43f4f2a304dddca556aaa6f3c182557cb9"
+      ]
+    }
+  },
+  {
+    "id": "row19-trace-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row19/trace-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x891e4187e40dfccfcfb0618c43e76f43f4f2a304dddca556aaa6f3c182557cb9",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "row22-blockscout-tx",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+    "path": "screening/row22/blockscout-tx.json"
+  },
+  {
+    "id": "row22-blockscout-trace",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0/raw-trace",
+    "path": "screening/row22/blockscout-trace.json"
+  },
+  {
+    "id": "row22-receipt-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row22/receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0"
+      ]
+    }
+  },
+  {
+    "id": "row22-trace-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row22/trace-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "row30-blockscout-tx",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795",
+    "path": "screening/row30/blockscout-tx.json"
+  },
+  {
+    "id": "row30-blockscout-trace",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795/raw-trace",
+    "path": "screening/row30/blockscout-trace.json"
+  },
+  {
+    "id": "row30-receipt-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row30/receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795"
+      ]
+    }
+  },
+  {
+    "id": "row30-trace-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row30/trace-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xbfed8d33561ed5f9cbd0f4e62a5bbd20187a64f3e22180148dcb58ed6ebaa795",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "row35-blockscout-tx",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x352065378c4a41b77e5b6a1e5b5616cd2886c3e1a2c87ed3db8e5ddddc23823d",
+    "path": "screening/row35/blockscout-tx.json"
+  },
+  {
+    "id": "row35-blockscout-trace",
+    "url": "https://eth.blockscout.com/api/v2/transactions/0x352065378c4a41b77e5b6a1e5b5616cd2886c3e1a2c87ed3db8e5ddddc23823d/raw-trace",
+    "path": "screening/row35/blockscout-trace.json"
+  },
+  {
+    "id": "row35-receipt-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row35/receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x352065378c4a41b77e5b6a1e5b5616cd2886c3e1a2c87ed3db8e5ddddc23823d"
+      ]
+    }
+  },
+  {
+    "id": "row35-trace-official",
+    "url": "https://eth.drpc.org",
+    "path": "screening/row35/trace-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x352065378c4a41b77e5b6a1e5b5616cd2886c3e1a2c87ed3db8e5ddddc23823d",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  }
+]

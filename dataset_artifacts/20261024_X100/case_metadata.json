@@ -1,0 +1,60 @@
+{
+  "case_id": "20261024_X100",
+  "sheet_row": 22,
+  "chain_id": 1,
+  "project_cn": "X100 Senate",
+  "project_en": "X100 Senate",
+  "vulnerability_cn": "即时质押排名决定治理席位，多数票可在同一交易立即执行国库兑换",
+  "vulnerability_en": "Live stake rankings grant Senate seats and permit same-transaction treasury execution",
+  "detail_cn": "Senate按当前冻结余额排席位，不使用历史快照或最短任职时间；propose自动投赞成票，第二席vote后execute只要求当前赞成票超过三席一半，没有执行等待期。首笔跟踪显示两个辅助地址各冻结19000.000001 X并登记，提案7以2/3票立即通过；onlySenate仅要求合约自调用，因此execute的address(this).call能够进入DexTreasury.v3Swap并delegatecall固定DexModule，卖出400000 X到攻击者新建薄池，仅换回35.675313 USDT，再由攻击者在深池卖出取得资产。三笔回执与跟踪已归档，核心三份历史运行码与提供方代码相符；未复现。源表金额为攻击者收益口径，CSV损失留空。",
+  "detail_en": "Senate ranks seats by current frozen balances without a historical snapshot or minimum tenure. propose casts the proposer's vote automatically; after a second seat votes, execute needs only a live majority of the three seats and has no execution delay. The first trace shows two helper addresses each freezing 19000.000001 X and registering, then passing proposal 7 with 2/3 votes. onlySenate requires self-calls, so execute's address(this).call legitimately reaches DexTreasury.v3Swap and delegatecalls the fixed DexModule. It sells 400000 treasury X into an attacker-created thin pool for only 35.675313 USDT, after which the attacker sells into the deep pool. Three receipts and traces were archived; historical runtimes of the three core source packages match the provider's code. No replay was run. The sheet reports attacker profit, so the CSV loss field is blank.",
+  "loss_usd": null,
+  "loss_scope": "源表4848017美元对应攻击者所得，不等于主池净流出或国库被处置X的价值；原币收支分列，不混用。",
+  "victims": [
+    "0x79f35a33fe2813414851c4ae8daeacd14d822a46"
+  ],
+  "evidence_gaps": [
+    "Historical runtime comparison is against Sourcify's archived onchain bytecode, not a fresh local recompilation.",
+    "No fork replay or exhaustive pre-attack ranking/state reconstruction.",
+    "Orchestration-contract internals are not described beyond archived call traces; future control and final liquidation of residual X were not rechecked."
+  ],
+  "event_date": "2026-10-24",
+  "original_rows": [
+    22
+  ],
+  "source_sheet_snapshot": "../../docs/cases/batches/20261110_latest5/snapshot.json",
+  "batch_results": "../../docs/cases/batches/20261110_latest5/results.json",
+  "source_qualification_scope": "../../docs/cases/batches/20261110_latest5/scope-confirmation.json",
+  "necessary_code_coverage": "../../docs/cases/batches/20261110_latest5/source-coverage.md",
+  "case_document": "../../docs/cases/20261024_X100.md",
+  "code_root": "../../dataset/20261024_X100",
+  "source_status": "original_verified_source",
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json",
+  "public_original_vulnerable_source": true,
+  "tx_urls": [
+    "https://etherscan.io/tx/0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+    "https://etherscan.io/tx/0x77c46e1aa9037ed4fbc9cc7e00d199dcd752acf576b4b5d3446e785dc45235c0",
+    "https://etherscan.io/tx/0x7c49bf28865defd5c1345f6527210360d635e510fa49279d0b62e6e02cfad99a"
+  ],
+  "vulnerable_contract_urls": [
+    "https://etherscan.io/address/0x79f35a33fe2813414851c4ae8daeacd14d822a46#code"
+  ],
+  "verification_status": {
+    "source": "original source, provider-reported runtime/creation matches; no local recompile",
+    "historical_code": "three core historical runtimes match provider onchain bytecode at attack block",
+    "historical_state": "only specific archived observations; no complete pre-attack state reconstruction",
+    "receipts": "successful archived transaction receipts and decoded asset movements/events",
+    "trace": "three full archived X100 attack traces",
+    "compilation": "not_run",
+    "deployment": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_used; official online output unavailable where essential, those candidates skipped"
+  },
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_file_count": 56
+}

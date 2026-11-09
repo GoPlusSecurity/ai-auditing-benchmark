@@ -1,0 +1,14 @@
+{
+  "id": "dedaub-official-product",
+  "url": "https://dedaub.com/product/decompiler/",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:44:39.452632+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://dedaub.com/product/decompiler/",
+  "content_type": "text/html; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "04803abf6d24a33a62b3bf0dc4610b41139fadcc6a715896d61b965e411b1a84",
+  "bytes": 95035
+}

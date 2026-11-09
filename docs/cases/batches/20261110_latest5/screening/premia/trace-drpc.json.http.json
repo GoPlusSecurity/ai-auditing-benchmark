@@ -1,0 +1,24 @@
+{
+  "id": "premia-trace-drpc",
+  "url": "https://arbitrum.drpc.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:48:41.452671+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arbitrum.drpc.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "ad4bc63cdf2218f5899db92d3e836ed274adcbbc3316f1c2ea468f8b558eb056",
+  "bytes": 94
+}

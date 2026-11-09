@@ -1,0 +1,21 @@
+{
+  "id": "corevault-trace-drpc-retry",
+  "url": "https://bsc.drpc.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "debug_traceTransaction",
+    "params": [
+      "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3",
+      {
+        "tracer": "callTracer"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:57:45.898270+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 429: Too Many Requests",
+  "exception": "HTTPError",
+  "status": 429,
+  "error_body_sha256": "2e181fd7ef06029befd3261469703795f1192e8fedcf64991a998df72b4b7c2b"
+}

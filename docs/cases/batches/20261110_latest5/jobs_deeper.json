@@ -1,0 +1,153 @@
+[
+  {
+    "id": "tendril-trace-publicnode",
+    "url": "https://bsc.publicnode.com",
+    "path": "screening/tendril/trace-publicnode.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corevault-trace-publicnode",
+    "url": "https://bsc.publicnode.com",
+    "path": "screening/corevault/trace-publicnode.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tendril-extra-0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe?fields=all",
+    "path": "screening/tendril/extra-source.json"
+  },
+  {
+    "id": "corevault-extra-0xd9c2e4f19746b4617ad658152adaa306c47ef86b",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xd9c2e4f19746b4617ad658152adaa306c47ef86b?fields=all",
+    "path": "screening/corevault/extra-source.json"
+  },
+  {
+    "id": "tendril-poolcontrol-attack",
+    "url": "https://bsc.publicnode.com",
+    "path": "screening/tendril/poolcontrol-attack.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xb1afdfd850da168f2cc9f742e11cdda5273973d2",
+          "data": "0x04553730"
+        },
+        "0x7d8df33"
+      ]
+    }
+  },
+  {
+    "id": "premia-commit-check",
+    "url": "https://api.github.com/repos/Premian-Labs/v3-contracts/commits/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+    "path": "screening/premia/commit.json"
+  },
+  {
+    "id": "premia-setup-receipt",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/setup-receipt.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5"
+      ]
+    }
+  },
+  {
+    "id": "premia-setup-trace",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/setup-trace.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "premia-attack1-receipt",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/attack1-receipt.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac"
+      ]
+    }
+  },
+  {
+    "id": "premia-attack1-trace",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/attack1-trace.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "premia-attack2-receipt",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/attack2-receipt.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff"
+      ]
+    }
+  },
+  {
+    "id": "premia-attack2-trace",
+    "url": "https://arbitrum-one-rpc.publicnode.com",
+    "path": "screening/premia/attack2-trace.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  }
+]

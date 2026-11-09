@@ -1,0 +1,730 @@
+[
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/AITradeHubContract.sol",
+    "original_path": "contracts/AITradeHubContract.sol",
+    "sha256": "f7048d4f3d4f050d9a95d4789e127f615d48369c35239a6e7fc7cc71a7693cfb",
+    "bytes": 36652,
+    "lines": 915,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/interfaces/IAITradeHubContractV4.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContractV4.sol",
+    "sha256": "870518d0b17891f03c908c2f9193be23c5371f491f53a40eb5611a93e7b46dbb",
+    "bytes": 1191,
+    "lines": 37,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/interfaces/IAITradeHubContractV5.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContractV5.sol",
+    "sha256": "3eaecd0f1aad80b5a2bc33d0b0b91cbdd9d0ce8bdd176e1f69a5778db3b04c38",
+    "bytes": 1185,
+    "lines": 37,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/math/Math.sol",
+    "original_path": "contracts/math/Math.sol",
+    "sha256": "9e9c263e60d0e057191464a33758cdaf053f8e1095d1096a8ccd9aeec97eab3a",
+    "bytes": 845,
+    "lines": 32,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v6/hardhat/console.sol",
+    "original_path": "hardhat/console.sol",
+    "sha256": "5a6db75ebe2603ab1ce17c40f48447f3040268675f027a77fe5e9b236f4e31dd",
+    "bytes": 69001,
+    "lines": 1552,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/AITradeHubContract.sol",
+    "original_path": "contracts/AITradeHubContract.sol",
+    "sha256": "8b9589e4d2a2a02a2ee40f0c4b312040caf729a0eeb3916b05777dab95af7e33",
+    "bytes": 37287,
+    "lines": 939,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/interfaces/IAITradeHubContractV6.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContractV6.sol",
+    "sha256": "100a77e5573ec4e244b74e7bf040a5f3c52962d85be0c0bdd872dd974da5af3f",
+    "bytes": 775,
+    "lines": 23,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/math/Math.sol",
+    "original_path": "contracts/math/Math.sol",
+    "sha256": "9e9c263e60d0e057191464a33758cdaf053f8e1095d1096a8ccd9aeec97eab3a",
+    "bytes": 845,
+    "lines": 32,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/utils/AITradeHubDistributionMultisig.sol",
+    "original_path": "contracts/utils/AITradeHubDistributionMultisig.sol",
+    "sha256": "e31868d92791a5e1be317c569555266935ec1c0ff27efbcc80112b2431826135",
+    "bytes": 7807,
+    "lines": 210,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v7/contracts/utils/ReentrancyGuard.sol",
+    "original_path": "contracts/utils/ReentrancyGuard.sol",
+    "sha256": "450c0e67e8f2dd9715a14702b3e2589e41c1ec736a48a1552f858c99515a75f4",
+    "bytes": 1145,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/AITradeHubContract.sol",
+    "original_path": "contracts/AITradeHubContract.sol",
+    "sha256": "baac99abc398af989260011b403aac1faaac363ada3f11706960d137475076cf",
+    "bytes": 36807,
+    "lines": 926,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/interfaces/IAITradeHubContractV7.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContractV7.sol",
+    "sha256": "c6337d2bd354d1906a1047bbd0a8076bdcf37c5faf1cc4936d4f5c34ce11c26b",
+    "bytes": 775,
+    "lines": 23,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/interfaces/IAITradeHubFundModuleContract.sol",
+    "original_path": "contracts/interfaces/IAITradeHubFundModuleContract.sol",
+    "sha256": "317cabd35b3cc6f128c2e15ddfcf33a205de561aa0de60d221041145ec1d8c88",
+    "bytes": 304,
+    "lines": 8,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/math/Math.sol",
+    "original_path": "contracts/math/Math.sol",
+    "sha256": "9e9c263e60d0e057191464a33758cdaf053f8e1095d1096a8ccd9aeec97eab3a",
+    "bytes": 845,
+    "lines": 32,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/utils/AITradeHubDistributionMultisig.sol",
+    "original_path": "contracts/utils/AITradeHubDistributionMultisig.sol",
+    "sha256": "e31868d92791a5e1be317c569555266935ec1c0ff27efbcc80112b2431826135",
+    "bytes": 7807,
+    "lines": 210,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v8/contracts/utils/ReentrancyGuard.sol",
+    "original_path": "contracts/utils/ReentrancyGuard.sol",
+    "sha256": "450c0e67e8f2dd9715a14702b3e2589e41c1ec736a48a1552f858c99515a75f4",
+    "bytes": 1145,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/interfaces/IERC5267.sol",
+    "original_path": "@openzeppelin/contracts/interfaces/IERC5267.sol",
+    "sha256": "f89772d2d4fafcbef8b73bb10ee9a3373edec2eedb2f1b302320915b351dc3d1",
+    "bytes": 740,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/Panic.sol",
+    "original_path": "@openzeppelin/contracts/utils/Panic.sol",
+    "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+    "bytes": 1973,
+    "lines": 57,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/ShortStrings.sol",
+    "original_path": "@openzeppelin/contracts/utils/ShortStrings.sol",
+    "sha256": "542d5dfe5e4375d83f2e3b5246b2d0d7507406a4b582844dbc73bd31ed2faa83",
+    "bytes": 4302,
+    "lines": 122,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/StorageSlot.sol",
+    "original_path": "@openzeppelin/contracts/utils/StorageSlot.sol",
+    "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+    "bytes": 4182,
+    "lines": 143,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/Strings.sol",
+    "original_path": "@openzeppelin/contracts/utils/Strings.sol",
+    "sha256": "2db7d21151644c57f75ed3ab55e87f3cf7fbf587a65345650fd740e2cfd50be3",
+    "bytes": 19280,
+    "lines": 490,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+    "original_path": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+    "sha256": "0964ddd02f4a7a8cf9ba130e3aeead588ca3d425d5bc13cc4221358c69108ed0",
+    "bytes": 7815,
+    "lines": 180,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+    "original_path": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+    "sha256": "c20e0789a53610b2551058e0bd556dcd2caa20a7457348c3c73df037fba88861",
+    "bytes": 6695,
+    "lines": 160,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol",
+    "original_path": "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol",
+    "sha256": "936a89f512d5da84b0896b66d2398f2bea9eefdf2afa788af5265fcd74302693",
+    "bytes": 4251,
+    "lines": 99,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/math/Math.sol",
+    "original_path": "@openzeppelin/contracts/utils/math/Math.sol",
+    "sha256": "92fee281fd46a1b058b190cf21d6b1a528f0433a907850ae1c9bcf36c5c0cd98",
+    "bytes": 32145,
+    "lines": 749,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/math/SafeCast.sol",
+    "original_path": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+    "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+    "bytes": 34943,
+    "lines": 1162,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/@openzeppelin/contracts/utils/math/SignedMath.sol",
+    "original_path": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+    "sha256": "1ed50b1056af886752f0fb48a0165d381e69bb4a4b18b893b066dc144a7e08d7",
+    "bytes": 2613,
+    "lines": 68,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContract.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContract.sol",
+    "sha256": "50d09e931612d2796c62f961998d0814478a9588299822247ba2738c46fd4d1f",
+    "bytes": 36218,
+    "lines": 912,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractCommon.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractCommon.sol",
+    "sha256": "8f6b5101fbfe88a6ab974331226df0f22dab2639fc0c482f5d6492b4ee60a9fd",
+    "bytes": 3081,
+    "lines": 69,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractDelayQueueBase.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractDelayQueueBase.sol",
+    "sha256": "1ff286c1e0954301495656893d7a783cbff39a538e0d3cdac9eadc2d681eb227",
+    "bytes": 5959,
+    "lines": 178,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractEnhancedSecurity.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractEnhancedSecurity.sol",
+    "sha256": "a50b4a8c81534be8a1e2f97790b8f09ef8f598f2ea82d4a94ce0c5b9158e3176",
+    "bytes": 3045,
+    "lines": 77,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractMigrateWallet.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractMigrateWallet.sol",
+    "sha256": "a6772528ff5ce51f56f81f67a88e7967ec282357aa4a694bc59749df4d7f72bd",
+    "bytes": 3317,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractTransferFund.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractTransferFund.sol",
+    "sha256": "47fdf18cc5315db3fc21948140708ea461fae9d6257f7f6989c965539771ab54",
+    "bytes": 3007,
+    "lines": 74,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubContractWithdrawFund.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubContractWithdrawFund.sol",
+    "sha256": "b0ac4d7e442250a3b7b3deb4e93402e7246679bfc7b969a6a716de986e5a117e",
+    "bytes": 3310,
+    "lines": 87,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/AITradeHubDistributionMultisigV2.sol",
+    "original_path": "contracts/AITradeHub/AITradeHubDistributionMultisigV2.sol",
+    "sha256": "3e965dc471152cc336f7593cfb8a6df96e0e20f3862cad03b15a5d06dda4fb8b",
+    "bytes": 6877,
+    "lines": 184,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/interfaces/IAITradeHubContractV8.sol",
+    "original_path": "contracts/AITradeHub/interfaces/IAITradeHubContractV8.sol",
+    "sha256": "08661a9e48f1047c5d8fca13bbe4d26d28c87440b2aff552cca473bc58104b7a",
+    "bytes": 775,
+    "lines": 23,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/AITradeHub/interfaces/IAITradeHubFundModuleContractV2.sol",
+    "original_path": "contracts/AITradeHub/interfaces/IAITradeHubFundModuleContractV2.sol",
+    "sha256": "0961daa880cf74bcc794bc4d115f0941330f14651907df48c09c856f6c7dea7d",
+    "bytes": 309,
+    "lines": 8,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/v9/contracts/utils/ReentrancyGuard.sol",
+    "original_path": "contracts/utils/ReentrancyGuard.sol",
+    "sha256": "450c0e67e8f2dd9715a14702b3e2589e41c1ec736a48a1552f858c99515a75f4",
+    "bytes": 1145,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/@openzeppelin/contracts/access/AccessControl.sol",
+    "original_path": "@openzeppelin/contracts/access/AccessControl.sol",
+    "sha256": "93c8ebfe7b36ef4d180f1660a5a741125691957726209720af476fdd5c7bac43",
+    "bytes": 7028,
+    "lines": 207,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/@openzeppelin/contracts/access/IAccessControl.sol",
+    "original_path": "@openzeppelin/contracts/access/IAccessControl.sol",
+    "sha256": "140304b7e99d517c57a13f391dfd3b550ca633a507f7b2af130f391b6cd89cc5",
+    "bytes": 3343,
+    "lines": 98,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/@openzeppelin/contracts/utils/Context.sol",
+    "original_path": "@openzeppelin/contracts/utils/Context.sol",
+    "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "bytes": 963,
+    "lines": 28,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+    "original_path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+    "sha256": "61a2b12c96857aaa35f48aeda67a4281637a42494c0b3795be0ae976aa7b3793",
+    "bytes": 879,
+    "lines": 25,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+    "original_path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+    "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+    "bytes": 871,
+    "lines": 25,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/StakeDistributionModuleContract.sol",
+    "original_path": "contracts/StakeDistributionModuleContract.sol",
+    "sha256": "51381f8c79fa968748d2ee6fcddf89d6f6cb26b7b588af7f0f1f6269f1385e76",
+    "bytes": 4768,
+    "lines": 105,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/VaultContract.sol",
+    "original_path": "contracts/VaultContract.sol",
+    "sha256": "a8a65af33f8d60882778c4239d03093000c43a6153bee886d9ae6b454f75bce1",
+    "bytes": 18106,
+    "lines": 424,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/VaultMultisignTimeLockContract.sol",
+    "original_path": "contracts/VaultMultisignTimeLockContract.sol",
+    "sha256": "ebf3ef4ca102384816f07e6e3a55cd4ba1f698c8251eac178308b273c1d2d453",
+    "bytes": 9272,
+    "lines": 265,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/ChainLinkAggregatorV3Interface.sol",
+    "original_path": "contracts/interfaces/ChainLinkAggregatorV3Interface.sol",
+    "sha256": "c115b8871a27b452172c86dbc6ba9483cce61248ff5b8269b63334e8548aba44",
+    "bytes": 661,
+    "lines": 20,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/IAITradeHubContract.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContract.sol",
+    "sha256": "022e031774d0d89c313194844faa84417a72cffc364e69bcd29442438771c3f6",
+    "bytes": 1050,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/IInnovatorHubContract.sol",
+    "original_path": "contracts/interfaces/IInnovatorHubContract.sol",
+    "sha256": "223f49a2c0fa11bc2c9ee86f6a40f8a53e4d9469f20337859a4ebdcb8102f3c0",
+    "bytes": 178,
+    "lines": 7,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/interfaces/IVaultContract.sol",
+    "original_path": "contracts/interfaces/IVaultContract.sol",
+    "sha256": "8bdfbfd5d874abf10c995a0682a88cd738e5c80331b9099419e8599686573106",
+    "bytes": 2023,
+    "lines": 40,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/math/Math.sol",
+    "original_path": "contracts/math/Math.sol",
+    "sha256": "9e9c263e60d0e057191464a33758cdaf053f8e1095d1096a8ccd9aeec97eab3a",
+    "bytes": 845,
+    "lines": 32,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/contracts/utils/ReentrancyGuard.sol",
+    "original_path": "contracts/utils/ReentrancyGuard.sol",
+    "sha256": "450c0e67e8f2dd9715a14702b3e2589e41c1ec736a48a1552f858c99515a75f4",
+    "bytes": 1145,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/vault/hardhat/console.sol",
+    "original_path": "hardhat/console.sol",
+    "sha256": "5a6db75ebe2603ab1ce17c40f48447f3040268675f027a77fe5e9b236f4e31dd",
+    "bytes": 69001,
+    "lines": 1552,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/SwapContract.sol",
+    "original_path": "contracts/SwapContract.sol",
+    "sha256": "5de752c904345ff52c51d2cb33e5845f00f1b3aa48b9f2693b9f705b0aef0c78",
+    "bytes": 12372,
+    "lines": 306,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/interfaces/ChainLinkAggregatorV3Interface.sol",
+    "original_path": "contracts/interfaces/ChainLinkAggregatorV3Interface.sol",
+    "sha256": "c115b8871a27b452172c86dbc6ba9483cce61248ff5b8269b63334e8548aba44",
+    "bytes": 661,
+    "lines": 20,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/interfaces/IAITradeHubContract.sol",
+    "original_path": "contracts/interfaces/IAITradeHubContract.sol",
+    "sha256": "022e031774d0d89c313194844faa84417a72cffc364e69bcd29442438771c3f6",
+    "bytes": 1050,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/interfaces/IVaultContract.sol",
+    "original_path": "contracts/interfaces/IVaultContract.sol",
+    "sha256": "8bdfbfd5d874abf10c995a0682a88cd738e5c80331b9099419e8599686573106",
+    "bytes": 2023,
+    "lines": 40,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/swap/contracts/utils/ReentrancyGuard.sol",
+    "original_path": "contracts/utils/ReentrancyGuard.sol",
+    "sha256": "450c0e67e8f2dd9715a14702b3e2589e41c1ec736a48a1552f858c99515a75f4",
+    "bytes": 1145,
+    "lines": 35,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/Token.sol",
+    "original_path": "contracts/Token.sol",
+    "sha256": "5bb347559199cff9ab36c45cf22c0c0728ea242d7fa139293243b2bb6b963b33",
+    "bytes": 500,
+    "lines": 22,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/base/ERC20Token.sol",
+    "original_path": "contracts/base/ERC20Token.sol",
+    "sha256": "6fad1d9f96f369bffd1d22b98c67c6b65bc4cc6f97a3737a69b13614892fc61b",
+    "bytes": 6711,
+    "lines": 207,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/interfaces/IERC20.sol",
+    "original_path": "contracts/interfaces/IERC20.sol",
+    "sha256": "15701cb811e971f10fce3a57d9e43068a6ab328bca416750829047e209a37ad4",
+    "bytes": 2858,
+    "lines": 80,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/interfaces/IERC20Errors.sol",
+    "original_path": "contracts/interfaces/IERC20Errors.sol",
+    "sha256": "f7722f598ffc068d4240221978661122127d7b02ce1860a2d6bd2a5dcbd40114",
+    "bytes": 2024,
+    "lines": 48,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/interfaces/ISwapContract.sol",
+    "original_path": "contracts/interfaces/ISwapContract.sol",
+    "sha256": "d31797513c4d553704357c7318912409833330ad30a56c5075c22b10148e4f78",
+    "bytes": 601,
+    "lines": 11,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/math/Math.sol",
+    "original_path": "contracts/math/Math.sol",
+    "sha256": "9e9c263e60d0e057191464a33758cdaf053f8e1095d1096a8ccd9aeec97eab3a",
+    "bytes": 845,
+    "lines": 32,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/math/SafeERC20.sol",
+    "original_path": "contracts/math/SafeERC20.sol",
+    "sha256": "ed77b9f34d1bebd5fc063c616daf75efefa4e7a8e0758f99715267b13d57a7e1",
+    "bytes": 1756,
+    "lines": 73,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/math/SafeMath.sol",
+    "original_path": "contracts/math/SafeMath.sol",
+    "sha256": "9f0d5943bd8b882faae6da8129976348f1145d7b5ed4ddae860699ad5567f64a",
+    "bytes": 1743,
+    "lines": 65,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/contracts/utils/Context.sol",
+    "original_path": "contracts/utils/Context.sol",
+    "sha256": "f20a3f210f8db98747b283e1c6f6b14228ad4d0baca42904dbd00b8b09d4a58a",
+    "bytes": 867,
+    "lines": 24,
+    "kind": "public_original_source"
+  },
+  {
+    "path": "dataset/20261019_AlpsCon/token/hardhat/console.sol",
+    "original_path": "hardhat/console.sol",
+    "sha256": "5a6db75ebe2603ab1ce17c40f48447f3040268675f027a77fe5e9b236f4e31dd",
+    "bytes": 69001,
+    "lines": 1552,
+    "kind": "public_original_source"
+  }
+]

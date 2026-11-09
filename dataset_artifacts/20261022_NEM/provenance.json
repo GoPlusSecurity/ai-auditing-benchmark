@@ -1,0 +1,190 @@
+{
+  "case_id": "20261022_NEM",
+  "snapshot_sha256": "791709330cd5aff1de37b8907ec8739052bc7e80ba3fb4d5670e5bd5b5dfe65c",
+  "source_packages": [
+    {
+      "label": "token",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x9cf0e3ad4efa7ab602d7b5a38c55795cfa777777?fields=all",
+      "retrieved_at": "2026-11-10T01:41:18.668850+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/token/source-response.json",
+      "response_sha256": "c29e2815e865f21576c09d33753576daa598abe452f9f3ac664093b209ec1818",
+      "chain_id": "56",
+      "address": "0x9Cf0E3aD4efa7ab602D7b5a38c55795CFA777777",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.20+commit.a1b79de6",
+        "compilerSettings": {
+          "viaIR": true,
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          }
+        },
+        "name": "NemTokenV2",
+        "fullyQualifiedName": "NemTokenV2.sol:NemTokenV2"
+      },
+      "provider_runtime_match": "exact_match",
+      "provider_creation_match": "exact_match",
+      "provider_verified_at": "2026-10-29T23:30:40Z",
+      "provider_deployment": {
+        "transactionHash": "0x01bf92ffda24d294f89714562633c0c19d7e7ccf14355098ac1e65f69efe8d76",
+        "blockNumber": "119181231",
+        "transactionIndex": "35",
+        "deployer": "0x027F9665Ed8893672F80B26f625A2A5140B83571"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261022_NEM/token/NemTokenV2.sol",
+          "original_path": "NemTokenV2.sol",
+          "sha256": "645dc6b29180d4883c5c3a45ef375a8f26b1918db8f10e51ece9cd21f1221902",
+          "bytes": 45764,
+          "lines": 1324,
+          "kind": "public_original_source"
+        }
+      ]
+    },
+    {
+      "label": "pancake-pair",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae?fields=all",
+      "retrieved_at": "2026-11-10T01:30:45.199968+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/pancake-pair/source-response.json",
+      "response_sha256": "8e72e91e5fc7330ebe84dd4b4c6793d5c7aed4766ff0c1f3fdae26f673d70a17",
+      "chain_id": "56",
+      "address": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.5.16+commit.9c3226ce",
+        "compilerSettings": {
+          "optimizer": {
+            "runs": 200,
+            "enabled": false
+          }
+        },
+        "name": "PancakePair",
+        "fullyQualifiedName": "PancakePair.sol:PancakePair"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2026-05-13T03:37:43Z",
+      "provider_deployment": {
+        "transactionHash": "0x7669950316d10a8b2549ee0e6d3a16955511ef54dfa53e3db76c895c5ebca324",
+        "blockNumber": "6810780",
+        "transactionIndex": "5",
+        "deployer": "0x36469e4E6ec2Fb3e06DB1D747F3fC1f1fC762F02"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261022_NEM/pancake-pair/PancakePair.sol",
+          "original_path": "PancakePair.sol",
+          "sha256": "ee86df4a4aa3e802ed3722685b124c51a4e81dc7456591ada5eb2b467d290532",
+          "bytes": 20828,
+          "lines": 498,
+          "kind": "public_original_source"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/receipt.json",
+      "sha256": "955ef7c0e8a9a1591b3485ea07c2f3c55b458589129572c344ef6be2c132397c",
+      "batch_original": "screening/row26/receipt.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://bsc-dataseed.bnbchain.org",
+      "retrieved_at": "2026-11-10T01:38:59.398588+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xfb093c96c0094cbcca10801f97ed2e5ed3d96550ce64b544df5a349545723f91"
+        ]
+      }
+    },
+    {
+      "path": "evidence/transaction.json",
+      "sha256": "77d5db0d39e18e7dcc0fabac68fe5e1e603f9bd73a3c406ef56f443f5b1602cf",
+      "batch_original": "screening/row26/transaction.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://bsc-dataseed.bnbchain.org",
+      "retrieved_at": "2026-11-10T01:38:59.444853+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0xfb093c96c0094cbcca10801f97ed2e5ed3d96550ce64b544df5a349545723f91"
+        ]
+      }
+    },
+    {
+      "path": "evidence/block.json",
+      "sha256": "cfe4434ef28fa321713ee3f79994d146b4258bf982fee6da434cdaf11b6a5109",
+      "batch_original": "screening/row26/block.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://bsc-dataseed.bnbchain.org",
+      "retrieved_at": "2026-11-10T02:01:54.993400+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getBlockByNumber",
+        "params": [
+          "0x7ae5763",
+          false
+        ]
+      }
+    },
+    {
+      "path": "evidence/nem-decoded.json",
+      "sha256": "63b13cb81e3067974f511a743a2222a3489a9a77336c9e3c3053b08900035cf1",
+      "batch_original": "screening/nem-decoded.json",
+      "kind": "archived_public_response_or_offline_derivative"
+    },
+    {
+      "path": "evidence/current-pair-code.json",
+      "sha256": "aebfc51c036283bdbf3d3daa7e8334fcbd09906ab6083d62bf0bb1d2877c4930",
+      "batch_original": "screening/row26/current-pair-code.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://bsc-dataseed.bnbchain.org",
+      "retrieved_at": "2026-11-10T02:05:50.349545+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getCode",
+        "params": [
+          "0x840e19dcca541ee0b55a3c67e900a39d523b12b8",
+          "latest"
+        ]
+      }
+    },
+    {
+      "path": "evidence/primary-2113189949147435321.json",
+      "sha256": "29e8b8d114d783af8cef932b965d74d36c265c88d081d1a9071f990fd574c92e",
+      "batch_original": "screening/row26/primary-2113189949147435321.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=2113189949147435321&lang=en&token=0",
+      "retrieved_at": "2026-11-10T01:53:35.404583+08:00",
+      "request_body": null
+    }
+  ],
+  "source_vs_deployment_vs_state": "Acquisition, provider verification, historical binding and historical state are separate claims.",
+  "no_decompiler_output": true
+}

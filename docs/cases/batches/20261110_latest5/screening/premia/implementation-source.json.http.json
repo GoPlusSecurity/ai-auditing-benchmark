@@ -1,0 +1,14 @@
+{
+  "id": "premia-implementation-source",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0xb539ff8563974d407fd6d717ff2f930e99093d21?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:41:18.667850+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0xb539ff8563974d407fd6d717ff2f930e99093d21?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"183885-2A7+puFFWoOBqqTPgDLcQ1VbaG0\"",
+  "last_modified": null,
+  "sha256": "ba56e1b852ce8fb4218d3ec912fb198af72ad33a0615fc24fbbc56a1a90ebf7f",
+  "bytes": 1587333
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "tendril-official-online-decompiler",
+    "url": "https://bscscan.com/bytecode-decompiler?a=0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+    "path": "screening/tendril/official-online-decompiler.html"
+  },
+  {
+    "id": "tendril-explorer-source-api",
+    "url": "https://api.etherscan.io/v2/api?chainid=56&module=contract&action=getsourcecode&address=0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+    "path": "screening/tendril/explorer-source-api.json"
+  },
+  {
+    "id": "b14g-official-online-decompiler",
+    "url": "https://bscscan.com/bytecode-decompiler?a=0x9b301e10d9a2d00e4e4affd93e8175be44e2e23c",
+    "path": "screening/b14g/official-online-decompiler.html"
+  },
+  {
+    "id": "b14g-explorer-source-api",
+    "url": "https://api.etherscan.io/v2/api?chainid=56&module=contract&action=getsourcecode&address=0x9b301e10d9a2d00e4e4affd93e8175be44e2e23c",
+    "path": "screening/b14g/explorer-source-api.json"
+  },
+  {
+    "id": "corevault-official-online-decompiler",
+    "url": "https://bscscan.com/bytecode-decompiler?a=0xd9c2e4f19746b4617ad658152adaa306c47ef86b",
+    "path": "screening/corevault/official-online-decompiler.html"
+  },
+  {
+    "id": "corevault-explorer-source-api",
+    "url": "https://api.etherscan.io/v2/api?chainid=56&module=contract&action=getsourcecode&address=0xd9c2e4f19746b4617ad658152adaa306c47ef86b",
+    "path": "screening/corevault/explorer-source-api.json"
+  },
+  {
+    "id": "premia-receipt-official",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/receipt-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac"
+      ]
+    }
+  },
+  {
+    "id": "premia-trace-official",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/trace-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "premia-implementation-official",
+    "url": "https://arb1.arbitrum.io/rpc",
+    "path": "screening/premia/implementation-official.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x45dF5EA836A15B561937Ae8373ab9eE984aea531",
+          "data": "0xaaf10f42"
+        },
+        "latest"
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "corevault-block",
+  "url": "https://bsc-dataseed.bnbchain.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getBlockByNumber",
+    "params": [
+      "0x7d6a662",
+      false
+    ]
+  },
+  "retrieved_at": "2026-11-10T02:01:54.640783+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://bsc-dataseed.bnbchain.org",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "5285be28cbf5381ea3aa7b92a5622e8cbac9ce9320fd6ea9263baf539c459845",
+  "bytes": 6569
+}

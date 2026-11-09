@@ -1,0 +1,14 @@
+{
+  "id": "premia-facet-source-withdraw",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x386dd942d3b058543f0dfa19034a0284a49ba5fd?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:58:22.305601+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://sourcify.dev/server/v2/contract/42161/0x386dd942d3b058543f0dfa19034a0284a49ba5fd?fields=all",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"15a52c-g8RrmH85HaJpBrccM0hw9HukYVs\"",
+  "last_modified": null,
+  "sha256": "5e0536b2a07191166709f425ac62a2ce614d71a8a1eca8baf53c38bffd0150c2",
+  "bytes": 1418540
+}

@@ -1,0 +1,21 @@
+{
+  "id": "row18-transaction",
+  "url": "https://api.avax.network/ext/bc/C/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionByHash",
+    "params": [
+      "0xf1f87d370290afe269ae8eb30fe8e5e4694ad153914a2de6d980641f4a331289"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:38:58.516173+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.avax.network/ext/bc/C/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "f9b3b13e44c1a3611ee33f66b117b11af0b13b425246c2737070aa24537ed28c",
+  "bytes": 13235
+}

@@ -1,0 +1,14 @@
+{
+  "id": "wax-official-tree",
+  "url": "https://api.github.com/repos/worldwide-asset-exchange/defi/git/trees/main?recursive=1",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:49:54.834187+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.github.com/repos/worldwide-asset-exchange/defi/git/trees/main?recursive=1",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"cb9644d88801934354610df1c5492115b36230d344022cd3db5542e888d44a48\"",
+  "last_modified": "Sun, 04 May 2025 10:41:16 GMT",
+  "sha256": "cb9644d88801934354610df1c5492115b36230d344022cd3db5542e888d44a48",
+  "bytes": 426
+}

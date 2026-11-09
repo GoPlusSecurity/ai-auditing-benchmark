@@ -1,0 +1,14 @@
+{
+  "id": "tendril-exvul-alert",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2118221337617383455&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:11.864057+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2118221337617383455&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"16e5-v1qaPL8ilEIZ1dXQhNXbpFhqSZA\"",
+  "last_modified": null,
+  "sha256": "28e3f920203b55be24499e4ef1e5d11e18f751cd80e811d8c9b2c5520da490ff",
+  "bytes": 5861
+}

@@ -1,0 +1,14 @@
+{
+  "id": "wax-primary-slowmist",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2113290086808990182&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:48:47.537636+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2113290086808990182&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"47c-AtGTZTp0C0Y9RMU4VzAeMa4Gaf0\"",
+  "last_modified": null,
+  "sha256": "d5408a6000509fe75de4de35d809750b73988682c0d9e16a487e694513d35390",
+  "bytes": 1148
+}

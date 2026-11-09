@@ -1,0 +1,14 @@
+{
+  "id": "row22-blockscout-tx",
+  "url": "https://eth.blockscout.com/api/v2/transactions/0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:47:37.576595+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://eth.blockscout.com/api/v2/transactions/0x38c60844f1923d53fdce7d99e9bc2a2d8c73a08e793341dfbb479f8cc74d81d0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "c00843b0501d2a0a18b79a9249154b96e42223abe342423dbbfe1ab5e694221f",
+  "bytes": 36638
+}

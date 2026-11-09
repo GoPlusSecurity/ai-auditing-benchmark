@@ -1,0 +1,14 @@
+{
+  "id": "wax-waxio-repos",
+  "url": "https://api.github.com/orgs/waxio/repos?per_page=100",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:48:46.924829+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.github.com/orgs/waxio/repos?per_page=100",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"bd6691c47a5b9c053fc39326b7a427ce964cb1396a3803892f7986ccd150b3b7\"",
+  "last_modified": null,
+  "sha256": "bd6691c47a5b9c053fc39326b7a427ce964cb1396a3803892f7986ccd150b3b7",
+  "bytes": 15900
+}

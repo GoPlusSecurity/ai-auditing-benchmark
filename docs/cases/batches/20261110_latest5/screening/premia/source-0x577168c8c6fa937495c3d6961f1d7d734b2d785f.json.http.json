@@ -1,0 +1,11 @@
+{
+  "id": "premia-source-0x577168c8c6fa937495c3d6961f1d7d734b2d785f",
+  "url": "https://sourcify.dev/server/v2/contract/42161/0x577168c8c6fa937495c3d6961f1d7d734b2d785f?fields=all",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:49:54.837867+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 404: Not Found",
+  "exception": "HTTPError",
+  "status": 404,
+  "error_body_sha256": "eb24ba51b52ad5d2f5ef6c253493c73f31779bdab52ad863e8ae32f0c8202a87"
+}

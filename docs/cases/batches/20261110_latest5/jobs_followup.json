@@ -1,0 +1,130 @@
+[
+  {
+    "id": "tendril-transaction",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/tendril/transaction.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059"
+      ]
+    }
+  },
+  {
+    "id": "tendril-trace",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/tendril/trace.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corevault-transaction",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/corevault/transaction.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getTransactionByHash",
+      "params": [
+        "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3"
+      ]
+    }
+  },
+  {
+    "id": "corevault-trace",
+    "url": "https://bsc-dataseed.bnbchain.org",
+    "path": "screening/corevault/trace.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "debug_traceTransaction",
+      "params": [
+        "0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3",
+        {
+          "tracer": "callTracer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corevault-source-0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae?fields=all",
+    "path": "screening/corevault/sources/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae.json"
+  },
+  {
+    "id": "corevault-source-0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674?fields=all",
+    "path": "screening/corevault/sources/0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674.json"
+  },
+  {
+    "id": "corevault-source-0x5986772dc1970d1d9e030867f1156e36f9b07ce4",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x5986772dc1970d1d9e030867f1156e36f9b07ce4?fields=all",
+    "path": "screening/corevault/sources/0x5986772dc1970d1d9e030867f1156e36f9b07ce4.json"
+  },
+  {
+    "id": "corevault-source-0x81215684ef11f6e8050bc6b34448e71de264dc74",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x81215684ef11f6e8050bc6b34448e71de264dc74?fields=all",
+    "path": "screening/corevault/sources/0x81215684ef11f6e8050bc6b34448e71de264dc74.json"
+  },
+  {
+    "id": "corevault-source-0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c",
+    "url": "https://sourcify.dev/server/v2/contract/56/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c?fields=all",
+    "path": "screening/corevault/sources/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c.json"
+  },
+  {
+    "id": "corevault-source-0xc9882def23bc42d53895b8361d0b1edc7570bc6a",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xc9882def23bc42d53895b8361d0b1edc7570bc6a?fields=all",
+    "path": "screening/corevault/sources/0xc9882def23bc42d53895b8361d0b1edc7570bc6a.json"
+  },
+  {
+    "id": "corevault-source-0xf40e0d525003fb6c6a9a7d79734a87a465053df1",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xf40e0d525003fb6c6a9a7d79734a87a465053df1?fields=all",
+    "path": "screening/corevault/sources/0xf40e0d525003fb6c6a9a7d79734a87a465053df1.json"
+  },
+  {
+    "id": "corevault-source-0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5",
+    "url": "https://sourcify.dev/server/v2/contract/56/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5?fields=all",
+    "path": "screening/corevault/sources/0xfc1b8abb7414b68daf2b64604f0ac3b8ef159ef5.json"
+  },
+  {
+    "id": "b14g-implementation",
+    "url": "https://sourcify.dev/server/v2/contract/1116/0x9b301e10d9a2d00E4E4aFfd93E8175bE44E2E23c?fields=all",
+    "path": "screening/b14g/implementation-source.json"
+  },
+  {
+    "id": "b14g-historical-slot",
+    "url": "https://rpc.coredao.org",
+    "path": "screening/b14g/historical-slot.json",
+    "body": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x04ea61c431f7934d51fed2acb2c5f942213f8967",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x263004c"
+      ]
+    }
+  },
+  {
+    "id": "premia-official-snapshot",
+    "url": "https://api.github.com/repos/Premian-Labs/v3-contracts/tarball/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+    "path": "screening/premia/official-fe3b821.tar.gz"
+  },
+  {
+    "id": "premia-vault-source",
+    "url": "https://sourcify.dev/server/v2/contract/42161/0x45dF5EA836A15B561937Ae8373ab9eE984aea531?fields=all",
+    "path": "screening/premia/vault-source.json"
+  }
+]

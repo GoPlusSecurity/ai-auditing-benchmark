@@ -1,0 +1,22 @@
+{
+  "id": "premia-correct-history-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+  "url": "https://arb1.arbitrum.io/rpc",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getCode",
+    "params": [
+      "0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc",
+      "0x1f011c4f"
+    ]
+  },
+  "retrieved_at": "2026-11-10T02:05:50.349545+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://arb1.arbitrum.io/rpc",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "5619df5ed03b9a022b192d155ca22395e4a3c13f5799c2d4d7f26483f909138b",
+  "bytes": 160
+}

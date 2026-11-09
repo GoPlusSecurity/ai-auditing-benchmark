@@ -1,0 +1,14 @@
+{
+  "id": "premia-official-snapshot",
+  "url": "https://api.github.com/repos/Premian-Labs/v3-contracts/tarball/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:31:40.447811+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://codeload.github.com/Premian-Labs/v3-contracts/legacy.tar.gz/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+  "content_type": "application/x-gzip",
+  "etag": "\"3d19ec742f101c068136da907a164add4b03263f12f0c9b210b71f69d8a81b37\"",
+  "last_modified": null,
+  "sha256": "14e4833173041ce7aba20e1197efdd805c681f38d609c660e123935eb6a7562f",
+  "bytes": 1582489
+}

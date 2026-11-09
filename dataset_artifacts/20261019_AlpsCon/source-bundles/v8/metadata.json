@@ -1,0 +1,1545 @@
+{
+  "compiler": {
+    "version": "0.8.20+commit.a1b79de6"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "payableERC20",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "paymentERC20",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "fundContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "swapContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "aiTradeHubContractV7",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawal_fee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "contribution_fee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "monthly_fee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "payment_token_exchange_rate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address[]",
+                "name": "signers",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "requireConfirmations",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint64",
+                "name": "delay",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "ttl",
+                "type": "uint64"
+              }
+            ],
+            "internalType": "struct AiTradeHubContract.InitConfig",
+            "name": "cfg",
+            "type": "tuple"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubAddressInvalidError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubAlreadyMigratedError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubAmountInvalidError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubApprovalInvalidAddressError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubDataInvalidError",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allowance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "needed",
+            "type": "uint256"
+          }
+        ],
+        "name": "AITradeHubInsufficientAllowanceError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubInsufficientFundsError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubNoProfitToClaimError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubNotVerifyError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubPermissionDeniedError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubPoolNotReadyError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubTokenAddressInvalidError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubTransferFundAccountNotActiveError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubTransferLockedError",
+        "type": "error"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "nextTime",
+            "type": "uint256"
+          }
+        ],
+        "name": "AITradeHubWalletMigrateExceedNumberOfTimesError",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "AITradeHubWalletMigrateNotEmptyError",
+        "type": "error"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "contributor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "paymentToken",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "withdrawalFee",
+            "type": "uint256"
+          }
+        ],
+        "name": "ClaimServiceResults",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "contributor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "enum AiTradeHubContract.ContributionType",
+            "name": "contributionType",
+            "type": "uint8"
+          }
+        ],
+        "name": "Contribute",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amountLocked",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amountPending",
+            "type": "uint256"
+          }
+        ],
+        "name": "Indexed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "oldWallet",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newWallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "earnings",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "pendingAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "paidAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          }
+        ],
+        "name": "MigrateWallet",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "paidAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "Migrated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "contributor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "debtAdded",
+            "type": "uint256"
+          }
+        ],
+        "name": "MonthlyFeeCharged",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [],
+        "name": "NextTarget",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          }
+        ],
+        "name": "ProposalCancelled",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "confirmCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "ProposalConfirmed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "proposer",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          }
+        ],
+        "name": "ProposalCreated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint64",
+            "name": "readyAt",
+            "type": "uint64"
+          }
+        ],
+        "name": "ProposalExecutable",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "executor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          }
+        ],
+        "name": "ProposalExecuted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "confirmCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "ProposalRevoked",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "lockedAmt",
+            "type": "uint256"
+          }
+        ],
+        "name": "ServiceResultLosses",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          }
+        ],
+        "name": "ServiceResultsDistributed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "name": "SignerAdded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "name": "SignerRemoved",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "required",
+            "type": "uint256"
+          }
+        ],
+        "name": "ThresholdUpdated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint64",
+            "name": "minDelay",
+            "type": "uint64"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint64",
+            "name": "ttl",
+            "type": "uint64"
+          }
+        ],
+        "name": "TimelockUpdated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          }
+        ],
+        "name": "TransferFunds",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "contributor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          }
+        ],
+        "name": "WithdrawFunds",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "CONTRACT_VERSION",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address"
+          }
+        ],
+        "name": "allowance",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "tokenAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "approve",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "name": "cancelProposal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "chargeMonthlyFee",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "claimServiceResults",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "name": "confirmProposal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "name": "executeProposal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getConfig",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "paymentERC20",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "payableERC20",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "contribution_fee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawal_fee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "monthly_fee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compound_fee",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getLastAutoPerformIndex",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "name": "getProposal",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          },
+          {
+            "internalType": "address",
+            "name": "proposer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "createdAt",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "readyAt",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bool",
+            "name": "executed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "cancelled",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "confirmCount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getSigners",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "getStats",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "num_contributors",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_pending_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_locked_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "last_distribute_profit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_locked_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_pending_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_paid_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "user_earnings",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_current_service_fee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum AiTradeHubContract.PayoutPreference",
+            "name": "user_payout_type",
+            "type": "uint8"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "name": "getV7Stats",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "num_contributors",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_pending_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_locked_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "last_distribute_profit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_locked_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_pending_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_paid_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "user_earnings",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "user_current_service_fee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum IAITradeHubContractV7.PayoutPreference",
+            "name": "user_payout_type",
+            "type": "uint8"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          }
+        ],
+        "name": "hasConfirmed",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "isSigner",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "migrate",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newWallet",
+            "type": "address"
+          }
+        ],
+        "name": "migrateWallet",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "msig",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "requiredConfirmations",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "minDelay",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "ttl",
+            "type": "uint64"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "batchSize",
+            "type": "uint256"
+          }
+        ],
+        "name": "performAutomation",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "users",
+            "type": "address[]"
+          }
+        ],
+        "name": "performAutomationByUser",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "proposalCount",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "int256",
+            "name": "amount",
+            "type": "int256"
+          }
+        ],
+        "name": "proposeDistribution",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "purchaseServiceCredits",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "recompound",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "resetMigrate",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "name": "revokeConfirmation",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "exempt",
+            "type": "bool"
+          }
+        ],
+        "name": "setAddressFeeExempt",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "forwarder",
+            "type": "address"
+          }
+        ],
+        "name": "setAutomationForwarder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "enum AiTradeHubContract.PayoutPreference",
+            "name": "payoutPreference",
+            "type": "uint8"
+          }
+        ],
+        "name": "setPayoutPreference",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "swapContract",
+            "type": "address"
+          }
+        ],
+        "name": "setSwapContract",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "transfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "transferFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "transferFunds",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "withdrawFunds",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "details": "IMPORTANT: This is NOT an investment contract. - ALPS tokens are service credits for AI trading services - Users pay for AI-powered trading services, not making investments - AlpsCon trades with OWN capital, not user funds - Distributions are service results from AI performance - This is a technology service, not a financial product",
+      "kind": "dev",
+      "methods": {},
+      "title": "AI Trading Service Access Contract",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "cancelProposal(uint256)": {
+          "notice": "Proposer or owner can cancel before execution (or after expiry)."
+        },
+        "confirmProposal(uint256)": {
+          "notice": "Signer confirms a proposal."
+        },
+        "executeProposal(uint256)": {
+          "notice": "Execute after threshold met, delay passed, and not expired."
+        },
+        "proposeDistribution(int256)": {
+          "notice": "Create a new distribution proposal (amount can be negative for loss booking)."
+        },
+        "revokeConfirmation(uint256)": {
+          "notice": "Signer can revoke their confirmation before execution."
+        }
+      },
+      "notice": "Manages ALPS utility tokens for AI trading service access",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "contracts/AITradeHubContract.sol": "AiTradeHubContract"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "contracts/AITradeHubContract.sol": {
+      "keccak256": "0x961ba0825d3b17918df121d7b61866eb21a8bd0a90d2904c22ef085b785b334d",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://c06033a8bd296c497d7267cbef55d4fc351f01c07732d9f5c5a295c0e5dcc98a",
+        "dweb:/ipfs/QmQErNQU4S2yLC32WXh5WSBKJ7xdR8AtxWySYqg38GSMow"
+      ]
+    },
+    "contracts/interfaces/IAITradeHubContractV7.sol": {
+      "keccak256": "0x95d47e90485c6c70202a90559029a365fc3c986d6fd9b281d4d5769a7f50432d",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://e0b674afbe6a3960e7559073c5ee2fcf1cfd37dcf278abb1a0d8157dc5063ee2",
+        "dweb:/ipfs/QmcyhodCWxsB9oNe6oP3XYvYgTrxh7aBkryrtz3X5HqLb6"
+      ]
+    },
+    "contracts/interfaces/IAITradeHubFundModuleContract.sol": {
+      "keccak256": "0xbacea8b3563e593d5a8d5d4722488254ef3abf49b0c8f2517111a16fae9c1b68",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://93e2986d5049c88849239cb60560b573d884946bbe761714a52eabe0100b4360",
+        "dweb:/ipfs/Qmea7PHGpoBB1bzLCCB39vnHnftvfUhiyAZaNRH39xZyLE"
+      ]
+    },
+    "contracts/interfaces/IERC20.sol": {
+      "keccak256": "0x5ad00d41bf207586c41d4ba27b521a9c242dc676bd69c860daa04f0674799b98",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://5f2fe5024496d23b1e85cbf234ecf1de0c6677fe07c48bd04d92cff75891bf3f",
+        "dweb:/ipfs/QmZzkVYNeGrC1re8uhWcQk9pjHNxqRWDxZNs42BLHUXFDz"
+      ]
+    },
+    "contracts/interfaces/ISwapContract.sol": {
+      "keccak256": "0x850a0af7f25a8b30cc3310cb588fd270e6f69e764f504dcac188e4f183d70b0d",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://3466458e025225cec0af947880666806704af40c745f3570569a8fa8b3ea69a2",
+        "dweb:/ipfs/QmRF59TBkrLRv3D6VrrvZYNBLS168jcD3GURcM9jhwqwCV"
+      ]
+    },
+    "contracts/math/Math.sol": {
+      "keccak256": "0x5fe9e3acfae2f88e25a480efd0d488f14a1c7da8b99d47889e5193b80c63dcde",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://30c4537f9aa9b7850563f7e67c8e41f92484a3ab11440c953dc78de8b4701cdb",
+        "dweb:/ipfs/QmW1mZcoemSWy5G5jBXEPTWtGPMurUo7ax5JfG4Ex8SN2Q"
+      ]
+    },
+    "contracts/math/SafeERC20.sol": {
+      "keccak256": "0xe82e33877ee8f932b98646c4860ccb8c62ca233ae93606063600818ffe6f2646",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://e5a50576d0a3c2dadb6cba134c09145dd3209b7a061423df9561665c9142f468",
+        "dweb:/ipfs/Qmc4x9SX2u5YXwatazCNFjqHgSXf5jniGe2h6x4B5kBed4"
+      ]
+    },
+    "contracts/math/SafeMath.sol": {
+      "keccak256": "0x4d6c3be9a4283542d7de7ee57671f07974f2e836476fe1c0327608ee5561c111",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://18ab01dc0c61e9e29406a24fbea98e45fbc8ff330b79be45fefe1e79a84a0107",
+        "dweb:/ipfs/QmUQ7GwTAJTpEDMfZjDm1cKKdcUM1UNo9SCrSNZnwvyAZf"
+      ]
+    },
+    "contracts/utils/AITradeHubDistributionMultisig.sol": {
+      "keccak256": "0x96162b9ef4319cc2b802a123d4371576f0001be7a847d83af9f3656b8ba6e451",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://7f3b7bd73dd21f714248198c0d137673109813fd41653745cdd1a9826498ed5e",
+        "dweb:/ipfs/QmQCUsCux9r2KoxqZf56ymJVHMpuDHEjosbg4UDxNNPKmu"
+      ]
+    },
+    "contracts/utils/ReentrancyGuard.sol": {
+      "keccak256": "0x6364d9014567e4f3a3c19ad6cfe403a82d879c9aa0b6408aefbd0f5fa01bb8a0",
+      "license": "UNLICENSED",
+      "urls": [
+        "bzz-raw://c4201a0e136b0baa66a8c6c8599fa7db0e4087fa0c209e4e956d35ce4eb08f3f",
+        "dweb:/ipfs/QmZRocjHCJxwZJbBDG4HDaevFabKMmNb5pigKapcvzdFko"
+      ]
+    }
+  },
+  "version": 1
+}

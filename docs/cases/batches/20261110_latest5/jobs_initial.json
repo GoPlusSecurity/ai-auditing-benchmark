@@ -1,0 +1,14 @@
+[
+  {"id":"tendril-original","url":"https://sourcify.dev/server/v2/contract/56/0xb1afdfd850da168f2cc9f742e11cdda5273973d2?fields=all","path":"screening/tendril/token-source.json"},
+  {"id":"tendril-pair","url":"https://sourcify.dev/server/v2/contract/56/0x5de082471f2a9f01a61e467a32837dee830d99e0?fields=all","path":"screening/tendril/pair-source.json"},
+  {"id":"tendril-explorer","url":"https://bscscan.com/address/0xb1afdfd850da168f2cc9f742e11cdda5273973d2#code","path":"screening/tendril/token-explorer.html"},
+  {"id":"corevault-transaction","url":"https://bscscan.com/tx/0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3","path":"screening/corevault/transaction.html"},
+  {"id":"tendril-receipt","url":"https://bsc-dataseed.bnbchain.org","path":"screening/tendril/receipt.json","body":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0xfdff4fba4327821c204af07944076ecaaee163a994398fdf4063d08712e40059"]}},
+  {"id":"corevault-receipt","url":"https://bsc-dataseed.bnbchain.org","path":"screening/corevault/receipt.json","body":{"jsonrpc":"2.0","id":1,"method":"eth_getTransactionReceipt","params":["0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3"]}},
+  {"id":"b14g-original-check","url":"https://sourcify.dev/server/v2/contract/1116/0x04ea61c431f7934d51fed2acb2c5f942213f8967?fields=all","path":"screening/b14g/proxy-source.json"},
+  {"id":"premia-repo","url":"https://api.github.com/repos/Premian-Labs/v3-contracts","path":"screening/premia/repo.json"},
+  {"id":"b14g-primary-investigation","url":"https://www.bitquery.io/investigations/b14g-hack","path":"screening/b14g/bitquery.html"},
+  {"id":"tendril-exvul-alert","url":"https://cdn.syndication.twimg.com/tweet-result?id=2118221337617383455&lang=en&token=0","path":"screening/tendril/exvul-alert.json"},
+  {"id":"corevault-certik-alert","url":"https://cdn.syndication.twimg.com/tweet-result?id=2117807084939129050&lang=en&token=0","path":"screening/corevault/certik-alert.json"},
+  {"id":"premia-goplus-search","url":"https://api.github.com/repos/Premian-Labs/v3-contracts/git/trees/master?recursive=1","path":"screening/premia/tree.json"}
+]

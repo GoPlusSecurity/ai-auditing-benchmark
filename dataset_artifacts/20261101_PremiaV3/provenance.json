@@ -1,0 +1,3839 @@
+{
+  "case_id": "20261101_PremiaV3",
+  "snapshot_sha256": "791709330cd5aff1de37b8907ec8739052bc7e80ba3fb4d5670e5bd5b5dfe65c",
+  "source_packages": [
+    {
+      "label": "vault-proxy",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0x45dF5EA836A15B561937Ae8373ab9eE984aea531?fields=all",
+      "retrieved_at": "2026-11-10T01:31:40.506850+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/vault-proxy/source-response.json",
+      "response_sha256": "39bbdaf2ffb8f9ffdb617c82eefba6392d6719050f7c39f3ae4babc611b81a12",
+      "chain_id": "42161",
+      "address": "0x45dF5EA836A15B561937Ae8373ab9eE984aea531",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.19+commit.7dd6d404",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "UnderwriterVaultProxy",
+        "fullyQualifiedName": "contracts/vault/strategies/underwriter/UnderwriterVaultProxy.sol:UnderwriterVaultProxy"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2024-08-08T12:52:40Z",
+      "provider_deployment": {
+        "transactionHash": "0xa3e5053462d47250013014dc3b69e9142aec0847e8ae78f3a32d0942eeb177cc",
+        "blockNumber": "120004193",
+        "transactionIndex": "1",
+        "deployer": "0xC7f8D87734aB2cbf70030aC8aa82abfe3e8126cb"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/vault/IVault.sol",
+          "original_path": "contracts/vault/IVault.sol",
+          "sha256": "778124dfb1947cc9bc5d961e5461f08b3d3cec387515ac278100fd5770eae04b",
+          "bytes": 4001,
+          "lines": 124,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/Common.sol",
+          "original_path": "lib/prb-math/src/Common.sol",
+          "sha256": "266e4c42cae237c09e37cb7316dbbaa3e2895268ece73981a09a320006c08c3f",
+          "bytes": 25365,
+          "lines": 673,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/SD59x18.sol",
+          "original_path": "lib/prb-math/src/SD59x18.sol",
+          "sha256": "5f890a86c19466354eb707003e5dffc9cd1b1dbdefae3f3d283287b1e2ecc547",
+          "bytes": 2129,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/UD60x18.sol",
+          "original_path": "lib/prb-math/src/UD60x18.sol",
+          "sha256": "d13981c438e1cd14fc713a26809824f46771c9469046f6298f0a3c21258d3fc1",
+          "bytes": 2147,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/libraries/SD49x28.sol",
+          "original_path": "contracts/libraries/SD49x28.sol",
+          "sha256": "44a9ae080ad4139b44cfd307ba1aa1d8185a6e6d851e40516d78c3216844f9cc",
+          "bytes": 11921,
+          "lines": 368,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/libraries/UD50x28.sol",
+          "original_path": "contracts/libraries/UD50x28.sol",
+          "sha256": "a6abf62b410fc71bba174ab9f1daed302a53fe47c182089cc0a4575fa48ffbed",
+          "bytes": 8306,
+          "lines": 264,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/libraries/Constants.sol",
+          "original_path": "contracts/libraries/Constants.sol",
+          "sha256": "2247c450161c9bd21a99a61657a925583703613d40b1d84d63f3bca164e1af68",
+          "bytes": 1154,
+          "lines": 31,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Math.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Math.sol",
+          "sha256": "5e7fa01992e372b2df19cd6ffacbf8df261c8fd342a6077129d02519ad3984e5",
+          "bytes": 27513,
+          "lines": 699,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Math.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Math.sol",
+          "sha256": "ab7da3fa52c50788d7f0d3ec0ca2333ba8376ac02c9a5aec8f65d7ed026d457a",
+          "bytes": 22891,
+          "lines": 568,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/factory/IPoolFactory.sol",
+          "original_path": "contracts/factory/IPoolFactory.sol",
+          "sha256": "4cfb1ab2315198e40e2ff88fd0a203590a1cfd343ab4171bc3e264733563c83e",
+          "bytes": 3391,
+          "lines": 75,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/libraries/OptionMath.sol",
+          "original_path": "contracts/libraries/OptionMath.sol",
+          "sha256": "bd02a5d21d79b9ba559f106a2f21d7c1cb9ac994c3cdfc1e7c348a489a1db44a",
+          "bytes": 13824,
+          "lines": 307,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/vault/IVaultRegistry.sol",
+          "original_path": "contracts/vault/IVaultRegistry.sol",
+          "sha256": "179734a6135dc9ed1863fa294fdc0938518d9e1383d1ae868324e8c25eef3d7c",
+          "bytes": 6844,
+          "lines": 177,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd1x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Errors.sol",
+          "sha256": "d228bb4913823025b27eb846ffc3c4adb499f59696907f4ee4285e2cce9c561c",
+          "bytes": 916,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud2x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Errors.sol",
+          "sha256": "78a6efb5f0ff138e5a7be993e3f386f03766143e5f506ada5bba7dc50bb06ae6",
+          "bytes": 373,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd1x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Casting.sol",
+          "sha256": "be3ab093fc083aad3a54c294b85fb616a921202a1089a0ce9dbc2bf76e10d3b2",
+          "bytes": 2773,
+          "lines": 88,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Errors.sol",
+          "sha256": "70ed785b5a2e8c35c7cb990758ba97f8d5578c57cc532c882076e1049a3f2e18",
+          "bytes": 3880,
+          "lines": 85,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud2x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Casting.sol",
+          "sha256": "f5667c232e74b91d2d36f8a460394f9c018dd480b4277fdecacbce2c28f7dc22",
+          "bytes": 2528,
+          "lines": 71,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Errors.sol",
+          "sha256": "12a9ae83c9da4bfbd3cbc32abce189d7d688aa82d05f59e44821a852dff6a5eb",
+          "bytes": 1748,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/adapter/IOracleAdapter.sol",
+          "original_path": "contracts/adapter/IOracleAdapter.sol",
+          "sha256": "f5a833ba9d5a87dfb01a9efe363382c2ca90b737ced2836c6f0392ddf4a8bdca",
+          "bytes": 3875,
+          "lines": 75,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Casting.sol",
+          "sha256": "c0a67e1e78f1cbaa2f6f9a1073bdefe62a5cf873a23793ecea8d237ae9f87dd7",
+          "bytes": 3943,
+          "lines": 119,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Helpers.sol",
+          "sha256": "a7010688fd1ea5baccd299b3fec5d7ca2d6f78af086d17b26fe187e3615bd24a",
+          "bytes": 4117,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Casting.sol",
+          "sha256": "63734b4ecacc806155f7f61c653439ace54b8522440609512ded238b00adfb5e",
+          "bytes": 3148,
+          "lines": 93,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Helpers.sol",
+          "sha256": "65842561d996393c07779276e3960c0b421abdccc1054d423b5803c19f1a6f5c",
+          "bytes": 3786,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/proxy/Proxy.sol",
+          "original_path": "@solidstate/contracts/proxy/Proxy.sol",
+          "sha256": "93a3872e6b12f6c20bd9c4407c007042ac64251c2fe521468f360d2b574e555f",
+          "bytes": 1421,
+          "lines": 52,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd1x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Constants.sol",
+          "sha256": "ffd6e859d61a5e3395b684a00edcd26092d33b48fa7aa1721e252dc2cdda3891",
+          "bytes": 759,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd1x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd1x18/ValueType.sol",
+          "sha256": "1ea09e46ec53b1682f5f4b6ac34858b9924ec2e3ae5fe9dcaf66c7a1ee32bc00",
+          "bytes": 879,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud2x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Constants.sol",
+          "sha256": "5ad16143f06a20677a99692c856341f892e548825f864804afb7165c9e396ce0",
+          "bytes": 597,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud2x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud2x18/ValueType.sol",
+          "sha256": "e158a037c91b04e6029b13a35b9dbfe928e282526c6c116d2e7c0f28f487ea87",
+          "bytes": 885,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/proxy/IProxy.sol",
+          "original_path": "@solidstate/contracts/proxy/IProxy.sol",
+          "sha256": "794e2ff1421bcc44168611b5e8cfd0db84ba725836d5ab8ac1369c81ae1a890f",
+          "bytes": 161,
+          "lines": 9,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Constants.sol",
+          "sha256": "8c89534fa2eeabf114544ced998f0751fe7511fd4e5b370dd65bdedc1d760c3d",
+          "bytes": 2399,
+          "lines": 59,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd59x18/ValueType.sol",
+          "sha256": "cf4a62b90a2d13611acd64fd64f2808c80bca8747a51a5059cd7f1fbf3003a2f",
+          "bytes": 2605,
+          "lines": 100,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Constants.sol",
+          "sha256": "7883364a05f0bc71338c68303f385c4213b8712900ed664eb1732daa0f0308a1",
+          "bytes": 1926,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud60x18/ValueType.sol",
+          "sha256": "49844ce8cd6ac618483c644efeb4fd54de87b9bf1c12668dbc5da83ad3988498",
+          "bytes": 2790,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/factory/IPoolFactoryEvents.sol",
+          "original_path": "contracts/factory/IPoolFactoryEvents.sol",
+          "sha256": "81592decbd7dfb0c070d0ccf497c817e85bf32e5fb6e6f1f67acca76e3a37de2",
+          "bytes": 946,
+          "lines": 31,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/sd59x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Conversions.sol",
+          "sha256": "e3efef884448bacf29be944948774007020fde53fe6571c1c14c3d8a44f19e65",
+          "bytes": 1248,
+          "lines": 34,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/prb-math/src/ud60x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Conversions.sol",
+          "sha256": "6064d9a20b3849c07d83bbe88373a419645ec892b7222d24f199f771bddce9bf",
+          "bytes": 1037,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/utils/UintUtils.sol",
+          "original_path": "@solidstate/contracts/utils/UintUtils.sol",
+          "sha256": "12044020002b03786ee2a31169007e7dc105853bb226952c3bf0e1c330f22536",
+          "bytes": 2005,
+          "lines": 81,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/interfaces/IERC20.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC20.sol",
+          "sha256": "d3e2f9b94a7d4ff824dde23892ad58957b98044688aac734b5d5d4e5ca41a04e",
+          "bytes": 2248,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/data/EnumerableSet.sol",
+          "original_path": "@solidstate/contracts/data/EnumerableSet.sol",
+          "sha256": "d9499dd20a75d61903bae616301620d498876c2e52f40381b9d803ffa06130a6",
+          "bytes": 5778,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/utils/AddressUtils.sol",
+          "original_path": "@solidstate/contracts/utils/AddressUtils.sol",
+          "sha256": "a9200421aea571ee0dc0c98821add0cf372a58fb39c51444bc2a7b475a2be8d8",
+          "bytes": 4216,
+          "lines": 142,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/libraries/EnumerableSetUD60x18.sol",
+          "original_path": "contracts/libraries/EnumerableSetUD60x18.sol",
+          "sha256": "c3f0f02b18abc8960585358c0fb95db31fad6957bfa03b7c478d8689436c513d",
+          "bytes": 2220,
+          "lines": 50,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/interfaces/IERC4626.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC4626.sol",
+          "sha256": "6db3f6312abfe08bcb0153eed8f64320dc931635f01abe947d961c3fd5555abc",
+          "bytes": 5716,
+          "lines": 161,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/data/DoublyLinkedList.sol",
+          "original_path": "@solidstate/contracts/data/DoublyLinkedList.sol",
+          "sha256": "5cb0508b73d648acf7d97b3450045bc89c80c0d31c47d2591eaf9862dc4521f0",
+          "bytes": 11571,
+          "lines": 435,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/interfaces/IERC20Internal.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC20Internal.sol",
+          "sha256": "c4ad38291bc23bd7175d35c5d275dc631adcbdf66980850be95c0966152bff21",
+          "bytes": 349,
+          "lines": 16,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/interfaces/IERC4626Internal.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC4626Internal.sol",
+          "sha256": "6973276b509f2e32de33f2f37e0c9cc805f9075f9ac57896b97e1adf51f5dd04",
+          "bytes": 470,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/base/IERC20Base.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/base/IERC20Base.sol",
+          "sha256": "6f26dbf624c231c1e05c8c6d819efc041677624fba1a1ec8d410b341acfdbe77",
+          "bytes": 274,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/permit/IERC2612.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/permit/IERC2612.sol",
+          "sha256": "c53bb50e56dbdc5400d14bff9554e0af766ad341d34c997b3addb8cf01fa250f",
+          "bytes": 1274,
+          "lines": 43,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/ISolidStateERC20.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/ISolidStateERC20.sol",
+          "sha256": "8596b191ca815fd2e06047bed7c39fc145e9ecedc6c277e9b971e1a1e2376b50",
+          "bytes": 403,
+          "lines": 15,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "sha256": "213c7283444d5578da9bcabac99c161783bf20fc4e4e1c290f226e1d34c81fa9",
+          "bytes": 364,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC4626/base/IERC4626Base.sol",
+          "original_path": "@solidstate/contracts/token/ERC4626/base/IERC4626Base.sol",
+          "sha256": "ae977074d9e7d69d735f4d26cc0a08fb2387e579a75d58f9abc33484af8505a3",
+          "bytes": 290,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC4626/ISolidStateERC4626.sol",
+          "original_path": "@solidstate/contracts/token/ERC4626/ISolidStateERC4626.sol",
+          "sha256": "f1b31b31a37341ef2d1db2ab09e0eb6452a0f077a3efc99a736ca00c6bbaa963",
+          "bytes": 247,
+          "lines": 8,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "sha256": "fd3f03960254f3b1d263bac99aaba379b1f75f8a793ed504290dc5c3a77ef7e3",
+          "bytes": 630,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "sha256": "0629ed6ee8bc6b4cd99e25a63afabb64029789dbcb68308699a4c14525ddceef",
+          "bytes": 985,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "sha256": "7c5a9805e26788df0a551d81f443076bf997fd3e2f7864e968ee53f72aa30a6c",
+          "bytes": 684,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "sha256": "354315c80694ee32941799c303a735f9caca65b6511e63c7a2f1580a91919edf",
+          "bytes": 88,
+          "lines": 5,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC4626/base/ERC4626BaseStorage.sol",
+          "original_path": "@solidstate/contracts/token/ERC4626/base/ERC4626BaseStorage.sol",
+          "sha256": "4361ea38aa5da07e7baac0637c7e8f06572e7d792050b7fd26729dc6e49f01f5",
+          "bytes": 412,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/vault/strategies/underwriter/UnderwriterVaultProxy.sol",
+          "original_path": "contracts/vault/strategies/underwriter/UnderwriterVaultProxy.sol",
+          "sha256": "2d9307c5bdf7997720808351c7197a9b597fc93ea4062428cae0a7e9bd06185c",
+          "bytes": 2426,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "sha256": "7d84865acaff401b385dba7a5793e702ce0831092828a09b42cc6be5b6b7bf5c",
+          "bytes": 258,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC4626/base/IERC4626BaseInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC4626/base/IERC4626BaseInternal.sol",
+          "sha256": "b5da5e2a56379021d290ca83982bec35a5a3d710f07ef9c45255f7e3c6e10766",
+          "bytes": 324,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/contracts/vault/strategies/underwriter/UnderwriterVaultStorage.sol",
+          "original_path": "contracts/vault/strategies/underwriter/UnderwriterVaultStorage.sol",
+          "sha256": "7ac0e71ba3484538de948654a7f2f5b2a32ec186dd11cc8d954720890cf322ae",
+          "bytes": 10211,
+          "lines": 224,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/metadata/ERC20MetadataStorage.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/metadata/ERC20MetadataStorage.sol",
+          "sha256": "3b9f80edeaa065f69bb095be35300e733c5ebafc0093c5fa1c9cefb56d6a24dd",
+          "bytes": 461,
+          "lines": 21,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "sha256": "05344c5febc3181ae192fc427e7ce0aa0d2566dbb92f087b3be6e199422d16ee",
+          "bytes": 336,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/@solidstate/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "sha256": "5d142e76ea96cf31d6a98be3198c77f63cf02d5919df4846ef2ce513629b8c68",
+          "bytes": 148,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-proxy/lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "original_path": "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "sha256": "3f4df88ec1234a9aced282ebd81c914a11e97622b4cfb7b20bb4efe540b616d0",
+          "bytes": 13351,
+          "lines": 301,
+          "kind": "public_original_source"
+        }
+      ]
+    },
+    {
+      "label": "vault-impl",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0xb539ff8563974d407fd6d717ff2f930e99093d21?fields=all",
+      "retrieved_at": "2026-11-10T01:41:18.667850+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/vault-impl/source-response.json",
+      "response_sha256": "ba56e1b852ce8fb4218d3ec912fb198af72ad33a0615fc24fbbc56a1a90ebf7f",
+      "chain_id": "42161",
+      "address": "0xb539fF8563974D407Fd6d717ff2f930e99093d21",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.19+commit.7dd6d404",
+        "compilerSettings": {
+          "viaIR": false,
+          "libraries": {
+            "contracts/libraries/OptionMathExternal.sol": {
+              "OptionMathExternal": "0xfbf570d0278ec25b0bd406907fa848c5b9e78209"
+            }
+          },
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          }
+        },
+        "name": "UnderwriterVault",
+        "fullyQualifiedName": "contracts/vault/strategies/underwriter/UnderwriterVault.sol:UnderwriterVault"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2025-12-18T20:54:01Z",
+      "provider_deployment": {
+        "transactionHash": "0xd5cb858aed827a79aeab7e305abddb95bdc152169d41d429c09cb5e8a5c7f6ba",
+        "blockNumber": "226727648",
+        "transactionIndex": "1",
+        "deployer": "0xC7f8D87734aB2cbf70030aC8aa82abfe3e8126cb"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/adapter/IOracleAdapter.sol",
+          "original_path": "contracts/adapter/IOracleAdapter.sol",
+          "sha256": "f5a833ba9d5a87dfb01a9efe363382c2ca90b737ced2836c6f0392ddf4a8bdca",
+          "bytes": 3875,
+          "lines": 75,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/factory/IPoolFactory.sol",
+          "original_path": "contracts/factory/IPoolFactory.sol",
+          "sha256": "c3854f7d40c3586a3850219c70af2edd51507f6706962da3ac4ad67054dd0931",
+          "bytes": 2531,
+          "lines": 58,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/factory/IPoolFactoryEvents.sol",
+          "original_path": "contracts/factory/IPoolFactoryEvents.sol",
+          "sha256": "e6e6d4f72b20285540890c2e37c8c76914d5bfa72909b9a9d458e26541c6c629",
+          "bytes": 828,
+          "lines": 29,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/Constants.sol",
+          "original_path": "contracts/libraries/Constants.sol",
+          "sha256": "7cc39b50b303ef11207115bc7356b3ad111b5a78e971f32633240d954eb73f14",
+          "bytes": 1185,
+          "lines": 33,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "original_path": "contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "sha256": "27eb268ac200ead0f1e9e9e4eba8063097689dd64b5e1c0ca99794611cba05f8",
+          "bytes": 3719,
+          "lines": 78,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/EnumerableSetUD60x18.sol",
+          "original_path": "contracts/libraries/EnumerableSetUD60x18.sol",
+          "sha256": "9fc60bdf110ab7b041f5c6199e4f19d008cee775b307e180118607d64312593f",
+          "bytes": 2232,
+          "lines": 50,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/IPosition.sol",
+          "original_path": "contracts/libraries/IPosition.sol",
+          "sha256": "37824eae31d64de71caff853dbb7dc7c5c005969d7a753785484389f00fe7199",
+          "bytes": 496,
+          "lines": 12,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/IPricing.sol",
+          "original_path": "contracts/libraries/IPricing.sol",
+          "sha256": "0d18cb08013ace9e209615f54dcd375e955dfd5c14ede573e4083484acc838f8",
+          "bytes": 463,
+          "lines": 11,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/OptionMath.sol",
+          "original_path": "contracts/libraries/OptionMath.sol",
+          "sha256": "4c91cafea63f223cfe7365eee9126201a57361581ad04e7d0f57e34b14a36fc4",
+          "bytes": 16464,
+          "lines": 372,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/OptionMathExternal.sol",
+          "original_path": "contracts/libraries/OptionMathExternal.sol",
+          "sha256": "9f7ae2fb2deacc19ad76f4cbfa7e6430c54f1e55c1807a30e7a563b8bef56c1b",
+          "bytes": 4120,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/Position.sol",
+          "original_path": "contracts/libraries/Position.sol",
+          "sha256": "0ee9f2bfac1ad7ae8b69c8719e266dc7748436665bcb742547f7c1f3308c96f8",
+          "bytes": 14800,
+          "lines": 322,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/PRBMathExtra.sol",
+          "original_path": "contracts/libraries/PRBMathExtra.sol",
+          "sha256": "0b0765950d3f1d0b9c4c25b42ff261ca3eb3112666be8639c08173b29adad8a0",
+          "bytes": 3646,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/Pricing.sol",
+          "original_path": "contracts/libraries/Pricing.sol",
+          "sha256": "46ceb716cdb50824bea091da7305ba81d855a26e2f8f6fb025dd98c784f2d3c3",
+          "bytes": 6014,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/SD49x28.sol",
+          "original_path": "contracts/libraries/SD49x28.sol",
+          "sha256": "44a9ae080ad4139b44cfd307ba1aa1d8185a6e6d851e40516d78c3216844f9cc",
+          "bytes": 11921,
+          "lines": 368,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/libraries/UD50x28.sol",
+          "original_path": "contracts/libraries/UD50x28.sol",
+          "sha256": "a6abf62b410fc71bba174ab9f1daed302a53fe47c182089cc0a4575fa48ffbed",
+          "bytes": 8306,
+          "lines": 264,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/mining/vaultMining/IVaultMining.sol",
+          "original_path": "contracts/mining/vaultMining/IVaultMining.sol",
+          "sha256": "44c26ea096a6e96c442c5e4c9a39079eab8ab6e64e50198dd1a5b065b46118e9",
+          "bytes": 6253,
+          "lines": 129,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/oracle/IVolatilityOracle.sol",
+          "original_path": "contracts/oracle/IVolatilityOracle.sol",
+          "sha256": "b1140044528c164f7bbe1e5a064efedf4ab407a77736d89dd8190f0dd6c51aa8",
+          "bytes": 3669,
+          "lines": 84,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/oracle/VolatilityOracleStorage.sol",
+          "original_path": "contracts/oracle/VolatilityOracleStorage.sol",
+          "sha256": "4e1bb82ff88f983b9f972876bcc1a0ccf101153fb87f6efed0176cfd059e41ff",
+          "bytes": 3342,
+          "lines": 111,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPool.sol",
+          "original_path": "contracts/pool/IPool.sol",
+          "sha256": "29b73e462b822258ba23cf4d00a8c7bad438784a63017df025f4f2049447af86",
+          "bytes": 498,
+          "lines": 11,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolBase.sol",
+          "original_path": "contracts/pool/IPoolBase.sol",
+          "sha256": "0e64df3b66ac61b688a32ee133dc8c01e6a4afaa45fbf42b7a2cf05457d2458d",
+          "bytes": 729,
+          "lines": 15,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolCore.sol",
+          "original_path": "contracts/pool/IPoolCore.sol",
+          "sha256": "52760378fcf608126abfa0da8e1e1bbef7da8ebfac0628b75d1bb5ff450989b9",
+          "bytes": 10743,
+          "lines": 173,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolDepositWithdraw.sol",
+          "original_path": "contracts/pool/IPoolDepositWithdraw.sol",
+          "sha256": "1c9fd46536612e5b297796059bc9c3ae49828de726a5e6e8b34ae6429af8991a",
+          "bytes": 4650,
+          "lines": 82,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolEvents.sol",
+          "original_path": "contracts/pool/IPoolEvents.sol",
+          "sha256": "5634ac7f795e4f43b78641df5d0f8a7dc661196245bb55b42290d92b76ae94c6",
+          "bytes": 3703,
+          "lines": 138,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolInternal.sol",
+          "original_path": "contracts/pool/IPoolInternal.sol",
+          "sha256": "ab593f5125e98bff0429e0998fce432ae591042f2c08dba678d229692361905f",
+          "bytes": 7422,
+          "lines": 211,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/IPoolTrade.sol",
+          "original_path": "contracts/pool/IPoolTrade.sol",
+          "sha256": "b2d3b6e47ca1e3033d23511b9cacfaa75095379cee8a360562088975468a5a3e",
+          "bytes": 4303,
+          "lines": 82,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/pool/PoolStorage.sol",
+          "original_path": "contracts/pool/PoolStorage.sol",
+          "sha256": "3c1a1be6e4f3bf04dea7be99d50d130897e4ea86b7003760eefa3da1d659258e",
+          "bytes": 12546,
+          "lines": 272,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/router/IERC20Router.sol",
+          "original_path": "contracts/router/IERC20Router.sol",
+          "sha256": "1c559ca8389f3d125b9eb4060ef4a6c18102149fc39df490dec08bfa4abf4a31",
+          "bytes": 599,
+          "lines": 14,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/settings/IUserSettings.sol",
+          "original_path": "contracts/settings/IUserSettings.sol",
+          "sha256": "21c4fb9816197854a0dfcdf97860b4e792f4f15b0d7183c2b5889188c024cc00",
+          "bytes": 3466,
+          "lines": 66,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/vault/IVault.sol",
+          "original_path": "contracts/vault/IVault.sol",
+          "sha256": "ea76c1e62cea7ba577c01999705486f3a0918a84b767c5a54459d910542b58ab",
+          "bytes": 3484,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/vault/strategies/underwriter/IUnderwriterVault.sol",
+          "original_path": "contracts/vault/strategies/underwriter/IUnderwriterVault.sol",
+          "sha256": "b214752e44029681ad104735e898d82b789a6fcd36caf760ec9149385aadb0e2",
+          "bytes": 3088,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/vault/strategies/underwriter/UnderwriterVault.sol",
+          "original_path": "contracts/vault/strategies/underwriter/UnderwriterVault.sol",
+          "sha256": "3d0c278ce3d698935bf4b6f1f826e5f1161e99fc19685c23f6106af9417365a6",
+          "bytes": 46427,
+          "lines": 1074,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/vault/strategies/underwriter/UnderwriterVaultStorage.sol",
+          "original_path": "contracts/vault/strategies/underwriter/UnderwriterVaultStorage.sol",
+          "sha256": "49d0fae763660a725d165e81f3f8177b1d41b181b1c298ad3cbdae61354234f9",
+          "bytes": 11014,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/contracts/vault/Vault.sol",
+          "original_path": "contracts/vault/Vault.sol",
+          "sha256": "9764f207be26c2d7aa8497a69ddbe77d792eb29c61ed0c412dfcfe209be92049",
+          "bytes": 1678,
+          "lines": 48,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "original_path": "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "sha256": "3f4df88ec1234a9aced282ebd81c914a11e97622b4cfb7b20bb4efe540b616d0",
+          "bytes": 13351,
+          "lines": 301,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/Common.sol",
+          "original_path": "lib/prb-math/src/Common.sol",
+          "sha256": "266e4c42cae237c09e37cb7316dbbaa3e2895268ece73981a09a320006c08c3f",
+          "bytes": 25365,
+          "lines": 673,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd1x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Casting.sol",
+          "sha256": "be3ab093fc083aad3a54c294b85fb616a921202a1089a0ce9dbc2bf76e10d3b2",
+          "bytes": 2773,
+          "lines": 88,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd1x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Constants.sol",
+          "sha256": "ffd6e859d61a5e3395b684a00edcd26092d33b48fa7aa1721e252dc2cdda3891",
+          "bytes": 759,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd1x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Errors.sol",
+          "sha256": "d228bb4913823025b27eb846ffc3c4adb499f59696907f4ee4285e2cce9c561c",
+          "bytes": 916,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd1x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd1x18/ValueType.sol",
+          "sha256": "1ea09e46ec53b1682f5f4b6ac34858b9924ec2e3ae5fe9dcaf66c7a1ee32bc00",
+          "bytes": 879,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/SD59x18.sol",
+          "original_path": "lib/prb-math/src/SD59x18.sol",
+          "sha256": "5f890a86c19466354eb707003e5dffc9cd1b1dbdefae3f3d283287b1e2ecc547",
+          "bytes": 2129,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Casting.sol",
+          "sha256": "c0a67e1e78f1cbaa2f6f9a1073bdefe62a5cf873a23793ecea8d237ae9f87dd7",
+          "bytes": 3943,
+          "lines": 119,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Constants.sol",
+          "sha256": "8c89534fa2eeabf114544ced998f0751fe7511fd4e5b370dd65bdedc1d760c3d",
+          "bytes": 2399,
+          "lines": 59,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Conversions.sol",
+          "sha256": "e3efef884448bacf29be944948774007020fde53fe6571c1c14c3d8a44f19e65",
+          "bytes": 1248,
+          "lines": 34,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Errors.sol",
+          "sha256": "70ed785b5a2e8c35c7cb990758ba97f8d5578c57cc532c882076e1049a3f2e18",
+          "bytes": 3880,
+          "lines": 85,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Helpers.sol",
+          "sha256": "a7010688fd1ea5baccd299b3fec5d7ca2d6f78af086d17b26fe187e3615bd24a",
+          "bytes": 4117,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/Math.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Math.sol",
+          "sha256": "5e7fa01992e372b2df19cd6ffacbf8df261c8fd342a6077129d02519ad3984e5",
+          "bytes": 27513,
+          "lines": 699,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/sd59x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd59x18/ValueType.sol",
+          "sha256": "cf4a62b90a2d13611acd64fd64f2808c80bca8747a51a5059cd7f1fbf3003a2f",
+          "bytes": 2605,
+          "lines": 100,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud2x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Casting.sol",
+          "sha256": "f5667c232e74b91d2d36f8a460394f9c018dd480b4277fdecacbce2c28f7dc22",
+          "bytes": 2528,
+          "lines": 71,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud2x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Constants.sol",
+          "sha256": "5ad16143f06a20677a99692c856341f892e548825f864804afb7165c9e396ce0",
+          "bytes": 597,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud2x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Errors.sol",
+          "sha256": "78a6efb5f0ff138e5a7be993e3f386f03766143e5f506ada5bba7dc50bb06ae6",
+          "bytes": 373,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud2x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud2x18/ValueType.sol",
+          "sha256": "e158a037c91b04e6029b13a35b9dbfe928e282526c6c116d2e7c0f28f487ea87",
+          "bytes": 885,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/UD60x18.sol",
+          "original_path": "lib/prb-math/src/UD60x18.sol",
+          "sha256": "d13981c438e1cd14fc713a26809824f46771c9469046f6298f0a3c21258d3fc1",
+          "bytes": 2147,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Casting.sol",
+          "sha256": "63734b4ecacc806155f7f61c653439ace54b8522440609512ded238b00adfb5e",
+          "bytes": 3148,
+          "lines": 93,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Constants.sol",
+          "sha256": "7883364a05f0bc71338c68303f385c4213b8712900ed664eb1732daa0f0308a1",
+          "bytes": 1926,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Conversions.sol",
+          "sha256": "6064d9a20b3849c07d83bbe88373a419645ec892b7222d24f199f771bddce9bf",
+          "bytes": 1037,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Errors.sol",
+          "sha256": "12a9ae83c9da4bfbd3cbc32abce189d7d688aa82d05f59e44821a852dff6a5eb",
+          "bytes": 1748,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Helpers.sol",
+          "sha256": "65842561d996393c07779276e3960c0b421abdccc1054d423b5803c19f1a6f5c",
+          "bytes": 3786,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/Math.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Math.sol",
+          "sha256": "ab7da3fa52c50788d7f0d3ec0ca2333ba8376ac02c9a5aec8f65d7ed026d457a",
+          "bytes": 22891,
+          "lines": 568,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/prb-math/src/ud60x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud60x18/ValueType.sol",
+          "sha256": "49844ce8cd6ac618483c644efeb4fd54de87b9bf1c12668dbc5da83ad3988498",
+          "bytes": 2790,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/access/ownable/IOwnable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/access/ownable/IOwnable.sol",
+          "sha256": "3693e30831aa3c89340e842ef173f6231834b88089a4abee74b8f9aa2dd556e0",
+          "bytes": 225,
+          "lines": 8,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/access/ownable/IOwnableInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/access/ownable/IOwnableInternal.sol",
+          "sha256": "b1e5b32533978abe2800d3f52cf82d520f282f33bc5ba07c3d99a86b843f0dc8",
+          "bytes": 253,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "sha256": "4b49765f006bb38ce27af098b7ef136b27ffdc49c6d5de2f58eff11a8b191318",
+          "bytes": 3228,
+          "lines": 89,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "sha256": "081456e579b2923a91b09f54832a4defc3822476b551a1848f8beb9ae00ac626",
+          "bytes": 1746,
+          "lines": 54,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "sha256": "5cb0508b73d648acf7d97b3450045bc89c80c0d31c47d2591eaf9862dc4521f0",
+          "bytes": 11571,
+          "lines": 435,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "sha256": "d9499dd20a75d61903bae616301620d498876c2e52f40381b9d803ffa06130a6",
+          "bytes": 5778,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC1155.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155.sol",
+          "sha256": "b753a18eef08cf0bbc5df43505e9f6f8513220b5473b67af9e643cc85fbbe175",
+          "bytes": 2670,
+          "lines": 84,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "sha256": "22555bdeb668a9b257d685e2a1a6fb8d8a71c7e97494b38e8d343d89b4317d4b",
+          "bytes": 625,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "sha256": "04ee1d90f0d3e051f1d1d3367a42f607936ff4d6af3dd282eadb113df6164430",
+          "bytes": 1257,
+          "lines": 44,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "sha256": "c458f9a3f6688dae74f30936d4a0980afc87390aaada07b5908d8b7d10eb441e",
+          "bytes": 534,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "sha256": "529c1e8747e40cb6ea17706f9261fc9a657d7c0b592e48804e5743b303957cba",
+          "bytes": 147,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC173.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC173.sol",
+          "sha256": "b2650a4e8849467c213039d4fe07ced2955db4704dbdd87b67929f56c6b90ea2",
+          "bytes": 585,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC173Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC173Internal.sol",
+          "sha256": "fe16143125fc0baae800686e100ab632d439cd668a1a9807de6fe5a5fd4867bf",
+          "bytes": 271,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "sha256": "d3e2f9b94a7d4ff824dde23892ad58957b98044688aac734b5d5d4e5ca41a04e",
+          "bytes": 2248,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "sha256": "c4ad38291bc23bd7175d35c5d275dc631adcbdf66980850be95c0966152bff21",
+          "bytes": 349,
+          "lines": 16,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC3156FlashBorrower.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC3156FlashBorrower.sol",
+          "sha256": "cb3c5318fa01ea4191916fca5026b2006ddbd1eff6d0ea810a2505f5e8a86439",
+          "bytes": 690,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC3156FlashLender.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC3156FlashLender.sol",
+          "sha256": "4533bc8af20581efda6f1e3f0a29ed1cc6b26c00f904e353349a9f7ba07fd6f3",
+          "bytes": 1244,
+          "lines": 39,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC4626.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC4626.sol",
+          "sha256": "6db3f6312abfe08bcb0153eed8f64320dc931635f01abe947d961c3fd5555abc",
+          "bytes": 5716,
+          "lines": 161,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/interfaces/IERC4626Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC4626Internal.sol",
+          "sha256": "6973276b509f2e32de33f2f37e0c9cc805f9075f9ac57896b97e1adf51f5dd04",
+          "bytes": 470,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "sha256": "d22a20e6ff445ed753fcf589687a41726d57731dbadf16771a9b697c4f8e4e8f",
+          "bytes": 133,
+          "lines": 7,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "sha256": "64095642adb12a03678580f13ea6f1bb57fc602fa7feb01235f1edb04506ae63",
+          "bytes": 1126,
+          "lines": 36,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "sha256": "8b75e6873edaf854c2c24fa77f3d4d64a429361060aa4890d66128f8f654656c",
+          "bytes": 421,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155Base.sol",
+          "sha256": "bb394e6868c84693a4bf8ada49da1d7c89e298e47d980a049629cace6b13a057",
+          "bytes": 290,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "sha256": "4c37887cd75856a437a5f305dcaa45ca9cdd677342a609d9921b2f2131158290",
+          "bytes": 750,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "sha256": "310615aa0ac9cdff084193b2cdb45adf0550ebaf58aa65e03b027e02043c17e7",
+          "bytes": 1157,
+          "lines": 42,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/base/ERC20Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/ERC20Base.sol",
+          "sha256": "2f4108b8f3a91d5ee4d3e805eaa4bb29a2ea849fda3d59ec34f8297bbcb871e8",
+          "bytes": 1560,
+          "lines": 65,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/base/ERC20BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/ERC20BaseInternal.sol",
+          "sha256": "8e008abf0ade81de365f6cd49d14cdff757c105a7e3f16fba1b30bf79184b3e0",
+          "bytes": 6053,
+          "lines": 185,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/base/ERC20BaseStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/ERC20BaseStorage.sol",
+          "sha256": "fe7c97f25363569a0d55dfd0fd70b448b107486c7b3c220d29d4f0182e33bdce",
+          "bytes": 528,
+          "lines": 21,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "sha256": "6f26dbf624c231c1e05c8c6d819efc041677624fba1a1ec8d410b341acfdbe77",
+          "bytes": 274,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "sha256": "fd3f03960254f3b1d263bac99aaba379b1f75f8a793ed504290dc5c3a77ef7e3",
+          "bytes": 630,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/extended/ERC20Extended.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/ERC20Extended.sol",
+          "sha256": "72ebd775c3086c2daf689c30548c5ba4206717f7e93b1f253db60b7e5b908669",
+          "bytes": 881,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/extended/ERC20ExtendedInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/ERC20ExtendedInternal.sol",
+          "sha256": "77316e73e06b87c82ad6c2ebd106be71ec3344e95bd86496a27816ac51c8af26",
+          "bytes": 1623,
+          "lines": 50,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "sha256": "0629ed6ee8bc6b4cd99e25a63afabb64029789dbcb68308699a4c14525ddceef",
+          "bytes": 985,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "sha256": "05344c5febc3181ae192fc427e7ce0aa0d2566dbb92f087b3be6e199422d16ee",
+          "bytes": 336,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "sha256": "8596b191ca815fd2e06047bed7c39fc145e9ecedc6c277e9b971e1a1e2376b50",
+          "bytes": 403,
+          "lines": 15,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20Metadata.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20Metadata.sol",
+          "sha256": "d59326474eb22daf4e1e9a3955a2c1ae8ec1e07b290cf01661e4a846392a769b",
+          "bytes": 730,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20MetadataInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20MetadataInternal.sol",
+          "sha256": "b88fb07070fcd49965e225ff087c609872f2124258a1890bcc25d42811be8125",
+          "bytes": 1354,
+          "lines": 47,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20MetadataStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/ERC20MetadataStorage.sol",
+          "sha256": "3b9f80edeaa065f69bb095be35300e733c5ebafc0093c5fa1c9cefb56d6a24dd",
+          "bytes": 461,
+          "lines": 21,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "sha256": "7c5a9805e26788df0a551d81f443076bf997fd3e2f7864e968ee53f72aa30a6c",
+          "bytes": 684,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "sha256": "5d142e76ea96cf31d6a98be3198c77f63cf02d5919df4846ef2ce513629b8c68",
+          "bytes": 148,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20Permit.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20Permit.sol",
+          "sha256": "39e8787af7877a7c76fad69dabdf3a214f43f733605432f36ea4c68fca828731",
+          "bytes": 1264,
+          "lines": 48,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20PermitInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20PermitInternal.sol",
+          "sha256": "7924380b2c7e4dd4b92289171fb6350c78b0429fc2ae97c4f5f5277b1da42360",
+          "bytes": 5576,
+          "lines": 177,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20PermitStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/ERC20PermitStorage.sol",
+          "sha256": "4c1ae81598ff7105e637a05f82805491c637995b22bd55b82a84887440c18142",
+          "bytes": 702,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "sha256": "213c7283444d5578da9bcabac99c161783bf20fc4e4e1c290f226e1d34c81fa9",
+          "bytes": 364,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "sha256": "7d84865acaff401b385dba7a5793e702ce0831092828a09b42cc6be5b6b7bf5c",
+          "bytes": 258,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "sha256": "c53bb50e56dbdc5400d14bff9554e0af766ad341d34c997b3addb8cf01fa250f",
+          "bytes": 1274,
+          "lines": 43,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "sha256": "354315c80694ee32941799c303a735f9caca65b6511e63c7a2f1580a91919edf",
+          "bytes": 88,
+          "lines": 5,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC20/SolidStateERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/SolidStateERC20.sol",
+          "sha256": "2e2c178a54a5f5fc629c30da08b4e8869c204fbe425c5fedb178f36ec3f3c5aa",
+          "bytes": 878,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626Base.sol",
+          "sha256": "fbd0ffacd255d9b8eff93904005942531cc6bc864c6accb795501696a30ed943",
+          "bytes": 3859,
+          "lines": 166,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626BaseInternal.sol",
+          "sha256": "631c28691c39724f0ad56b48d67d458f9c12740cdc0da43e5a3e3cb0545f2bb5",
+          "bytes": 12556,
+          "lines": 369,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626BaseStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/base/ERC4626BaseStorage.sol",
+          "sha256": "4361ea38aa5da07e7baac0637c7e8f06572e7d792050b7fd26729dc6e49f01f5",
+          "bytes": 412,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/base/IERC4626Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/base/IERC4626Base.sol",
+          "sha256": "ae977074d9e7d69d735f4d26cc0a08fb2387e579a75d58f9abc33484af8505a3",
+          "bytes": 290,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/base/IERC4626BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/base/IERC4626BaseInternal.sol",
+          "sha256": "b5da5e2a56379021d290ca83982bec35a5a3d710f07ef9c45255f7e3c6e10766",
+          "bytes": 324,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/ISolidStateERC4626.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/ISolidStateERC4626.sol",
+          "sha256": "f1b31b31a37341ef2d1db2ab09e0eb6452a0f077a3efc99a736ca00c6bbaa963",
+          "bytes": 247,
+          "lines": 8,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/token/ERC4626/SolidStateERC4626.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC4626/SolidStateERC4626.sol",
+          "sha256": "ec5b10045e2d4441a747ecf31590aaa907e22c73fc8aef8aa6f3cb67aa662eb5",
+          "bytes": 760,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "sha256": "a9200421aea571ee0dc0c98821add0cf372a58fb39c51444bc2a7b475a2be8d8",
+          "bytes": 4216,
+          "lines": 142,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "sha256": "f57bea5b9a6defacf2f979ede850c1d5ab9196bd023c094952877dd223864a5e",
+          "bytes": 458,
+          "lines": 17,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/utils/Math.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/Math.sol",
+          "sha256": "b0c70171564fd07b646527a14dfadd436a0dabc5a4575c3c82629959e4ab72b2",
+          "bytes": 1734,
+          "lines": 62,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "sha256": "f4ef0411f71aec95d4cd7cebc4c6e9668d5c3a25b411864de9937080ab42c507",
+          "bytes": 3187,
+          "lines": 108,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/vault-impl/lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "sha256": "12044020002b03786ee2a31169007e7dc105853bb226952c3bf0e1c330f22536",
+          "bytes": 2005,
+          "lines": 81,
+          "kind": "public_original_source"
+        }
+      ]
+    },
+    {
+      "label": "pool-proxy",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0x1b25f69cfc2b3a9fcc0a7c0944a81723d5dcd77d?fields=all",
+      "retrieved_at": "2026-11-10T01:49:54.837867+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/pool-proxy/source-response.json",
+      "response_sha256": "8c8496a6c8880c8275d8375e28fa50e798ff03ff0b699af963ac475cd5350cbc",
+      "chain_id": "42161",
+      "address": "0x1B25F69Cfc2b3A9fCC0A7C0944A81723d5dcD77d",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.19+commit.7dd6d404",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "PoolProxy",
+        "fullyQualifiedName": "contracts/pool/PoolProxy.sol:PoolProxy"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2026-11-01T03:15:49Z",
+      "provider_deployment": {
+        "transactionHash": "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5",
+        "blockNumber": "520166285",
+        "transactionIndex": "1",
+        "deployer": "0xbeBa8CEfD0D75d747C5AD966Dc17C0Bb60D84dBd"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Constants.sol",
+          "sha256": "8c89534fa2eeabf114544ced998f0751fe7511fd4e5b370dd65bdedc1d760c3d",
+          "bytes": 2399,
+          "lines": 59,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/Common.sol",
+          "original_path": "lib/prb-math/src/Common.sol",
+          "sha256": "266e4c42cae237c09e37cb7316dbbaa3e2895268ece73981a09a320006c08c3f",
+          "bytes": 25365,
+          "lines": 673,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/pool/PoolProxy.sol",
+          "original_path": "contracts/pool/PoolProxy.sol",
+          "sha256": "aeada680e05efadfd6c7cd991060daca0019eb5b6ff042e5654b93cbffe6c3e1",
+          "bytes": 2693,
+          "lines": 74,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/SD59x18.sol",
+          "original_path": "lib/prb-math/src/SD59x18.sol",
+          "sha256": "5f890a86c19466354eb707003e5dffc9cd1b1dbdefae3f3d283287b1e2ecc547",
+          "bytes": 2129,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/UD60x18.sol",
+          "original_path": "lib/prb-math/src/UD60x18.sol",
+          "sha256": "d13981c438e1cd14fc713a26809824f46771c9469046f6298f0a3c21258d3fc1",
+          "bytes": 2147,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/pool/PoolStorage.sol",
+          "original_path": "contracts/pool/PoolStorage.sol",
+          "sha256": "072ca68bf4065a82325763b6b21bcccef5db29d62a16b231140b1b83da2a75e7",
+          "bytes": 9866,
+          "lines": 224,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/Pricing.sol",
+          "original_path": "contracts/libraries/Pricing.sol",
+          "sha256": "46ceb716cdb50824bea091da7305ba81d855a26e2f8f6fb025dd98c784f2d3c3",
+          "bytes": 6014,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/SD49x28.sol",
+          "original_path": "contracts/libraries/SD49x28.sol",
+          "sha256": "44a9ae080ad4139b44cfd307ba1aa1d8185a6e6d851e40516d78c3216844f9cc",
+          "bytes": 11921,
+          "lines": 368,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/UD50x28.sol",
+          "original_path": "contracts/libraries/UD50x28.sol",
+          "sha256": "a6abf62b410fc71bba174ab9f1daed302a53fe47c182089cc0a4575fa48ffbed",
+          "bytes": 8306,
+          "lines": 264,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/IPricing.sol",
+          "original_path": "contracts/libraries/IPricing.sol",
+          "sha256": "0d18cb08013ace9e209615f54dcd375e955dfd5c14ede573e4083484acc838f8",
+          "bytes": 463,
+          "lines": 11,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/Position.sol",
+          "original_path": "contracts/libraries/Position.sol",
+          "sha256": "7bd5e25886d2ddb9203b93c1bf69249a7937959efeee2b1bd7abebd7bafbe8ad",
+          "bytes": 14804,
+          "lines": 322,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/pool/IPoolInternal.sol",
+          "original_path": "contracts/pool/IPoolInternal.sol",
+          "sha256": "e82268ed016bb99c2a1f479f21133e26a468145b4c7ee707ea28ffae68e6ed77",
+          "bytes": 7689,
+          "lines": 215,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/Constants.sol",
+          "original_path": "contracts/libraries/Constants.sol",
+          "sha256": "2247c450161c9bd21a99a61657a925583703613d40b1d84d63f3bca164e1af68",
+          "bytes": 1154,
+          "lines": 31,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/IPosition.sol",
+          "original_path": "contracts/libraries/IPosition.sol",
+          "sha256": "37824eae31d64de71caff853dbb7dc7c5c005969d7a753785484389f00fe7199",
+          "bytes": 496,
+          "lines": 12,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/router/IERC20Router.sol",
+          "original_path": "contracts/router/IERC20Router.sol",
+          "sha256": "1c559ca8389f3d125b9eb4060ef4a6c18102149fc39df490dec08bfa4abf4a31",
+          "bytes": 599,
+          "lines": 14,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Math.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Math.sol",
+          "sha256": "5e7fa01992e372b2df19cd6ffacbf8df261c8fd342a6077129d02519ad3984e5",
+          "bytes": 27513,
+          "lines": 699,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Math.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Math.sol",
+          "sha256": "ab7da3fa52c50788d7f0d3ec0ca2333ba8376ac02c9a5aec8f65d7ed026d457a",
+          "bytes": 22891,
+          "lines": 568,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/OptionMath.sol",
+          "original_path": "contracts/libraries/OptionMath.sol",
+          "sha256": "bd02a5d21d79b9ba559f106a2f21d7c1cb9ac994c3cdfc1e7c348a489a1db44a",
+          "bytes": 13824,
+          "lines": 307,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd1x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Errors.sol",
+          "sha256": "d228bb4913823025b27eb846ffc3c4adb499f59696907f4ee4285e2cce9c561c",
+          "bytes": 916,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud2x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Errors.sol",
+          "sha256": "78a6efb5f0ff138e5a7be993e3f386f03766143e5f506ada5bba7dc50bb06ae6",
+          "bytes": 373,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd1x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Casting.sol",
+          "sha256": "be3ab093fc083aad3a54c294b85fb616a921202a1089a0ce9dbc2bf76e10d3b2",
+          "bytes": 2773,
+          "lines": 88,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Errors.sol",
+          "sha256": "70ed785b5a2e8c35c7cb990758ba97f8d5578c57cc532c882076e1049a3f2e18",
+          "bytes": 3880,
+          "lines": 85,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud2x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Casting.sol",
+          "sha256": "f5667c232e74b91d2d36f8a460394f9c018dd480b4277fdecacbce2c28f7dc22",
+          "bytes": 2528,
+          "lines": 71,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Errors.sol",
+          "sha256": "12a9ae83c9da4bfbd3cbc32abce189d7d688aa82d05f59e44821a852dff6a5eb",
+          "bytes": 1748,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/utils/Math.sol",
+          "original_path": "@solidstate/contracts/utils/Math.sol",
+          "sha256": "b0c70171564fd07b646527a14dfadd436a0dabc5a4575c3c82629959e4ab72b2",
+          "bytes": 1734,
+          "lines": 62,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/PRBMathExtra.sol",
+          "original_path": "contracts/libraries/PRBMathExtra.sol",
+          "sha256": "0b0765950d3f1d0b9c4c25b42ff261ca3eb3112666be8639c08173b29adad8a0",
+          "bytes": 3646,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/settings/IUserSettings.sol",
+          "original_path": "contracts/settings/IUserSettings.sol",
+          "sha256": "7b757394a859a94e66d10f0e94314aab3e1c4d97e8739ee243a053bd87fe7e54",
+          "bytes": 3454,
+          "lines": 66,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Casting.sol",
+          "sha256": "c0a67e1e78f1cbaa2f6f9a1073bdefe62a5cf873a23793ecea8d237ae9f87dd7",
+          "bytes": 3943,
+          "lines": 119,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Helpers.sol",
+          "sha256": "a7010688fd1ea5baccd299b3fec5d7ca2d6f78af086d17b26fe187e3615bd24a",
+          "bytes": 4117,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Casting.sol",
+          "sha256": "63734b4ecacc806155f7f61c653439ace54b8522440609512ded238b00adfb5e",
+          "bytes": 3148,
+          "lines": 93,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Helpers.sol",
+          "sha256": "65842561d996393c07779276e3960c0b421abdccc1054d423b5803c19f1a6f5c",
+          "bytes": 3786,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/proxy/Proxy.sol",
+          "original_path": "@solidstate/contracts/proxy/Proxy.sol",
+          "sha256": "93a3872e6b12f6c20bd9c4407c007042ac64251c2fe521468f360d2b574e555f",
+          "bytes": 1421,
+          "lines": 52,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd1x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Constants.sol",
+          "sha256": "ffd6e859d61a5e3395b684a00edcd26092d33b48fa7aa1721e252dc2cdda3891",
+          "bytes": 759,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd1x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd1x18/ValueType.sol",
+          "sha256": "1ea09e46ec53b1682f5f4b6ac34858b9924ec2e3ae5fe9dcaf66c7a1ee32bc00",
+          "bytes": 879,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud2x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Constants.sol",
+          "sha256": "5ad16143f06a20677a99692c856341f892e548825f864804afb7165c9e396ce0",
+          "bytes": 597,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud2x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud2x18/ValueType.sol",
+          "sha256": "e158a037c91b04e6029b13a35b9dbfe928e282526c6c116d2e7c0f28f487ea87",
+          "bytes": 885,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/proxy/IProxy.sol",
+          "original_path": "@solidstate/contracts/proxy/IProxy.sol",
+          "sha256": "794e2ff1421bcc44168611b5e8cfd0db84ba725836d5ab8ac1369c81ae1a890f",
+          "bytes": 161,
+          "lines": 9,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd59x18/ValueType.sol",
+          "sha256": "cf4a62b90a2d13611acd64fd64f2808c80bca8747a51a5059cd7f1fbf3003a2f",
+          "bytes": 2605,
+          "lines": 100,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Constants.sol",
+          "sha256": "7883364a05f0bc71338c68303f385c4213b8712900ed664eb1732daa0f0308a1",
+          "bytes": 1926,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud60x18/ValueType.sol",
+          "sha256": "49844ce8cd6ac618483c644efeb4fd54de87b9bf1c12668dbc5da83ad3988498",
+          "bytes": 2790,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/sd59x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Conversions.sol",
+          "sha256": "e3efef884448bacf29be944948774007020fde53fe6571c1c14c3d8a44f19e65",
+          "bytes": 1248,
+          "lines": 34,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/prb-math/src/ud60x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Conversions.sol",
+          "sha256": "6064d9a20b3849c07d83bbe88373a419645ec892b7222d24f199f771bddce9bf",
+          "bytes": 1037,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/utils/SafeERC20.sol",
+          "original_path": "@solidstate/contracts/utils/SafeERC20.sol",
+          "sha256": "f4ef0411f71aec95d4cd7cebc4c6e9668d5c3a25b411864de9937080ab42c507",
+          "bytes": 3187,
+          "lines": 108,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/utils/UintUtils.sol",
+          "original_path": "@solidstate/contracts/utils/UintUtils.sol",
+          "sha256": "12044020002b03786ee2a31169007e7dc105853bb226952c3bf0e1c330f22536",
+          "bytes": 2005,
+          "lines": 81,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/utils/IMulticall.sol",
+          "original_path": "@solidstate/contracts/utils/IMulticall.sol",
+          "sha256": "f57bea5b9a6defacf2f979ede850c1d5ab9196bd023c094952877dd223864a5e",
+          "bytes": 458,
+          "lines": 17,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC20.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC20.sol",
+          "sha256": "d3e2f9b94a7d4ff824dde23892ad58957b98044688aac734b5d5d4e5ca41a04e",
+          "bytes": 2248,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/data/EnumerableSet.sol",
+          "original_path": "@solidstate/contracts/data/EnumerableSet.sol",
+          "sha256": "d9499dd20a75d61903bae616301620d498876c2e52f40381b9d803ffa06130a6",
+          "bytes": 5778,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC165.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC165.sol",
+          "sha256": "c458f9a3f6688dae74f30936d4a0980afc87390aaada07b5908d8b7d10eb441e",
+          "bytes": 534,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/utils/AddressUtils.sol",
+          "original_path": "@solidstate/contracts/utils/AddressUtils.sol",
+          "sha256": "a9200421aea571ee0dc0c98821add0cf372a58fb39c51444bc2a7b475a2be8d8",
+          "bytes": 4216,
+          "lines": 142,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC1155.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC1155.sol",
+          "sha256": "b753a18eef08cf0bbc5df43505e9f6f8513220b5473b67af9e643cc85fbbe175",
+          "bytes": 2670,
+          "lines": 84,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/data/DoublyLinkedList.sol",
+          "original_path": "@solidstate/contracts/data/DoublyLinkedList.sol",
+          "sha256": "5cb0508b73d648acf7d97b3450045bc89c80c0d31c47d2591eaf9862dc4521f0",
+          "bytes": 11571,
+          "lines": 435,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "original_path": "contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "sha256": "7d15c2c887f791292c7c941acdd0949526f464d8f70a620d5409378e9e41e838",
+          "bytes": 3707,
+          "lines": 78,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC20Internal.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC20Internal.sol",
+          "sha256": "c4ad38291bc23bd7175d35c5d275dc631adcbdf66980850be95c0966152bff21",
+          "bytes": 349,
+          "lines": 16,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC165Internal.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC165Internal.sol",
+          "sha256": "529c1e8747e40cb6ea17706f9261fc9a657d7c0b592e48804e5743b303957cba",
+          "bytes": 147,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/interfaces/IERC1155Internal.sol",
+          "original_path": "@solidstate/contracts/interfaces/IERC1155Internal.sol",
+          "sha256": "22555bdeb668a9b257d685e2a1a6fb8d8a71c7e97494b38e8d343d89b4317d4b",
+          "bytes": 625,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+          "original_path": "@solidstate/contracts/access/ownable/OwnableStorage.sol",
+          "sha256": "3e2b1fe90a64a2843de24f7e45e4298f61b4cc2b167a67f9acb3cbee0a8271e1",
+          "bytes": 404,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "sha256": "7c5a9805e26788df0a551d81f443076bf997fd3e2f7864e968ee53f72aa30a6c",
+          "bytes": 684,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+          "original_path": "@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+          "sha256": "609381745b5e247e1decf1907d88d2ea34b3bc3c99f9024a2d43f95585050d17",
+          "bytes": 1299,
+          "lines": 47,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+          "original_path": "@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+          "sha256": "c1012cb40dff5f31e76f25078e1559de2cad9f57a038dfbdac2cb2cdc18418a7",
+          "bytes": 440,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "original_path": "@solidstate/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "sha256": "5d142e76ea96cf31d6a98be3198c77f63cf02d5919df4846ef2ce513629b8c68",
+          "bytes": 148,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+          "original_path": "@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+          "sha256": "4df90c9c9e08c7002e280a09d3f2fd7a069e49d6935ab002fdd10641b541498d",
+          "bytes": 1178,
+          "lines": 35,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+          "original_path": "@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+          "sha256": "8adad2a2254af657a637821dd60309c08d4b66607c754a5ef5c6f535be83e8c8",
+          "bytes": 231,
+          "lines": 9,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-proxy/lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "original_path": "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "sha256": "3f4df88ec1234a9aced282ebd81c914a11e97622b4cfb7b20bb4efe540b616d0",
+          "bytes": 13351,
+          "lines": 301,
+          "kind": "public_original_source"
+        }
+      ]
+    },
+    {
+      "label": "pool-deposit",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0x386dd942d3b058543f0dfa19034a0284a49ba5fd?fields=all",
+      "retrieved_at": "2026-11-10T01:58:22.305601+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/pool-deposit/source-response.json",
+      "response_sha256": "5e0536b2a07191166709f425ac62a2ce614d71a8a1eca8baf53c38bffd0150c2",
+      "chain_id": "42161",
+      "address": "0x386dD942d3b058543F0Dfa19034A0284A49Ba5FD",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.19+commit.7dd6d404",
+        "compilerSettings": {
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          },
+          "evmVersion": "paris",
+          "remappings": []
+        },
+        "name": "PoolDepositWithdraw",
+        "fullyQualifiedName": "contracts/pool/PoolDepositWithdraw.sol:PoolDepositWithdraw"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2024-08-08T12:39:40Z",
+      "provider_deployment": {
+        "transactionHash": "0x61c6ab17ce71bd33d6d86963fda96ec9fba9276168bd372b00b0c55cbe778d0d",
+        "blockNumber": "168409697",
+        "transactionIndex": "2",
+        "deployer": "0xC7f8D87734aB2cbf70030aC8aa82abfe3e8126cb"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd1x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd1x18/ValueType.sol",
+          "sha256": "1ea09e46ec53b1682f5f4b6ac34858b9924ec2e3ae5fe9dcaf66c7a1ee32bc00",
+          "bytes": 879,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/Common.sol",
+          "original_path": "lib/prb-math/src/Common.sol",
+          "sha256": "266e4c42cae237c09e37cb7316dbbaa3e2895268ece73981a09a320006c08c3f",
+          "bytes": 25365,
+          "lines": 673,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/SD59x18.sol",
+          "original_path": "lib/prb-math/src/SD59x18.sol",
+          "sha256": "5f890a86c19466354eb707003e5dffc9cd1b1dbdefae3f3d283287b1e2ecc547",
+          "bytes": 2129,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/UD60x18.sol",
+          "original_path": "lib/prb-math/src/UD60x18.sol",
+          "sha256": "d13981c438e1cd14fc713a26809824f46771c9469046f6298f0a3c21258d3fc1",
+          "bytes": 2147,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/IPoolEvents.sol",
+          "original_path": "contracts/pool/IPoolEvents.sol",
+          "sha256": "5634ac7f795e4f43b78641df5d0f8a7dc661196245bb55b42290d92b76ae94c6",
+          "bytes": 3703,
+          "lines": 138,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/PoolStorage.sol",
+          "original_path": "contracts/pool/PoolStorage.sol",
+          "sha256": "3c1a1be6e4f3bf04dea7be99d50d130897e4ea86b7003760eefa3da1d659258e",
+          "bytes": 12546,
+          "lines": 272,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/Pricing.sol",
+          "original_path": "contracts/libraries/Pricing.sol",
+          "sha256": "46ceb716cdb50824bea091da7305ba81d855a26e2f8f6fb025dd98c784f2d3c3",
+          "bytes": 6014,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/SD49x28.sol",
+          "original_path": "contracts/libraries/SD49x28.sol",
+          "sha256": "44a9ae080ad4139b44cfd307ba1aa1d8185a6e6d851e40516d78c3216844f9cc",
+          "bytes": 11921,
+          "lines": 368,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/UD50x28.sol",
+          "original_path": "contracts/libraries/UD50x28.sol",
+          "sha256": "a6abf62b410fc71bba174ab9f1daed302a53fe47c182089cc0a4575fa48ffbed",
+          "bytes": 8306,
+          "lines": 264,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/PoolInternal.sol",
+          "original_path": "contracts/pool/PoolInternal.sol",
+          "sha256": "05c1d8d6bcdda2ad9523904d33016718c1cbeaa8e3fddd09b452b8f8932be1a5",
+          "bytes": 88707,
+          "lines": 2160,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/staking/IVxPremia.sol",
+          "original_path": "contracts/staking/IVxPremia.sol",
+          "sha256": "886a2bf3ee708040eab4bde028af775c1acb9ac5ed74c0e53a72bfcecacd1d6c",
+          "bytes": 1504,
+          "lines": 35,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/IPricing.sol",
+          "original_path": "contracts/libraries/IPricing.sol",
+          "sha256": "0d18cb08013ace9e209615f54dcd375e955dfd5c14ede573e4083484acc838f8",
+          "bytes": 463,
+          "lines": 11,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/Position.sol",
+          "original_path": "contracts/libraries/Position.sol",
+          "sha256": "0ee9f2bfac1ad7ae8b69c8719e266dc7748436665bcb742547f7c1f3308c96f8",
+          "bytes": 14800,
+          "lines": 322,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/IPoolInternal.sol",
+          "original_path": "contracts/pool/IPoolInternal.sol",
+          "sha256": "ab593f5125e98bff0429e0998fce432ae591042f2c08dba678d229692361905f",
+          "bytes": 7422,
+          "lines": 211,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/referral/IReferral.sol",
+          "original_path": "contracts/referral/IReferral.sol",
+          "sha256": "809818123f690fa0e5665ea565a74dcefad4fd12fbd69ec1cd17e2b5bc01235e",
+          "bytes": 4736,
+          "lines": 107,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/Constants.sol",
+          "original_path": "contracts/libraries/Constants.sol",
+          "sha256": "7cc39b50b303ef11207115bc7356b3ad111b5a78e971f32633240d954eb73f14",
+          "bytes": 1185,
+          "lines": 33,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/IPosition.sol",
+          "original_path": "contracts/libraries/IPosition.sol",
+          "sha256": "37824eae31d64de71caff853dbb7dc7c5c005969d7a753785484389f00fe7199",
+          "bytes": 496,
+          "lines": 12,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/router/IERC20Router.sol",
+          "original_path": "contracts/router/IERC20Router.sol",
+          "sha256": "1c559ca8389f3d125b9eb4060ef4a6c18102149fc39df490dec08bfa4abf4a31",
+          "bytes": 599,
+          "lines": 14,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Math.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Math.sol",
+          "sha256": "5e7fa01992e372b2df19cd6ffacbf8df261c8fd342a6077129d02519ad3984e5",
+          "bytes": 27513,
+          "lines": 699,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Math.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Math.sol",
+          "sha256": "ab7da3fa52c50788d7f0d3ec0ca2333ba8376ac02c9a5aec8f65d7ed026d457a",
+          "bytes": 22891,
+          "lines": 568,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/OptionMath.sol",
+          "original_path": "contracts/libraries/OptionMath.sol",
+          "sha256": "2aea4ddf6a4e161b5a8c4920aff8ef380c8ae8bc388e8d2c626b6fe0c1b7e4be",
+          "bytes": 15925,
+          "lines": 355,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/vault/IVaultRegistry.sol",
+          "original_path": "contracts/vault/IVaultRegistry.sol",
+          "sha256": "76bcd63ff2d21562fb10b65ecc13692f0f688d126f1b32731e63f4b4101abf5b",
+          "bytes": 6463,
+          "lines": 169,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd1x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Errors.sol",
+          "sha256": "d228bb4913823025b27eb846ffc3c4adb499f59696907f4ee4285e2cce9c561c",
+          "bytes": 916,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud2x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Errors.sol",
+          "sha256": "78a6efb5f0ff138e5a7be993e3f386f03766143e5f506ada5bba7dc50bb06ae6",
+          "bytes": 373,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd1x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Casting.sol",
+          "sha256": "be3ab093fc083aad3a54c294b85fb616a921202a1089a0ce9dbc2bf76e10d3b2",
+          "bytes": 2773,
+          "lines": 88,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Errors.sol",
+          "sha256": "70ed785b5a2e8c35c7cb990758ba97f8d5578c57cc532c882076e1049a3f2e18",
+          "bytes": 3880,
+          "lines": 85,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud2x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Casting.sol",
+          "sha256": "f5667c232e74b91d2d36f8a460394f9c018dd480b4277fdecacbce2c28f7dc22",
+          "bytes": 2528,
+          "lines": 71,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Errors.sol",
+          "sha256": "12a9ae83c9da4bfbd3cbc32abce189d7d688aa82d05f59e44821a852dff6a5eb",
+          "bytes": 1748,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/adapter/IOracleAdapter.sol",
+          "original_path": "contracts/adapter/IOracleAdapter.sol",
+          "sha256": "f5a833ba9d5a87dfb01a9efe363382c2ca90b737ced2836c6f0392ddf4a8bdca",
+          "bytes": 3875,
+          "lines": 75,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/PRBMathExtra.sol",
+          "original_path": "contracts/libraries/PRBMathExtra.sol",
+          "sha256": "0b0765950d3f1d0b9c4c25b42ff261ca3eb3112666be8639c08173b29adad8a0",
+          "bytes": 3646,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/settings/IUserSettings.sol",
+          "original_path": "contracts/settings/IUserSettings.sol",
+          "sha256": "21c4fb9816197854a0dfcdf97860b4e792f4f15b0d7183c2b5889188c024cc00",
+          "bytes": 3466,
+          "lines": 66,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/staking/IPremiaStaking.sol",
+          "original_path": "contracts/staking/IPremiaStaking.sol",
+          "sha256": "6a9f0123b07d797350f90687a6eb9236b81c464ca2f821ecf55151fb3d37b4d2",
+          "bytes": 7668,
+          "lines": 171,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Casting.sol",
+          "sha256": "c0a67e1e78f1cbaa2f6f9a1073bdefe62a5cf873a23793ecea8d237ae9f87dd7",
+          "bytes": 3943,
+          "lines": 119,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Helpers.sol",
+          "sha256": "a7010688fd1ea5baccd299b3fec5d7ca2d6f78af086d17b26fe187e3615bd24a",
+          "bytes": 4117,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Casting.sol",
+          "sha256": "63734b4ecacc806155f7f61c653439ace54b8522440609512ded238b00adfb5e",
+          "bytes": 3148,
+          "lines": 93,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Helpers.sol",
+          "sha256": "65842561d996393c07779276e3960c0b421abdccc1054d423b5803c19f1a6f5c",
+          "bytes": 3786,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/staking/VxPremiaStorage.sol",
+          "original_path": "contracts/staking/VxPremiaStorage.sol",
+          "sha256": "87d9d8d69dfcbd3f434c4b1344979ce102928354941dfd5f6a48cecd4c926306",
+          "bytes": 811,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd1x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Constants.sol",
+          "sha256": "ffd6e859d61a5e3395b684a00edcd26092d33b48fa7aa1721e252dc2cdda3891",
+          "bytes": 759,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud2x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Constants.sol",
+          "sha256": "5ad16143f06a20677a99692c856341f892e548825f864804afb7165c9e396ce0",
+          "bytes": 597,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud2x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud2x18/ValueType.sol",
+          "sha256": "e158a037c91b04e6029b13a35b9dbfe928e282526c6c116d2e7c0f28f487ea87",
+          "bytes": 885,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/layerZero/token/oft/IOFT.sol",
+          "original_path": "contracts/layerZero/token/oft/IOFT.sol",
+          "sha256": "f81f565b7e618780064f81ec232de345ea2f52cbebeb6f53a8404f70983f1c25",
+          "bytes": 328,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/PoolDepositWithdraw.sol",
+          "original_path": "contracts/pool/PoolDepositWithdraw.sol",
+          "sha256": "2506aa5b0d8ed9bd994827b70f87c8a8a4d45c3e19ac34f77e33304c833ec4c4",
+          "bytes": 3366,
+          "lines": 97,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Constants.sol",
+          "sha256": "8c89534fa2eeabf114544ced998f0751fe7511fd4e5b370dd65bdedc1d760c3d",
+          "bytes": 2399,
+          "lines": 59,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd59x18/ValueType.sol",
+          "sha256": "cf4a62b90a2d13611acd64fd64f2808c80bca8747a51a5059cd7f1fbf3003a2f",
+          "bytes": 2605,
+          "lines": 100,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Constants.sol",
+          "sha256": "7883364a05f0bc71338c68303f385c4213b8712900ed664eb1732daa0f0308a1",
+          "bytes": 1926,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud60x18/ValueType.sol",
+          "sha256": "49844ce8cd6ac618483c644efeb4fd54de87b9bf1c12668dbc5da83ad3988498",
+          "bytes": 2790,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/pool/IPoolDepositWithdraw.sol",
+          "original_path": "contracts/pool/IPoolDepositWithdraw.sol",
+          "sha256": "1c9fd46536612e5b297796059bc9c3ae49828de726a5e6e8b34ae6429af8991a",
+          "bytes": 4650,
+          "lines": 82,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/sd59x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Conversions.sol",
+          "sha256": "e3efef884448bacf29be944948774007020fde53fe6571c1c14c3d8a44f19e65",
+          "bytes": 1248,
+          "lines": 34,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/prb-math/src/ud60x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Conversions.sol",
+          "sha256": "6064d9a20b3849c07d83bbe88373a419645ec892b7222d24f199f771bddce9bf",
+          "bytes": 1037,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/layerZero/token/oft/IOFTCore.sol",
+          "original_path": "contracts/layerZero/token/oft/IOFTCore.sol",
+          "sha256": "1401e899ce6ff0662acd6a0580917cd416b9dec3c0cf99da90abc33a0d6173e4",
+          "bytes": 2553,
+          "lines": 56,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/staking/PremiaStakingStorage.sol",
+          "original_path": "contracts/staking/PremiaStakingStorage.sol",
+          "sha256": "65820c1fbf74886181b9aa4a99995e210db3c35aa2390d403bb45387580473c7",
+          "bytes": 1565,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "original_path": "contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "sha256": "27eb268ac200ead0f1e9e9e4eba8063097689dd64b5e1c0ca99794611cba05f8",
+          "bytes": 3719,
+          "lines": 78,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/Math.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/Math.sol",
+          "sha256": "b0c70171564fd07b646527a14dfadd436a0dabc5a4575c3c82629959e4ab72b2",
+          "bytes": 1734,
+          "lines": 62,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/SafeCast.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/SafeCast.sol",
+          "sha256": "3d85d91f8a5aa11397bf007cbd9651e085a135335508cef9882b54d49bf58d6b",
+          "bytes": 3033,
+          "lines": 89,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "sha256": "f4ef0411f71aec95d4cd7cebc4c6e9668d5c3a25b411864de9937080ab42c507",
+          "bytes": 3187,
+          "lines": 108,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "sha256": "12044020002b03786ee2a31169007e7dc105853bb226952c3bf0e1c330f22536",
+          "bytes": 2005,
+          "lines": 81,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "sha256": "f57bea5b9a6defacf2f979ede850c1d5ab9196bd023c094952877dd223864a5e",
+          "bytes": 458,
+          "lines": 17,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "sha256": "d3e2f9b94a7d4ff824dde23892ad58957b98044688aac734b5d5d4e5ca41a04e",
+          "bytes": 2248,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "sha256": "4b49765f006bb38ce27af098b7ef136b27ffdc49c6d5de2f58eff11a8b191318",
+          "bytes": 3228,
+          "lines": 89,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "sha256": "d9499dd20a75d61903bae616301620d498876c2e52f40381b9d803ffa06130a6",
+          "bytes": 5778,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "sha256": "c458f9a3f6688dae74f30936d4a0980afc87390aaada07b5908d8b7d10eb441e",
+          "bytes": 534,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "sha256": "a9200421aea571ee0dc0c98821add0cf372a58fb39c51444bc2a7b475a2be8d8",
+          "bytes": 4216,
+          "lines": 142,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "sha256": "081456e579b2923a91b09f54832a4defc3822476b551a1848f8beb9ae00ac626",
+          "bytes": 1746,
+          "lines": 54,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "sha256": "5cb0508b73d648acf7d97b3450045bc89c80c0d31c47d2591eaf9862dc4521f0",
+          "bytes": 11571,
+          "lines": 435,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "sha256": "c4ad38291bc23bd7175d35c5d275dc631adcbdf66980850be95c0966152bff21",
+          "bytes": 349,
+          "lines": 16,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "sha256": "529c1e8747e40cb6ea17706f9261fc9a657d7c0b592e48804e5743b303957cba",
+          "bytes": 147,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "sha256": "22555bdeb668a9b257d685e2a1a6fb8d8a71c7e97494b38e8d343d89b4317d4b",
+          "bytes": 625,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "sha256": "04ee1d90f0d3e051f1d1d3367a42f607936ff4d6af3dd282eadb113df6164430",
+          "bytes": 1257,
+          "lines": 44,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "sha256": "6f26dbf624c231c1e05c8c6d819efc041677624fba1a1ec8d410b341acfdbe77",
+          "bytes": 274,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "sha256": "c53bb50e56dbdc5400d14bff9554e0af766ad341d34c997b3addb8cf01fa250f",
+          "bytes": 1274,
+          "lines": 43,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "sha256": "8596b191ca815fd2e06047bed7c39fc145e9ecedc6c277e9b971e1a1e2376b50",
+          "bytes": 403,
+          "lines": 15,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "sha256": "213c7283444d5578da9bcabac99c161783bf20fc4e4e1c290f226e1d34c81fa9",
+          "bytes": 364,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "original_path": "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "sha256": "3f4df88ec1234a9aced282ebd81c914a11e97622b4cfb7b20bb4efe540b616d0",
+          "bytes": 13351,
+          "lines": 301,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "sha256": "fd3f03960254f3b1d263bac99aaba379b1f75f8a793ed504290dc5c3a77ef7e3",
+          "bytes": 630,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "sha256": "0629ed6ee8bc6b4cd99e25a63afabb64029789dbcb68308699a4c14525ddceef",
+          "bytes": 985,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "sha256": "7c5a9805e26788df0a551d81f443076bf997fd3e2f7864e968ee53f72aa30a6c",
+          "bytes": 684,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "sha256": "354315c80694ee32941799c303a735f9caca65b6511e63c7a2f1580a91919edf",
+          "bytes": 88,
+          "lines": 5,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseStorage.sol",
+          "sha256": "cd17406075d997abb3c91cd45a5c6b3dcd446080e615877295624fa470a8de05",
+          "bytes": 527,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseInternal.sol",
+          "sha256": "e9df75b72517207a56cf518a54861158d16446f019ef6ccc6904f0eb1879d237",
+          "bytes": 14423,
+          "lines": 479,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "sha256": "4c37887cd75856a437a5f305dcaa45ca9cdd677342a609d9921b2f2131158290",
+          "bytes": 750,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "sha256": "7d84865acaff401b385dba7a5793e702ce0831092828a09b42cc6be5b6b7bf5c",
+          "bytes": 258,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "sha256": "64095642adb12a03678580f13ea6f1bb57fc602fa7feb01235f1edb04506ae63",
+          "bytes": 1126,
+          "lines": 36,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "sha256": "d22a20e6ff445ed753fcf589687a41726d57731dbadf16771a9b697c4f8e4e8f",
+          "bytes": 133,
+          "lines": 7,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155Enumerable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155Enumerable.sol",
+          "sha256": "21df572fe671f4bf203244898afb08aa28b40c36563eeceb597abe719dcb4239",
+          "bytes": 1407,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "sha256": "310615aa0ac9cdff084193b2cdb45adf0550ebaf58aa65e03b027e02043c17e7",
+          "bytes": 1157,
+          "lines": 42,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "sha256": "05344c5febc3181ae192fc427e7ce0aa0d2566dbb92f087b3be6e199422d16ee",
+          "bytes": 336,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "sha256": "5d142e76ea96cf31d6a98be3198c77f63cf02d5919df4846ef2ce513629b8c68",
+          "bytes": 148,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "sha256": "8b75e6873edaf854c2c24fa77f3d4d64a429361060aa4890d66128f8f654656c",
+          "bytes": 421,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableStorage.sol",
+          "sha256": "7aed17b427eed0b489206c622284b6e12bb84b45caa66714765b609e4f3f9908",
+          "bytes": 653,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-deposit/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableInternal.sol",
+          "sha256": "14100c5570b1bfb8c41030bc97e4b030b233d0cb5eca2072260afa8ba268eb67",
+          "bytes": 4039,
+          "lines": 129,
+          "kind": "public_original_source"
+        }
+      ]
+    },
+    {
+      "label": "pool-core",
+      "kind": "public_original_source",
+      "url": "https://sourcify.dev/server/v2/contract/42161/0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc?fields=all",
+      "retrieved_at": "2026-11-10T01:58:22.305601+08:00",
+      "timezone": "Asia/Shanghai",
+      "response_path": "source-bundles/pool-core/source-response.json",
+      "response_sha256": "a2f4a7437ce0096cbbdff74a06b76cb089a1a872d19b39c47ee35983047943ae",
+      "chain_id": "42161",
+      "address": "0xA1A1Ea8B5A6045b6BfA51afB9b1c8c44f3F296bc",
+      "compiler": {
+        "language": "Solidity",
+        "compiler": "solc",
+        "compilerVersion": "0.8.19+commit.7dd6d404",
+        "compilerSettings": {
+          "viaIR": false,
+          "libraries": {},
+          "optimizer": {
+            "runs": 200,
+            "enabled": true
+          }
+        },
+        "name": "PoolCore",
+        "fullyQualifiedName": "contracts/pool/PoolCore.sol:PoolCore"
+      },
+      "provider_runtime_match": "match",
+      "provider_creation_match": "match",
+      "provider_verified_at": "2026-03-15T18:51:38Z",
+      "provider_deployment": {
+        "transactionHash": "0x850fbfc9540151faa9aa424c0de0cd1841f7ec192cb82123b47cfdceef126b5f",
+        "blockNumber": "168409431",
+        "transactionIndex": "2",
+        "deployer": "0xC7f8D87734aB2cbf70030aC8aa82abfe3e8126cb"
+      },
+      "provider_current_proxy_resolution": {
+        "isProxy": false,
+        "proxyType": null,
+        "implementations": []
+      },
+      "historical_implementation_warning": "Current provider resolution is not proof of attack-time implementation.",
+      "source_files": [
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/adapter/IOracleAdapter.sol",
+          "original_path": "contracts/adapter/IOracleAdapter.sol",
+          "sha256": "f5a833ba9d5a87dfb01a9efe363382c2ca90b737ced2836c6f0392ddf4a8bdca",
+          "bytes": 3875,
+          "lines": 75,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/layerZero/token/oft/IOFT.sol",
+          "original_path": "contracts/layerZero/token/oft/IOFT.sol",
+          "sha256": "f81f565b7e618780064f81ec232de345ea2f52cbebeb6f53a8404f70983f1c25",
+          "bytes": 328,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/layerZero/token/oft/IOFTCore.sol",
+          "original_path": "contracts/layerZero/token/oft/IOFTCore.sol",
+          "sha256": "1401e899ce6ff0662acd6a0580917cd416b9dec3c0cf99da90abc33a0d6173e4",
+          "bytes": 2553,
+          "lines": 56,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/Constants.sol",
+          "original_path": "contracts/libraries/Constants.sol",
+          "sha256": "7cc39b50b303ef11207115bc7356b3ad111b5a78e971f32633240d954eb73f14",
+          "bytes": 1185,
+          "lines": 33,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "original_path": "contracts/libraries/DoublyLinkedListUD60x18.sol",
+          "sha256": "27eb268ac200ead0f1e9e9e4eba8063097689dd64b5e1c0ca99794611cba05f8",
+          "bytes": 3719,
+          "lines": 78,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/IPosition.sol",
+          "original_path": "contracts/libraries/IPosition.sol",
+          "sha256": "37824eae31d64de71caff853dbb7dc7c5c005969d7a753785484389f00fe7199",
+          "bytes": 496,
+          "lines": 12,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/IPricing.sol",
+          "original_path": "contracts/libraries/IPricing.sol",
+          "sha256": "0d18cb08013ace9e209615f54dcd375e955dfd5c14ede573e4083484acc838f8",
+          "bytes": 463,
+          "lines": 11,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/OptionMath.sol",
+          "original_path": "contracts/libraries/OptionMath.sol",
+          "sha256": "2aea4ddf6a4e161b5a8c4920aff8ef380c8ae8bc388e8d2c626b6fe0c1b7e4be",
+          "bytes": 15925,
+          "lines": 355,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/Position.sol",
+          "original_path": "contracts/libraries/Position.sol",
+          "sha256": "0ee9f2bfac1ad7ae8b69c8719e266dc7748436665bcb742547f7c1f3308c96f8",
+          "bytes": 14800,
+          "lines": 322,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/PRBMathExtra.sol",
+          "original_path": "contracts/libraries/PRBMathExtra.sol",
+          "sha256": "0b0765950d3f1d0b9c4c25b42ff261ca3eb3112666be8639c08173b29adad8a0",
+          "bytes": 3646,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/Pricing.sol",
+          "original_path": "contracts/libraries/Pricing.sol",
+          "sha256": "46ceb716cdb50824bea091da7305ba81d855a26e2f8f6fb025dd98c784f2d3c3",
+          "bytes": 6014,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/SD49x28.sol",
+          "original_path": "contracts/libraries/SD49x28.sol",
+          "sha256": "44a9ae080ad4139b44cfd307ba1aa1d8185a6e6d851e40516d78c3216844f9cc",
+          "bytes": 11921,
+          "lines": 368,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/libraries/UD50x28.sol",
+          "original_path": "contracts/libraries/UD50x28.sol",
+          "sha256": "a6abf62b410fc71bba174ab9f1daed302a53fe47c182089cc0a4575fa48ffbed",
+          "bytes": 8306,
+          "lines": 264,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/IPoolCore.sol",
+          "original_path": "contracts/pool/IPoolCore.sol",
+          "sha256": "52760378fcf608126abfa0da8e1e1bbef7da8ebfac0628b75d1bb5ff450989b9",
+          "bytes": 10743,
+          "lines": 173,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/IPoolEvents.sol",
+          "original_path": "contracts/pool/IPoolEvents.sol",
+          "sha256": "5634ac7f795e4f43b78641df5d0f8a7dc661196245bb55b42290d92b76ae94c6",
+          "bytes": 3703,
+          "lines": 138,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/IPoolInternal.sol",
+          "original_path": "contracts/pool/IPoolInternal.sol",
+          "sha256": "ab593f5125e98bff0429e0998fce432ae591042f2c08dba678d229692361905f",
+          "bytes": 7422,
+          "lines": 211,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/PoolCore.sol",
+          "original_path": "contracts/pool/PoolCore.sol",
+          "sha256": "9f783ede628eca82bebd5639d24f4d6c9dc2d17ebab65e5624d564d109f33177",
+          "bytes": 12428,
+          "lines": 342,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/PoolInternal.sol",
+          "original_path": "contracts/pool/PoolInternal.sol",
+          "sha256": "05c1d8d6bcdda2ad9523904d33016718c1cbeaa8e3fddd09b452b8f8932be1a5",
+          "bytes": 88707,
+          "lines": 2160,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/pool/PoolStorage.sol",
+          "original_path": "contracts/pool/PoolStorage.sol",
+          "sha256": "3c1a1be6e4f3bf04dea7be99d50d130897e4ea86b7003760eefa3da1d659258e",
+          "bytes": 12546,
+          "lines": 272,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/referral/IReferral.sol",
+          "original_path": "contracts/referral/IReferral.sol",
+          "sha256": "809818123f690fa0e5665ea565a74dcefad4fd12fbd69ec1cd17e2b5bc01235e",
+          "bytes": 4736,
+          "lines": 107,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/router/IERC20Router.sol",
+          "original_path": "contracts/router/IERC20Router.sol",
+          "sha256": "1c559ca8389f3d125b9eb4060ef4a6c18102149fc39df490dec08bfa4abf4a31",
+          "bytes": 599,
+          "lines": 14,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/settings/IUserSettings.sol",
+          "original_path": "contracts/settings/IUserSettings.sol",
+          "sha256": "21c4fb9816197854a0dfcdf97860b4e792f4f15b0d7183c2b5889188c024cc00",
+          "bytes": 3466,
+          "lines": 66,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/staking/IPremiaStaking.sol",
+          "original_path": "contracts/staking/IPremiaStaking.sol",
+          "sha256": "6a9f0123b07d797350f90687a6eb9236b81c464ca2f821ecf55151fb3d37b4d2",
+          "bytes": 7668,
+          "lines": 171,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/staking/IVxPremia.sol",
+          "original_path": "contracts/staking/IVxPremia.sol",
+          "sha256": "886a2bf3ee708040eab4bde028af775c1acb9ac5ed74c0e53a72bfcecacd1d6c",
+          "bytes": 1504,
+          "lines": 35,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/staking/PremiaStakingStorage.sol",
+          "original_path": "contracts/staking/PremiaStakingStorage.sol",
+          "sha256": "65820c1fbf74886181b9aa4a99995e210db3c35aa2390d403bb45387580473c7",
+          "bytes": 1565,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/staking/VxPremiaStorage.sol",
+          "original_path": "contracts/staking/VxPremiaStorage.sol",
+          "sha256": "87d9d8d69dfcbd3f434c4b1344979ce102928354941dfd5f6a48cecd4c926306",
+          "bytes": 811,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/contracts/vault/IVaultRegistry.sol",
+          "original_path": "contracts/vault/IVaultRegistry.sol",
+          "sha256": "76bcd63ff2d21562fb10b65ecc13692f0f688d126f1b32731e63f4b4101abf5b",
+          "bytes": 6463,
+          "lines": 169,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "original_path": "lib/BokkyPooBahsDateTimeLibrary/contracts/BokkyPooBahsDateTimeLibrary.sol",
+          "sha256": "3f4df88ec1234a9aced282ebd81c914a11e97622b4cfb7b20bb4efe540b616d0",
+          "bytes": 13351,
+          "lines": 301,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/Common.sol",
+          "original_path": "lib/prb-math/src/Common.sol",
+          "sha256": "266e4c42cae237c09e37cb7316dbbaa3e2895268ece73981a09a320006c08c3f",
+          "bytes": 25365,
+          "lines": 673,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd1x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Casting.sol",
+          "sha256": "be3ab093fc083aad3a54c294b85fb616a921202a1089a0ce9dbc2bf76e10d3b2",
+          "bytes": 2773,
+          "lines": 88,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd1x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Constants.sol",
+          "sha256": "ffd6e859d61a5e3395b684a00edcd26092d33b48fa7aa1721e252dc2cdda3891",
+          "bytes": 759,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd1x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd1x18/Errors.sol",
+          "sha256": "d228bb4913823025b27eb846ffc3c4adb499f59696907f4ee4285e2cce9c561c",
+          "bytes": 916,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd1x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd1x18/ValueType.sol",
+          "sha256": "1ea09e46ec53b1682f5f4b6ac34858b9924ec2e3ae5fe9dcaf66c7a1ee32bc00",
+          "bytes": 879,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/SD59x18.sol",
+          "original_path": "lib/prb-math/src/SD59x18.sol",
+          "sha256": "5f890a86c19466354eb707003e5dffc9cd1b1dbdefae3f3d283287b1e2ecc547",
+          "bytes": 2129,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Casting.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Casting.sol",
+          "sha256": "c0a67e1e78f1cbaa2f6f9a1073bdefe62a5cf873a23793ecea8d237ae9f87dd7",
+          "bytes": 3943,
+          "lines": 119,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Constants.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Constants.sol",
+          "sha256": "8c89534fa2eeabf114544ced998f0751fe7511fd4e5b370dd65bdedc1d760c3d",
+          "bytes": 2399,
+          "lines": 59,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Conversions.sol",
+          "sha256": "e3efef884448bacf29be944948774007020fde53fe6571c1c14c3d8a44f19e65",
+          "bytes": 1248,
+          "lines": 34,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Errors.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Errors.sol",
+          "sha256": "70ed785b5a2e8c35c7cb990758ba97f8d5578c57cc532c882076e1049a3f2e18",
+          "bytes": 3880,
+          "lines": 85,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Helpers.sol",
+          "sha256": "a7010688fd1ea5baccd299b3fec5d7ca2d6f78af086d17b26fe187e3615bd24a",
+          "bytes": 4117,
+          "lines": 116,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/Math.sol",
+          "original_path": "lib/prb-math/src/sd59x18/Math.sol",
+          "sha256": "5e7fa01992e372b2df19cd6ffacbf8df261c8fd342a6077129d02519ad3984e5",
+          "bytes": 27513,
+          "lines": 699,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/sd59x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/sd59x18/ValueType.sol",
+          "sha256": "cf4a62b90a2d13611acd64fd64f2808c80bca8747a51a5059cd7f1fbf3003a2f",
+          "bytes": 2605,
+          "lines": 100,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud2x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Casting.sol",
+          "sha256": "f5667c232e74b91d2d36f8a460394f9c018dd480b4277fdecacbce2c28f7dc22",
+          "bytes": 2528,
+          "lines": 71,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud2x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Constants.sol",
+          "sha256": "5ad16143f06a20677a99692c856341f892e548825f864804afb7165c9e396ce0",
+          "bytes": 597,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud2x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud2x18/Errors.sol",
+          "sha256": "78a6efb5f0ff138e5a7be993e3f386f03766143e5f506ada5bba7dc50bb06ae6",
+          "bytes": 373,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud2x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud2x18/ValueType.sol",
+          "sha256": "e158a037c91b04e6029b13a35b9dbfe928e282526c6c116d2e7c0f28f487ea87",
+          "bytes": 885,
+          "lines": 24,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/UD60x18.sol",
+          "original_path": "lib/prb-math/src/UD60x18.sol",
+          "sha256": "d13981c438e1cd14fc713a26809824f46771c9469046f6298f0a3c21258d3fc1",
+          "bytes": 2147,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Casting.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Casting.sol",
+          "sha256": "63734b4ecacc806155f7f61c653439ace54b8522440609512ded238b00adfb5e",
+          "bytes": 3148,
+          "lines": 93,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Constants.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Constants.sol",
+          "sha256": "7883364a05f0bc71338c68303f385c4213b8712900ed664eb1732daa0f0308a1",
+          "bytes": 1926,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Conversions.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Conversions.sol",
+          "sha256": "6064d9a20b3849c07d83bbe88373a419645ec892b7222d24f199f771bddce9bf",
+          "bytes": 1037,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Errors.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Errors.sol",
+          "sha256": "12a9ae83c9da4bfbd3cbc32abce189d7d688aa82d05f59e44821a852dff6a5eb",
+          "bytes": 1748,
+          "lines": 40,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Helpers.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Helpers.sol",
+          "sha256": "65842561d996393c07779276e3960c0b421abdccc1054d423b5803c19f1a6f5c",
+          "bytes": 3786,
+          "lines": 105,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/Math.sol",
+          "original_path": "lib/prb-math/src/ud60x18/Math.sol",
+          "sha256": "ab7da3fa52c50788d7f0d3ec0ca2333ba8376ac02c9a5aec8f65d7ed026d457a",
+          "bytes": 22891,
+          "lines": 568,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/prb-math/src/ud60x18/ValueType.sol",
+          "original_path": "lib/prb-math/src/ud60x18/ValueType.sol",
+          "sha256": "49844ce8cd6ac618483c644efeb4fd54de87b9bf1c12668dbc5da83ad3988498",
+          "bytes": 2790,
+          "lines": 98,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/ECDSA.sol",
+          "sha256": "4b49765f006bb38ce27af098b7ef136b27ffdc49c6d5de2f58eff11a8b191318",
+          "bytes": 3228,
+          "lines": 89,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "original_path": "lib/solidstate-solidity/contracts/cryptography/EIP712.sol",
+          "sha256": "081456e579b2923a91b09f54832a4defc3822476b551a1848f8beb9ae00ac626",
+          "bytes": 1746,
+          "lines": 54,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/DoublyLinkedList.sol",
+          "sha256": "5cb0508b73d648acf7d97b3450045bc89c80c0d31c47d2591eaf9862dc4521f0",
+          "bytes": 11571,
+          "lines": 435,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "original_path": "lib/solidstate-solidity/contracts/data/EnumerableSet.sol",
+          "sha256": "d9499dd20a75d61903bae616301620d498876c2e52f40381b9d803ffa06130a6",
+          "bytes": 5778,
+          "lines": 239,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Internal.sol",
+          "sha256": "22555bdeb668a9b257d685e2a1a6fb8d8a71c7e97494b38e8d343d89b4317d4b",
+          "bytes": 625,
+          "lines": 30,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC1155Receiver.sol",
+          "sha256": "04ee1d90f0d3e051f1d1d3367a42f607936ff4d6af3dd282eadb113df6164430",
+          "bytes": 1257,
+          "lines": 44,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165.sol",
+          "sha256": "c458f9a3f6688dae74f30936d4a0980afc87390aaada07b5908d8b7d10eb441e",
+          "bytes": 534,
+          "lines": 18,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC165Internal.sol",
+          "sha256": "529c1e8747e40cb6ea17706f9261fc9a657d7c0b592e48804e5743b303957cba",
+          "bytes": 147,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20.sol",
+          "sha256": "d3e2f9b94a7d4ff824dde23892ad58957b98044688aac734b5d5d4e5ca41a04e",
+          "bytes": 2248,
+          "lines": 68,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/interfaces/IERC20Internal.sol",
+          "sha256": "c4ad38291bc23bd7175d35c5d275dc631adcbdf66980850be95c0966152bff21",
+          "bytes": 349,
+          "lines": 16,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/IReentrancyGuard.sol",
+          "sha256": "d22a20e6ff445ed753fcf589687a41726d57731dbadf16771a9b697c4f8e4e8f",
+          "bytes": 133,
+          "lines": 7,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuard.sol",
+          "sha256": "64095642adb12a03678580f13ea6f1bb57fc602fa7feb01235f1edb04506ae63",
+          "bytes": 1126,
+          "lines": 36,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/security/reentrancy_guard/ReentrancyGuardStorage.sol",
+          "sha256": "8b75e6873edaf854c2c24fa77f3d4d64a429361060aa4890d66128f8f654656c",
+          "bytes": 421,
+          "lines": 19,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseInternal.sol",
+          "sha256": "e9df75b72517207a56cf518a54861158d16446f019ef6ccc6904f0eb1879d237",
+          "bytes": 14423,
+          "lines": 479,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/ERC1155BaseStorage.sol",
+          "sha256": "cd17406075d997abb3c91cd45a5c6b3dcd446080e615877295624fa470a8de05",
+          "bytes": 527,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/base/IERC1155BaseInternal.sol",
+          "sha256": "4c37887cd75856a437a5f305dcaa45ca9cdd677342a609d9921b2f2131158290",
+          "bytes": 750,
+          "lines": 22,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155Enumerable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155Enumerable.sol",
+          "sha256": "21df572fe671f4bf203244898afb08aa28b40c36563eeceb597abe719dcb4239",
+          "bytes": 1407,
+          "lines": 51,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableInternal.sol",
+          "sha256": "14100c5570b1bfb8c41030bc97e4b030b233d0cb5eca2072260afa8ba268eb67",
+          "bytes": 4039,
+          "lines": 129,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableStorage.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/ERC1155EnumerableStorage.sol",
+          "sha256": "7aed17b427eed0b489206c622284b6e12bb84b45caa66714765b609e4f3f9908",
+          "bytes": 653,
+          "lines": 23,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC1155/enumerable/IERC1155Enumerable.sol",
+          "sha256": "310615aa0ac9cdff084193b2cdb45adf0550ebaf58aa65e03b027e02043c17e7",
+          "bytes": 1157,
+          "lines": 42,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20Base.sol",
+          "sha256": "6f26dbf624c231c1e05c8c6d819efc041677624fba1a1ec8d410b341acfdbe77",
+          "bytes": 274,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/base/IERC20BaseInternal.sol",
+          "sha256": "fd3f03960254f3b1d263bac99aaba379b1f75f8a793ed504290dc5c3a77ef7e3",
+          "bytes": 630,
+          "lines": 20,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20Extended.sol",
+          "sha256": "0629ed6ee8bc6b4cd99e25a63afabb64029789dbcb68308699a4c14525ddceef",
+          "bytes": 985,
+          "lines": 32,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/extended/IERC20ExtendedInternal.sol",
+          "sha256": "05344c5febc3181ae192fc427e7ce0aa0d2566dbb92f087b3be6e199422d16ee",
+          "bytes": 336,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/ISolidStateERC20.sol",
+          "sha256": "8596b191ca815fd2e06047bed7c39fc145e9ecedc6c277e9b971e1a1e2376b50",
+          "bytes": 403,
+          "lines": 15,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20Metadata.sol",
+          "sha256": "7c5a9805e26788df0a551d81f443076bf997fd3e2f7864e968ee53f72aa30a6c",
+          "bytes": 684,
+          "lines": 28,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/metadata/IERC20MetadataInternal.sol",
+          "sha256": "5d142e76ea96cf31d6a98be3198c77f63cf02d5919df4846ef2ce513629b8c68",
+          "bytes": 148,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20Permit.sol",
+          "sha256": "213c7283444d5578da9bcabac99c161783bf20fc4e4e1c290f226e1d34c81fa9",
+          "bytes": 364,
+          "lines": 13,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC20PermitInternal.sol",
+          "sha256": "7d84865acaff401b385dba7a5793e702ce0831092828a09b42cc6be5b6b7bf5c",
+          "bytes": 258,
+          "lines": 10,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612.sol",
+          "sha256": "c53bb50e56dbdc5400d14bff9554e0af766ad341d34c997b3addb8cf01fa250f",
+          "bytes": 1274,
+          "lines": 43,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "original_path": "lib/solidstate-solidity/contracts/token/ERC20/permit/IERC2612Internal.sol",
+          "sha256": "354315c80694ee32941799c303a735f9caca65b6511e63c7a2f1580a91919edf",
+          "bytes": 88,
+          "lines": 5,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/AddressUtils.sol",
+          "sha256": "a9200421aea571ee0dc0c98821add0cf372a58fb39c51444bc2a7b475a2be8d8",
+          "bytes": 4216,
+          "lines": 142,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/IMulticall.sol",
+          "sha256": "f57bea5b9a6defacf2f979ede850c1d5ab9196bd023c094952877dd223864a5e",
+          "bytes": 458,
+          "lines": 17,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/Math.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/Math.sol",
+          "sha256": "b0c70171564fd07b646527a14dfadd436a0dabc5a4575c3c82629959e4ab72b2",
+          "bytes": 1734,
+          "lines": 62,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/SafeCast.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/SafeCast.sol",
+          "sha256": "3d85d91f8a5aa11397bf007cbd9651e085a135335508cef9882b54d49bf58d6b",
+          "bytes": 3033,
+          "lines": 89,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/SafeERC20.sol",
+          "sha256": "f4ef0411f71aec95d4cd7cebc4c6e9668d5c3a25b411864de9937080ab42c507",
+          "bytes": 3187,
+          "lines": 108,
+          "kind": "public_original_source"
+        },
+        {
+          "path": "dataset/20261101_PremiaV3/pool-core/lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "original_path": "lib/solidstate-solidity/contracts/utils/UintUtils.sol",
+          "sha256": "12044020002b03786ee2a31169007e7dc105853bb226952c3bf0e1c330f22536",
+          "bytes": 2005,
+          "lines": 81,
+          "kind": "public_original_source"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/setup-receipt-official.json",
+      "sha256": "56b10d07313b5c0b2dd379f834f159abb0f9715b7f60b72de5b0a3605cb9ce0a",
+      "batch_original": "screening/premia/setup-receipt-official.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T02:00:48.300294+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xe3c263fcae544954367998e48e13112875cfd38a3b9a240e7818bb96313831f5"
+        ]
+      }
+    },
+    {
+      "path": "evidence/attack1-receipt-alt.json",
+      "sha256": "38068758da7330c93aeb6d8baebf672d93915f98ab45d804e79745cf7df814d7",
+      "batch_original": "screening/premia/attack1-receipt-alt.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:53:36.028780+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0x64602cbbeba5d3c7a5e2cff4f98cc118886fc6051c56fa50458abec2c90441ac"
+        ]
+      }
+    },
+    {
+      "path": "evidence/attack2-receipt-alt.json",
+      "sha256": "87fbb629f3f7d2824b47ed67cf49a017b051a9861ab95cf562454dd37df988e3",
+      "batch_original": "screening/premia/attack2-receipt-alt.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:53:36.399860+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionReceipt",
+        "params": [
+          "0xd7e8086df0570c5389ca27eb9bcdff290e810c094155b410a42e5bad2b3244ff"
+        ]
+      }
+    },
+    {
+      "path": "evidence/block.json",
+      "sha256": "4d4a4e63d67a46a0c2eb978e7497ed0fbe36b83ab693a516c8047973f6175bcc",
+      "batch_original": "screening/premia/block.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T02:01:54.823551+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getBlockByNumber",
+        "params": [
+          "0x1f011c4f",
+          false
+        ]
+      }
+    },
+    {
+      "path": "evidence/premia-setup-decoded.json",
+      "sha256": "748ef74712b9c9fcb5e793e9014a65105d808623fbce4769998f18d396f85e64",
+      "batch_original": "screening/premia-setup-decoded.json",
+      "kind": "archived_public_response_or_offline_derivative"
+    },
+    {
+      "path": "evidence/premia1-decoded.json",
+      "sha256": "dff058b4554071b550e0485b06000e9121445cdc77dd599eb3d7bce0a3ba8bf9",
+      "batch_original": "screening/premia1-decoded.json",
+      "kind": "archived_public_response_or_offline_derivative"
+    },
+    {
+      "path": "evidence/premia2-decoded.json",
+      "sha256": "6fe5e5c6faa818cdd34f3828dfea5bd8044448466b1b854b49168c37bc22f0a0",
+      "batch_original": "screening/premia2-decoded.json",
+      "kind": "archived_public_response_or_offline_derivative"
+    },
+    {
+      "path": "evidence/facet-deposit.json",
+      "sha256": "5dc9cb27720383cbfebf233f46be1279f6ec9a7961463aba1b667a5b5c908237",
+      "batch_original": "screening/premia/facet-deposit.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:57:45.060535+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+            "data": "0xcdffacc6631187b900000000000000000000000000000000000000000000000000000000"
+          },
+          "latest"
+        ]
+      }
+    },
+    {
+      "path": "evidence/facet-withdraw.json",
+      "sha256": "5dc9cb27720383cbfebf233f46be1279f6ec9a7961463aba1b667a5b5c908237",
+      "batch_original": "screening/premia/facet-withdraw.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:57:45.060535+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+            "data": "0xcdffacc66101023400000000000000000000000000000000000000000000000000000000"
+          },
+          "latest"
+        ]
+      }
+    },
+    {
+      "path": "evidence/facet-write.json",
+      "sha256": "bb3aedd0a32ea4dd531df6b7bbf67ce5855d11086eaeb20fb6b70b33d69d4b5d",
+      "batch_original": "screening/premia/facet-write.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:57:45.060535+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x2ea42642d1b951f18ea7fbce495bea9e517b198f",
+            "data": "0xcdffacc6b0706b0100000000000000000000000000000000000000000000000000000000"
+          },
+          "latest"
+        ]
+      }
+    },
+    {
+      "path": "evidence/implementation-official.json",
+      "sha256": "53bf42c846840ddfe086787c571c4ed14762680a572b1afeffdc6adec6709be1",
+      "batch_original": "screening/premia/implementation-official.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://arb1.arbitrum.io/rpc",
+      "retrieved_at": "2026-11-10T01:35:23.269838+08:00",
+      "request_body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x45dF5EA836A15B561937Ae8373ab9eE984aea531",
+            "data": "0xaaf10f42"
+          },
+          "latest"
+        ]
+      }
+    },
+    {
+      "path": "evidence/commit.json",
+      "sha256": "1e4793875b6af6ea290b88ac431b91fb0b2460b6d9ac975f94764b761947fbf5",
+      "batch_original": "screening/premia/commit.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://api.github.com/repos/Premian-Labs/v3-contracts/commits/fe3b821ab87a0b98cb6f1142134e2ddaadbc4c4d",
+      "retrieved_at": "2026-11-10T01:33:51.154007+08:00",
+      "request_body": null
+    },
+    {
+      "path": "evidence/primary-2117191582361555366.json",
+      "sha256": "0c64390a039bf167118210e07b5f365d8d17652bb12896f2913dea4341c0537a",
+      "batch_original": "screening/premia/primary-2117191582361555366.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=2117191582361555366&lang=en&token=0",
+      "retrieved_at": "2026-11-10T01:53:34.228984+08:00",
+      "request_body": null
+    },
+    {
+      "path": "evidence/primary-2116745378674463229.json",
+      "sha256": "2f05b1f7f93c1b16fffeef8a98d15936f3cde73633deff5c818a7fe80f4eaedc",
+      "batch_original": "screening/premia/primary-2116745378674463229.json",
+      "kind": "archived_public_response_or_offline_derivative",
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=2116745378674463229&lang=en&token=0",
+      "retrieved_at": "2026-11-10T01:53:34.658128+08:00",
+      "request_body": null
+    }
+  ],
+  "source_vs_deployment_vs_state": "Acquisition, provider verification, historical binding and historical state are separate claims.",
+  "no_decompiler_output": true
+}

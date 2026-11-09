@@ -1,0 +1,22 @@
+{
+  "id": "row22-historical-code-0x79f35a33fe2813414851c4ae8daeacd14d822a46",
+  "url": "https://eth.drpc.org",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getCode",
+    "params": [
+      "0x79f35a33fe2813414851c4ae8daeacd14d822a46",
+      "0x190bdee"
+    ]
+  },
+  "retrieved_at": "2026-11-10T02:03:50.198970+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://eth.drpc.org",
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "667e4634e3c5c91a927a8d27796466de6b6c1321e979f73cf39f18f0f29d6188",
+  "bytes": 45982
+}

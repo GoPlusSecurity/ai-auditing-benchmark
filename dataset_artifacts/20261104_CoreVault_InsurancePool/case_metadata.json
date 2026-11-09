@@ -1,0 +1,61 @@
+{
+  "case_id": "20261104_CoreVault_InsurancePool",
+  "sheet_row": 5,
+  "chain_id": 56,
+  "project_cn": "CoreVault / InsurancePool",
+  "project_en": "CoreVault / InsurancePool",
+  "vulnerability_cn": "可操纵的现货逆价格进入赎回均价，放大 BNB 付款",
+  "vulnerability_en": "Manipulable inverse spot-price samples inflate BNB redemption payouts",
+  "detail_cn": "CoreVault赎回先刷新OracleLib的小样本价格窗口，再按redeemableUsd×wbnbPerUsd/1e18计算BNB；采样值来自可在同笔交易中改变储备的WBNB/USDT池。Treasury只校验调用者和余额，不重新验证报价，余额不足时从InsurancePool补款。回执显示先卖入195000 WBNB，后ReserveWithdrawn和TreasuryPayout均为260.218939088949896316 BNB，再反向兑换。取得关键合约及库的公开原始源码；未取得完整内部跟踪、攻击前窗口和手工覆盖状态，也未独立核实最终净收益。源表112300美元与付款、储备净流出及获利口径不同，金额留空。",
+  "detail_en": "CoreVault refreshes OracleLib's small price-sample window before computing BNB as redeemableUsd*wbnbPerUsd/1e18. Samples come from a WBNB/USDT pool whose reserves can be moved within the same transaction. Treasury checks the caller and available funds but does not independently validate the price; it pulls any deficit from InsurancePool. The receipt shows a 195000 WBNB sale, matching ReserveWithdrawn and TreasuryPayout events of 260.218939088949896316 BNB, then a reverse swap. Public original source for the critical contracts and library was acquired. Full internal traces, pre-attack sample/override state and final net profit were not independently verified. The USD field is blank because the sheet's USD112300 and gross payout, reserve net outflow and profit use different scopes.",
+  "loss_usd": null,
+  "loss_scope": "源表/初始披露约112300美元更接近攻击者收益；本批证实260.218939088949896316 BNB付款事件，未将该总额或闪电贷本金当成净损失。",
+  "victims": [
+    "0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674",
+    "0xf40e0d525003fb6c6a9a7d79734a87a465053df1"
+  ],
+  "evidence_gaps": [
+    "No full internal trace; native payouts are corroborated by victim payment events, not reconstructed native-transfer traces.",
+    "Pre-attack oracle samples, manual overrides and order eligibility slots were not read successfully.",
+    "Ownership and forwarding code of recipient 0xd9c2e4f19746b4617ad658152adaa306c47ef86b were not established; no claims about its internal logic are made.",
+    "No independent historical runtime binding for the core/facet/library deployment; source-provider verification is separate from attack-block verification."
+  ],
+  "event_date": "2026-11-04",
+  "original_rows": [
+    5
+  ],
+  "source_sheet_snapshot": "../../docs/cases/batches/20261110_latest5/snapshot.json",
+  "batch_results": "../../docs/cases/batches/20261110_latest5/results.json",
+  "source_qualification_scope": "../../docs/cases/batches/20261110_latest5/scope-confirmation.json",
+  "necessary_code_coverage": "../../docs/cases/batches/20261110_latest5/source-coverage.md",
+  "case_document": "../../docs/cases/20261104_CoreVault_InsurancePool.md",
+  "code_root": "../../dataset/20261104_CoreVault_InsurancePool",
+  "source_status": "original_verified_source",
+  "source_provenance_kind": "original_verified_source",
+  "source_provenance": "provenance.json",
+  "public_original_vulnerable_source": true,
+  "tx_urls": [
+    "https://bscscan.com/tx/0x072a10a579e2a8afa26a681205a2aaaa38f74bcb9d1064b12bd9e9ebe2c598b3"
+  ],
+  "vulnerable_contract_urls": [
+    "https://bscscan.com/address/0x302f5084ba0e4a2d4de5e6bc5dd5247028f5d674#code",
+    "https://bscscan.com/address/0xf40e0d525003fb6c6a9a7d79734a87a465053df1#code"
+  ],
+  "verification_status": {
+    "source": "original source, provider-reported runtime/creation matches; no local recompile",
+    "historical_code": "not independently established; see evidence_gaps",
+    "historical_state": "only specific archived observations; no complete pre-attack state reconstruction",
+    "receipts": "successful archived transaction receipts and decoded asset movements/events",
+    "trace": "no full internal trace; archived receipts and source-based interpretation only",
+    "compilation": "not_run",
+    "deployment": "not_run",
+    "fork_replay": "not_run",
+    "decompilation": "not_used; official online output unavailable where essential, those candidates skipped"
+  },
+  "local_compilation": "not_run",
+  "deployment": "not_run",
+  "fork_replay": "not_run",
+  "transactions_sent": false,
+  "upstream_scripts_executed": false,
+  "source_file_count": 100
+}

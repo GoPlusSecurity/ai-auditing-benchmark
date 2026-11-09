@@ -1,0 +1,18 @@
+{
+  "id": "row35-receipt-llama",
+  "url": "https://eth.llamarpc.com",
+  "request_body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x352065378c4a41b77e5b6a1e5b5616cd2886c3e1a2c87ed3db8e5ddddc23823d"
+    ]
+  },
+  "retrieved_at": "2026-11-10T01:41:24.839851+08:00",
+  "timezone": "Asia/Shanghai",
+  "error": "HTTP Error 525: <none>",
+  "exception": "HTTPError",
+  "status": 525,
+  "error_body_sha256": "f28010ee4bebf3921c03ddd425fdde6c937c24298bd0888b701a71ad53030a0e"
+}

@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":1,"error":{"code":-32000,"message":"missing trie node 6b3977138eec722f84c8f2d2407f9d5ac591cd4415fa98c20c1b8ae6865fe586 (path ) state 0x6b3977138eec722f84c8f2d2407f9d5ac591cd4415fa98c20c1b8ae6865fe586 is not available, not found"}}

@@ -1,0 +1,90 @@
+{
+  "scope": "Failures observed during this batch; absence of a successful fetch is not proof that public material can never exist.",
+  "observations": [
+    {
+      "kind": "sandbox_network",
+      "outcome": "Initial public downloads failed with DNS resolution errors inside the sandbox; rerun with approved network access succeeded where responses were available.",
+      "timestamp": null,
+      "basis": "execution output; no precise timestamp archived"
+    },
+    {
+      "kind": "temporary_directory_redirect",
+      "outcome": "First initialization command referenced the sandbox TEMP path instead of the already downloaded host TEMP file. Corrected to the exact observed file; fixed export bytes and SHA256 were unchanged."
+    },
+    {
+      "kind": "path_guard",
+      "outcome": "Two concurrent downloader runs stopped on path containment checks. Paths were inspected, diagnostic paths added, and retries completed; no path outside this batch was written."
+    },
+    {
+      "kind": "windows_path_length",
+      "outcome": "Initial duplicate investigation extraction exceeded Windows path length. Original HTTP responses remained intact; extraction moved to shorter ignored paths. Formal case sources were separately checked against the original responses."
+    },
+    {
+      "kind": "browser_bscscan",
+      "url": "https://bscscan.com/bytecode-decompiler?a=0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe",
+      "outcome": "Cloudflare security verification; no usable decompiler output."
+    },
+    {
+      "kind": "browser_dedaub",
+      "url": "https://app.dedaub.com/binance/address/0xd00be871eb7a5cb8a69aea41e4c95affc92e54fe/disassembled",
+      "outcome": "Official vendor decompiler located; Decompiled locked, members-only login prompt. User chose to skip rather than log in. No local decompiler was run."
+    },
+    {
+      "kind": "incorrect_history_parameter",
+      "outcome": "One exploratory Premia code request used 0x1f012c4f. Excluded from conclusions; corrected requests derive the actual 0x1f011c4f from the archived receipt and also fail to recover historical state."
+    }
+  ],
+  "http_failures": [
+    "screening/b14g/implementation-source.json.http.json",
+    "screening/b14g/official-online-decompiler.html.http.json",
+    "screening/corevault/extra-source.json.http.json",
+    "screening/corevault/official-online-decompiler.html.http.json",
+    "screening/corevault/sources/0x5986772dc1970d1d9e030867f1156e36f9b07ce4.json.http.json",
+    "screening/corevault/trace-drpc-retry.json.http.json",
+    "screening/corevault/trace-drpc.json.http.json",
+    "screening/corevault/transaction.html.http.json",
+    "screening/premia/attack1-receipt.json.http.json",
+    "screening/premia/attack1-trace-blockscout.json.http.json",
+    "screening/premia/attack2-receipt.json.http.json",
+    "screening/premia/attack2-trace-blockscout.json.http.json",
+    "screening/premia/setup-receipt.json.http.json",
+    "screening/premia/source-0x577168c8c6fa937495c3d6961f1d7d734b2d785f.json.http.json",
+    "screening/row22/receipt-llama.json.http.json",
+    "screening/row26/pair-source.json.http.json",
+    "screening/row26/source-0x5e6d1f40be466dd2facc94a26818948ecd3b1ca2.json.http.json",
+    "screening/row28/implementation-source.json.http.json",
+    "screening/row28/source-0x8ebc7878287415f1fadcf4ace8817094e4c86f90.json.http.json",
+    "screening/row29/source-0x9be3e4c8fba4c90c7cd7926a3948410145d39851.json.http.json",
+    "screening/row30/receipt-llama.json.http.json",
+    "screening/row35/receipt-llama.json.http.json",
+    "screening/row35/source-0x6cebdf095172b355121b93962017975c4601f26c.json.http.json",
+    "screening/tendril/extra-source.json.http.json",
+    "screening/tendril/official-online-decompiler.html.http.json",
+    "screening/tendril/pair-source.json.http.json",
+    "screening/tendril/poolcontrol-attack.json.http.json",
+    "screening/tendril/token-explorer.html.http.json",
+    "screening/tendril/trace-drpc.json.http.json",
+    "screening/tranche/source-0xe25cb545bdd47a8ec2d08001cb5661b00d47621a.json.http.json",
+    "screening/tranche/source-0xf09dcf4ede2a88bd316ff355dfc333a281a57805.json.http.json"
+  ],
+  "rpc_errors": [
+    "screening/b14g/historical-slot.json",
+    "screening/corevault/trace-publicnode.json",
+    "screening/corevault/trace.json",
+    "screening/premia/attack1-trace.json",
+    "screening/premia/attack2-trace.json",
+    "screening/premia/correct-historical-code-0x386dd942d3b058543f0dfa19034a0284a49ba5fd.json",
+    "screening/premia/correct-historical-code-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc.json",
+    "screening/premia/correct-historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21.json",
+    "screening/premia/historical-code-0x386dd942d3b058543f0dfa19034a0284a49ba5fd.json",
+    "screening/premia/historical-code-0xa1a1ea8b5a6045b6bfa51afb9b1c8c44f3f296bc.json",
+    "screening/premia/historical-code-0xb539ff8563974d407fd6d717ff2f930e99093d21.json",
+    "screening/premia/historical-implementation.json",
+    "screening/premia/setup-trace.json",
+    "screening/premia/trace-drpc.json",
+    "screening/premia/trace-official.json",
+    "screening/tendril/controller-historical-code.json",
+    "screening/tendril/trace-publicnode.json",
+    "screening/tendril/trace.json"
+  ]
+}

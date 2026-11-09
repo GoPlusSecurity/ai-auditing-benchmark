@@ -1,0 +1,14 @@
+{
+  "id": "corevault-certik-alert",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2117807084939129050&lang=en&token=0",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:29:12.282967+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://cdn.syndication.twimg.com/tweet-result?id=2117807084939129050&lang=en&token=0",
+  "content_type": "application/json; charset=utf-8",
+  "etag": "W/\"18c5-hcB3zye6hBbJHcJet3HKlt8o/zc\"",
+  "last_modified": null,
+  "sha256": "3267d35fda369c73a2efb089f3efc11645747f9ed1223e1b036487d5b70bb7be",
+  "bytes": 6341
+}

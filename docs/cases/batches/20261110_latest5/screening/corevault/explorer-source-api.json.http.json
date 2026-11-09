@@ -1,0 +1,14 @@
+{
+  "id": "corevault-explorer-source-api",
+  "url": "https://api.etherscan.io/v2/api?chainid=56&module=contract&action=getsourcecode&address=0xd9c2e4f19746b4617ad658152adaa306c47ef86b",
+  "request_body": null,
+  "retrieved_at": "2026-11-10T01:35:22.786525+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": 200,
+  "final_url": "https://api.etherscan.io/v2/api?chainid=56&module=contract&action=getsourcecode&address=0xd9c2e4f19746b4617ad658152adaa306c47ef86b",
+  "content_type": "application/json; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "sha256": "15a829feaac786f421a396f1e60977a508a6e29434bd7b62a75a743710cdb150",
+  "bytes": 67
+}

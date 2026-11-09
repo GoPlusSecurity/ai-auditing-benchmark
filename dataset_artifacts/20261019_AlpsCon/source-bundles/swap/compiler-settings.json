@@ -1,0 +1,14 @@
+{
+  "language": "Solidity",
+  "compiler": "solc",
+  "compilerVersion": "0.8.20+commit.a1b79de6",
+  "compilerSettings": {
+    "optimizer": {
+      "runs": 200,
+      "enabled": true
+    },
+    "evmVersion": "paris"
+  },
+  "name": "SwapContract",
+  "fullyQualifiedName": "contracts/SwapContract.sol:SwapContract"
+}
